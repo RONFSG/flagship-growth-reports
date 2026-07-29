@@ -5,611 +5,898 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>FSG Admin — Brand Reports</title>
   <style>
-    @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap");
+
     :root {
-      --red: #8B1515;
-      --navy: #0F172A;
-      --muted: #64748B;
+      --red:    #8B1515;
+      --red-dk: #6B0F0F;
+      --red-lt: #F5EDED;
+      --navy:   #0F172A;
+      --navy2:  #1E293B;
+      --beige:  #F0EDE6;
+      --white:  #FFFFFF;
+      --border: #E4E0D8;
+      --muted:  #64748B;
       --subtle: #94A3B8;
-      --border: #E2E8F0;
-      --bg: #F0EDE6;
+      --teal:   #0F766E;
+      --teal-dk:#0C5F58;
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      background: var(--bg);
+      background: var(--beige);
       color: var(--navy);
       font-family: "League Spartan", "Quicksand", sans-serif;
-      font-size: 13px;
-      line-height: 1.5;
-      padding: 32px 20px 48px;
+      min-height: 100vh;
     }
-    .page { max-width: 900px; margin: 0 auto; }
 
-    /* Header */
-    .header {
-      background: #fff;
-      border-radius: 12px;
-      padding: 22px 32px 18px;
-      border-bottom: 2px solid var(--navy);
+    /* ── Top Bar ────────────────────────────────── */
+    .topbar {
+      background: var(--navy);
+      padding: 0 40px;
+      height: 64px;
       display: flex;
+      align-items: center;
       justify-content: space-between;
-      align-items: center;
-      margin-bottom: 24px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.25);
     }
-    .header-logo { height: 56px; width: auto; display: block; }
-    .header-right { text-align: right; }
-    .header-title { font-size: 22px; font-weight: 800; color: var(--navy); letter-spacing: -0.03em; line-height: 1; }
-    .header-title span { color: var(--red); }
-    .header-sub { font-size: 10px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
-
-    /* Back nav */
-    .back-nav {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
+    .topbar-left { display: flex; align-items: center; gap: 18px; }
+    .topbar-logo { height: 38px; width: auto; display: block; filter: brightness(0) invert(1); opacity: 0.92; }
+    .topbar-divider { width: 1px; height: 28px; background: rgba(255,255,255,0.15); }
+    .topbar-label {
       font-size: 11px;
       font-weight: 700;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: var(--muted);
-      text-decoration: none;
-      margin-bottom: 20px;
-      transition: color 0.15s;
+      color: rgba(255,255,255,0.55);
     }
-    .back-nav:hover { color: var(--red); }
-    .back-nav svg { width: 14px; height: 14px; }
-
-    /* Brand table card */
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-    }
-    .card-header {
-      padding: 16px 24px;
-      border-bottom: 1px solid var(--border);
+    .topbar-right {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
     }
-    .bar-accent { width: 16px; height: 3px; background: var(--red); border-radius: 2px; }
-    .section-title { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--navy); }
-    .brand-count { margin-left: auto; font-size: 10px; color: var(--subtle); font-weight: 600; }
-
-    /* Brand rows */
-    .brand-row {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      align-items: center;
-      gap: 12px;
-      padding: 14px 24px;
-      border-bottom: 1px solid var(--border);
-      transition: background 0.1s;
-    }
-    .brand-row:last-child { border-bottom: none; }
-    .brand-row:hover { background: #FAFAF8; }
-    .brand-name {
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--navy);
-      letter-spacing: -0.01em;
-    }
-    .brand-meta {
+    .badge {
+      background: rgba(139,21,21,0.25);
+      border: 1px solid rgba(139,21,21,0.5);
+      color: #F5C5C5;
       font-size: 10px;
-      color: var(--subtle);
-      font-weight: 500;
-      margin-top: 2px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 20px;
     }
 
-    /* Buttons */
-    .btn-group { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+    /* ── Page wrapper ───────────────────────────── */
+    .page {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 36px 24px 60px;
+    }
+
+    /* ── Search bar ─────────────────────────────── */
+    .search-wrap {
+      position: relative;
+      margin-bottom: 28px;
+    }
+    .search-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 16px;
+      color: var(--muted);
+      pointer-events: none;
+    }
+    #search {
+      width: 100%;
+      height: 46px;
+      padding: 0 18px 0 44px;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      background: var(--white);
+      font-family: "League Spartan", sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--navy);
+      outline: none;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    #search::placeholder { color: var(--subtle); }
+    #search:focus {
+      border-color: var(--red);
+      box-shadow: 0 0 0 3px rgba(139,21,21,0.1);
+    }
+    .search-count {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--subtle);
+    }
+
+    /* ── Section header ─────────────────────────── */
+    .section-hdr {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .section-hdr-bar { width: 18px; height: 3px; background: var(--red); border-radius: 2px; flex-shrink: 0; }
+    .section-hdr-title {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--navy);
+    }
+
+    /* ── Brand grid ─────────────────────────────── */
+    .brand-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 14px;
+    }
+
+    /* ── Brand card ─────────────────────────────── */
+    .brand-card {
+      background: var(--white);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow 0.15s, transform 0.12s;
+    }
+    .brand-card:hover {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.10);
+      transform: translateY(-2px);
+    }
+    .brand-card.hidden { display: none; }
+
+    .card-top {
+      padding: 16px 20px 14px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .card-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 9px;
+      background: var(--red-lt);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--red);
+      letter-spacing: -0.02em;
+      flex-shrink: 0;
+    }
+    .card-info { flex: 1; min-width: 0; }
+    .card-name {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .card-am {
+      margin-top: 4px;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .card-am-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--red);
+      flex-shrink: 0;
+    }
+
+    .card-body {
+      padding: 14px 20px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex: 1;
+    }
+
+    /* ── Buttons ────────────────────────────────── */
+    .btn-row { display: flex; flex-wrap: wrap; gap: 6px; }
     .btn {
       display: inline-flex;
       align-items: center;
       gap: 5px;
-      padding: 6px 12px;
-      border-radius: 6px;
+      padding: 7px 13px;
+      border-radius: 7px;
+      font-family: "League Spartan", sans-serif;
       font-size: 10px;
       font-weight: 700;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.07em;
       text-transform: uppercase;
       text-decoration: none;
       white-space: nowrap;
-      transition: opacity 0.15s, transform 0.1s;
+      cursor: pointer;
+      transition: filter 0.14s, transform 0.1s, box-shadow 0.14s;
+      border: none;
     }
-    .btn:hover { opacity: 0.82; transform: translateY(-1px); }
-    .btn-weekly {
-      background: var(--navy);
-      color: #fff;
+    .btn:hover {
+      filter: brightness(1.1);
+      transform: translateY(-1px);
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
     }
-    .btn-weekly-alt {
-      background: #1E3A5F;
-      color: #fff;
-    }
-    .btn-inventory {
-      background: #0F766E;
-      color: #fff;
-    }
-    .btn-approve {
-      background: var(--red);
-      color: #fff;
-    }
+    .btn:active { transform: translateY(0); filter: brightness(0.95); }
     .btn svg { width: 11px; height: 11px; flex-shrink: 0; }
 
-    /* Footer */
-    .footer {
-      margin-top: 24px;
-      text-align: center;
-      font-size: 10px;
-      color: var(--subtle);
-      font-weight: 500;
+    .btn-weekly  { background: var(--navy);  color: #fff; }
+    .btn-market  { background: var(--navy2); color: #fff; }
+    .btn-inv     { background: var(--teal);  color: #fff; }
+    .btn-approve { background: var(--red);   color: #fff; }
+
+    /* approve row spans full width at bottom */
+    .approve-row { margin-top: auto; padding-top: 2px; }
+    .btn-approve-full {
+      width: 100%;
+      justify-content: center;
+      padding: 8px 14px;
     }
 
+    /* ── No results ─────────────────────────────── */
+    .no-results {
+      display: none;
+      grid-column: 1/-1;
+      text-align: center;
+      padding: 48px 20px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .no-results svg { width: 32px; height: 32px; margin-bottom: 12px; opacity: 0.3; }
+
+    /* ── Footer ─────────────────────────────────── */
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--subtle);
+    }
+
+    /* ── Responsive ─────────────────────────────── */
     @media (max-width: 640px) {
-      body { padding: 16px 12px 32px; }
-      .header { flex-direction: column; align-items: flex-start; gap: 10px; padding: 16px; }
-      .header-right { text-align: left; }
-      .brand-row { grid-template-columns: 1fr; gap: 10px; padding: 14px 16px; }
-      .btn-group { justify-content: flex-start; }
-      .card-header { padding: 14px 16px; }
+      .topbar { padding: 0 20px; }
+      .topbar-label, .topbar-divider { display: none; }
+      .page { padding: 24px 14px 48px; }
+      .brand-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="topbar-left">
+      <img src="https://ronfsg.github.io/flagship-growth-reports/assets/fsg-logo.png" alt="Flagship Growth" class="topbar-logo">
+      <div class="topbar-divider"></div>
+      <span class="topbar-label">Brand Reports Admin</span>
+    </div>
+    <div class="topbar-right">
+      <span class="badge">Internal</span>
+    </div>
+  </div>
+
   <div class="page">
 
-    <div class="header">
-      <img src="https://reports.flagshipgrowth.com/assets/fsg-logo.png" alt="Flagship Growth" class="header-logo">
-      <div class="header-right">
-        <div class="header-title">Brand <span>Reports</span> Admin</div>
-        <div class="header-sub">Flagship Growth · Internal</div>
-      </div>
+    <!-- Search -->
+    <div class="search-wrap">
+      <svg class="search-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="6.5" cy="6.5" r="4"/>
+        <path d="M14 14l-3.5-3.5"/>
+      </svg>
+      <input id="search" type="text" placeholder="Search brands or account managers…" autocomplete="off" spellcheck="false">
+      <span class="search-count" id="count">22 brands</span>
     </div>
 
-    <a href="https://reports.flagshipgrowth.com/" class="back-nav">
-      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M10 12L6 8l4-4"/>
-      </svg>
-      Back to Reports Hub
-    </a>
+    <!-- Section header -->
+    <div class="section-hdr">
+      <div class="section-hdr-bar"></div>
+      <div class="section-hdr-title">All Brands</div>
+    </div>
 
-    <div class="card">
-      <div class="card-header">
-        <div class="bar-accent"></div>
-        <div class="section-title">All Brands</div>
-        <div class="brand-count">22 brands</div>
-      </div>
+    <!-- Brand grid -->
+    <div class="brand-grid" id="grid">
+
+      <!-- SVG shorthand macros used inline per card -->
 
       <!-- 1. Addasound -->
-      <div class="brand-row">
-        <div>
-          <div class="brand-name">Addasound</div>
-          <div class="brand-meta">Weekly Report</div>
+      <div class="brand-card" data-brand="addasound" data-am="ronric manguiat">
+        <div class="card-top">
+          <div class="card-avatar">AD</div>
+          <div class="card-info">
+            <div class="card-name">Addasound</div>
+            <div class="card-am"><span class="card-am-dot"></span>Ronric Manguiat</div>
+          </div>
         </div>
-        <div class="btn-group">
-          <a href="https://reports.flagshipgrowth.com/addasound-weekly/" class="btn btn-weekly">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly Report
-          </a>
-          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
-            Approve
-          </a>
+        <div class="card-body">
+          <div class="btn-row">
+            <a href="https://reports.flagshipgrowth.com/addasound-weekly/" class="btn btn-weekly" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly Report
+            </a>
+          </div>
+          <div class="approve-row btn-row">
+            <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve btn-approve-full" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>Approve Report
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- 2. Aura House -->
-      <div class="brand-row">
-        <div>
-          <div class="brand-name">Aura House</div>
-          <div class="brand-meta">Weekly Report</div>
+      <div class="brand-card" data-brand="aura house" data-am="ronric manguiat">
+        <div class="card-top">
+          <div class="card-avatar">AH</div>
+          <div class="card-info">
+            <div class="card-name">Aura House</div>
+            <div class="card-am"><span class="card-am-dot"></span>Ronric Manguiat</div>
+          </div>
         </div>
-        <div class="btn-group">
-          <a href="https://reports.flagshipgrowth.com/aura-house-weekly/" class="btn btn-weekly">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly Report
-          </a>
-          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
-            Approve
-          </a>
+        <div class="card-body">
+          <div class="btn-row">
+            <a href="https://reports.flagshipgrowth.com/aura-house-weekly/" class="btn btn-weekly" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly Report
+            </a>
+          </div>
+          <div class="approve-row btn-row">
+            <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve btn-approve-full" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>Approve Report
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- 3. Dormeo -->
-      <div class="brand-row">
-        <div>
-          <div class="brand-name">Dormeo</div>
-          <div class="brand-meta">Weekly Reports — US · Canada</div>
+      <div class="brand-card" data-brand="dormeo" data-am="ronric manguiat">
+        <div class="card-top">
+          <div class="card-avatar">DO</div>
+          <div class="card-info">
+            <div class="card-name">Dormeo</div>
+            <div class="card-am"><span class="card-am-dot"></span>Ronric Manguiat</div>
+          </div>
         </div>
-        <div class="btn-group">
-          <a href="https://reports.flagshipgrowth.com/dormeo-weekly/" class="btn btn-weekly">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly (US)
-          </a>
-          <a href="https://reports.flagshipgrowth.com/dormeo-canada-weekly/" class="btn btn-weekly-alt">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly (CA)
-          </a>
-          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
-            Approve
-          </a>
+        <div class="card-body">
+          <div class="btn-row">
+            <a href="https://reports.flagshipgrowth.com/dormeo-weekly/" class="btn btn-weekly" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly (US)
+            </a>
+            <a href="https://reports.flagshipgrowth.com/dormeo-canada-weekly/" class="btn btn-market" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly (CA)
+            </a>
+          </div>
+          <div class="approve-row btn-row">
+            <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve btn-approve-full" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>Approve Report
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- 4. Good Bacteria -->
-      <div class="brand-row">
-        <div>
-          <div class="brand-name">Good Bacteria</div>
-          <div class="brand-meta">Weekly Report</div>
+      <div class="brand-card" data-brand="good bacteria" data-am="ronric manguiat">
+        <div class="card-top">
+          <div class="card-avatar">GB</div>
+          <div class="card-info">
+            <div class="card-name">Good Bacteria</div>
+            <div class="card-am"><span class="card-am-dot"></span>Ronric Manguiat</div>
+          </div>
         </div>
-        <div class="btn-group">
-          <a href="https://reports.flagshipgrowth.com/good-bacteria-weekly/" class="btn btn-weekly">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly Report
-          </a>
-          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
-            Approve
-          </a>
+        <div class="card-body">
+          <div class="btn-row">
+            <a href="https://reports.flagshipgrowth.com/good-bacteria-weekly/" class="btn btn-weekly" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly Report
+            </a>
+          </div>
+          <div class="approve-row btn-row">
+            <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve btn-approve-full" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>Approve Report
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- 5. Hapad -->
-      <div class="brand-row">
-        <div>
-          <div class="brand-name">Hapad</div>
-          <div class="brand-meta">Weekly Reports — US · Canada</div>
+      <div class="brand-card" data-brand="hapad" data-am="ronric manguiat">
+        <div class="card-top">
+          <div class="card-avatar">HP</div>
+          <div class="card-info">
+            <div class="card-name">Hapad</div>
+            <div class="card-am"><span class="card-am-dot"></span>Ronric Manguiat</div>
+          </div>
         </div>
-        <div class="btn-group">
-          <a href="https://reports.flagshipgrowth.com/hapad-weekly/" class="btn btn-weekly">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly (US)
-          </a>
-          <a href="https://reports.flagshipgrowth.com/hapad-canada-weekly/" class="btn btn-weekly-alt">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly (CA)
-          </a>
-          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
-            Approve
-          </a>
+        <div class="card-body">
+          <div class="btn-row">
+            <a href="https://reports.flagshipgrowth.com/hapad-weekly/" class="btn btn-weekly" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly (US)
+            </a>
+            <a href="https://reports.flagshipgrowth.com/hapad-canada-weekly/" class="btn btn-market" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly (CA)
+            </a>
+          </div>
+          <div class="approve-row btn-row">
+            <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve btn-approve-full" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>Approve Report
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- 6. Heavenly Bodies -->
-      <div class="brand-row">
-        <div>
-          <div class="brand-name">Heavenly Bodies</div>
-          <div class="brand-meta">Weekly Report</div>
+      <div class="brand-card" data-brand="heavenly bodies" data-am="ronric manguiat">
+        <div class="card-top">
+          <div class="card-avatar">HB</div>
+          <div class="card-info">
+            <div class="card-name">Heavenly Bodies</div>
+            <div class="card-am"><span class="card-am-dot"></span>Ronric Manguiat</div>
+          </div>
         </div>
-        <div class="btn-group">
-          <a href="https://reports.flagshipgrowth.com/heavenly-bodies-weekly/" class="btn btn-weekly">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly Report
-          </a>
-          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
-            Approve
-          </a>
+        <div class="card-body">
+          <div class="btn-row">
+            <a href="https://reports.flagshipgrowth.com/heavenly-bodies-weekly/" class="btn btn-weekly" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly Report
+            </a>
+          </div>
+          <div class="approve-row btn-row">
+            <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve btn-approve-full" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>Approve Report
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- 7. Lewie -->
-      <div class="brand-row">
-        <div>
-          <div class="brand-name">Lewie</div>
-          <div class="brand-meta">Weekly Report</div>
+      <div class="brand-card" data-brand="lewie" data-am="ronric manguiat">
+        <div class="card-top">
+          <div class="card-avatar">LW</div>
+          <div class="card-info">
+            <div class="card-name">Lewie</div>
+            <div class="card-am"><span class="card-am-dot"></span>Ronric Manguiat</div>
+          </div>
         </div>
-        <div class="btn-group">
-          <a href="https://reports.flagshipgrowth.com/lewie-weekly/" class="btn btn-weekly">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly Report
-          </a>
-          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
-            Approve
-          </a>
+        <div class="card-body">
+          <div class="btn-row">
+            <a href="https://reports.flagshipgrowth.com/lewie-weekly/" class="btn btn-weekly" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly Report
+            </a>
+          </div>
+          <div class="approve-row btn-row">
+            <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve btn-approve-full" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>Approve Report
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- 8. MAC Energy -->
-      <div class="brand-row">
-        <div>
-          <div class="brand-name">MAC Energy</div>
-          <div class="brand-meta">Weekly Report · Inventory</div>
+      <div class="brand-card" data-brand="mac energy" data-am="ronric manguiat">
+        <div class="card-top">
+          <div class="card-avatar">ME</div>
+          <div class="card-info">
+            <div class="card-name">MAC Energy</div>
+            <div class="card-am"><span class="card-am-dot"></span>Ronric Manguiat</div>
+          </div>
         </div>
-        <div class="btn-group">
-          <a href="https://reports.flagshipgrowth.com/mac-energy-weekly/" class="btn btn-weekly">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly Report
-          </a>
-          <a href="https://reports.flagshipgrowth.com/mac-energy-inventory/" class="btn btn-inventory">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h10M3 8h10M3 12h6"/><circle cx="12" cy="12" r="2.5"/><path d="M12 10.5v1.5l1 1"/></svg>
-            Inventory
-          </a>
-          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
-            Approve
-          </a>
+        <div class="card-body">
+          <div class="btn-row">
+            <a href="https://reports.flagshipgrowth.com/mac-energy-weekly/" class="btn btn-weekly" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly Report
+            </a>
+            <a href="https://reports.flagshipgrowth.com/mac-energy-inventory/" class="btn btn-inv" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h10M3 8h10M3 12h6"/><circle cx="12" cy="12" r="2"/><path d="M12 11v1.2l.8.8"/></svg>Inventory
+            </a>
+          </div>
+          <div class="approve-row btn-row">
+            <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve btn-approve-full" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>Approve Report
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- 9. Nature's Answer -->
-      <div class="brand-row">
-        <div>
-          <div class="brand-name">Nature's Answer</div>
-          <div class="brand-meta">Weekly Report</div>
+      <div class="brand-card" data-brand="nature's answer natures answer" data-am="ronric manguiat">
+        <div class="card-top">
+          <div class="card-avatar">NA</div>
+          <div class="card-info">
+            <div class="card-name">Nature's Answer</div>
+            <div class="card-am"><span class="card-am-dot"></span>Ronric Manguiat</div>
+          </div>
         </div>
-        <div class="btn-group">
-          <a href="https://reports.flagshipgrowth.com/natures-answer-weekly/" class="btn btn-weekly">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly Report
-          </a>
-          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
-            Approve
-          </a>
+        <div class="card-body">
+          <div class="btn-row">
+            <a href="https://reports.flagshipgrowth.com/natures-answer-weekly/" class="btn btn-weekly" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly Report
+            </a>
+          </div>
+          <div class="approve-row btn-row">
+            <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve btn-approve-full" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>Approve Report
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- 10. Opopop -->
-      <div class="brand-row">
-        <div>
-          <div class="brand-name">Opopop</div>
-          <div class="brand-meta">Weekly Reports — US · Walmart</div>
+      <div class="brand-card" data-brand="opopop" data-am="ronric manguiat">
+        <div class="card-top">
+          <div class="card-avatar">OP</div>
+          <div class="card-info">
+            <div class="card-name">Opopop</div>
+            <div class="card-am"><span class="card-am-dot"></span>Ronric Manguiat</div>
+          </div>
         </div>
-        <div class="btn-group">
-          <a href="https://reports.flagshipgrowth.com/opopop-weekly/" class="btn btn-weekly">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly (US)
-          </a>
-          <a href="https://reports.flagshipgrowth.com/opopop-walmart-weekly/" class="btn btn-weekly-alt">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly (WMT)
-          </a>
-          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
-            Approve
-          </a>
+        <div class="card-body">
+          <div class="btn-row">
+            <a href="https://reports.flagshipgrowth.com/opopop-weekly/" class="btn btn-weekly" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly (US)
+            </a>
+            <a href="https://reports.flagshipgrowth.com/opopop-walmart-weekly/" class="btn btn-market" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly (WMT)
+            </a>
+          </div>
+          <div class="approve-row btn-row">
+            <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve btn-approve-full" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>Approve Report
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- 11. Ramen Bae -->
-      <div class="brand-row">
-        <div>
-          <div class="brand-name">Ramen Bae</div>
-          <div class="brand-meta">Weekly Report</div>
+      <div class="brand-card" data-brand="ramen bae" data-am="ronric manguiat">
+        <div class="card-top">
+          <div class="card-avatar">RB</div>
+          <div class="card-info">
+            <div class="card-name">Ramen Bae</div>
+            <div class="card-am"><span class="card-am-dot"></span>Ronric Manguiat</div>
+          </div>
         </div>
-        <div class="btn-group">
-          <a href="https://reports.flagshipgrowth.com/ramen-bae-weekly/" class="btn btn-weekly">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly Report
-          </a>
-          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
-            Approve
-          </a>
+        <div class="card-body">
+          <div class="btn-row">
+            <a href="https://reports.flagshipgrowth.com/ramen-bae-weekly/" class="btn btn-weekly" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly Report
+            </a>
+          </div>
+          <div class="approve-row btn-row">
+            <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve btn-approve-full" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>Approve Report
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- 12. Rationale Brewing -->
-      <div class="brand-row">
-        <div>
-          <div class="brand-name">Rationale Brewing</div>
-          <div class="brand-meta">Weekly Reports — Amazon · Walmart</div>
+      <div class="brand-card" data-brand="rationale brewing" data-am="ronric manguiat">
+        <div class="card-top">
+          <div class="card-avatar">RT</div>
+          <div class="card-info">
+            <div class="card-name">Rationale Brewing</div>
+            <div class="card-am"><span class="card-am-dot"></span>Ronric Manguiat</div>
+          </div>
         </div>
-        <div class="btn-group">
-          <a href="https://reports.flagshipgrowth.com/rationale-brewing-weekly/" class="btn btn-weekly">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly (AMZ)
-          </a>
-          <a href="https://reports.flagshipgrowth.com/rationale-walmart-weekly/" class="btn btn-weekly-alt">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly (WMT)
-          </a>
-          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
-            Approve
-          </a>
+        <div class="card-body">
+          <div class="btn-row">
+            <a href="https://reports.flagshipgrowth.com/rationale-brewing-weekly/" class="btn btn-weekly" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly (AMZ)
+            </a>
+            <a href="https://reports.flagshipgrowth.com/rationale-walmart-weekly/" class="btn btn-market" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly (WMT)
+            </a>
+          </div>
+          <div class="approve-row btn-row">
+            <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve btn-approve-full" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>Approve Report
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- 13. Reshoev8er -->
-      <div class="brand-row">
-        <div>
-          <div class="brand-name">Reshoev8er</div>
-          <div class="brand-meta">Weekly Reports — US · Canada · UK</div>
+      <div class="brand-card" data-brand="reshoev8er reshoevn8r" data-am="ronric manguiat">
+        <div class="card-top">
+          <div class="card-avatar">R8</div>
+          <div class="card-info">
+            <div class="card-name">Reshoev8er</div>
+            <div class="card-am"><span class="card-am-dot"></span>Ronric Manguiat</div>
+          </div>
         </div>
-        <div class="btn-group">
-          <a href="https://reports.flagshipgrowth.com/reshoev8er-weekly/" class="btn btn-weekly">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly (US)
-          </a>
-          <a href="https://reports.flagshipgrowth.com/reshoev8er-canada-weekly/" class="btn btn-weekly-alt">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly (CA)
-          </a>
-          <a href="https://reports.flagshipgrowth.com/reshoev8er-uk-weekly/" class="btn btn-weekly-alt">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly (UK)
-          </a>
-          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
-            Approve
-          </a>
+        <div class="card-body">
+          <div class="btn-row">
+            <a href="https://reports.flagshipgrowth.com/reshoev8er-weekly/" class="btn btn-weekly" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly (US)
+            </a>
+            <a href="https://reports.flagshipgrowth.com/reshoev8er-canada-weekly/" class="btn btn-market" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly (CA)
+            </a>
+            <a href="https://reports.flagshipgrowth.com/reshoev8er-uk-weekly/" class="btn btn-market" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly (UK)
+            </a>
+          </div>
+          <div class="approve-row btn-row">
+            <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve btn-approve-full" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>Approve Report
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- 14. Sherpa Brands -->
-      <div class="brand-row">
-        <div>
-          <div class="brand-name">Sherpa Brands</div>
-          <div class="brand-meta">Weekly Report</div>
+      <div class="brand-card" data-brand="sherpa brands" data-am="ronric manguiat">
+        <div class="card-top">
+          <div class="card-avatar">SB</div>
+          <div class="card-info">
+            <div class="card-name">Sherpa Brands</div>
+            <div class="card-am"><span class="card-am-dot"></span>Ronric Manguiat</div>
+          </div>
         </div>
-        <div class="btn-group">
-          <a href="https://reports.flagshipgrowth.com/sherpa-brands-weekly/" class="btn btn-weekly">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly Report
-          </a>
-          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
-            Approve
-          </a>
+        <div class="card-body">
+          <div class="btn-row">
+            <a href="https://reports.flagshipgrowth.com/sherpa-brands-weekly/" class="btn btn-weekly" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly Report
+            </a>
+          </div>
+          <div class="approve-row btn-row">
+            <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve btn-approve-full" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>Approve Report
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- 15. Smood Sweets -->
-      <div class="brand-row">
-        <div>
-          <div class="brand-name">Smood Sweets</div>
-          <div class="brand-meta">Weekly Report</div>
+      <div class="brand-card" data-brand="smood sweets" data-am="ronric manguiat">
+        <div class="card-top">
+          <div class="card-avatar">SS</div>
+          <div class="card-info">
+            <div class="card-name">Smood Sweets</div>
+            <div class="card-am"><span class="card-am-dot"></span>Ronric Manguiat</div>
+          </div>
         </div>
-        <div class="btn-group">
-          <a href="https://reports.flagshipgrowth.com/smood-sweets-weekly/" class="btn btn-weekly">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly Report
-          </a>
-          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
-            Approve
-          </a>
+        <div class="card-body">
+          <div class="btn-row">
+            <a href="https://reports.flagshipgrowth.com/smood-sweets-weekly/" class="btn btn-weekly" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly Report
+            </a>
+          </div>
+          <div class="approve-row btn-row">
+            <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve btn-approve-full" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>Approve Report
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- 16. Spritzi -->
-      <div class="brand-row">
-        <div>
-          <div class="brand-name">Spritzi</div>
-          <div class="brand-meta">Weekly Report</div>
+      <div class="brand-card" data-brand="spritzi" data-am="ronric manguiat">
+        <div class="card-top">
+          <div class="card-avatar">SP</div>
+          <div class="card-info">
+            <div class="card-name">Spritzi</div>
+            <div class="card-am"><span class="card-am-dot"></span>Ronric Manguiat</div>
+          </div>
         </div>
-        <div class="btn-group">
-          <a href="https://reports.flagshipgrowth.com/spritzi-weekly/" class="btn btn-weekly">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly Report
-          </a>
-          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
-            Approve
-          </a>
+        <div class="card-body">
+          <div class="btn-row">
+            <a href="https://reports.flagshipgrowth.com/spritzi-weekly/" class="btn btn-weekly" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly Report
+            </a>
+          </div>
+          <div class="approve-row btn-row">
+            <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve btn-approve-full" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>Approve Report
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- 17. Stogie Golf -->
-      <div class="brand-row">
-        <div>
-          <div class="brand-name">Stogie Golf</div>
-          <div class="brand-meta">Weekly Report</div>
+      <div class="brand-card" data-brand="stogie golf" data-am="ronric manguiat">
+        <div class="card-top">
+          <div class="card-avatar">SG</div>
+          <div class="card-info">
+            <div class="card-name">Stogie Golf</div>
+            <div class="card-am"><span class="card-am-dot"></span>Ronric Manguiat</div>
+          </div>
         </div>
-        <div class="btn-group">
-          <a href="https://reports.flagshipgrowth.com/stogie-golf-weekly/" class="btn btn-weekly">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly Report
-          </a>
-          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
-            Approve
-          </a>
+        <div class="card-body">
+          <div class="btn-row">
+            <a href="https://reports.flagshipgrowth.com/stogie-golf-weekly/" class="btn btn-weekly" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly Report
+            </a>
+          </div>
+          <div class="approve-row btn-row">
+            <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve btn-approve-full" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>Approve Report
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- 18. Super Mush -->
-      <div class="brand-row">
-        <div>
-          <div class="brand-name">Super Mush</div>
-          <div class="brand-meta">Weekly Report</div>
+      <div class="brand-card" data-brand="super mush supermush" data-am="ronric manguiat">
+        <div class="card-top">
+          <div class="card-avatar">SM</div>
+          <div class="card-info">
+            <div class="card-name">Super Mush</div>
+            <div class="card-am"><span class="card-am-dot"></span>Ronric Manguiat</div>
+          </div>
         </div>
-        <div class="btn-group">
-          <a href="https://reports.flagshipgrowth.com/super-mush-weekly/" class="btn btn-weekly">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly Report
-          </a>
-          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
-            Approve
-          </a>
+        <div class="card-body">
+          <div class="btn-row">
+            <a href="https://reports.flagshipgrowth.com/super-mush-weekly/" class="btn btn-weekly" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly Report
+            </a>
+          </div>
+          <div class="approve-row btn-row">
+            <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve btn-approve-full" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>Approve Report
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- 19. Tubr Storage -->
-      <div class="brand-row">
-        <div>
-          <div class="brand-name">Tubr Storage</div>
-          <div class="brand-meta">Weekly Report</div>
+      <div class="brand-card" data-brand="tubr storage" data-am="ronric manguiat">
+        <div class="card-top">
+          <div class="card-avatar">TS</div>
+          <div class="card-info">
+            <div class="card-name">Tubr Storage</div>
+            <div class="card-am"><span class="card-am-dot"></span>Ronric Manguiat</div>
+          </div>
         </div>
-        <div class="btn-group">
-          <a href="https://reports.flagshipgrowth.com/tubr-storage-weekly/" class="btn btn-weekly">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly Report
-          </a>
-          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
-            Approve
-          </a>
+        <div class="card-body">
+          <div class="btn-row">
+            <a href="https://reports.flagshipgrowth.com/tubr-storage-weekly/" class="btn btn-weekly" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly Report
+            </a>
+          </div>
+          <div class="approve-row btn-row">
+            <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve btn-approve-full" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>Approve Report
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- 20. Vivandi -->
-      <div class="brand-row">
-        <div>
-          <div class="brand-name">Vivandi</div>
-          <div class="brand-meta">Weekly Report</div>
+      <div class="brand-card" data-brand="vivandi" data-am="ronric manguiat">
+        <div class="card-top">
+          <div class="card-avatar">VI</div>
+          <div class="card-info">
+            <div class="card-name">Vivandi</div>
+            <div class="card-am"><span class="card-am-dot"></span>Ronric Manguiat</div>
+          </div>
         </div>
-        <div class="btn-group">
-          <a href="https://reports.flagshipgrowth.com/vivandi-weekly/" class="btn btn-weekly">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly Report
-          </a>
-          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
-            Approve
-          </a>
+        <div class="card-body">
+          <div class="btn-row">
+            <a href="https://reports.flagshipgrowth.com/vivandi-weekly/" class="btn btn-weekly" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly Report
+            </a>
+          </div>
+          <div class="approve-row btn-row">
+            <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve btn-approve-full" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>Approve Report
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- 21. Wink -->
-      <div class="brand-row">
-        <div>
-          <div class="brand-name">Wink</div>
-          <div class="brand-meta">Weekly Report</div>
+      <div class="brand-card" data-brand="wink" data-am="ronric manguiat">
+        <div class="card-top">
+          <div class="card-avatar">WK</div>
+          <div class="card-info">
+            <div class="card-name">Wink</div>
+            <div class="card-am"><span class="card-am-dot"></span>Ronric Manguiat</div>
+          </div>
         </div>
-        <div class="btn-group">
-          <a href="https://reports.flagshipgrowth.com/wink-weekly/" class="btn btn-weekly">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly Report
-          </a>
-          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
-            Approve
-          </a>
+        <div class="card-body">
+          <div class="btn-row">
+            <a href="https://reports.flagshipgrowth.com/wink-weekly/" class="btn btn-weekly" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly Report
+            </a>
+          </div>
+          <div class="approve-row btn-row">
+            <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve btn-approve-full" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>Approve Report
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- 22. FSG Portfolio -->
-      <div class="brand-row">
-        <div>
-          <div class="brand-name">FSG Portfolio</div>
-          <div class="brand-meta">Weekly Report — All Brands</div>
+      <div class="brand-card" data-brand="fsg portfolio flagship growth" data-am="ronric manguiat">
+        <div class="card-top">
+          <div class="card-avatar">FSG</div>
+          <div class="card-info">
+            <div class="card-name">FSG Portfolio</div>
+            <div class="card-am"><span class="card-am-dot"></span>Ronric Manguiat</div>
+          </div>
         </div>
-        <div class="btn-group">
-          <a href="https://reports.flagshipgrowth.com/fsg-weekly/" class="btn btn-weekly">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
-            Weekly Report
-          </a>
-          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
-            Approve
-          </a>
+        <div class="card-body">
+          <div class="btn-row">
+            <a href="https://reports.flagshipgrowth.com/fsg-weekly/" class="btn btn-weekly" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>Weekly Report
+            </a>
+          </div>
+          <div class="approve-row btn-row">
+            <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve btn-approve-full" target="_blank">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>Approve Report
+            </a>
+          </div>
         </div>
       </div>
 
-    </div><!-- /card -->
+      <!-- No results -->
+      <div class="no-results" id="no-results">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+        </svg>
+        <div>No brands match "<span id="no-results-term"></span>"</div>
+      </div>
 
-    <div class="footer">FSG Brand Reports Admin &nbsp;·&nbsp; Flagship Growth &nbsp;·&nbsp; Confidential</div>
+    </div><!-- /brand-grid -->
 
+    <div class="footer">Flagship Growth &nbsp;·&nbsp; Brand Reports Admin &nbsp;·&nbsp; Confidential</div>
   </div>
+
+  <script>
+    (function () {
+      var input   = document.getElementById('search');
+      var countEl = document.getElementById('count');
+      var noRes   = document.getElementById('no-results');
+      var noTerm  = document.getElementById('no-results-term');
+      var cards   = Array.from(document.querySelectorAll('.brand-card'));
+      var total   = cards.length;
+
+      input.addEventListener('input', function () {
+        var q = this.value.trim().toLowerCase();
+        var visible = 0;
+
+        cards.forEach(function (card) {
+          var brand = card.getAttribute('data-brand') || '';
+          var am    = card.getAttribute('data-am') || '';
+          var match = !q || brand.indexOf(q) !== -1 || am.indexOf(q) !== -1;
+          card.classList.toggle('hidden', !match);
+          if (match) visible++;
+        });
+
+        countEl.textContent = q ? visible + ' of ' + total : total + ' brands';
+        noTerm.textContent  = this.value.trim();
+        noRes.style.display = (visible === 0 && q) ? 'block' : 'none';
+      });
+    })();
+  </script>
+
 </body>
 </html>
