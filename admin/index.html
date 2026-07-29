@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>FSG Admin — Brand Reports</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap");
+    :root {
+      --red: #8B1515;
+      --navy: #0F172A;
+      --muted: #64748B;
+      --subtle: #94A3B8;
+      --border: #E2E8F0;
+      --bg: #F0EDE6;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--navy);
+      font-family: "League Spartan", "Quicksand", sans-serif;
+      font-size: 13px;
+      line-height: 1.5;
+      padding: 32px 20px 48px;
+    }
+    .page { max-width: 900px; margin: 0 auto; }
+
+    /* Header */
+    .header {
+      background: #fff;
+      border-radius: 12px;
+      padding: 22px 32px 18px;
+      border-bottom: 2px solid var(--navy);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    }
+    .header-logo { height: 56px; width: auto; display: block; }
+    .header-right { text-align: right; }
+    .header-title { font-size: 22px; font-weight: 800; color: var(--navy); letter-spacing: -0.03em; line-height: 1; }
+    .header-title span { color: var(--red); }
+    .header-sub { font-size: 10px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
+
+    /* Back nav */
+    .back-nav {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      margin-bottom: 20px;
+      transition: color 0.15s;
+    }
+    .back-nav:hover { color: var(--red); }
+    .back-nav svg { width: 14px; height: 14px; }
+
+    /* Brand table card */
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    }
+    .card-header {
+      padding: 16px 24px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .bar-accent { width: 16px; height: 3px; background: var(--red); border-radius: 2px; }
+    .section-title { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--navy); }
+    .brand-count { margin-left: auto; font-size: 10px; color: var(--subtle); font-weight: 600; }
+
+    /* Brand rows */
+    .brand-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 24px;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.1s;
+    }
+    .brand-row:last-child { border-bottom: none; }
+    .brand-row:hover { background: #FAFAF8; }
+    .brand-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--navy);
+      letter-spacing: -0.01em;
+    }
+    .brand-meta {
+      font-size: 10px;
+      color: var(--subtle);
+      font-weight: 500;
+      margin-top: 2px;
+    }
+
+    /* Buttons */
+    .btn-group { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: opacity 0.15s, transform 0.1s;
+    }
+    .btn:hover { opacity: 0.82; transform: translateY(-1px); }
+    .btn-weekly {
+      background: var(--navy);
+      color: #fff;
+    }
+    .btn-weekly-alt {
+      background: #1E3A5F;
+      color: #fff;
+    }
+    .btn-inventory {
+      background: #0F766E;
+      color: #fff;
+    }
+    .btn-approve {
+      background: var(--red);
+      color: #fff;
+    }
+    .btn svg { width: 11px; height: 11px; flex-shrink: 0; }
+
+    /* Footer */
+    .footer {
+      margin-top: 24px;
+      text-align: center;
+      font-size: 10px;
+      color: var(--subtle);
+      font-weight: 500;
+    }
+
+    @media (max-width: 640px) {
+      body { padding: 16px 12px 32px; }
+      .header { flex-direction: column; align-items: flex-start; gap: 10px; padding: 16px; }
+      .header-right { text-align: left; }
+      .brand-row { grid-template-columns: 1fr; gap: 10px; padding: 14px 16px; }
+      .btn-group { justify-content: flex-start; }
+      .card-header { padding: 14px 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <div class="header">
+      <img src="https://reports.flagshipgrowth.com/assets/fsg-logo.png" alt="Flagship Growth" class="header-logo">
+      <div class="header-right">
+        <div class="header-title">Brand <span>Reports</span> Admin</div>
+        <div class="header-sub">Flagship Growth · Internal</div>
+      </div>
+    </div>
+
+    <a href="https://reports.flagshipgrowth.com/" class="back-nav">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M10 12L6 8l4-4"/>
+      </svg>
+      Back to Reports Hub
+    </a>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="bar-accent"></div>
+        <div class="section-title">All Brands</div>
+        <div class="brand-count">22 brands</div>
+      </div>
+
+      <!-- 1. Addasound -->
+      <div class="brand-row">
+        <div>
+          <div class="brand-name">Addasound</div>
+          <div class="brand-meta">Weekly Report</div>
+        </div>
+        <div class="btn-group">
+          <a href="https://reports.flagshipgrowth.com/addasound-weekly/" class="btn btn-weekly">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly Report
+          </a>
+          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
+            Approve
+          </a>
+        </div>
+      </div>
+
+      <!-- 2. Aura House -->
+      <div class="brand-row">
+        <div>
+          <div class="brand-name">Aura House</div>
+          <div class="brand-meta">Weekly Report</div>
+        </div>
+        <div class="btn-group">
+          <a href="https://reports.flagshipgrowth.com/aura-house-weekly/" class="btn btn-weekly">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly Report
+          </a>
+          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
+            Approve
+          </a>
+        </div>
+      </div>
+
+      <!-- 3. Dormeo -->
+      <div class="brand-row">
+        <div>
+          <div class="brand-name">Dormeo</div>
+          <div class="brand-meta">Weekly Reports — US · Canada</div>
+        </div>
+        <div class="btn-group">
+          <a href="https://reports.flagshipgrowth.com/dormeo-weekly/" class="btn btn-weekly">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly (US)
+          </a>
+          <a href="https://reports.flagshipgrowth.com/dormeo-canada-weekly/" class="btn btn-weekly-alt">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly (CA)
+          </a>
+          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
+            Approve
+          </a>
+        </div>
+      </div>
+
+      <!-- 4. Good Bacteria -->
+      <div class="brand-row">
+        <div>
+          <div class="brand-name">Good Bacteria</div>
+          <div class="brand-meta">Weekly Report</div>
+        </div>
+        <div class="btn-group">
+          <a href="https://reports.flagshipgrowth.com/good-bacteria-weekly/" class="btn btn-weekly">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly Report
+          </a>
+          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
+            Approve
+          </a>
+        </div>
+      </div>
+
+      <!-- 5. Hapad -->
+      <div class="brand-row">
+        <div>
+          <div class="brand-name">Hapad</div>
+          <div class="brand-meta">Weekly Reports — US · Canada</div>
+        </div>
+        <div class="btn-group">
+          <a href="https://reports.flagshipgrowth.com/hapad-weekly/" class="btn btn-weekly">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly (US)
+          </a>
+          <a href="https://reports.flagshipgrowth.com/hapad-canada-weekly/" class="btn btn-weekly-alt">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly (CA)
+          </a>
+          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
+            Approve
+          </a>
+        </div>
+      </div>
+
+      <!-- 6. Heavenly Bodies -->
+      <div class="brand-row">
+        <div>
+          <div class="brand-name">Heavenly Bodies</div>
+          <div class="brand-meta">Weekly Report</div>
+        </div>
+        <div class="btn-group">
+          <a href="https://reports.flagshipgrowth.com/heavenly-bodies-weekly/" class="btn btn-weekly">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly Report
+          </a>
+          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
+            Approve
+          </a>
+        </div>
+      </div>
+
+      <!-- 7. Lewie -->
+      <div class="brand-row">
+        <div>
+          <div class="brand-name">Lewie</div>
+          <div class="brand-meta">Weekly Report</div>
+        </div>
+        <div class="btn-group">
+          <a href="https://reports.flagshipgrowth.com/lewie-weekly/" class="btn btn-weekly">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly Report
+          </a>
+          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
+            Approve
+          </a>
+        </div>
+      </div>
+
+      <!-- 8. MAC Energy -->
+      <div class="brand-row">
+        <div>
+          <div class="brand-name">MAC Energy</div>
+          <div class="brand-meta">Weekly Report · Inventory</div>
+        </div>
+        <div class="btn-group">
+          <a href="https://reports.flagshipgrowth.com/mac-energy-weekly/" class="btn btn-weekly">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly Report
+          </a>
+          <a href="https://reports.flagshipgrowth.com/mac-energy-inventory/" class="btn btn-inventory">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h10M3 8h10M3 12h6"/><circle cx="12" cy="12" r="2.5"/><path d="M12 10.5v1.5l1 1"/></svg>
+            Inventory
+          </a>
+          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
+            Approve
+          </a>
+        </div>
+      </div>
+
+      <!-- 9. Nature's Answer -->
+      <div class="brand-row">
+        <div>
+          <div class="brand-name">Nature's Answer</div>
+          <div class="brand-meta">Weekly Report</div>
+        </div>
+        <div class="btn-group">
+          <a href="https://reports.flagshipgrowth.com/natures-answer-weekly/" class="btn btn-weekly">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly Report
+          </a>
+          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
+            Approve
+          </a>
+        </div>
+      </div>
+
+      <!-- 10. Opopop -->
+      <div class="brand-row">
+        <div>
+          <div class="brand-name">Opopop</div>
+          <div class="brand-meta">Weekly Reports — US · Walmart</div>
+        </div>
+        <div class="btn-group">
+          <a href="https://reports.flagshipgrowth.com/opopop-weekly/" class="btn btn-weekly">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly (US)
+          </a>
+          <a href="https://reports.flagshipgrowth.com/opopop-walmart-weekly/" class="btn btn-weekly-alt">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly (WMT)
+          </a>
+          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
+            Approve
+          </a>
+        </div>
+      </div>
+
+      <!-- 11. Ramen Bae -->
+      <div class="brand-row">
+        <div>
+          <div class="brand-name">Ramen Bae</div>
+          <div class="brand-meta">Weekly Report</div>
+        </div>
+        <div class="btn-group">
+          <a href="https://reports.flagshipgrowth.com/ramen-bae-weekly/" class="btn btn-weekly">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly Report
+          </a>
+          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
+            Approve
+          </a>
+        </div>
+      </div>
+
+      <!-- 12. Rationale Brewing -->
+      <div class="brand-row">
+        <div>
+          <div class="brand-name">Rationale Brewing</div>
+          <div class="brand-meta">Weekly Reports — Amazon · Walmart</div>
+        </div>
+        <div class="btn-group">
+          <a href="https://reports.flagshipgrowth.com/rationale-brewing-weekly/" class="btn btn-weekly">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly (AMZ)
+          </a>
+          <a href="https://reports.flagshipgrowth.com/rationale-walmart-weekly/" class="btn btn-weekly-alt">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly (WMT)
+          </a>
+          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
+            Approve
+          </a>
+        </div>
+      </div>
+
+      <!-- 13. Reshoev8er -->
+      <div class="brand-row">
+        <div>
+          <div class="brand-name">Reshoev8er</div>
+          <div class="brand-meta">Weekly Reports — US · Canada · UK</div>
+        </div>
+        <div class="btn-group">
+          <a href="https://reports.flagshipgrowth.com/reshoev8er-weekly/" class="btn btn-weekly">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly (US)
+          </a>
+          <a href="https://reports.flagshipgrowth.com/reshoev8er-canada-weekly/" class="btn btn-weekly-alt">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly (CA)
+          </a>
+          <a href="https://reports.flagshipgrowth.com/reshoev8er-uk-weekly/" class="btn btn-weekly-alt">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly (UK)
+          </a>
+          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
+            Approve
+          </a>
+        </div>
+      </div>
+
+      <!-- 14. Sherpa Brands -->
+      <div class="brand-row">
+        <div>
+          <div class="brand-name">Sherpa Brands</div>
+          <div class="brand-meta">Weekly Report</div>
+        </div>
+        <div class="btn-group">
+          <a href="https://reports.flagshipgrowth.com/sherpa-brands-weekly/" class="btn btn-weekly">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly Report
+          </a>
+          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
+            Approve
+          </a>
+        </div>
+      </div>
+
+      <!-- 15. Smood Sweets -->
+      <div class="brand-row">
+        <div>
+          <div class="brand-name">Smood Sweets</div>
+          <div class="brand-meta">Weekly Report</div>
+        </div>
+        <div class="btn-group">
+          <a href="https://reports.flagshipgrowth.com/smood-sweets-weekly/" class="btn btn-weekly">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly Report
+          </a>
+          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
+            Approve
+          </a>
+        </div>
+      </div>
+
+      <!-- 16. Spritzi -->
+      <div class="brand-row">
+        <div>
+          <div class="brand-name">Spritzi</div>
+          <div class="brand-meta">Weekly Report</div>
+        </div>
+        <div class="btn-group">
+          <a href="https://reports.flagshipgrowth.com/spritzi-weekly/" class="btn btn-weekly">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly Report
+          </a>
+          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
+            Approve
+          </a>
+        </div>
+      </div>
+
+      <!-- 17. Stogie Golf -->
+      <div class="brand-row">
+        <div>
+          <div class="brand-name">Stogie Golf</div>
+          <div class="brand-meta">Weekly Report</div>
+        </div>
+        <div class="btn-group">
+          <a href="https://reports.flagshipgrowth.com/stogie-golf-weekly/" class="btn btn-weekly">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly Report
+          </a>
+          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
+            Approve
+          </a>
+        </div>
+      </div>
+
+      <!-- 18. Super Mush -->
+      <div class="brand-row">
+        <div>
+          <div class="brand-name">Super Mush</div>
+          <div class="brand-meta">Weekly Report</div>
+        </div>
+        <div class="btn-group">
+          <a href="https://reports.flagshipgrowth.com/super-mush-weekly/" class="btn btn-weekly">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly Report
+          </a>
+          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
+            Approve
+          </a>
+        </div>
+      </div>
+
+      <!-- 19. Tubr Storage -->
+      <div class="brand-row">
+        <div>
+          <div class="brand-name">Tubr Storage</div>
+          <div class="brand-meta">Weekly Report</div>
+        </div>
+        <div class="btn-group">
+          <a href="https://reports.flagshipgrowth.com/tubr-storage-weekly/" class="btn btn-weekly">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly Report
+          </a>
+          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
+            Approve
+          </a>
+        </div>
+      </div>
+
+      <!-- 20. Vivandi -->
+      <div class="brand-row">
+        <div>
+          <div class="brand-name">Vivandi</div>
+          <div class="brand-meta">Weekly Report</div>
+        </div>
+        <div class="btn-group">
+          <a href="https://reports.flagshipgrowth.com/vivandi-weekly/" class="btn btn-weekly">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly Report
+          </a>
+          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
+            Approve
+          </a>
+        </div>
+      </div>
+
+      <!-- 21. Wink -->
+      <div class="brand-row">
+        <div>
+          <div class="brand-name">Wink</div>
+          <div class="brand-meta">Weekly Report</div>
+        </div>
+        <div class="btn-group">
+          <a href="https://reports.flagshipgrowth.com/wink-weekly/" class="btn btn-weekly">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly Report
+          </a>
+          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
+            Approve
+          </a>
+        </div>
+      </div>
+
+      <!-- 22. FSG Portfolio -->
+      <div class="brand-row">
+        <div>
+          <div class="brand-name">FSG Portfolio</div>
+          <div class="brand-meta">Weekly Report — All Brands</div>
+        </div>
+        <div class="btn-group">
+          <a href="https://reports.flagshipgrowth.com/fsg-weekly/" class="btn btn-weekly">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M5 7h6M5 10h4"/></svg>
+            Weekly Report
+          </a>
+          <a href="https://reports.flagshipgrowth.com/approval/" class="btn btn-approve">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4L6 11l-3-3"/></svg>
+            Approve
+          </a>
+        </div>
+      </div>
+
+    </div><!-- /card -->
+
+    <div class="footer">FSG Brand Reports Admin &nbsp;·&nbsp; Flagship Growth &nbsp;·&nbsp; Confidential</div>
+
+  </div>
+</body>
+</html>
