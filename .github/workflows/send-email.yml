@@ -1,0 +1,41 @@
+name: FSG Send Client Email
+
+on:
+  workflow_dispatch:
+    inputs:
+      brand:
+        description: 'Brand name (e.g. Dormeo)'
+        required: true
+        type: string
+      week:
+        description: 'Week label (e.g. WK31)'
+        required: true
+        type: string
+
+jobs:
+  send-email:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Access Token
+        id: token
+        run: |
+          RESPONSE=$(curl -s -X POST https://oauth2.googleapis.com/token \
+            -d "client_id=${{ secrets.GOOGLE_CLIENT_ID }}" \
+            -d "client_secret=${{ secrets.GOOGLE_CLIENT_SECRET }}" \
+            -d "refresh_token=${{ secrets.GOOGLE_REFRESH_TOKEN }}" \
+            -d "grant_type=refresh_token")
+          ACCESS_TOKEN=$(echo $RESPONSE | python3 -c "import sys,json; print(json.load(sys.stdin)['access_token'])")
+          echo "access_token=$ACCESS_TOKEN" >> $GITHUB_OUTPUT
+
+      - name: Trigger Apps Script Send Email
+        run: |
+          curl -s -X POST \
+            "https://script.googleapis.com/v1/scripts/${{ secrets.APPS_SCRIPT_ID }}:run" \
+            -H "Authorization: Bearer ${{ steps.token.outputs.access_token }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "function": "sendEmailFromGitHub",
+              "parameters": ["${{ github.event.inputs.brand }}", "${{ github.event.inputs.week }}"],
+              "devMode": false
+            }'
+          echo "✅ Email trigger sent for ${{ github.event.inputs.brand }} ${{ github.event.inputs.week }}"
