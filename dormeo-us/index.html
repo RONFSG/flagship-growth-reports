@@ -11,8 +11,7 @@
 :root {
   --bg:#EFF2F8; --surface:#FFFFFF; --ink:#18243E; --muted:#5A6883; --line:#D9DFEE;
   --accent:#2651A0; --accent-soft:#E5EBF8;
-  --good:#1E7A4D; --bad:#9B2020; --warn:#7A5000;
-  --warn-bg:#FFF4D6; --crit-bg:#FDECEC;
+  --good:#1E7A4D; --good-bg:#E8F6EF; --bad:#9B2020; --bad-bg:#FDECEC; --warn:#7A5000; --warn-bg:#FFF4D6;
   --f-d:"Bricolage Grotesque","Avenir Next",system-ui,sans-serif;
   --f-b:"Hanken Grotesk","Helvetica Neue",system-ui,sans-serif;
   --f-m:"JetBrains Mono",ui-monospace,monospace;
@@ -20,13 +19,13 @@
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#0D1526; --surface:#131F38; --ink:#DDE4F5; --muted:#7D8FAD; --line:#223059;
   --accent:#6B8FD8; --accent-soft:#1A2D54;
-  --good:#45B07A; --bad:#E07070; --warn:#CFA040;
-  --warn-bg:#2A2008; --crit-bg:#2A1212; color-scheme:dark}}
+  --good:#45B07A; --good-bg:#0C2A1D; --bad:#E07070; --bad-bg:#2A1212; --warn:#CFA040; --warn-bg:#2A2008;
+  color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#0D1526; --surface:#131F38; --ink:#DDE4F5; --muted:#7D8FAD; --line:#223059;
   --accent:#6B8FD8; --accent-soft:#1A2D54;
-  --good:#45B07A; --bad:#E07070; --warn:#CFA040;
-  --warn-bg:#2A2008; --crit-bg:#2A1212; color-scheme:dark}
+  --good:#45B07A; --good-bg:#0C2A1D; --bad:#E07070; --bad-bg:#2A1212; --warn:#CFA040; --warn-bg:#2A2008;
+  color-scheme:dark}
 
 *,*::before,*::after{box-sizing:border-box}
 body{
@@ -46,8 +45,8 @@ header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:fle
 h1{font:700 clamp(22px,4vw,34px)/1.05 var(--f-d);margin:0;letter-spacing:-.02em}
 h2{font:700 17px/1 var(--f-d);margin:0;letter-spacing:-.01em}
 .meta{display:flex;gap:14px;flex-wrap:wrap;align-items:center;color:var(--muted);font-size:13px}
-.meta a{color:var(--accent);text-decoration:none}
-.meta a:hover{text-decoration:underline}
+.badge{display:inline-flex;align-items:center;gap:5px;padding:3px 9px;border-radius:20px;font:600 11px/1 var(--f-m);letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line);background:var(--surface);color:var(--muted)}
+.badge .dot{width:6px;height:6px;border-radius:50%;background:var(--good);display:inline-block}
 .mono{font-family:var(--f-m);font-variant-numeric:tabular-nums}
 
 .tabs{display:flex;overflow-x:auto;scrollbar-width:none;margin-bottom:-1px}
@@ -62,78 +61,63 @@ h2{font:700 17px/1 var(--f-d);margin:0;letter-spacing:-.01em}
 
 .panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px}
 .ph{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.ph-note{font-size:12px;color:var(--muted)}
 
 .kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
 @media(max-width:820px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.kpis6{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+@media(max-width:900px){.kpis6{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:520px){.kpis6{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .kpi{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px;display:grid;gap:5px;align-content:start}
+.kpi.accent{border-color:var(--accent-soft);background:var(--accent-soft)}
 .klabel{font:500 11px/1 var(--f-m);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .kval{font:700 28px/1 var(--f-d);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.kval-sm{font:700 22px/1 var(--f-d);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
 .ksub{font-size:12.5px;color:var(--muted)}
 .up{color:var(--good);font:600 12.5px var(--f-m)}
 .dn{color:var(--bad);font:600 12.5px var(--f-m)}
+.neu{color:var(--muted);font:600 12.5px var(--f-m)}
 
 .alerts{display:grid;gap:8px}
-.alert{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px;align-items:center;padding:10px 14px;border-radius:8px;font-size:13.5px}
-.alert.crit{background:var(--crit-bg)}
+.alert{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px;align-items:start;padding:10px 14px;border-radius:8px;font-size:13.5px}
+.alert.crit{background:var(--bad-bg)}
 .alert.warn{background:var(--warn-bg)}
-.atag{font:700 10px/1 var(--f-m);letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+.alert.good{background:var(--good-bg)}
+.atag{font:700 10px/1 var(--f-m);letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;margin-top:3px}
 .alert.crit .atag{color:var(--bad)}
 .alert.warn .atag{color:var(--warn)}
+.alert.good .atag{color:var(--good)}
 
-.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
-@media(max-width:820px){.two{grid-template-columns:1fr}}
+.tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -2px}
+table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:580px}
+thead th{font:600 11px/1 var(--f-m);letter-spacing:.07em;text-transform:uppercase;color:var(--muted);text-align:right;padding:0 8px 10px;white-space:nowrap}
+thead th:first-child{text-align:left;padding-left:0}
+tbody td{padding:9px 8px;border-top:1px solid var(--line);text-align:right;font-variant-numeric:tabular-nums}
+tbody td:first-child{text-align:left;padding-left:0}
+tbody tr:hover td{background:var(--accent-soft)}
+.divrow td{background:var(--bg)!important;font:600 10px/1 var(--f-m);letter-spacing:.09em;text-transform:uppercase;color:var(--muted);padding:5px 8px 5px 0;border-top:none}
+.chip{display:inline-flex;align-items:center;padding:2px 8px;border-radius:20px;font:600 11px/1 var(--f-m);white-space:nowrap}
+.chip.oos{background:var(--bad-bg);color:var(--bad)}
+.chip.crit{background:var(--warn-bg);color:var(--warn)}
+.chip.warn{background:#EEF0FF;color:#3B3BAA}
+.chip.ok{background:var(--good-bg);color:var(--good)}
+.flag{display:inline-flex;align-items:center;padding:1px 6px;border-radius:4px;font:600 10px/1 var(--f-m);margin-left:4px}
+.flag.unf{background:var(--bad-bg);color:var(--bad)}
 
-.prow{display:grid;grid-template-columns:110px minmax(0,1fr) 110px;gap:10px;align-items:center;font-size:14px;margin:4px 0}
-.pbar{height:10px;background:var(--bg);border-radius:5px;overflow:hidden}
-.pbar span{display:block;height:100%;background:var(--accent);border-radius:5px}
-.pv{font:500 12px var(--f-m);text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
+/* Week trend chart */
+.spark{display:grid;gap:8px}
+.spark-bars{display:flex;align-items:flex-end;gap:6px;height:90px}
+.bar-grp{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px}
+.bar{width:100%;border-radius:4px 4px 0 0;background:var(--accent);min-height:3px;transition:height .2s}
+.bar.partial{opacity:.55;background:repeating-linear-gradient(135deg,var(--accent) 0 4px,var(--accent-soft) 4px 8px)}
+.bar.prime{background:linear-gradient(to top,var(--accent),#5B8BE0)}
+.blabel{font:500 11px/1 var(--f-m);color:var(--muted);letter-spacing:.04em}
+.bval{font:600 13px/1 var(--f-d);font-variant-numeric:tabular-nums}
 
-.tbl{overflow-x:auto}
-table.fin{border-collapse:collapse;width:100%;font-size:13px;font-variant-numeric:tabular-nums;min-width:640px}
-table.fin th,table.fin td{padding:8px 10px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
-table.fin th:first-child,table.fin td:first-child{text-align:left;position:sticky;left:0;background:var(--surface)}
-table.fin thead th{font:500 10.5px var(--f-m);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-bottom:2px solid var(--line)}
-table.fin tr.tot td{font-weight:700;border-top:2px solid var(--ink)}
-table.fin td.ok{color:var(--good)}
-table.fin td.hot{color:var(--bad);font-weight:600}
-table.fin td.dn2{color:var(--bad)}
-table.fin td.wkbreak{background:var(--bg);font:600 11px var(--f-m);letter-spacing:.06em;text-transform:uppercase;color:var(--accent);padding-top:14px;border-bottom:2px solid var(--accent);text-align:left}
-
-.wkl{display:inline-block;min-width:36px;text-align:center;padding:2px 8px;border-radius:999px;font:600 12px var(--f-m);background:var(--accent-soft);color:var(--accent)}
-.wkl.warn{background:var(--warn-bg);color:var(--warn)}
-.wkl.crit,.wkl.oos{background:var(--crit-bg);color:var(--bad)}
-
-.prow2{display:grid;grid-template-columns:20px minmax(0,1fr) 90px 50px 80px 60px;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);font-size:13.5px}
-.prow2:last-child{border-bottom:0}
-.prow2.phdr{font:500 10.5px/1 var(--f-m);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding-bottom:8px;border-bottom:2px solid var(--line)}
-@media(max-width:680px){.prow2{grid-template-columns:20px minmax(0,1fr) 90px}.prow2 .hsm{display:none}}
-.rnk{font:600 12px var(--f-m);color:var(--muted)}
-.pname{font-weight:600;line-height:1.3}
-.pasin{display:block;font:11px var(--f-m);color:var(--muted);margin-top:2px}
-.psales{font:600 14px var(--f-d);font-variant-numeric:tabular-nums;text-align:right;line-height:1.2}
-
-.mixbar{height:12px;border-radius:6px;overflow:hidden;display:flex;gap:2px}
-.mleg{display:flex;gap:14px;font-size:12.5px}
-.mleg span{display:flex;gap:6px;align-items:center}
-.mdot{width:10px;height:10px;border-radius:2px;display:inline-block}
-
-.recs{display:grid;gap:8px}
-.rec{display:grid;grid-template-columns:auto minmax(0,1fr) auto auto;gap:12px;align-items:start;padding:12px 14px;border:1px solid var(--line);border-radius:8px;font-size:13.5px}
-@media(max-width:640px){.rec{grid-template-columns:auto minmax(0,1fr)}.rec .rowner,.rec .rtime{display:none}}
-.rarea{font:700 10px/1 var(--f-m);letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:4px;background:var(--accent-soft);color:var(--accent);white-space:nowrap}
-.rarea.w{background:var(--warn-bg);color:var(--warn)}
-.rarea.c{background:var(--crit-bg);color:var(--bad)}
-.rowner{font:500 12px var(--f-m);color:var(--muted);white-space:nowrap}
-.rtime{font:600 11px var(--f-m);color:var(--accent);white-space:nowrap}
-
-.note{font-size:12.5px;color:var(--muted);margin-top:12px;line-height:1.5}
-.note b{color:var(--ink)}
-.amnotes{border:1px solid var(--line);border-radius:12px;overflow:hidden}
-.amnotes summary{cursor:pointer;font:600 15px var(--f-b);padding:16px 20px;list-style:none;display:flex;gap:8px;align-items:center;background:var(--surface)}
-.amnotes summary::-webkit-details-marker{display:none}
-.amnotes[open] summary{border-bottom:1px solid var(--line)}
-.aminner{padding:14px 20px;font-size:13.5px;line-height:1.6;color:var(--muted);font-style:italic;background:var(--surface)}
-footer{font-size:12px;color:var(--muted);padding-block:16px 40px;max-width:1200px;margin:0 auto}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:700px){.two-col{grid-template-columns:1fr}}
+.sns-empty{text-align:center;padding:32px 0;color:var(--muted);font-size:14px}
+.sns-empty strong{display:block;font-size:20px;margin-bottom:6px;color:var(--ink)}
 </style>
 </head>
 <body>
@@ -142,270 +126,583 @@ footer{font-size:12px;color:var(--muted);padding-block:16px 40px;max-width:1200p
 <div class="inner">
   <header>
     <div class="hd">
-      <span class="eyebrow">Amazon · Dormeo US · 2026</span>
+      <span class="eyebrow">FSG Brand Intelligence</span>
       <h1>Dormeo US</h1>
     </div>
     <div class="meta">
-      <span>Snapshot <span class="mono">Oct 19, 2026</span></span>
-      <span>WK42 · Oct 12–18</span>
-      <a href="https://docs.google.com/spreadsheets/d/1sGWhfSYwBfUFtjFvlPFQP8XM_UKQrbQibQlS5kMYY0o/edit" target="_blank" rel="noopener">Master Spec Sheet ↗</a>
+      <span class="badge"><span class="dot"></span>Sellerise Live</span>
+      <span>Updated Oct 21, 2026</span>
     </div>
   </header>
   <nav class="tabs" role="tablist">
-    <button class="tab" role="tab" data-v="overview" aria-selected="true">Overview</button>
-    <button class="tab" role="tab" data-v="sales"    aria-selected="false">Sales</button>
-    <button class="tab" role="tab" data-v="ads"      aria-selected="false">Daily Ads</button>
-    <button class="tab" role="tab" data-v="inventory" aria-selected="false">Inventory</button>
+    <button class="tab" role="tab" aria-selected="true" data-tab="overview">Overview</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="sales">Sales</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="ads">Daily Ads</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="inventory">Inventory</button>
   </nav>
 </div>
 </div>
 
 <div class="wrap">
 
-<!-- OVERVIEW -->
-<div class="view on" id="v-overview">
-  <div class="alerts">
-    <div class="alert crit"><span class="atag">Critical</span><span><b>12 ASINs out of stock</b> — No inbound stock on 11 of them. Expedite replenishment to stop ongoing lost sales.</span></div>
-    <div class="alert crit"><span class="atag">Critical</span><span><b>#1 seller (Queen Topper · B07WFHMD2V)</b> has only 4 weeks of FBA stock at current sell-through. Priority reorder required.</span></div>
-    <div class="alert warn"><span class="atag">Watch</span><span><b>WK42 revenue ▼ 65.0% WoW</b> to $62,394 from WK41's $178,126. Post-Prime Day normalization across all five size variants.</span></div>
-    <div class="alert warn"><span class="atag">Watch</span><span><b>Oct 17–18 ROAS below 2.0×</b> — Sat at 1.97×, Sun at 2.81×. Reduce low-performing spend and reallocate to top converters.</span></div>
-  </div>
-  <div class="kpis">
-    <div class="kpi"><span class="klabel">WK42 Revenue</span><b class="kval">$62,394</b><span class="ksub"><span class="dn">▼ 65.0% WoW</span> · 119 units</span></div>
-    <div class="kpi"><span class="klabel">Ad Spend</span><b class="kval">$9,643</b><span class="ksub">ROAS <b>3.74×</b> · ACoS 26.8%</span></div>
-    <div class="kpi"><span class="klabel">TACoS (WK42)</span><b class="kval">15.5%</b><span class="ksub">MTD TACoS <b>9.3%</b> · ACoS MTD 20.2%</span></div>
-    <div class="kpi"><span class="klabel">October Pace</span><b class="kval">$505K</b><span class="ksub">MTD $293K · 58% of month done</span></div>
-  </div>
-  <div class="two">
-    <div class="panel">
-      <div class="ph"><h2>October pacing</h2><span class="eyebrow">Oct 1–18 · 18 of 31 days</span></div>
-      <div style="display:grid;gap:14px">
-        <div>
-          <div class="prow"><span style="font-size:13.5px;font-weight:600">Revenue</span><div class="pbar"><span style="width:58%"></span></div><span class="pv">$293K → $505K</span></div>
-          <div class="prow"><span style="font-size:13.5px;font-weight:600">Ad Spend</span><div class="pbar"><span style="width:58%"></span></div><span class="pv">$27K → $47K</span></div>
-          <div class="prow"><span style="font-size:13.5px;font-weight:600">TACoS</span><div class="pbar"><span style="width:100%;background:var(--good)"></span></div><span class="pv" style="color:var(--good)">9.3% ✓</span></div>
-        </div>
-        <p class="note" style="margin-top:0"><b>Note:</b> WK41 included Prime Day (Oct 6–7) which drove $178K that week. WK42 pace reflects normalized demand and is not a structural decline.</p>
+<!-- ═══════════════════════════════ OVERVIEW ════════════════════════════════ -->
+<div class="view on" id="tab-overview" role="tabpanel">
+
+  <div class="panel">
+    <div class="ph">
+      <h2>WK42 Performance <span style="font-weight:400;font-size:14px;color:var(--muted)">Oct 11–17</span></h2>
+      <span class="ph-note">vs WK41 (Prime Event, Oct 4–10)</span>
+    </div>
+    <div class="kpis">
+      <div class="kpi accent">
+        <span class="klabel">Revenue</span>
+        <span class="kval">$79.1K</span>
+        <span class="ksub"><span class="dn">▼ 56.7%</span> vs $182.5K Prime wk</span>
+      </div>
+      <div class="kpi">
+        <span class="klabel">PPC Spend</span>
+        <span class="kval">$9,872</span>
+        <span class="ksub"><span class="dn">▼ 16.8%</span> vs $11,871</span>
+      </div>
+      <div class="kpi">
+        <span class="klabel">ROAS</span>
+        <span class="kval">4.37×</span>
+        <span class="ksub"><span class="dn">▼</span> vs 6.82× Prime wk</span>
+      </div>
+      <div class="kpi">
+        <span class="klabel">ACoS</span>
+        <span class="kval">22.9%</span>
+        <span class="ksub"><span class="dn">▲ +8.2pp</span> vs 14.7% Prime wk</span>
+      </div>
+      <div class="kpi">
+        <span class="klabel">TACoS</span>
+        <span class="kval">12.5%</span>
+        <span class="ksub"><span class="dn">▲ +6.0pp</span> vs 6.5% Prime wk</span>
+      </div>
+      <div class="kpi">
+        <span class="klabel">Units</span>
+        <span class="kval">226</span>
+        <span class="ksub"><span class="dn">▼ 59.1%</span> vs 553 Prime wk</span>
+      </div>
+      <div class="kpi">
+        <span class="klabel">Net Profit</span>
+        <span class="kval">$36.3K</span>
+        <span class="ksub"><span class="dn">▼</span> vs $105.7K Prime wk</span>
+      </div>
+      <div class="kpi">
+        <span class="klabel">Margin</span>
+        <span class="kval">45.9%</span>
+        <span class="ksub"><span class="dn">▼ 12pp</span> vs 57.9% Prime wk</span>
       </div>
     </div>
+  </div>
+
+  <div class="two-col">
     <div class="panel">
-      <div class="ph"><h2>Revenue mix — WK42</h2></div>
-      <div style="display:grid;gap:14px">
-        <div style="display:flex;gap:20px;align-items:flex-start">
-          <div>
-            <div class="eyebrow" style="margin-bottom:6px">Organic</div>
-            <div style="font:700 24px/1 var(--f-d);font-variant-numeric:tabular-nums">$26,365</div>
-            <div style="font-size:13px;color:var(--muted);margin-top:4px"><span class="dn">▼ 75.7% WoW</span> · 42.3%</div>
-          </div>
-          <div style="border-left:1px solid var(--line);padding-left:20px">
-            <div class="eyebrow" style="margin-bottom:6px">Paid</div>
-            <div style="font:700 24px/1 var(--f-d);font-variant-numeric:tabular-nums">$36,029</div>
-            <div style="font-size:13px;color:var(--muted);margin-top:4px"><span class="dn">▼ 48.1% WoW</span> · 57.7%</div>
-          </div>
+      <div class="ph"><h2>WK43 In Progress</h2><span class="ph-note">Oct 18–21 (4 days)</span></div>
+      <div class="kpis" style="grid-template-columns:repeat(2,1fr)">
+        <div class="kpi">
+          <span class="klabel">Revenue</span>
+          <span class="kval">$35.3K</span>
+          <span class="ksub">~$8.8K/day avg</span>
         </div>
-        <div class="mixbar"><div style="flex:42.3;background:var(--good);border-radius:6px 0 0 6px"></div><div style="flex:57.7;background:var(--accent);border-radius:0 6px 6px 0"></div></div>
-        <div class="mleg"><span><span class="mdot" style="background:var(--good)"></span>Organic 42.3%</span><span><span class="mdot" style="background:var(--accent)"></span>Paid 57.7%</span></div>
-        <p class="note" style="margin-top:0">Paid share elevated post-Prime. Healthy ROAS 3.74× shows spend is efficient — organic recovery is the key lever for WK43.</p>
+        <div class="kpi">
+          <span class="klabel">Units</span>
+          <span class="kval">106</span>
+          <span class="ksub">~26/day avg</span>
+        </div>
+        <div class="kpi">
+          <span class="klabel">ACoS</span>
+          <span class="kval">27.2%</span>
+          <span class="ksub"><span class="dn">Elevated</span> vs WK42</span>
+        </div>
+        <div class="kpi">
+          <span class="klabel">TACoS</span>
+          <span class="kval">10.4%</span>
+          <span class="ksub"><span class="neu">Improving</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="ph"><h2>Alerts</h2></div>
+      <div class="alerts">
+        <div class="alert crit">
+          <span class="atag">OOS</span>
+          <span><strong>Premium Queen Topper (B07WFHMD2V)</strong> — Out of stock. Top revenue ASIN ($180K/30d). 4 unfulfillable units. Rank recovery lag expected.</span>
+        </div>
+        <div class="alert crit">
+          <span class="atag">OOS</span>
+          <span><strong>RV Short Queen Topper (B08W4SLL9P)</strong> — Out of stock. Restore FBA availability immediately.</span>
+        </div>
+        <div class="alert warn">
+          <span class="atag">Low</span>
+          <span><strong>Cal King Octaspring (B07WGHBD5W)</strong> — Only 4 units / ~2 days supply. Restock urgently.</span>
+        </div>
+        <div class="alert warn">
+          <span class="atag">Waste</span>
+          <span><strong>STV Campaign (B07WFHMD2V)</strong> — $2,116 spend, 0 ad sales (Oct 7–20). Recommend pause or restructure.</span>
+        </div>
+        <div class="alert warn">
+          <span class="atag">ACoS</span>
+          <span><strong>SnowTek SP (B0GHYNPTM3)</strong> — 121% ACoS over last 14 days ($851 spend / $703 sales). Lower bids immediately.</span>
+        </div>
       </div>
     </div>
   </div>
+
+</div><!-- /overview -->
+
+<!-- ═══════════════════════════════ SALES ════════════════════════════════ -->
+<div class="view" id="tab-sales" role="tabpanel">
+
   <div class="panel">
-    <div class="ph"><h2>This week's recommendations</h2><span class="eyebrow">WK42 · Dormeo US</span></div>
-    <div class="recs">
-      <div class="rec"><span class="rarea w">Advertising</span><span>Reduce ad spend 20% on low-ROAS campaigns (Oct 17 at 1.97×); reallocate budget to Queen and King — highest CVR in the catalog.</span><span class="rowner">FSG</span><span class="rtime">This week</span></div>
-      <div class="rec"><span class="rarea w">Sales</span><span>Launch a flash promotion on slow-moving SKUs to recover momentum from the 65% WoW sales decline and accelerate sell-through.</span><span class="rowner">FSG</span><span class="rtime">This week</span></div>
-      <div class="rec"><span class="rarea c">Inventory</span><span>Expedite replenishment for 12 OOS ASINs. Queen Topper (B07WFHMD2V) — top revenue driver — has only 4 weeks of stock. Reorder immediately.</span><span class="rowner">FSG</span><span class="rtime">Urgent</span></div>
-      <div class="rec"><span class="rarea">Operations</span><span>Set daily reorder alerts on the 3 critical-stock ASINs (≤3 weeks) and audit FBA coverage weekly heading into Q4 peak season.</span><span class="rowner">FSG</span><span class="rtime">This week</span></div>
+    <div class="ph">
+      <h2>Weekly Revenue Trend</h2>
+      <span class="ph-note">WK39–WK43 · Sellerise US</span>
+    </div>
+    <div class="spark" id="revSpark"></div>
+  </div>
+
+  <div class="panel">
+    <div class="ph">
+      <h2>Weekly Performance</h2>
+      <span class="ph-note">Source: Sellerise · 7d SP attribution</span>
+    </div>
+    <div class="tbl-wrap">
+    <table>
+      <thead><tr>
+        <th style="text-align:left">Week</th>
+        <th>Revenue</th>
+        <th>PPC Spend</th>
+        <th>ROAS</th>
+        <th>ACoS</th>
+        <th>TACoS</th>
+        <th>Units</th>
+        <th>Margin</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td>WK39 <span style="font-size:11px;color:var(--muted)">Sep 22–26 ★</span></td>
+          <td>$76,288</td><td>$6,061</td><td>6.23×</td>
+          <td>16.1%</td><td>7.9%</td><td>195</td><td>58.0%</td>
+        </tr>
+        <tr>
+          <td>WK40 <span style="font-size:11px;color:var(--muted)">Sep 27–Oct 3</span></td>
+          <td>$93,723</td><td>$9,068</td><td>5.71×</td>
+          <td>17.5%</td><td>9.7%</td><td>251</td><td>57.5%</td>
+        </tr>
+        <tr style="background:var(--accent-soft)">
+          <td>WK41 <span style="font-size:11px;color:var(--accent)">Oct 4–10 ⚡ Prime</span></td>
+          <td><strong>$182,531</strong></td><td>$11,871</td><td>6.82×</td>
+          <td>14.7%</td><td><strong>6.5%</strong></td><td>553</td><td>57.9%</td>
+        </tr>
+        <tr>
+          <td>WK42 <span style="font-size:11px;color:var(--muted)">Oct 11–17</span></td>
+          <td>$79,095</td><td>$9,872</td><td>4.37×</td>
+          <td>22.9%</td><td>12.5%</td><td>226</td><td>45.9%</td>
+        </tr>
+        <tr>
+          <td>WK43 <span style="font-size:11px;color:var(--muted)">Oct 18–21 ★</span></td>
+          <td>$35,319</td><td>$3,664</td><td>3.67×</td>
+          <td>27.2%</td><td>10.4%</td><td>106</td><td>48.1%</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr style="border-top:2px solid var(--line)">
+          <td><strong>30-Day Total</strong> <span style="font-size:11px;color:var(--muted)">Sep 22–Oct 21</span></td>
+          <td><strong>$466,956</strong></td><td><strong>$40,536</strong></td><td><strong>5.60×</strong></td>
+          <td><strong>17.9%</strong></td><td><strong>8.7%</strong></td><td><strong>1,331</strong></td><td><strong>55.1%</strong></td>
+        </tr>
+      </tfoot>
+    </table>
+    </div>
+    <p style="margin:12px 0 0;font-size:12px;color:var(--muted)">★ Partial week (boundary of reporting window). WK41 = Prime Big Deal Days event.</p>
+  </div>
+
+  <div class="panel">
+    <div class="ph">
+      <h2>Oct MTD Estimate</h2>
+      <span class="ph-note">Oct 4–21 from Sellerise (Oct 1–3 excluded from weekly boundaries)</span>
+    </div>
+    <div class="kpis6">
+      <div class="kpi accent">
+        <span class="klabel">Revenue</span>
+        <span class="kval-sm">$296.9K</span>
+        <span class="ksub">Oct 4–21 confirmed</span>
+      </div>
+      <div class="kpi">
+        <span class="klabel">PPC Spend</span>
+        <span class="kval-sm">$25,407</span>
+        <span class="ksub">Oct 4–21</span>
+      </div>
+      <div class="kpi">
+        <span class="klabel">Units</span>
+        <span class="kval-sm">885</span>
+        <span class="ksub">Oct 4–21</span>
+      </div>
+      <div class="kpi">
+        <span class="klabel">Avg ACoS</span>
+        <span class="kval-sm">21.6%</span>
+        <span class="ksub">14-day confirmed</span>
+      </div>
+      <div class="kpi">
+        <span class="klabel">Avg TACoS</span>
+        <span class="kval-sm">10.2%</span>
+        <span class="ksub">14-day confirmed</span>
+      </div>
+      <div class="kpi">
+        <span class="klabel">Rev/Day</span>
+        <span class="kval-sm">$16.5K</span>
+        <span class="ksub">Oct 4–21 avg</span>
+      </div>
     </div>
   </div>
-  <details class="amnotes">
-    <summary>Notes from Account Manager</summary>
-    <div class="aminner">No notes yet for WK42. Add context here before the client call — coupons, BTP promos, upcoming events, or any off-platform factors to flag.</div>
-  </details>
-</div>
 
-<!-- SALES -->
-<div class="view" id="v-sales">
+</div><!-- /sales -->
+
+<!-- ═══════════════════════════════ DAILY ADS ════════════════════════════ -->
+<div class="view" id="tab-ads" role="tabpanel">
+
   <div class="panel">
-    <div class="ph"><h2>Weekly sales — WK39–WK42</h2><span class="eyebrow">Sep 21 – Oct 18, 2026</span></div>
-    <div class="tbl">
-      <table class="fin">
-        <thead><tr><th>Week</th><th>Revenue</th><th>WoW Δ</th><th>Units</th><th>Avg Sell Price</th><th>Impressions</th></tr></thead>
-        <tbody>
-          <tr><td>WK39 · Sep 21–27</td><td>$102,605</td><td class="mono" style="color:var(--muted)">—</td><td>128</td><td>$801.61</td><td>798,208</td></tr>
-          <tr><td>WK40 · Sep 28–Oct 4</td><td>$86,549</td><td class="dn2">▼ 15.6%</td><td>118</td><td>$733.47</td><td>993,067</td></tr>
-          <tr><td>WK41 · Oct 5–11 <span style="font:700 10px var(--f-m);letter-spacing:.04em;text-transform:uppercase;padding:2px 6px;border-radius:4px;background:var(--accent-soft);color:var(--accent);margin-left:4px">Prime</span></td><td>$178,126</td><td class="ok">▲ 105.8%</td><td>230</td><td>$774.46</td><td>1,109,183</td></tr>
-          <tr style="background:var(--accent-soft)"><td><b>WK42 · Oct 12–18</b></td><td><b>$62,394</b></td><td class="dn2">▼ 65.0%</td><td><b>119</b></td><td>$524.33</td><td>797,886</td></tr>
-        </tbody>
-      </table>
+    <div class="ph">
+      <h2>Daily Ad Performance</h2>
+      <span class="ph-note">Oct 7–20 · Sellerise · 7d SP attribution</span>
     </div>
-    <p class="note"><b>Note:</b> WK41 spike driven by Prime Day Oct 6–7 ($61K on Tue alone). WK42 reflects post-event normalization. Impressions from Sponsored Ads (Master Spec Sheet).</p>
+    <div class="tbl-wrap">
+    <table id="adsTable">
+      <thead><tr>
+        <th style="text-align:left">Date</th>
+        <th>Revenue</th>
+        <th>PPC Spend</th>
+        <th>ACoS</th>
+        <th>TACoS</th>
+        <th>Orders</th>
+        <th>Units</th>
+      </tr></thead>
+      <tbody id="adsBody"></tbody>
+    </table>
+    </div>
   </div>
+
   <div class="panel">
-    <div class="ph"><h2>Top products — WK42</h2><span class="eyebrow">Oct 12–18, 2026</span></div>
-    <div style="display:grid;gap:0">
-      <div class="prow2 phdr"><span></span><span>Product</span><span style="text-align:right">Sales</span><span style="text-align:right" class="hsm">Units</span><span style="text-align:right" class="hsm">Sessions</span><span style="text-align:right" class="hsm">CVR</span></div>
-      <div class="prow2"><span class="rnk">1</span><div><span class="pname">Premium Queen Cooling Mattress Topper</span><span class="pasin">B07WFHMD2V · 3-Zone Octaspring®</span></div><div class="psales">$23,481<br><span class="dn" style="font-size:11px">▼ 69.3%</span></div><span style="text-align:right" class="hsm">59</span><span style="text-align:right" class="hsm">2,572</span><span style="text-align:right" class="hsm">2.3%</span></div>
-      <div class="prow2"><span class="rnk">2</span><div><span class="pname">Premium King Cooling Mattress Topper</span><span class="pasin">B07WGH7QNP · 3-Zone Octaspring®</span></div><div class="psales">$16,285<br><span class="dn" style="font-size:11px">▼ 57.7%</span></div><span style="text-align:right" class="hsm">33</span><span style="text-align:right" class="hsm">748</span><span style="text-align:right" class="hsm">4.4%</span></div>
-      <div class="prow2"><span class="rnk">3</span><div><span class="pname">Premium Full Size Cooling Mattress Topper</span><span class="pasin">B07WGHV3DS · 3-Zone Octaspring®</span></div><div class="psales">$5,096<br><span class="dn" style="font-size:11px">▼ 67.2%</span></div><span style="text-align:right" class="hsm">13</span><span style="text-align:right" class="hsm">596</span><span style="text-align:right" class="hsm">2.2%</span></div>
-      <div class="prow2"><span class="rnk">4</span><div><span class="pname">Premium California King Cooling Mattress Topper</span><span class="pasin">B07WGHBD5W · 3-Zone Octaspring®</span></div><div class="psales">$3,465<br><span class="dn" style="font-size:11px">▼ 63.5%</span></div><span style="text-align:right" class="hsm">7</span><span style="text-align:right" class="hsm">145</span><span style="text-align:right" class="hsm">4.8%</span></div>
-      <div class="prow2"><span class="rnk">5</span><div><span class="pname">Premium Twin Cooling Mattress Topper</span><span class="pasin">B07WJMHJ2P · 3-Zone Octaspring®</span></div><div class="psales">$2,691<br><span class="dn" style="font-size:11px">▼ 70.5%</span></div><span style="text-align:right" class="hsm">9</span><span style="text-align:right" class="hsm">326</span><span style="text-align:right" class="hsm">2.8%</span></div>
+    <div class="ph"><h2>14-Day Totals</h2><span class="ph-note">Oct 7–20</span></div>
+    <div class="kpis6">
+      <div class="kpi accent">
+        <span class="klabel">Revenue</span>
+        <span class="kval-sm">$193.2K</span>
+      </div>
+      <div class="kpi">
+        <span class="klabel">PPC Spend</span>
+        <span class="kval-sm">$19,619</span>
+      </div>
+      <div class="kpi">
+        <span class="klabel">Avg ACoS</span>
+        <span class="kval-sm">21.6%</span>
+      </div>
+      <div class="kpi">
+        <span class="klabel">Avg TACoS</span>
+        <span class="kval-sm">10.2%</span>
+      </div>
+      <div class="kpi">
+        <span class="klabel">Orders</span>
+        <span class="kval-sm">579</span>
+      </div>
+      <div class="kpi">
+        <span class="klabel">Units</span>
+        <span class="kval-sm">592</span>
+      </div>
     </div>
-    <p class="note"><b>Source:</b> Master Spec Sheet. All five size variants declined uniformly — consistent with post-Prime Day demand pullback, not isolated listing issues.</p>
   </div>
-</div>
 
-<!-- DAILY ADS -->
-<div class="view" id="v-ads">
   <div class="panel">
-    <div class="ph"><h2>Daily ad performance</h2><span class="eyebrow">Oct 5–18, 2026</span></div>
-    <div class="tbl">
-      <table class="fin" style="min-width:940px">
-        <thead><tr><th>Date</th><th>Spend</th><th>Ad Sales</th><th>ROAS</th><th>ACoS</th><th>TACoS</th><th>Clicks</th><th>Orders</th><th>CVR</th><th>Total Sales</th><th>Organic</th></tr></thead>
-        <tbody id="adBody"></tbody>
-      </table>
+    <div class="ph"><h2>Top 10 Campaigns (Oct 7–20)</h2><span class="ph-note">Sellerise PPC Efficiency · by spend</span></div>
+    <div class="tbl-wrap">
+    <table>
+      <thead><tr>
+        <th style="text-align:left">Campaign / ASIN</th>
+        <th>Spend</th>
+        <th>Ad Sales</th>
+        <th>ACoS</th>
+        <th>Status</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td>STV · B07WFHMD2V<br><span style="font-size:11px;color:var(--muted)">Dormeo Premium Queen / STV / AUD</span></td>
+          <td>$2,116</td><td>—</td><td>—</td>
+          <td><span class="chip oos">Waste · 0 Sales</span></td>
+        </tr>
+        <tr>
+          <td>SP · B0GHYXC6P2<br><span style="font-size:11px;color:var(--muted)">SnowTek Queen / KW / Brand</span></td>
+          <td>$1,908</td><td>$5,452</td><td>35.0%</td>
+          <td><span class="chip ok">Winner</span></td>
+        </tr>
+        <tr>
+          <td>SP · B0DK9XZGB1<br><span style="font-size:11px;color:var(--muted)">King Essentials / KW / Brand</span></td>
+          <td>$1,228</td><td>$6,359</td><td>19.3%</td>
+          <td><span class="chip ok">Winner</span></td>
+        </tr>
+        <tr>
+          <td>SP · B07WFHMD2V<br><span style="font-size:11px;color:var(--muted)">Premium Queen / KW / Category Phrase</span></td>
+          <td>$1,089</td><td>$3,725</td><td>29.2%</td>
+          <td><span class="chip ok">Winner</span></td>
+        </tr>
+        <tr>
+          <td>SP · B07WGHV3DS<br><span style="font-size:11px;color:var(--muted)">Premium Full / KW / Category Phrase</span></td>
+          <td>$956</td><td>$2,014</td><td>47.5%</td>
+          <td><span class="chip crit">High ACoS</span></td>
+        </tr>
+        <tr>
+          <td>SP · B0GHYNPTM3<br><span style="font-size:11px;color:var(--muted)">SnowTek Queen / KW / Category Exact</span></td>
+          <td>$851</td><td>$703</td><td>121.0%</td>
+          <td><span class="chip oos">Critical ACoS</span></td>
+        </tr>
+        <tr>
+          <td>SP · B07WFHMD2V<br><span style="font-size:11px;color:var(--muted)">Premium Queen / KW / Brand "colchon dormeo"</span></td>
+          <td>$631</td><td>$9,176</td><td>6.9%</td>
+          <td><span class="chip ok">⚡ Scale</span></td>
+        </tr>
+        <tr>
+          <td>SP · B07WFHMD2V<br><span style="font-size:11px;color:var(--muted)">Premium Queen / PT / Competitor (Linenspa)</span></td>
+          <td>$616</td><td>$1,910</td><td>32.3%</td>
+          <td><span class="chip ok">Winner</span></td>
+        </tr>
+        <tr>
+          <td>SP · B07WFHMD2V<br><span style="font-size:11px;color:var(--muted)">Premium Queen / Auto / CL+ST</span></td>
+          <td>$590</td><td>$3,467</td><td>17.0%</td>
+          <td><span class="chip ok">Winner</span></td>
+        </tr>
+        <tr>
+          <td>SP · B09HQX677X<br><span style="font-size:11px;color:var(--muted)">Dark King Pillow / PT / Defense Brand</span></td>
+          <td>$539</td><td>$1,491</td><td>36.2%</td>
+          <td><span class="chip crit">High ACoS</span></td>
+        </tr>
+      </tbody>
+    </table>
     </div>
-    <p class="note"><b>Note:</b> Oct 6–7 Prime Day spike (ROAS 10.2× and 5.96×). Oct 17 ACoS flagged at 50.6% — above 40% threshold. Oct 18 Total Sales shows $0 (data lag at report time). Source: Master Spec Sheet.</p>
   </div>
-</div>
 
-<!-- INVENTORY -->
-<div class="view" id="v-inventory">
-  <div class="kpis">
-    <div class="kpi"><span class="klabel">Out of Stock</span><b class="kval" style="color:var(--bad)">12</b><span class="ksub">ASINs at 0 weeks of cover</span></div>
-    <div class="kpi"><span class="klabel">Critical (≤3 wks)</span><b class="kval" style="color:var(--warn)">3</b><span class="ksub">Reorder immediately</span></div>
-    <div class="kpi"><span class="klabel">Low (4–6 wks)</span><b class="kval" style="color:var(--warn)">5</b><span class="ksub">Monitor weekly — incl. Queen #1</span></div>
-    <div class="kpi"><span class="klabel">Total ASINs</span><b class="kval">35</b><span class="ksub">As of Oct 19, 2026</span></div>
-  </div>
+</div><!-- /ads -->
+
+<!-- ═══════════════════════════════ INVENTORY ════════════════════════════ -->
+<div class="view" id="tab-inventory" role="tabpanel">
+
   <div class="panel">
-    <div class="ph"><h2>FBA inventory — all ASINs</h2><span class="eyebrow">As of Oct 19, 2026</span></div>
-    <div class="tbl">
-      <table class="fin" style="min-width:720px">
-        <thead><tr><th>ASIN</th><th>SKU</th><th>Available</th><th>L30 Units Sold</th><th>Weeks Left</th><th style="text-align:left">Status</th></tr></thead>
-        <tbody id="invBody"></tbody>
-      </table>
+    <div class="ph"><h2>Inventory Risk Summary</h2><span class="ph-note">Sellerise · 30-day velocity · Oct 21</span></div>
+    <div class="kpis" style="grid-template-columns:repeat(4,1fr)">
+      <div class="kpi" style="border-color:var(--bad)">
+        <span class="klabel">Out of Stock</span>
+        <span class="kval" style="color:var(--bad)">2</span>
+        <span class="ksub">ASINs · urgent</span>
+      </div>
+      <div class="kpi" style="border-color:var(--warn)">
+        <span class="klabel">Low Stock &lt;14d</span>
+        <span class="kval" style="color:var(--warn)">3</span>
+        <span class="ksub">ASINs · critical</span>
+      </div>
+      <div class="kpi">
+        <span class="klabel">Low Stock 14–30d</span>
+        <span class="kval">5</span>
+        <span class="ksub">ASINs · reorder soon</span>
+      </div>
+      <div class="kpi">
+        <span class="klabel">Unfulfillable</span>
+        <span class="kval">4</span>
+        <span class="ksub">ASINs have units to reconcile</span>
+      </div>
     </div>
-    <p class="note"><b>Source:</b> Master Spec Sheet · FBA Inventory as of Oct 19. <span class="wkl oos" style="font-size:11px">OOS</span> out of stock · <span class="wkl crit" style="font-size:11px">1–3</span> critical · <span class="wkl warn" style="font-size:11px">4–6</span> low stock · <span class="wkl" style="font-size:11px">7+</span> healthy.</p>
   </div>
-</div>
 
-</div>
+  <div class="panel">
+    <div class="ph"><h2>ASIN Inventory Detail</h2><span class="ph-note">Top 10 by risk score · Sellerise</span></div>
+    <div class="tbl-wrap">
+    <table>
+      <thead><tr>
+        <th style="text-align:left">Product</th>
+        <th>ASIN</th>
+        <th>FBA Stock</th>
+        <th>Days Supply</th>
+        <th>30d Units</th>
+        <th>30d Revenue</th>
+        <th>Status</th>
+      </tr></thead>
+      <tbody>
+        <tr class="divrow"><td colspan="7">🔴 Out of Stock — Revenue at Risk</td></tr>
+        <tr>
+          <td>Premium Queen Octaspring<span class="flag unf">4 unf.</span></td>
+          <td class="mono" style="font-size:12px">B07WFHMD2V</td>
+          <td style="color:var(--bad)">0</td><td style="color:var(--bad)"><strong>0</strong></td>
+          <td>462</td><td>$180,445</td>
+          <td><span class="chip oos">OOS</span></td>
+        </tr>
+        <tr>
+          <td>RV Short Queen Octaspring</td>
+          <td class="mono" style="font-size:12px">B08W4SLL9P</td>
+          <td style="color:var(--bad)">0</td><td style="color:var(--bad)"><strong>0</strong></td>
+          <td>13</td><td>$5,085</td>
+          <td><span class="chip oos">OOS</span></td>
+        </tr>
+        <tr class="divrow"><td colspan="7">🟡 Critical — Under 14 Days Supply</td></tr>
+        <tr>
+          <td>Cal King Octaspring</td>
+          <td class="mono" style="font-size:12px">B07WGHBD5W</td>
+          <td style="color:var(--bad)">4</td><td style="color:var(--bad)"><strong>2.0d</strong></td>
+          <td>59</td><td>$28,400</td>
+          <td><span class="chip crit">Crit</span></td>
+        </tr>
+        <tr>
+          <td>King Octaspring<span class="flag unf">2 unf.</span></td>
+          <td class="mono" style="font-size:12px">B07WGH7QNP</td>
+          <td style="color:var(--warn)">60</td><td style="color:var(--warn)"><strong>7.9d</strong></td>
+          <td>227</td><td>$110,340</td>
+          <td><span class="chip crit">Crit</span></td>
+        </tr>
+        <tr>
+          <td>Split King Octaspring</td>
+          <td class="mono" style="font-size:12px">B09KDRCK2C</td>
+          <td style="color:var(--warn)">7</td><td style="color:var(--warn)"><strong>10.0d</strong></td>
+          <td>21</td><td>$10,147</td>
+          <td><span class="chip crit">Crit</span></td>
+        </tr>
+        <tr class="divrow"><td colspan="7">🔵 Low Stock — Reorder Within 30 Days</td></tr>
+        <tr>
+          <td>SnowTek Queen Topper</td>
+          <td class="mono" style="font-size:12px">B0GHYXC6P2</td>
+          <td>34</td><td><strong>14.8d</strong></td>
+          <td>69</td><td>$6,624</td>
+          <td><span class="chip warn">Low</span></td>
+        </tr>
+        <tr>
+          <td>Premium Full Octaspring<span class="flag unf">1 unf.</span></td>
+          <td class="mono" style="font-size:12px">B07WGHV3DS</td>
+          <td>86</td><td><strong>22.6d</strong></td>
+          <td>114</td><td>$43,760</td>
+          <td><span class="chip warn">Low</span></td>
+        </tr>
+        <tr>
+          <td>Dark King Pillow<span class="flag unf">3 unf.</span></td>
+          <td class="mono" style="font-size:12px">B09HQX677X</td>
+          <td>45</td><td><strong>25.0d</strong></td>
+          <td>54</td><td>$4,022</td>
+          <td><span class="chip warn">Low</span></td>
+        </tr>
+        <tr>
+          <td>Dark King Pillow (alt)</td>
+          <td class="mono" style="font-size:12px">B09HQX677X</td>
+          <td>31</td><td><strong>25.8d</strong></td>
+          <td>36</td><td>$4,639</td>
+          <td><span class="chip warn">Low</span></td>
+        </tr>
+        <tr>
+          <td>Essentials King Octacell</td>
+          <td class="mono" style="font-size:12px">B0DK9XZGB1</td>
+          <td>21</td><td><strong>30.0d</strong></td>
+          <td>21</td><td>$6,978</td>
+          <td><span class="chip warn">Low</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
 
-<footer class="inner">Dormeo US · Flagship Growth · Master Spec Sheet · WK42 snapshot Oct 19, 2026 · Confidential</footer>
+  <div class="panel">
+    <div class="ph"><h2>Subscribe &amp; Save (SNS)</h2></div>
+    <div class="sns-empty">
+      <strong>No active SNS program</strong>
+      Dormeo US has no Subscribe &amp; Save subscriptions in Sellerise.<br>
+      Consider enrolling eligible ASINs to build recurring revenue.
+    </div>
+  </div>
+
+</div><!-- /inventory -->
+
+</div><!-- /wrap -->
 
 <script>
-// Tabs
-const tabs=document.querySelectorAll('.tab'),views=document.querySelectorAll('.view');
-function goTab(v){
-  tabs.forEach(t=>t.setAttribute('aria-selected',t.dataset.v===v?'true':'false'));
-  views.forEach(el=>el.classList.toggle('on',el.id==='v-'+v));
-  try{localStorage.setItem('du-tab',v)}catch(e){}
+// ── Tab switching ──────────────────────────────────────────────────────────
+const tabs = document.querySelectorAll('.tab');
+const views = document.querySelectorAll('.view');
+function activate(id) {
+  tabs.forEach(t => t.setAttribute('aria-selected', t.dataset.tab === id ? 'true' : 'false'));
+  views.forEach(v => v.classList.toggle('on', v.id === 'tab-' + id));
+  try { localStorage.setItem('dormeo_tab', id); } catch(e){}
 }
-tabs.forEach(t=>t.addEventListener('click',()=>goTab(t.dataset.v)));
-try{const s=localStorage.getItem('du-tab');if(s)goTab(s)}catch(e){}
+tabs.forEach(t => t.addEventListener('click', () => activate(t.dataset.tab)));
+try { const s = localStorage.getItem('dormeo_tab'); if (s) activate(s); } catch(e){}
 
-// Helpers
-const $$=s=>document.querySelector(s);
-const fmt=n=>n?'$'+n.toLocaleString():'<span style="color:var(--muted)">—</span>';
-const pct=n=>n.toFixed(1)+'%';
-
-// Daily ad data
-const adRows=[
-  ['10/5','Mon',1477,6577,4.45,22.5,6.8,757,16,2.1,21706,15128],
-  ['10/6','Tue',2262,23071,10.20,9.8,3.7,970,72,7.4,61510,38438],
-  ['10/7','Wed',2757,16432,5.96,16.8,5.4,1001,58,5.8,50603,34170],
-  ['10/8','Thu',1121,6280,5.60,17.9,10.9,487,25,5.1,10309,4029],
-  ['10/9','Fri',996,4328,4.34,23.0,10.4,406,17,4.2,9551,5222],
-  ['10/10','Sat',1562,6652,4.26,23.5,15.9,699,24,3.4,9833,3180],
-  ['10/11','Sun',1575,6073,3.86,25.9,10.8,761,18,2.4,14612,8538],
-  ['10/12','Mon',1345,6536,4.86,20.6,11.7,616,22,3.6,11481,4945],
-  ['10/13','Tue',1257,5232,4.16,24.0,11.7,571,16,2.8,10739,5507],
-  ['10/14','Wed',1106,4307,3.89,25.7,11.8,526,15,2.9,9390,5082],
-  ['10/15','Thu',1258,5846,4.65,21.5,13.9,580,19,3.3,9062,3216],
-  ['10/16','Fri',1717,7158,4.17,24.0,14.5,791,20,2.5,11864,4705],
-  ['10/17','Sat',1630,3218,1.97,50.6,16.5,857,13,1.5,9854,6636],
-  ['10/18','Sun',1328,3726,2.81,35.6,0.0,749,14,1.9,0,0],
+// ── Daily ads table ────────────────────────────────────────────────────────
+const dailyRows = [
+  // [date, label, revenue, spend, acos, tacos, orders, units, week]
+  ['Oct 7',  'Tue', 54370.33, 2773.68, 16.10,  5.10, 165, 169, 'WK41'],
+  ['Oct 8',  'Wed', 10351.55, 1120.08, 16.53, 10.82,  34,  34, 'WK41'],
+  ['Oct 9',  'Thu',  8702.75,  996.71, 23.02, 11.45,  31,  32, 'WK41'],
+  ['Oct 10', 'Fri',  9799.18, 1563.79, 22.82, 15.96,  35,  38, 'WK41'],
+  ['Oct 11', 'Sat', 14429.46, 1563.31, 20.65, 10.83,  44,  45, 'WK42'],
+  ['Oct 12', 'Sun', 11724.81, 1344.45, 15.95, 11.47,  35,  35, 'WK42'],
+  ['Oct 13', 'Mon', 10907.18, 1255.38, 20.19, 11.51,  29,  29, 'WK42'],
+  ['Oct 14', 'Tue',  9267.10, 1103.24, 25.07, 11.90,  31,  31, 'WK42'],
+  ['Oct 15', 'Wed',  9621.12, 1258.31, 21.52, 13.08,  25,  25, 'WK42'],
+  ['Oct 16', 'Thu', 12668.33, 1717.43, 23.99, 13.56,  34,  34, 'WK42'],
+  ['Oct 17', 'Fri', 10477.23, 1630.02, 46.33, 15.56,  27,  27, 'WK42'],
+  ['Oct 18', 'Sat', 12960.41, 1322.40, 39.74, 10.20,  41,  43, 'WK43'],
+  ['Oct 19', 'Sun', 10156.60,  949.35, 20.47,  9.35,  26,  26, 'WK43'],
+  ['Oct 20', 'Mon',  7773.79, 1021.11, 23.19, 13.14,  22,  24, 'WK43'],
 ];
-let adHtml=`<tr><td colspan="11" class="wkbreak">WK41 · Oct 5–11 (Prime Week)</td></tr>`;
-adRows.forEach((r,i)=>{
-  if(i===7)adHtml+=`<tr><td colspan="11" class="wkbreak">WK42 · Oct 12–18</td></tr>`;
-  const[date,day,spend,adS,roas,acos,tacos,clicks,orders,cvr,total,organic]=r;
-  adHtml+=`<tr>
-    <td><span class="mono" style="font-size:11px;color:var(--muted);margin-right:6px">${date}</span>${day}</td>
-    <td>${fmt(spend)}</td><td>${fmt(adS)}</td>
-    <td class="${roas>=4?'ok':roas<2.5?'hot':''}">${roas.toFixed(2)}×</td>
-    <td class="${acos>40?'hot':''}">${pct(acos)}</td>
-    <td>${pct(tacos)}</td>
-    <td>${clicks.toLocaleString()}</td><td>${orders}</td><td>${pct(cvr)}</td>
-    <td>${fmt(total)}</td><td>${fmt(organic)}</td>
-  </tr>`;
-});
-adHtml+=`<tr class="tot"><td>WK42 Total</td><td>$9,643</td><td>$36,029</td><td>3.74×</td><td>26.8%</td><td>15.5%</td><td>4,690</td><td>119</td><td>2.5%</td><td>$62,394</td><td>$26,365</td></tr>`;
-$$('#adBody').innerHTML=adHtml;
 
-// Inventory
-const invRows=[
-  ['B09JQWSHQR','30004-1062',0,2,0,'RV King Cooling Mattress Topper'],
-  ['B0DK9Z7CYB','50001-1050',0,2,0,'Dormeo The Essentials Mattress (Queen)'],
-  ['B0DK9ZZWGP','50001-1030',0,0,0,'Dormeo The Essentials Mattress (Full)'],
-  ['B09HQXHNZC','33100-50-US FBA',0,0,0,'Dark Queen Ergonomic Pillow'],
-  ['B0F74RSY4V','40001-1050-AMZ',0,0,0,'Premium Waterproof Mattress Protector (Q)'],
-  ['B0DP9PXFT5','42001-1060',6,0,0,'SnowTek Premium King Bed Sheets'],
-  ['B0DP9RXZ9V','42002-1050',16,0,0,'SnowTek Premium Queen Bed Sheets'],
-  ['B0F74RNZGY','40001-1070-AMZ',1,0,0,'Premium Waterproof Mattress Protector (K)'],
-  ['B0DP9Q85K9','42002-1070',4,0,0,'SnowTek Premium Cal King Bed Sheets'],
-  ['B0DP9SJSFF','42002-1030',16,0,0,'SnowTek Premium Full Bed Sheets'],
-  ['B0DP9QDLBS','42001-1010',0,0,0,'(Unlabeled SKU)'],
-  ['B0DP9R2M3W','42002-1020',0,0,0,'(Unlabeled SKU)'],
-  ['B0DK7DVX2V','50001-1020',1,4,1,'Dormeo The Essentials Mattress (Twin)'],
-  ['B08W4SLL9P','200000780-AMZ',8,12,3,'(Unlabeled SKU)'],
-  ['B0F74N4F46','40001-1060-AMZ',4,6,3,'Premium Waterproof Mattress Protector (F)'],
-  ['B0GHYXC6P2','70001-1050',45,56,4,'(Unlabeled SKU)'],
-  ['B07WFHMD2V','110033240-AMZ',409,499,4,'Premium Queen Cooling Mattress Topper ★ #1'],
-  ['B0DK7DT4SL','50001-1010',10,12,4,'Dormeo The Essentials Mattress (King)'],
-  ['B0DK9XZGB1','50001-1060',25,20,6,'Dormeo The Essentials Mattress (Cal King)'],
-  ['B0GHYY1RQY','70001-1030',22,17,6,'(Unlabeled SKU)'],
-  ['B07WGH7QNP','110033241-AMZ',311,225,7,'Premium King Cooling Mattress Topper'],
-  ['B08YS5PH8M','1100098941',0,50,7,'(Unlabeled SKU — inbound)'],
-  ['B07WGHBD5W','110033391-AMZ',89,59,8,'Premium Cal King Cooling Mattress Topper'],
-  ['B09KDRCK2C','30004-1066',34,21,8,'(Unlabeled SKU)'],
-  ['B07WGHV3DS','110033239-AMZ',199,119,8,'Premium Full Size Cooling Mattress Topper'],
-  ['B07WJMHJ2P','110033238-AMZ',136,81,8,'Premium Twin Cooling Mattress Topper'],
-  ['B07WHHQBQX','110033390-AMZ',128,92,9,'(Unlabeled SKU)'],
-  ['B09HQX677X','33100-60-US FBA',62,31,10,'(Unlabeled SKU)'],
-  ['B0GHYNPTM3','70001-1060',46,20,12,'(Unlabeled SKU)'],
-  ['B0GHYJLM7J','70001-1010',33,14,12,'(Unlabeled SKU)'],
-  ['B0F74MTBGN','40001-1020-AMZ',10,2,25,'Premium Waterproof Mattress Protector'],
-  ['B0F74N8GHP','40001-1030-AMZ',17,2,43,'Premium Waterproof Mattress Protector'],
-  ['B09JQYWB8R','30004-1061',75,7,54,'(Unlabeled SKU)'],
-  ['B0F74RPY9X','40001-1010-AMZ',24,2,60,'Premium Waterproof Mattress Protector'],
-  ['B0BFX81VLK','40001-1020',74,5,74,'(Unlabeled SKU)'],
-];
-function wklChip(w){
-  if(w===0)return`<span class="wkl oos">OOS</span>`;
-  if(w<=3)return`<span class="wkl crit">${w}</span>`;
-  if(w<=6)return`<span class="wkl warn">${w}</span>`;
-  return`<span class="wkl">${w}</span>`;
-}
-function statusText(w){
-  if(w===0)return['var(--bad)','Out of stock'];
-  if(w<=3)return['var(--warn)','Critical'];
-  if(w<=6)return['var(--warn)','Low stock'];
-  if(w<=12)return['var(--good)','Healthy'];
-  return['var(--muted)','Overstocked'];
-}
-let invHtml='';
-invRows.forEach(([asin,sku,avail,l30,wks,label])=>{
-  const[clr,status]=statusText(wks);
-  invHtml+=`<tr>
-    <td><span style="font-weight:600;font-size:13px;display:block">${asin}</span><span style="font:11px var(--f-m);color:var(--muted)">${label}</span></td>
-    <td style="font:11.5px var(--f-m)">${sku}</td>
-    <td>${avail.toLocaleString()}</td><td>${l30.toLocaleString()}</td>
-    <td>${wklChip(wks)}</td>
-    <td style="text-align:left;font-size:12.5px;color:${clr}">${status}</td>
-  </tr>`;
+function fmt$(n){ return '$' + n.toLocaleString('en-US',{minimumFractionDigits:0,maximumFractionDigits:0}); }
+function fmtPct(n){ return n.toFixed(1)+'%'; }
+function acosClass(v){ return v >= 35 ? 'color:var(--bad)' : v >= 25 ? 'color:var(--warn)' : ''; }
+
+const body = document.getElementById('adsBody');
+let lastWk = '';
+dailyRows.forEach(r => {
+  const [date, day, rev, spend, acos, tacos, orders, units, wk] = r;
+  if (wk !== lastWk) {
+    const div = document.createElement('tr');
+    div.className = 'divrow';
+    div.innerHTML = `<td colspan="7">${wk} — ${wk==='WK41'?'Oct 4–10 (Prime week)':wk==='WK42'?'Oct 11–17':'Oct 18–24 (in progress)'}</td>`;
+    body.appendChild(div);
+    lastWk = wk;
+  }
+  const tr = document.createElement('tr');
+  tr.innerHTML = `
+    <td>${date} <span style="font-size:11px;color:var(--muted)">${day}</span></td>
+    <td>${fmt$(rev)}</td>
+    <td>${fmt$(spend)}</td>
+    <td style="${acosClass(acos)}">${fmtPct(acos)}</td>
+    <td>${fmtPct(tacos)}</td>
+    <td>${orders}</td>
+    <td>${units}</td>
+  `;
+  body.appendChild(tr);
 });
-$$('#invBody').innerHTML=invHtml;
+
+// ── Weekly spark chart ─────────────────────────────────────────────────────
+const weekData = [
+  { label:'WK39', sublabel:'Sep 22–26★', rev:76288,  prime:false, partial:true },
+  { label:'WK40', sublabel:'Sep 27–Oct 3', rev:93723, prime:false, partial:false },
+  { label:'WK41', sublabel:'Oct 4–10 ⚡', rev:182531, prime:true,  partial:false },
+  { label:'WK42', sublabel:'Oct 11–17',  rev:79095,  prime:false, partial:false },
+  { label:'WK43', sublabel:'Oct 18–21★', rev:35319,  prime:false, partial:true  },
+];
+const maxRev = Math.max(...weekData.map(w => w.rev));
+const sparkEl = document.getElementById('revSpark');
+
+const barsDiv = document.createElement('div');
+barsDiv.className = 'spark-bars';
+weekData.forEach(w => {
+  const pct = Math.round((w.rev / maxRev) * 100);
+  const grp = document.createElement('div');
+  grp.className = 'bar-grp';
+  grp.innerHTML = `
+    <span class="bval">$${(w.rev/1000).toFixed(0)}K</span>
+    <div class="bar${w.prime?' prime':''}${w.partial?' partial':''}" style="height:${Math.max(pct,4)}%"></div>
+    <span class="blabel">${w.label}</span>
+    <span class="blabel">${w.sublabel}</span>
+  `;
+  barsDiv.appendChild(grp);
+});
+sparkEl.appendChild(barsDiv);
 </script>
 </body>
 </html>
