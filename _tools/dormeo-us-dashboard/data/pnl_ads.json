@@ -652,16 +652,16 @@
    null,
    null,
    13,
-   7858.64
+   7931.67
   ],
   [
    "10/21",
-   920.95,
-   3214.97,
+   952.17,
+   3513.97,
    null,
    null,
-   10,
-   9023.09
+   11,
+   9108.7
   ]
  ],
  "CAMP_META": {
@@ -711,5 +711,6 @@
    "cpc": 2.28
   }
  },
- "notes": "PL from Sellerise monthly Sales & Profit (USD). cogs=0: Sellerise has no COGS for Dormeo. 'addl' is a balancing line = gross − net − listed costs; it mostly reflects sales tax collected (~$18–39K/mo) plus other Amazon adjustments, so it is POSITIVE (a cost), unlike FS where it was credits. No PPC data in Sellerise for Jan–Feb 2026 (ads/adrev = 0; ad data starts March). ADS impressions and clicks are null: Sellerise day rows do not return them (would need 60 single-day calls). Window totals Aug23–Oct21: 7,166,943 impressions, 40,584 clicks. ADS totalRevenue is Sellerise revenue (incl. tax), Oct 21 is a partial day. SNS (subAmount) is 0 both weeks."
+ "notes": "PL from Sellerise monthly Sales & Profit (USD). cogs=0: Sellerise has no COGS for Dormeo. 'addl' is a balancing line = gross − net − listed costs; it mostly reflects sales tax collected (~$18–39K/mo) plus other Amazon adjustments, so it is POSITIVE (a cost), unlike FS where it was credits. No PPC data in Sellerise for Jan–Feb 2026 (ads/adrev = 0; ad data starts March). ADS impressions and clicks are null: Sellerise day rows do not return them (would need 60 single-day calls). Window totals Aug23–Oct21: 7,166,943 impressions, 40,584 clicks. ADS totalRevenue is Sellerise revenue (incl. tax), Oct 21 is a partial day. SNS (subAmount) is 0 both weeks.",
+ "year": 2026
 }
