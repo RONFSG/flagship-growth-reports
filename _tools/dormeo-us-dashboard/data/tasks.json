@@ -1,0 +1,163 @@
+{
+ "TASKS": [
+  {
+   "src": "ClickUp · Product Optimizations",
+   "cat": "PDP",
+   "task": "Listing images redo: Premium & Essentials toppers",
+   "desc": "Travis uploaded revised images to the Dormeo Creatives Figma on Oct 12 and asked Aisha for revisions. ClickUp still shows To Do.",
+   "status": "In Progress",
+   "owners": [],
+   "due": "2026-10-19"
+  },
+  {
+   "src": "ClickUp · Product Optimizations",
+   "cat": "BrandStory",
+   "task": "Add SnowTek 2\" toppers to the Store Front",
+   "desc": "Created Oct 6 in Product Optimizations, assigned to the designer. No due date set.",
+   "status": "Not Started",
+   "owners": [
+    "Travis"
+   ]
+  },
+  {
+   "src": "ClickUp · Product Optimizations",
+   "cat": "Marketing",
+   "task": "BF/CM: Prime Exclusive Discounts (PED) set-up",
+   "desc": "PED discounts scheduled Oct 1. B09HQX677X and B0BFX81VLK show a rating-eligibility error; B0DP9Q85K9 needs at least 32% off; some ASINs show reference-price errors. Open question: slash pricing for the ineligible ASINs.",
+   "status": "In Progress",
+   "owners": [
+    "Salma"
+   ]
+  },
+  {
+   "src": "Sellerise inventory",
+   "cat": "Inventory",
+   "task": "Restock Premium Queen Octaspring (B07WFHMD2V)",
+   "desc": "Top revenue ASIN ($1.44M YTD). Sellerise shows 0 available at FBA on Oct 21 with 4 unfulfillable units. The Week 43 FBA update listed 409 total units incl. inbound/reserved, about 4 weeks left.",
+   "status": "In Progress",
+   "owners": []
+  },
+  {
+   "src": "Sellerise inventory",
+   "cat": "Inventory",
+   "task": "Restock RV Short Queen Octaspring (B08W4SLL9P)",
+   "desc": "0 available at FBA in Sellerise on Oct 21; Week 43 update shows 8 total units, about 3 weeks left.",
+   "status": "In Progress",
+   "owners": []
+  },
+  {
+   "src": "Sellerise inventory",
+   "cat": "Inventory",
+   "task": "Cal King Octaspring (B07WGHBD5W): low FBA stock",
+   "desc": "Sellerise: 4 available, about 2 days of supply at the 30-day rate. Week 43 update lists 89 total units including inbound.",
+   "status": "In Progress",
+   "owners": []
+  },
+  {
+   "src": "ClickUp · Inventory",
+   "cat": "Inventory",
+   "task": "Case review & resolution follow-ups (removals, delivery appointments)",
+   "desc": "Open Amazon cases on pending removal orders and FBA19QY48FYJ delivery appointments, escalated via Carrier Central.",
+   "status": "In Progress",
+   "owners": [
+    "Sherilyn"
+   ]
+  },
+  {
+   "src": "ClickUp · Reporting Automation",
+   "cat": "Other",
+   "task": "Weekly reports, inventory & PO update to client (Week 43)",
+   "desc": "Weekly Sales/Ads internal review, inventory & reconciliation update, PO update client delivery and external report submission.",
+   "status": "Not Started",
+   "owners": [
+    "Ronric"
+   ],
+   "due": "2026-10-23"
+  },
+  {
+   "src": "Master Spec Sheet",
+   "cat": "PDP",
+   "task": "SnowTek bed sheets: images, brand story & A+",
+   "desc": "Twin Grey (B0DP9NMS7G) is approved by client and published for main image, infographics, brand story and A+. The other sheet-set sizes have no status logged.",
+   "status": "Complete",
+   "owners": []
+  },
+  {
+   "src": "Master Spec Sheet",
+   "cat": "SEO",
+   "task": "SnowTek bed sheets: SEO title, bullets & search terms",
+   "desc": "Approved by client and published on Twin Grey (B0DP9NMS7G); not logged for the other sizes.",
+   "status": "Complete",
+   "owners": []
+  },
+  {
+   "src": "Master Spec Sheet",
+   "cat": "PDP",
+   "task": "SnowTek 2\" toppers: main images & A+",
+   "desc": "All six sizes approved by client and published (Figma: Dormeo_Snowtek_Infographics). Infographics, brand story, video and SEO are not logged.",
+   "status": "Complete",
+   "owners": []
+  },
+  {
+   "src": "Master Spec Sheet",
+   "cat": "APlus",
+   "task": "New line · SnowTek 10\" toppers: listings",
+   "desc": "Five new sizes (Twin to Cal King), no ASINs yet. Listing set-up in progress; images and A+ not started.",
+   "status": "In Progress",
+   "owners": []
+  },
+  {
+   "src": "Master Spec Sheet",
+   "cat": "APlus",
+   "task": "New line · SnowTek 10\" toppers: images & A+",
+   "desc": "Main image, infographics and A+ marked Not Started for all five sizes.",
+   "status": "Not Started",
+   "owners": []
+  },
+  {
+   "src": "Master Spec Sheet",
+   "cat": "Strategy",
+   "task": "Discontinue RV King & Twin XL protector (old)",
+   "desc": "B09JQWSHQR and B09JQYWB8R (RV King / RV Short King) and B0BFX81VLK (old Twin XL protector) are marked To be discontinued / DISCO'D.",
+   "status": "In Progress",
+   "owners": []
+  },
+  {
+   "src": "Master Spec Sheet",
+   "cat": "PDP",
+   "task": "Octaspring toppers, pillows & protectors: creative status not logged",
+   "desc": "No creative or SEO status is recorded in the Master Spec Sheet for these collections.",
+   "status": "No status",
+   "owners": []
+  }
+ ],
+ "OWNERS": [
+  "Aisha",
+  "Travis",
+  "Salma",
+  "Sherilyn",
+  "Ronric"
+ ],
+ "TEAM": "Aisha · Travis · Salma · Sherilyn · Ronric",
+ "CAMPAIGNS": [
+  {
+   "task": "BF/CM",
+   "start": "2026-11-27",
+   "due": "2026-11-30",
+   "campaign": true
+  },
+  {
+   "task": "Holiday",
+   "start": "2026-12-01",
+   "due": "2026-12-24",
+   "campaign": true
+  },
+  {
+   "task": "New Year, New Me",
+   "start": "2027-01-01",
+   "due": "2027-01-31",
+   "campaign": true
+  }
+ ],
+ "notes": "No Dormeo objectives/tracker sheet exists in Drive. Tasks come from ClickUp notifications in #clickup-notifications (Product Optimizations, Inventory, Reporting Automation), the Master Spec Sheet Specs tab status columns, and Sellerise inventory. Owners are first names as they appear in ClickUp; ClickUp due dates used where shown."
+}
