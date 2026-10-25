@@ -124,15 +124,6 @@
  },
  "ADS": [
   [
-   "8/25",
-   958.6,
-   7644.97,
-   null,
-   null,
-   21,
-   15019.95
-  ],
-  [
    "8/26",
    943.47,
    8156.89,
@@ -414,10 +405,10 @@
   [
    "9/26",
    1377.58,
-   6581.97,
+   7076.97,
    null,
    null,
-   17,
+   18,
    16293.36
   ],
   [
@@ -593,7 +584,7 @@
   ],
   [
    "10/16",
-   1717.43,
+   1703.52,
    7158.95,
    null,
    null,
@@ -602,7 +593,7 @@
   ],
   [
    "10/17",
-   1630.02,
+   1625.25,
    3609.96,
    null,
    null,
@@ -612,10 +603,10 @@
   [
    "10/18",
    1322.4,
-   3419.7,
+   3511.69,
    null,
    null,
-   14,
+   15,
    13022.18
   ],
   [
@@ -630,11 +621,11 @@
   [
    "10/20",
    1021.1,
-   4795.38,
+   5187.38,
    null,
    null,
-   13,
-   8005.64
+   14,
+   8027.17
   ],
   [
    "10/21",
@@ -643,32 +634,62 @@
    null,
    null,
    11,
-   9335.22
+   9337.87
   ],
   [
    "10/22",
-   936.88,
+   937.94,
    2000.98,
    null,
    null,
    7,
-   5506.63
+   5544.85
   ],
   [
    "10/23",
-   871.12,
-   2867.0,
+   889.42,
+   3584.0,
    null,
    null,
-   6,
-   5911.1
+   8,
+   5968.5
+  ],
+  [
+   "10/24",
+   1066.95,
+   5478.98,
+   null,
+   null,
+   18,
+   10309.85
   ]
  ],
  "CAMP_META": {
-  "week": "Oct 11–17, 2026",
-  "prior": "Oct 4–10",
-  "weekStart": "2026-10-11",
+  "week": "Oct 18–24, 2026",
+  "prior": "Oct 11–17",
+  "weekStart": "2026-10-18",
   "cur": {
+   "revenue": 62414.9,
+   "orders": 174,
+   "units": 178,
+   "net": 26901.51,
+   "margin": 43.1,
+   "refunds": 10820.32,
+   "refundRate": 22.99,
+   "promos": 324.74,
+   "coupons": 0,
+   "promo": 10,
+   "sns": 0,
+   "spend": 7137.03,
+   "adSales": 28731.73,
+   "acos": 24.84,
+   "tacos": 11.43,
+   "clicks": 3585,
+   "impr": 694246,
+   "adOrders": 88,
+   "cpc": 1.99
+  },
+  "prev": {
    "revenue": 79095.23,
    "orders": 225,
    "units": 226,
@@ -688,27 +709,6 @@
    "impr": 816997,
    "adOrders": 139,
    "cpc": 2.11
-  },
-  "prev": {
-   "revenue": 182530.59,
-   "orders": 540,
-   "units": 553,
-   "net": 105735.38,
-   "margin": 57.93,
-   "refunds": 7747.65,
-   "refundRate": 4.63,
-   "promos": 4805.94,
-   "coupons": 76,
-   "promo": 52,
-   "sns": 0,
-   "spend": 11867.16,
-   "adSales": 80941.41,
-   "acos": 14.66,
-   "tacos": 6.5,
-   "clicks": 5204,
-   "impr": 1255940,
-   "adOrders": 264,
-   "cpc": 2.28
   }
  },
  "notes": "PL from Sellerise monthly Sales & Profit (USD). cogs=0: Sellerise has no COGS for Dormeo. 'addl' is a balancing line = gross − net − listed costs; it mostly reflects sales tax collected (~$18–39K/mo) plus other Amazon adjustments, so it is POSITIVE (a cost), unlike FS where it was credits. No PPC data in Sellerise for Jan–Feb 2026 (ads/adrev = 0; ad data starts March). ADS impressions and clicks are null: Sellerise day rows do not return them (would need 60 single-day calls). Window totals Aug23–Oct21: 7,166,943 impressions, 40,584 clicks. ADS totalRevenue is Sellerise revenue (incl. tax), Oct 21 is a partial day. SNS (subAmount) is 0 both weeks.",
