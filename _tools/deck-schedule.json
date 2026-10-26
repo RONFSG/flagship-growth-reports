@@ -1,0 +1,8 @@
+{
+  "_about": "Which brands get a weekly business review deck, and on which day. Read by the two scheduled deck tasks (Monday: Dormeo; Sunday: every other brand). A brand runs only when enabled is true AND its runbook exists. To add a brand: build _tools/<slug>-deck/ (copy dormeo-us-deck), publish once by hand, then set enabled to true here.",
+  "monday": [
+    {"brand": "Dormeo US", "slug": "dormeo-us", "runbook": "_tools/dormeo-us-deck/RUNBOOK.md", "enabled": true},
+    {"brand": "Dormeo Canada", "slug": "dormeo-canada", "runbook": "_tools/dormeo-canada-deck/RUNBOOK.md", "enabled": false, "note": "deck build not made yet"}
+  ],
+  "sunday": []
+}
