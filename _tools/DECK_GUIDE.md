@@ -33,12 +33,16 @@ The scripts live in `_tools/dormeo-us-deck/` and `_tools/dormeo-us-dashboard/`, 
 | Tuesday | Inventory update | Rebuilds slide 12 from the new inventory sheet. No Sellerise calls. Skips any brand whose sheet hasn't been updated yet |
 | Sunday | Other brands (`sunday` list, currently empty) | Same steps as Monday, once a brand has a deck |
 
+**The deck's week is Monday–Sunday** (ending the Sunday before the Monday run). `deck_week.py` pulls it and writes
+`wk/deckweek.json`; the dashboards keep Sunday–Saturday.
+
 ## Monday steps (detail in each runbook)
 
 1. `git pull --rebase origin main`
 2. **Data**:
    - Dormeo US: the daily dashboard run must already have run.
    - Canada: run `update_data.py plan`, make the Sellerise calls it lists, save each result, then run `finalize`.
+   - Both: `deck_week.py plan` → make the calls → `save` each → `build <monday>` for the Mon–Sun week.
 3. **Extras**: Sellerise pulls saved to `/tmp/deck/extra.json`, in the same shape as `weeks/<last week>/extra.json`. These cover the 4-week table, month to date, last year's month to date, daily rows, search terms, targets, reviews and alerts.
 4. **Numbers**: `python3 compute.py <data folder> /tmp/deck/deck_data.json <deck_config.json>`
 5. **Commentary**: `/tmp/deck/notes.json` must contain every key. Use only numbers from the two data files, write in plain English, and rewrite it every week.

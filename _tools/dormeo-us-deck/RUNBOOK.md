@@ -1,26 +1,32 @@
 # Dormeo US weekly deck — Monday runbook (and the Tuesday inventory update)
 
 Builds the 17-slide Weekly Business Review (FSG branding, the layout of the "Dormeo Weekly Amazon Business Review" sample)
-for the week that ended on Saturday, and publishes it to `dormeo-us/deck/` in this repo
+for the week that ended on Sunday, and publishes it to `dormeo-us/deck/` in this repo
 (https://reports.flagshipgrowth.com/dormeo-us/deck/manifest.json). The Flagship Insights brand page reads that manifest
 for its **Weekly deck** tab. Only ever commit `dormeo-us/deck/` and this folder.
 
-Week = Sunday–Saturday. "This week" = the last complete week; "prior week" = the one before it.
+**Week = Monday–Sunday** (Ron, 2026-10-27). "This week" = the last complete Mon–Sun week, ending yesterday when the
+run is on Monday; "prior week" = the one before it. The dashboards keep their own Sunday–Saturday weeks; the deck's
+week comes from `deck_week.py` (step 1b), and `compute.py` uses it whenever `wk/deckweek.json` exists.
 
 ## Steps
 
-1. **Get the repo.** `git pull --rebase origin main`. The Monday daily dashboard refresh must already have run:
-   `_tools/dormeo-us-dashboard/data/pnl_ads.json` → `CAMP_META.weekStart` must be last Sunday and `ADS` must reach Saturday.
-   If not, run `_tools/dormeo-us-dashboard/RUNBOOK.md` first (it pulls the week's campaign/keyword data).
+1. **Get the repo.** `git pull --rebase origin main`. The daily dashboard refresh should have run (month, P&L, SQP and
+   ad history still come from `_tools/dormeo-us-dashboard/data`).
+1b. **The deck's Mon–Sun week.** `python3 deck_week.py plan` prints the Sellerise calls for this week and the prior week
+   (meta, week, camp, kw for each). Make them, save each with `python3 deck_week.py save <kind> <monday> <file>`
+   (shapes in the script's header; page `camp` with `offset` until `hasMore` is false), then
+   `python3 deck_week.py build <this week's monday>`. This replaces last week's `wk/deckweek.json`; never reuse it.
 2. **Pull the deck extras from Sellerise** (account "Dormeo", marketplace "US"; make the calls in parallel) and save them as
    `/tmp/deck/extra.json` in exactly the shape of `example/extra.json`. Copy numbers exactly; never estimate.
-   - `weeks`: 4 entries, oldest first, one per Sun–Sat week ending this Saturday. Each from `get_account_metrics` groupBy `none`
+   - `weeks`: 4 entries, oldest first, one per Mon–Sun week ending this Sunday. Each from `get_account_metrics` groupBy `none`
      for that week: revenue, units, orders, `ppc.impressions`, `ppc.clicks`, `refundAmount` (= refundUnits), refundRate,
-     `ppc.spend`, `ppc.sales` (adSales), `ppc.acos`, `ppc.tacos`. Label like `"Oct 18 – 24"`. The last entry also needs
+     `ppc.spend`, `ppc.sales` (adSales), `ppc.acos`, `ppc.tacos`. Label like `"Oct 19 – 25"`. The last entry also needs
      net, refunds (money), `ppc.orders` (adOrders), `ppc.cpc`, cvr (= adOrders ÷ clicks × 100).
    - `mtd`: `get_account_metrics` groupBy `none` from the 1st of the month to yesterday (`days` = yesterday's day of month).
      `mtdLY`: the same dates one year earlier.
-   - `daily`: `get_account_metrics` groupBy `day` for the two weeks: `[date, revenue, ppcSpend, ppcSales, orders, ppcOrders]`, 14 rows.
+   - `daily`: `get_account_metrics` groupBy `day` for the two Mon–Sun weeks: `[date, revenue, ppcSpend, ppcSales, orders, ppcOrders]`, 14 rows.
+   - `searchTerms`, `targets`: use this Mon–Sun week's dates.
    - `searchTerms`: `get_ads_search_term_insights` mode `top_sales` limit 25 for this week. `total` = summary.matchedSearchTerms;
      `winners`, `harvest` (= harvest_exact_candidate), `negative` (= negative_candidate), `noPurchase` (= clicks_no_purchase)
      from summary.reasonCounts. `rows` = top 8 queries containing "dormeo"; `category` = top 5 without it.

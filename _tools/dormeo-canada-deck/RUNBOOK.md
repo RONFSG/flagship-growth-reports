@@ -9,7 +9,8 @@ It reuses the Dormeo US scripts. Every script is told which brand to run for wit
 (run from `_tools/dormeo-us-dashboard` or `_tools/dormeo-us-deck`). Without `DECK_BRAND` they run for Dormeo US, so
 never forget it. Canada has no daily dashboard, so the Monday run pulls its own data (step 2).
 
-Week = Sunday–Saturday. "This week" = the last complete week; "prior week" = the one before it.
+**Week = Monday–Sunday** (Ron, 2026-10-27). "This week" = the last complete Mon–Sun week; "prior week" = the one
+before it. Step 2's data stays on Sunday–Saturday weeks (month, P&L, history); the deck's own week comes from step 2b.
 
 ## Steps
 
@@ -21,13 +22,16 @@ Week = Sunday–Saturday. "This week" = the last complete week; "prior week" = t
    `hasMore` is false. If the plan doesn't list `week <last week's Sunday>` because it exists already, fine; the deck needs
    `raw/week_<this week's Sunday>.json` and `raw/week_<prior week's Sunday>.json`.
    An empty SQP result (Amazon's report not loaded yet) is fine: skip that save.
+2b. **The deck's Mon–Sun week.** `cd ../dormeo-us-deck && python3 deck_week.py plan` (with `DECK_BRAND` set; the
+   calls carry `marketplaces: CA` and `targetCurrency: "CAD"`), make the calls, `deck_week.py save <kind> <monday> <file>`
+   each (page `camp` until `hasMore` is false), then `deck_week.py build <this week's monday>`. Writes
+   `../dormeo-canada-deck/wk/deckweek.json`, replacing last week's.
 3. **Inventory and reconciliation (sheet only, no Sellerise):**
    `python3 parse_sheet_pages.py ../.. ../dormeo-canada-deck/data` (reads `dormeo-canada-inventory/` and
    `dormeo-canada-reconciliation/`).
 4. **Deck extras** (`/tmp/deck/extra.json`, shape of `weeks/2026-10-24/extra.json`), all CA and `targetCurrency: "CAD"` for
    account metrics. Same list as the US RUNBOOK step 2, plus: weekly rows need impressions and clicks, so pull each of the
-   4 weeks with `groupBy: none`; `daily` comes from the daily rows already pulled in step 2 (`raw/ads_latest.json` has
-   revenue, spend, ad sales, ad orders; take total orders from the same `get_account_metrics` day response);
+   4 Mon–Sun weeks with `groupBy: none`; `daily` = `get_account_metrics` groupBy `day` for the two Mon–Sun weeks;
    `septRevenue`-style keys: last full month's revenue (`data/pnl_ads.json` PL gross) and last year's same month
    (`data/sales.json` a25); `primeDays` = event days in `deck_config.json`. Copy numbers exactly; never estimate.
 5. **Numbers:** `cd ../dormeo-us-deck && python3 compute.py ../dormeo-canada-deck /tmp/deck/deck_data.json ../dormeo-canada-deck/deck_config.json`
