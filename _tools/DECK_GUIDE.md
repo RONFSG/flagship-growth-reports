@@ -20,7 +20,7 @@ The weekly business review deck has 17 slides. Each week it's published on the b
 | Data | `_tools/dormeo-us-dashboard/data` (refreshed daily by the dashboard run) | `_tools/dormeo-canada-deck/data` (pulled during the Monday run) |
 | Inventory sheet page | `dormeo-us-inventory/` | `dormeo-canada-inventory/` |
 | Published to | `dormeo-us/deck/` | `dormeo-canada/deck/` |
-| Google Slides | presentation `1czOrE5asUOUB-aRAiKWyxjtaCg3rEuicfRBxpVHXYQQ` | presentation `1OmJTSCZYU8SyI5Ky8IicQb6k2fjhdBePyZ8jfx30Djs` |
+| Google Slides (paused) | presentation `1czOrE5asUOUB-aRAiKWyxjtaCg3rEuicfRBxpVHXYQQ` | presentation `1OmJTSCZYU8SyI5Ky8IicQb6k2fjhdBePyZ8jfx30Djs` |
 | Money | USD, $ | CAD, shown as $ (the cover says CAD) |
 
 The scripts live in `_tools/dormeo-us-deck/` and `_tools/dormeo-us-dashboard/`, and one copy serves every brand. To run them for a brand other than Dormeo US, set `DECK_BRAND=../<brand>-deck`. **If `DECK_BRAND` isn't set, they run for Dormeo US.**
@@ -29,7 +29,7 @@ The scripts live in `_tools/dormeo-us-deck/` and `_tools/dormeo-us-dashboard/`, 
 
 | Day | Run | What it does |
 |---|---|---|
-| Monday | Dormeo US, then Dormeo Canada (the `monday` list in `_tools/deck-schedule.json`) | Pulls Sellerise for every slide except inventory, writes the commentary, builds, publishes, and updates Google Slides |
+| Monday | Dormeo US, then Dormeo Canada (the `monday` list in `_tools/deck-schedule.json`) | Pulls Sellerise for every slide except inventory, writes the commentary, builds and publishes (PowerPoint and PDF) |
 | Tuesday | Inventory update | Rebuilds slide 12 from the new inventory sheet. No Sellerise calls. Skips any brand whose sheet hasn't been updated yet |
 | Sunday | Other brands (`sunday` list, currently empty) | Same steps as Monday, once a brand has a deck |
 
