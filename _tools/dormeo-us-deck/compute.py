@@ -11,7 +11,15 @@ L = lambda p: json.load(open(R + p))
 B = L("brand.json") if os.path.exists(R + "brand.json") else {}   # other brands keep a brand.json next to data/
 G = L("data/groups.json"); S = L("data/sales.json"); P = L("data/pnl_ads.json"); C = L("data/camp_kw.json")
 I = L("data/inv_weekly.json"); IS = L("data/inv_sheet.json"); REC = L("data/rec.json")
-META = P["CAMP_META"]; ws = dt.date.fromisoformat(META["weekStart"]); we = ws + dt.timedelta(days=6)
+META = P["CAMP_META"]
+# The deck's own Monday–Sunday week (deck_week.py build), kept next to deck_config.json. Without it the deck
+# falls back to the dashboard's Sunday–Saturday week.
+DKW = os.path.join(os.path.dirname(os.path.abspath(sys.argv[3])), "wk", "deckweek.json") if len(sys.argv) > 3 else ""
+WEEK = json.load(open(DKW)) if DKW and os.path.exists(DKW) else None
+if WEEK:
+    META = {"weekStart": WEEK["weekStart"], "cur": WEEK["cur"], "prev": WEEK["prev"]}
+    C = {"CAMP": WEEK["CAMP"], "STRAT_LABEL": WEEK["STRAT_LABEL"], "TYPE_LABEL": WEEK["TYPE_LABEL"], "KW": [WEEK["KW"]]}
+ws = dt.date.fromisoformat(META["weekStart"]); we = ws + dt.timedelta(days=6)
 prev_ws = ws - dt.timedelta(days=7)
 cur, prv = META["cur"], META["prev"]
 D = lambda s, y=2026: dt.date(y, *map(int, s.split("/")))
@@ -19,7 +27,7 @@ ads = [dict(d=D(r[0]), spend=r[1], adSales=r[2], orders=r[5], rev=r[6]) for r in
 chg = lambda a, b: (a / b - 1) if b else None
 MS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
 fmtd = lambda d: f"{MS[d.month-1]} {d.day}"
-WK0 = dt.date(2025, 12, 28); widx = lambda d: (d - WK0).days // 7
+WK0 = dt.date(2025, 12, 29) if WEEK else dt.date(2025, 12, 28); widx = lambda d: (d - WK0).days // 7
 wnum = widx(ws) + 1
 
 out = {"brand": B.get("brand", "Dormeo US"), "money": B.get("money", "$"), "currency": B.get("currency", "USD"), "week": {"num": wnum, "start": str(ws), "end": str(we), "label": f"{fmtd(ws)}–{we.day if ws.month==we.month else fmtd(we)}, {we.year}",
@@ -42,7 +50,7 @@ days = [a for a in ads if ws <= a["d"] <= we]
 out["daily"] = [dict(day=a["d"].strftime("%a"), date=fmtd(a["d"]), rev=a["rev"], spend=a["spend"], adSales=a["adSales"], orders=a["orders"],
                      acos=a["spend"] / a["adSales"] if a["adSales"] else None) for a in days]
 
-# 3. 8-week trend from the daily account series (complete Sun–Sat weeks only)
+# 3. 8-week trend from the daily account series (complete weeks, same weekday start as the deck week)
 trend = []
 s = ws - dt.timedelta(days=49)
 while s <= ws:
@@ -55,7 +63,15 @@ out["trend"] = trend
 
 # 4. product lines (weekly Sellerise sales by line)
 i = widx(ws); lines = []
-for gi, g in enumerate(G):
+if WEEK:   # product lines from the deck week's ASIN sales
+    agg = {g["key"]: [0, 0, 0, 0] for g in G}
+    for j, rows in ((0, WEEK["weekCur"]), (2, WEEK["weekPrev"])):
+        for asin, rv, u in rows:
+            a_ = agg[WEEK["groupOf"].get(asin, "pr")]; a_[j] += rv or 0; a_[j + 1] += u or 0
+    for g in G:
+        a, ua, b, ub = agg[g["key"]]
+        lines.append(dict(name=g["short"], rev=round(a, 2), prev=round(b, 2), change=chg(a, b), units=int(ua), unitsPrev=int(ub)))
+for gi, g in enumerate(G if not WEEK else []):
     a, b = I["WEEKLY"]["sales"][gi][i], I["WEEKLY"]["sales"][gi][i - 1]
     lines.append(dict(name=g["short"], rev=a, prev=b, change=chg(a, b), units=I["WEEKLY"]["units"][gi][i], unitsPrev=I["WEEKLY"]["units"][gi][i - 1]))
 tot = sum(x["rev"] for x in lines)
@@ -64,7 +80,7 @@ out["lines"] = sorted(lines, key=lambda x: -x["rev"])
 
 # 5. top products (ASIN level, Sellerise weekly pulls)
 names = {k_["asin"]: k_["name"] for k_ in IS["skus"]}
-wc = {r[0]: r for r in L(f"raw/week_{ws}.json")}; wp = {r[0]: r for r in L(f"raw/week_{prev_ws}.json")}
+wc = {r[0]: r for r in (WEEK["weekCur"] if WEEK else L(f"raw/week_{ws}.json"))}; wp = {r[0]: r for r in (WEEK["weekPrev"] if WEEK else L(f"raw/week_{prev_ws}.json"))}
 def short(n, asin=None):
     if asin in B.get("names", {}): return B["names"][asin]   # brand.json overrides (e.g. sizes the sheet name leaves out)
     n = n.replace("Ⓡ", "").replace("Dormeo ", "")
