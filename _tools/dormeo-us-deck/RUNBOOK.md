@@ -47,10 +47,22 @@ Week = Sunday–Saturday. "This week" = the last complete week; "prior week" = t
    (prints `DECK_PUBLISHED`), then
    `git add ../../dormeo-us/deck . && git commit -m "Dormeo US weekly deck: week <N> (<label>)" && git push origin main`
    (on a rejected push: `git pull --rebase origin main`, push again).
-8. **Google Slides: not run.** The deck is delivered through the Weekly deck tab in Flagship Insights (it reads
-   `dormeo-us/deck/manifest.json`). Syncing slides through Claude cost too many tokens per brand, so it is off.
-   `gslides_sync.py` stays here in case it is needed again; don't run it as part of the Monday routine.
-9. **Report:** send `/tmp/deck/deck.pptx` to the user (SendUserFile) with a two-line summary of the week.
+8. **Google Slides (same link every week):** update the editable deck
+   https://docs.google.com/presentation/d/1czOrE5asUOUB-aRAiKWyxjtaCg3rEuicfRBxpVHXYQQ/edit
+   - Read the slide ids: `read_presentation` (presentationId above, fields `slides.objectId`).
+   - `python3 gslides_sync.py plan /tmp/deck/deck.pptx /tmp/deck/gs --existing <ids, comma separated>`
+     (prints the batches; usually 1–3 for a normal week, up to ~10 if many slides were rebuilt).
+   - Send each `/tmp/deck/gs/batch-NN.json` in order with `update_presentation` (the file's JSON list is the
+     `requests`). Stop at the first failure.
+   - `python3 gslides_sync.py commit /tmp/deck/gs --done <numbers of the batches that succeeded>`; this updates
+     `gslides_state.json`, which must be committed (git add it with step 7's files, or commit it now and push).
+   - Check it: `download_file_content` with exportMimeType `application/pdf`, decode the saved JSON's base64 to a
+     PDF, `pdftoppm -r 50 -jpeg`, and look at every slide (tables lined up, nothing off the page).
+   - If a batch failed part-way, re-run plan with the same ids and send again; if slides look broken, re-run plan
+     with `--force-geometry <slide numbers>` to re-send every element's position and size on those slides.
+   - Never edit this presentation by hand-built requests outside the script, or the state file goes out of date.
+9. **Report:** send `/tmp/deck/deck.pptx` to the user (SendUserFile) with a two-line summary of the week and the
+   Google Slides link.
 
 ## If something fails
 - A Sellerise call fails: leave that block as `example/extra.json` shapes it but with this week's values you do have, and say in
@@ -61,6 +73,7 @@ Week = Sunday–Saturday. "This week" = the last complete week; "prior week" = t
 - `compute.py` — every deck number from the dashboard data (`_tools/dormeo-us-dashboard/data`, `raw/`).
 - `build_slides.py` — the 17 slides (python-pptx; charts drawn as shapes so the file stays small and converts cleanly to Google Slides).
 - `publish_deck.py` — PowerPoint + PDF + one JPG per slide into `dormeo-us/deck/<week end>/`, updates `manifest.json` (keeps 26 weeks).
-- `gslides_sync.py` + `gslides_state.json` — Google Slides sync, switched off (see step 8).
+- `gslides_sync.py` + `gslides_state.json` — keeps the Google Slides deck in step (step 8). The state file records
+  what the presentation holds; commit it after every sync.
 - `upload_slides.py` — not used (needs a service account): replaces one Google Slides file's content via the Drive API (needs a service account and Google API access).
 - `example/` — Week 43's `extra.json` and `notes.json`, the reference shapes.
