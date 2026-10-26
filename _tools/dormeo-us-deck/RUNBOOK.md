@@ -56,17 +56,16 @@ week comes from `deck_week.py` (step 1b), and `compute.py` uses it whenever `wk/
    `mkdir -p weeks/<week end> && cp /tmp/deck/extra.json /tmp/deck/notes.json weeks/<week end>/`, then
    `git add ../../dormeo-us/deck . && git commit -m "Dormeo US weekly deck: week <N> (<label>)" && git push origin main`
    (on a rejected push: `git pull --rebase origin main`, push again).
-8. **Google Slides copy (one call, about a minute).** The deck goes to Google Slides as one picture per slide, from the
-   images just published (not editable there; the .pptx is the editable file). After the push, wait about a minute for
-   reports.flagshipgrowth.com to update, then:
-   - Google_Drive `create_file`: title `Dormeo US - Weekly Business Review - Week <N> (<label>)`,
-     `contentMimeType` `application/vnd.google-apps.presentation`, `parentId` `1AObylhEtAg2iJCLOAd8a-f7SCgawUGg2` (Drive folder "Weekly decks").
-   - Google_Slides `read_presentation` with `fields: ["slides.objectId"]` → the one blank slide's id (usually `p`).
-   - `python3 gslides_images.py ../../dormeo-us/deck <that slide id>` and pass its output, unchanged, as `requests` to
-     Google_Slides `update_presentation` for the new file. If it says an image can't be fetched, the site hasn't updated
-     yet: wait a minute and send it again.
-   - `python3 gslides_images.py link ../../dormeo-us/deck <presentation id>`, then commit and push `../../dormeo-us/deck/manifest.json`.
-     Insights then shows "Open in Google Slides" next to View PowerPoint.
+8. **Google Slides (same file and link every week, one call, about a minute).** The deck goes to Google Slides as one
+   picture per slide, from the images just published (not editable there; the .pptx is the editable file).
+   **Dormeo US's file: `1yhYL8dq-pEwjApvrKG2uapZKmmzc6BPF66746nUlr_k`** (Drive folder "Weekly decks"). Never create a new
+   file. After the push, wait about a minute for reports.flagshipgrowth.com to update, then:
+   - Google_Slides `read_presentation` on that file with `fields: ["slides.objectId"]` → its current slide ids.
+   - `python3 gslides_images.py ../../dormeo-us/deck <those ids, comma-separated>` and pass its output, unchanged, as
+     `requests` to Google_Slides `update_presentation` for that file (adds the new slides and deletes the old ones in one
+     call). If it says an image can't be fetched, the site hasn't updated yet: wait a minute and send it again.
+   - `python3 gslides_images.py link ../../dormeo-us/deck 1yhYL8dq-pEwjApvrKG2uapZKmmzc6BPF66746nUlr_k`, then commit and
+     push `../../dormeo-us/deck/manifest.json` (publishing drops the link, so this is needed every time).
 9. **Report:** send `/tmp/deck/deck.pptx` to the user (SendUserFile) with a two-line summary of the week.
    Also report the time each part took (run `date` at the start, after the data pulls and at the end): data pulls,
    build and publish.
@@ -85,7 +84,7 @@ Run by the Tuesday task after the weekly inventory sheet update. No Sellerise ca
    Render and look at slide 12 (`soffice` + `pdftoppm -f 12 -l 12`).
 4. Publish as Monday's step 7: same week end, so it replaces this week's files and keeps the manifest entry. Commit
    `git add ../../dormeo-us/deck ../dormeo-us-dashboard/data/inv_sheet.json . && git commit -m "Dormeo US weekly deck: week <N> inventory update"`, push.
-   Then make a new Google Slides copy as Monday's step 8 (title ends "… inventory update"), so the link shows the new slide 12.
+   Then refresh the same Google Slides file as Monday's step 8, so the link shows the new slide 12.
 5. Report: one line with the new sheet date and the out-of-stock / low-stock counts.
 
 ## If something fails
@@ -97,7 +96,7 @@ Run by the Tuesday task after the weekly inventory sheet update. No Sellerise ca
 - `compute.py` — every deck number from the dashboard data (`_tools/dormeo-us-dashboard/data`, `raw/`).
 - `build_slides.py` — the 17 slides (python-pptx; charts drawn as shapes so the file stays small and converts cleanly to Google Slides).
 - `publish_deck.py` — PowerPoint + PDF + one JPG per slide into `dormeo-us/deck/<week end>/`, updates `manifest.json` (keeps 26 weeks).
-- `gslides_images.py` — the Google Slides picture copy (step 8). `fix_pptx.py` — keeps the .pptx openable in PowerPoint (run by build_slides.py).
+- `gslides_images.py` — refreshes the brand's one Google Slides file with the slide pictures (step 8). `fix_pptx.py` — keeps the .pptx openable in PowerPoint (run by build_slides.py).
 - `gslides_sync.py` + `gslides_state.json` — old editable Google Slides sync, not used (too slow). The state file records
   what the presentation holds; commit it after every sync.
 - `upload_slides.py` — not used (needs a service account): replaces one Google Slides file's content via the Drive API (needs a service account and Google API access).
