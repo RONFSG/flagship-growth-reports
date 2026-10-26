@@ -1,18 +1,151 @@
 {
- "_about": "Which brands get a weekly business review deck, and on which day. Read by the two scheduled deck tasks (Monday: Dormeo; Sunday: every other brand). A brand runs only when enabled is true AND its runbook exists. To add a brand: build _tools/<slug>-deck/ (copy dormeo-us-deck), publish once by hand, then set enabled to true here.",
+ "_about": "Which brands get a weekly business review deck, and on which day. Read by the scheduled deck tasks (Monday: Dormeo; Sunday: every other brand). A brand runs only when enabled is true AND its runbook exists. googleSlidesId = the brand's ONE Google Slides file: every run replaces its slides (gslides_images.py), so the link never changes; never create a new file. To add a brand: build _tools/<slug>-deck/ (copy dormeo-canada-deck), put its googleSlidesId in the runbook's Google Slides step, publish once by hand, then set enabled to true here. terminated = Flagship no longer manages the brand: never enable.",
  "monday": [
   {
    "brand": "Dormeo US",
    "slug": "dormeo-us",
    "runbook": "_tools/dormeo-us-deck/RUNBOOK.md",
-   "enabled": true
+   "enabled": true,
+   "googleSlidesId": "1yhYL8dq-pEwjApvrKG2uapZKmmzc6BPF66746nUlr_k"
   },
   {
    "brand": "Dormeo Canada",
    "slug": "dormeo-canada",
    "runbook": "_tools/dormeo-canada-deck/RUNBOOK.md",
-   "enabled": true
+   "enabled": true,
+   "googleSlidesId": "1adcFcpVilJtHRuRSIyTrzMgSc5-bkwL0dBgE--qg7a4"
   }
  ],
- "sunday": []
+ "sunday": [
+  {
+   "brand": "Reshoevn8r US",
+   "slug": "reshoevn8r-us",
+   "runbook": "_tools/reshoevn8r-us-deck/RUNBOOK.md",
+   "googleSlidesId": "1h2N5bPk9trHvrIUAAWPXAjUWB0Rj5ZL5W_MbqJwZ5v4",
+   "enabled": false
+  },
+  {
+   "brand": "Reshoevn8r Canada",
+   "slug": "reshoevn8r-canada",
+   "runbook": "_tools/reshoevn8r-canada-deck/RUNBOOK.md",
+   "googleSlidesId": "1OFdXhj6hqhzXqvhNkTUxd7lWVytrSzfjtHSE880kuco",
+   "enabled": false
+  },
+  {
+   "brand": "Reshoevn8r UK",
+   "slug": "reshoevn8r-uk",
+   "runbook": "_tools/reshoevn8r-uk-deck/RUNBOOK.md",
+   "googleSlidesId": "1BdslKqKv96fwCu8x1S7GqEBAOmBPyIOq6CnfCOM_cnA",
+   "enabled": false
+  },
+  {
+   "brand": "Opopop",
+   "slug": "opopop",
+   "runbook": "_tools/opopop-deck/RUNBOOK.md",
+   "googleSlidesId": "1y8_JuPj5MyD-5sBmIELFpJKQUCv3nXWiqE9BkE236yA",
+   "enabled": false
+  },
+  {
+   "brand": "RationAle Brewing",
+   "slug": "rationale-brewing",
+   "runbook": "_tools/rationale-brewing-deck/RUNBOOK.md",
+   "googleSlidesId": "1a-rzQ5FBCG4rAT7kJS6hPNrcrsaBqAFeeexBtGKrAO0",
+   "enabled": false
+  },
+  {
+   "brand": "SuperMush",
+   "slug": "super-mush",
+   "runbook": "_tools/super-mush-deck/RUNBOOK.md",
+   "googleSlidesId": "1sIWlNFD0xOipiPVm9kdaxZgBikM3hpZ2uOxJWmtjw_E",
+   "enabled": false
+  },
+  {
+   "brand": "Hapad US",
+   "slug": "hapad-us",
+   "runbook": "_tools/hapad-us-deck/RUNBOOK.md",
+   "googleSlidesId": "1wvKiHFUdt_KF7U_janYfnJ1S9bImamtUrRVeBZ2IOp4",
+   "enabled": false
+  },
+  {
+   "brand": "Hapad Canada",
+   "slug": "hapad-canada",
+   "runbook": "_tools/hapad-canada-deck/RUNBOOK.md",
+   "googleSlidesId": "1FWK0PfzaHLXVSTatOZNkvzkEo0GnROgw8cftNlcNudc",
+   "enabled": false
+  },
+  {
+   "brand": "Tubr Storage",
+   "slug": "tubr-storage",
+   "runbook": "_tools/tubr-storage-deck/RUNBOOK.md",
+   "googleSlidesId": "12lfPL9U_b5VWrA30-WqRPUmSuwADngFr-oW2UjtzrG8",
+   "enabled": false,
+   "terminated": true
+  },
+  {
+   "brand": "Smood Sweets",
+   "slug": "smood-sweets",
+   "runbook": "_tools/smood-sweets-deck/RUNBOOK.md",
+   "googleSlidesId": "1oGS3Pi2cjn2lP4-BQMK-Q715vEGHdjCdjI53_bIuChk",
+   "enabled": false,
+   "terminated": true
+  },
+  {
+   "brand": "MAC Energy",
+   "slug": "mac-energy",
+   "runbook": "_tools/mac-energy-deck/RUNBOOK.md",
+   "googleSlidesId": "1ZXuApL-I-9HYautY0VP-pQxRp7If6DESuGua8ld0pqM",
+   "enabled": false
+  },
+  {
+   "brand": "Lewie",
+   "slug": "lewie",
+   "runbook": "_tools/lewie-deck/RUNBOOK.md",
+   "googleSlidesId": "1QOImctpmXNXel0rGhbqom90pLHjE378B3QO7omFYcBM",
+   "enabled": false
+  },
+  {
+   "brand": "Stogie Golf",
+   "slug": "stogie-golf",
+   "runbook": "_tools/stogie-golf-deck/RUNBOOK.md",
+   "googleSlidesId": "1mG9fcvU9pRfAb5E8G3zYQHlPnO9qouFgQW79idDWGwQ",
+   "enabled": false,
+   "terminated": true
+  },
+  {
+   "brand": "Sidekick",
+   "slug": "sidekick",
+   "runbook": "_tools/sidekick-deck/RUNBOOK.md",
+   "googleSlidesId": "1jgAkKJk1ni8-2jQXceoGwtUc3DG6xgH9fT0Ed7eMHik",
+   "enabled": false
+  },
+  {
+   "brand": "Aura House",
+   "slug": "aura-house",
+   "runbook": "_tools/aura-house-deck/RUNBOOK.md",
+   "googleSlidesId": "1dSmOizXfqP--0iFreJ4RC34r3EkDhpK4cNmdkepjOWU",
+   "enabled": false,
+   "terminated": true
+  },
+  {
+   "brand": "Heavenly Bodies",
+   "slug": "heavenly-bodies",
+   "runbook": "_tools/heavenly-bodies-deck/RUNBOOK.md",
+   "googleSlidesId": "1B0w2jBVcP7LLD4VLrKmFxNOxebY7ac3AyY2UtHOF89Q",
+   "enabled": false
+  },
+  {
+   "brand": "CaddyO",
+   "slug": "caddyo",
+   "runbook": "_tools/caddyo-deck/RUNBOOK.md",
+   "googleSlidesId": "1UdzMxD0yOaqF496Vi5o8dfVmm5YoZB0YDUQGk0Z-HMA",
+   "enabled": false
+  },
+  {
+   "brand": "JAX Athletics",
+   "slug": "jax-athletics",
+   "runbook": "_tools/jax-athletics-deck/RUNBOOK.md",
+   "googleSlidesId": "1suPqesJYXBc-5aZ96Q9xcw0VUxV8hxFN3pNcg17G6i4",
+   "enabled": false
+  }
+ ]
 }
