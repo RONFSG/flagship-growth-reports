@@ -1,0 +1,114 @@
+{
+ "_week": "2026-10-19 to 2026-10-25 (Week 43, Monday–Sunday). Written from that week's numbers; rewrite every key each Monday.",
+ "week_story": [
+  "Revenue fell to $57.7K (-26%) almost entirely on Octaspring Queen: 8 units vs 65 the week before, with 0 available at FBA and 400 inbound.",
+  "The in-stock toppers grew: Full +55%, Cal/Split/RV +52%, Twin & XL +23%, King +2%."
+ ],
+ "refunds_title": "Refunds are still climbing",
+ "refunds": [
+  "Refunds were $12.1K, 26.1% of revenue, up from 17.6% last week. Part of this is Prime Big Deal Days orders coming back, but the rate has now risen two weeks in a row."
+ ],
+ "pacing_reco": "Getting the Queen topper checked in at FBA is still the biggest lever: it was the top seller before the stock-out and is now under 6% of sales.",
+ "ads_context": [
+  "Ad spend came down 30% to $6.7K while ACoS held at 23.7% (23.9% last week).",
+  "TACoS was 11.7%; ads drove 49% of revenue this week."
+ ],
+ "ads_strategy": [
+  "Branded keywords returned $19.8K on $3.2K (16.2% ACoS) and brought 63 of 85 ad orders.",
+  "Category keywords cost $1.5K for $4.1K in sales (36.9% ACoS); spend there was cut 51% vs last week.",
+  "Streaming TV spent $1.1K for one $495 sale."
+ ],
+ "bid_moves": [
+  "Lower the bid on “mattress +topper” (phrase): $1,003 spent for 4 orders (76% ACoS).",
+  "Cut or pause the 97 campaigns that spent $792 this week with no sales; the top five are each $40–60."
+ ],
+ "coupons": [
+  "This week: no coupon redemptions.",
+  "Last week: no coupon redemptions.",
+  "October to date: 127 coupon redemptions, all before Oct 12."
+ ],
+ "promotions": [
+  "This week: 8 promotion orders, $258 in promotional discounts (vs 27 orders and $631 last week).",
+  "Discounting keeps stepping down, which protects margin while the Queen is out of stock."
+ ],
+ "events": [
+  "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+  "Deal and coupon set-up deadlines: to confirm with the account team.",
+  "Priority: Queen and King toppers in stock at FBA before Nov 20 so BF/CM traffic converts."
+ ],
+ "reviews_title": "No review data in Sellerise",
+ "reviews_body": [
+  "Sellerise returned no review records for Dormeo US over the last 90 days.",
+  "That means review tracking isn't pulling for this account, not that there were no reviews."
+ ],
+ "reviews_reco": [
+  "Turn on review tracking for Dormeo US in Sellerise (or pull Amazon's Customer Reviews report) so the deck can show star rating and review count per line.",
+  "With refunds at 26.1%, reading the newest 1–3 star reviews on the King and Full toppers is the quickest way to see whether returns share a cause."
+ ],
+ "recommendations": [
+  [
+   "Inventory",
+   "Confirm the ETA for the 400 inbound Queen toppers and chase any receiving delay at FBA.",
+   "Account team",
+   "This week"
+  ],
+  [
+   "Inventory",
+   "Send King (1.6 weeks available) and Cal/Split/RV (2.7 weeks) replenishment so neither runs out before BF/CM.",
+   "Account team",
+   "By Nov 6"
+  ],
+  [
+   "Ads",
+   "Lower the bid on “mattress +topper” (phrase) and review the $1.1K Streaming TV spend that returned one sale.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Pause or cut the 97 campaigns with spend and no sales ($792 this week).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Add the 3 converting searches as exact keywords; negate the 17 no-sale search terms after review.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Keep Queen budget shifted to King and Full while Queen is out; both grew this week.",
+   "Ads team",
+   "Until restock"
+  ],
+  [
+   "Marketing",
+   "Plan BF/CM coupons and deals for the toppers (Nov 27–30) and confirm submission deadlines.",
+   "Account team",
+   "By Nov 6"
+  ],
+  [
+   "Account health",
+   "Turn on review tracking and look into the return reasons behind the 26% refund rate.",
+   "Account team",
+   "Next week"
+  ]
+ ],
+ "position": [
+  "October is +51% ahead of last year to date and pacing to about $437.2K.",
+  "This week slowed to $57.7K because the Queen topper, the top seller, was out of stock all week."
+ ],
+ "next_steps": [
+  "Restock Queen at FBA; protect King and Cal/Split/RV.",
+  "Trim spend on no-sale campaigns and generic targets.",
+  "Lock BF/CM coupons and deals.",
+  "Look into the refund rise."
+ ],
+ "data_ask": [
+  "Queen inbound ETA and PO dates.",
+  "BF/CM deal and coupon plan.",
+  "Review tracking turned on in Sellerise.",
+  "Category / brand impression share (Brand Analytics)."
+ ]
+}
