@@ -32,5 +32,10 @@ M = json.load(open(mpath)) if os.path.exists(mpath) else {"history": []}
 hist = [h for h in M.get("history", []) if h["end"] != end]
 hist.insert(0, {k: entry[k] for k in ("week", "label", "end", "pptx", "pdf")})
 M = {"current": entry, "history": hist[:26]}
+# the editable Google Slides deck (same link every week), shown as "Open in Google Slides" in Insights
+cfg_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "deck_config.json")
+cfg = json.load(open(cfg_path)) if os.path.exists(cfg_path) else {}
+if cfg.get("googleSlidesUrl"):
+    M["googleSlides"] = cfg["googleSlidesUrl"]
 json.dump(M, open(mpath, "w"), indent=1)
 print("DECK_PUBLISHED", entry["pptx"], len(slides), "slides")
