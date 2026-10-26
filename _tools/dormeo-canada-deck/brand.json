@@ -4,7 +4,7 @@
  "account": "Dormeo",
  "marketplace": "CA",
  "currency": "CAD",
- "money": "C$",
+ "money": "$",
  "sheetName": "Dormeo Canada",
  "invPage": "dormeo-canada-inventory",
  "recPage": "dormeo-canada-reconciliation",

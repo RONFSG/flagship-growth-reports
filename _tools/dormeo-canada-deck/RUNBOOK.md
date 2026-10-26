@@ -1,7 +1,7 @@
 # Dormeo Canada weekly deck — Monday runbook (and the Tuesday inventory update)
 
 Same 17-slide Weekly Business Review as Dormeo US, for the Canada marketplace (Sellerise account "Dormeo",
-marketplace CA, all money in CAD, shown as C$). Published to `dormeo-canada/deck/` in this repo
+marketplace CA, all money in CAD, shown as $; the cover says the amounts are CAD). Published to `dormeo-canada/deck/` in this repo
 (https://reports.flagshipgrowth.com/dormeo-canada/deck/manifest.json), which the Flagship Insights "Weekly deck" tab
 reads. Only ever commit `dormeo-canada/deck/` and this folder.
 
@@ -32,7 +32,7 @@ Week = Sunday–Saturday. "This week" = the last complete week; "prior week" = t
    (`data/sales.json` a25); `primeDays` = event days in `deck_config.json`. Copy numbers exactly; never estimate.
 5. **Numbers:** `cd ../dormeo-us-deck && python3 compute.py ../dormeo-canada-deck /tmp/deck/deck_data.json ../dormeo-canada-deck/deck_config.json`
 6. **Commentary:** `/tmp/deck/notes.json` with every key of `weeks/2026-10-24/notes.json` (rewrite all of it), same rules as
-   the US RUNBOOK step 5. Write money as C$ (e.g. "C$1,605"). Canada retail dates: Black Friday / Cyber Monday, Boxing Day (Dec 26).
+   the US RUNBOOK step 5. Write money as $ (e.g. "$1,605"); the cover already says it is CAD. Canada retail dates: Black Friday / Cyber Monday, Boxing Day (Dec 26).
 7. **Build and look:** `python3 build_slides.py /tmp/deck/deck_data.json /tmp/deck/extra.json /tmp/deck/notes.json /tmp/deck/deck.pptx`,
    render (`soffice` + `pdftoppm -r 40`) and look at every slide; fix overflow by shortening notes.
 8. **Publish:** `python3 publish_deck.py /tmp/deck/deck.pptx /tmp/deck/deck_data.json ../../dormeo-canada` (with `DECK_BRAND` set,

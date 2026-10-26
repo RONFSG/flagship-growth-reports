@@ -25,7 +25,7 @@ HF, BF = "Space Grotesk", "Inter"
 
 def rgb(h): return RGBColor.from_string(h)
 BRAND = D.get("brand", "Dormeo US")
-CUR = D.get("money", "$")   # "C$" for Canada
+CUR = D.get("money", "$")
 def usd(v, d=0): return ("-" if v < 0 else "") + CUR + f"{abs(v):,.{d}f}"
 def k(v): return (CUR + f"{v/1000:,.1f}K") if abs(v) >= 1000 else usd(v)
 def pct(v, d=1): return f"{v:.{d}f}%"
@@ -156,7 +156,7 @@ text(s, 0.9, 2.8, 11, 1.2, BRAND, size=60, color=WHITE, font=HF, bold=True)
 text(s, 0.9, 4.05, 11, 0.5, f"Amazon Business Review · Week {W['num']}", size=22, color=WHITE, font=HF)
 text(s, 0.9, 4.7, 11, 0.4, f"Week ending {END.strftime('%A, %B')} {END.day}, {END.year}  ·  {W['label']}", size=14, color=SKY)
 if D.get("currency", "USD") != "USD":   # e.g. Dormeo Canada: say which currency every amount is in
-    text(s, 0.9, 5.2, 11, 0.4, f"All amounts in {D['currency']} ({CUR})", size=12, color=SKY)
+    text(s, 0.9, 5.2, 11, 0.4, f"All amounts in {D['currency']}", size=12, color=SKY)
 
 # 2 agenda
 s = slide(); header(s, "Today's agenda", "What we'll cover", nxt())
