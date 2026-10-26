@@ -119,6 +119,11 @@ for g in G:
     inv.append(dict(name=g["short"], total=a["total"], avail=a["avail"], inbound=a["inbound"], wkAvg=wa,
                     weeksAvail=a["avail"] / wa if wa else None, weeksTotal=a["total"] / wa if wa else None))
 out["inventory"] = dict(asOf=IS["asOf"], week=IS["week"], rows=inv, total=sum(x["total"] for x in inv), avail=sum(x["avail"] for x in inv), inbound=sum(x["inbound"] for x in inv))
+# stock status from the sheet only (no Sellerise): "selling" = 5+ units in the last 30 days
+_sel = [k_ for k_ in IS["skus"] if k_["l30"] >= 5]
+out["invStatus"] = dict(selling=len(_sel), oos=sum(1 for k_ in _sel if k_["avail"] <= 0),
+                        low=sum(1 for k_ in _sel if k_["avail"] > 0 and k_["wkLeft"] <= 4),
+                        inbound=sum(k_["inbound"] for k_ in IS["skus"]))
 out["restock"] = [dict(name=short(k_["name"]), asin=k_["asin"], avail=k_["avail"], inbound=k_["inbound"], l30=k_["l30"], wkLeft=k_["wkLeft"])
                   for k_ in IS["skus"] if k_["l30"] >= 5 and (k_["avail"] <= 0 or k_["wkLeft"] <= 2)]
 

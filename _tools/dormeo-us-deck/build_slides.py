@@ -300,10 +300,10 @@ panel(s, 8.78, 2.25, 3.95, 4.55, "Upcoming events", N["events"], size=10.5)
 
 # 12 inventory
 s = slide(); header(s, "Inventory", f"Stock position — week {inv['week']} inventory update ({inv['asOf']})", nxt())
-oos = [r for r in X["invRisk"]["rows"] if r[6] == "Out of stock"]; low = [r for r in X["invRisk"]["rows"] if r[6] == "Low stock"]
-card(s, 0.6, 1.5, 2.9, 1.55, "Out of stock", str(len(oos)), "selling ASINs at 0 units", vcolor=RED)
-card(s, 0.6, 3.2, 2.9, 1.55, "Low stock", str(len(low)), "under ~30 days of supply", vcolor=AMBER)
-card(s, 0.6, 4.9, 2.9, 1.9, "Flagged by Sellerise", str(X["invRisk"]["total"]), "ASINs with an inventory risk")
+st = D["invStatus"]  # from the inventory sheet only
+card(s, 0.6, 1.5, 2.9, 1.55, "Out of stock", str(st["oos"]), f"of {st['selling']} selling SKUs, 0 at FBA", vcolor=RED)
+card(s, 0.6, 3.2, 2.9, 1.55, "Low stock", str(st["low"]), "4 weeks of stock or less", vcolor=AMBER)
+card(s, 0.6, 4.9, 2.9, 1.9, "Units inbound", f"{st['inbound']:,.0f}", "on the way to FBA")
 text(s, 3.75, 1.5, 8.98, 0.3, "Weeks of supply at FBA (available ÷ weekly sales)", size=11, bold=True)
 items = [(r["name"], min(r["weeksAvail"], 12)) for r in inv["rows"]]
 raw = {r["name"]: r["weeksAvail"] for r in inv["rows"]}

@@ -1,4 +1,4 @@
-# Dormeo US weekly deck — Monday runbook
+# Dormeo US weekly deck — Monday runbook (and the Tuesday inventory update)
 
 Builds the 17-slide Weekly Business Review (FSG branding, the layout of the "Dormeo Weekly Amazon Business Review" sample)
 for the week that ended on Saturday, and publishes it to `dormeo-us/deck/` in this repo
@@ -30,7 +30,9 @@ Week = Sunday–Saturday. "This week" = the last complete week; "prior week" = t
      `[target, Match, "Brand"|"Category", spend, sales, acos or null, clicks, orders]`.
    - `reviews`: `get_review_insights` last 90 days → `{"available": false}` if no rows, else the rating/review counts.
    - `alerts`: `get_alert_summary` last 30 days → total, actionable (actionableTotal), critical, warning, and `byType` with plain labels.
-   - `invRisk`: `get_inventory_risks` limit 15 → `total` = page.total; `rows` = top 8 `[short name, asin, stock, units30, revenue30, daysSupply, "Out of stock"|"Low stock"]`.
+   - Inventory is **not** pulled from Sellerise. Slide 12 uses only the inventory sheet (Inventory Tracker tab, via the
+     `dormeo-us-inventory/` page the dashboard refresh reads). On Monday it shows the latest sheet update there is; the
+     Tuesday run below refreshes it once the new weekly sheet update is in.
 3. **Event days.** If this month has a sales event (Prime Day, Prime Big Deal Days, BF/CM), list its dates in `deck_config.json`
    `eventDays`; month pacing then counts those days once. Leave last year's dates in; only this month's are used.
 4. **Numbers:** `python3 compute.py ../dormeo-us-dashboard /tmp/deck/deck_data.json deck_config.json`
@@ -44,7 +46,8 @@ Week = Sunday–Saturday. "This week" = the last complete week; "prior week" = t
    `pdftoppm -r 40 -jpeg /tmp/deck/deck.pdf /tmp/deck/s`. Open every slide image; fix overflowing or overlapping text by
    shortening notes, then rebuild.
 7. **Publish:** `python3 publish_deck.py /tmp/deck/deck.pptx /tmp/deck/deck_data.json ../../dormeo-us`
-   (prints `DECK_PUBLISHED`), then
+   (prints `DECK_PUBLISHED`), then save this week's inputs for the Tuesday run:
+   `mkdir -p weeks/<week end> && cp /tmp/deck/extra.json /tmp/deck/notes.json weeks/<week end>/`, then
    `git add ../../dormeo-us/deck . && git commit -m "Dormeo US weekly deck: week <N> (<label>)" && git push origin main`
    (on a rejected push: `git pull --rebase origin main`, push again).
 8. **Google Slides (same link every week):** update the editable deck
@@ -64,6 +67,23 @@ Week = Sunday–Saturday. "This week" = the last complete week; "prior week" = t
 9. **Report:** send `/tmp/deck/deck.pptx` to the user (SendUserFile) with a two-line summary of the week and the
    Google Slides link.
 
+## Tuesday: inventory update (slide 12 only)
+
+Run by the Tuesday task after the weekly inventory sheet update. No Sellerise calls and no new commentary.
+1. `git pull --rebase origin main`. Find this week's folder: the newest `weeks/<week end>/` (it has `extra.json` and `notes.json`).
+   If it is missing, the Monday deck didn't publish: stop and report that.
+2. Refresh the sheet data: `python3 ../dormeo-us-dashboard/parse_sheet_pages.py ../.. ../dormeo-us-dashboard/data`.
+   It prints the sheet's date and week. If that date is not newer than the one on the published slide 12
+   (`dormeo-us/deck/manifest.json` → current week's deck; the slide title shows "inventory update (<date>)"), the sheet
+   hasn't been updated yet: stop and report "inventory sheet not updated yet", publishing nothing.
+3. `python3 compute.py ../dormeo-us-dashboard /tmp/deck/deck_data.json deck_config.json`, then
+   `python3 build_slides.py /tmp/deck/deck_data.json weeks/<week end>/extra.json weeks/<week end>/notes.json /tmp/deck/deck.pptx`.
+   Render and look at slide 12 (`soffice` + `pdftoppm -f 12 -l 12`).
+4. Publish as Monday's step 7: same week end, so it replaces this week's files and keeps the manifest entry. Commit
+   `git add ../../dormeo-us/deck ../dormeo-us-dashboard/data/inv_sheet.json . && git commit -m "Dormeo US weekly deck: week <N> inventory update"`.
+5. Google Slides: Monday's step 8. Only slide 12 should change (one small batch).
+6. Report: one line with the new sheet date and the out-of-stock / low-stock counts.
+
 ## If something fails
 - A Sellerise call fails: leave that block as `example/extra.json` shapes it but with this week's values you do have, and say in
   the notes which slide is missing data. Never reuse last week's numbers.
@@ -77,3 +97,4 @@ Week = Sunday–Saturday. "This week" = the last complete week; "prior week" = t
   what the presentation holds; commit it after every sync.
 - `upload_slides.py` — not used (needs a service account): replaces one Google Slides file's content via the Drive API (needs a service account and Google API access).
 - `example/` — Week 43's `extra.json` and `notes.json`, the reference shapes.
+- `weeks/<week end>/` — each week's `extra.json` and `notes.json`, kept so the Tuesday inventory update rebuilds the same deck.
