@@ -20,11 +20,6 @@
     "Lower the bid on “mattress +topper” (phrase): $1,191 spent for 4 orders.",
     "Pause or negate the two Sponsored Brands “dormeo” phrase targets with clicks and no sales ($260)."
   ],
-  "category_readout": [
-    "Non-branded searches are the expensive side of the account: category keywords ran at 39.7% ACoS this week vs 16.7% for branded.",
-    "The generic “mattress +topper” phrase target alone spent $1,191 for 4 orders (73.6% ACoS).",
-    "The searches that did convert are size-specific (“bed toppers queen size”, “split king”, “short king”). Move budget toward size-specific exact keywords and away from the broad generic phrase."
-  ],
   "coupons": [
     "This week: no coupon redemptions.",
     "Last week: 28 coupon redemptions.",
@@ -39,11 +34,6 @@
     "Deal and coupon set-up deadlines: to confirm with the account team.",
     "Priority: have the Queen and King toppers in stock at FBA before Nov 20 so BF/CM traffic converts."
   ],
-  "inventory_readout": [
-    "Octaspring Queen: 0 available, 400 inbound, ~100 sold per week. Its 30-day sales were $152,600, so every week out costs real revenue.",
-    "Octaspring King is next: about 1.6 weeks available at FBA with 227 inbound.",
-    "Premium Cal King is down to 1 unit."
-  ],
   "reviews_title": "No review data in Sellerise",
   "reviews_body": [
     "Sellerise returned no review records, rating trend or negative reviews for the 33 Dormeo US products over the last 90 days.",
@@ -53,19 +43,49 @@
     "Turn on review tracking for Dormeo US in Sellerise (or pull Amazon's Customer Reviews report) so next week's deck shows star rating and review count per line.",
     "With the refund rate at 23.0% this week, reading the newest 1–3 star reviews for the Queen and King toppers is the quickest way to see whether the returns share a cause."
   ],
-  "alerts_readout": [
-    "Most alerts are routine listing changes (images, price, title).",
-    "Buy Box: lost 10 times and regained 10 times. The latest Buy Box alert (Oct 26) is on the Premium Queen topper, the out-of-stock ASIN.",
-    "11 inactive and 5 out-of-stock alerts line up with the inventory gaps on the previous slide."
-  ],
   "recommendations": [
-    ["Inventory", "Get the 400 inbound Queen toppers checked in at FBA; confirm the ETA and follow up on any receiving delay.", "Account team", "This week"],
-    ["Inventory", "Send King (1.6 wk) and Cal King (1 unit) replenishment so neither stocks out before BF/CM.", "Account team", "By Nov 6"],
-    ["Ads", "Lower bids on the generic “mattress +topper” phrase target and the “dormeo” phrase targets running above 35% ACoS.", "Ads team", "This week"],
-    ["Ads", "Add the 3 converting searches as exact keywords; negate the 19 no-sale search terms after review.", "Ads team", "This week"],
-    ["Ads", "While Queen is out of stock, shift Queen-campaign budget to King and Full, which are in stock and grew this week.", "Ads team", "Until restock"],
-    ["Marketing", "Plan BF/CM coupons and deals for the toppers (Nov 27–30) and confirm submission deadlines.", "Account team", "By Nov 6"],
-    ["Account health", "Turn on review tracking and review return reasons behind the 23% refund rate.", "Account team", "Next week"]
+    [
+      "Inventory",
+      "Get the 400 inbound Queen toppers checked in at FBA; confirm the ETA and follow up on any receiving delay.",
+      "Account team",
+      "This week"
+    ],
+    [
+      "Inventory",
+      "Send King (1.6 wk) and Cal King (1 unit) replenishment so neither stocks out before BF/CM.",
+      "Account team",
+      "By Nov 6"
+    ],
+    [
+      "Ads",
+      "Lower bids on the generic “mattress +topper” phrase target and the “dormeo” phrase targets running above 35% ACoS.",
+      "Ads team",
+      "This week"
+    ],
+    [
+      "Ads",
+      "Add the 3 converting searches as exact keywords; negate the 19 no-sale search terms after review.",
+      "Ads team",
+      "This week"
+    ],
+    [
+      "Ads",
+      "While Queen is out of stock, shift Queen-campaign budget to King and Full, which are in stock and grew this week.",
+      "Ads team",
+      "Until restock"
+    ],
+    [
+      "Marketing",
+      "Plan BF/CM coupons and deals for the toppers (Nov 27–30) and confirm submission deadlines.",
+      "Account team",
+      "By Nov 6"
+    ],
+    [
+      "Account health",
+      "Turn on review tracking and review return reasons behind the 23% refund rate.",
+      "Account team",
+      "Next week"
+    ]
   ],
   "position": [
     "October is +51% ahead of last year to date and pacing to about $437.2K.",

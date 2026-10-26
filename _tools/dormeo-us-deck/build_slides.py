@@ -12,8 +12,8 @@ from pptx.enum.shapes import MSO_SHAPE
 from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
 
 D = json.load(open(sys.argv[1])); X = json.load(open(sys.argv[2])); NOTES = json.load(open(sys.argv[3])); OUT = sys.argv[4]
-NOTE_KEYS = ["week_story", "refunds_title", "refunds", "pacing_reco", "ads_context", "ads_strategy", "bid_moves", "category_readout",
-             "coupons", "promotions", "events", "inventory_readout", "reviews_title", "reviews_body", "reviews_reco", "alerts_readout",
+NOTE_KEYS = ["week_story", "refunds_title", "refunds", "pacing_reco", "ads_context", "ads_strategy", "bid_moves",
+             "coupons", "promotions", "events", "reviews_title", "reviews_body", "reviews_reco",
              "recommendations", "position", "next_steps", "data_ask"]
 missing = [k_ for k_ in NOTE_KEYS if not NOTES.get(k_)]
 if missing: sys.exit("notes.json is missing: " + ", ".join(missing))
@@ -148,14 +148,11 @@ st = X["searchTerms"]; tg = X["targets"]; al = X["alerts"]
 s = slide(); nxt()
 box(s, 0, 0, 13.333, 7.5, fill=NAVY)
 box(s, 0, 0, 0.18, 7.5, fill=BLUE)
-box(s, 0.9, 0.7, 3.0, 0.75, fill=WHITE, shape=MSO_SHAPE.ROUNDED_RECTANGLE)
-s.shapes.add_picture(HERE + "logo_s.png", Inches(1.1), Inches(0.82), Inches(2.6))
+s.shapes.add_picture(HERE + "logo_dark_s.png", Inches(0.9), Inches(0.85), Inches(2.8))
 text(s, 0.9, 2.35, 11, 0.4, "WEEKLY PERFORMANCE & GROWTH REVIEW", size=14, color=SKY, font=HF, bold=True)
 text(s, 0.9, 2.8, 11, 1.2, "Dormeo US", size=60, color=WHITE, font=HF, bold=True)
 text(s, 0.9, 4.05, 11, 0.5, f"Amazon Business Review · Week {W['num']}", size=22, color=WHITE, font=HF)
 text(s, 0.9, 4.7, 11, 0.4, f"Week ending {END.strftime('%A, %B')} {END.day}, {END.year}  ·  {W['label']}", size=14, color=SKY)
-box(s, 0.9, 6.15, 11.5, 0.01, fill="334155")
-text(s, 0.9, 6.3, 8, 0.4, "Prepared by Flagship Growth  ·  Data: Sellerise (Amazon US) and the Dormeo inventory tracker", size=11, color="94A3B8")
 
 # 2 agenda
 s = slide(); header(s, "Today's agenda", "What we'll cover", nxt())
@@ -269,10 +266,8 @@ s = slide(); header(s, "Amazon Ads", "Category keywords", nxt())
 rows = [["Search term", "Ad", "Impressions", "Clicks", "Orders", "Spend", "Sales"]]
 for r in st["category"]:
     rows.append([r[0], r[1], f"{r[2]:,}", str(r[3]), str(r[4]), usd(r[5]), usd(r[6])])
-table(s, 0.6, 1.55, 7.4, rows, [2.9, 0.6, 1.1, 0.7, 0.7, 0.7, 0.7], size=10.5, rh=0.38)
-panel(s, 8.25, 1.55, 4.48, 5.25, "Read-out",
-      N["category_readout"] + [f"{st['harvest']} converting searches are ready to add as exact keywords; {st['negative']} are candidates for negatives."], size=10.5)
-text(s, 0.6, 1.65 + 0.38 * len(rows), 7.4, 0.5, f"Top category searches by ad sales, {W['label']} (Sponsored Products and Brands search-term report; only searches with at least one click are reported).", size=9, color=MUTED)
+table(s, 0.6, 1.55, 12.13, rows, [4.73, 1.0, 1.6, 1.2, 1.2, 1.2, 1.2], size=11, rh=0.42)
+text(s, 0.6, 1.7 + 0.42 * len(rows), 12.13, 0.5, f"Top category searches by ad sales, {W['label']} (Sponsored Products and Brands search-term report; only searches with at least one click are reported).", size=9, color=MUTED)
 
 # 10 advertising performance daily
 s = slide(); header(s, "Amazon Ads", "Advertising performance — daily, last 2 weeks", nxt())
@@ -309,13 +304,11 @@ oos = [r for r in X["invRisk"]["rows"] if r[6] == "Out of stock"]; low = [r for 
 card(s, 0.6, 1.5, 2.9, 1.55, "Out of stock", str(len(oos)), "selling ASINs at 0 units", vcolor=RED)
 card(s, 0.6, 3.2, 2.9, 1.55, "Low stock", str(len(low)), "under ~30 days of supply", vcolor=AMBER)
 card(s, 0.6, 4.9, 2.9, 1.9, "Flagged by Sellerise", str(X["invRisk"]["total"]), "ASINs with an inventory risk")
-text(s, 3.75, 1.5, 5.2, 0.3, "Weeks of supply at FBA (available ÷ weekly sales)", size=11, bold=True)
+text(s, 3.75, 1.5, 8.98, 0.3, "Weeks of supply at FBA (available ÷ weekly sales)", size=11, bold=True)
 items = [(r["name"], min(r["weeksAvail"], 12)) for r in inv["rows"]]
 raw = {r["name"]: r["weeksAvail"] for r in inv["rows"]}
-bars(s, 3.75, 1.85, 5.2, 4.9, items, fmt=lambda v: (f"{v:.1f} wk" if v < 12 else "12+ wk"), label_w=2.0,
+bars(s, 3.75, 1.85, 8.98, 4.9, items, fmt=lambda v: (f"{v:.1f} wk" if v < 12 else "12+ wk"), label_w=2.0,
      hi=lambda i, v: RED if v < 1 else (AMBER if v < 3 else BLUE))
-panel(s, 9.15, 1.5, 3.58, 5.3, "Read-out",
-      N["inventory_readout"], size=10.5)
 
 # 13 reviews
 s = slide(); header(s, "Reviews & account health", "Rating & review trend", nxt())
@@ -330,12 +323,10 @@ s = slide(); header(s, "Reviews & account health", "Alerts & Buy Box — last 30
 card(s, 0.6, 1.5, 2.9, 1.55, "Total alerts", str(al["total"]), "open, incl. log events")
 card(s, 0.6, 3.2, 2.9, 1.55, "Actionable", str(al["actionable"]), "warnings + critical", vcolor=AMBER)
 card(s, 0.6, 4.9, 2.9, 1.9, "Critical", str(al["critical"]), "Buy Box, stock, inactive", vcolor=RED)
-text(s, 3.75, 1.5, 5.2, 0.3, "Alerts by type", size=11, bold=True)
+text(s, 3.75, 1.5, 8.98, 0.3, "Alerts by type", size=11, bold=True)
 bt = sorted(al["byType"].items(), key=lambda kv: -kv[1])[:10]
-bars(s, 3.75, 1.85, 5.2, 4.9, bt, fmt=lambda v: f"{v:,}", label_w=2.0,
+bars(s, 3.75, 1.85, 8.98, 4.9, bt, fmt=lambda v: f"{v:,}", label_w=2.0,
      hi=lambda i, v: RED if bt[i][0] in ("Buy Box lost", "Out of stock", "Inactive") else BLUE)
-panel(s, 9.15, 1.5, 3.58, 5.3, "Read-out",
-      N["alerts_readout"], size=10.5)
 
 # 15 recommendations
 s = slide(); header(s, "Next steps", "This week's recommendations", nxt())

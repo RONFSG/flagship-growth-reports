@@ -38,7 +38,7 @@ Week = Sunday–Saturday. "This week" = the last complete week; "prior week" = t
    Read `deck_data.json` and `extra.json` first. Rules: plain English, short sentences, one idea per line; only numbers that are in
    those two files (or simple sums/ratios of them); name the product lines and targets that actually moved this week; never copy
    last week's story. `recommendations` = 5–8 rows `[area, action, owner team, timing]`, specific to this week's numbers.
-   `reviews_*`: if reviews are unavailable say so plainly, as Week 43 does.
+   `reviews_*`: if reviews are unavailable say so plainly, as Week 43 does. Slides 9, 12 and 14 have no written read-out (charts and tables only).
 6. **Build:** `python3 build_slides.py /tmp/deck/deck_data.json /tmp/deck/extra.json /tmp/deck/notes.json /tmp/deck/deck.pptx`
    then render and look at it: `soffice --headless --convert-to pdf --outdir /tmp/deck /tmp/deck/deck.pptx` and
    `pdftoppm -r 40 -jpeg /tmp/deck/deck.pdf /tmp/deck/s`. Open every slide image; fix overflowing or overlapping text by
