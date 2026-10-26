@@ -43,6 +43,8 @@ Week = Sunday–Saturday. "This week" = the last complete week; "prior week" = t
    Exactly the US RUNBOOK step 8 with this presentation id and `DECK_BRAND` set (the state file is
    `_tools/dormeo-canada-deck/gslides_state.json`; commit it after `gslides_sync.py commit`).
 10. **Report:** two lines on the week and the Google Slides link.
+   Also report the time each part took (run `date` at the start of the run, before the Google Slides step and at
+   the end): data pulls, build and publish, Google Slides (with the plan's request and character counts).
 
 ## Tuesday: inventory update (slide 12 only)
 

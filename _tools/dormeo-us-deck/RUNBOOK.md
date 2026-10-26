@@ -66,6 +66,8 @@ Week = Sunday–Saturday. "This week" = the last complete week; "prior week" = t
    - Never edit this presentation by hand-built requests outside the script, or the state file goes out of date.
 9. **Report:** send `/tmp/deck/deck.pptx` to the user (SendUserFile) with a two-line summary of the week and the
    Google Slides link.
+   Also report the time each part took (run `date` at the start of the run, before the Google Slides step and at
+   the end): data pulls, build and publish, Google Slides (with the plan's request and character counts).
 
 ## Tuesday: inventory update (slide 12 only)
 
