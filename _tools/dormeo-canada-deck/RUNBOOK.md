@@ -36,15 +36,23 @@ Week = Sunday–Saturday. "This week" = the last complete week; "prior week" = t
 7. **Build and look:** `python3 build_slides.py /tmp/deck/deck_data.json /tmp/deck/extra.json /tmp/deck/notes.json /tmp/deck/deck.pptx`,
    render (`soffice` + `pdftoppm -r 40`) and look at every slide; fix overflow by shortening notes.
 8. **Publish:** `python3 publish_deck.py /tmp/deck/deck.pptx /tmp/deck/deck_data.json ../../dormeo-canada` (with `DECK_BRAND` set,
-   so it uses this folder's `deck_config.json` and the Google Slides link), then
+   so it uses this folder's `deck_config.json`), then
    `mkdir -p ../dormeo-canada-deck/weeks/<week end> && cp /tmp/deck/extra.json /tmp/deck/notes.json ../dormeo-canada-deck/weeks/<week end>/`,
    `git add ../../dormeo-canada/deck ../dormeo-canada-deck && git commit -m "Dormeo Canada weekly deck: week <N> (<label>)" && git push origin main`.
-9. **Google Slides (same link every week):** https://docs.google.com/presentation/d/1OmJTSCZYU8SyI5Ky8IicQb6k2fjhdBePyZ8jfx30Djs/edit
-   Exactly the US RUNBOOK step 8 with this presentation id and `DECK_BRAND` set (the state file is
-   `_tools/dormeo-canada-deck/gslides_state.json`; commit it after `gslides_sync.py commit`).
-10. **Report:** two lines on the week and the Google Slides link.
-   Also report the time each part took (run `date` at the start of the run, before the Google Slides step and at
-   the end): data pulls, build and publish, Google Slides (with the plan's request and character counts).
+9. **Google Slides copy (one call, about a minute).** The deck goes to Google Slides as one picture per slide, from the
+   images just published (not editable there; the .pptx is the editable file). After the push, wait about a minute for
+   reports.flagshipgrowth.com to update, then:
+   - Google_Drive `create_file`: title `Dormeo Canada - Weekly Business Review - Week <N> (<label>)`,
+     `contentMimeType` `application/vnd.google-apps.presentation`, `parentId` `1AObylhEtAg2iJCLOAd8a-f7SCgawUGg2` (Drive folder "Weekly decks").
+   - Google_Slides `read_presentation` with `fields: ["slides.objectId"]` → the one blank slide's id (usually `p`).
+   - (from `_tools/dormeo-us-deck`) `python3 gslides_images.py ../../dormeo-canada/deck <that slide id>` and pass its output, unchanged, as `requests` to
+     Google_Slides `update_presentation` for the new file. If it says an image can't be fetched, the site hasn't updated
+     yet: wait a minute and send it again.
+   - (from `_tools/dormeo-us-deck`) `python3 gslides_images.py link ../../dormeo-canada/deck <presentation id>`, then commit and push `../../dormeo-canada/deck/manifest.json`.
+     Insights then shows "Open in Google Slides" next to View PowerPoint.
+10. **Report:** two lines on the week.
+   Also report the time each part took (run `date` at the start, after the data pulls and at the end): data pulls,
+   build and publish.
 
 ## Tuesday: inventory update (slide 12 only)
 
@@ -54,11 +62,12 @@ As the US RUNBOOK's Tuesday section, with `DECK_BRAND=../dormeo-canada-deck`:
    newer than the one on the published slide 12, stop: "Dormeo Canada inventory sheet not updated yet".
 3. `cd ../dormeo-us-deck && python3 compute.py ../dormeo-canada-deck /tmp/deck/deck_data.json ../dormeo-canada-deck/deck_config.json`, then
    `python3 build_slides.py /tmp/deck/deck_data.json ../dormeo-canada-deck/weeks/<week end>/extra.json ../dormeo-canada-deck/weeks/<week end>/notes.json /tmp/deck/deck.pptx`.
-4. Publish as step 8 (same week end); commit `../../dormeo-canada/deck ../dormeo-canada-deck`.
-5. Google Slides as step 9 (only slide 12 should change). 6. One-line report.
+4. Publish as step 8 (same week end); commit `../../dormeo-canada/deck ../dormeo-canada-deck` and push.
+   Then make a new Google Slides copy as step 9 (title ends "… inventory update").
+5. One-line report.
 
 ## Files
 - `brand.json`: account, marketplace, currency, sheet page names, SQP ASIN, size-aware short names for products whose sheet names leave the size out.
-- `deck_config.json`: event days and the Google Slides link.
+- `deck_config.json`: event days.
 - `data/`, `raw/`: Canada's own copy of the dashboard data (the US scripts write here when `DECK_BRAND` is set).
 - `gslides_state.json`: what the Canada presentation holds. `weeks/<week end>/`: each week's extra.json and notes.json.
