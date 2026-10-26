@@ -394,4 +394,6 @@ for it in zin.infolist():
         data = re.sub(rb'<Relationship [^>]*(thumbnail|printerSettings|docProps|viewProps|presProps)[^>]*/>', b"", data)
     zout.writestr(it, data)
 zout.close()
+# put back the parts PowerPoint needs (presProps, viewProps, docProps) and the shape names
+import fix_pptx; fix_pptx.fix(OUT)
 import os; print("wrote", OUT, os.path.getsize(OUT), "bytes,", n, "slides")
