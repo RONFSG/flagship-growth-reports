@@ -24,8 +24,10 @@ GREEN, RED, AMBER, SKY, WHITE, INK2 = "16A34A", "DC2626", "D97706", "7EB8F7", "F
 HF, BF = "Space Grotesk", "Inter"
 
 def rgb(h): return RGBColor.from_string(h)
-def usd(v, d=0): return ("-" if v < 0 else "") + "$" + f"{abs(v):,.{d}f}"
-def k(v): return ("$" + f"{v/1000:,.1f}K") if abs(v) >= 1000 else usd(v)
+BRAND = D.get("brand", "Dormeo US")
+CUR = D.get("money", "$")   # "C$" for Canada
+def usd(v, d=0): return ("-" if v < 0 else "") + CUR + f"{abs(v):,.{d}f}"
+def k(v): return (CUR + f"{v/1000:,.1f}K") if abs(v) >= 1000 else usd(v)
 def pct(v, d=1): return f"{v:.{d}f}%"
 def chg(c): return ("+" if c >= 0 else "") + f"{c*100:.0f}%"
 def pts(c): return ("+" if c >= 0 else "") + f"{c:.1f} pts"
@@ -71,7 +73,7 @@ def header(s, kicker, title, n):
     text(s, 0.8, 0.66, 10.5, 0.6, title, size=26, font=HF, bold=True)
     s.shapes.add_picture(HERE + "logo_s.png", Inches(11.15), Inches(0.5), Inches(1.6))
     box(s, 0.6, 7.0, 12.13, 0.012, fill=LINE)
-    text(s, 0.6, 7.06, 9, 0.3, f"Dormeo US · Weekly Business Review · Week {W['num']} ({W['label']})", size=9, color=MUTED)
+    text(s, 0.6, 7.06, 9, 0.3, f"{BRAND} · Weekly Business Review · Week {W['num']} ({W['label']})", size=9, color=MUTED)
     text(s, 11.2, 7.06, 1.53, 0.3, f"{n} / {TOTAL}", size=9, color=MUTED, align="r")
 
 def card(s, x, y, w, h, label, value, sub=None, subc=MUTED, fill=CREAM, vsize=26, vcolor=BLUE):
@@ -150,9 +152,11 @@ box(s, 0, 0, 13.333, 7.5, fill=NAVY)
 box(s, 0, 0, 0.18, 7.5, fill=BLUE)
 s.shapes.add_picture(HERE + "logo_dark_s.png", Inches(0.9), Inches(0.85), Inches(2.8))
 text(s, 0.9, 2.35, 11, 0.4, "WEEKLY PERFORMANCE & GROWTH REVIEW", size=14, color=SKY, font=HF, bold=True)
-text(s, 0.9, 2.8, 11, 1.2, "Dormeo US", size=60, color=WHITE, font=HF, bold=True)
+text(s, 0.9, 2.8, 11, 1.2, BRAND, size=60, color=WHITE, font=HF, bold=True)
 text(s, 0.9, 4.05, 11, 0.5, f"Amazon Business Review · Week {W['num']}", size=22, color=WHITE, font=HF)
 text(s, 0.9, 4.7, 11, 0.4, f"Week ending {END.strftime('%A, %B')} {END.day}, {END.year}  ·  {W['label']}", size=14, color=SKY)
+if D.get("currency", "USD") != "USD":   # e.g. Dormeo Canada: say which currency every amount is in
+    text(s, 0.9, 5.2, 11, 0.4, f"All amounts in {D['currency']} ({CUR})", size=12, color=SKY)
 
 # 2 agenda
 s = slide(); header(s, "Today's agenda", "What we'll cover", nxt())
@@ -287,7 +291,7 @@ for ri in (8, 16):
     for j in range(12):
         c = tb.cell(ri, j); c.fill.solid(); c.fill.fore_color.rgb = rgb(CREAM)
         for r_ in c.text_frame.paragraphs[0].runs: r_.font.bold = True
-text(s, 0.6, 6.5, 12.13, 0.45, "Organic sales = total sales minus ad-attributed sales (floored at $0). Daily clicks and impressions aren't in the Sellerise daily feed; "
+text(s, 0.6, 6.5, 12.13, 0.45, f"Organic sales = total sales minus ad-attributed sales (floored at {CUR}0). Daily clicks and impressions aren't in the Sellerise daily feed; "
      f"weekly totals: {cur['clicks']:,} clicks / {cur['impressions']:,} impressions this week vs {prv['clicks']:,} / {prv['impressions']:,}.", size=9, color=MUTED)
 
 # 11 marketing
@@ -356,7 +360,7 @@ for i, (lab, a, b) in enumerate([("Ad spend", prv["spend"], cur["spend"]), ("Ad 
         box(s, bx, 6.55 - bh, 1.1, bh, fill=col)
         text(s, bx - 0.2, 6.55 - bh - 0.3, 1.5, 0.28, k(v), size=10, bold=True, align="c")
         text(s, bx - 0.2, 6.6, 1.5, 0.28, nm, size=9, color=MUTED, align="c")
-text(s, 0.6, 7.06, 9, 0.3, f"Dormeo US · Weekly Business Review · Week {W['num']} ({W['label']})", size=9, color=MUTED)
+text(s, 0.6, 7.06, 9, 0.3, f"{BRAND} · Weekly Business Review · Week {W['num']} ({W['label']})", size=9, color=MUTED)
 text(s, 11.2, 7.06, 1.53, 0.3, f"{n} / {TOTAL}", size=9, color=MUTED, align="r")
 
 # 17 path forward

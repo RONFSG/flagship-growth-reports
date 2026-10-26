@@ -8,7 +8,7 @@ PPTX, DATA, SITE = sys.argv[1:4]
 D = json.load(open(DATA)); W = D["week"]
 end = W["end"]; folder = f"deck/{end}"; out = os.path.join(SITE, folder)
 os.makedirs(out, exist_ok=True)
-base = f"Dormeo-US-Weekly-Business-Review-Week-{W['num']}-{end}"
+base = f"{D.get('brand', 'Dormeo US').replace(' ', '-')}-Weekly-Business-Review-Week-{W['num']}-{end}"
 shutil.copy(PPTX, os.path.join(out, base + ".pptx"))
 
 with tempfile.TemporaryDirectory() as tmp:
@@ -33,7 +33,7 @@ hist = [h for h in M.get("history", []) if h["end"] != end]
 hist.insert(0, {k: entry[k] for k in ("week", "label", "end", "pptx", "pdf")})
 M = {"current": entry, "history": hist[:26]}
 # the editable Google Slides deck (same link every week), shown as "Open in Google Slides" in Insights
-cfg_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "deck_config.json")
+cfg_path = os.path.join(os.environ.get("DECK_BRAND") or os.path.dirname(os.path.abspath(__file__)), "deck_config.json")
 cfg = json.load(open(cfg_path)) if os.path.exists(cfg_path) else {}
 if cfg.get("googleSlidesUrl"):
     M["googleSlides"] = cfg["googleSlidesUrl"]

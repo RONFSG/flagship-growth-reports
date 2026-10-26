@@ -1,0 +1,24 @@
+{
+ "brand": "Dormeo Canada",
+ "slug": "dormeo-canada",
+ "account": "Dormeo",
+ "marketplace": "CA",
+ "currency": "CAD",
+ "money": "C$",
+ "sheetName": "Dormeo Canada",
+ "invPage": "dormeo-canada-inventory",
+ "recPage": "dormeo-canada-reconciliation",
+ "sqpAsin": "B07WFHMD2V",
+ "names": {
+  "B0GHYXC6P2": "SnowTek 2in Cooling Topper Queen",
+  "B0GHYNPTM3": "SnowTek 2in Cooling Topper King",
+  "B0GHYY1RQY": "SnowTek 2in Cooling Topper Full",
+  "B0GHYJLM7J": "SnowTek 2in Cooling Topper Twin",
+  "B0DK9Z7CYB": "Essentials Topper Queen",
+  "B0DK9XZGB1": "Essentials Topper King",
+  "B0DK9ZZWGP": "Essentials Topper Full",
+  "B0DK7DT4SL": "Essentials Dorm Topper Twin XL",
+  "B0DK7DVX2V": "Essentials Dorm Topper Twin"
+ },
+ "_names": "Short product names by ASIN where the sheet's own names don't say the size (used by compute.py)."
+}

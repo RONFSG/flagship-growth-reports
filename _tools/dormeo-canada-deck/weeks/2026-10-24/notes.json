@@ -1,0 +1,109 @@
+{
+ "_week": "2026-10-18 to 2026-10-24 (Week 43), Dormeo Canada, CAD. Written from that week's numbers; rewrite every key each Monday.",
+ "week_story": [
+  "Octaspring Queen drove the week: 43 units vs 23 the week before (+91%), almost half of all sales."
+ ],
+ "refunds_title": "Refunds eased",
+ "refunds": [
+  "Last week's spike was mostly the Queen and Twin XL toppers (6 refunded units each), largely Prime Big Deal Days orders coming back. This week King had the most refunds (4 units)."
+ ],
+ "pacing_reco": "October is behind last year on the same days. Keeping the Queen topper in stock at FBA is the biggest lever: it has 23 units available, under one week of sales.",
+ "ads_context": [
+  "Prime Big Deal Days week (Oct 4–10) ran at 9.7% ACoS and 6.4% TACoS.",
+  "This week ACoS fell to 10.4% from 16.9%, with 26% less spend and 19% more ad sales."
+ ],
+ "ads_strategy": [
+  "Branded keywords brought C$27,076 in sales on C$1,605 spend (5.9% ACoS) and 60 orders.",
+  "Category keywords spent C$568 for C$2,122 (26.8% ACoS); spend there was cut 55% vs last week.",
+  "Streaming TV spent C$897 this week with no attributed sales."
+ ],
+ "bid_moves": [
+  "Review the Streaming TV audience campaign for the Queen topper: C$897 this week and C$892 last week with no attributed sales.",
+  "Pause or negate “mattress +topper” (exact, C$76) and “sur matelas dormeo” (exact, C$46): clicks, no sales.",
+  "Lower the bid on “mattress +topper” (phrase): C$183 for 1 order."
+ ],
+ "coupons": [
+  "This week: no coupon redemptions.",
+  "Last week: 9 coupon redemptions.",
+  "October to date: 83 coupon redemptions, mostly during Prime Big Deal Days."
+ ],
+ "promotions": [
+  "This week: 16 promotion orders, C$82 in promotional discounts (vs C$541 last week).",
+  "October to date: 59 promotion orders, C$4,243 in discounts."
+ ],
+ "events": [
+  "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+  "Boxing Day / Boxing Week: Dec 26.",
+  "Deal and coupon set-up deadlines: to confirm with the account team.",
+  "Priority: Queen topper and the SnowTek line in stock at FBA before Nov 20."
+ ],
+ "reviews_title": "No review data in Sellerise",
+ "reviews_body": [
+  "Sellerise returned no review records, rating trend or negative reviews for the 30 Dormeo Canada products over the last 90 days.",
+  "That means the review tracker isn't pulling for this marketplace, not that there were no reviews."
+ ],
+ "reviews_reco": [
+  "Turn on review tracking for Dormeo Canada in Sellerise (or pull Amazon's Customer Reviews report) so next week's deck shows star rating and review count per line.",
+  "Read the newest 1–3 star reviews for the Queen and Twin XL toppers to see whether the returns share a cause."
+ ],
+ "recommendations": [
+  [
+   "Inventory",
+   "Get the 170 inbound Queen toppers checked in at FBA; only 23 are available (under a week of sales).",
+   "Account team",
+   "This week"
+  ],
+  [
+   "Inventory",
+   "Restock SnowTek (Full and Twin out, King at 9 units) and Essentials Queen (out); none has stock inbound.",
+   "Account team",
+   "By Nov 6"
+  ],
+  [
+   "Ads",
+   "Review the Streaming TV audience campaign: C$1,789 over two weeks with no attributed sales.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Negate or pause no-sale targets (“mattress +topper” exact, “sur matelas dormeo” exact) and lower the “mattress +topper” phrase bid.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Add “dormeo mattress topper queen” (SB) and “octaspring mattress topper” as exact keywords; review the 11 no-sale search terms.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Marketing",
+   "Plan BF/CM and Boxing Day coupons and deals for the toppers and confirm submission deadlines.",
+   "Account team",
+   "By Nov 6"
+  ],
+  [
+   "Account health",
+   "Check the 9 Buy Box losses and 3 hijacker alerts from the last 30 days; turn on review tracking.",
+   "Account team",
+   "Next week"
+  ]
+ ],
+ "position": [
+  "October is 16% behind last year to date and pacing to about C$309.6K (last October: C$350.6K).",
+  "This week grew 21% to C$57.7K, led by the Queen topper."
+ ],
+ "next_steps": [
+  "Restock Queen at FBA; restock SnowTek and Essentials.",
+  "Review Streaming TV and no-sale targets.",
+  "Lock BF/CM and Boxing Day deals.",
+  "Fix Buy Box and hijacker alerts."
+ ],
+ "data_ask": [
+  "Queen inbound ETA and PO dates.",
+  "SnowTek and Essentials replenishment plan.",
+  "BF/CM and Boxing Day deal and coupon plan.",
+  "Review tracking turned on in Sellerise."
+ ]
+}

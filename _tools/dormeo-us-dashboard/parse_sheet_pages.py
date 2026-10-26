@@ -2,9 +2,12 @@
 """Read the FSG Combined Report pages (built from the Dormeo US sheet's Inventory Tracker and
 Reconciliation Update tabs) and write data/inv_sheet.json and data/rec.json.
 Usage: parse_sheet_pages.py <repo_dir> <data_dir>"""
-import html, json, re, sys
+import html, json, os, re, sys
 
 REPO, OUT = sys.argv[1], sys.argv[2]
+# DECK_BRAND=<folder with brand.json> reads another brand's pages; unset = Dormeo US.
+B = json.load(open(os.path.join(os.environ["DECK_BRAND"], "brand.json"))) if os.environ.get("DECK_BRAND") else {}
+NAME, INV, REC = B.get("sheetName", "Dormeo US"), B.get("invPage", "dormeo-us-inventory"), B.get("recPage", "dormeo-us-reconciliation")
 txt = lambda c: re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", c))).strip()
 num = lambda x: 0.0 if x.strip() in ("—", "", "-") else float(re.sub(r"[^\d.\-]", "", x) or 0)
 rows_of = lambda t: [[txt(c) for c in re.findall(r"<t[hd][^>]*>(.*?)</t[hd]>", r, re.S)] for r in re.findall(r"<tr.*?</tr>", t, re.S)]
@@ -15,9 +18,9 @@ amap = {a: g["key"] for g in G for a in g["asins"]}
 # ASINs the sheet carries that are inactive in Sellerise, mapped by product name
 amap.update({"B09JQWSHQR": "ps", "B0DK9Z7CYB": "fm", "B0DK9ZZWGP": "fm", "B0DK7DVX2V": "fm",
              "B0DK7DT4SL": "fm", "B09HQXHNZC": "pl", "B0F74RSY4V": "pr"})
-s = open(REPO + "/dormeo-us-inventory/index.html", encoding="utf8").read()
+s = open(REPO + f"/{INV}/index.html", encoding="utf8").read()
 plain = txt(s)
-m = re.search(r"Dormeo US · (\d{1,2}/\d{1,2}/\d{4}) · Week (\d+)", plain)
+m = re.search(re.escape(NAME) + r" · (\d{1,2}/\d{1,2}/\d{4}) · Week (\d+)", plain)
 asof, week = (m.group(1), int(m.group(2))) if m else ("", 0)
 inv_tbl = next(t for t in re.findall(r"<table.*?</table>", s, re.S) if "Available FBA" in t)
 agg = {g["key"]: dict(total=0, avail=0, inbound=0, wkAvg=0, l30=0, n=0, asins=[]) for g in G}
@@ -39,7 +42,7 @@ json.dump({"asOf": asof, "week": week, "groups": agg, "skus": skus, "po": po, "u
           open(OUT + "/inv_sheet.json", "w"), indent=1)
 
 # ---------- reconciliation (Reconciliation Update tab) ----------
-s = open(REPO + "/dormeo-us-reconciliation/index.html", encoding="utf8").read()
+s = open(REPO + f"/{REC}/index.html", encoding="utf8").read()
 plain = txt(re.sub(r"<script.*?</script>|<style.*?</style>", "", s, flags=re.S))
 g1 = lambda pat, d=None: (re.search(pat, plain) or [None, d])[1]
 rec = {

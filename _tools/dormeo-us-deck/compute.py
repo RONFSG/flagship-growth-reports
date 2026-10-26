@@ -3,11 +3,12 @@
 Usage: compute.py <dashboard tools dir> <out deck_data.json> [deck_config.json]
 deck_config.json may list "eventDays" (YYYY-MM-DD) such as Prime Day; month pacing counts those days once
 and paces the rest of the month on the average of the other days."""
-import json, datetime as dt, sys, calendar
+import json, os, datetime as dt, sys, calendar
 R = sys.argv[1].rstrip("/") + "/"
 OUTP = sys.argv[2]
 CFG = json.load(open(sys.argv[3])) if len(sys.argv) > 3 else {}
 L = lambda p: json.load(open(R + p))
+B = L("brand.json") if os.path.exists(R + "brand.json") else {}   # other brands keep a brand.json next to data/
 G = L("data/groups.json"); S = L("data/sales.json"); P = L("data/pnl_ads.json"); C = L("data/camp_kw.json")
 I = L("data/inv_weekly.json"); IS = L("data/inv_sheet.json"); REC = L("data/rec.json")
 META = P["CAMP_META"]; ws = dt.date.fromisoformat(META["weekStart"]); we = ws + dt.timedelta(days=6)
@@ -21,7 +22,7 @@ fmtd = lambda d: f"{MS[d.month-1]} {d.day}"
 WK0 = dt.date(2025, 12, 28); widx = lambda d: (d - WK0).days // 7
 wnum = widx(ws) + 1
 
-out = {"brand": "Dormeo US", "week": {"num": wnum, "start": str(ws), "end": str(we), "label": f"{fmtd(ws)}–{we.day if ws.month==we.month else fmtd(we)}, {we.year}",
+out = {"brand": B.get("brand", "Dormeo US"), "money": B.get("money", "$"), "currency": B.get("currency", "USD"), "week": {"num": wnum, "start": str(ws), "end": str(we), "label": f"{fmtd(ws)}–{we.day if ws.month==we.month else fmtd(we)}, {we.year}",
        "prior": f"{fmtd(prev_ws)}–{(prev_ws+dt.timedelta(days=6)).day}"}, "dataThrough": str(ads[-1]["d"])}
 
 # 1. week at a glance (Sellerise account totals for the two weeks)
@@ -64,7 +65,8 @@ out["lines"] = sorted(lines, key=lambda x: -x["rev"])
 # 5. top products (ASIN level, Sellerise weekly pulls)
 names = {k_["asin"]: k_["name"] for k_ in IS["skus"]}
 wc = {r[0]: r for r in L(f"raw/week_{ws}.json")}; wp = {r[0]: r for r in L(f"raw/week_{prev_ws}.json")}
-def short(n):
+def short(n, asin=None):
+    if asin in B.get("names", {}): return B["names"][asin]   # brand.json overrides (e.g. sizes the sheet name leaves out)
     n = n.replace("Ⓡ", "").replace("Dormeo ", "")
     for cut in (" - 3-Zone", " – ", " - ", " | ", ","): n = n.split(cut)[0]
     return n.replace("Cooling Mattress Topper", "Topper").replace("Mattress Topper", "Topper").strip()
@@ -72,7 +74,7 @@ prods = []
 for asin, (_, rv, u) in wc.items():
     if rv <= 0: continue
     pr = wp.get(asin, [asin, 0, 0])[1]
-    prods.append(dict(asin=asin, name=short(names.get(asin, asin)), rev=rv, units=u, prev=pr, change=chg(rv, pr)))
+    prods.append(dict(asin=asin, name=short(names.get(asin, asin), asin), rev=rv, units=u, prev=pr, change=chg(rv, pr)))
 out["products"] = sorted(prods, key=lambda x: -x["rev"])[:8]
 
 # 6. advertising by type and strategy, and campaign actions (same rules as the dashboard)
@@ -124,7 +126,7 @@ _sel = [k_ for k_ in IS["skus"] if k_["l30"] >= 5]
 out["invStatus"] = dict(selling=len(_sel), oos=sum(1 for k_ in _sel if k_["avail"] <= 0),
                         low=sum(1 for k_ in _sel if k_["avail"] > 0 and k_["wkLeft"] <= 4),
                         inbound=sum(k_["inbound"] for k_ in IS["skus"]))
-out["restock"] = [dict(name=short(k_["name"]), asin=k_["asin"], avail=k_["avail"], inbound=k_["inbound"], l30=k_["l30"], wkLeft=k_["wkLeft"])
+out["restock"] = [dict(name=short(k_["name"], k_["asin"]), asin=k_["asin"], avail=k_["avail"], inbound=k_["inbound"], l30=k_["l30"], wkLeft=k_["wkLeft"])
                   for k_ in IS["skus"] if k_["l30"] >= 5 and (k_["avail"] <= 0 or k_["wkLeft"] <= 2)]
 
 # 10. reconciliation (sheet: Reconciliation Update)

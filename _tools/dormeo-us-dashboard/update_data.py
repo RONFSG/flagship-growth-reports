@@ -14,7 +14,12 @@ Commands (run from this folder):
 """
 import datetime as dt, json, os, re, shutil, sys
 
-HERE = os.path.dirname(os.path.abspath(__file__)); DD = os.path.join(HERE, "data"); RAW = os.path.join(HERE, "raw")
+# Brand: DECK_BRAND=<folder with brand.json> runs this for another brand (data/ and raw/ live in that folder).
+# Unset = Dormeo US (this folder), exactly as before.
+_BD = os.environ.get("DECK_BRAND")
+BRAND = json.load(open(os.path.join(_BD, "brand.json"))) if _BD else {}
+
+HERE = os.path.abspath(_BD) if _BD else os.path.dirname(os.path.abspath(__file__)); DD = os.path.join(HERE, "data"); RAW = os.path.join(HERE, "raw")
 os.makedirs(RAW, exist_ok=True)
 ld = lambda n: json.load(open(os.path.join(DD, n + ".json"), encoding="utf8"))
 def sv(n, o): json.dump(o, open(os.path.join(DD, n + ".json"), "w", encoding="utf8"), ensure_ascii=False, indent=1)
@@ -56,8 +61,10 @@ def plan(run_day):
     P = ld("pnl_ads"); S = ld("sales")
     out = {"run_day": str(run_day), "data_through": str(y), "calls": []}
     add = lambda cmd, tool, args: out["calls"].append({"save_with": cmd, "tool": tool, "args": args})
-    base = {"accountSearch": "Dormeo", "marketplaces": "US"}
-    add("ads <raw>", "get_account_metrics", {**base, "groupBy": "day", "start": str(y - dt.timedelta(days=59)), "end": str(y)})
+    base = {"accountSearch": BRAND.get("account", "Dormeo"), "marketplaces": BRAND.get("marketplace", "US")}
+    # get_account_metrics converts to USD unless told otherwise; other brands keep their own currency (e.g. CAD)
+    am = {**base, "targetCurrency": BRAND["currency"]} if BRAND.get("currency") else base
+    add("ads <raw>", "get_account_metrics", {**am, "groupBy": "day", "start": str(y - dt.timedelta(days=59)), "end": str(y)})
     months = {y.month} | ({y.month - 1} if y.day <= 7 and y.month > 1 else set())   # previous month only while it may still settle
     for mo in sorted(months):
         ms = dt.date(2026, mo, 1); me = min(y, (ms + dt.timedelta(days=32)).replace(day=1) - dt.timedelta(days=1))
@@ -67,7 +74,7 @@ def plan(run_day):
     if y.day <= 7 and y.month > 1 and (y.month - 1) not in need: need.append(y.month - 1)   # late adjustments
     for mo in need:
         ms = dt.date(2026, mo, 1); me = (ms + dt.timedelta(days=32)).replace(day=1) - dt.timedelta(days=1)
-        add(f"pl {mo:02d} <raw>", "get_account_metrics", {**base, "groupBy": "none", "start": str(ms), "end": str(me)})
+        add(f"pl {mo:02d} <raw>", "get_account_metrics", {**am, "groupBy": "none", "start": str(ms), "end": str(me)})
     cur_sun = y - dt.timedelta(days=(y.weekday() + 1) % 7)
     for sun in (cur_sun - dt.timedelta(days=7), cur_sun):
         add(f"week {sun} <raw>", "get_products", {**base, "start": str(sun), "end": str(min(y, sun + dt.timedelta(days=6))), "limit": 60, "activeOnly": False, "mode": "top", "metric": "revenue"})
@@ -79,9 +86,9 @@ def plan(run_day):
             if not os.path.exists(os.path.join(RAW, f"camp_{sun}.json")):
                 add(f"camp {sun} <raw>", "get_ppc_efficiency", {**base, "start": str(sun), "end": str(e), "mode": "top_spend", "minSpend": 0.01, "minClicks": 0, "limit": 100, "note": "page with offset until hasMore is false"})
             if not os.path.exists(os.path.join(RAW, f"meta_{sun}.json")):
-                add(f"meta {sun} <raw>", "get_account_metrics", {**base, "groupBy": "none", "start": str(sun), "end": str(e)})
+                add(f"meta {sun} <raw>", "get_account_metrics", {**am, "groupBy": "none", "start": str(sun), "end": str(e)})
         add(f"kw {L} <raw>", "get_ads_targeting_insights", {**base, "start": str(L), "end": str(sat), "mode": "top_spend", "adProducts": "SP,SB", "limit": 25, "note": "keyword targets only; skip ASIN/product targets"})
-        add(f"sqp {sat} <raw>", "get_sqp_report", {**base, "asin": "B07WFHMD2V", "start": str(L), "end": str(sat), "sortBy": "im", "sortOrder": "desc", "limit": 40})
+        add(f"sqp {sat} <raw>", "get_sqp_report", {**base, "asin": BRAND.get("sqpAsin", "B07WFHMD2V"), "start": str(L), "end": str(sat), "sortBy": "im", "sortOrder": "desc", "limit": 40})
     print(json.dumps(out, indent=1))
 
 # ---------------------------------------------------------------- updaters
@@ -231,7 +238,7 @@ def finalize():
         u = I["WEEKLY"]["units"][gi]; r["wk"] = [int(u[j]) if j < len(u) else 0 for j in range(li - 3, li + 1)]
     I["INV"]["lastWeek"] = li + 1
     sv("pnl_ads", P); sv("camp_kw", C); sv("inv_weekly", I)
-    print("finalize: campaigns", len(C["CAMP"]), "| kw weeks", [k["s"] for k in C["KW"]], "| sqp", C["SQP"]["weeks"], "| inv weeks", I["INV"]["lastWeek"] - 3, "-", I["INV"]["lastWeek"])
+    print("finalize: campaigns", len(C["CAMP"]), "| kw weeks", [k["s"] for k in C["KW"]], "| sqp", C.get("SQP", {}).get("weeks"), "| inv weeks", I["INV"]["lastWeek"] - 3, "-", I["INV"]["lastWeek"])
 
 if __name__ == "__main__":
     a = sys.argv[1:]

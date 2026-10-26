@@ -23,7 +23,7 @@ from pptx.enum.shapes import MSO_SHAPE_TYPE, MSO_SHAPE
 from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-STATE = os.path.join(HERE, "gslides_state.json")
+STATE = os.path.join(os.environ.get("DECK_BRAND") or HERE, "gslides_state.json")   # one state file per brand's presentation
 LOGO_URLS = {"light_bg": "https://reports.flagshipgrowth.com/assets/fsg-logo-transparent.png",
              "dark_bg": "https://reports.flagshipgrowth.com/assets/fsg-logo-dark-trim.png"}
 MAX_BATCH_CHARS = 45000
