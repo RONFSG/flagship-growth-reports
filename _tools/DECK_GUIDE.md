@@ -1,10 +1,10 @@
 # Weekly deck: how it works and how to run it
 
-The weekly business review deck has 17 slides. Each week it's published in two places: on the brand's **Weekly deck** tab in Flagship Insights (with a PDF download), and in a Google Slides file that keeps the same link every week.
+The weekly business review deck has 17 slides. Each week it's published on the brand's **Weekly deck** tab in Flagship Insights: view the PowerPoint in the browser, download the PDF, or click through the slide images. (The Google Slides copy is paused since 2026-10-27: updating it took minutes per brand.)
 
 ## What's needed
 
-**Claude Code connectors:** Sellerise, Google Slides, and Google Drive (for exporting the deck to check it).
+**Claude Code connectors:** Sellerise.
 
 **Repos:**
 - `RONFSG/flagship-growth-reports` holds the scripts, the data, and the published deck.
@@ -49,13 +49,8 @@ The scripts live in `_tools/dormeo-us-deck/` and `_tools/dormeo-us-dashboard/`, 
    - Run `python3 publish_deck.py deck.pptx deck_data.json ../../<brand folder>`.
    - Save the week's `extra.json` and `notes.json` to `weeks/<week end>/`.
    - Commit and push.
-8. **Google Slides**:
-   - Get the slide ids with `read_presentation`.
-   - Run `gslides_sync.py plan … --existing <ids>`.
-   - Send each `batch-NN.json` with `update_presentation`.
-   - Run `gslides_sync.py commit --done …` and commit `gslides_state.json`.
-   - Export the deck to PDF and check it.
-9. **Report**: a short summary of the week plus the Google Slides link.
+8. **Google Slides**: paused, skip.
+9. **Report**: a short summary of the week and how long each part took.
 
 ## Rules
 
