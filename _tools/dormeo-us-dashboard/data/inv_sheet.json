@@ -1,46 +1,46 @@
 {
- "asOf": "10/19/2026",
- "week": 43,
+ "asOf": "10/26/2026",
+ "week": 44,
  "groups": {
   "pq": {
-   "total": 409.0,
+   "total": 401.0,
    "avail": 0.0,
    "inbound": 400.0,
-   "wkAvg": 100.0,
-   "l30": 499.0,
+   "wkAvg": 85.0,
+   "l30": 427.0,
    "n": 1,
    "asins": [
     "B07WFHMD2V"
    ]
   },
   "pk": {
-   "total": 311.0,
-   "avail": 72.0,
-   "inbound": 227.0,
-   "wkAvg": 45.0,
-   "l30": 225.0,
+   "total": 417.0,
+   "avail": 30.0,
+   "inbound": 377.0,
+   "wkAvg": 46.0,
+   "l30": 229.0,
    "n": 1,
    "asins": [
     "B07WGH7QNP"
    ]
   },
   "pf": {
-   "total": 199.0,
-   "avail": 95.0,
+   "total": 175.0,
+   "avail": 58.0,
    "inbound": 100.0,
-   "wkAvg": 24.0,
-   "l30": 119.0,
+   "wkAvg": 23.0,
+   "l30": 115.0,
    "n": 1,
    "asins": [
     "B07WGHV3DS"
    ]
   },
   "pt": {
-   "total": 264.0,
-   "avail": 184.0,
-   "inbound": 71.0,
-   "wkAvg": 34.0,
-   "l30": 173.0,
+   "total": 245.0,
+   "avail": 163.0,
+   "inbound": 72.0,
+   "wkAvg": 29.0,
+   "l30": 146.0,
    "n": 2,
    "asins": [
     "B07WJMHJ2P",
@@ -48,11 +48,11 @@
    ]
   },
   "ps": {
-   "total": 206.0,
-   "avail": 82.0,
-   "inbound": 105.0,
-   "wkAvg": 30.0,
-   "l30": 101.0,
+   "total": 269.0,
+   "avail": 68.0,
+   "inbound": 180.0,
+   "wkAvg": 28.0,
+   "l30": 94.0,
    "n": 5,
    "asins": [
     "B09JQWSHQR",
@@ -63,30 +63,30 @@
    ]
   },
   "fm": {
-   "total": 182.0,
-   "avail": 148.0,
-   "inbound": 11.0,
-   "wkAvg": 28.0,
-   "l30": 145.0,
+   "total": 119.0,
+   "avail": 87.0,
+   "inbound": 10.0,
+   "wkAvg": 29.0,
+   "l30": 140.0,
    "n": 9,
    "asins": [
     "B0DK9Z7CYB",
     "B0DK9ZZWGP",
     "B0DK7DVX2V",
+    "B0GHYJLM7J",
     "B0GHYXC6P2",
+    "B0GHYY1RQY",
     "B0DK7DT4SL",
     "B0DK9XZGB1",
-    "B0GHYY1RQY",
-    "B0GHYNPTM3",
-    "B0GHYJLM7J"
+    "B0GHYNPTM3"
    ]
   },
   "pl": {
-   "total": 62.0,
-   "avail": 37.0,
-   "inbound": 24.0,
-   "wkAvg": 16.0,
-   "l30": 81.0,
+   "total": 78.0,
+   "avail": 29.0,
+   "inbound": 48.0,
+   "wkAvg": 17.0,
+   "l30": 85.0,
    "n": 3,
    "asins": [
     "B09HQXHNZC",
@@ -95,17 +95,18 @@
    ]
   },
   "pr": {
-   "total": 172.0,
-   "avail": 172.0,
+   "total": 97.0,
+   "avail": 95.0,
    "inbound": 0.0,
-   "wkAvg": 2.0,
-   "l30": 17.0,
+   "wkAvg": 1.0,
+   "l30": 13.0,
    "n": 13,
    "asins": [
     "B0F74RSY4V",
     "B0DP9PXFT5",
     "B0DP9RXZ9V",
     "B0F74RNZGY",
+    "B0BFX81VLK",
     "B0DP9Q85K9",
     "B0DP9SJSFF",
     "B0DP9QDLBS",
@@ -113,8 +114,7 @@
     "B0F74N4F46",
     "B0F74MTBGN",
     "B0F74N8GHP",
-    "B0F74RPY9X",
-    "B0BFX81VLK"
+    "B0F74RPY9X"
    ]
   }
  },
@@ -128,7 +128,7 @@
    "avail": 0.0,
    "inbound": 0.0,
    "wkAvg": 10.0,
-   "l30": 2.0,
+   "l30": 0.0,
    "wkLeft": 0.0
   },
   {
@@ -140,7 +140,7 @@
    "avail": 0.0,
    "inbound": 0.0,
    "wkAvg": 0.0,
-   "l30": 2.0,
+   "l30": 0.0,
    "wkLeft": 0.0
   },
   {
@@ -168,10 +168,34 @@
    "wkLeft": 0.0
   },
   {
+   "asin": "B0DK7DVX2V",
+   "sku": "50001-1020",
+   "name": "Dormeo The Essentials Mattress Topper, Twin XL",
+   "status": "out_of_stock",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 1.0,
+   "l30": 3.0,
+   "wkLeft": 0.0
+  },
+  {
    "asin": "B0F74RSY4V",
    "sku": "40001-1050-AMZ",
    "name": "Premium Waterproof Mattress Protector Queen \u2013 Stain and Spill Protective Layer",
    "status": "out_of_stock",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0GHYJLM7J",
+   "sku": "70001-1010",
+   "name": "Dormeo SnowTek 2in Cooling Topper Twin",
+   "status": "Active",
    "total": 0.0,
    "avail": 0.0,
    "inbound": 0.0,
@@ -216,12 +240,24 @@
    "wkLeft": 0.0
   },
   {
+   "asin": "B0BFX81VLK",
+   "sku": "40001-1020",
+   "name": "Premium Mattress Protector",
+   "status": "Active",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
    "asin": "B0DP9Q85K9",
    "sku": "42002-1070",
    "name": "SnowTek Premium King Bed Sheets Set",
    "status": "Active",
    "total": 4.0,
-   "avail": 4.0,
+   "avail": 2.0,
    "inbound": 0.0,
    "wkAvg": 0.0,
    "l30": 0.0,
@@ -264,63 +300,51 @@
    "wkLeft": 0.0
   },
   {
-   "asin": "B0DK7DVX2V",
-   "sku": "50001-1020",
-   "name": "Dormeo The Essentials Mattress Topper, Twin XL",
-   "status": "low_stock",
-   "total": 1.0,
-   "avail": 0.0,
-   "inbound": 1.0,
-   "wkAvg": 1.0,
-   "l30": 4.0,
-   "wkLeft": 1.0
-  },
-  {
    "asin": "B08W4SLL9P",
    "sku": "200000780-AMZ",
    "name": "RV Short Queen Cooling Mattress Topper",
    "status": "low_stock",
-   "total": 8.0,
+   "total": 5.0,
    "avail": 0.0,
    "inbound": 0.0,
    "wkAvg": 3.0,
-   "l30": 12.0,
-   "wkLeft": 3.0
+   "l30": 14.0,
+   "wkLeft": 2.0
+  },
+  {
+   "asin": "B0GHYXC6P2",
+   "sku": "70001-1050",
+   "name": "Dormeo SnowTek 2in Cooling Topper Queen",
+   "status": "low_stock",
+   "total": 27.0,
+   "avail": 27.0,
+   "inbound": 0.0,
+   "wkAvg": 14.0,
+   "l30": 69.0,
+   "wkLeft": 2.0
   },
   {
    "asin": "B0F74N4F46",
    "sku": "40001-1060-AMZ",
    "name": "Premium Waterproof Mattress Protector King \u2013 Stain and Spill Protective Layer",
    "status": "Active",
-   "total": 4.0,
-   "avail": 4.0,
+   "total": 3.0,
+   "avail": 3.0,
    "inbound": 0.0,
    "wkAvg": 1.0,
-   "l30": 6.0,
-   "wkLeft": 3.0
+   "l30": 7.0,
+   "wkLeft": 2.0
   },
   {
-   "asin": "B0GHYXC6P2",
-   "sku": "70001-1050",
-   "name": "Dormeo SnowTek 2in Cooling Topper Queen",
+   "asin": "B0GHYY1RQY",
+   "sku": "70001-1030",
+   "name": "Dormeo SnowTek 2in Cooling Topper Full",
    "status": "Active",
-   "total": 45.0,
-   "avail": 41.0,
+   "total": 15.0,
+   "avail": 12.0,
    "inbound": 0.0,
-   "wkAvg": 11.0,
-   "l30": 56.0,
-   "wkLeft": 4.0
-  },
-  {
-   "asin": "B07WFHMD2V",
-   "sku": "110033240-AMZ",
-   "name": "Premium Queen Cooling Mattress Topper - 3-Zone Octaspring\u24c7 Technology for Optimal Back Support",
-   "status": "low_stock",
-   "total": 409.0,
-   "avail": 0.0,
-   "inbound": 400.0,
-   "wkAvg": 100.0,
-   "l30": 499.0,
+   "wkAvg": 4.0,
+   "l30": 20.0,
    "wkLeft": 4.0
   },
   {
@@ -332,43 +356,31 @@
    "avail": 0.0,
    "inbound": 10.0,
    "wkAvg": 2.0,
-   "l30": 12.0,
-   "wkLeft": 4.0
+   "l30": 11.0,
+   "wkLeft": 5.0
+  },
+  {
+   "asin": "B07WFHMD2V",
+   "sku": "110033240-AMZ",
+   "name": "Premium Queen Cooling Mattress Topper - 3-Zone Octaspring\u24c7 Technology for Optimal Back Support",
+   "status": "Active",
+   "total": 401.0,
+   "avail": 0.0,
+   "inbound": 400.0,
+   "wkAvg": 85.0,
+   "l30": 427.0,
+   "wkLeft": 5.0
   },
   {
    "asin": "B0DK9XZGB1",
    "sku": "50001-1060",
    "name": "Dormeo The Essentials Mattress Topper, King",
    "status": "Active",
-   "total": 25.0,
-   "avail": 24.0,
+   "total": 24.0,
+   "avail": 21.0,
    "inbound": 0.0,
    "wkAvg": 4.0,
-   "l30": 20.0,
-   "wkLeft": 6.0
-  },
-  {
-   "asin": "B0GHYY1RQY",
-   "sku": "70001-1030",
-   "name": "Dormeo SnowTek 2in Cooling Topper Full",
-   "status": "Active",
-   "total": 22.0,
-   "avail": 19.0,
-   "inbound": 0.0,
-   "wkAvg": 3.0,
-   "l30": 17.0,
-   "wkLeft": 6.0
-  },
-  {
-   "asin": "B07WGH7QNP",
-   "sku": "110033241-AMZ",
-   "name": "Premium King Cooling Mattress Topper - 3-Zone Octaspring\u24c7 Technology for Optimal Back Support",
-   "status": "Active",
-   "total": 311.0,
-   "avail": 72.0,
-   "inbound": 227.0,
-   "wkAvg": 45.0,
-   "l30": 225.0,
+   "l30": 18.0,
    "wkLeft": 7.0
   },
   {
@@ -379,44 +391,20 @@
    "total": 0.0,
    "avail": 0.0,
    "inbound": 0.0,
-   "wkAvg": 10.0,
-   "l30": 50.0,
+   "wkAvg": 9.0,
+   "l30": 47.0,
    "wkLeft": 7.0
-  },
-  {
-   "asin": "B07WGHBD5W",
-   "sku": "110033391-AMZ",
-   "name": "Premium California King Cooling Mattress Topper - 3-Zone Octaspring\u24c7 Technology for Optimal Back Support",
-   "status": "Active",
-   "total": 89.0,
-   "avail": 9.0,
-   "inbound": 80.0,
-   "wkAvg": 12.0,
-   "l30": 59.0,
-   "wkLeft": 8.0
-  },
-  {
-   "asin": "B09KDRCK2C",
-   "sku": "30004-1066",
-   "name": "Premium Split King Cooling Mattress Topper - 3-Zone Octaspring\u24c7 Technology for Optimal Back Support",
-   "status": "low_stock",
-   "total": 34.0,
-   "avail": 9.0,
-   "inbound": 25.0,
-   "wkAvg": 4.0,
-   "l30": 21.0,
-   "wkLeft": 8.0
   },
   {
    "asin": "B07WGHV3DS",
    "sku": "110033239-AMZ",
    "name": "Premium Full Size Cooling Mattress Topper - 3-Zone Octaspring\u24c7 Technology for Optimal Back Support",
    "status": "Active",
-   "total": 199.0,
-   "avail": 95.0,
+   "total": 175.0,
+   "avail": 58.0,
    "inbound": 100.0,
-   "wkAvg": 24.0,
-   "l30": 119.0,
+   "wkAvg": 23.0,
+   "l30": 115.0,
    "wkLeft": 8.0
   },
   {
@@ -424,23 +412,35 @@
    "sku": "110033238-AMZ",
    "name": "Premium Twin Cooling Mattress Topper - 3-Zone Octaspring\u24c7 Technology for Optimal Back Support",
    "status": "Active",
-   "total": 136.0,
-   "avail": 83.0,
-   "inbound": 50.0,
-   "wkAvg": 16.0,
-   "l30": 81.0,
-   "wkLeft": 8.0
+   "total": 124.0,
+   "avail": 71.0,
+   "inbound": 51.0,
+   "wkAvg": 14.0,
+   "l30": 70.0,
+   "wkLeft": 9.0
   },
   {
    "asin": "B07WHHQBQX",
    "sku": "110033390-AMZ",
    "name": "Premium Twin XL Cooling Mattress Topper - 3-Zone Octaspring\u24c7 Technology for Optimal Back Support",
    "status": "Active",
-   "total": 128.0,
-   "avail": 101.0,
+   "total": 121.0,
+   "avail": 92.0,
    "inbound": 21.0,
-   "wkAvg": 18.0,
-   "l30": 92.0,
+   "wkAvg": 15.0,
+   "l30": 76.0,
+   "wkLeft": 9.0
+  },
+  {
+   "asin": "B07WGH7QNP",
+   "sku": "110033241-AMZ",
+   "name": "Premium King Cooling Mattress Topper - 3-Zone Octaspring\u24c7 Technology for Optimal Back Support",
+   "status": "Active",
+   "total": 417.0,
+   "avail": 30.0,
+   "inbound": 377.0,
+   "wkAvg": 46.0,
+   "l30": 229.0,
    "wkLeft": 9.0
   },
   {
@@ -448,11 +448,11 @@
    "sku": "33100-60-US FBA",
    "name": "Dark King - Ergonomic Pillow for Neck & Shoulder Support",
    "status": "Active",
-   "total": 62.0,
-   "avail": 37.0,
-   "inbound": 24.0,
-   "wkAvg": 6.0,
-   "l30": 31.0,
+   "total": 78.0,
+   "avail": 29.0,
+   "inbound": 48.0,
+   "wkAvg": 8.0,
+   "l30": 38.0,
    "wkLeft": 10.0
   },
   {
@@ -460,24 +460,36 @@
    "sku": "70001-1060",
    "name": "Dormeo SnowTek 2in Cooling Topper King",
    "status": "Active",
-   "total": 46.0,
-   "avail": 32.0,
+   "total": 43.0,
+   "avail": 27.0,
    "inbound": 0.0,
    "wkAvg": 4.0,
-   "l30": 20.0,
-   "wkLeft": 12.0
+   "l30": 19.0,
+   "wkLeft": 11.0
   },
   {
-   "asin": "B0GHYJLM7J",
-   "sku": "70001-1010",
-   "name": "Dormeo SnowTek 2in Cooling Topper Twin",
+   "asin": "B07WGHBD5W",
+   "sku": "110033391-AMZ",
+   "name": "Premium California King Cooling Mattress Topper - 3-Zone Octaspring\u24c7 Technology for Optimal Back Support",
    "status": "Active",
-   "total": 33.0,
-   "avail": 32.0,
-   "inbound": 0.0,
-   "wkAvg": 3.0,
-   "l30": 14.0,
-   "wkLeft": 12.0
+   "total": 133.0,
+   "avail": 1.0,
+   "inbound": 130.0,
+   "wkAvg": 10.0,
+   "l30": 52.0,
+   "wkLeft": 13.0
+  },
+  {
+   "asin": "B09KDRCK2C",
+   "sku": "30004-1066",
+   "name": "Premium Split King Cooling Mattress Topper - 3-Zone Octaspring\u24c7 Technology for Optimal Back Support",
+   "status": "low_stock",
+   "total": 57.0,
+   "avail": 6.0,
+   "inbound": 50.0,
+   "wkAvg": 4.0,
+   "l30": 21.0,
+   "wkLeft": 14.0
   },
   {
    "asin": "B0F74MTBGN",
@@ -508,12 +520,12 @@
    "sku": "30004-1061",
    "name": "RV Short King Cooling Mattress Topper",
    "status": "Active",
-   "total": 75.0,
-   "avail": 64.0,
+   "total": 74.0,
+   "avail": 61.0,
    "inbound": 0.0,
    "wkAvg": 1.0,
    "l30": 7.0,
-   "wkLeft": 54.0
+   "wkLeft": 53.0
   },
   {
    "asin": "B0F74RPY9X",
@@ -526,18 +538,6 @@
    "wkAvg": 0.0,
    "l30": 2.0,
    "wkLeft": 60.0
-  },
-  {
-   "asin": "B0BFX81VLK",
-   "sku": "40001-1020",
-   "name": "Premium Mattress Protector",
-   "status": "Active",
-   "total": 74.0,
-   "avail": 74.0,
-   "inbound": 0.0,
-   "wkAvg": 1.0,
-   "l30": 5.0,
-   "wkLeft": 74.0
   }
  ],
  "po": [],
