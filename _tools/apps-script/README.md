@@ -13,7 +13,11 @@ account, no file sharing, no Cloud project.
 
 1. Go to script.google.com → **New project**. Name it "Weekly deck Slides".
 2. Replace the contents of `Code.gs` with `WeeklyDeckSlides.gs` from this folder. Save.
-3. On the left, **Services +** → **Google Slides API** → Add.
+3. Add the Google Slides service: **Services +** (in the Files panel next to the side menu; click **Editor** to
+   show it) → **Google Slides API** → Add. If that panel won't show: **Project Settings** → tick "Show
+   appsscript.json", open `appsscript.json` and add
+   `"dependencies": {"enabledAdvancedServices": [{"userSymbol": "Slides", "serviceId": "slides", "version": "v1"}]}`.
+   Without it the log says "Slides is not defined" and no file is created.
 4. Choose `setup` in the function menu at the top → **Run**. Allow access when Google asks (your own account).
 5. Open **Executions** (left menu): the log shows each brand's new file link, e.g.
    `Dormeo US: created https://docs.google.com/presentation/d/.../edit`. The files go into your "Weekly decks"
