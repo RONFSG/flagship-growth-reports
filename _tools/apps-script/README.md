@@ -1,4 +1,4 @@
-# Weekly deck → editable Google Slides (Apps Script, trial)
+# Weekly deck → editable Google Slides (Apps Script)
 
 Every weekly deck publish (Monday build and the Tuesday inventory update) now also writes
 `<brand>/deck/<week end>/slides-requests.json.gz`: the Google Slides instructions that rebuild the same deck as real,
