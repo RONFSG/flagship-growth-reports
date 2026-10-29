@@ -27,6 +27,7 @@ entry = {"week": W["num"], "label": W["label"], "end": end,
          "built": dt.datetime.now(dt.timezone.utc).strftime("%b %-d, %Y"),
          "pptx": f"{end}/{base}.pptx", "pdf": f"{end}/{base}.pdf",
          "slides": [f"{end}/{os.path.basename(s)}" for s in slides]}
+if (D.get("inventory") or {}).get("asOf"): entry["inventoryAsOf"] = D["inventory"]["asOf"]   # read by deck.py tuesday
 mpath = os.path.join(SITE, "deck", "manifest.json")
 M = json.load(open(mpath)) if os.path.exists(mpath) else {"history": []}
 hist = [h for h in M.get("history", []) if h["end"] != end]
@@ -37,5 +38,12 @@ cfg_path = os.path.join(os.environ.get("DECK_BRAND") or os.path.dirname(os.path.
 cfg = json.load(open(cfg_path)) if os.path.exists(cfg_path) else {}
 if cfg.get("googleSlidesUrl"):
     M["googleSlides"] = cfg["googleSlidesUrl"]
+# the brand's one Google Slides file (deck-schedule.json), so a separate "link" step isn't needed after publishing
+sched = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "deck-schedule.json")))
+slug = os.path.basename(os.path.abspath(SITE))
+gid = next((e.get("googleSlidesId") for e in sched.get("monday", []) + sched.get("sunday", []) if e["slug"] == slug), None)
+if gid:
+    url = f"https://docs.google.com/presentation/d/{gid}/edit"
+    M["googleSlides"] = M["current"]["googleSlides"] = M["history"][0]["googleSlides"] = url
 json.dump(M, open(mpath, "w"), indent=1)
 print("DECK_PUBLISHED", entry["pptx"], len(slides), "slides")

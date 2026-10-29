@@ -1,6 +1,8 @@
 # Weekly deck: how it works and how to run it
 
-The weekly business review deck has 17 slides. Each week it's published on the brand's **Weekly deck** tab in Flagship Insights: open it in Google Slides, view the PowerPoint in the browser, download the PDF, or click through the slide images. The Google Slides copy is a new file each week, one picture per slide (one call, about a minute); the old editable Slides sync took 20+ minutes and is retired.
+The weekly business review deck has 17 slides. Each week it's published on the brand's **Weekly deck** tab in Flagship Insights: open it in Google Slides, view the PowerPoint in the browser, download the PDF, or click through the slide images. Each brand has **one** Google Slides file (its id is in `_tools/deck-schedule.json`); every run replaces its slides with one picture per slide, so the link never changes. The old editable Slides sync took 20+ minutes and is retired.
+
+**One design for every brand.** All brands use the same 17-slide build (`_tools/dormeo-us-deck/build_slides.py`); a brand only adds its settings folder `_tools/<slug>-deck/`. Each week only the data and commentary change. `deck.py` runs each step for any brand by slug, so nobody sets `DECK_BRAND` by hand.
 
 ## What's needed
 
@@ -20,7 +22,7 @@ The weekly business review deck has 17 slides. Each week it's published on the b
 | Data | `_tools/dormeo-us-dashboard/data` (refreshed daily by the dashboard run) | `_tools/dormeo-canada-deck/data` (pulled during the Monday run) |
 | Inventory sheet page | `dormeo-us-inventory/` | `dormeo-canada-inventory/` |
 | Published to | `dormeo-us/deck/` | `dormeo-canada/deck/` |
-| Google Slides | new file each week in Drive folder "Weekly decks" (`1AObylhEtAg2iJCLOAd8a-f7SCgawUGg2`) | same folder |
+| Google Slides | one file, same link every week (`googleSlidesId` in deck-schedule.json), Drive folder "Weekly decks" | same |
 | Money | USD, $ | CAD, shown as $ (the cover says CAD) |
 
 The scripts live in `_tools/dormeo-us-deck/` and `_tools/dormeo-us-dashboard/`, and one copy serves every brand. To run them for a brand other than Dormeo US, set `DECK_BRAND=../<brand>-deck`. **If `DECK_BRAND` isn't set, they run for Dormeo US.**
@@ -39,22 +41,28 @@ The scripts live in `_tools/dormeo-us-deck/` and `_tools/dormeo-us-dashboard/`, 
 ## Monday steps (detail in each runbook)
 
 1. `git pull --rebase origin main`
-2. **Data**:
-   - Dormeo US: the daily dashboard run must already have run.
-   - Canada: run `update_data.py plan`, make the Sellerise calls it lists, save each result, then run `finalize`.
-   - Both: `deck_week.py plan` → make the calls → `save` each → `build <monday>` for the Mon–Sun week.
-3. **Extras**: Sellerise pulls saved to `/tmp/deck/extra.json`, in the same shape as `weeks/<last week>/extra.json`. These cover the 4-week table, month to date, last year's month to date, daily rows, search terms, targets, reviews and alerts.
-4. **Numbers**: `python3 compute.py <data folder> /tmp/deck/deck_data.json <deck_config.json>`
-5. **Commentary**: `/tmp/deck/notes.json` must contain every key. Use only numbers from the two data files, write in plain English, and rewrite it every week.
-6. **Build and check**:
-   - Run `python3 build_slides.py …`.
-   - Render it with `soffice` and `pdftoppm`, then look at every slide.
-7. **Publish**:
-   - Run `python3 publish_deck.py deck.pptx deck_data.json ../../<brand folder>`.
-   - Save the week's `extra.json` and `notes.json` to `weeks/<week end>/`.
-   - Commit and push.
-8. **Google Slides copy**: create a blank presentation in the "Weekly decks" folder, send `gslides_images.py`'s requests in one call, then `gslides_images.py link` and push the manifest.
-9. **Report**: a short summary of the week and how long each part took.
+2. **Data**: Dormeo US needs the daily dashboard run first; Canada runs `update_data.py plan` / save / `finalize`.
+   Both: `deck_week.py plan` → make the calls → `save` each → `build <monday>` for the Mon–Sun week.
+3. **Extras**: `deck.py extra-plan <slug>` lists the remaining Sellerise calls → write `pulled.json` →
+   `deck.py extra-build <slug> pulled.json`. The 4-week table and last week's daily rows come from saved files.
+4. **Commentary**: `/tmp/deck/<slug>/notes.json` with every key; only numbers from the data files; rewritten every week.
+5. **Build**: `deck.py build <slug>` → look at the one contact-sheet image.
+6. **Publish**: `deck.py publish <slug>` (also saves the week's inputs, sets the Slides link, commits only the brand's folders).
+7. **Google Slides**: `read_presentation` (slide ids) → `deck.py slides <slug> <ids>` → `update_presentation`.
+8. **Report**: a short summary of the week and how long each part took.
+
+**Tuesday**: `deck.py tuesday <slug>` does the whole inventory update (or says why it skipped), then
+`deck.py slides <slug> <ids> --only 1,12` replaces just those two slides in Google Slides.
+
+## Speed and cost
+
+Each run is an agent session, so its cost is mostly the Sellerise data and the text the agent reads and writes. To keep it low:
+- Weekly totals are saved in `wk/` and reused: the 4-week table needs one new week's pull, not four, and the daily table
+  needs 7 new days, not 14.
+- `deck.py` does the build/publish/commit steps in one command each and prints one line of JSON, instead of many tool calls.
+- One contact-sheet image replaces looking at 17 slide images.
+- Tuesday's Google Slides call replaces 2 slides (6 requests) instead of all 17 (51 requests).
+- The commentary is the only part written fresh each week.
 
 ## Rules
 
@@ -69,7 +77,7 @@ The scripts live in `_tools/dormeo-us-deck/` and `_tools/dormeo-us-dashboard/`, 
 
 ## Adding a new brand
 
-1. Copy `_tools/dormeo-canada-deck/` to `_tools/<slug>-deck/`, then:
+1. Copy `_tools/dormeo-canada-deck/` to `_tools/<slug>-deck/` (the design is shared; this folder is only the brand's settings and data), then:
    - Edit `brand.json`: account, marketplace, currency, sheet page names, SQP ASIN and short names.
    - Edit `data/groups.json`: the brand's product lines and ASINs.
    - Empty `raw/` and `weeks/`.

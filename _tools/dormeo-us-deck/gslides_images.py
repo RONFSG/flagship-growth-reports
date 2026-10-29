@@ -8,6 +8,8 @@ deleted in the same call, so the file is never left half-done. The text is not e
 Usage:
   gslides_images.py <brand deck folder, e.g. ../../dormeo-us/deck> <the file's current slide ids, comma-separated>
       prints the JSON list to pass as `requests` to Google_Slides update_presentation
+  gslides_images.py <brand deck folder> <current slide ids> --only 1,12
+      replaces just those slides (the Tuesday inventory update): a much smaller call
   gslides_images.py link <brand deck folder> <presentation id>
       writes the Google Slides link into manifest.json (top level and this week). Earlier weeks keep only their PDF,
       since the same file now shows the newest week."""
@@ -29,23 +31,30 @@ if sys.argv[1] == "link":
     print("linked", url)
     sys.exit()
 
-deck, old = sys.argv[1], [s for s in sys.argv[2].split(",") if s.strip()]
+deck, old = sys.argv[1], [s.strip() for s in sys.argv[2].split(",") if s.strip()]
+only = [int(x) for x in sys.argv[sys.argv.index("--only") + 1].split(",")] if "--only" in sys.argv else None
 man = json.load(open(os.path.join(deck, "manifest.json")))
 brand = os.path.basename(os.path.dirname(os.path.abspath(deck)))
 base = f"https://reports.flagshipgrowth.com/{brand}/deck/"
 run = str(int(time.time()))  # new ids every run, so they never clash with the slides being replaced
 W, H = 9144000, 5143500  # 16:9, same shape as the deck
 reqs = []
-for i, img in enumerate(man["current"]["slides"], 1):
+slides = man["current"]["slides"]
+if only and len(old) != len(slides):
+    sys.exit(f"the file has {len(old)} slides but the deck has {len(slides)}: run without --only")
+for i, img in enumerate(slides, 1):
+    if only and i not in only: continue
     sid = f"wbr{run}_s{i:02d}"
     reqs.append({"createSlide": {"objectId": sid, "insertionIndex": i - 1,
                                  "slideLayoutReference": {"predefinedLayout": "BLANK"}}})
-    reqs.append({"createImage": {"objectId": f"wbr{run}_i{i:02d}", "url": base + img,
+    reqs.append({"createImage": {"objectId": f"wbr{run}_i{i:02d}", "url": base + img + f"?v={run}",
                                  "elementProperties": {"pageObjectId": sid,
                                                        "size": {"width": {"magnitude": W, "unit": "EMU"},
                                                                 "height": {"magnitude": H, "unit": "EMU"}},
                                                        "transform": {"scaleX": 1, "scaleY": 1, "translateX": 0,
                                                                      "translateY": 0, "unit": "EMU"}}}})
-for s in old:
-    reqs.append({"deleteObject": {"objectId": s.strip()}})
+    if only: reqs.append({"deleteObject": {"objectId": old[i - 1]}})   # new slide sits just before the old one
+if not only:
+    for s in old:
+        reqs.append({"deleteObject": {"objectId": s}})
 print(json.dumps(reqs, separators=(",", ":")))

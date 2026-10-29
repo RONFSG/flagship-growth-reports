@@ -36,6 +36,9 @@ def plan(run_day):
     base = {"accountSearch": U.BRAND.get("account", "Dormeo"), "marketplaces": U.BRAND.get("marketplace", "US")}
     am = {**base, "targetCurrency": U.BRAND["currency"]} if U.BRAND.get("currency") else base
     calls = []
+    for m in (mon - dt.timedelta(days=21), mon - dt.timedelta(days=14)):   # the 4-week table's older weeks: usually saved already
+        e = str(m + dt.timedelta(days=6)); m = str(m)
+        if not os.path.exists(f("meta", m)): calls.append({"save_with": f"save meta {m} <raw>", "tool": "get_account_metrics", "args": {**am, "groupBy": "none", "start": m, "end": e}})
     for m in (prev, mon):
         e = str(m + dt.timedelta(days=6)); m = str(m)
         if not os.path.exists(f("meta", m)): calls.append({"save_with": f"save meta {m} <raw>", "tool": "get_account_metrics", "args": {**am, "groupBy": "none", "start": m, "end": e}})
@@ -49,7 +52,9 @@ def plan(run_day):
 def save(kind, mon, path):
     D(mon)
     if kind == "meta":
-        o = json.load(open(path)); json.dump(U.map_metrics(o) if "revenue" in o and "ppc" in o else o, open(f(kind, mon), "w"), indent=1)
+        o = json.load(open(path)); m = U.map_metrics(o) if "revenue" in o and "ppc" in o else o
+        if "refundAmount" in o: m["refundUnits"] = int(o["refundAmount"] or 0)   # Sellerise's refundAmount = refunded units
+        json.dump(m, open(f(kind, mon), "w"), indent=1)
     else:
         if os.path.abspath(path) != f(kind, mon): shutil.copy(path, f(kind, mon))
     print(kind, mon, "saved")

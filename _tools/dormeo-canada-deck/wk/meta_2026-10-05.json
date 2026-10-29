@@ -1,0 +1,14 @@
+{
+ "revenue": 115039.29,
+ "orders": 267,
+ "units": 272,
+ "refundRate": 3.37,
+ "spend": 7802.21,
+ "adSales": 74473.92,
+ "acos": 10.48,
+ "tacos": 6.78,
+ "clicks": 4956,
+ "impr": 1267680,
+ "refundUnits": 9,
+ "_from": "weeks/2026-10-25/extra.json (backfill)"
+}
