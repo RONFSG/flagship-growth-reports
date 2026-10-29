@@ -67,7 +67,7 @@ if WEEK:   # product lines from the deck week's ASIN sales
     agg = {g["key"]: [0, 0, 0, 0] for g in G}
     for j, rows in ((0, WEEK["weekCur"]), (2, WEEK["weekPrev"])):
         for asin, rv, u in rows:
-            a_ = agg[WEEK["groupOf"].get(asin, "pr")]; a_[j] += rv or 0; a_[j + 1] += u or 0
+            a_ = agg.get(WEEK["groupOf"].get(asin, B.get("otherKey", "pr"))) or agg[G[-1]["key"]]; a_[j] += rv or 0; a_[j + 1] += u or 0
     for g in G:
         a, ua, b, ub = agg[g["key"]]
         lines.append(dict(name=g["short"], rev=round(a, 2), prev=round(b, 2), change=chg(a, b), units=int(ua), unitsPrev=int(ub)))
@@ -83,7 +83,9 @@ names = {k_["asin"]: k_["name"] for k_ in IS["skus"]}
 wc = {r[0]: r for r in (WEEK["weekCur"] if WEEK else L(f"raw/week_{ws}.json"))}; wp = {r[0]: r for r in (WEEK["weekPrev"] if WEEK else L(f"raw/week_{prev_ws}.json"))}
 def short(n, asin=None):
     if asin in B.get("names", {}): return B["names"][asin]   # brand.json overrides (e.g. sizes the sheet name leaves out)
-    n = n.replace("Ⓡ", "").replace("Dormeo ", "")
+    n = n.replace("Ⓡ", "").replace("®", "").replace("™", "").replace("Dormeo ", "")
+    for w in {B.get("brand", ""), B.get("account", ""), B.get("brand", "").split(" ")[0]} - {""}:   # drop the brand's own name
+        if n.lower().startswith(w.lower() + " "): n = n[len(w) + 1:]
     for cut in (" - 3-Zone", " – ", " - ", " | ", ","): n = n.split(cut)[0]
     return n.replace("Cooling Mattress Topper", "Topper").replace("Mattress Topper", "Topper").strip()
 prods = []
@@ -127,13 +129,13 @@ dim = calendar.monthrange(last.year, last.month)[1]; avg = sum(a["rev"] for a in
 fc = sum(a["rev"] for a in md) + avg * (dim - last.day)
 LONG = ["January","February","March","April","May","June","July","August","September","October","November","December"]
 out["pacing"] = dict(monthLong=LONG[last.month - 1], month=MS[last.month - 1], through=fmtd(last), day=last.day, dim=dim, mtd=sum(a["rev"] for a in md), primeRev=sum(a["rev"] for a in prime),
-                     avg=avg, forecast=fc, prevMonth=P["PL"]["gross"][-1], prevMonthName=MS[len(P["PL"]["gross"]) - 1], lastYear=S["a25"][last.month - 1],
+                     avg=avg, forecast=fc, prevMonth=(P["PL"]["gross"] or [0])[-1], prevMonthName=MS[max(len(P["PL"]["gross"]), 1) - 1], lastYear=(S.get("a25") or [0] * 12)[last.month - 1],
                      spendMtd=sum(a["spend"] for a in md), eventDays=[str(a["d"]) for a in prime])
 
 # 9. inventory (sheet: FSG Weekly Inventory Update)
 inv = []
 for g in G:
-    a = IS["groups"][g["key"]]; wa = a["wkAvg"]
+    a = IS["groups"].get(g["key"], dict(total=0, avail=0, inbound=0, wkAvg=0)); wa = a["wkAvg"]
     inv.append(dict(name=g["short"], total=a["total"], avail=a["avail"], inbound=a["inbound"], wkAvg=wa,
                     weeksAvail=a["avail"] / wa if wa else None, weeksTotal=a["total"] / wa if wa else None))
 out["inventory"] = dict(asOf=IS["asOf"], week=IS["week"], rows=inv, total=sum(x["total"] for x in inv), avail=sum(x["avail"] for x in inv), inbound=sum(x["inbound"] for x in inv))

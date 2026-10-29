@@ -10,6 +10,76 @@
    "name": "Dormeo Canada",
    "slug": "dormeo-canada",
    "manifest": "https://reports.flagshipgrowth.com/dormeo-canada/deck/manifest.json"
+  },
+  {
+   "name": "Reshoevn8r US",
+   "slug": "reshoevn8r-us",
+   "manifest": "https://reports.flagshipgrowth.com/reshoevn8r-us/deck/manifest.json"
+  },
+  {
+   "name": "Reshoevn8r Canada",
+   "slug": "reshoevn8r-canada",
+   "manifest": "https://reports.flagshipgrowth.com/reshoevn8r-canada/deck/manifest.json"
+  },
+  {
+   "name": "Reshoevn8r UK",
+   "slug": "reshoevn8r-uk",
+   "manifest": "https://reports.flagshipgrowth.com/reshoevn8r-uk/deck/manifest.json"
+  },
+  {
+   "name": "Opopop",
+   "slug": "opopop",
+   "manifest": "https://reports.flagshipgrowth.com/opopop/deck/manifest.json"
+  },
+  {
+   "name": "RationAle Brewing",
+   "slug": "rationale-brewing",
+   "manifest": "https://reports.flagshipgrowth.com/rationale-brewing/deck/manifest.json"
+  },
+  {
+   "name": "SuperMush",
+   "slug": "super-mush",
+   "manifest": "https://reports.flagshipgrowth.com/super-mush/deck/manifest.json"
+  },
+  {
+   "name": "Hapad US",
+   "slug": "hapad-us",
+   "manifest": "https://reports.flagshipgrowth.com/hapad-us/deck/manifest.json"
+  },
+  {
+   "name": "Hapad Canada",
+   "slug": "hapad-canada",
+   "manifest": "https://reports.flagshipgrowth.com/hapad-canada/deck/manifest.json"
+  },
+  {
+   "name": "MAC Energy",
+   "slug": "mac-energy",
+   "manifest": "https://reports.flagshipgrowth.com/mac-energy/deck/manifest.json"
+  },
+  {
+   "name": "Lewie",
+   "slug": "lewie",
+   "manifest": "https://reports.flagshipgrowth.com/lewie/deck/manifest.json"
+  },
+  {
+   "name": "Sidekick",
+   "slug": "sidekick",
+   "manifest": "https://reports.flagshipgrowth.com/sidekick/deck/manifest.json"
+  },
+  {
+   "name": "Heavenly Bodies",
+   "slug": "heavenly-bodies",
+   "manifest": "https://reports.flagshipgrowth.com/heavenly-bodies/deck/manifest.json"
+  },
+  {
+   "name": "CaddyO",
+   "slug": "caddyo",
+   "manifest": "https://reports.flagshipgrowth.com/caddyo/deck/manifest.json"
+  },
+  {
+   "name": "JAX Athletics",
+   "slug": "jax-athletics",
+   "manifest": "https://reports.flagshipgrowth.com/jax-athletics/deck/manifest.json"
   }
  ]
 }

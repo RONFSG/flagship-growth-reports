@@ -1,0 +1,20 @@
+{
+ "brand": "JAX Athletics",
+ "slug": "jax-athletics",
+ "account": "JAX Atheltics",
+ "marketplace": "US",
+ "currency": "USD",
+ "money": "$",
+ "sheetName": "JAX Athletics",
+ "invPage": "",
+ "recPage": "",
+ "brandTerms": [
+  "jax athletics",
+  "jax"
+ ],
+ "competitors": [],
+ "otherKey": "pr",
+ "sqpAsin": "",
+ "names": {},
+ "_about": "Brand settings for the shared weekly deck (see _tools/BRAND_DECK_RUNBOOK.md). invPage/recPage empty = no sheet page published yet. brandTerms = words that make a search 'branded'. sqpAsin is filled by deck.py init. names = short product names by ASIN."
+}

@@ -10,6 +10,13 @@ Google Slides instructions that rebuild the same deck as editable slides, genera
 into each brand's ONE Google Slides file (googleSlidesId in deck-schedule.json, the link Insights opens), for every
 brand listed in `decks.json` (`deck.py index`). The deck runs never write to Google Slides themselves.
 
+**All brands (2026-10-29).** Every active brand is switched on. Dormeo US and Canada keep their own runbooks; the
+other 14 each have a settings folder `_tools/<slug>-deck/` (brand.json: Sellerise account, marketplace, currency,
+sheet pages, branded-search words) and follow one shared runbook, `_tools/BRAND_DECK_RUNBOOK.md`. A brand's first
+Monday run sets up its data (`deck.py init`: product lines = its 7 biggest products by parent ASIN + "Other products").
+Hapad Canada and JAX Athletics have no inventory sheet page yet, so their slide 12 says so; CaddyO, Heavenly Bodies,
+Hapad Canada and JAX have no reconciliation page.
+
 ## What's needed
 
 **Claude Code connectors:** Sellerise, Google Drive, Google Slides.

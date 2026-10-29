@@ -32,7 +32,9 @@ function updateDecks() {
   const brands = JSON.parse(UrlFetchApp.fetch(fresh_(INDEX_URL)).getContentText()).brands || [];
   brands.forEach((b) => {
     try {
-      const man = JSON.parse(UrlFetchApp.fetch(fresh_(b.manifest)).getContentText());
+      const res = UrlFetchApp.fetch(fresh_(b.manifest), { muteHttpExceptions: true });
+      if (res.getResponseCode() === 404) { console.log(b.name + ': no deck published yet'); return; }   // switched on, first run still to come
+      const man = JSON.parse(res.getContentText());
       const cur = man.current || {};
       if (!cur.slidesRequests) { console.log(b.name + ': no Slides requests published yet'); return; }
       const base = b.manifest.replace(/manifest\.json$/, '');

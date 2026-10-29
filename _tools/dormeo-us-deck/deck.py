@@ -6,6 +6,10 @@ This driver replaces the DECK_BRAND juggling and the long hand-run step lists, s
 and fewer Sellerise calls. Run from anywhere; <slug> is the brand's slug in deck-schedule.json (e.g. dormeo-us).
 
   deck.py brands                         enabled brands (monday + sunday lists) and whether each has a runbook
+  deck.py init <slug> <products.json>    FIRST RUN of a new brand only (when _tools/<slug>-deck/data/groups.json is
+                                         missing): builds the brand's starting data files. products.json =
+                                         [[asin, parentAsin, title, revenue], ...] from get_products for the last 30 days
+                                         (every page). Product lines = the 7 biggest parent ASINs + "Other products".
   deck.py index                          writes decks.json at the site root: the brands the Apps Script builds editable
                                          Google Slides for (enabled, with a runbook and a published deck). Run it when a
                                          brand is enabled or disabled, then push decks.json.
@@ -133,12 +137,58 @@ def build_deck(b, extra, notes, pages=None):
 
 
 # ---------------------------------------------------------------- commands
+def short_name(title, brand_words):
+    t = re.sub(r"[®™Ⓡ]", "", title or "").strip()
+    for w in sorted(brand_words, key=len, reverse=True):
+        if w and t.lower().startswith(w.lower()): t = t[len(w):].lstrip(" -–:|,")
+    for cut in (" - ", " – ", " | ", ",", "(", ":"): t = t.split(cut)[0]
+    words = t.split()
+    while words and len(" ".join(words)) > 26: words = words[:-1]
+    return " ".join(words) or (title or "")[:26]
+
+
+def cmd_init(slug, path):
+    b = Brand(slug)
+    if b.us or os.path.exists(os.path.join(b.deck, "data", "groups.json")): die("this brand already has its data files")
+    bj_path = os.path.join(b.deck, "brand.json"); bj = json.load(open(bj_path))
+    rows = json.load(open(path))
+    par, kids, title = {}, {}, {}
+    for asin, parent, name, rev in rows:
+        p = parent or asin
+        par[p] = par.get(p, 0) + float(rev or 0); kids.setdefault(p, []).append(asin)
+        if p not in title or len(name or "") < len(title[p]): title[p] = name or asin
+    top = [p for p in sorted(par, key=lambda p: -par[p]) if par[p] > 0][:7]
+    words = {bj.get("brand", ""), bj.get("account", ""), bj.get("brand", "").split(" ")[0]}
+    groups, seen = [], set()
+    for i, p in enumerate(top, 1):
+        nm = short_name(title[p], words)
+        if nm.lower() in seen: nm = f"{nm} ({p[-4:]})"
+        seen.add(nm.lower())
+        groups.append({"key": f"g{i}", "short": nm, "name": title[p], "col": f"--c{i}", "asins": sorted(set(kids[p])), "sku": ""})
+    groups.append({"key": "pr", "short": "Other products", "name": "Other products", "col": "--c8", "asins": [], "sku": ""})
+    keys = [g["key"] for g in groups]
+    d = os.path.join(b.deck, "data"); os.makedirs(d, exist_ok=True); os.makedirs(os.path.join(b.deck, "raw"), exist_ok=True)
+    w = lambda n, o: json.dump(o, open(os.path.join(d, n + ".json"), "w"), indent=1, ensure_ascii=False)
+    w("groups", groups)
+    w("sales", {"PRODUCTS": [{"key": k, "sales": [], "units": [], "sessions": [], "adSpend": [], "adSales": []} for k in keys],
+                "S25": {"sales": [0] * 12, "units": [0] * 12}, "a25": [], "act26": [], "notes": f"Sellerise {bj.get('account')}, {bj.get('marketplace')}"})
+    w("pnl_ads", {"PL": {k: [] for k in ("gross", "returns", "cogs", "referral", "fba", "storage", "addl", "ads", "promo", "net", "adrev")},
+                  "ADS": [], "CAMP_META": {}, "notes": f"Sellerise {bj.get('account')} {bj.get('marketplace')}, {bj.get('currency')}", "year": dt.date.today().year})
+    w("camp_kw", {"CAMP": [], "KW": [], "KW_FLAG": {}, "notes": "Built by update_data.py finalize"})
+    w("inv_weekly", {"INV": {"asOf": "", "lastWeek": 0, "rows": [{"key": g["key"], "name": g["name"], "short": g["short"], "col": g["col"],
+                                                                   "asin": (g["asins"] or [""])[0], "sku": "", "wk": []} for g in groups]},
+                     "WEEKLY": {"sales": [[] for _ in keys], "units": [[] for _ in keys]}, "notes": "Weekly sales/units by product line"})
+    if not bj.get("sqpAsin") and top:   # search query report: the best-selling product
+        best = max((r for r in rows if (r[1] or r[0]) == top[0]), key=lambda r: float(r[3] or 0))
+        bj["sqpAsin"] = best[0]; json.dump(bj, open(bj_path, "w"), indent=1, ensure_ascii=False)
+    print(json.dumps({"status": "ok", "brand": b.e["brand"], "productLines": [g["short"] for g in groups], "sqpAsin": bj.get("sqpAsin")}))
+
+
 def cmd_index():
     out = []
     for day in ("monday", "sunday"):
         for e in SCHED.get(day, []):
             if not e.get("enabled") or e.get("terminated") or not os.path.exists(os.path.join(REPO, e["runbook"])): continue
-            if not os.path.exists(os.path.join(REPO, e["slug"], "deck", "manifest.json")): continue
             out.append({"name": e["brand"], "slug": e["slug"], "manifest": f"https://reports.flagshipgrowth.com/{e['slug']}/deck/manifest.json"})
     json.dump({"_about": "Brands whose weekly deck the Apps Script (_tools/apps-script) turns into editable Google Slides. "
                          "Written by _tools/dormeo-us-deck/deck.py index from deck-schedule.json.", "brands": out},
@@ -163,7 +213,10 @@ def cmd_tuesday(slug, dry):
         die(f"Monday deck for week ending {end} is not the published one", brand=b.e["brand"])
     out = b.run([sys.executable, "parse_sheet_pages.py", REPO, os.path.join(b.data, "data")], cwd=DASH)
     m = re.search(r"inventory (\d+/\d+/\d{4}) wk (\d+)", out)
-    if not m: die("could not read the inventory sheet date", out=out[-400:])
+    if not m:
+        restore_unstaged([os.path.join(b.data, "data")])
+        print(json.dumps({"status": "skipped", "brand": b.e["brand"], "reason": "no inventory sheet published for this brand"}))
+        return
     new, pub = m.group(1), published_inventory_date(b, man)
     if pub and sheet_date(new) <= sheet_date(pub):
         restore_unstaged([os.path.join(b.data, "data")])
@@ -304,6 +357,7 @@ if __name__ == "__main__":
     c = a[0]
     if c == "brands": cmd_brands()
     elif c == "index": cmd_index()
+    elif c == "init": cmd_init(a[1], a[2])
     elif c == "tuesday": cmd_tuesday(a[1], "--dry-run" in a)
     elif c == "extra-plan": cmd_extra_plan(a[1])
     elif c == "extra-build": cmd_extra_build(a[1], a[2])

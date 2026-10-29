@@ -1,0 +1,21 @@
+{
+ "brand": "Reshoevn8r Canada",
+ "slug": "reshoevn8r-canada",
+ "account": "Reshoevn8r",
+ "marketplace": "CA",
+ "currency": "CAD",
+ "money": "$",
+ "sheetName": "Reshoevn8r Canada",
+ "invPage": "reshoevn8r-canada-inventory",
+ "recPage": "reshoevn8r-canada-reconciliation",
+ "brandTerms": [
+  "reshoevn8r",
+  "reshoe",
+  "reshoevenator"
+ ],
+ "competitors": [],
+ "otherKey": "pr",
+ "sqpAsin": "",
+ "names": {},
+ "_about": "Brand settings for the shared weekly deck (see _tools/BRAND_DECK_RUNBOOK.md). invPage/recPage empty = no sheet page published yet. brandTerms = words that make a search 'branded'. sqpAsin is filled by deck.py init. names = short product names by ASIN."
+}

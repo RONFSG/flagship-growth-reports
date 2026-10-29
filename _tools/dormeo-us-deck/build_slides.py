@@ -26,10 +26,15 @@ HF, BF = "Space Grotesk", "Inter"
 def rgb(h): return RGBColor.from_string(h)
 BRAND = D.get("brand", "Dormeo US")
 CUR = D.get("money", "$")
-def usd(v, d=0): return ("-" if v < 0 else "") + CUR + f"{abs(v):,.{d}f}"
-def k(v): return (CUR + f"{v/1000:,.1f}K") if abs(v) >= 1000 else usd(v)
-def pct(v, d=1): return f"{v:.{d}f}%"
-def chg(c): return ("+" if c >= 0 else "") + f"{c*100:.0f}%"
+# None (a ratio whose base is zero, e.g. a day with no ad spend) prints as "—" instead of failing the build
+def Q(a, b): return a / b if b else None
+def usd(v, d=0): return "—" if v is None else ("-" if v < 0 else "") + CUR + f"{abs(v):,.{d}f}"
+def k(v): return "—" if v is None else (CUR + f"{v/1000:,.1f}K") if abs(v) >= 1000 else usd(v)
+def pct(v, d=1): return "—" if v is None else f"{v:.{d}f}%"
+def chg(c): return "—" if c is None else ("+" if c >= 0 else "") + f"{c*100:.0f}%"
+def xr(v): return "—" if v is None else f"{v:.2f}x"
+def P100(a, b): return None if not b else a / b * 100
+def ch(a, b): return a / b - 1 if b else None
 def pts(c): return ("+" if c >= 0 else "") + f"{c:.1f} pts"
 
 p = Presentation(); p.slide_width = Inches(13.333); p.slide_height = Inches(7.5)
@@ -111,6 +116,7 @@ def table(s, x, y, w, rows, widths, size=10, rh=0.32, head_fill=NAVY, total_last
 
 def bars(s, x, y, w, h, items, color=BLUE, fmt=k, label_w=1.9, hi=None):
     """horizontal bars: items = [(label, value)]"""
+    if not items: return
     mx = max(v for _, v in items) or 1; n = len(items); rh = h / n
     for i, (lab, v) in enumerate(items):
         yy = y + i * rh
@@ -136,14 +142,13 @@ def nxt():
 
 # ---------------- numbers ----------------
 rv, rvp = cur["revenue"], prv["revenue"]
-asp, aspp = rv / cur["units"], rvp / prv["units"]
+asp, aspp = Q(rv, cur["units"]), Q(rvp, prv["units"])
 pac = D["pacing"]; mtd = X["mtd"]; ly = X["mtdLY"]
 dim = pac["dim"]; days_left = dim - mtd["days"]
 spend_pace = mtd["spend"] / mtd["days"] * dim
-yoy = mtd["revenue"] / ly["revenue"] - 1
+yoy = mtd["revenue"] / ly["revenue"] - 1 if ly.get("revenue") else None   # no sales last year (new brand or marketplace)
 inv = D["inventory"]
 strat = {a["name"]: a for a in D["adsByStrat"]}
-br, ca = strat["Branded keywords"], strat["Category keywords"]
 st = X["searchTerms"]; tg = X["targets"]; al = X["alerts"]
 
 # 1 cover
@@ -177,14 +182,14 @@ for i, (num, t, d) in enumerate(ag):
 s = slide(); header(s, "Sales overview", "Amazon channel performance — last 4 weeks", nxt())
 rows = [["Week", "Ordered product sales", "Units ordered", "ASP", "Ad impressions", "Units refunded", "Refund rate"]]
 for w in WK:
-    rows.append([w["label"], usd(w["revenue"]), f"{w['units']:,}", usd(w["revenue"] / w["units"]), f"{w['impressions']:,}",
+    rows.append([w["label"], usd(w["revenue"]), f"{w['units']:,}", usd(Q(w["revenue"], w["units"])), f"{w['impressions']:,}",
                  str(w["refundUnits"]), pct(w["refundRate"], 2)])
 tot_r = sum(w["revenue"] for w in WK); tot_u = sum(w["units"] for w in WK); tot_ref = sum(w["refundUnits"] for w in WK)
-rows.append(["4-week total", usd(tot_r), f"{tot_u:,}", usd(tot_r / tot_u), f"{sum(w['impressions'] for w in WK):,}", str(tot_ref), "—"])
+rows.append(["4-week total", usd(tot_r), f"{tot_u:,}", usd(Q(tot_r, tot_u)), f"{sum(w['impressions'] for w in WK):,}", str(tot_ref), "—"])
 table(s, 0.6, 1.55, 12.13, rows, [2.1, 2.2, 1.5, 1.4, 1.9, 1.5, 1.53], size=11, rh=0.4, total_last=True,
       colors=lambda i, j, v: (RED if j == 6 and i == 4 else None))
 panel(s, 0.6, 4.25, 5.95, 2.55, "What happened this week",
-      [f"Sales were {usd(rv)}, {chg(rv/rvp-1)} vs the prior week ({usd(rvp)}), on {cur['units']} units ({chg(cur['units']/prv['units']-1)})."] + N["week_story"])
+      [f"Sales were {usd(rv)}, {chg(ch(rv, rvp))} vs the prior week ({usd(rvp)}), on {cur['units']} units ({chg(ch(cur['units'], prv['units']))})."] + N["week_story"])
 panel(s, 6.78, 4.25, 5.95, 2.55, N["refunds_title"],
       [f"{cur['refundUnits']} units were refunded this week ({pct(cur['refundRate'],1)} refund rate), vs "
        f"{prv['refundUnits']} ({pct(prv['refundRate'],1)}) the week before."] + N["refunds"])
@@ -195,7 +200,10 @@ MON = pac["month"]; MLONG = pac["monthLong"]
 card(s, 0.6, 1.55, 2.9, 1.7, "MTD revenue", k(mtd["revenue"]), f"{MON} 1–{mtd['days']} · {mtd['orders']:,} orders")
 card(s, 3.68, 1.55, 2.9, 1.7, "MTD ad spend", k(mtd["spend"]), f"ACoS {pct(mtd['acos'])}")
 card(s, 6.76, 1.55, 2.9, 1.7, "MTD TACoS", pct(mtd["tacos"]), "ad spend ÷ total sales")
-card(s, 9.84, 1.55, 2.89, 1.7, "vs last year", chg(yoy), f"{MON} 1–{mtd['days']}, {END.year-1}: {k(ly['revenue'])}", subc=GREEN if yoy >= 0 else RED, vcolor=GREEN if yoy >= 0 else RED)
+if yoy is None:
+    card(s, 9.84, 1.55, 2.89, 1.7, "vs last year", "—", f"no sales {MON} 1–{mtd['days']}, {END.year-1}")
+else:
+    card(s, 9.84, 1.55, 2.89, 1.7, "vs last year", chg(yoy), f"{MON} 1–{mtd['days']}, {END.year-1}: {k(ly['revenue'])}", subc=GREEN if yoy >= 0 else RED, vcolor=GREEN if yoy >= 0 else RED)
 colbars(s, 0.6, 3.5, 6.3, 3.3, [(f"{MON} {END.year-1}", pac["lastYear"]), (f"{pac['prevMonthName']} {END.year}", pac["prevMonth"]), (f"{MON} MTD", mtd["revenue"]),
                                  (f"{MON} pace", pac["forecast"])], color="C7D2FE", highlight=BLUE)
 panel(s, 7.2, 3.5, 5.53, 1.45, "Full-month pace",
@@ -203,7 +211,7 @@ panel(s, 7.2, 3.5, 5.53, 1.45, "Full-month pace",
        f"{k(pac['avg'])}/day" + (f" (the {MLONG} daily average without the {len(pac.get('eventDays', []))} event days)." if pac.get("eventDays") else f" (the {MLONG} daily average so far).")], size=10.5)
 box(s, 7.2, 5.1, 5.53, 1.7, fill="FEF2F2", shape=MSO_SHAPE.ROUNDED_RECTANGLE)
 text(s, 7.4, 5.22, 5.2, 0.3, "Recommendation", size=12, color=RED, font=HF, bold=True)
-text(s, 7.4, 5.55, 5.2, 1.2, f"Pace is {chg(pac['forecast']/pac['prevMonth']-1)} vs {pac['prevMonthName']}. " + N["pacing_reco"], size=10.5, color=INK2)
+text(s, 7.4, 5.55, 5.2, 1.2, (f"Pace is {chg(pac['forecast']/pac['prevMonth']-1)} vs {pac['prevMonthName']}. " if pac['prevMonth'] else "") + N["pacing_reco"], size=10.5, color=INK2)
 
 # 5 pacing MTD ads
 s = slide(); header(s, "Sales pacing", "Ad spend pacing — month to date", nxt())
@@ -212,11 +220,11 @@ card(s, 3.68, 1.55, 2.9, 1.7, "Projected spend", k(spend_pace), f"if the daily r
 card(s, 6.76, 1.55, 2.9, 1.7, "MTD TACoS", pct(mtd["tacos"]), f"this week {pct(cur['tacos'])}")
 card(s, 9.84, 1.55, 2.89, 1.7, "MTD ACoS", pct(mtd["acos"]), f"this week {pct(cur['acos'])}")
 panel(s, 0.6, 3.5, 3.95, 3.3, "MTD performance",
-      [f"{k(mtd['adSales'])} in ad sales on {k(mtd['spend'])} spend, a {mtd['adSales']/mtd['spend']:.1f}x return.",
-       f"Ads drove {mtd['adSales']/mtd['revenue']*100:.0f}% of {MLONG} sales."])
+      [f"{k(mtd['adSales'])} in ad sales on {k(mtd['spend'])} spend" + (f", a {mtd['adSales']/mtd['spend']:.1f}x return." if mtd['spend'] else "."),
+       f"Ads drove {pct(P100(mtd['adSales'], mtd['revenue']), 0)} of {MLONG} sales."])
 panel(s, 4.69, 3.5, 3.95, 3.3, "Context", N["ads_context"])
 panel(s, 8.78, 3.5, 3.95, 3.3, "This week's efficiency",
-      [f"Spend {usd(cur['spend'])} ({chg(cur['spend']/prv['spend']-1)}), ad sales {usd(cur['adSales'])} ({chg(cur['adSales']/prv['adSales']-1)}).",
+      [f"Spend {usd(cur['spend'])} ({chg(ch(cur['spend'], prv['spend']))}), ad sales {usd(cur['adSales'])} ({chg(ch(cur['adSales'], prv['adSales']))}).",
        f"ACoS {pct(cur['acos'])} ({pts(cur['acos']-prv['acos'])}); TACoS {pct(cur['tacos'])} ({pts(cur['tacos']-prv['tacos'])}).",
        f"CPC {usd(cur['cpc'],2)}, {cur['adOrders']} ad orders."])
 
@@ -227,7 +235,7 @@ rows = [["Strategy", "Ad spend", "Ad sales", "ROAS", "ACoS", "Orders"]]
 for a in D["adsByStrat"]:
     if a["spend"] >= 50: rows.append([a["name"]] + r_(a))
 cs = sum(a["spend"] for a in D["adsByStrat"]); cr = sum(a["sales"] for a in D["adsByStrat"]); co = sum(a["orders"] for a in D["adsByStrat"])
-rows.append(["All campaigns", usd(cs), usd(cr), f"{cr/cs:.2f}x", pct(cs/cr*100), str(co)])
+rows.append(["All campaigns", usd(cs), usd(cr), xr(Q(cr, cs)), pct(P100(cs, cr)), str(co)])
 table(s, 0.6, 1.55, 7.4, rows, [2.9, 1.0, 1.0, 0.8, 0.85, 0.85], size=10.5, rh=0.38, total_last=True,
       colors=lambda i, j, v: (RED if j == 4 and v not in ("—",) and v.endswith("%") and float(v[:-1]) > 35 else None))
 panel(s, 8.25, 1.55, 4.48, 2.7, "What it says",
@@ -258,12 +266,12 @@ for i, r in enumerate(rs[:6]):
     box(s, x, y, 3.9, 1.1, fill=CREAM, shape=MSO_SHAPE.ROUNDED_RECTANGLE)
     text(s, x + 0.18, y + 0.1, 3.6, 0.3, f"“{r[0]}” · {r[1]}", size=10.5, bold=True)
     text(s, x + 0.18, y + 0.42, 3.6, 0.6, [[(usd(r[6]), {"size": 20, "font": HF, "bold": True, "color": BLUE}),
-                                           (f"   {r[3]} clicks · {r[4]} orders · CVR {r[4]/r[3]*100:.1f}%", {"size": 10, "color": MUTED})]])
+                                           (f"   {r[3]} clicks · {r[4]} orders · CVR {pct(P100(r[4], r[3]))}", {"size": 10, "color": MUTED})]])
 rows = [["Search term", "Ad", "Impressions", "Clicks", "Orders", "CVR", "Spend", "Sales", "ACoS"]]
 for r in rs:
-    rows.append([r[0], r[1], f"{r[2]:,}", str(r[3]), str(r[4]), pct(r[4]/r[3]*100), usd(r[5]), usd(r[6]), pct(r[5]/r[6]*100)])
+    rows.append([r[0], r[1], f"{r[2]:,}", str(r[3]), str(r[4]), pct(P100(r[4], r[3])), usd(r[5]), usd(r[6]), pct(P100(r[5], r[6]))])
 table(s, 0.6, 4.1, 12.13, rows, [3.6, 0.6, 1.25, 0.9, 0.9, 0.9, 1.3, 1.3, 1.38], size=9.5, rh=0.3,
-      colors=lambda i, j, v: (RED if j == 8 and float(v[:-1]) > 35 else None))
+      colors=lambda i, j, v: (RED if j == 8 and v.endswith("%") and float(v[:-1]) > 35 else None))
 
 # 9 category keywords
 s = slide(); header(s, "Amazon Ads", "Category keywords", nxt())
@@ -278,11 +286,11 @@ s = slide(); header(s, "Amazon Ads", "Advertising performance — daily, last 2 
 rows = [["Date", "Day", "Total sales", "PPC spend", "PPC sales", "ROAS", "ACoS", "TACoS", "Orders", "Ad orders", "Organic sales", "Ad sales %"]]
 def wkrow(lbl, ds):
     t = [sum(d[i] for d in ds) for i in range(1, 6)]
-    return [lbl, "", usd(t[0]), usd(t[1]), usd(t[2]), f"{t[2]/t[1]:.2f}x", pct(t[1]/t[2]*100), pct(t[1]/t[0]*100), str(t[3]), str(t[4]), usd(t[0]-t[2]), pct(t[2]/t[0]*100, 0)]
+    return [lbl, "", usd(t[0]), usd(t[1]), usd(t[2]), xr(Q(t[2], t[1])), pct(P100(t[1], t[2])), pct(P100(t[1], t[0])), str(t[3]), str(t[4]), usd(t[0]-t[2]), pct(P100(t[2], t[0]), 0)]
 for idx, dd in enumerate(X["daily"]):
     d0 = dt.date.fromisoformat(dd[0]); r, sp, sa, o, ao = dd[1:]
-    rows.append([d0.strftime("%b %-d"), d0.strftime("%a"), usd(r), usd(sp), usd(sa), f"{sa/sp:.2f}x", pct(sp/sa*100), pct(sp/r*100),
-                 str(o), str(ao), usd(max(0, r-sa)), pct(sa/r*100, 0)])
+    rows.append([d0.strftime("%b %-d"), d0.strftime("%a"), usd(r), usd(sp), usd(sa), xr(Q(sa, sp)), pct(P100(sp, sa)), pct(P100(sp, r)),
+                 str(o), str(ao), usd(max(0, r-sa)), pct(P100(sa, r), 0)])
     if idx == 6: rows.append(wkrow(f"Week {prv['label']}", X["daily"][:7]))
 rows.append(wkrow(f"Week {cur['label']}", X["daily"][7:]))
 tb = table(s, 0.6, 1.45, 12.13, rows, [1.35, 0.6, 1.15, 1.05, 1.05, 0.8, 0.8, 0.8, 0.8, 0.9, 1.2, 0.83], size=8.5, rh=0.27,
@@ -303,16 +311,20 @@ panel(s, 4.69, 2.25, 3.95, 4.55, "Promotions", N["promotions"], size=10.5)
 panel(s, 8.78, 2.25, 3.95, 4.55, "Upcoming events", N["events"], size=10.5)
 
 # 12 inventory
-s = slide(); header(s, "Inventory", f"Stock position — week {inv['week']} inventory update ({inv['asOf']})", nxt())
+s = slide(); header(s, "Inventory", f"Stock position — week {inv['week']} inventory update ({inv['asOf']})" if inv["asOf"] else "Stock position", nxt())
 st = D["invStatus"]  # from the inventory sheet only
 card(s, 0.6, 1.5, 2.9, 1.55, "Out of stock", str(st["oos"]), f"of {st['selling']} selling SKUs, 0 at FBA", vcolor=RED)
 card(s, 0.6, 3.2, 2.9, 1.55, "Low stock", str(st["low"]), "4 weeks of stock or less", vcolor=AMBER)
 card(s, 0.6, 4.9, 2.9, 1.9, "Units inbound", f"{st['inbound']:,.0f}", "on the way to FBA")
 text(s, 3.75, 1.5, 8.98, 0.3, "Weeks of supply at FBA (available ÷ weekly sales)", size=11, bold=True)
-items = [(r["name"], min(r["weeksAvail"], 12)) for r in inv["rows"]]
+items = [(r["name"], min(r["weeksAvail"], 12)) for r in inv["rows"] if r["weeksAvail"] is not None]   # lines with no weekly sales left out
 raw = {r["name"]: r["weeksAvail"] for r in inv["rows"]}
-bars(s, 3.75, 1.85, 8.98, 4.9, items, fmt=lambda v: (f"{v:.1f} wk" if v < 12 else "12+ wk"), label_w=2.0,
-     hi=lambda i, v: RED if v < 1 else (AMBER if v < 3 else BLUE))
+if items:
+    bars(s, 3.75, 1.85, 8.98, 4.9, items, fmt=lambda v: (f"{v:.1f} wk" if v < 12 else "12+ wk"), label_w=2.0,
+         hi=lambda i, v: RED if v < 1 else (AMBER if v < 3 else BLUE))
+else:
+    text(s, 3.75, 2.2, 8.98, 1.0, "No inventory sheet is published for this brand yet, so stock levels aren't shown." if not inv["asOf"]
+         else "No product line had weekly sales in the inventory sheet.", size=12, color=MUTED)
 
 # 13 reviews
 s = slide(); header(s, "Reviews & account health", "Rating & review trend", nxt())
@@ -347,13 +359,13 @@ for i, (lab, v, pv, f, better) in enumerate([("Ad spend", cur["spend"], prv["spe
                                               ("Ad sales", cur["adSales"], prv["adSales"], usd, "up"),
                                               ("ACoS", cur["acos"], prv["acos"], pct, "down"),
                                               ("TACoS", cur["tacos"], prv["tacos"], pct, "down")]):
-    pc = f in (pct,); dv = (v - pv) if pc else (v / pv - 1)
-    good = (dv < 0) == (better == "down")
+    pc = f in (pct,); dv = (v - pv) if pc else ch(v, pv)
+    good = dv is not None and (dv < 0) == (better == "down")
     card(s, 0.6 + i * 3.08, 1.55, 2.9, 1.7, lab, f(v), (pts(dv) if pc else chg(dv)) + f" vs {f(pv)}", subc=GREEN if good else RED, fill=WHITE)
 x0 = 0.6
 for i, (lab, a, b) in enumerate([("Ad spend", prv["spend"], cur["spend"]), ("Ad sales", prv["adSales"], cur["adSales"]),
                                  ("Total sales", prv["revenue"], cur["revenue"])]):
-    xx = x0 + i * 4.1; mx = max(a, b); hh = 2.35
+    xx = x0 + i * 4.1; mx = max(a, b) or 1; hh = 2.35
     text(s, xx, 3.45, 3.8, 0.3, lab, size=12, bold=True, font=HF)
     for jj, (v, col, nm) in enumerate([(a, "C7D2FE", prv["label"]), (b, BLUE, cur["label"])]):
         bh = hh * v / mx; bx = xx + 0.4 + jj * 1.5

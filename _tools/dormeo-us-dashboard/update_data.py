@@ -10,6 +10,7 @@ Commands (run from this folder):
   camp   <YYYY-MM-DD> <raw>  {"names":{id:name}, "rows":[[id, type, spend, sales, impressions, clicks, orders], ...]}
   kw     <YYYY-MM-DD> <raw>  {"tot":{spend,sales,orders,clicks,impressions}, "R":[[adProduct, keyword, match, spend, sales, clicks, orders, impressions, units, topOfSearchPct], ...]}
   sqp    <YYYY-MM-DD> <raw>  week ENDING that Saturday: [[query, queryVolume, totalImpr, asinImpr, totalPurchases, asinPurchases], ...]
+  ly     <raw.json>          last year's revenue by month: [[month 1-12, revenue], ...] (get_account_metrics groupBy month)
   finalize                   rebuild campaigns, keywords, SQP, meta and inventory weeks from raw/
 """
 import datetime as dt, json, os, re, shutil, sys
@@ -23,13 +24,18 @@ HERE = os.path.abspath(_BD) if _BD else os.path.dirname(os.path.abspath(__file__
 os.makedirs(RAW, exist_ok=True)
 ld = lambda n: json.load(open(os.path.join(DD, n + ".json"), encoding="utf8"))
 def sv(n, o): json.dump(o, open(os.path.join(DD, n + ".json"), "w", encoding="utf8"), ensure_ascii=False, indent=1)
+# Brand rules. Dormeo (US and Canada) keeps its original hard-coded rules; every other brand gives its own in
+# brand.json: brandTerms (words that make a search "branded"), competitors, asinGroups / asinShort (extra ASIN
+# mappings), otherKey (the group unknown ASINs fall into, default "pr").
+IS_DORMEO = BRAND.get("account", "Dormeo") == "Dormeo"
+OTHER = BRAND.get("otherKey", "pr")
 G = ld("groups"); KEYS = [g["key"] for g in G]
 A2K = {a: g["key"] for g in G for a in g["asins"]}
-A2K.update({"B09JQWSHQR": "ps", "B0DK9Z7CYB": "fm", "B0DK9ZZWGP": "fm", "B0DK7DVX2V": "fm", "B0DK7DT4SL": "fm",
-            "B09HQXHNZC": "pl", "B0F74RSY4V": "pr"})
-gk = lambda asin: A2K.get(asin, "pr")
-A2SHORT = {a: next(g["short"] for g in G if g["key"] == k) for a, k in A2K.items()}
-A2SHORT.update({"B0GHSZ6WJY": "SnowTek & Essentials", "B0DKSLHMV8": "SnowTek & Essentials", "B0DP9W8MVT": "Protectors & Sheets", "B0F7Y8F7QP": "Protectors & Sheets"})
+A2K.update(BRAND.get("asinGroups", {"B09JQWSHQR": "ps", "B0DK9Z7CYB": "fm", "B0DK9ZZWGP": "fm", "B0DK7DVX2V": "fm", "B0DK7DT4SL": "fm",
+            "B09HQXHNZC": "pl", "B0F74RSY4V": "pr"} if IS_DORMEO else {}))
+gk = lambda asin: A2K.get(asin, OTHER)
+A2SHORT = {a: next(g["short"] for g in G if g["key"] == k) for a, k in A2K.items() if any(g["key"] == k for g in G)}
+A2SHORT.update(BRAND.get("asinShort", {"B0GHSZ6WJY": "SnowTek & Essentials", "B0DKSLHMV8": "SnowTek & Essentials", "B0DP9W8MVT": "Protectors & Sheets", "B0F7Y8F7QP": "Protectors & Sheets"} if IS_DORMEO else {}))
 WK0 = dt.date(2025, 12, 28)                        # week index 0 = Jan 1–3 2026 (week starting Dec 28)
 D = lambda s: dt.date.fromisoformat(s)
 widx = lambda sun: (sun - WK0).days // 7
@@ -89,6 +95,10 @@ def plan(run_day):
                 add(f"meta {sun} <raw>", "get_account_metrics", {**am, "groupBy": "none", "start": str(sun), "end": str(e)})
         add(f"kw {L} <raw>", "get_ads_targeting_insights", {**base, "start": str(L), "end": str(sat), "mode": "top_spend", "adProducts": "SP,SB", "limit": 25, "note": "keyword targets only; skip ASIN/product targets"})
         add(f"sqp {sat} <raw>", "get_sqp_report", {**base, "asin": BRAND.get("sqpAsin", "B07WFHMD2V"), "start": str(L), "end": str(sat), "sortBy": "im", "sortOrder": "desc", "limit": 40})
+    if not any(S.get("a25") or []):                          # last year's months, once (pacing slide's "last year" bar)
+        ly = y.year - 1
+        add("ly <raw>", "get_account_metrics", {**am, "groupBy": "month", "start": f"{ly}-01-01", "end": f"{ly}-12-31",
+                                                "note": "save as [[month 1-12, revenue], ...]; a month with no sales is 0"})
     print(json.dumps(out, indent=1))
 
 # ---------------------------------------------------------------- updaters
@@ -133,6 +143,11 @@ def cmd_week(sun, path):
             arr[i] = r2(agg[k][0]) if j == 0 else int(agg[k][1])
     sv("inv_weekly", I); print("week", sun, round(sum(a[0] for a in agg.values())))
 
+def cmd_ly(path):
+    rows = archive("ly", "months", path); S = ld("sales"); a = [0] * 12
+    for mo, rev in rows: a[int(mo) - 1] = r2(rev)
+    S["a25"] = a; sv("sales", S); print("last year by month", a)
+
 def cmd_simple(kind, key, path):
     o = archive(kind, key, path)
     if kind == "meta" and "revenue" in o and "ppc" in o: json.dump(map_metrics(o), open(os.path.join(RAW, f"meta_{key}.json"), "w"), indent=1)
@@ -143,8 +158,9 @@ STRAT_LABEL = {"Branded": "Branded keywords", "Category": "Category keywords", "
                "Auto": "Auto targeting", "Audience": "Audience / category display", "Remarketing": "Remarketing", "Other": "Other"}
 TYPE_LABEL = {"SP": "Sponsored Products", "SB": "Sponsored Brands", "SBV": "Sponsored Brands Video", "SD": "Sponsored Display", "ST": "Streaming TV"}
 TYPE = {"sp": "SP", "hsa": "SB", "sb": "SB", "hsavideo": "SBV", "sbv": "SBV", "sd": "SD", "stv": "ST", "st": "ST"}
-COMP = ["saatva", "tempur", "purple", "onuia", "helix", "nolah", "linenspa", "sleep innovations", "tuft", "cloudlift"]
-isB = lambda k: "dormeo" in k or "domeo" in k
+COMP = BRAND.get("competitors", ["saatva", "tempur", "purple", "onuia", "helix", "nolah", "linenspa", "sleep innovations", "tuft", "cloudlift"] if IS_DORMEO else [])
+BTERMS = [t.lower() for t in BRAND.get("brandTerms", ["dormeo", "domeo"])]
+isB = lambda k: any(t in k.lower() for t in BTERMS)
 def strat(n):
     l = n.lower(); t = [x.strip().lower() for x in n.split("/")]
     if "competitor" in l: return "Competitor"
@@ -168,8 +184,8 @@ def match(n, typ):
 def prodname(n):
     for a in re.findall(r"B0[A-Z0-9]{8}", n):
         if a in A2SHORT: return A2SHORT[a]
-    if "pillow" in n.lower(): return "Pillows"
-    if "snowtek" in n.lower() or "essential" in n.lower(): return "SnowTek & Essentials"
+    if IS_DORMEO and "pillow" in n.lower(): return "Pillows"
+    if IS_DORMEO and ("snowtek" in n.lower() or "essential" in n.lower()): return "SnowTek & Essentials"
     return "Brand / multi"
 def camp_week(sun):
     f = os.path.join(RAW, f"camp_{sun}.json")
@@ -254,5 +270,6 @@ if __name__ == "__main__":
     elif c == "pl": cmd_pl(a[1], a[2])
     elif c == "week": cmd_week(a[1], a[2])
     elif c in ("meta", "camp", "kw", "sqp"): cmd_simple(c, a[1], a[2])
+    elif c == "ly": cmd_ly(a[1])
     elif c == "finalize": finalize()
     else: print(__doc__); sys.exit(1)
