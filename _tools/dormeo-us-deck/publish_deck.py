@@ -27,6 +27,11 @@ entry = {"week": W["num"], "label": W["label"], "end": end,
          "built": dt.datetime.now(dt.timezone.utc).strftime("%b %-d, %Y"),
          "pptx": f"{end}/{base}.pptx", "pdf": f"{end}/{base}.pdf",
          "slides": [f"{end}/{os.path.basename(s)}" for s in slides]}
+# the same deck as Google Slides API requests, for the Apps Script that builds the editable Slides copy
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import slides_requests
+slides_requests.write(os.path.join(out, base + ".pptx"), os.path.join(out, "slides-requests.json.gz"))
+entry["slidesRequests"] = f"{end}/slides-requests.json.gz"
 if (D.get("inventory") or {}).get("asOf"): entry["inventoryAsOf"] = D["inventory"]["asOf"]   # read by deck.py tuesday
 mpath = os.path.join(SITE, "deck", "manifest.json")
 M = json.load(open(mpath)) if os.path.exists(mpath) else {"history": []}

@@ -4,6 +4,11 @@ The weekly business review deck has 17 slides. Each week it's published on the b
 
 **One design for every brand.** All brands use the same 17-slide build (`_tools/dormeo-us-deck/build_slides.py`); a brand only adds its settings folder `_tools/<slug>-deck/`. Each week only the data and commentary change. `deck.py` runs each step for any brand by slug, so nobody sets `DECK_BRAND` by hand.
 
+**Editable Google Slides (trial, Apps Script).** Every publish also writes `<week end>/slides-requests.json.gz`:
+the Google Slides instructions that rebuild the same deck as editable slides, generated from the PowerPoint
+(`slides_requests.py`). The Apps Script in `_tools/apps-script/` (runs in Ron's Google account, every 30 minutes)
+sends them to one editable file per brand. Setup and the switch-over steps are in `_tools/apps-script/README.md`.
+
 ## What's needed
 
 **Claude Code connectors:** Sellerise, Google Drive, Google Slides.
