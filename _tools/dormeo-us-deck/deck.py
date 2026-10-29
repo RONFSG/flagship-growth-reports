@@ -6,6 +6,9 @@ This driver replaces the DECK_BRAND juggling and the long hand-run step lists, s
 and fewer Sellerise calls. Run from anywhere; <slug> is the brand's slug in deck-schedule.json (e.g. dormeo-us).
 
   deck.py brands                         enabled brands (monday + sunday lists) and whether each has a runbook
+  deck.py index                          writes decks.json at the site root: the brands the Apps Script builds editable
+                                         Google Slides for (enabled, with a runbook and a published deck). Run it when a
+                                         brand is enabled or disabled, then push decks.json.
   deck.py tuesday <slug> [--dry-run]     the whole Tuesday inventory update up to Google Slides: pull, refresh the
                                          sheet data, skip if the sheet isn't newer than the published slide 12,
                                          rebuild with the week's saved inputs, publish, commit, push.
@@ -18,6 +21,8 @@ and fewer Sellerise calls. Run from anywhere; <slug> is the brand's slug in deck
                                          slides to look at (instead of 17 separate images)
   deck.py publish <slug>                 Monday: publish, save the week's extra.json/notes.json, commit, push
   deck.py slides <slug> <slide ids> [--only 1,12]
+                                         LEGACY picture copy, not used any more: the brand's Google Slides file is rebuilt
+                                         as editable slides by the Apps Script; never send pictures into it.
                                          the Google Slides requests (pass unchanged to update_presentation).
                                          --only replaces just those slides (Tuesday: 1,12), a much smaller call.
 
@@ -128,6 +133,19 @@ def build_deck(b, extra, notes, pages=None):
 
 
 # ---------------------------------------------------------------- commands
+def cmd_index():
+    out = []
+    for day in ("monday", "sunday"):
+        for e in SCHED.get(day, []):
+            if not e.get("enabled") or e.get("terminated") or not os.path.exists(os.path.join(REPO, e["runbook"])): continue
+            if not os.path.exists(os.path.join(REPO, e["slug"], "deck", "manifest.json")): continue
+            out.append({"name": e["brand"], "slug": e["slug"], "manifest": f"https://reports.flagshipgrowth.com/{e['slug']}/deck/manifest.json"})
+    json.dump({"_about": "Brands whose weekly deck the Apps Script (_tools/apps-script) turns into editable Google Slides. "
+                         "Written by _tools/dormeo-us-deck/deck.py index from deck-schedule.json.", "brands": out},
+              open(os.path.join(REPO, "decks.json"), "w"), indent=1)
+    print(json.dumps({"status": "ok", "brands": [b["slug"] for b in out]}))
+
+
 def cmd_brands():
     for day in ("monday", "sunday"):
         for e in SCHED.get(day, []):
@@ -160,7 +178,7 @@ def cmd_tuesday(slug, dry):
         b.run([sys.executable, "publish_deck.py", os.path.join(b.tmp, "deck.pptx"), dd, b.site])
         res["commit"] = commit_push(b, f"{b.e['brand']} weekly deck: week {man['current']['week']} inventory update")
         restore_unstaged([os.path.join(b.data, "data")])
-        res["next"] = f"deck.py slides {slug} <current slide ids> --only 1,12  -> update_presentation"
+        res["next"] = "nothing: the Apps Script rebuilds the editable Google Slides file within ~30 minutes"
     else:
         restore_unstaged([os.path.join(b.data, "data")])
     print(json.dumps(res))
@@ -271,7 +289,7 @@ def cmd_publish(slug):
     for f in ("extra.json", "notes.json"): shutil.copy(os.path.join(b.tmp, f), wd)
     c = commit_push(b, f"{b.e['brand']} weekly deck: week {W['num']} ({W['label']})")
     print(json.dumps({"status": "published", "brand": b.e["brand"], "week": W["num"], "commit": c, "googleSlidesId": b.e.get("googleSlidesId"),
-                      "next": f"wait ~1 min, then deck.py slides {slug} <current slide ids>  -> update_presentation"}))
+                      "next": "nothing: the Apps Script rebuilds the editable Google Slides file within ~30 minutes"}))
 
 
 def cmd_slides(slug, ids, only):
@@ -285,6 +303,7 @@ if __name__ == "__main__":
     if not a: print(__doc__); sys.exit(1)
     c = a[0]
     if c == "brands": cmd_brands()
+    elif c == "index": cmd_index()
     elif c == "tuesday": cmd_tuesday(a[1], "--dry-run" in a)
     elif c == "extra-plan": cmd_extra_plan(a[1])
     elif c == "extra-build": cmd_extra_build(a[1], a[2])

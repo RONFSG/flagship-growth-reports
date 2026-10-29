@@ -25,13 +25,14 @@ account, no file sharing, no Cloud project.
 
 `setup` loads this week's decks right away and then checks every 30 minutes on its own.
 
-## The trial
+## How it runs
 
-- Each brand gets a **new** file, "<brand> - Weekly deck (editable)". The picture copy the deck run updates
-  (and the Insights link) is left alone, so you can compare the two for a week or two.
-- Each new deck replaces the file's slides (new slides are added first, then the old ones removed, so the file
-  never shows a half-built deck). Edits made in the file are replaced the next week; version history keeps them.
-- To switch over after the trial: put the editable file's id in `fileId` for that brand, then tell Claude to set it
-  as the brand's `googleSlidesId` in `_tools/deck-schedule.json` and drop the picture-copy step from the runbooks.
+- Brands come from `decks.json` on the reports site (`deck.py index`). Each brand's file is its manifest's
+  `googleSlides` link (googleSlidesId in `_tools/deck-schedule.json`), the same link Insights opens.
+  A brand with no link gets a new file; the log prints the id to put in `googleSlidesId`.
+- Each new deck (Monday build or Tuesday inventory rebuild) replaces the file's slides: new slides are added first,
+  then the old ones removed, so the file never shows a half-built deck. Edits made in the file are replaced the
+  next week; version history keeps them.
+- The deck runs never write to Google Slides any more (the old picture step would overwrite the editable slides).
 - `reloadAll` rebuilds every brand's file now (e.g. after someone edited it by hand).
-- To add a brand: add a line to `BRANDS` with its manifest address.
+- Share each brand's file with whoever needs it (the old picture files were shared with valvare6@gmail.com as editor).

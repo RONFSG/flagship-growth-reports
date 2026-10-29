@@ -47,11 +47,10 @@ week comes from `deck_week.py` (step 1b), and `compute.py` uses it whenever `wk/
    Fix overflowing or overlapping text by shortening notes, then build again.
 7. **Publish:** `python3 deck.py publish dormeo-us`: publishes, saves this week's inputs to `weeks/<week end>/` for the
    Tuesday run, writes the Google Slides link into the manifest, commits only this brand's folders and pushes.
-8. **Google Slides (same file and link every week, one call).** One picture per slide, from the images just published.
-   **Dormeo US's file: `1yhYL8dq-pEwjApvrKG2uapZKmmzc6BPF66746nUlr_k`** (Drive folder "Weekly decks"). Never create a new
-   file. About a minute after the push: Google_Slides `read_presentation` with `fields: ["slides.objectId"]`, then
-   `python3 deck.py slides dormeo-us <those ids, comma-separated>` and pass its output, unchanged, as `requests` to
-   `update_presentation`. If an image can't be fetched, the site hasn't updated yet: wait a minute and send it again.
+8. **Google Slides: nothing to do.** The brand's editable Google Slides file (googleSlidesId in
+   `_tools/deck-schedule.json`, the link Insights opens) is rebuilt from this publish by the Apps Script in
+   `_tools/apps-script/` within about 30 minutes. **Never call Google Slides `update_presentation` on it and never
+   send slide pictures into it**: that would replace the editable slides. Put the link in the report.
 9. **Report:** send `/tmp/deck/dormeo-us/deck.pptx` to the user (SendUserFile) with a two-line summary of the week.
    Also report the time each part took (run `date` at the start, after the data pulls and at the end): data pulls,
    build and publish.
@@ -64,9 +63,8 @@ Run by the Tuesday task after the weekly inventory sheet update. No Sellerise ca
    `"stopped"` with the reason (e.g. Monday's deck didn't publish). Otherwise it rebuilds with this week's saved inputs,
    publishes, commits only this brand's files and pushes, and prints the sheet date and out-of-stock / low-stock counts.
 2. Look at the `check` image it prints (slide 12).
-3. About a minute later, refresh just slides 1 and 12 of the same Google Slides file: `read_presentation` with
-   `fields: ["slides.objectId"]`, then `python3 _tools/dormeo-us-deck/deck.py slides dormeo-us <those ids> --only 1,12`
-   and pass its output, unchanged, to `update_presentation`.
+3. Google Slides: nothing to do. The Apps Script rebuilds the editable file from this publish within ~30 minutes.
+   Never call `update_presentation` on it.
 4. Report: one line with the new sheet date and the out-of-stock / low-stock counts (or the skip reason).
 
 ## If something fails
@@ -80,7 +78,8 @@ Run by the Tuesday task after the weekly inventory sheet update. No Sellerise ca
 - `deck.py` — one command per step for any brand (`brands`, `tuesday`, `extra-plan`, `extra-build`, `build`, `publish`,
   `slides`); no `DECK_BRAND` needed. The other scripts below are what it runs.
 - `publish_deck.py` — PowerPoint + PDF + one JPG per slide into `dormeo-us/deck/<week end>/`, updates `manifest.json` (keeps 26 weeks).
-- `gslides_images.py` — refreshes the brand's one Google Slides file with the slide pictures (step 8; `--only` for a few slides). `fix_pptx.py` — keeps the .pptx openable in PowerPoint (run by build_slides.py).
+- `slides_requests.py` — the Google Slides requests for the editable copy (run by publish_deck.py; sent by `_tools/apps-script`).
+- `gslides_images.py` — old picture copy, no longer used (it would overwrite the editable slides); `link` still writes the manifest link. `fix_pptx.py` — keeps the .pptx openable in PowerPoint (run by build_slides.py).
 - `gslides_sync.py` + `gslides_state.json` — old editable Google Slides sync, not used (too slow). The state file records
   what the presentation holds; commit it after every sync.
 - `upload_slides.py` — not used (needs a service account): replaces one Google Slides file's content via the Drive API (needs a service account and Google API access).

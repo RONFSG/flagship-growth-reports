@@ -1,19 +1,21 @@
 {
- "_about": "Which brands get a weekly business review deck, and on which day. Read by the scheduled deck tasks (\"monday\" list = Dormeo, runs Tuesday 5pm Manila; \"sunday\" list = every other brand, runs Monday 5pm Manila; the list names are kept for the tasks). A brand runs only when enabled is true AND its runbook exists. googleSlidesId = the brand's ONE Google Slides file: every run replaces its slides (gslides_images.py), so the link never changes; never create a new file. To add a brand: build _tools/<slug>-deck/ (copy dormeo-canada-deck), put its googleSlidesId in the runbook's Google Slides step, publish once by hand, then set enabled to true here. terminated = Flagship no longer manages the brand: never enable.",
+ "_about": "Which brands get a weekly business review deck, and on which day. Read by the scheduled deck tasks (Monday: Dormeo; Sunday: every other brand). A brand runs only when enabled is true AND its runbook exists. googleSlidesId = the brand's ONE editable Google Slides file (same link every week). The deck run never writes to it: the Apps Script in _tools/apps-script (Ron's Google account, every 30 minutes) rebuilds it from the published slides-requests.json.gz. pictureSlidesId = the old picture-only copy, kept for reference and no longer updated. To add a brand: build _tools/<slug>-deck/ (copy dormeo-canada-deck), publish once by hand, set enabled to true here, run `deck.py index` and push decks.json; the Apps Script then creates the brand's editable file on its next run and logs its id: put that id in googleSlidesId and publish again. terminated = Flagship no longer manages the brand: never enable.",
  "monday": [
   {
    "brand": "Dormeo US",
    "slug": "dormeo-us",
    "runbook": "_tools/dormeo-us-deck/RUNBOOK.md",
    "enabled": true,
-   "googleSlidesId": "1yhYL8dq-pEwjApvrKG2uapZKmmzc6BPF66746nUlr_k"
+   "googleSlidesId": "1VobBMBwghZKrhELnAbj2dImoXY2zSj90ID2tVKwdkcs",
+   "pictureSlidesId": "1yhYL8dq-pEwjApvrKG2uapZKmmzc6BPF66746nUlr_k"
   },
   {
    "brand": "Dormeo Canada",
    "slug": "dormeo-canada",
    "runbook": "_tools/dormeo-canada-deck/RUNBOOK.md",
    "enabled": true,
-   "googleSlidesId": "1adcFcpVilJtHRuRSIyTrzMgSc5-bkwL0dBgE--qg7a4"
+   "googleSlidesId": "1iOzJXtZq4TospdaQxrXuwzrKrx9s1rMMV1ITWIs9_qc",
+   "pictureSlidesId": "1adcFcpVilJtHRuRSIyTrzMgSc5-bkwL0dBgE--qg7a4"
   }
  ],
  "sunday": [

@@ -1,0 +1,15 @@
+{
+ "_about": "Brands whose weekly deck the Apps Script (_tools/apps-script) turns into editable Google Slides. Written by _tools/dormeo-us-deck/deck.py index from deck-schedule.json.",
+ "brands": [
+  {
+   "name": "Dormeo US",
+   "slug": "dormeo-us",
+   "manifest": "https://reports.flagshipgrowth.com/dormeo-us/deck/manifest.json"
+  },
+  {
+   "name": "Dormeo Canada",
+   "slug": "dormeo-canada",
+   "manifest": "https://reports.flagshipgrowth.com/dormeo-canada/deck/manifest.json"
+  }
+ ]
+}

@@ -41,10 +41,10 @@ before it. Step 2's data stays on Sunday–Saturday weeks (month, P&L, history);
    by shortening notes and build again.
 8. **Publish:** `python3 deck.py publish dormeo-canada` (publishes, saves the week's inputs, sets the Slides link, commits
    only Canada's folders, pushes).
-9. **Google Slides (same file and link every week, one call).** **Dormeo Canada's file:
-   `1adcFcpVilJtHRuRSIyTrzMgSc5-bkwL0dBgE--qg7a4`** (Drive folder "Weekly decks"). Never create a new file. About a minute
-   after the push: `read_presentation` with `fields: ["slides.objectId"]`, then `python3 deck.py slides dormeo-canada <ids>`
-   and pass its output, unchanged, to `update_presentation`. If an image can't be fetched, wait a minute and resend.
+9. **Google Slides: nothing to do.** The brand's editable Google Slides file (googleSlidesId in
+   `_tools/deck-schedule.json`, the link Insights opens) is rebuilt from this publish by the Apps Script in
+   `_tools/apps-script/` within about 30 minutes. **Never call Google Slides `update_presentation` on it and never
+   send slide pictures into it**: that would replace the editable slides. Put the link in the report.
 10. **Report:** two lines on the week.
    Also report the time each part took (run `date` at the start, after the data pulls and at the end): data pulls,
    build and publish.
@@ -55,8 +55,8 @@ Same as the US RUNBOOK's Tuesday section, with `dormeo-canada`:
 1. `python3 _tools/dormeo-us-deck/deck.py tuesday dormeo-canada`. `"skipped"` = "Dormeo Canada inventory sheet not updated
    yet"; `"stopped"` = the reason (e.g. Monday didn't publish). Otherwise it rebuilds, publishes, commits and pushes.
 2. Look at the `check` image (slide 12).
-3. About a minute later: `read_presentation` (`fields: ["slides.objectId"]`), then
-   `python3 _tools/dormeo-us-deck/deck.py slides dormeo-canada <ids> --only 1,12` → `update_presentation`.
+3. Google Slides: nothing to do (the Apps Script rebuilds the editable file within ~30 minutes). Never call
+   `update_presentation` on it.
 4. One-line report: sheet date, out-of-stock / low-stock counts (or the skip reason).
 
 ## Files

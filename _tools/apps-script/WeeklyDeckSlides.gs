@@ -1,23 +1,19 @@
 /**
- * Weekly deck -> editable Google Slides (trial, side by side with the picture copy).
+ * Weekly deck -> editable Google Slides, for every brand that publishes a weekly deck.
  *
  * The weekly deck run publishes, next to each brand's PowerPoint, the Google Slides requests that rebuild the
  * same deck as real text boxes, tables and shapes (slides-requests.json.gz, written by
- * _tools/dormeo-us-deck/slides_requests.py). This script fetches them and sends them to ONE Google Slides file
- * per brand, so the design stays the PowerPoint's and nothing here needs changing when the slides change.
+ * _tools/dormeo-us-deck/slides_requests.py). This script sends them into the brand's ONE Google Slides file, so
+ * the design stays the PowerPoint's and nothing here needs changing when the slides change.
  *
- * Setup (once): see _tools/apps-script/README.md. In short: paste this file into a new project at
- * script.google.com, add the "Google Slides API" service (Services +), run setup() and allow access.
- * setup() runs it once now and then every 30 minutes on its own.
+ * Which brands: https://reports.flagshipgrowth.com/decks.json (written by `deck.py index` from
+ * _tools/deck-schedule.json). A new brand is picked up on the next run, no edit here.
+ * Which file: the brand's manifest "googleSlides" link (its googleSlidesId in deck-schedule.json; Insights opens
+ * the same link). A brand without one gets a new file; the log prints its id to put in deck-schedule.json.
  *
- * While this is a trial, each brand gets its own NEW file ("<brand> - Weekly deck (editable)"); the
- * picture-copy file the deck run updates is never touched. To switch over later, put that file's id in
- * fileId below.
+ * Setup (once): _tools/apps-script/README.md. Needs the "Google Slides API" service (Services +). Run setup().
  */
-const BRANDS = [
-  { name: 'Dormeo US', manifest: 'https://reports.flagshipgrowth.com/dormeo-us/deck/manifest.json', fileId: '' },
-  { name: 'Dormeo Canada', manifest: 'https://reports.flagshipgrowth.com/dormeo-canada/deck/manifest.json', fileId: '' },
-];
+const INDEX_URL = 'https://reports.flagshipgrowth.com/decks.json';
 const FOLDER_NAME = 'Weekly decks';   // new files go here if a folder with this name exists in your Drive
 
 function setup() {
@@ -28,21 +24,26 @@ function setup() {
   updateDecks();
 }
 
+const fresh_ = (url) => url + (url.indexOf('?') < 0 ? '?' : '&') + 't=' + Date.now();
+
 /** Every brand: rebuild its Slides file when a new deck (or the Tuesday inventory rebuild) has been published. */
 function updateDecks() {
   const props = PropertiesService.getScriptProperties();
-  BRANDS.forEach((b) => {
+  const brands = JSON.parse(UrlFetchApp.fetch(fresh_(INDEX_URL)).getContentText()).brands || [];
+  brands.forEach((b) => {
     try {
-      const man = JSON.parse(UrlFetchApp.fetch(b.manifest + '?t=' + Date.now()).getContentText());
+      const man = JSON.parse(UrlFetchApp.fetch(fresh_(b.manifest)).getContentText());
       const cur = man.current || {};
       if (!cur.slidesRequests) { console.log(b.name + ': no Slides requests published yet'); return; }
       const base = b.manifest.replace(/manifest\.json$/, '');
-      const blob = UrlFetchApp.fetch(base + cur.slidesRequests + '?t=' + Date.now()).getBlob().setContentType('application/x-gzip');
+      const blob = UrlFetchApp.fetch(fresh_(base + cur.slidesRequests)).getBlob().setContentType('application/x-gzip');
       const deck = JSON.parse(Utilities.ungzip(blob).getDataAsString());
-      const key = 'run:' + b.name;
+
+      const linked = /\/presentation\/d\/([A-Za-z0-9_-]+)/.exec(man.googleSlides || '');
+      const fileId = (linked && linked[1]) || props.getProperty('file:' + b.slug) || createFile_(b, props);
+      const key = 'run:' + b.slug + ':' + fileId;
       if (props.getProperty(key) === deck.run) { console.log(b.name + ': up to date (week ' + cur.week + ')'); return; }
 
-      const fileId = b.fileId || props.getProperty('file:' + b.name) || createFile_(b.name, props);
       rebuild_(fileId, deck);
       props.setProperty(key, deck.run);
       console.log(b.name + ': week ' + cur.week + ' loaded, ' + deck.slides + ' slides -> https://docs.google.com/presentation/d/' + fileId + '/edit');
@@ -55,30 +56,30 @@ function updateDecks() {
 /** Adds the new slides in front of the old ones, then deletes the old ones. If a batch fails, the new slides
  *  are removed again, so the file always shows one complete deck. */
 function rebuild_(fileId, deck) {
-  const old = (Slides.Presentations.get(fileId, { fields: 'slides.objectId' }).slides || []).map((s) => s.objectId);
+  const ids = () => (Slides.Presentations.get(fileId, { fields: 'slides.objectId' }).slides || []).map((s) => s.objectId);
+  const old = ids();
   try {
     deck.batches.forEach((reqs) => Slides.Presentations.batchUpdate({ requests: reqs }, fileId));
   } catch (e) {
-    const now = (Slides.Presentations.get(fileId, { fields: 'slides.objectId' }).slides || []).map((s) => s.objectId);
-    const added = now.filter((id) => old.indexOf(id) < 0);
+    const added = ids().filter((id) => old.indexOf(id) < 0);
     if (added.length) Slides.Presentations.batchUpdate({ requests: added.map((id) => ({ deleteObject: { objectId: id } })) }, fileId);
     throw e;
   }
   if (old.length) Slides.Presentations.batchUpdate({ requests: old.map((id) => ({ deleteObject: { objectId: id } })) }, fileId);
 }
 
-function createFile_(name, props) {
-  const id = Slides.Presentations.create({ title: name + ' - Weekly deck (editable)' }).presentationId;   // 16:9, like the deck
+function createFile_(b, props) {
+  const id = Slides.Presentations.create({ title: b.name + ' - Weekly deck (editable)' }).presentationId;   // 16:9, like the deck
   const folders = DriveApp.getFoldersByName(FOLDER_NAME);
   if (folders.hasNext()) DriveApp.getFileById(id).moveTo(folders.next());
-  props.setProperty('file:' + name, id);
-  console.log(name + ': created https://docs.google.com/presentation/d/' + id + '/edit');
+  props.setProperty('file:' + b.slug, id);
+  console.log(b.name + ': created https://docs.google.com/presentation/d/' + id + '/edit  ->  set googleSlidesId "' + id + '" for ' + b.slug + ' in _tools/deck-schedule.json');
   return id;
 }
 
 /** Forget what was loaded, so the next run rebuilds every brand's file (e.g. after editing a slide by hand). */
 function reloadAll() {
   const props = PropertiesService.getScriptProperties();
-  BRANDS.forEach((b) => props.deleteProperty('run:' + b.name));
+  props.getKeys().filter((k) => k.indexOf('run:') === 0).forEach((k) => props.deleteProperty(k));
   updateDecks();
 }

@@ -4,10 +4,11 @@ The weekly business review deck has 17 slides. Each week it's published on the b
 
 **One design for every brand.** All brands use the same 17-slide build (`_tools/dormeo-us-deck/build_slides.py`); a brand only adds its settings folder `_tools/<slug>-deck/`. Each week only the data and commentary change. `deck.py` runs each step for any brand by slug, so nobody sets `DECK_BRAND` by hand.
 
-**Editable Google Slides (trial, Apps Script).** Every publish also writes `<week end>/slides-requests.json.gz`:
-the Google Slides instructions that rebuild the same deck as editable slides, generated from the PowerPoint
-(`slides_requests.py`). The Apps Script in `_tools/apps-script/` (runs in Ron's Google account, every 30 minutes)
-sends them to one editable file per brand. Setup and the switch-over steps are in `_tools/apps-script/README.md`.
+**Editable Google Slides (Apps Script).** Every publish also writes `<week end>/slides-requests.json.gz`: the
+Google Slides instructions that rebuild the same deck as editable slides, generated from the PowerPoint
+(`slides_requests.py`). The Apps Script in `_tools/apps-script/` (Ron's Google account, every 30 minutes) sends them
+into each brand's ONE Google Slides file (googleSlidesId in deck-schedule.json, the link Insights opens), for every
+brand listed in `decks.json` (`deck.py index`). The deck runs never write to Google Slides themselves.
 
 ## What's needed
 
@@ -53,11 +54,11 @@ The scripts live in `_tools/dormeo-us-deck/` and `_tools/dormeo-us-dashboard/`, 
 4. **Commentary**: `/tmp/deck/<slug>/notes.json` with every key; only numbers from the data files; rewritten every week.
 5. **Build**: `deck.py build <slug>` → look at the one contact-sheet image.
 6. **Publish**: `deck.py publish <slug>` (also saves the week's inputs, sets the Slides link, commits only the brand's folders).
-7. **Google Slides**: `read_presentation` (slide ids) → `deck.py slides <slug> <ids>` → `update_presentation`.
+7. **Google Slides**: nothing to do; the Apps Script rebuilds the editable file within ~30 minutes.
 8. **Report**: a short summary of the week and how long each part took.
 
-**Tuesday**: `deck.py tuesday <slug>` does the whole inventory update (or says why it skipped), then
-`deck.py slides <slug> <ids> --only 1,12` replaces just those two slides in Google Slides.
+**Tuesday**: `deck.py tuesday <slug>` does the whole inventory update (or says why it skipped); the Apps Script
+picks up the rebuilt deck on its own.
 
 ## Speed and cost
 
@@ -66,7 +67,7 @@ Each run is an agent session, so its cost is mostly the Sellerise data and the t
   needs 7 new days, not 14.
 - `deck.py` does the build/publish/commit steps in one command each and prints one line of JSON, instead of many tool calls.
 - One contact-sheet image replaces looking at 17 slide images.
-- Tuesday's Google Slides call replaces 2 slides (6 requests) instead of all 17 (51 requests).
+- Google Slides costs the run nothing: the Apps Script fills it from the published requests.
 - The commentary is the only part written fresh each week.
 
 ## Rules
@@ -77,7 +78,7 @@ Each run is an agent session, so its cost is mostly the Sellerise data and the t
   - For Canada, every `get_account_metrics` call needs `targetCurrency: "CAD"`; otherwise Sellerise converts to USD.
   - Page through campaign pulls with `offset` until `hasMore` is false.
 - **Commits**: only the brand's own deck folders and its `_tools` folder. Never `fs.html`, and never another brand's report.
-- **Google Slides**: the weekly copy is pictures; edits belong in the .pptx build, not in Slides.
+- **Google Slides**: editable, rebuilt weekly by the Apps Script; edits made there last until the next deck (version history keeps them). Never send pictures or `update_presentation` calls into it.
 - **Insights PRs**: put each change on a branch with a PR, then squash-merge it with a plain title, so no "Merge pull request" line appears.
 
 ## Adding a new brand
@@ -88,6 +89,6 @@ Each run is an agent session, so its cost is mostly the Sellerise data and the t
    - Empty `raw/` and `weeks/`.
    - Point the runbook at the new folder.
 2. Pull the data, then build and publish the first week. Expect the first build to take longer than a normal week.
-3. Add the brand to `_tools/deck-schedule.json` (`sunday` for brands other than Dormeo).
+3. Add the brand to `_tools/deck-schedule.json` (`sunday` for brands other than Dormeo), run `deck.py index` and push `decks.json`. The Apps Script creates the brand's editable Slides file on its next run and logs its id: put it in `googleSlidesId` and publish again.
 4. In Insights, add a migration that sets `brands.deck_manifest_url` to `https://reports.flagshipgrowth.com/<slug>/deck/manifest.json`. Use migration `0069_dormeo-canada-deck` as the pattern.
 5. The scheduled tasks need the Sellerise, Google Slides and Google Drive connectors.
