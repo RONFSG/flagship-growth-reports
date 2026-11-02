@@ -1,0 +1,41 @@
+[
+ {
+  "key": "g1",
+  "short": "Heel Lifts + 3\" Wedges",
+  "name": "Hapad Heel Lifts 7/16\" and Wool Felt Heel Wedges 3\" Wide",
+  "col": "--c1",
+  "asins": [
+   "B00F4JHJBU",
+   "B010OVDLD2"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g2",
+  "short": "Posting Heel Wedges",
+  "name": "Hapad Wool Felt Posting Heel Wedges",
+  "col": "--c2",
+  "asins": [
+   "B0FVHR4T99"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g3",
+  "short": "2\" Heel Wedges",
+  "name": "Hapad Wool Felt Heel Wedge Inserts 2\" Wide",
+  "col": "--c3",
+  "asins": [
+   "B07HN7CS4V"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "pr",
+  "short": "Other products",
+  "name": "Other products",
+  "col": "--c8",
+  "asins": [],
+  "sku": ""
+ }
+]

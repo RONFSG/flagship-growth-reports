@@ -1,0 +1,112 @@
+{
+ "_week": "2026-10-26 to 2026-11-01 (Week 44). Written from that week's numbers; rewrite every key each Monday.",
+ "week_story": [
+  "Revenue was $74, up 14% on $65 the week before, from 4 orders (3 last week).",
+  "Heel Lifts 7/16\" made $44 (2 units), down from $65; Posting Heel Wedges and 2\" Heel Wedges each added one $15 sale.",
+  "Ad spend of $146 was almost double revenue, so net payout before product cost was -$138."
+ ],
+ "refunds_title": "4 refunds on 4 orders",
+ "refunds": [
+  "$30 refunded this week vs $0 last week: Heel Lifts ($17) and Posting Heel Wedges ($13), plus 2 returned 3\" wedges with no money back yet.",
+  "At this volume a few returns swing the rate a lot; check the return reasons on the heel lifts."
+ ],
+ "pacing_reco": "Only one day of November is in. Selling more needs the ad spend fixed first: $95 went to campaigns with no sales this week.",
+ "ads_context": [
+  "Over the last 8 weeks, ad spend has run above revenue in 6 of them.",
+  "This week ACoS was 218% and TACoS 197%; ads drove 91% of sales."
+ ],
+ "ads_strategy": [
+  "Category keywords cost $109 for $13 in sales (1 order).",
+  "Auto campaigns did best: $27 spent for $39 in sales (2 orders).",
+  "Keyword targets spent $88 for no sales and 49 clicks."
+ ],
+ "bid_moves": [
+  "Pause or cut bids on \u201cbreathable shoe heel inserts\u201d (broad): $28, 13 clicks, no sales.",
+  "Pause \u201cdancers pads for feet\u201d (broad): $19, 9 clicks, no sales.",
+  "Keep the two auto campaigns; they brought this week's ad orders."
+ ],
+ "coupons": [
+  "This week: no coupon redemptions.",
+  "Last week: no coupon redemptions.",
+  "October: no coupon redemptions."
+ ],
+ "promotions": [
+  "This week: 1 promotion order, $1.74 in discounts.",
+  "Last week: 1 promotion order, $3.50.",
+  "October: 3 promotion orders, $7.57 in total."
+ ],
+ "events": [
+  "Black Friday / Cyber Monday: Nov 27 \u2013 Nov 30.",
+  "Boxing Day (Canada): Dec 26.",
+  "Deal and coupon deadlines: to confirm with the account team."
+ ],
+ "reviews_title": "No review data in Sellerise",
+ "reviews_body": [
+  "Sellerise returned no review records or ratings for Hapad Canada's products over the last 90 days.",
+  "That means reviews aren't being tracked for this account, not that there were none."
+ ],
+ "reviews_reco": [
+  "Turn on review tracking for Hapad Canada in Sellerise so the deck can show star rating and review count.",
+  "With 4 refunds this week, the review text would help explain why buyers return the heel lifts."
+ ],
+ "recommendations": [
+  [
+   "Ads",
+   "Pause or negate the no-sale broad keywords (breathable shoe heel inserts, dancers pads for feet).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Cut daily budgets on the heel lift and heel wedge broad campaigns ($80 spent, no sales).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Keep the auto campaigns running; they made $39 of ad sales on $27.",
+   "Ads team",
+   "Ongoing"
+  ],
+  [
+   "Listing",
+   "Check the Posting Heel Wedges offer: Sellerise flagged a hijacker and a lost Buy Box on Oct 31.",
+   "Account team",
+   "This week"
+  ],
+  [
+   "Returns",
+   "Read the return reasons for the 4 refunds (heel lifts, posting wedges, 3\" wedges).",
+   "Account team",
+   "This week"
+  ],
+  [
+   "Inventory",
+   "Publish a Hapad Canada inventory sheet so stock and restock show in this deck.",
+   "Account team",
+   "Before next deck"
+  ],
+  [
+   "Reviews",
+   "Turn on review tracking for this account in Sellerise.",
+   "Account team",
+   "This month"
+  ]
+ ],
+ "position": [
+  "Hapad Canada is small: $465 in October, $74 this week.",
+  "Ads cost more than they return, so the priority is cutting no-sale spend before BF/CM."
+ ],
+ "next_steps": [
+  "Pause no-sale keywords.",
+  "Fix Posting Heel Wedges Buy Box.",
+  "Check return reasons.",
+  "Plan BF/CM offers."
+ ],
+ "data_ask": [
+  "Hapad Canada inventory sheet (no sheet page yet).",
+  "Review tracking turned on in Sellerise.",
+  "Search query data (Amazon's report isn't loaded).",
+  "One campaign ($8.95 spend) is missing from the campaign report."
+ ]
+}

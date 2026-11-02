@@ -1,0 +1,334 @@
+{
+ "_source": "Sellerise MCP, account Hapad, marketplace CA, pulled 2026-11-02 (Monday-Sunday weeks; 4-week table from the saved weekly totals)",
+ "weeks": [
+  {
+   "label": "Oct 5 – 11",
+   "revenue": 188.39,
+   "units": 10,
+   "orders": 9,
+   "impressions": 26705,
+   "clicks": 121,
+   "refundUnits": 1,
+   "refundRate": 11.11,
+   "spend": 136.68,
+   "adSales": 164.0,
+   "acos": 83.34,
+   "tacos": 72.55
+  },
+  {
+   "label": "Oct 12 – 18",
+   "revenue": 29.47,
+   "units": 2,
+   "orders": 2,
+   "impressions": 28759,
+   "clicks": 118,
+   "refundUnits": 1,
+   "refundRate": 50.0,
+   "spend": 153.18,
+   "adSales": 12.98,
+   "acos": 1180.12,
+   "tacos": 519.78
+  },
+  {
+   "label": "Oct 19 – 25",
+   "revenue": 64.89,
+   "units": 3,
+   "orders": 3,
+   "impressions": 26137,
+   "clicks": 105,
+   "refundUnits": 0,
+   "refundRate": 0.0,
+   "spend": 130.19,
+   "adSales": 58.47,
+   "acos": 222.66,
+   "tacos": 200.63
+  },
+  {
+   "label": "Oct 26 – Nov 1",
+   "revenue": 73.93,
+   "units": 4,
+   "orders": 4,
+   "impressions": 30411,
+   "clicks": 106,
+   "refundUnits": 4,
+   "refundRate": 100.0,
+   "spend": 145.83,
+   "adSales": 66.98,
+   "acos": 217.72,
+   "tacos": 197.25,
+   "net": -138.03,
+   "refunds": 30.37,
+   "adOrders": 4,
+   "cpc": 1.38,
+   "cvr": 3.77
+  }
+ ],
+ "mtd": {
+  "through": "2026-11-01",
+  "days": 1,
+  "revenue": 15.02,
+  "units": 1,
+  "orders": 1,
+  "spend": 27.25,
+  "adSales": 15.02,
+  "acos": 181.42,
+  "tacos": 181.42,
+  "refundRate": 100
+ },
+ "mtdLY": {
+  "revenue": 0,
+  "units": 0,
+  "orders": 0,
+  "spend": 0
+ },
+ "daily": [
+  [
+   "2026-10-19",
+   20.46,
+   23.59,
+   19.49,
+   1,
+   1
+  ],
+  [
+   "2026-10-20",
+   0,
+   19.81,
+   0,
+   0,
+   0
+  ],
+  [
+   "2026-10-21",
+   22.41,
+   15.04,
+   19.49,
+   1,
+   1
+  ],
+  [
+   "2026-10-22",
+   22.02,
+   23.8,
+   19.49,
+   1,
+   1
+  ],
+  [
+   "2026-10-23",
+   0,
+   13.82,
+   0,
+   0,
+   0
+  ],
+  [
+   "2026-10-24",
+   0,
+   11.79,
+   0,
+   0,
+   0
+  ],
+  [
+   "2026-10-25",
+   0,
+   22.34,
+   0,
+   0,
+   0
+  ],
+  [
+   "2026-10-26",
+   0,
+   21.72,
+   0,
+   0,
+   0
+  ],
+  [
+   "2026-10-27",
+   21.83,
+   33.1,
+   19.49,
+   1,
+   1
+  ],
+  [
+   "2026-10-28",
+   0,
+   15.34,
+   0,
+   0,
+   0
+  ],
+  [
+   "2026-10-29",
+   0,
+   20.95,
+   0,
+   0,
+   0
+  ],
+  [
+   "2026-10-30",
+   0,
+   9.12,
+   0,
+   0,
+   0
+  ],
+  [
+   "2026-10-31",
+   37.08,
+   18.35,
+   32.47,
+   2,
+   2
+  ],
+  [
+   "2026-11-01",
+   15.02,
+   27.25,
+   15.02,
+   1,
+   1
+  ]
+ ],
+ "searchTerms": {
+  "total": 35,
+  "winners": 0,
+  "harvest": 0,
+  "negative": 0,
+  "noPurchase": 0,
+  "rows": [],
+  "category": [
+   [
+    "heel pads",
+    "SP",
+    351,
+    6,
+    0,
+    12.63,
+    0
+   ],
+   [
+    "heel lift insole",
+    "SP",
+    125,
+    2,
+    0,
+    4.42,
+    0
+   ],
+   [
+    "heel pads for shoes",
+    "SP",
+    73,
+    2,
+    0,
+    4.38,
+    0
+   ],
+   [
+    "heel lift inserts",
+    "SP",
+    35,
+    2,
+    0,
+    3.83,
+    0
+   ],
+   [
+    "heel lifts for shoes",
+    "SP",
+    41,
+    2,
+    0,
+    2.92,
+    0
+   ]
+  ]
+ },
+ "targets": {
+  "total": 67,
+  "winners": 0,
+  "needsAttention": 4,
+  "highAcos": 0,
+  "noSales": 2,
+  "lowCtr": 1,
+  "rows": [
+   [
+    "breathable shoe heel inserts",
+    "Broad",
+    "Category",
+    28.25,
+    0,
+    null,
+    13,
+    0
+   ],
+   [
+    "dancers pads for feet",
+    "Broad",
+    "Category",
+    18.79,
+    0,
+    null,
+    9,
+    0
+   ],
+   [
+    "shoe heel pads",
+    "Broad",
+    "Category",
+    9.05,
+    0,
+    null,
+    5,
+    0
+   ],
+   [
+    "shoe inserts for heels",
+    "Broad",
+    "Category",
+    4.57,
+    0,
+    null,
+    3,
+    0
+   ],
+   [
+    "heel wedges",
+    "Broad",
+    "Category",
+    3.75,
+    0,
+    null,
+    4,
+    0
+   ]
+  ]
+ },
+ "reviews": {
+  "available": false
+ },
+ "alerts": {
+  "total": 55,
+  "actionable": 7,
+  "critical": 5,
+  "warning": 2,
+  "byType": {
+   "Title": 23,
+   "Listing images": 11,
+   "Title differentiation": 7,
+   "Inactive": 3,
+   "Hijacker": 2,
+   "Hijacker liquidation": 2,
+   "Buy Box gained": 2,
+   "Buy Box lost": 2,
+   "Out of stock": 2,
+   "Dimensions": 1
+  }
+ }
+}

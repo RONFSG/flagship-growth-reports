@@ -1,0 +1,93 @@
+{
+ "PRODUCTS": [
+  {
+   "key": "g1",
+   "sales": [],
+   "units": [],
+   "sessions": [],
+   "adSpend": [],
+   "adSales": []
+  },
+  {
+   "key": "g2",
+   "sales": [],
+   "units": [],
+   "sessions": [],
+   "adSpend": [],
+   "adSales": []
+  },
+  {
+   "key": "g3",
+   "sales": [],
+   "units": [],
+   "sessions": [],
+   "adSpend": [],
+   "adSales": []
+  },
+  {
+   "key": "pr",
+   "sales": [],
+   "units": [],
+   "sessions": [],
+   "adSpend": [],
+   "adSales": []
+  }
+ ],
+ "S25": {
+  "sales": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "units": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "a25": [
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0
+ ],
+ "act26": [
+  0,
+  0,
+  0,
+  40,
+  1943,
+  3549,
+  957,
+  325,
+  477,
+  465
+ ],
+ "notes": "Sellerise Hapad, CA"
+}

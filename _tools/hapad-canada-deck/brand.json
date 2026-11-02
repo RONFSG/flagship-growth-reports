@@ -13,7 +13,12 @@
  ],
  "competitors": [],
  "otherKey": "pr",
- "sqpAsin": "",
- "names": {},
+ "sqpAsin": "B010OVDLD2",
+ "names": {
+  "B010OVDLD2": "Heel Lifts 7/16\"",
+  "B0FVHR4T99": "Posting Heel Wedges",
+  "B07HN7CS4V": "Heel Wedges 2\" Wide",
+  "B00F4JHJBU": "Heel Wedges 3\" Wide"
+ },
  "_about": "Brand settings for the shared weekly deck (see _tools/BRAND_DECK_RUNBOOK.md). invPage/recPage empty = no sheet page published yet. brandTerms = words that make a search 'branded'. sqpAsin is filled by deck.py init. names = short product names by ASIN."
 }

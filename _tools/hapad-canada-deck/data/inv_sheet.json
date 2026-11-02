@@ -1,0 +1,45 @@
+{
+ "asOf": "",
+ "week": 0,
+ "groups": {
+  "g1": {
+   "total": 0,
+   "avail": 0,
+   "inbound": 0,
+   "wkAvg": 0,
+   "l30": 0,
+   "n": 0,
+   "asins": []
+  },
+  "g2": {
+   "total": 0,
+   "avail": 0,
+   "inbound": 0,
+   "wkAvg": 0,
+   "l30": 0,
+   "n": 0,
+   "asins": []
+  },
+  "g3": {
+   "total": 0,
+   "avail": 0,
+   "inbound": 0,
+   "wkAvg": 0,
+   "l30": 0,
+   "n": 0,
+   "asins": []
+  },
+  "pr": {
+   "total": 0,
+   "avail": 0,
+   "inbound": 0,
+   "wkAvg": 0,
+   "l30": 0,
+   "n": 0,
+   "asins": []
+  }
+ },
+ "skus": [],
+ "po": [],
+ "unmapped": []
+}
