@@ -1,0 +1,61 @@
+[
+ {
+  "key": "g1",
+  "short": "60-count gummies",
+  "name": "Daily Gummies, 60 count (Sleep, Passion, Energy, Creatine, Greens)",
+  "col": "--c1",
+  "asins": [
+   "B0CLN17M2D",
+   "B0CLN1NQJ3",
+   "B0CLN3LQF6",
+   "B0F1B3ST2V",
+   "B0FDM8VY56"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g2",
+  "short": "28/30-count gummies",
+  "name": "Daily Gummies, 28/30 count (Sleep, Passion, Energy, Shilajit, Lion's Mane, Creatine)",
+  "col": "--c2",
+  "asins": [
+   "B0G6HMFPMZ",
+   "B0G6HZ5Y7V",
+   "B0G6J12SZ8",
+   "B0GM3G3SXP",
+   "B0GWKC2NLQ",
+   "B0GWKD4VH8"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g3",
+  "short": "10-count gummies",
+  "name": "Daily Gummies, 10 count (Sleep, Passion, Energy)",
+  "col": "--c3",
+  "asins": [
+   "B0GLHX3TQM",
+   "B0GLHZKB9Q",
+   "B0GLJHX6J8"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g4",
+  "short": "Trio bundle",
+  "name": "Daily Gummies Trio Bundle, 180 count",
+  "col": "--c4",
+  "asins": [
+   "B0D9PK2CBV"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "pr",
+  "short": "Other products",
+  "name": "Other products",
+  "col": "--c8",
+  "asins": [],
+  "sku": ""
+ }
+]

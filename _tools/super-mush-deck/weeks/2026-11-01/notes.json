@@ -1,0 +1,70 @@
+{
+  "_week": "2026-10-26 to 2026-11-01 (Week 44). SuperMush US, first deck.",
+  "week_story": [
+    "Revenue edged up 1.6% to $11,082 on 474 units (+8.7%); the gain came from 10-count gummies (+45%, led by Passion 10-ct at 108 units) and Sleep 60-ct (+13% to $4,290), offsetting dips in Passion 60-ct (-11%) and Creatine 60-ct (-58%)."
+  ],
+  "refunds_title": "Refunds steady",
+  "refunds": [
+    "Refunds were $198 on 9 units (1.99% refund rate), up from $161 last week but still low; no single product stands out."
+  ],
+  "pacing_reco": "Only one day of November is in, so the month forecast is rough. The lever is ad efficiency: ads cost $3,205 for $2,110 of ad sales this week.",
+  "ads_context": [
+    "Ad spend fell 8.9% to $3,205 and TACoS improved from 32.3% to 28.9%.",
+    "ACoS is still 151.9%: every $1 of ads returned about $0.66 in attributed sales."
+  ],
+  "ads_strategy": [
+    "Branded keywords returned $556 on $211 (38% ACoS) and brand-defense targets $160 on $32.",
+    "Category keywords cost $1,651 for $822 (201% ACoS) and auto campaigns $1,146 for $512 (224% ACoS)."
+  ],
+  "bid_moves": [
+    "Cut the bid on the Passion 60-ct auto campaign: $919 spent for $362 in sales.",
+    "Pause or negate the 70 campaigns with spend and no sales ($671 this week)."
+  ],
+  "coupons": [
+    "This week: 10 coupon orders (2 last week).",
+    "October: 131 coupon orders in total."
+  ],
+  "promotions": [
+    "This week: 146 promotion orders and $345 in promotional discounts (vs 128 orders and $487 last week).",
+    "126 Subscribe & Save orders this week, up from 112."
+  ],
+  "events": [
+    "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+    "Deal and coupon set-up deadlines: to confirm with the account team.",
+    "Stock is healthy for the 60-ct and 28-ct lines; Immunity 60-ct needs a restock first."
+  ],
+  "reviews_title": "No review data in Sellerise",
+  "reviews_body": [
+    "Sellerise returned no review records, rating trend or negative reviews for the 15 SuperMush products over the last 90 days.",
+    "That means the review tracker isn't pulling for this account, not that there were no reviews."
+  ],
+  "reviews_reco": [
+    "Turn on review tracking for SuperMush in Sellerise (or pull Amazon's Customer Reviews report) so the deck can show ratings per product.",
+    "Sellerise flagged 3 hijacker alerts on Shilajit 28-ct and a Buy Box loss on Creatine 60-ct this month; check those listings."
+  ],
+  "recommendations": [
+    ["Ads", "Cut bids on the Passion 60-ct auto campaign ($919 spend, $362 sales) and the 'sleep gummies for adults' exact targets ($220 for 6 orders).", "Ads team", "This week"],
+    ["Ads", "Pause or negate the 70 no-sale campaigns ($671) and the no-sale targets 'melatonin free sleep gummies', 'horny goat weed gummies' and 'creatine gummies for women'.", "Ads team", "This week"],
+    ["Ads", "Move budget to branded and brand-defense targets (38% and 20% ACoS) and add 'mushroom gummy energy' as an exact keyword.", "Ads team", "This week"],
+    ["Inventory", "Restock Immunity 60-ct: 4 units available, about 1 week left.", "Account team", "This week"],
+    ["Account health", "Review the hijacker alerts on Shilajit 28-ct and the Buy Box loss on Creatine 60-ct.", "Account team", "This week"],
+    ["Marketing", "Plan BF/CM coupons and deals (Nov 27–30) and confirm submission deadlines.", "Account team", "By Nov 6"],
+    ["Data", "Turn on review tracking in Sellerise for SuperMush.", "Account team", "Next week"]
+  ],
+  "position": [
+    "October closed at $46,608, up 44% on last October ($32,358).",
+    "This week held at $11,082 while ad spend came down 9%."
+  ],
+  "next_steps": [
+    "Cut wasted ad spend on auto and category campaigns.",
+    "Restock Immunity 60-ct.",
+    "Check the hijacker and Buy Box alerts.",
+    "Lock BF/CM coupons and deals."
+  ],
+  "data_ask": [
+    "Immunity 60-ct inbound plan.",
+    "BF/CM deal and coupon plan.",
+    "Review tracking turned on in Sellerise.",
+    "Product costs (COGS) in Sellerise so profit is complete."
+  ]
+}

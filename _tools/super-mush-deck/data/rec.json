@@ -1,0 +1,377 @@
+{
+ "asOf": "Oct 26, 2026",
+ "ytd": 10092.09,
+ "units": 1302,
+ "shipments": 63,
+ "receiving": 4,
+ "closed": 54,
+ "missing": 323,
+ "receiveRate": 97.9,
+ "recoveryRate": 99.0,
+ "resolved": 27,
+ "mtd": 1846.29,
+ "mtdUnits": 258,
+ "monthly": [
+  [
+   "Jan",
+   174.0
+  ],
+  [
+   "Feb",
+   183.0
+  ],
+  [
+   "Mar",
+   237.0
+  ],
+  [
+   "Apr",
+   962.0
+  ],
+  [
+   "May",
+   311.0
+  ],
+  [
+   "Jun",
+   718.0
+  ],
+  [
+   "Jul",
+   444.0
+  ],
+  [
+   "Aug",
+   1244.0
+  ],
+  [
+   "Sep",
+   3973.0
+  ],
+  [
+   "Oct",
+   1846.0
+  ]
+ ],
+ "byType": [
+  [
+   "CustomerServiceIssue",
+   3661.14
+  ],
+  [
+   "CustomerReturn",
+   2370.54
+  ],
+  [
+   "Lost_Warehouse",
+   1782.04
+  ],
+  [
+   "Lost_Inbound",
+   1675.71
+  ],
+  [
+   "Damaged_Warehouse",
+   599.16
+  ],
+  [
+   "Missing Inventory",
+   368.73
+  ],
+  [
+   "Shipment Reconciliation",
+   164.8
+  ],
+  [
+   "Lost Inventory",
+   154.84
+  ],
+  [
+   "Warehouse damage",
+   41.71
+  ],
+  [
+   "Reimbursement",
+   12.03
+  ],
+  [
+   "Damaged_Inbound",
+   3.5
+  ],
+  [
+   "Investigation",
+   3.5
+  ],
+  [
+   "Warehouse Damage",
+   null
+  ],
+  [
+   "Found Inventory",
+   null
+  ]
+ ],
+ "cases": [
+  {
+   "id": "19786436151",
+   "date": "Mar 26, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon approved a reimbursement for 10 missing units of FNSKU B0CLN1NQJ3 and identified 1 overage unit of B0CLN17M2D.",
+   "status": "Reimbursed",
+   "units": 10,
+   "value": 100.6
+  },
+  {
+   "id": "19826523781",
+   "date": "Mar 31, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon confirmed 20 units are missing and initiated a reimbursement of 120.60 USD.",
+   "status": "Reimbursed",
+   "units": 20,
+   "value": 120.6
+  },
+  {
+   "id": "19893404811",
+   "date": "Apr 9, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon confirmed 2 units missing and approved a reimbursement of 14.08 USD.",
+   "status": "Reimbursed",
+   "units": 2,
+   "value": 14.08
+  },
+  {
+   "id": "19893470951",
+   "date": "Apr 9, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon confirmed 2 units were missing and initiated a reimbursement of 20.12 USD.",
+   "status": "Reimbursed",
+   "units": 2,
+   "value": 20.12
+  },
+  {
+   "id": "20030981091",
+   "date": "Apr 17, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon confirmed 32 units were missing and initiated a reimbursement of 241.28 USD.",
+   "status": "Reimbursed",
+   "units": 32,
+   "value": 241.28
+  },
+  {
+   "id": "20030964661",
+   "date": "Apr 17, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon confirmed 13 missing units in shipment FBA190XMFWWW and initiated a reimbursement of 123.22 USD under reimbursement ID 21730621251.",
+   "status": "Reimbursed",
+   "units": 13,
+   "value": 123.22
+  },
+  {
+   "id": "20031022041",
+   "date": "Apr 17, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon confirmed missing units in shipment FBA195TP7RD8 and initiated a reimbursement of 100.60 USD.",
+   "status": "Reimbursed",
+   "units": 10,
+   "value": 100.6
+  },
+  {
+   "id": "20414877321",
+   "date": "May 28, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon confirmed 4 missing units in shipment FBA195TNN70G and approved a reimbursement of 40.24 USD.",
+   "status": "Reimbursed",
+   "units": 4,
+   "value": 40.24
+  },
+  {
+   "id": "20414863131",
+   "date": "May 28, 2026",
+   "type": "Warehouse damage",
+   "note": "Amazon has processed reimbursement 22204665891 for transaction ID 20077995265118.",
+   "status": "Reimbursed",
+   "units": 1,
+   "value": 10.21
+  },
+  {
+   "id": "20465477991",
+   "date": "Jun 4, 2026",
+   "type": "Warehouse damage",
+   "note": "Amazon processed reimbursement 22289153621 for transaction ID 20075718473204.",
+   "status": "Reimbursed",
+   "units": 1,
+   "value": 14.0
+  },
+  {
+   "id": "20695213121",
+   "date": "Jun 10, 2026",
+   "type": "Warehouse damage",
+   "note": "Amazon has processed reimbursement 22354605641 for transaction ID 20078431725152.",
+   "status": "Reimbursed",
+   "units": 1,
+   "value": 1.75
+  },
+  {
+   "id": "20886728691",
+   "date": "Jun 18, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon confirmed missing units and initiated a reimbursement of 3.50 USD.",
+   "status": "Reimbursed",
+   "units": 1,
+   "value": 3.5
+  },
+  {
+   "id": "20953650151",
+   "date": "Jun 26, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon confirmed missing units in shipment FBA19D7GFP6X and initiated a reimbursement of 3.50 USD.",
+   "status": "Reimbursed",
+   "units": 1,
+   "value": 3.5
+  },
+  {
+   "id": "21004539131",
+   "date": "Jul 2, 2026",
+   "type": "Warehouse Damage",
+   "note": "Amazon completed the investigation into lost inventory transactions and confirmed that the missing units associated with the events were located in their fulfillment centers, resulting in no further reimbursement required.",
+   "status": "Reconciled",
+   "units": 2,
+   "value": 0.0
+  },
+  {
+   "id": "21182004701",
+   "date": "Jul 15, 2026",
+   "type": "Warehouse Damage",
+   "note": "Amazon completed the investigation into a warehouse damage event, confirming that 8 units of ASIN B0GLJHX6J8 were not damaged and were adjusted back to sellable condition under the inventory found disposition.",
+   "status": "Reconciled",
+   "units": 8,
+   "value": 0.0
+  },
+  {
+   "id": "21424573451",
+   "date": "Jul 31, 2026",
+   "type": "Missing Inventory",
+   "note": "Amazon confirmed that 4 units were missing in the fulfillment center for shipment FBA19FTY7VKG and initiated a reimbursement of 39.20 USD under reimbursement ID 22938397201.",
+   "status": "Reimbursed",
+   "units": 4,
+   "value": 39.2
+  },
+  {
+   "id": "21424452241",
+   "date": "Jul 31, 2026",
+   "type": "Missing Inventory",
+   "note": "Amazon requested the seller to upload an invoice to proceed with the inbound shipment investigation.",
+   "status": "Reimbursed",
+   "units": 3,
+   "value": 18.09
+  },
+  {
+   "id": "21502584211",
+   "date": "Aug 6, 2026",
+   "type": "Missing Inventory",
+   "note": "Amazon confirmed missing units for shipment FBA19CXCFCMX and initiated a reimbursement of 14.00 USD under Reimbursement ID 22986308011.",
+   "status": "Reimbursed",
+   "units": 4,
+   "value": 14.0
+  },
+  {
+   "id": "21502471331",
+   "date": "Aug 6, 2026",
+   "type": "Missing Inventory",
+   "note": "Amazon confirmed 39 units were missing from shipment FBA19CX3LTT1 and initiated a reimbursement of 297.44 USD under reimbursement ID 23012424621.",
+   "status": "Reimbursed",
+   "units": 39,
+   "value": 297.44
+  },
+  {
+   "id": "21676189531",
+   "date": "Aug 19, 2026",
+   "type": "Warehouse Damage",
+   "note": "Amazon confirmed that 1 unit of FNSKU B0CLN17M2D recorded as misplaced under Transaction ID 1771752879080478 was subsequently located and returned to inventory under reference ID 20073743244740, fully reconciling the account with no reimbursement due.",
+   "status": "Reconciled",
+   "units": 1,
+   "value": 0.0
+  },
+  {
+   "id": "21675946601",
+   "date": "Aug 19, 2026",
+   "type": "Found Inventory",
+   "note": "Amazon completed the investigation into the lost inventory request and confirmed the misplaced unit was located and transferred back to sellable inventory.",
+   "status": "Reconciled",
+   "units": 1,
+   "value": 0.0
+  },
+  {
+   "id": "21676171451",
+   "date": "Aug 19, 2026",
+   "type": "Found Inventory",
+   "note": "Amazon completed the investigation and confirmed that the misplaced unit for FNSKU B0CLN17M2D under reference ID 1771752879963396 was found and returned to sellable inventory under reference ID 20073743244740.",
+   "status": "Reconciled",
+   "units": 1,
+   "value": 0.0
+  },
+  {
+   "id": "21676093631",
+   "date": "Aug 19, 2026",
+   "type": "Warehouse Damage",
+   "note": "Amazon confirmed 2 units of FNSKU B0CLN17M2D were recovered after being misplaced and returned to inventory, so no reimbursement is required.",
+   "status": "Reconciled",
+   "units": 2,
+   "value": 0.0
+  },
+  {
+   "id": "21990635381",
+   "date": "Sep 10, 2026",
+   "type": "Missing Inventory",
+   "note": "Amazon denied the reimbursement claim for 60 units of B0GLHZKB9Q. However, Amazon later located the inventory and added the units back to our account. As of now, there are no missing or discrepant units.",
+   "status": "Reconciled",
+   "units": 60,
+   "value": 0.0
+  },
+  {
+   "id": "22091413851",
+   "date": "Sep 16, 2026",
+   "type": "Shipment Reconciliation",
+   "note": "Amazon initiated reimbursement ID 23327881651 for some items on shipment FBA19GVXL7F5 and denied reimbursement for unexpected units due to a mismatch between the shipping plan and physical items received.",
+   "status": "Reimbursed",
+   "units": 1,
+   "value": 14.0
+  },
+  {
+   "id": "22139980911",
+   "date": "Sep 18, 2026",
+   "type": "Investigation",
+   "note": "Amazon contacted their internal team to investigate the seller's request regarding unfulfillable FBA inventory across 18 SKUs and verify reimbursement eligibility.",
+   "status": "Investigating",
+   "units": 1,
+   "value": 3.5
+  },
+  {
+   "id": "22262734891",
+   "date": "Sep 24, 2026",
+   "type": "Reimbursement",
+   "note": "Amazon issued reimbursements for 5 misplaced units and returned 1 unit to inventory following an investigation into 6 unreconciled adjustments.",
+   "status": "Reimbursed",
+   "units": 5,
+   "value": 12.03
+  },
+  {
+   "id": "22571936361",
+   "date": "Oct 13, 2026",
+   "type": "Shipment Reconciliation",
+   "note": "Amazon initiated reimbursement ID 23597048951 for shipment FBA19L0RHSM2 and denied claims for unexpected items due to a shipping plan mismatch.",
+   "status": "Reimbursed",
+   "units": 2,
+   "value": 16.8
+  },
+  {
+   "id": "22726432431",
+   "date": "Oct 21, 2026",
+   "type": "Shipment Reconciliation",
+   "note": "Amazon completed review of shipment FBA19L0T923S, initiated reimbursement ID 23636812161 for some items, but denied claims for unexpected items due to mismatch with shipping plan.",
+   "status": "Reimbursed",
+   "units": 20,
+   "value": 134.0
+  }
+ ]
+}
