@@ -1,0 +1,377 @@
+{
+ "_source": "Sellerise MCP, account Rationale Brewing, marketplace US, pulled 2026-11-02 (Monday-Sunday weeks; 4-week table from the saved weekly totals)",
+ "weeks": [
+  {
+   "label": "Oct 5 – 11",
+   "revenue": 7494.89,
+   "units": 483,
+   "orders": 383,
+   "impressions": 103891,
+   "clicks": 613,
+   "refundUnits": 6,
+   "refundRate": 1.57,
+   "spend": 2414.11,
+   "adSales": 2745.12,
+   "acos": 87.94,
+   "tacos": 32.21
+  },
+  {
+   "label": "Oct 12 – 18",
+   "revenue": 4438.48,
+   "units": 227,
+   "orders": 189,
+   "impressions": 103340,
+   "clicks": 519,
+   "refundUnits": 7,
+   "refundRate": 3.7,
+   "spend": 1153.8,
+   "adSales": 1740.95,
+   "acos": 66.27,
+   "tacos": 26.0
+  },
+  {
+   "label": "Oct 19 – 25",
+   "revenue": 4839.03,
+   "units": 270,
+   "orders": 233,
+   "impressions": 127817,
+   "clicks": 576,
+   "refundUnits": 4,
+   "refundRate": 1.72,
+   "spend": 1333.53,
+   "adSales": 1913.65,
+   "acos": 69.69,
+   "tacos": 27.56
+  },
+  {
+   "label": "Oct 26 – Nov 1",
+   "revenue": 4853.51,
+   "units": 252,
+   "orders": 211,
+   "impressions": 104956,
+   "clicks": 422,
+   "refundUnits": 6,
+   "refundRate": 2.84,
+   "spend": 1073.87,
+   "adSales": 1737.33,
+   "acos": 61.81,
+   "tacos": 22.13,
+   "net": 476.42,
+   "refunds": 169.58,
+   "adOrders": 80,
+   "cpc": 2.54,
+   "cvr": 18.96
+  }
+ ],
+ "mtd": {
+  "through": "2026-11-01",
+  "days": 1,
+  "revenue": 535.34,
+  "units": 28,
+  "orders": 27,
+  "spend": 159.19,
+  "adSales": 208.49,
+  "acos": 76.35,
+  "tacos": 29.74,
+  "refundRate": 14.81
+ },
+ "mtdLY": {
+  "revenue": 158.12,
+  "units": 9,
+  "orders": 8,
+  "spend": 0,
+  "adSales": 0,
+  "acos": 0,
+  "tacos": 0,
+  "refundRate": 0
+ },
+ "daily": [
+  [
+   "2026-10-19",
+   721.07,
+   201.06,
+   330.74,
+   43,
+   19
+  ],
+  [
+   "2026-10-20",
+   607.33,
+   206.91,
+   224.68,
+   30,
+   13
+  ],
+  [
+   "2026-10-21",
+   625.79,
+   168.02,
+   240.83,
+   29,
+   13
+  ],
+  [
+   "2026-10-22",
+   725.99,
+   175.5,
+   274.71,
+   38,
+   13
+  ],
+  [
+   "2026-10-23",
+   528.04,
+   131.6,
+   173.12,
+   24,
+   10
+  ],
+  [
+   "2026-10-24",
+   526.01,
+   194.44,
+   320.7,
+   27,
+   14
+  ],
+  [
+   "2026-10-25",
+   1104.8,
+   256,
+   348.87,
+   42,
+   17
+  ],
+  [
+   "2026-10-26",
+   562.71,
+   198.79,
+   174.28,
+   24,
+   8
+  ],
+  [
+   "2026-10-27",
+   820.64,
+   165.94,
+   367.14,
+   37,
+   18
+  ],
+  [
+   "2026-10-28",
+   1011.06,
+   128.35,
+   247.25,
+   40,
+   10
+  ],
+  [
+   "2026-10-29",
+   772.41,
+   146.67,
+   331.12,
+   39,
+   17
+  ],
+  [
+   "2026-10-30",
+   634.86,
+   116.27,
+   164.77,
+   26,
+   10
+  ],
+  [
+   "2026-10-31",
+   516.49,
+   158.66,
+   244.28,
+   18,
+   7
+  ],
+  [
+   "2026-11-01",
+   535.34,
+   159.19,
+   208.49,
+   27,
+   10
+  ]
+ ],
+ "searchTerms": {
+  "total": 95,
+  "winners": 4,
+  "harvest": 1,
+  "negative": 0,
+  "noPurchase": 0,
+  "rows": [
+   [
+    "rationale beer",
+    "SP",
+    101,
+    5,
+    2,
+    7.4,
+    115.96
+   ],
+   [
+    "rationale mexican style brew",
+    "SP",
+    4,
+    2,
+    4,
+    1.64,
+    66.66
+   ],
+   [
+    "rationale non alcohol beer",
+    "SP",
+    169,
+    6,
+    2,
+    20.41,
+    44.97
+   ],
+   [
+    "rationale brewing",
+    "SP",
+    496,
+    7,
+    2,
+    16.13,
+    43.98
+   ]
+  ],
+  "category": [
+   [
+    "na beer",
+    "SP",
+    724,
+    20,
+    6,
+    144.64,
+    202.93
+   ],
+   [
+    "non alcoholic beer",
+    "SP",
+    3349,
+    51,
+    8,
+    153.25,
+    146.28
+   ],
+   [
+    "na beer",
+    "SB",
+    846,
+    13,
+    8,
+    25.98,
+    119.03
+   ],
+   [
+    "athlete non alcoholic beer 12 pack",
+    "SP",
+    2,
+    1,
+    3,
+    4.91,
+    115.96
+   ],
+   [
+    "non alcoholic beer",
+    "SB",
+    1437,
+    18,
+    3,
+    54.52,
+    69.97
+   ]
+  ]
+ },
+ "targets": {
+  "total": 313,
+  "winners": 16,
+  "needsAttention": 97,
+  "highAcos": 13,
+  "noSales": 1,
+  "lowCtr": 10,
+  "rows": [
+   [
+    "na beer",
+    "Exact",
+    "Category",
+    154.65,
+    231.92,
+    66.68,
+    21,
+    7
+   ],
+   [
+    "non alcoholic beers (SB)",
+    "Exact",
+    "Category",
+    67.54,
+    57.98,
+    116.49,
+    19,
+    2
+   ],
+   [
+    "non alcoholic beer",
+    "Phrase",
+    "Category",
+    66.24,
+    144.95,
+    45.7,
+    15,
+    4
+   ],
+   [
+    "views remarketing 60d (SD)",
+    "SD",
+    "Brand",
+    55.66,
+    43.98,
+    126.56,
+    22,
+    2
+   ],
+   [
+    "non alcoholic beer (SB)",
+    "Phrase",
+    "Category",
+    48.5,
+    87.96,
+    55.14,
+    27,
+    4
+   ]
+  ]
+ },
+ "reviews": {
+  "available": false
+ },
+ "alerts": {
+  "total": 54,
+  "actionable": 16,
+  "critical": 12,
+  "warning": 4,
+  "byType": {
+   "Listing images": 14,
+   "Title": 7,
+   "Reimbursable units": 6,
+   "Low inventory fee": 5,
+   "Buy Box gained": 4,
+   "Buy Box lost": 4,
+   "Title differentiation": 4,
+   "Low stock": 3,
+   "Dimensions": 3,
+   "Listing price": 2,
+   "Inactive": 1,
+   "Out of stock": 1
+  }
+ }
+}

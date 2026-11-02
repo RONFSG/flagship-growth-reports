@@ -1,0 +1,255 @@
+{
+ "asOf": "10/26/2026",
+ "week": 44,
+ "groups": {
+  "g1": {
+   "total": 5292.0,
+   "avail": 1784.0,
+   "inbound": 2318.0,
+   "wkAvg": 295.0,
+   "l30": 1262.0,
+   "n": 14,
+   "asins": [
+    "B0GYV1MSTY",
+    "B0F9HRTK2M",
+    "B0F9HRTK2M",
+    "B0B7NWRNXF",
+    "B0DQX8JHSF",
+    "B0FTBSQP28",
+    "B0B7P1FXTZ",
+    "B0B7NX8KDR",
+    "B0FTBSQP28",
+    "B0DQX8JHSF",
+    "B0B7P1FXTZ",
+    "B0B7NX8KDR",
+    "B0B7NWRNXF",
+    "B0F9HRTK2M"
+   ]
+  },
+  "pr": {
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "n": 3,
+   "asins": [
+    "B0DV92V43C",
+    "B0DV92D9BS",
+    "B0DV911SKS"
+   ]
+  }
+ },
+ "skus": [
+  {
+   "asin": "B0GYV1MSTY",
+   "sku": "RB-MC-19oz-FBA",
+   "name": "19.2oz Mexican Lager 12 Pack",
+   "status": "Active",
+   "total": 3.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 18.0,
+   "l30": 75.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0F9HRTK2M",
+   "sku": "RB-VP-JBP4Flavor-12oz-12pk-CA",
+   "name": "Variety 12 Pack - Beer, Japanese, Mexican, Kolsch and West Coast IPA",
+   "status": "Active",
+   "total": 2.0,
+   "avail": 1.0,
+   "inbound": 0.0,
+   "wkAvg": 1.0,
+   "l30": 3.0,
+   "wkLeft": 3.0
+  },
+  {
+   "asin": "B0F9HRTK2M",
+   "sku": "RB-VP-JBP4Flavor-12oz-12pk-FBA",
+   "name": "Variety 12 Pack - Beer, Japanese, Mexican, Kolsch and West Coast IPA",
+   "status": "Active",
+   "total": 1309.0,
+   "avail": 984.0,
+   "inbound": 315.0,
+   "wkAvg": 75.0,
+   "l30": 322.0,
+   "wkLeft": 17.0
+  },
+  {
+   "asin": "B0B7NWRNXF",
+   "sku": "RB-HIPA-12oz-6pk-FBA",
+   "name": "Hazy IPA 6 Pack",
+   "status": "Active",
+   "total": 1163.0,
+   "avail": 97.0,
+   "inbound": 800.0,
+   "wkAvg": 66.0,
+   "l30": 283.0,
+   "wkLeft": 18.0
+  },
+  {
+   "asin": "B0DQX8JHSF",
+   "sku": "RB-KLC-12oz-6pk-FBA",
+   "name": "Kolsch Style 6 Pack",
+   "status": "Active",
+   "total": 552.0,
+   "avail": 211.0,
+   "inbound": 201.0,
+   "wkAvg": 31.0,
+   "l30": 133.0,
+   "wkLeft": 18.0
+  },
+  {
+   "asin": "B0FTBSQP28",
+   "sku": "RB-JCP-12oz-6pk-FBA",
+   "name": "Cherry Blossom Japanese Style 6 Pack",
+   "status": "Active",
+   "total": 611.0,
+   "avail": 46.0,
+   "inbound": 200.0,
+   "wkAvg": 32.0,
+   "l30": 136.0,
+   "wkLeft": 19.0
+  },
+  {
+   "asin": "B0B7P1FXTZ",
+   "sku": "RB-MC-12oz-6pk-FBA",
+   "name": "Mexican Cerveza 6 Pack",
+   "status": "Active",
+   "total": 1198.0,
+   "avail": 418.0,
+   "inbound": 600.0,
+   "wkAvg": 58.0,
+   "l30": 249.0,
+   "wkLeft": 21.0
+  },
+  {
+   "asin": "B0B7NX8KDR",
+   "sku": "RB-WCIPA-12oz-6pk-FBA",
+   "name": "West Coast IPA 6 Pack",
+   "status": "Active",
+   "total": 454.0,
+   "avail": 27.0,
+   "inbound": 202.0,
+   "wkAvg": 14.0,
+   "l30": 61.0,
+   "wkLeft": 32.0
+  },
+  {
+   "asin": "B0FTBSQP28",
+   "sku": "RB-JCP-12oz-6pk",
+   "name": "Cherry Blossom Japanese Style 6 Pack",
+   "status": "Closed",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0DQX8JHSF",
+   "sku": "RB-KLC-12oz-6pk",
+   "name": "Kolsch Style 6 Pack",
+   "status": "Closed",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0B7P1FXTZ",
+   "sku": "RB-MC-12oz-6pk",
+   "name": "Mexican Cerveza 6 Pack",
+   "status": "Closed",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0B7NX8KDR",
+   "sku": "RB-WCIPA-12oz-6pk",
+   "name": "West Coast IPA 6 Pack",
+   "status": "Closed",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0B7NWRNXF",
+   "sku": "RB-HIPA-12oz-6pk",
+   "name": "Hazy IPA 6 Pack",
+   "status": "Closed",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0F9HRTK2M",
+   "sku": "RB-VP-JBP4Flavor-12oz-12pk",
+   "name": "Variety 12 Pack - Beer, Japanese, Mexican, Kolsch and West Coast IPA",
+   "status": "Closed",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0DV92V43C",
+   "sku": "RB-VP-WCIPAMC-12oz-12pk",
+   "name": "Mexican Cerveza & West Coast IPA 12 Pack",
+   "status": "Closed",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0DV92D9BS",
+   "sku": "RB-VP-KLCMC-12oz-12pk",
+   "name": "Mexican Cerveza & Kolsch 12 Pack",
+   "status": "Closed",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0DV911SKS",
+   "sku": "RB-VP-HIPAMC-12oz-12pk",
+   "name": "Mexican Cerveza & Hazy IPA 12 Pack",
+   "status": "Closed",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  }
+ ],
+ "po": [],
+ "unmapped": [
+  "B0DV92V43C",
+  "B0DV92D9BS",
+  "B0DV911SKS"
+ ]
+}

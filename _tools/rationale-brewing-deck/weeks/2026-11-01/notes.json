@@ -1,0 +1,72 @@
+{
+"_week": "2026-10-26 to 2026-11-01 (Week 44). Written from this week's numbers.",
+"week_story": [
+"Sales held flat at $4,854 (+0.3%) while ad spend fell 19% to $1,074. The Variety 12 Pack grew 31% to $2,520 and Cherry Blossom grew 39%, offsetting Mexican Cerveza, which fell 56% to $406."
+],
+"refunds_title": "Refunds tied to the Tallboy",
+"refunds": [
+"Refunds rose to $169.58 (6 units) from $48.08. $118.74 of it (4 units) is the 19.2oz Mexican Lager Tallboy, which had no sales and no stock this week. Worth checking its return reasons."
+],
+"pacing_reco": "Only Nov 1 is in, so the month projection is rough. Holding October's run rate ($24,197) depends on fixing Mexican Cerveza's Buy Box and keeping the Variety Pack in stock.",
+"ads_context": [
+"The Oct 5–11 week ran at 87.9% ACoS and 32.2% TACoS.",
+"Since then spend has come down each week; this week ACoS was 61.8% and TACoS 22.1%, the lowest of the last four weeks."
+],
+"ads_strategy": [
+"Branded keywords returned $342.90 on $103.63 (30.2% ACoS) for 14 orders.",
+"Category keywords cost $711.77 for $1,143.75 (62.2% ACoS); remarketing spent $189.63 for $153.16 (124% ACoS)."
+],
+"bid_moves": [
+"Lower the bid on “na beer” (exact): $154.65 for $231.92, 66.7% ACoS.",
+"Pause or negate “non alcoholic beers” exact in the Mexican Cerveza campaign: $50.07, 14 clicks, no sales."
+],
+"coupons": [
+"This week: 42 coupon orders.",
+"Last week: 37 coupon orders.",
+"October total: 201 coupon orders."
+],
+"promotions": [
+"This week: 58 promotion orders and $287.76 in promotional discounts (vs 65 and $283.39 last week).",
+"Subscribe & Save orders: 22 this week vs 32 last week."
+],
+"events": [
+"Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+"Deal and coupon set-up deadlines: to confirm with the account team.",
+"Priority: keep the Variety 12 Pack (6.0 weeks available, 2,318 inbound) stocked through BF/CM."
+],
+"reviews_title": "No review data in Sellerise",
+"reviews_body": [
+"Sellerise returned no review records, rating trend or negative reviews for the 7 RationAle products over the last 90 days.",
+"That means the review tracker isn't pulling for this account, not that there were no reviews."
+],
+"reviews_reco": [
+"Turn on review tracking for RationAle in Sellerise (or pull Amazon's Customer Reviews report) so the deck can show rating and review count per product.",
+"Read the newest 1–3 star reviews on the Tallboy, where 4 of this week's 6 refunded units came from."
+],
+"recommendations": [
+["Buy Box", "Check the Buy Box lost on Mexican Cerveza 6 Pack (alert Oct 29); its sales fell 56% to $406.", "Account team", "This week"],
+["Ads", "Pause the Mexican Cerveza [Hyper] exact campaign while the Buy Box is out: $52.91 spent, no sales.", "Ads team", "This week"],
+["Ads", "Lower bids on “na beer” exact (66.7% ACoS) and cut the 33 campaigns with spend and no sales ($194.96).", "Ads team", "This week"],
+["Ads", "Add “athlete non alcoholic beer 12 pack” as an exact keyword: 3 orders and $115.96 from $4.91.", "Ads team", "This week"],
+["Ads", "Review remarketing (Sponsored Display at 128% ACoS) and move budget to branded keywords at 30.2% ACoS.", "Ads team", "Next week"],
+["Inventory", "Decide on the 19.2oz Tallboy: 0 available, 0 inbound, 75 sold in the last 30 days.", "Account team", "By Nov 9"],
+["Listings", "Fix the dimensions alerts on the Variety 12 Pack and Kolsch listings.", "Catalog team", "This week"],
+["Marketing", "Plan BF/CM coupons and deals (Nov 27–30) and confirm submission deadlines.", "Account team", "By Nov 9"]
+],
+"position": [
+"October closed at $24,197; November is $535 after day one.",
+"Sales were flat week on week while ad spend dropped 19%, so TACoS improved to 22.1%."
+],
+"next_steps": [
+"Restore Mexican Cerveza's Buy Box.",
+"Cut no-sale and high-ACoS ad spend.",
+"Decide on Tallboy restock.",
+"Lock BF/CM coupons and deals."
+],
+"data_ask": [
+"Tallboy restock plan and return reasons.",
+"BF/CM deal and coupon plan.",
+"Review tracking turned on in Sellerise.",
+"Search Query Performance report (not loaded in Sellerise this week)."
+]
+}

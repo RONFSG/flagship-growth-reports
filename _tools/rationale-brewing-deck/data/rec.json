@@ -1,0 +1,341 @@
+{
+ "asOf": "Oct 26, 2026",
+ "ytd": 6704.25,
+ "units": 1280,
+ "shipments": 17,
+ "receiving": 3,
+ "closed": 12,
+ "missing": 19,
+ "receiveRate": 101.2,
+ "recoveryRate": 100.0,
+ "resolved": 22,
+ "mtd": 825.87,
+ "mtdUnits": 212,
+ "monthly": [],
+ "byType": [
+  [
+   "Lost_Inbound",
+   2298.43
+  ],
+  [
+   "Damaged_Warehouse",
+   2294.47
+  ],
+  [
+   "Damaged_Inbound",
+   998.82
+  ],
+  [
+   "Cancelled Shipment",
+   958.46
+  ],
+  [
+   "Damaged Inventory",
+   611.55
+  ],
+  [
+   "Lost_Warehouse",
+   568.11
+  ],
+  [
+   "CustomerReturn",
+   522.38
+  ],
+  [
+   "Reimbursement",
+   216.0
+  ],
+  [
+   "Warehouse Damage",
+   99.12
+  ],
+  [
+   "Missing Inventory",
+   54.69
+  ],
+  [
+   "CustomerServiceIssue",
+   22.04
+  ],
+  [
+   "Misplaced Inventory",
+   null
+  ],
+  [
+   "Lost Inventory",
+   null
+  ]
+ ],
+ "cases": [
+  {
+   "id": "19865927841",
+   "date": "Apr 7, 2026",
+   "type": "Missing Inventory",
+   "note": "Amazon confirmed 5 units were missing from shipment FBA196BJS8WN and initiated a reimbursement of 43.95 USD.",
+   "status": "Reimbursed",
+   "units": 5,
+   "value": 43.95
+  },
+  {
+   "id": "19864716091",
+   "date": "Apr 7, 2026",
+   "type": "Warehouse Damage",
+   "note": "Amazon completed the investigation into seven warehouse damage events for FNSKU X004XPYE7T and issued reimbursements for all reported units.",
+   "status": "Reimbursed",
+   "units": 7,
+   "value": 17.58
+  },
+  {
+   "id": "20067797031",
+   "date": "Apr 22, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon approved a reimbursement of $4.40 for 1 misplaced unit of FNSKU X004XPYE7T.",
+   "status": "Reimbursed",
+   "units": 1,
+   "value": 4.4
+  },
+  {
+   "id": "20067804231",
+   "date": "Apr 22, 2026",
+   "type": "Damaged Inventory",
+   "note": "Amazon approved a reimbursement of $3.02 for 1 unit of FNSKU B0B7NWRNXF following an investigation into damaged inventory.",
+   "status": "Reimbursed",
+   "units": 1,
+   "value": 3.02
+  },
+  {
+   "id": "20414529911",
+   "date": "May 28, 2026",
+   "type": "Damaged Inventory",
+   "note": "Amazon approved a reimbursement of 26.37 USD for 3 units of FNSKU X004XPYE7T associated with warehouse damage events.",
+   "status": "Reimbursed",
+   "units": 3,
+   "value": 26.37
+  },
+  {
+   "id": "20414659331",
+   "date": "May 28, 2026",
+   "type": "Damaged Inventory",
+   "note": "Amazon approved a reimbursement of 35.12 USD for 8 units of FNSKU X004XPYE7T following an investigation into damaged inventory.",
+   "status": "Reimbursed",
+   "units": 8,
+   "value": 35.12
+  },
+  {
+   "id": "20414619471",
+   "date": "May 28, 2026",
+   "type": "Damaged Inventory",
+   "note": "Amazon approved a reimbursement of 17.56 USD for 4 units of FNSKU X004XPYE7T.",
+   "status": "Reimbursed",
+   "units": 4,
+   "value": 17.56
+  },
+  {
+   "id": "20414250331",
+   "date": "May 28, 2026",
+   "type": "Damaged Inventory",
+   "note": "Amazon approved a reimbursement of 17.56 USD for 4 units of FNSKU X004XPYE7T across four transaction IDs.",
+   "status": "Reimbursed",
+   "units": 4,
+   "value": 17.56
+  },
+  {
+   "id": "20414590081",
+   "date": "May 28, 2026",
+   "type": "Damaged Inventory",
+   "note": "Amazon approved a reimbursement of 52.68 USD for 12 units of FNSKU X004XPYE7T following an investigation into damaged inventory.",
+   "status": "Reimbursed",
+   "units": 12,
+   "value": 52.68
+  },
+  {
+   "id": "20885058771",
+   "date": "Jun 18, 2026",
+   "type": "Missing Inventory",
+   "note": "Amazon confirmed 2 units missing and initiated a reimbursement of 20.30 USD.",
+   "status": "Reimbursed",
+   "units": 2,
+   "value": 20.3
+  },
+  {
+   "id": "20885040961",
+   "date": "Jun 18, 2026",
+   "type": "Missing Inventory",
+   "note": "Amazon confirmed units missing in the fulfillment center and initiated a reimbursement of 30.45 USD.",
+   "status": "Reimbursed",
+   "units": 3,
+   "value": 30.45
+  },
+  {
+   "id": "20981104211",
+   "date": "Jun 30, 2026",
+   "type": "Damaged Inventory",
+   "note": "Amazon approved a reimbursement of 508.00 USD for 100 units of FNSKU B0GYV1MSTY that were classified as distributor damaged and disposed of.",
+   "status": "Reimbursed",
+   "units": 100,
+   "value": 508.0
+  },
+  {
+   "id": "21041813631",
+   "date": "Jul 7, 2026",
+   "type": "Warehouse Damage",
+   "note": "Amazon completed the investigation into three misplaced inventory references, locating 5 units and reimbursing 1 warehouse damaged unit.",
+   "status": "Reconciled",
+   "units": 5,
+   "value": 0.0
+  },
+  {
+   "id": "21113239501",
+   "date": "Jul 13, 2026",
+   "type": "Cancelled Shipment",
+   "note": "The inbound transportation fee of $958.46 charged for the cancelled FBA shipment FBA19J51RDKK has been reversed and credited back to the account.",
+   "status": "Reimbursed",
+   "units": 0,
+   "value": 958.46
+  },
+  {
+   "id": "21413432521",
+   "date": "Jul 30, 2026",
+   "type": "Missing Inventory",
+   "note": "Amazon completed the investigation into the missing inventory and approved a reimbursement for 2 units of FNSKU B0B7P1FXTZ.",
+   "status": "Reimbursed",
+   "units": 1,
+   "value": 3.94
+  },
+  {
+   "id": "21413318771",
+   "date": "Jul 30, 2026",
+   "type": "Warehouse Damage",
+   "note": "Amazon completed the investigation into warehouse damage on reference ID 20076952642004 and confirmed 7 units were reimbursed across multiple transaction IDs.",
+   "status": "Reimbursed",
+   "units": 7,
+   "value": 0.0
+  },
+  {
+   "id": "21413453771",
+   "date": "Jul 30, 2026",
+   "type": "Warehouse Damage",
+   "note": "Amazon completed the investigation into the unreconciled transaction ID: 20077119057623 and approved a reimbursement of 3.94 USD for 1 unit of FNSKU B0B7P1FXTZ due to warehouse damage.",
+   "status": "Reimbursed",
+   "units": 2,
+   "value": 3.9
+  },
+  {
+   "id": "21413363051",
+   "date": "Jul 30, 2026",
+   "type": "Warehouse Damage",
+   "note": "Amazon completed the investigation and confirmed that 1 unit initially misplaced was corrected to warehouse damaged and already reimbursed under Reimbursement ID 22780086881.",
+   "status": "Reimbursed",
+   "units": 1,
+   "value": 3.94
+  },
+  {
+   "id": "21521917791",
+   "date": "Aug 7, 2026",
+   "type": "Warehouse Damage",
+   "note": "Amazon completed the investigation across five ASINs, approving reimbursements for 12 units, regrading 13 units, locating 4 units, and marking remaining transactions as ineligible or not yet eligible.",
+   "status": "Reconciled",
+   "units": 12,
+   "value": 0.0
+  },
+  {
+   "id": "21522163431",
+   "date": "Aug 7, 2026",
+   "type": "Misplaced Inventory",
+   "note": "Amazon completed the investigation and confirmed that 1 unit initially misplaced has been located and reconciled under event 20079094929131.",
+   "status": "Reconciled",
+   "units": 1,
+   "value": 0.0
+  },
+  {
+   "id": "21521966741",
+   "date": "Aug 7, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon completed the investigation and confirmed that 1 lost unit of FNSKU X004XPYE7T was found and added back to inventory.",
+   "status": "Reconciled",
+   "units": 1,
+   "value": 0.0
+  },
+  {
+   "id": "21521919821",
+   "date": "Aug 7, 2026",
+   "type": "Warehouse Damage",
+   "note": "Amazon completed the investigation into a warehouse damage event and confirmed that the misplaced unit has been located and updated with a new reference ID.",
+   "status": "Reconciled",
+   "units": 1,
+   "value": 0.0
+  },
+  {
+   "id": "21522047031",
+   "date": "Aug 7, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon completed the investigation and confirmed that 1 lost unit of FNSKU X004XPYE7T was found and added back to inventory.",
+   "status": "Reconciled",
+   "units": 1,
+   "value": 0.0
+  },
+  {
+   "id": "21522047961",
+   "date": "Aug 7, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon completed the investigation and confirmed that 1 unit initially marked as lost was found and added back to inventory under transaction ID 20079388752953.",
+   "status": "Reconciled",
+   "units": 1,
+   "value": 0.0
+  },
+  {
+   "id": "21521999301",
+   "date": "Aug 7, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon completed the investigation and confirmed that one unit initially misplaced was located and returned to sellable inventory.",
+   "status": "Reconciled",
+   "units": 1,
+   "value": 0.0
+  },
+  {
+   "id": "21775525671",
+   "date": "Aug 27, 2026",
+   "type": "Damaged Inventory",
+   "note": "Amazon approved a reimbursement of 15.75 USD for 3 distributor-damaged units under Reimbursement ID 23214001391 and is investigating the remaining 123 unfulfillable units.",
+   "status": "Reimbursed",
+   "units": 4,
+   "value": 15.75
+  },
+  {
+   "id": "21876076561",
+   "date": "Sep 3, 2026",
+   "type": "Warehouse Damage",
+   "note": "Amazon reviewed 5 inventory adjustments, confirming 4 units were damaged and reimbursed, while 1 unit was reclassified as defective and ineligible for reimbursement.",
+   "status": "Reimbursed",
+   "units": 4,
+   "value": 18.0
+  },
+  {
+   "id": "21949026541",
+   "date": "Sep 8, 2026",
+   "type": "Warehouse Damage",
+   "note": "Amazon completed the investigation into six unreconciled inventory adjustments for damaged units and approved reimbursements for five confirmed cases.",
+   "status": "Reimbursed",
+   "units": 5,
+   "value": 32.68
+  },
+  {
+   "id": "22137496171",
+   "date": "Sep 18, 2026",
+   "type": "Warehouse Damage",
+   "note": "Amazon completed the investigation into six unreconciled inventory adjustments, approving reimbursements for five units and regrading one unit to a defective disposition.",
+   "status": "Reimbursed",
+   "units": 5,
+   "value": 40.6
+  },
+  {
+   "id": "22288114241",
+   "date": "Sep 25, 2026",
+   "type": "Reimbursement",
+   "note": "Amazon submitted a reimbursement of 216.00 USD for 96 units of FNSKU B0B7NWRNXF.",
+   "status": "Reimbursed",
+   "units": 96,
+   "value": 216.0
+  }
+ ]
+}
