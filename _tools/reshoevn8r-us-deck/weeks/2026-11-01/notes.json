@@ -1,0 +1,71 @@
+{
+  "_week": "2026-10-26 to 2026-11-01 (Week 44). Written from this week's numbers.",
+  "week_story": [
+    "Revenue fell 9.8% to $46,014 while ad spend rose 28.9% to $6,774, so TACoS climbed from 10.3% to 14.7%.",
+    "The three biggest kits all slipped: Essential Kit -13%, Signature Kit -15%, Refresh Kit -28%. The All-Natural cleaning solutions grew 15%."
+  ],
+  "refunds_title": "Refunds are low",
+  "refunds": [
+    "Refunds were $628 this week (1.56% refund rate), down from $905 the week before. Nothing here needs action."
+  ],
+  "pacing_reco": "November has one day in ($7,663). Keeping Essential Kit in stock through Black Friday matters most: it has about 2.6 weeks of stock available at FBA.",
+  "ads_context": [
+    "Ad sales fell 9% to $18,001 while spend rose 29%, so ACoS went from 26.6% to 37.6%.",
+    "Sponsored Products spend rose 47% to $2,818 and Sponsored Brands rose 23% to $2,513."
+  ],
+  "ads_strategy": [
+    "Branded keywords returned $7,497 on $1,242 (16.6% ACoS) and brought 224 orders.",
+    "Category keywords cost $4,853 for $8,320 in sales (58.3% ACoS); that spend was up 46% on last week."
+  ],
+  "bid_moves": [
+    "Lower bids on the Sponsored Brands “shoe cleaning” phrase target: $1,004 spent at 70% ACoS.",
+    "Lower bids on “shoe cleaner sneakers” and “sneaker cleaning kit” (exact): both above 65% ACoS.",
+    "Pause or negate the 78 campaigns with spend and no sales ($342 this week)."
+  ],
+  "coupons": [
+    "This week: 94 coupon orders.",
+    "Last week: 280 coupon orders."
+  ],
+  "promotions": [
+    "This week: 339 promotion orders and $927 in promotional discounts (vs 447 orders and $1,514 last week).",
+    "Less discounting lines up with the drop in kit sales."
+  ],
+  "events": [
+    "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+    "Deal and coupon set-up deadlines: to confirm with the account team.",
+    "Priority: Essential Kit replenishment landed at FBA before Nov 20."
+  ],
+  "reviews_title": "No review data in Sellerise",
+  "reviews_body": [
+    "Sellerise returned no review records, rating trend or negative reviews for the 17 Reshoevn8r US products over the last 90 days.",
+    "That means the review tracker isn't pulling for this account, not that there were no reviews."
+  ],
+  "reviews_reco": [
+    "Turn on review tracking for Reshoevn8r US in Sellerise (or pull Amazon's Customer Reviews report) so the deck can show star rating and review count per line."
+  ],
+  "recommendations": [
+    ["Inventory", "Send Essential Kit replenishment now: 1,106 available and 288 inbound against about 428 sold a week (about 4 weeks of total cover).", "Account team", "This week"],
+    ["Inventory", "Restock the Laundry Bag: 0 available, 55 sold in the last 30 days.", "Account team", "This week"],
+    ["Ads", "Cut bids on the Sponsored Brands category phrase/exact targets running 65–78% ACoS (“shoe cleaning”, “shoe cleaner sneakers”, “sneaker cleaning kit”).", "Ads team", "This week"],
+    ["Ads", "Pause or negate the 78 no-sale campaigns ($342 this week) and review the 7 negative-candidate search terms.", "Ads team", "This week"],
+    ["Ads", "Add the 11 converting searches as exact keywords, starting with “reshoevn8r signature shoe cleaning kit” and “reshoevn8r essential shoe cleaning kit”.", "Ads team", "This week"],
+    ["Marketing", "Plan BF/CM coupons and deals for Essential, Signature and Refresh kits (Nov 27–30) and confirm submission deadlines.", "Account team", "By Nov 9"],
+    ["Account health", "Turn on review tracking in Sellerise for this account.", "Account team", "Next week"]
+  ],
+  "position": [
+    "October closed at $244,240, ahead of October last year ($226,939).",
+    "This week slowed to $46,014 as ad spend rose and kit sales dipped."
+  ],
+  "next_steps": [
+    "Restock Essential Kit and the Laundry Bag.",
+    "Bring category ACoS back down.",
+    "Lock BF/CM coupons and deals.",
+    "Harvest branded long-tail searches as exact keywords."
+  ],
+  "data_ask": [
+    "Essential Kit inbound ETA and next PO date.",
+    "BF/CM deal and coupon plan.",
+    "Review tracking turned on in Sellerise.",
+    "Category / brand impression share (Brand Analytics)."
+  ]
+}

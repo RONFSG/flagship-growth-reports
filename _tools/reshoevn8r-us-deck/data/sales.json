@@ -1,0 +1,125 @@
+{
+ "PRODUCTS": [
+  {
+   "key": "g1",
+   "sales": [],
+   "units": [],
+   "sessions": [],
+   "adSpend": [],
+   "adSales": []
+  },
+  {
+   "key": "g2",
+   "sales": [],
+   "units": [],
+   "sessions": [],
+   "adSpend": [],
+   "adSales": []
+  },
+  {
+   "key": "g3",
+   "sales": [],
+   "units": [],
+   "sessions": [],
+   "adSpend": [],
+   "adSales": []
+  },
+  {
+   "key": "g4",
+   "sales": [],
+   "units": [],
+   "sessions": [],
+   "adSpend": [],
+   "adSales": []
+  },
+  {
+   "key": "g5",
+   "sales": [],
+   "units": [],
+   "sessions": [],
+   "adSpend": [],
+   "adSales": []
+  },
+  {
+   "key": "g6",
+   "sales": [],
+   "units": [],
+   "sessions": [],
+   "adSpend": [],
+   "adSales": []
+  },
+  {
+   "key": "g7",
+   "sales": [],
+   "units": [],
+   "sessions": [],
+   "adSpend": [],
+   "adSales": []
+  },
+  {
+   "key": "pr",
+   "sales": [],
+   "units": [],
+   "sessions": [],
+   "adSpend": [],
+   "adSales": []
+  }
+ ],
+ "S25": {
+  "sales": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "units": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "a25": [
+  168.26,
+  538.08,
+  299.31,
+  260.25,
+  284520.49,
+  251289.23,
+  281384.79,
+  293956.92,
+  235349.53,
+  226938.82,
+  291768.93,
+  335777.85
+ ],
+ "act26": [
+  246288,
+  225106,
+  260345,
+  230324,
+  233230,
+  241060,
+  194406,
+  257324,
+  226296,
+  244240
+ ],
+ "notes": "Sellerise Reshoevn8r, US"
+}

@@ -1,0 +1,401 @@
+{
+ "_source": "Sellerise MCP, account Reshoevn8r, marketplace US, pulled 2026-11-02 (Monday-Sunday weeks; 4-week table from the saved weekly totals)",
+ "weeks": [
+  {
+   "label": "Oct 5 – 11",
+   "revenue": 74914.67,
+   "units": 2615,
+   "orders": 2514,
+   "impressions": 1571513,
+   "clicks": 5849,
+   "refundUnits": 26,
+   "refundRate": 1.03,
+   "spend": 11481.93,
+   "adSales": 35808.76,
+   "acos": 32.06,
+   "tacos": 15.33
+  },
+  {
+   "label": "Oct 12 – 18",
+   "revenue": 48772.72,
+   "units": 1515,
+   "orders": 1477,
+   "impressions": 826346,
+   "clicks": 3948,
+   "refundUnits": 43,
+   "refundRate": 2.91,
+   "spend": 5970.1,
+   "adSales": 22940.98,
+   "acos": 26.02,
+   "tacos": 12.24
+  },
+  {
+   "label": "Oct 19 – 25",
+   "revenue": 50990.29,
+   "units": 1585,
+   "orders": 1551,
+   "impressions": 770779,
+   "clicks": 3154,
+   "refundUnits": 36,
+   "refundRate": 2.32,
+   "spend": 5256.53,
+   "adSales": 19772.41,
+   "acos": 26.59,
+   "tacos": 10.31
+  },
+  {
+   "label": "Oct 26 – Nov 1",
+   "revenue": 46014.1,
+   "units": 1511,
+   "orders": 1476,
+   "impressions": 1084678,
+   "clicks": 3439,
+   "refundUnits": 23,
+   "refundRate": 1.56,
+   "spend": 6774.01,
+   "adSales": 18000.56,
+   "acos": 37.63,
+   "tacos": 14.72,
+   "net": 21208.77,
+   "refunds": 627.69,
+   "adOrders": 574,
+   "cpc": 1.97,
+   "cvr": 16.69
+  }
+ ],
+ "mtd": {
+  "through": "2026-11-01",
+  "days": 1,
+  "revenue": 7663.38,
+  "units": 268,
+  "orders": 261,
+  "spend": 1091.25,
+  "adSales": 2316.71,
+  "acos": 47.1,
+  "tacos": 14.24,
+  "refundRate": 1.15
+ },
+ "mtdLY": {
+  "revenue": 8334.99,
+  "units": 263,
+  "orders": 252,
+  "spend": 0,
+  "adSales": 0,
+  "acos": 0,
+  "tacos": 0,
+  "refundRate": 1.19
+ },
+ "daily": [
+  [
+   "2026-10-19",
+   7316.73,
+   503.65,
+   2560.92,
+   225,
+   72
+  ],
+  [
+   "2026-10-20",
+   6569.63,
+   482.33,
+   1869.4,
+   198,
+   55
+  ],
+  [
+   "2026-10-21",
+   6686.08,
+   543.47,
+   1826.52,
+   207,
+   53
+  ],
+  [
+   "2026-10-22",
+   7288.26,
+   860.95,
+   3771.43,
+   220,
+   111
+  ],
+  [
+   "2026-10-23",
+   6892.28,
+   875.7,
+   2995.16,
+   216,
+   93
+  ],
+  [
+   "2026-10-24",
+   8006.15,
+   1005.7,
+   3664.4,
+   235,
+   111
+  ],
+  [
+   "2026-10-25",
+   8231.16,
+   984.73,
+   3084.58,
+   250,
+   92
+  ],
+  [
+   "2026-10-26",
+   7155.91,
+   963.73,
+   2385.57,
+   228,
+   81
+  ],
+  [
+   "2026-10-27",
+   6588.78,
+   932.57,
+   3176.04,
+   208,
+   95
+  ],
+  [
+   "2026-10-28",
+   6266.66,
+   900.11,
+   2606.21,
+   192,
+   79
+  ],
+  [
+   "2026-10-29",
+   6078.14,
+   855.92,
+   2527.04,
+   196,
+   70
+  ],
+  [
+   "2026-10-30",
+   6207.77,
+   978.04,
+   2743.18,
+   189,
+   94
+  ],
+  [
+   "2026-10-31",
+   6053.46,
+   1052.39,
+   2245.81,
+   202,
+   78
+  ],
+  [
+   "2026-11-01",
+   7663.38,
+   1091.25,
+   2316.71,
+   261,
+   77
+  ]
+ ],
+ "searchTerms": {
+  "total": 671,
+  "winners": 29,
+  "harvest": 11,
+  "negative": 7,
+  "noPurchase": 8,
+  "rows": [
+   [
+    "reshoev8r",
+    "SB",
+    168750,
+    175,
+    38,
+    215.47,
+    1447.17
+   ],
+   [
+    "reshoevn8r shoe cleaner kit",
+    "SB",
+    861,
+    41,
+    10,
+    64.8,
+    378.8
+   ],
+   [
+    "reshoevn8r signature shoe cleaning kit",
+    "SB",
+    41,
+    7,
+    9,
+    5.39,
+    333.65
+   ],
+   [
+    "reshoevn8r",
+    "SB",
+    784,
+    30,
+    9,
+    74.86,
+    295.92
+   ],
+   [
+    "reshoevn8r",
+    "SP",
+    1630,
+    27,
+    7,
+    29.93,
+    219.72
+   ],
+   [
+    "reshoevn8r essential shoe cleaning kit",
+    "SB",
+    180,
+    15,
+    6,
+    34.83,
+    200.28
+   ]
+  ],
+  "category": [
+   [
+    "shoe cleaning kit",
+    "SB",
+    19118,
+    120,
+    18,
+    360.46,
+    776.84
+   ],
+   [
+    "shoe cleaner",
+    "SB",
+    35685,
+    134,
+    17,
+    496.73,
+    560.96
+   ],
+   [
+    "sneaker cleaner",
+    "SB",
+    2375,
+    28,
+    11,
+    94.95,
+    441.68
+   ],
+   [
+    "shoe cleaner kit",
+    "SB",
+    1806,
+    34,
+    8,
+    123.04,
+    372.11
+   ],
+   [
+    "sneaker cleaner kit",
+    "SB",
+    764,
+    21,
+    6,
+    54.87,
+    241.01
+   ]
+  ]
+ },
+ "targets": {
+  "total": 707,
+  "winners": 63,
+  "needsAttention": 95,
+  "highAcos": 36,
+  "noSales": 3,
+  "lowCtr": 36,
+  "rows": [
+   [
+    "shoe cleaning (SB)",
+    "Phrase",
+    "Category",
+    1003.55,
+    1432.44,
+    70.06,
+    280,
+    38
+   ],
+   [
+    "shoe cleaning kit (SB)",
+    "Phrase",
+    "Category",
+    293.41,
+    420.29,
+    69.81,
+    109,
+    12
+   ],
+   [
+    "shoe cleaner sneakers (SB)",
+    "Exact",
+    "Category",
+    292.35,
+    385.8,
+    75.78,
+    64,
+    10
+   ],
+   [
+    "sneaker cleaning kit (SB)",
+    "Exact",
+    "Category",
+    274.98,
+    419.8,
+    65.5,
+    83,
+    10
+   ],
+   [
+    "reshoev8r (SB)",
+    "Phrase",
+    "Brand",
+    206.28,
+    1494.93,
+    13.8,
+    165,
+    40
+   ]
+  ]
+ },
+ "reviews": {
+  "available": false
+ },
+ "alerts": {
+  "total": 66,
+  "actionable": 12,
+  "critical": 3,
+  "warning": 9,
+  "byType": {
+   "Title": 16,
+   "New reimbursable units": 10,
+   "Badge gained": 9,
+   "Listing images": 8,
+   "Listing price": 5,
+   "Parent ASIN changed": 4,
+   "Inactive": 2,
+   "Low stock": 2,
+   "Buy Box lost": 1,
+   "Buy Box gained": 1,
+   "Suppression": 1,
+   "Out of stock": 1,
+   "Negative feedback": 1,
+   "Badge lost": 1,
+   "Bullets": 1,
+   "Description": 1,
+   "Dimensions": 1,
+   "Child ASINs changed": 1
+  }
+ }
+}

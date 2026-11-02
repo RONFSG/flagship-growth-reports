@@ -1,0 +1,81 @@
+[
+ {
+  "key": "g1",
+  "short": "Essential Kit",
+  "name": "RESHOEVN8R Essential Kit - Shoe Cleaner Set for Sneakers & Leather",
+  "col": "--c1",
+  "asins": [
+   "B08CSXXX5M"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g2",
+  "short": "Waterproof Shoe Spray",
+  "name": "RESHOEVN8R Waterproof Shoe Spray - Rain & Stain Protector, 6.5oz",
+  "col": "--c2",
+  "asins": [
+   "B08TFDN7F3"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g3",
+  "short": "Signature Kit",
+  "name": "RESHOEVN8R Signature Kit - Flagship Shoe Cleaner Set, All Materials",
+  "col": "--c3",
+  "asins": [
+   "B08RS7P59K"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g4",
+  "short": "All-Natural Sneaker",
+  "name": "RESHOEVN8R All-Natural Sneaker Cleaning Solution, 16oz Bottle",
+  "col": "--c4",
+  "asins": [
+   "B08DNG8XQZ",
+   "B0FCKD54WY"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g5",
+  "short": "Refresh Kit",
+  "name": "RESHOEVN8R Refresh Kit - Routine Shoe Cleaner Set, All Materials",
+  "col": "--c5",
+  "asins": [
+   "B0CTGGJ98X"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g6",
+  "short": "Dry Suede Kit",
+  "name": "RESHOEVN8R Dry Suede Kit - Nubuck & Suede Cleaner Set",
+  "col": "--c6",
+  "asins": [
+   "B08H5XPWQD"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g7",
+  "short": "Leather Conditioner Mink",
+  "name": "RESHOEVN8R Leather Conditioner Mink Oil Spray, 6oz - Boots & Shoes",
+  "col": "--c7",
+  "asins": [
+   "B0BFG5NH7B"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "pr",
+  "short": "Other products",
+  "name": "Other products",
+  "col": "--c8",
+  "asins": [],
+  "sku": ""
+ }
+]
