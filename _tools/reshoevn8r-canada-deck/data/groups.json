@@ -1,0 +1,85 @@
+[
+ {
+  "key": "g1",
+  "short": "Shoe Cleaner Kits",
+  "name": "RESHOEVN8R Refresh Kit - Routine Shoe Cleaner Set, All Materials",
+  "col": "--c1",
+  "asins": [
+   "B08B5HQXJ5",
+   "B08CSXXX5M",
+   "B08RS7P59K",
+   "B0BWL4NB9H",
+   "B0CTGGJ98X"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g2",
+  "short": "Cleaning Solution",
+  "name": "RESHOEVN8R All-Natural Sneaker Cleaning Solution, 16oz Bottle",
+  "col": "--c2",
+  "asins": [
+   "B08DNG8XQZ",
+   "B0FCKD54WY"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g3",
+  "short": "Waterproof Shoe Spray",
+  "name": "RESHOEVN8R Waterproof Shoe Spray - Rain & Stain Protector, 6.5oz",
+  "col": "--c3",
+  "asins": [
+   "B08TFDN7F3"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g4",
+  "short": "Suede & Nubuck Kit",
+  "name": "RESHOEVN8R Shoe Cleaner Kit - Sneaker Cleaner for Nubuck & Suede",
+  "col": "--c4",
+  "asins": [
+   "B08H5XPWQD"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g5",
+  "short": "Odor Eliminator",
+  "name": "RESHOEVN8R Sneaker Odor Eliminator Spray - Shoe Deodorizer, 4oz",
+  "col": "--c5",
+  "asins": [
+   "B0CKDN5WVQ"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g6",
+  "short": "Shoe Trees",
+  "name": "RESHOEVN8R Adjustable Shoe Trees for Men - Sneaker Shaper, 7-12",
+  "col": "--c6",
+  "asins": [
+   "B08CJX3SDX"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g7",
+  "short": "Mesh Laundry Bag",
+  "name": "RESHOEVN8R Mesh Laundry Bag - Dual Lace Lock for Sneaker Washing",
+  "col": "--c7",
+  "asins": [
+   "B09CX6ZJY1"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "pr",
+  "short": "Other products",
+  "name": "Other products",
+  "col": "--c8",
+  "asins": [],
+  "sku": ""
+ }
+]
