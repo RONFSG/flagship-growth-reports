@@ -1,0 +1,1505 @@
+{
+ "weekStart": "2026-10-26",
+ "cur": {
+  "revenue": 19781.15,
+  "orders": 1000,
+  "units": 1218,
+  "net": 8254.5,
+  "margin": 41.73,
+  "refunds": 943.43,
+  "refundRate": 7.2,
+  "promos": 533.34,
+  "coupons": 18,
+  "promo": 249,
+  "sns": 0,
+  "spend": 3057.74,
+  "adSales": 7254.71,
+  "acos": 42.15,
+  "tacos": 15.46,
+  "clicks": 2061,
+  "impr": 305108,
+  "adOrders": 357,
+  "cpc": 1.48,
+  "refundUnits": 72
+ },
+ "prev": {
+  "revenue": 18689.4,
+  "orders": 954,
+  "units": 1178,
+  "net": 7666.36,
+  "margin": 41.02,
+  "refunds": 1051.16,
+  "refundRate": 7.86,
+  "promos": 500.15,
+  "coupons": 11,
+  "promo": 244,
+  "sns": 0,
+  "spend": 2720.37,
+  "adSales": 6981.48,
+  "acos": 38.97,
+  "tacos": 14.56,
+  "clicks": 1901,
+  "impr": 342350,
+  "adOrders": 367,
+  "cpc": 1.43,
+  "refundUnits": 75
+ },
+ "CAMP": [
+  {
+   "id": "26088648886502",
+   "name": "Metatarsal Foot Pads / SB-Video / KW / Hapad Metatarsal Pads / Brand / Manual / B008DW1EX4 / FSG",
+   "label": "Metatarsal Pads · Branded · Keywords",
+   "type": "SBV",
+   "strat": "Branded",
+   "prod": "Metatarsal Pads",
+   "s": 518.41,
+   "r": 1392.23,
+   "i": 9136,
+   "c": 247,
+   "o": 53,
+   "ps": 350.86,
+   "pr": 1133.0,
+   "pc": 191,
+   "pi": 7317
+  },
+  {
+   "id": "477740414778312",
+   "name": "Metatarsal Foot Pads / SP / SKW / Hapad [Brand] / Brand / Phrase / B008DW1DS0  / FSG",
+   "label": "Metatarsal Pads · Branded · Phrase",
+   "type": "SP",
+   "strat": "Branded",
+   "prod": "Metatarsal Pads",
+   "s": 256.19,
+   "r": 1195.59,
+   "i": 5930,
+   "c": 106,
+   "o": 43,
+   "ps": 243.48,
+   "pr": 1204.74,
+   "pc": 86,
+   "pi": 4848
+  },
+  {
+   "id": "463936934869939",
+   "name": "Metatarsal Pads 6 Pack / SB / KW / Metatarsal Pads [Hyper] / Category / Broad / B008DW1EX4 / FSG",
+   "label": "Metatarsal Pads · Category · Broad",
+   "type": "SB",
+   "strat": "Category",
+   "prod": "Metatarsal Pads",
+   "s": 252.38,
+   "r": 331.26,
+   "i": 19913,
+   "c": 84,
+   "o": 13,
+   "ps": 175.46,
+   "pr": 276.25,
+   "pc": 69,
+   "pi": 26269
+  },
+  {
+   "id": "346401719402613",
+   "name": "Metatarsal Foot Pads / SP / AUTO / Category / B008DW1DS0 / FSG",
+   "label": "Metatarsal Pads · Auto · Auto",
+   "type": "SP",
+   "strat": "Auto",
+   "prod": "Metatarsal Pads",
+   "s": 218.55,
+   "r": 733.72,
+   "i": 16757,
+   "c": 106,
+   "o": 23,
+   "ps": 112.21,
+   "pr": 418.56,
+   "pc": 62,
+   "pi": 13013
+  },
+  {
+   "id": "175748879390532",
+   "name": "Metatarsal Pads / SP / KW / metatarsal foot pads [Hyper] / Category / Phrase / Group / FSG",
+   "label": "Brand / multi · Category · Phrase",
+   "type": "SP",
+   "strat": "Category",
+   "prod": "Brand / multi",
+   "s": 218.37,
+   "r": 381.29,
+   "i": 9437,
+   "c": 119,
+   "o": 29,
+   "ps": 204.79,
+   "pr": 156.84,
+   "pc": 125,
+   "pi": 15842
+  },
+  {
+   "id": "303547538395012",
+   "name": "Hapad / SB / KW / Hapad [Hyper] / Brand / Exact / Group / FSG",
+   "label": "Brand / multi · Branded · Exact",
+   "type": "SB",
+   "strat": "Branded",
+   "prod": "Brand / multi",
+   "s": 107.43,
+   "r": 122.41,
+   "i": 2650,
+   "c": 28,
+   "o": 5,
+   "ps": 85.71,
+   "pr": 339.13,
+   "pc": 33,
+   "pi": 2370
+  },
+  {
+   "id": "215660923657433",
+   "name": "Metatarsal Pads / SB-Video / KW/ Hapad Metatarsal Pads / Brand / Manual / B00F4JIIPG / FSG",
+   "label": "Metatarsal Pads · Branded · Keywords",
+   "type": "SBV",
+   "strat": "Branded",
+   "prod": "Metatarsal Pads",
+   "s": 98.18,
+   "r": 265.23,
+   "i": 3794,
+   "c": 71,
+   "o": 16,
+   "ps": 85.23,
+   "pr": 440.08,
+   "pc": 64,
+   "pi": 5340
+  },
+  {
+   "id": "4024161354385",
+   "name": "Metatarsal Foot bars / SB / KW / metatarsal bar / Category / Exact / B00HZZ2C6S / FSG",
+   "label": "Metatarsal Bars · Category · Exact",
+   "type": "SB",
+   "strat": "Category",
+   "prod": "Metatarsal Bars",
+   "s": 88.65,
+   "r": 158.92,
+   "i": 672,
+   "c": 55,
+   "o": 11,
+   "ps": 51.6,
+   "pr": 78.42,
+   "pc": 37,
+   "pi": 444
+  },
+  {
+   "id": "202057601318963",
+   "name": "Heel Lifts / SD / Contextual / Category / Group / FSG",
+   "label": "Brand / multi · Category · Audience",
+   "type": "SD",
+   "strat": "Category",
+   "prod": "Brand / multi",
+   "s": 80.36,
+   "r": 16.49,
+   "i": 48080,
+   "c": 79,
+   "o": 2,
+   "ps": 148.33,
+   "pr": 64.45,
+   "pc": 148,
+   "pi": 96096
+  },
+  {
+   "id": "313763752330496",
+   "name": "Metatarsal Pad / SP / AUTO /  Category / Close Match / B0FV9X2WFQ / FSG",
+   "label": "Long. Arch Pads · Auto · Auto",
+   "type": "SP",
+   "strat": "Auto",
+   "prod": "Long. Arch Pads",
+   "s": 73.74,
+   "r": 83.95,
+   "i": 4631,
+   "c": 72,
+   "o": 10,
+   "ps": 59.74,
+   "pr": 109.72,
+   "pc": 59,
+   "pi": 3887
+  },
+  {
+   "id": "95608723166143",
+   "name": "Heel Pads / SP / KW / Heel [Hyper] / Category / Broad / Group: Pack of 1 / FSG",
+   "label": "Brand / multi · Category · Broad",
+   "type": "SP",
+   "strat": "Category",
+   "prod": "Brand / multi",
+   "s": 70.87,
+   "r": 84.39,
+   "i": 4080,
+   "c": 43,
+   "o": 5,
+   "ps": 71.38,
+   "pr": 54.8,
+   "pc": 43,
+   "pi": 5608
+  },
+  {
+   "id": "230335397512544",
+   "name": "Heel Wedge / SP / Auto  / Category / B0FVHR4T99 / FSG",
+   "label": "Posting Heel Wedge · Auto · Auto",
+   "type": "SP",
+   "strat": "Auto",
+   "prod": "Posting Heel Wedge",
+   "s": 68.84,
+   "r": 115.61,
+   "i": 14720,
+   "c": 50,
+   "o": 8,
+   "ps": 114.21,
+   "pr": 137.47,
+   "pc": 76,
+   "pi": 18728
+  },
+  {
+   "id": "166221547463071",
+   "name": "Insoles / SP / PT / Ball of Foot Cushions / Category / B008DW1DJE / FSG",
+   "label": "Metatarsal Pads · Category · Product targets",
+   "type": "SP",
+   "strat": "Category",
+   "prod": "Metatarsal Pads",
+   "s": 61.53,
+   "r": 67.62,
+   "i": 4642,
+   "c": 24,
+   "o": 2,
+   "ps": 183.46,
+   "pr": 175.2,
+   "pc": 73,
+   "pi": 13197
+  },
+  {
+   "id": "71576839097182",
+   "name": "Heel Wedge / SP / KW / Posting Heel Wedges / Category / Auto / B00F4JHJBU / FSG",
+   "label": "Brand / multi · Auto · Auto",
+   "type": "SP",
+   "strat": "Auto",
+   "prod": "Brand / multi",
+   "s": 61.24,
+   "r": 75.35,
+   "i": 13996,
+   "c": 51,
+   "o": 6,
+   "ps": 100.46,
+   "pr": 74.5,
+   "pc": 81,
+   "pi": 15895
+  },
+  {
+   "id": "96981577776055",
+   "name": "Scaphoid Pads / SP / Auto  / Category / B00LG59D2O / FSG",
+   "label": "Scaphoid Pads · Auto · Auto",
+   "type": "SP",
+   "strat": "Auto",
+   "prod": "Scaphoid Pads",
+   "s": 56.37,
+   "r": 74.79,
+   "i": 5274,
+   "c": 56,
+   "o": 8,
+   "ps": 29.24,
+   "pr": 38.25,
+   "pc": 30,
+   "pi": 3411
+  },
+  {
+   "id": "158967166022182",
+   "name": "Metatarsal Foot Pads / SB-Video / KW / Hapad Metatarsal Pads / Brand / Manual / B008DW1DJE / FSG",
+   "label": "Metatarsal Pads · Branded · Keywords",
+   "type": "SBV",
+   "strat": "Branded",
+   "prod": "Metatarsal Pads",
+   "s": 56.26,
+   "r": 255.65,
+   "i": 1043,
+   "c": 20,
+   "o": 10,
+   "ps": 20.87,
+   "pr": 123.26,
+   "pc": 9,
+   "pi": 535
+  },
+  {
+   "id": "179364910455202",
+   "name": "Heel Lifts / SP / AUTO / Category / B00LES1ZGU / FSG",
+   "label": "Heel Lifts 2.5\" · Auto · Auto",
+   "type": "SP",
+   "strat": "Auto",
+   "prod": "Heel Lifts 2.5\"",
+   "s": 55.27,
+   "r": 123.11,
+   "i": 6533,
+   "c": 62,
+   "o": 9,
+   "ps": 12.64,
+   "pr": 57.96,
+   "pc": 14,
+   "pi": 432
+  },
+  {
+   "id": "221610378077056",
+   "name": "Metatarsal Pads Pack of 1 / SP / KW / metatarsal pad / Category / Broad / B00LG4MCBE / FSG",
+   "label": "Morton's Neuroma Pads · Category · Broad",
+   "type": "SP",
+   "strat": "Category",
+   "prod": "Morton's Neuroma Pads",
+   "s": 52.7,
+   "r": 80.35,
+   "i": 9391,
+   "c": 46,
+   "o": 7,
+   "ps": 44.21,
+   "pr": 47.99,
+   "pc": 39,
+   "pi": 6920
+  },
+  {
+   "id": "253619545004311",
+   "name": "Insoles / SP / KW / Shoe Insoles / Category / Auto / Group / FSG",
+   "label": "Brand / multi · Auto · Auto",
+   "type": "SP",
+   "strat": "Auto",
+   "prod": "Brand / multi",
+   "s": 43.13,
+   "r": 73.97,
+   "i": 3265,
+   "c": 33,
+   "o": 4,
+   "ps": 44.53,
+   "pr": 141.17,
+   "pc": 37,
+   "pi": 2394
+  },
+  {
+   "id": "162942967339438",
+   "name": "Metatarsal Foot Pads / SB / KW / metatarsal pad / Category / Exact / B008DW1DS0 / FSG",
+   "label": "Metatarsal Pads · Category · Exact",
+   "type": "SB",
+   "strat": "Category",
+   "prod": "Metatarsal Pads",
+   "s": 42.43,
+   "r": 19.98,
+   "i": 771,
+   "c": 17,
+   "o": 2,
+   "ps": 27.67,
+   "pr": 23.84,
+   "pc": 12,
+   "pi": 650
+  },
+  {
+   "id": "238967849017283",
+   "name": "Metatarsal Pads / SP / Auto / Category / B00F4JIIPG / FSG",
+   "label": "Metatarsal Pads · Auto · Auto",
+   "type": "SP",
+   "strat": "Auto",
+   "prod": "Metatarsal Pads",
+   "s": 40.09,
+   "r": 39.96,
+   "i": 5403,
+   "c": 35,
+   "o": 4,
+   "ps": 23.5,
+   "pr": 49.95,
+   "pc": 23,
+   "pi": 5208
+  },
+  {
+   "id": "24579876853238",
+   "name": "Metatarsal Pad / SP / SKW / Hapad Metatarsal Pads / Brand / Exact / Group / FSG",
+   "label": "Brand / multi · Branded · Exact",
+   "type": "SP",
+   "strat": "Branded",
+   "prod": "Brand / multi",
+   "s": 37.59,
+   "r": 232.25,
+   "i": 2813,
+   "c": 38,
+   "o": 20,
+   "ps": 11.64,
+   "pr": 76.0,
+   "pc": 13,
+   "pi": 976
+  },
+  {
+   "id": "19716010054534",
+   "name": "Dancer Pad 5/16 / SP / Auto  / Category / B0GXHBHBPZ / FSG",
+   "label": "Brand / multi · Auto · Auto",
+   "type": "SP",
+   "strat": "Auto",
+   "prod": "Brand / multi",
+   "s": 26.91,
+   "r": 0.0,
+   "i": 958,
+   "c": 22,
+   "o": 0,
+   "ps": 11.65,
+   "pr": 26.75,
+   "pc": 10,
+   "pi": 755
+  },
+  {
+   "id": "101536213205867",
+   "name": "Metatarsal Pads / SB / KW / hapad / Brand / Exact / Group / FSG",
+   "label": "Brand / multi · Branded · Exact",
+   "type": "SB",
+   "strat": "Branded",
+   "prod": "Brand / multi",
+   "s": 23.32,
+   "r": 0.0,
+   "i": 1239,
+   "c": 9,
+   "o": 0,
+   "ps": 19.44,
+   "pr": 0.0,
+   "pc": 8,
+   "pi": 540
+  },
+  {
+   "id": "3982995894507",
+   "name": "Dancer Pads / SD / Contextual / Category / B07HN67269 / FSG",
+   "label": "Brand / multi · Category · Audience",
+   "type": "SD",
+   "strat": "Category",
+   "prod": "Brand / multi",
+   "s": 21.94,
+   "r": 0.0,
+   "i": 14776,
+   "c": 50,
+   "o": 0,
+   "ps": 0.0,
+   "pr": 0.0,
+   "pc": 0,
+   "pi": 0
+  },
+  {
+   "id": "233592516745008",
+   "name": "Metatarsal Foot Bar / SB-Video / KW / Hapad Metatarsal Bars / Brand / Manual / B00LES3FS6 / FSG",
+   "label": "Metatarsal Bars · Branded · Keywords",
+   "type": "SBV",
+   "strat": "Branded",
+   "prod": "Metatarsal Bars",
+   "s": 16.09,
+   "r": 59.94,
+   "i": 499,
+   "c": 12,
+   "o": 4,
+   "ps": 20.86,
+   "pr": 72.03,
+   "pc": 9,
+   "pi": 455
+  },
+  {
+   "id": "3311700806356",
+   "name": "Formal Fit Insole / SP / KW / Insoles for Women / Category / Broad / B00NVQ2BC0 / FSG",
+   "label": "Brand / multi · Category · Broad",
+   "type": "SP",
+   "strat": "Category",
+   "prod": "Brand / multi",
+   "s": 13.19,
+   "r": 0.0,
+   "i": 846,
+   "c": 14,
+   "o": 0,
+   "ps": 11.84,
+   "pr": 0.0,
+   "pc": 12,
+   "pi": 980
+  },
+  {
+   "id": "143527443082770",
+   "name": "Heel Lifts / SP / Auto / Category / B0GTX6V5PK / FSG",
+   "label": "Brand / multi · Auto · Auto",
+   "type": "SP",
+   "strat": "Auto",
+   "prod": "Brand / multi",
+   "s": 12.42,
+   "r": 107.72,
+   "i": 1234,
+   "c": 11,
+   "o": 4,
+   "ps": 14.43,
+   "pr": 74.48,
+   "pc": 13,
+   "pi": 1507
+  },
+  {
+   "id": "183206256366158",
+   "name": "Active Shoe Insole / SP / SKW / insoles for women / Category / Exact / B0FSG16H2J/ FSG",
+   "label": "Brand / multi · Category · Exact",
+   "type": "SP",
+   "strat": "Category",
+   "prod": "Brand / multi",
+   "s": 0.0,
+   "r": 0.0,
+   "i": 0,
+   "c": 0,
+   "o": 0,
+   "ps": 10.76,
+   "pr": 0.0,
+   "pc": 4,
+   "pi": 1125
+  },
+  {
+   "id": "52064776363062",
+   "name": "Longitudinal Metatarsal Pad / SB / KW / metatarsal bar / Category / Exact / B078JTQ2JS / FSG",
+   "label": "Long. Arch Pads · Category · Exact",
+   "type": "SB",
+   "strat": "Category",
+   "prod": "Long. Arch Pads",
+   "s": 0.0,
+   "r": 0.0,
+   "i": 0,
+   "c": 0,
+   "o": 0,
+   "ps": 11.02,
+   "pr": 0.0,
+   "pc": 6,
+   "pi": 155
+  },
+  {
+   "id": "16038949572319",
+   "name": "Metatarsal Pads / SP / PT / Pads / Competitor / PT - ST / B010OUP2C6 / FSG",
+   "label": "Metatarsal Pads · Competitor · Product targets",
+   "type": "SP",
+   "strat": "Competitor",
+   "prod": "Metatarsal Pads",
+   "s": 0.0,
+   "r": 0.0,
+   "i": 0,
+   "c": 0,
+   "o": 0,
+   "ps": 13.21,
+   "pr": 9.99,
+   "pc": 11,
+   "pi": 912
+  }
+ ],
+ "STRAT_LABEL": {
+  "Branded": "Branded keywords",
+  "Category": "Category keywords",
+  "Competitor": "Competitor targeting",
+  "Defense": "Brand defense (product targets)",
+  "Auto": "Auto targeting",
+  "Audience": "Audience / category display",
+  "Remarketing": "Remarketing",
+  "Other": "Other"
+ },
+ "TYPE_LABEL": {
+  "SP": "Sponsored Products",
+  "SB": "Sponsored Brands",
+  "SBV": "Sponsored Brands Video",
+  "SD": "Sponsored Display",
+  "ST": "Streaming TV"
+ },
+ "KW": {
+  "s": "2026-10-26",
+  "e": "2026-11-01",
+  "tot": {
+   "spend": 2049.36,
+   "sales": 5210.22,
+   "orders": 249,
+   "clicks": 1053,
+   "impressions": 89227
+  },
+  "rows": [
+   [
+    "hapad metatarsal pads",
+    "Broad",
+    "SB",
+    3,
+    1,
+    506.78,
+    1005.77,
+    244,
+    42,
+    47,
+    11957,
+    14.1,
+    null
+   ],
+   [
+    "hapad",
+    "Phrase",
+    "SP/SB",
+    3,
+    1,
+    435.07,
+    1550.84,
+    163,
+    59,
+    61,
+    9861,
+    3.3,
+    null
+   ],
+   [
+    "metatarsal pads",
+    "Phrase",
+    "SP",
+    1,
+    0,
+    242.93,
+    400.87,
+    132,
+    29,
+    29,
+    11523,
+    5.9,
+    null
+   ],
+   [
+    "metatarsal pads men",
+    "Broad",
+    "SB",
+    1,
+    0,
+    125.42,
+    205.68,
+    37,
+    7,
+    7,
+    2555,
+    3.3,
+    null
+   ],
+   [
+    "metatarsal pads",
+    "Broad",
+    "SB",
+    1,
+    0,
+    96.14,
+    107.58,
+    41,
+    6,
+    6,
+    14222,
+    0.7,
+    null
+   ],
+   [
+    "heel lift felt",
+    "Broad",
+    "SP",
+    1,
+    0,
+    74.96,
+    109.38,
+    45,
+    7,
+    7,
+    5043,
+    0.3,
+    null
+   ],
+   [
+    "metatarsal pad",
+    "Exact",
+    "SB",
+    1,
+    0,
+    63.88,
+    100.07,
+    27,
+    5,
+    5,
+    1136,
+    2.8,
+    null
+   ],
+   [
+    "metatarsal pad",
+    "Broad",
+    "SP",
+    1,
+    0,
+    46.46,
+    80.35,
+    40,
+    7,
+    9,
+    9403,
+    0.1,
+    null
+   ],
+   [
+    "hapad metatarsal pads",
+    "Exact",
+    "SP",
+    1,
+    1,
+    37.87,
+    262.22,
+    39,
+    23,
+    23,
+    2944,
+    35.2,
+    null
+   ],
+   [
+    "metatarsal bars women",
+    "Exact",
+    "SB",
+    1,
+    0,
+    31.29,
+    33.96,
+    21,
+    4,
+    4,
+    220,
+    7.0,
+    null
+   ],
+   [
+    "hapad shoe inserts",
+    "Exact",
+    "SB",
+    1,
+    1,
+    29.82,
+    9.69,
+    13,
+    1,
+    1,
+    1345,
+    1.4,
+    null
+   ],
+   [
+    "longitudinal metatarsal arch pads",
+    "Exact",
+    "SB",
+    1,
+    0,
+    26.09,
+    125.61,
+    8,
+    3,
+    5,
+    247,
+    2.0,
+    null
+   ],
+   [
+    "hapad metatarsal pads",
+    "Phrase",
+    "SB",
+    1,
+    1,
+    21.26,
+    162.68,
+    5,
+    5,
+    7,
+    158,
+    36.5,
+    null
+   ],
+   [
+    "metatarsal bars mens",
+    "Exact",
+    "SB",
+    1,
+    0,
+    20.16,
+    58.03,
+    10,
+    3,
+    3,
+    105,
+    15.4,
+    null
+   ],
+   [
+    "hapad metatarsal pad",
+    "Exact",
+    "SB",
+    1,
+    1,
+    17.85,
+    63.4,
+    6,
+    4,
+    4,
+    223,
+    26.8,
+    null
+   ],
+   [
+    "metatarsal bars",
+    "Exact",
+    "SB",
+    1,
+    0,
+    16.82,
+    8.49,
+    13,
+    1,
+    1,
+    124,
+    18.7,
+    null
+   ],
+   [
+    "arch support inserts",
+    "Exact",
+    "SB",
+    1,
+    0,
+    14.92,
+    28.26,
+    13,
+    2,
+    3,
+    233,
+    9.1,
+    null
+   ],
+   [
+    "felt heel cushion pad",
+    "Exact",
+    "SB",
+    1,
+    0,
+    14.86,
+    9.99,
+    7,
+    1,
+    1,
+    152,
+    15.0,
+    null
+   ],
+   [
+    "hapad",
+    "Broad",
+    "SB",
+    1,
+    1,
+    14.54,
+    0.0,
+    8,
+    0,
+    0,
+    849,
+    0.7,
+    null
+   ],
+   [
+    "hapad metatarsal pad",
+    "Broad",
+    "SB",
+    1,
+    1,
+    12.09,
+    29.57,
+    9,
+    1,
+    1,
+    261,
+    7.3,
+    null
+   ],
+   [
+    "metatarsal hapad",
+    "Broad",
+    "SB",
+    1,
+    1,
+    10.31,
+    178.0,
+    9,
+    6,
+    6,
+    297,
+    1.7,
+    null
+   ]
+  ]
+ },
+ "weekCur": [
+  [
+   "B008DW1DS0",
+   5354.41,
+   175
+  ],
+  [
+   "B008DW1DJE",
+   1878.53,
+   49
+  ],
+  [
+   "B008DW1EX4",
+   1631.55,
+   55
+  ],
+  [
+   "B00F4JIIPG",
+   863.25,
+   84
+  ],
+  [
+   "B00LERXYBU",
+   816.87,
+   80
+  ],
+  [
+   "B0FVHR4T99",
+   759.96,
+   74
+  ],
+  [
+   "B00LG4MCBE",
+   638.18,
+   81
+  ],
+  [
+   "B0FVHJKYF6",
+   623.54,
+   60
+  ],
+  [
+   "B01M3YC42J",
+   505.03,
+   49
+  ],
+  [
+   "B00LES3FS6",
+   481.66,
+   46
+  ],
+  [
+   "B00LG59D2O",
+   443.97,
+   43
+  ],
+  [
+   "B010OUP2C6",
+   344.74,
+   34
+  ],
+  [
+   "B00F4JHJBU",
+   332.8,
+   33
+  ],
+  [
+   "B07HN67269",
+   325.98,
+   38
+  ],
+  [
+   "B00HZZ2C6S",
+   322.45,
+   36
+  ],
+  [
+   "B0FVBFL2HM",
+   320.17,
+   11
+  ],
+  [
+   "B01IQCF74W",
+   270.38,
+   10
+  ],
+  [
+   "B00A29WHQ4",
+   235.85,
+   9
+  ],
+  [
+   "B00LG5728G",
+   234.3,
+   27
+  ],
+  [
+   "B0FVB22JHB",
+   203.66,
+   5
+  ],
+  [
+   "B078JTQ2JS",
+   193.41,
+   19
+  ],
+  [
+   "B01IQC8KVO",
+   185.79,
+   18
+  ],
+  [
+   "B07HMTP7ZQ",
+   163.72,
+   10
+  ],
+  [
+   "B00LES1ZGU",
+   154.06,
+   15
+  ],
+  [
+   "B0FVJ6QLDQ",
+   143.44,
+   5
+  ],
+  [
+   "B07HN7CS4V",
+   142.72,
+   14
+  ],
+  [
+   "B01M35NX3P",
+   141.96,
+   5
+  ],
+  [
+   "B0FSGCLKZJ",
+   141.08,
+   6
+  ],
+  [
+   "B0GTX6V5PK",
+   115.68,
+   4
+  ],
+  [
+   "B01IC4EHXG",
+   113.5,
+   4
+  ],
+  [
+   "B00LES208C",
+   110.98,
+   16
+  ],
+  [
+   "B07BKLK5SG",
+   100.76,
+   7
+  ],
+  [
+   "B0FSFYF455",
+   93.77,
+   9
+  ],
+  [
+   "B01M5JP754",
+   85.63,
+   8
+  ],
+  [
+   "B0GVZZJLVH",
+   83.86,
+   3
+  ],
+  [
+   "B01M35JS22",
+   83.26,
+   8
+  ],
+  [
+   "B0FSG5HP8T",
+   74.07,
+   4
+  ],
+  [
+   "B00UNZME6A",
+   62.64,
+   6
+  ],
+  [
+   "B0FV9X2CFW",
+   59.55,
+   2
+  ],
+  [
+   "B01IQCE86A",
+   56.14,
+   2
+  ],
+  [
+   "B0GV5VQ4KG",
+   52.0,
+   2
+  ],
+  [
+   "B0GLJY14YR",
+   51.47,
+   6
+  ],
+  [
+   "B0FSG9392W",
+   48.99,
+   2
+  ],
+  [
+   "B0FSG5987L",
+   45.1,
+   2
+  ],
+  [
+   "B07BKLSWLB",
+   45.0,
+   3
+  ],
+  [
+   "B0GV5K9V13",
+   41.6,
+   2
+  ],
+  [
+   "B01IQC7WKE",
+   41.01,
+   4
+  ],
+  [
+   "B07BKLHDGW",
+   31.23,
+   2
+  ],
+  [
+   "B07HMWM45F",
+   30.16,
+   3
+  ],
+  [
+   "B010OVDLD2",
+   29.95,
+   2
+  ],
+  [
+   "B01FWL1LK4",
+   29.23,
+   1
+  ],
+  [
+   "B0GV5VJT2D",
+   26.0,
+   1
+  ],
+  [
+   "B0FV9X2WFQ",
+   25.99,
+   1
+  ],
+  [
+   "B0GVVZLRHP",
+   25.42,
+   1
+  ],
+  [
+   "B0FSG16H2J",
+   24.75,
+   1
+  ],
+  [
+   "B0GV6FCG3V",
+   23.7,
+   1
+  ],
+  [
+   "B0FSGBWHQL",
+   23.5,
+   1
+  ],
+  [
+   "B0GVVSK1QX",
+   23.5,
+   1
+  ],
+  [
+   "B0FSG696RB",
+   21.04,
+   1
+  ],
+  [
+   "B0FSG8XL99",
+   21.04,
+   1
+  ],
+  [
+   "B07BKN7WMD",
+   21.0,
+   2
+  ],
+  [
+   "OTHER-SMALL",
+   206.17,
+   14
+  ]
+ ],
+ "weekPrev": [
+  [
+   "B008DW1DS0",
+   5329.23,
+   174
+  ],
+  [
+   "B008DW1EX4",
+   1716.66,
+   54
+  ],
+  [
+   "B008DW1DJE",
+   1353.62,
+   35
+  ],
+  [
+   "B00LERXYBU",
+   1046.81,
+   102
+  ],
+  [
+   "B0FVHR4T99",
+   943.07,
+   90
+  ],
+  [
+   "B00LG4MCBE",
+   882.84,
+   110
+  ],
+  [
+   "B00F4JIIPG",
+   689.24,
+   66
+  ],
+  [
+   "B0FVHJKYF6",
+   568.33,
+   54
+  ],
+  [
+   "B00LG59D2O",
+   543.22,
+   52
+  ],
+  [
+   "B010OUP2C6",
+   434.53,
+   41
+  ],
+  [
+   "B01M3YC42J",
+   358.31,
+   33
+  ],
+  [
+   "B00F4JHJBU",
+   357.38,
+   35
+  ],
+  [
+   "B07HN67269",
+   352.06,
+   40
+  ],
+  [
+   "B00HZZ2C6S",
+   240.14,
+   27
+  ],
+  [
+   "B00LES1ZGU",
+   224.76,
+   22
+  ],
+  [
+   "B078JTQ2JS",
+   222.96,
+   21
+  ],
+  [
+   "B0FVB22JHB",
+   205.63,
+   5
+  ],
+  [
+   "B01M35NX3P",
+   203.35,
+   7
+  ],
+  [
+   "B00UNZME6A",
+   199.84,
+   19
+  ],
+  [
+   "B01IQCF74W",
+   168.13,
+   7
+  ],
+  [
+   "B00LES3FS6",
+   165.54,
+   16
+  ],
+  [
+   "B00LG5728G",
+   162.35,
+   19
+  ],
+  [
+   "B0FVBFL2HM",
+   141.86,
+   5
+  ],
+  [
+   "B01IQC8KVO",
+   137.26,
+   13
+  ],
+  [
+   "B00A29WHQ4",
+   131.67,
+   5
+  ],
+  [
+   "B010OVDLD2",
+   126.8,
+   8
+  ],
+  [
+   "B07BKLK5SG",
+   125.26,
+   8
+  ],
+  [
+   "B0FSFYF455",
+   116.69,
+   11
+  ],
+  [
+   "B0GTX6V5PK",
+   109.27,
+   4
+  ],
+  [
+   "B0FV9X2WFQ",
+   100.06,
+   4
+  ],
+  [
+   "B07HMTP7ZQ",
+   97.62,
+   6
+  ],
+  [
+   "B01IC4EHXG",
+   86.72,
+   3
+  ],
+  [
+   "B00LES208C",
+   83.68,
+   12
+  ],
+  [
+   "B0GD2NN9HB",
+   83.58,
+   3
+  ],
+  [
+   "B0FSG9392W",
+   70.56,
+   3
+  ],
+  [
+   "B0GLJY14YR",
+   59.94,
+   6
+  ],
+  [
+   "B01IQCE86A",
+   52.05,
+   2
+  ],
+  [
+   "B01M35JS22",
+   51.79,
+   6
+  ],
+  [
+   "B01IQC7WKE",
+   40.78,
+   4
+  ],
+  [
+   "B07HMWM45F",
+   10.69,
+   1
+  ],
+  [
+   "OTHER-SMALL",
+   695.12,
+   45
+  ]
+ ],
+ "groupOf": {
+  "B0GLJY14YR": "g7",
+  "B00LES3FS6": "g3",
+  "B07HN67269": "pr",
+  "B0FSFYF455": "g1",
+  "B0FVHJKYF6": "g3",
+  "B00A29WHQ4": "pr",
+  "B00LES1ZGU": "g7",
+  "B0FSG16H2J": "pr",
+  "B0FVJ6QLDQ": "g7",
+  "B00LG59D2O": "g2",
+  "B0GV5K9V13": "pr",
+  "B0GVVZLRHP": "pr",
+  "B07BKLHDGW": "pr",
+  "B0GV6FCG3V": "pr",
+  "B010OUP2C6": "g1",
+  "B00HZZ2C6S": "g3",
+  "B0FSG5HP8T": "pr",
+  "B0FSGBWHQL": "pr",
+  "B0FSG8XL99": "pr",
+  "B0FVBFL2HM": "g6",
+  "B008DW1EX4": "g1",
+  "B010OVDLD2": "pr",
+  "B01IQCE86A": "g7",
+  "B00F4JHJBU": "pr",
+  "B0GVVSK1QX": "pr",
+  "B07BKLSWLB": "pr",
+  "B0FV9X2WFQ": "g6",
+  "B01M35NX3P": "g6",
+  "B0FVHR4T99": "g4",
+  "B0GTX6V5PK": "pr",
+  "B00F4JIIPG": "g1",
+  "B01M35JS22": "g6",
+  "B00LG5728G": "g2",
+  "B01IQC7WKE": "g6",
+  "B0FSG9392W": "pr",
+  "B07BKN7WMD": "pr",
+  "OTHER-SMALL": "pr",
+  "B07BKLK5SG": "pr",
+  "B0GV5VQ4KG": "pr",
+  "B0FV9X2CFW": "pr",
+  "B00LES208C": "pr",
+  "B00LG4MCBE": "g5",
+  "B07HMTP7ZQ": "pr",
+  "B01M3YC42J": "pr",
+  "B0FSGCLKZJ": "pr",
+  "B0FSG5987L": "pr",
+  "B01FWL1LK4": "pr",
+  "B0FSG696RB": "pr",
+  "B00LERXYBU": "g2",
+  "B0FVB22JHB": "g1",
+  "B01IQC8KVO": "g1",
+  "B01M5JP754": "g6",
+  "B00UNZME6A": "g7",
+  "B0GV5VJT2D": "pr",
+  "B01IQCF74W": "g7",
+  "B078JTQ2JS": "g6",
+  "B0GVZZJLVH": "pr",
+  "B07HMWM45F": "g6",
+  "B0GD2NN9HB": "g6",
+  "B07HN7CS4V": "pr",
+  "B008DW1DJE": "g1",
+  "B008DW1DS0": "g1",
+  "B01IC4EHXG": "g7"
+ }
+}

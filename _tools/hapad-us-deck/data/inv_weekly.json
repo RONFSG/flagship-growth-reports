@@ -1,0 +1,143 @@
+{
+ "INV": {
+  "asOf": "",
+  "lastWeek": 44,
+  "rows": [
+   {
+    "key": "g1",
+    "name": "Metatarsal Pads (XS-L, 1 pair and 6-pair packs)",
+    "short": "Metatarsal Pads",
+    "col": "--c1",
+    "asin": "B008DW1DJE",
+    "sku": "",
+    "wk": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "key": "g2",
+    "name": "Scaphoid Pads (S-L)",
+    "short": "Scaphoid Pads",
+    "col": "--c2",
+    "asin": "B00LERXYBU",
+    "sku": "",
+    "wk": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "key": "g3",
+    "name": "Metatarsal Bars (S-L)",
+    "short": "Metatarsal Bars",
+    "col": "--c3",
+    "asin": "B00HZZ2C6S",
+    "sku": "",
+    "wk": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "key": "g4",
+    "name": "Posting Heel Wedge",
+    "short": "Posting Heel Wedge",
+    "col": "--c4",
+    "asin": "B0FVHR4T99",
+    "sku": "",
+    "wk": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "key": "g5",
+    "name": "Morton's Neuroma Pads",
+    "short": "Morton's Neuroma Pads",
+    "col": "--c5",
+    "asin": "B00LG4MCBE",
+    "sku": "",
+    "wk": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "key": "g6",
+    "name": "Longitudinal Metatarsal Arch Pads",
+    "short": "Long. Arch Pads",
+    "col": "--c6",
+    "asin": "B01M35NX3P",
+    "sku": "",
+    "wk": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "key": "g7",
+    "name": "Heel Lifts 2.5\" (all heights, 1 and 3-pair packs)",
+    "short": "Heel Lifts 2.5\"",
+    "col": "--c7",
+    "asin": "B00LES1ZGU",
+    "sku": "",
+    "wk": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "key": "pr",
+    "name": "Other products",
+    "short": "Other products",
+    "col": "--c8",
+    "asin": "",
+    "sku": "",
+    "wk": [
+     0,
+     0,
+     0,
+     0
+    ]
+   }
+  ]
+ },
+ "WEEKLY": {
+  "sales": [
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   []
+  ],
+  "units": [
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   []
+  ]
+ },
+ "notes": "Weekly sales/units by product line"
+}

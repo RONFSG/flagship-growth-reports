@@ -1,0 +1,415 @@
+{
+ "_source": "Sellerise MCP, account Hapad, marketplace US, pulled 2026-11-02 (Monday-Sunday weeks; 4-week table from the saved weekly totals)",
+ "weeks": [
+  {
+   "label": "Oct 5 – 11",
+   "revenue": 24124.66,
+   "units": 1706,
+   "orders": 1371,
+   "impressions": 428092,
+   "clicks": 2724,
+   "refundUnits": 60,
+   "refundRate": 4.38,
+   "spend": 3509.87,
+   "adSales": 10105.69,
+   "acos": 34.73,
+   "tacos": 14.55
+  },
+  {
+   "label": "Oct 12 – 18",
+   "revenue": 18101.51,
+   "units": 1126,
+   "orders": 930,
+   "impressions": 293982,
+   "clicks": 1902,
+   "refundUnits": 102,
+   "refundRate": 10.97,
+   "spend": 2078.59,
+   "adSales": 8291.83,
+   "acos": 25.07,
+   "tacos": 11.48
+  },
+  {
+   "label": "Oct 19 – 25",
+   "revenue": 18689.4,
+   "units": 1178,
+   "orders": 954,
+   "impressions": 342350,
+   "clicks": 1901,
+   "refundUnits": 75,
+   "refundRate": 7.86,
+   "spend": 2720.37,
+   "adSales": 6981.48,
+   "acos": 38.97,
+   "tacos": 14.56
+  },
+  {
+   "label": "Oct 26 – Nov 1",
+   "revenue": 19781.15,
+   "units": 1218,
+   "orders": 1000,
+   "impressions": 305108,
+   "clicks": 2061,
+   "refundUnits": 72,
+   "refundRate": 7.2,
+   "spend": 3057.74,
+   "adSales": 7254.71,
+   "acos": 42.15,
+   "tacos": 15.46,
+   "net": 8254.5,
+   "refunds": 943.43,
+   "adOrders": 357,
+   "cpc": 1.48,
+   "cvr": 17.32
+  }
+ ],
+ "mtd": {
+  "through": "2026-11-01",
+  "days": 1,
+  "revenue": 2319.3,
+  "units": 157,
+  "orders": 131,
+  "spend": 398.92,
+  "adSales": 827.77,
+  "acos": 48.19,
+  "tacos": 17.2,
+  "refundRate": 5.34
+ },
+ "mtdLY": {
+  "revenue": 239.69,
+  "units": 13,
+  "orders": 11,
+  "spend": 0,
+  "adSales": 0,
+  "acos": 0,
+  "tacos": 0,
+  "refundRate": 9.09
+ },
+ "daily": [
+  [
+   "2026-10-19",
+   2546.2,
+   332.31,
+   1092.05,
+   141,
+   55
+  ],
+  [
+   "2026-10-20",
+   2861.79,
+   370.25,
+   952.16,
+   139,
+   56
+  ],
+  [
+   "2026-10-21",
+   2759.57,
+   381.25,
+   1027.78,
+   144,
+   52
+  ],
+  [
+   "2026-10-22",
+   3123.82,
+   383.99,
+   1035.94,
+   144,
+   55
+  ],
+  [
+   "2026-10-23",
+   2339.88,
+   394.14,
+   747.5,
+   125,
+   40
+  ],
+  [
+   "2026-10-24",
+   2548.74,
+   447.82,
+   1010.33,
+   127,
+   48
+  ],
+  [
+   "2026-10-25",
+   2509.4,
+   410.61,
+   1115.72,
+   134,
+   61
+  ],
+  [
+   "2026-10-26",
+   2866.49,
+   449.42,
+   1099.55,
+   145,
+   55
+  ],
+  [
+   "2026-10-27",
+   2739.47,
+   441.24,
+   918.83,
+   140,
+   49
+  ],
+  [
+   "2026-10-28",
+   3322.12,
+   465.1,
+   1517.95,
+   156,
+   62
+  ],
+  [
+   "2026-10-29",
+   3360.81,
+   467.76,
+   1323.89,
+   172,
+   67
+  ],
+  [
+   "2026-10-30",
+   2670.27,
+   414.86,
+   798.97,
+   134,
+   40
+  ],
+  [
+   "2026-10-31",
+   2502.69,
+   420.44,
+   767.75,
+   122,
+   37
+  ],
+  [
+   "2026-11-01",
+   2319.3,
+   398.92,
+   827.77,
+   131,
+   47
+  ]
+ ],
+ "searchTerms": {
+  "total": 634,
+  "winners": 22,
+  "harvest": 13,
+  "negative": 1,
+  "noPurchase": 1,
+  "rows": [
+   [
+    "hapad metatarsal pads",
+    "SP",
+    4088,
+    78,
+    37,
+    112.47,
+    633.85
+   ],
+   [
+    "hapad metatarsal pads",
+    "SB",
+    433,
+    23,
+    10,
+    61.63,
+    162.9
+   ],
+   [
+    "hapad metatarsal pads women",
+    "SB",
+    34,
+    7,
+    4,
+    20.09,
+    116.7
+   ],
+   [
+    "hapad neuroma pads",
+    "SB",
+    7,
+    4,
+    4,
+    12.5,
+    98.02
+   ],
+   [
+    "hapad metatarsal pads women",
+    "SP",
+    1164,
+    16,
+    3,
+    40.81,
+    97.19
+   ],
+   [
+    "hapad",
+    "SB",
+    11,
+    2,
+    1,
+    0.44,
+    79.73
+   ],
+   [
+    "metatarsal pads women hapad",
+    "SP",
+    3,
+    2,
+    2,
+    1.77,
+    69.57
+   ],
+   [
+    "pedag t-form or hapad metatarsal pad",
+    "SP",
+    633,
+    8,
+    2,
+    54.22,
+    67.62
+   ]
+  ],
+  "category": [
+   [
+    "metatarsal bars",
+    "SP",
+    755,
+    19,
+    7,
+    6.21,
+    170.19
+   ],
+   [
+    "metatarsal pads mens",
+    "SB",
+    612,
+    21,
+    6,
+    70.19,
+    168.17
+   ],
+   [
+    "metatarsal pads mens",
+    "SP",
+    4064,
+    38,
+    8,
+    64.08,
+    117.5
+   ],
+   [
+    "longitudinal metatarsal arch pads",
+    "SB",
+    14,
+    2,
+    2,
+    3.61,
+    117.12
+   ],
+   [
+    "hapeed metatarsal pads",
+    "SB",
+    1,
+    1,
+    1,
+    2.47,
+    88.71
+   ]
+  ]
+ },
+ "targets": {
+  "total": 449,
+  "winners": 29,
+  "needsAttention": 45,
+  "highAcos": 18,
+  "noSales": 2,
+  "lowCtr": 7,
+  "rows": [
+   [
+    "hapad metatarsal pads (SB)",
+    "Broad",
+    "Brand",
+    413.02,
+    838.72,
+    49.24,
+    189,
+    32
+   ],
+   [
+    "metatarsal pads",
+    "Phrase",
+    "Category",
+    242.93,
+    400.87,
+    60.6,
+    132,
+    29
+   ],
+   [
+    "hapad (SB)",
+    "Phrase",
+    "Brand",
+    139.46,
+    190.96,
+    73.03,
+    41,
+    8
+   ],
+   [
+    "metatarsal pads men (SB)",
+    "Broad",
+    "Category",
+    125.42,
+    205.68,
+    60.98,
+    37,
+    7
+   ],
+   [
+    "category: Shoe Inserts & Insoles (SD)",
+    "Category",
+    "Category",
+    105.6,
+    43.74,
+    241.43,
+    90,
+    3
+   ]
+  ]
+ },
+ "reviews": {
+  "available": false
+ },
+ "alerts": {
+  "total": 387,
+  "actionable": 112,
+  "critical": 91,
+  "warning": 21,
+  "byType": {
+   "Listing price": 93,
+   "Buy Box lost": 47,
+   "Buy Box gained": 46,
+   "Title": 43,
+   "Hijacker (liquidation)": 35,
+   "Hijacker": 33,
+   "Images": 19,
+   "Reimbursable units": 15,
+   "Days of supply": 9,
+   "Badge gained": 8,
+   "Badge lost": 8,
+   "Low inventory fee": 8,
+   "Low stock": 5,
+   "Inactive": 5
+  }
+ }
+}

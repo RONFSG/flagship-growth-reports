@@ -1,0 +1,107 @@
+{
+ "_week": "2026-10-26 to 2026-11-01 (Week 44). Written from that week's numbers; rewrite every key each Monday.",
+ "week_story": [
+  "Revenue rose 5.8% to $19,781 on 1,000 orders (+4.8%), the second-best week since September after the Prime event week.",
+  "Metatarsal Pads (53% of sales) grew 5.7% to $10,556; the Small 6-pack jumped 39% to $1,879.",
+  "Metatarsal Bars grew 47% to $1,428, while Scaphoid Pads (-15%), Posting Heel Wedge (-19%) and Neuroma Pads (-28%) slipped."
+ ],
+ "refunds_title": "Refunds eased",
+ "refunds": [
+  "Refunds fell to $943 (72 units, 7.2% of orders) from $1,051 the week before. Over the last 30 days the 2.5\" x 7/16\" Heel Lift (27%) and the 3\" Medial/Lateral Heel Wedge (16%) had the highest refund rates among bigger sellers."
+ ],
+ "pacing_reco": "November is only one day in ($2,319 on Nov 1), so the full-month pace is not meaningful yet; October closed at $88,044, the best month of the year.",
+ "ads_context": [
+  "Ad spend rose 12.4% to $3,058 while ad sales grew only 3.9% to $7,255, so ACoS rose to 42.2% (from 39.0%) and TACoS to 15.5%.",
+  "Campaign and strategy tables cover the first 50 campaign rows from Sellerise (about 87% of spend); account totals are complete."
+ ],
+ "ads_strategy": [
+  "Branded keywords returned $3,523 on $1,113 (31.6% ACoS) and brought 151 orders.",
+  "Category keywords cost $902 for $1,140 in sales (79.1% ACoS); Sponsored Display spent $102 for $16."
+ ],
+ "bid_moves": [
+  "Lower bids on the category “metatarsal pads” phrase and broad targets: $339 spent for $508 in sales.",
+  "Pause the four campaigns that spent $85 with no sales, including the Dancer Pad (Men) auto campaign while that item is out of stock."
+ ],
+ "coupons": [
+  "This week: 18 coupon orders.",
+  "Last week: 11 coupon orders."
+ ],
+ "promotions": [
+  "This week: 249 promotion orders and $533 in promotional discounts (vs 244 and $500 last week).",
+  "Discount levels are steady week to week."
+ ],
+ "events": [
+  "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+  "Deal and coupon set-up deadlines: to confirm with the account team.",
+  "Priority: keep Scaphoid Pads and Metatarsal Pads well stocked at FBA into late November."
+ ],
+ "reviews_title": "No review data in Sellerise",
+ "reviews_body": [
+  "Sellerise returned no review records, rating trend or negative reviews for the 111 Hapad US products over the last 90 days.",
+  "That means the review tracker isn't pulling for this account, not that there were no reviews."
+ ],
+ "reviews_reco": [
+  "Turn on review tracking for Hapad US in Sellerise (or pull Amazon's Customer Reviews report) so the deck can show star rating and review count per line.",
+  "Sellerise also shows 33 hijacker alerts and 47 lost-Buy-Box alerts in the last 30 days, including on the Medium 6-pack; worth checking alongside reviews."
+ ],
+ "recommendations": [
+  [
+   "Advertising",
+   "Cut bids on category “metatarsal pads” phrase/broad targets (79% category ACoS) and shift budget to branded phrase/exact, which ran at 32% ACoS.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Advertising",
+   "Pause Sponsored Display contextual targets ($102 spend, $16 sales) and the Dancer Pad (Men) auto campaign while it is out of stock.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Advertising",
+   "Add the converting search terms “hapad metatarsal pads women”, “metatarsal cookies” and “metatarsal bar for shoes” as exact keywords.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Inventory",
+   "Restock Dancer Pads (Men) and Tongue Cushions (Women), both at 0 available, and send more of the 3/4 Length Insole (Women 6), about 2 weeks left.",
+   "Inventory team",
+   "This week"
+  ],
+  [
+   "Inventory",
+   "Scaphoid Pads have 5.3 weeks available; confirm the 328 inbound units land before BF/CM.",
+   "Inventory team",
+   "Next 2 weeks"
+  ],
+  [
+   "Listings",
+   "Review the 33 hijacker and 47 lost-Buy-Box alerts, starting with the Metatarsal Pad Medium 6-pack (27% of sales).",
+   "Account team",
+   "This week"
+  ],
+  [
+   "Promotions",
+   "Lock BF/CM coupons and deals for the Metatarsal Pad 6-packs and Metatarsal Bars.",
+   "Account team",
+   "By Nov 14"
+  ]
+ ],
+ "position": [
+  "October closed at $88,044, up from $76,680 in September, and this week added $19,781 (+5.8%).",
+  "Growth came from Metatarsal Pads and Bars; ad efficiency slipped as spend grew faster than ad sales."
+ ],
+ "next_steps": [
+  "Trim category ad spend; lean on branded.",
+  "Restock the out-of-stock Dancer Pad and Tongue Cushion.",
+  "Check hijacker and Buy Box alerts.",
+  "Lock BF/CM coupons and deals."
+ ],
+ "data_ask": [
+  "Inbound ETA for Scaphoid Pads.",
+  "BF/CM deal and coupon plan.",
+  "Review tracking turned on in Sellerise.",
+  "Product costs (COGS) in Sellerise for profit reporting."
+ ]
+}

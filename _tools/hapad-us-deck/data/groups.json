@@ -1,0 +1,111 @@
+[
+ {
+  "key": "g1",
+  "short": "Metatarsal Pads",
+  "name": "Metatarsal Pads (XS-L, 1 pair and 6-pair packs)",
+  "col": "--c1",
+  "asins": [
+   "B008DW1DJE",
+   "B008DW1DS0",
+   "B008DW1EX4",
+   "B00F4JIIPG",
+   "B010OUP2C6",
+   "B01IQC8KVO",
+   "B0FSFYF455",
+   "B0FVB22JHB"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g2",
+  "short": "Scaphoid Pads",
+  "name": "Scaphoid Pads (S-L)",
+  "col": "--c2",
+  "asins": [
+   "B00LERXYBU",
+   "B00LG5728G",
+   "B00LG59D2O"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g3",
+  "short": "Metatarsal Bars",
+  "name": "Metatarsal Bars (S-L)",
+  "col": "--c3",
+  "asins": [
+   "B00HZZ2C6S",
+   "B00LES3FS6",
+   "B0FVHJKYF6"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g4",
+  "short": "Posting Heel Wedge",
+  "name": "Posting Heel Wedge",
+  "col": "--c4",
+  "asins": [
+   "B0FVHR4T99"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g5",
+  "short": "Morton's Neuroma Pads",
+  "name": "Morton's Neuroma Pads",
+  "col": "--c5",
+  "asins": [
+   "B00LG4MCBE"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g6",
+  "short": "Long. Arch Pads",
+  "name": "Longitudinal Metatarsal Arch Pads",
+  "col": "--c6",
+  "asins": [
+   "B00A29WK9I",
+   "B01IQC7WKE",
+   "B01M35JS22",
+   "B01M35NX3P",
+   "B01M5JP754",
+   "B078JTQ2JS",
+   "B07HMWM45F",
+   "B0FSGGGTTB",
+   "B0FSGK4QLJ",
+   "B0FSGMNXVV",
+   "B0FV9X2WFQ",
+   "B0FVBFL2HM",
+   "B0GD2NN9HB"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g7",
+  "short": "Heel Lifts 2.5\"",
+  "name": "Heel Lifts 2.5\" (all heights, 1 and 3-pair packs)",
+  "col": "--c7",
+  "asins": [
+   "B00LES1ZGU",
+   "B00UNZME6A",
+   "B01IC4EHXG",
+   "B01IQCE86A",
+   "B01IQCF74W",
+   "B0FVJ6QLDQ",
+   "B0GLHZYJMB",
+   "B0GLJ6HQ5K",
+   "B0GLJY14YR"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "pr",
+  "short": "Other products",
+  "name": "Other products",
+  "col": "--c8",
+  "asins": [],
+  "sku": ""
+ }
+]

@@ -13,7 +13,9 @@
  ],
  "competitors": [],
  "otherKey": "pr",
- "sqpAsin": "",
- "names": {},
+ "sqpAsin": "B008DW1DS0",
+ "names": {
+  "OTHER-SMALL": "Other small items (combined)"
+ },
  "_about": "Brand settings for the shared weekly deck (see _tools/BRAND_DECK_RUNBOOK.md). invPage/recPage empty = no sheet page published yet. brandTerms = words that make a search 'branded'. sqpAsin is filled by deck.py init. names = short product names by ASIN."
 }
