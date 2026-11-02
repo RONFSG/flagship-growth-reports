@@ -1,0 +1,73 @@
+{
+  "_week": "2026-10-26 to 2026-11-01 (Week 44). Written from that week's numbers; rewrite every key each Monday.",
+  "week_story": [
+    "Sales rose 17.9% to £2,533 on 102 units, led by the Essential Kit: £837 from 27 units vs £383 the week before.",
+    "Ad spend fell 20.6% to £822 while ad sales grew, so ACoS dropped from 74.4% to 54.6% and net payout recovered to £619 (from £45)."
+  ],
+  "refunds_title": "Refunds back to normal",
+  "refunds": [
+    "Refunds fell to £28 on 2 units (2.0% refund rate) from £101 last week; no product stands out this week."
+  ],
+  "pacing_reco": "November has only one day in so far (£325), so the pace is early. The lever is keeping ad efficiency at this week's level while Shoe Trees and Repel restock before Black Friday.",
+  "ads_context": [
+    "ACoS has improved from 74.4% to 54.6% and TACoS from 48.2% to 32.4%, but both are still well above the August–September level.",
+    "Sponsored Display spend was cut from £159 to £6; that spend had brought almost no sales."
+  ],
+  "ads_strategy": [
+    "Branded searches (“reshoevn8r”, “reshoev8r”, “reshoevn8r kit”) cost £25 for £278 in sales and 10 orders.",
+    "Category keywords cost £493 for £612 in sales (80.6% ACoS); 40 campaigns spent £264 with no sales."
+  ],
+  "bid_moves": [
+    "Lower the bid on “trainer cleaning kit” (exact): £69 for 3 orders (86.6% ACoS).",
+    "Pause or negate “crep protect” and “jason markk” competitor targets: £47 spent, no sales.",
+    "Review the two laundry-bag video campaigns: £107 spent for £42 in sales."
+  ],
+  "coupons": [
+    "This week: 56 coupon orders.",
+    "Last week: 43 coupon orders.",
+    "Coupons are now behind more than half of all orders."
+  ],
+  "promotions": [
+    "This week: 11 promotion orders, £84 in promotional discounts (vs 18 orders and £80 last week).",
+    "Discount cost is steady; the coupon mix is doing more of the work."
+  ],
+  "events": [
+    "Black Friday: Fri Nov 27. Cyber Monday: Mon Nov 30.",
+    "Deal and coupon set-up deadlines: to confirm with the account team.",
+    "Priority: get the 48 inbound Shoe Trees and 144 inbound Repel checked in before Black Friday week."
+  ],
+  "reviews_title": "No review data in Sellerise",
+  "reviews_body": [
+    "Sellerise returned no review records, rating trend or negative reviews for the 14 Reshoevn8r UK products over the last 90 days.",
+    "That means the review tracker isn't pulling for this account, not that there were no reviews."
+  ],
+  "reviews_reco": [
+    "Turn on review tracking for the UK account in Sellerise (or pull Amazon's Customer Reviews report) so the deck can show star rating per line.",
+    "Sellerise also shows one hijacker alert this month: check who else is on the listing."
+  ],
+  "recommendations": [
+    ["Inventory", "Shoe Trees have 13 units available (1.3 weeks); confirm the 48 inbound check in this week.", "Account team", "This week"],
+    ["Inventory", "Deodorizer Spray is down to 2 units with nothing inbound (15 sold in 30 days); send replenishment.", "Account team", "This week"],
+    ["Ads", "Lower the bid on “trainer cleaning kit” (exact) and “shoe cleaner” (exact), both above 85% ACoS.", "Ads team", "This week"],
+    ["Ads", "Pause the no-sale competitor targets and review the 40 campaigns that spent £264 with no sales.", "Ads team", "This week"],
+    ["Ads", "Keep budget on “shoe cleaning kit” (exact): £45 for 5 orders at 27.5% ACoS.", "Ads team", "Ongoing"],
+    ["Marketing", "Plan Black Friday / Cyber Monday coupons for the Essential Kit, which carried this week's growth.", "Account team", "By Nov 13"],
+    ["Account health", "Check the open hijacker alert and turn on review tracking.", "Account team", "This week"]
+  ],
+  "position": [
+    "October closed at £11,293, up 34% on October last year (£8,443).",
+    "This week grew to £2,533 with ad spend down 21%; ACoS improved for the first time in three weeks."
+  ],
+  "next_steps": [
+    "Check in Shoe Trees and Repel; restock Deodorizer.",
+    "Cut no-sale and competitor spend.",
+    "Lock Black Friday coupons.",
+    "Clear the hijacker alert."
+  ],
+  "data_ask": [
+    "Shoe Trees and Repel inbound ETAs.",
+    "Black Friday deal and coupon plan.",
+    "Review tracking turned on in Sellerise.",
+    "Deodorizer replenishment plan."
+  ]
+}

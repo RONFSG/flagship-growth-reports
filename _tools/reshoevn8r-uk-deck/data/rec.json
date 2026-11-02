@@ -1,0 +1,58 @@
+{
+ "asOf": "Oct 26, 2026",
+ "ytd": 1022.24,
+ "units": 104,
+ "shipments": 28,
+ "receiving": 5,
+ "closed": 19,
+ "missing": 21,
+ "receiveRate": 103.4,
+ "recoveryRate": 100.0,
+ "resolved": 3,
+ "mtd": 51.3,
+ "mtdUnits": 7,
+ "monthly": [],
+ "byType": [
+  [
+   "CustomerReturn",
+   666.56
+  ],
+  [
+   "Damaged_Warehouse",
+   122.65
+  ],
+  [
+   "Lost_Inbound",
+   122.04
+  ]
+ ],
+ "cases": [
+  {
+   "id": "12465497422",
+   "date": "Jan 6, 2026",
+   "type": "Missing Inventory",
+   "note": "Amazon approved a reimbursement of 39.36 GBP for 8 missing units of FNSKU B08CJX3SDX from shipment FBA15LGYC68Z.",
+   "status": "Reimbursed",
+   "units": 8,
+   "value": 39.36
+  },
+  {
+   "id": "12252964812",
+   "date": "Jan 6, 2026",
+   "type": "Missing Inventory",
+   "note": "Amazon approved a reimbursement of 10.20 GBP for 1 missing unit of product B08CSXXX5M from shipment FBA15LFLP4CC.",
+   "status": "Reimbursed",
+   "units": 1,
+   "value": 10.2
+  },
+  {
+   "id": "13043668602",
+   "date": "Jan 6, 2026",
+   "type": "Missing Inventory",
+   "note": "Amazon approved a reimbursement of 72.48 GBP for 12 missing units from shipment FBA15LNYVTGG.",
+   "status": "Reimbursed",
+   "units": 12,
+   "value": 72.48
+  }
+ ]
+}

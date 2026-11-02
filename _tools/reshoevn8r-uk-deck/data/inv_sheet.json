@@ -1,0 +1,435 @@
+{
+ "asOf": "10/26/2026",
+ "week": 44,
+ "groups": {
+  "g1": {
+   "total": 1100.0,
+   "avail": 1023.0,
+   "inbound": 48.0,
+   "wkAvg": 49.0,
+   "l30": 209.0,
+   "n": 6,
+   "asins": [
+    "B0BWL4NB9H",
+    "B08CSXXX5M",
+    "B0CTGGJ98X",
+    "B08RS7P59K",
+    "B08B5HQXJ5",
+    "B0CTGGJ98X"
+   ]
+  },
+  "g2": {
+   "total": 644.0,
+   "avail": 592.0,
+   "inbound": 48.0,
+   "wkAvg": 28.0,
+   "l30": 118.0,
+   "n": 3,
+   "asins": [
+    "B0FCKD54WY",
+    "B08DNG8XQZ",
+    "B0FCKD54WY"
+   ]
+  },
+  "g3": {
+   "total": 187.0,
+   "avail": 43.0,
+   "inbound": 144.0,
+   "wkAvg": 11.0,
+   "l30": 48.0,
+   "n": 2,
+   "asins": [
+    "B08TFDN7F3",
+    "B08TFDN7F3"
+   ]
+  },
+  "g4": {
+   "total": 123.0,
+   "avail": 122.0,
+   "inbound": 0.0,
+   "wkAvg": 4.0,
+   "l30": 19.0,
+   "n": 1,
+   "asins": [
+    "B08H5XPWQD"
+   ]
+  },
+  "g5": {
+   "total": 63.0,
+   "avail": 13.0,
+   "inbound": 48.0,
+   "wkAvg": 10.0,
+   "l30": 41.0,
+   "n": 2,
+   "asins": [
+    "B08CJX3SDX",
+    "B08CJX3SDX"
+   ]
+  },
+  "g6": {
+   "total": 100.0,
+   "avail": 100.0,
+   "inbound": 0.0,
+   "wkAvg": 3.0,
+   "l30": 13.0,
+   "n": 2,
+   "asins": [
+    "B09CX6ZJY1",
+    "B09CX6ZJY1"
+   ]
+  },
+  "g7": {
+   "total": 41.0,
+   "avail": 41.0,
+   "inbound": 0.0,
+   "wkAvg": 4.0,
+   "l30": 15.0,
+   "n": 1,
+   "asins": [
+    "B0FS38VB88"
+   ]
+  },
+  "pr": {
+   "total": 2.0,
+   "avail": 2.0,
+   "inbound": 0.0,
+   "wkAvg": 4.0,
+   "l30": 16.0,
+   "n": 8,
+   "asins": [
+    "B0CKDN5WVQ",
+    "B078SJYDPF",
+    "B0DJ4BSQ3D",
+    "B08HSH7VHV",
+    "B0DJ4BSQ3D",
+    "B09G5P5QDZ",
+    "B08HPLCN9V",
+    "B0BFG3FVZT"
+   ]
+  }
+ },
+ "skus": [
+  {
+   "asin": "B08CJX3SDX",
+   "sku": "RE8-TREE-UK",
+   "name": "Shoe Trees",
+   "status": "Active",
+   "total": 63.0,
+   "avail": 13.0,
+   "inbound": 48.0,
+   "wkAvg": 10.0,
+   "l30": 41.0,
+   "wkLeft": 5.0
+  },
+  {
+   "asin": "B0CKDN5WVQ",
+   "sku": "RE8-DEO-UK",
+   "name": "Deodorizer Spray",
+   "status": "Active",
+   "total": 2.0,
+   "avail": 2.0,
+   "inbound": 0.0,
+   "wkAvg": 4.0,
+   "l30": 15.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0BWL4NB9H",
+   "sku": "RE8-STARTER-UK",
+   "name": "Starter Kit",
+   "status": "Disco",
+   "total": 1.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B078SJYDPF",
+   "sku": "RV8-MINI-3",
+   "name": "3 Pc Starter Shoe Cleaning Kit",
+   "status": "Out of stock",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0DJ4BSQ3D",
+   "sku": "RE8-FOAM-8OZ-UK",
+   "name": "OxiClean Foam",
+   "status": "Active",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B08HSH7VHV",
+   "sku": "RE8-LDRY-PODS-UK",
+   "name": "Laundry Detergent",
+   "status": "Out of stock",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B08CJX3SDX",
+   "sku": "RE8-TREE-FBA",
+   "name": "Shoe Trees",
+   "status": "Active",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0FS38VB88",
+   "sku": "RE8-LDRY-SHEETS-UK",
+   "name": "Laundry Sheets",
+   "status": "Active",
+   "total": 41.0,
+   "avail": 41.0,
+   "inbound": 0.0,
+   "wkAvg": 4.0,
+   "l30": 15.0,
+   "wkLeft": 9.0
+  },
+  {
+   "asin": "B08CSXXX5M",
+   "sku": "RE8-ESSNTL-UK",
+   "name": "Essential Kit",
+   "status": "Active",
+   "total": 314.0,
+   "avail": 290.0,
+   "inbound": 24.0,
+   "wkAvg": 23.0,
+   "l30": 98.0,
+   "wkLeft": 11.0
+  },
+  {
+   "asin": "B08TFDN7F3",
+   "sku": "RE8-REPEL-UK",
+   "name": "Repel (6.5oz)",
+   "status": "Active",
+   "total": 187.0,
+   "avail": 43.0,
+   "inbound": 144.0,
+   "wkAvg": 11.0,
+   "l30": 48.0,
+   "wkLeft": 13.0
+  },
+  {
+   "asin": "B09CX6ZJY1",
+   "sku": "RE8-LDRY-BAG-UK",
+   "name": "Laundry Bag",
+   "status": "Active",
+   "total": 50.0,
+   "avail": 50.0,
+   "inbound": 0.0,
+   "wkAvg": 3.0,
+   "l30": 12.0,
+   "wkLeft": 14.0
+  },
+  {
+   "asin": "B0FCKD54WY",
+   "sku": "RE8-16OZ-BOT-UK",
+   "name": "16oz Cleaning Solution",
+   "status": "Out of stock",
+   "total": 299.0,
+   "avail": 295.0,
+   "inbound": 0.0,
+   "wkAvg": 14.0,
+   "l30": 60.0,
+   "wkLeft": 17.0
+  },
+  {
+   "asin": "B0CTGGJ98X",
+   "sku": "RE8-8BRUSH-UK",
+   "name": "Refresh Kit",
+   "status": "Active",
+   "total": 123.0,
+   "avail": 120.0,
+   "inbound": 0.0,
+   "wkAvg": 6.0,
+   "l30": 24.0,
+   "wkLeft": 17.0
+  },
+  {
+   "asin": "B08RS7P59K",
+   "sku": "RE8-SIG-KIT-UK",
+   "name": "Signature Kit",
+   "status": "Active",
+   "total": 371.0,
+   "avail": 346.0,
+   "inbound": 0.0,
+   "wkAvg": 15.0,
+   "l30": 66.0,
+   "wkLeft": 19.0
+  },
+  {
+   "asin": "B08DNG8XQZ",
+   "sku": "RE8-8OZ-BOT-UK",
+   "name": "8oz Cleaning Solution",
+   "status": "Out of stock",
+   "total": 345.0,
+   "avail": 297.0,
+   "inbound": 48.0,
+   "wkAvg": 14.0,
+   "l30": 58.0,
+   "wkLeft": 20.0
+  },
+  {
+   "asin": "B08H5XPWQD",
+   "sku": "RE8-DRY-KIT-UK",
+   "name": "Dry Suede Kit",
+   "status": "Out of stock",
+   "total": 123.0,
+   "avail": 122.0,
+   "inbound": 0.0,
+   "wkAvg": 4.0,
+   "l30": 19.0,
+   "wkLeft": 22.0
+  },
+  {
+   "asin": "B08B5HQXJ5",
+   "sku": "RE8-RT-FRESH-UK",
+   "name": "Original Kit",
+   "status": "Active",
+   "total": 291.0,
+   "avail": 267.0,
+   "inbound": 24.0,
+   "wkAvg": 5.0,
+   "l30": 21.0,
+   "wkLeft": 46.0
+  },
+  {
+   "asin": "B09CX6ZJY1",
+   "sku": "RE8-LDRY-BAG-FBA",
+   "name": "Laundry Bag",
+   "status": "Active",
+   "total": 50.0,
+   "avail": 50.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 1.0,
+   "wkLeft": 167.0
+  },
+  {
+   "asin": "B0CTGGJ98X",
+   "sku": "RE8-8BRUSH-FBM",
+   "name": "Refresh Kit",
+   "status": "Out of stock",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0FCKD54WY",
+   "sku": "RE8-16OZ-BOT-UK-FBM",
+   "name": "16oz Cleaning Solution",
+   "status": "Out of stock",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B08TFDN7F3",
+   "sku": "RE8-REPEL-UK-FBM",
+   "name": "Repel (6.5oz)",
+   "status": "Out of stock",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0DJ4BSQ3D",
+   "sku": "RE8-FOAM-8OZ-UK-FBM",
+   "name": "OxiClean Foam",
+   "status": "Out of stock",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B09G5P5QDZ",
+   "sku": "RE8-PUMP-REPEL-UK-FBM",
+   "name": "Shoe Protector Spray",
+   "status": "Active",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B08HPLCN9V",
+   "sku": "RE8-3BR-PACK-UK-FBM",
+   "name": "Brush Set",
+   "status": "Active",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0BFG3FVZT",
+   "sku": "RE8-BRASS-UK-FBM",
+   "name": "Brass Bristle Brush",
+   "status": "Active",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 1.0,
+   "wkLeft": 0.0
+  }
+ ],
+ "po": [
+  [
+   "Shoe Trees ASIN: B08CJX3SDX \u00b7 SKU: RE8-TREE-UK",
+   "\u2014",
+   "72"
+  ],
+  [
+   "Deodorizer Spray ASIN: B0CKDN5WVQ \u00b7 SKU: RE8-DEO-UK",
+   "\u2014",
+   "48"
+  ]
+ ],
+ "unmapped": [
+  "B0CKDN5WVQ",
+  "B078SJYDPF",
+  "B0DJ4BSQ3D",
+  "B08HSH7VHV",
+  "B0DJ4BSQ3D",
+  "B09G5P5QDZ",
+  "B08HPLCN9V",
+  "B0BFG3FVZT"
+ ]
+}
