@@ -1,0 +1,352 @@
+{
+ "asOf": "10/26/2026",
+ "week": 44,
+ "groups": {
+  "g1": {
+   "total": 269.0,
+   "avail": 264.0,
+   "inbound": 0.0,
+   "wkAvg": 10.0,
+   "l30": 43.0,
+   "n": 1,
+   "asins": [
+    "B0G3T7LL5V"
+   ]
+  },
+  "g2": {
+   "total": 138.0,
+   "avail": 88.0,
+   "inbound": 0.0,
+   "wkAvg": 12.0,
+   "l30": 50.0,
+   "n": 1,
+   "asins": [
+    "B0DSGQV1T5"
+   ]
+  },
+  "g3": {
+   "total": 484.0,
+   "avail": 452.0,
+   "inbound": 0.0,
+   "wkAvg": 20.0,
+   "l30": 83.0,
+   "n": 6,
+   "asins": [
+    "B0GS3N2NM3",
+    "B0DSGPTRFW",
+    "B0DSGRTT4G",
+    "B0G3TD92RY",
+    "B0DSGRTT4G",
+    "B0G3T5N7YB"
+   ]
+  },
+  "g4": {
+   "total": 99.0,
+   "avail": 110.0,
+   "inbound": 2.0,
+   "wkAvg": 10.0,
+   "l30": 45.0,
+   "n": 8,
+   "asins": [
+    "B0H91128PR",
+    "B0H95FVH51",
+    "B0DQMW3NKY",
+    "B0DQM4KJXS",
+    "B0DQM48GQ7",
+    "B0DQM48GQ7",
+    "B0DQMW3NKY",
+    "B0DQM4KJXS"
+   ]
+  },
+  "g5": {
+   "total": 17.0,
+   "avail": 15.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 3.0,
+   "n": 4,
+   "asins": [
+    "B0FWGYCLWB",
+    "B0FY3ZJHM8",
+    "B0FY41L5SB",
+    "B0FWGYCLWB"
+   ]
+  },
+  "g6": {
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 1.0,
+   "l30": 3.0,
+   "n": 1,
+   "asins": [
+    "B0GS3NDXQ3"
+   ]
+  },
+  "pr": {
+   "total": 0,
+   "avail": 0,
+   "inbound": 0,
+   "wkAvg": 0,
+   "l30": 0,
+   "n": 0,
+   "asins": []
+  }
+ },
+ "skus": [
+  {
+   "asin": "B0GS3N2NM3",
+   "sku": "619364093353",
+   "name": "iCube Wrapsulator Red & Blue - Beverage Cooler - Fits regular 12oz & 16oz cans and bottles",
+   "status": "Active",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 2.0,
+   "l30": 8.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0H91128PR",
+   "sku": "634607366353",
+   "name": "iCube Wrapsulator Blue Slim - Beverage Cooler - Fits slim 12oz Cans- Bottles",
+   "status": "Active",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 3.0,
+   "l30": 14.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0H95FVH51",
+   "sku": "634607066505",
+   "name": "iCube Wrapsulator Purple Slim - Beverage Cooler - Fits slim 12oz Cans & Bottles",
+   "status": "Active",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 2.0,
+   "l30": 8.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0DQMW3NKY",
+   "sku": "RA-J75Y-AWW6",
+   "name": "iCube Wrapsulator Sky Blue Slim - Beverage Cooler - Fits Slim 12oz Cans & Bottles (DISCONTINUED)",
+   "status": "Active",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 1.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0GS3NDXQ3",
+   "sku": "619364107081",
+   "name": "iCube Wrapsulator Black Regular and Sky Blue Slim - Beverage Cooler - Fits 12oz. & 16oz. Cans and Bottles.",
+   "status": "Active",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 1.0,
+   "l30": 3.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0FWGYCLWB",
+   "sku": "9T-EXE3-0LKY",
+   "name": "CaddyO Elegant Leather Insulated Wine Tote Chiller (SOON TO BE DISCONTINUED)",
+   "status": "Active",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0FY3ZJHM8",
+   "sku": "PU-SXNY-CNH5",
+   "name": "CaddyO Elegant Nylon Insulated Wine Tote Bag For 2 Wine Bottles (SOON TO BE DISCONTINUED)",
+   "status": "Active",
+   "total": 1.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0DSGPTRFW",
+   "sku": "BO-S55M-I4XT",
+   "name": "iCube Wrapsulator Grey - Fits regular 12oz & 16oz cans and bottles (DISCONTINUED)",
+   "status": "Active",
+   "total": 7.0,
+   "avail": 7.0,
+   "inbound": 0.0,
+   "wkAvg": 4.0,
+   "l30": 15.0,
+   "wkLeft": 2.0
+  },
+  {
+   "asin": "B0DSGQV1T5",
+   "sku": "YO-IYAH-06DA",
+   "name": "iCube Wrapsulator Black - Beverage Cooler - Fits regular 12oz & 16oz cans and bottles",
+   "status": "Active",
+   "total": 138.0,
+   "avail": 88.0,
+   "inbound": 0.0,
+   "wkAvg": 12.0,
+   "l30": 50.0,
+   "wkLeft": 9.0
+  },
+  {
+   "asin": "B0DQM4KJXS",
+   "sku": "ST-PHQW-MN3K",
+   "name": "iCube Wrapsulator Pink Slim - Beverage Cooler - Fits slim 12oz Cans & Bottles",
+   "status": "Active",
+   "total": 16.0,
+   "avail": 30.0,
+   "inbound": 0.0,
+   "wkAvg": 2.0,
+   "l30": 7.0,
+   "wkLeft": 14.0
+  },
+  {
+   "asin": "B0DSGRTT4G",
+   "sku": "QL-QWBL-0LY2",
+   "name": "iCube Wrapsulator Camo - Beverage Cooler - Fits regular 12oz & 16oz cans and bottles",
+   "status": "Active",
+   "total": 88.0,
+   "avail": 64.0,
+   "inbound": 0.0,
+   "wkAvg": 5.0,
+   "l30": 20.0,
+   "wkLeft": 15.0
+  },
+  {
+   "asin": "B0DQM48GQ7",
+   "sku": "63-X2TE-ZAVZ",
+   "name": "iCube Wrapsulator Black Slim - Beverage Cooler- Fits slim 12oz Cans- Bottles",
+   "status": "Active",
+   "total": 83.0,
+   "avail": 80.0,
+   "inbound": 2.0,
+   "wkAvg": 3.0,
+   "l30": 14.0,
+   "wkLeft": 20.0
+  },
+  {
+   "asin": "B0G3T7LL5V",
+   "sku": "T9-SOAD-KPHO",
+   "name": "iCube Wrapsulator Blue - Beverage Cooler - Fits regular 12oz & 16oz cans and bottles",
+   "status": "Active",
+   "total": 269.0,
+   "avail": 264.0,
+   "inbound": 0.0,
+   "wkAvg": 10.0,
+   "l30": 43.0,
+   "wkLeft": 21.0
+  },
+  {
+   "asin": "B0G3TD92RY",
+   "sku": "ZT-GNV1-3A2R",
+   "name": "iCube Wrapsulator Red - Beverage Cooler - Fits regular 12oz & 16oz cans and bottles",
+   "status": "Active",
+   "total": 137.0,
+   "avail": 134.0,
+   "inbound": 0.0,
+   "wkAvg": 2.0,
+   "l30": 10.0,
+   "wkLeft": 46.0
+  },
+  {
+   "asin": "B0FY41L5SB",
+   "sku": "LT-8Q1X-SD42",
+   "name": "CaddyO Elegant Nylon Insulated Wine Tote Chiller (SOON TO BE DISCONTINUED)",
+   "status": "Active",
+   "total": 16.0,
+   "avail": 15.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 1.0,
+   "wkLeft": 50.0
+  },
+  {
+   "asin": "B0DSGRTT4G",
+   "sku": "QL-QWBL-0LY2-FBM",
+   "name": "iCube Wrapsulator Camo - Beverage Cooler - Fits regular 12oz & 16oz cans and bottles",
+   "status": "Active",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0DQM48GQ7",
+   "sku": "63-X2TE-ZAVZ-FBM",
+   "name": "iCube Wrapsulator Black Slim - Beverage Cooler- Fits slim 12oz Cans- Bottles",
+   "status": "Active",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0DQMW3NKY",
+   "sku": "RA-J75Y-AWW6-FBM",
+   "name": "iCube Wrapsulator Sky Blue Slim - Beverage Cooler - Fits Slim 12oz Cans & Bottles (DISCONTINUED)",
+   "status": "Active",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 1.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0DQM4KJXS",
+   "sku": "ST-PHQW-MN3K-FBM",
+   "name": "iCube Wrapsulator Pink Slim - Beverage Cooler - Fits slim 12oz Cans & Bottles",
+   "status": "Active",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0FWGYCLWB",
+   "sku": "DM-MICU-06WE",
+   "name": "CaddyO Elegant Leather Insulated Wine Tote Chiller (SOON TO BE DISCONTINUED)",
+   "status": "Active",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 2.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0G3T5N7YB",
+   "sku": "3A-1HW9-DYZZ",
+   "name": "iCube Wrapsulator Purple - Beverage Cooler - Fits regular 12oz & 16oz cans and bottles",
+   "status": "\u2014",
+   "total": 252.0,
+   "avail": 247.0,
+   "inbound": 0.0,
+   "wkAvg": 7.0,
+   "l30": 30.0,
+   "wkLeft": 28.0
+  }
+ ],
+ "po": [],
+ "unmapped": []
+}

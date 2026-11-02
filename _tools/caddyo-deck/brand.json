@@ -10,11 +10,15 @@
  "recPage": "",
  "brandTerms": [
   "caddyo",
-  "caddy o"
+  "caddy o",
+  "icube",
+  "wrapsulator"
  ],
  "competitors": [],
  "otherKey": "pr",
- "sqpAsin": "",
- "names": {},
+ "sqpAsin": "B0G3T7LL5V",
+ "names": {
+  "B0G3TDWNYR": "iCube Wrapsulator Regular"
+ },
  "_about": "Brand settings for the shared weekly deck (see _tools/BRAND_DECK_RUNBOOK.md). invPage/recPage empty = no sheet page published yet. brandTerms = words that make a search 'branded'. sqpAsin is filled by deck.py init. names = short product names by ASIN."
 }

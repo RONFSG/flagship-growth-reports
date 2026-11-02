@@ -1,0 +1,363 @@
+{
+ "_source": "Sellerise MCP, account CaddyO, marketplace US, pulled 2026-11-02 (Monday-Sunday weeks; 4-week table from the saved weekly totals)",
+ "weeks": [
+  {
+   "label": "Oct 5 – 11",
+   "revenue": 3278.3,
+   "units": 110,
+   "orders": 91,
+   "impressions": 210951,
+   "clicks": 1012,
+   "refundUnits": 6,
+   "refundRate": 6.59,
+   "spend": 1046.08,
+   "adSales": 1656.25,
+   "acos": 63.16,
+   "tacos": 31.91
+  },
+  {
+   "label": "Oct 12 – 18",
+   "revenue": 1600.5,
+   "units": 54,
+   "orders": 47,
+   "impressions": 137326,
+   "clicks": 696,
+   "refundUnits": 6,
+   "refundRate": 12.77,
+   "spend": 699.15,
+   "adSales": 1073.2,
+   "acos": 65.15,
+   "tacos": 43.68
+  },
+  {
+   "label": "Oct 19 – 25",
+   "revenue": 1398.95,
+   "units": 48,
+   "orders": 43,
+   "impressions": 102622,
+   "clicks": 530,
+   "refundUnits": 5,
+   "refundRate": 11.63,
+   "spend": 423.25,
+   "adSales": 955.35,
+   "acos": 44.3,
+   "tacos": 30.25
+  },
+  {
+   "label": "Oct 26 – Nov 1",
+   "revenue": 1578.43,
+   "units": 56,
+   "orders": 52,
+   "impressions": 211100,
+   "clicks": 746,
+   "refundUnits": 3,
+   "refundRate": 5.77,
+   "spend": 793.88,
+   "adSales": 1207.95,
+   "acos": 65.72,
+   "tacos": 50.3,
+   "net": 51.01,
+   "refunds": 64.98,
+   "adOrders": 34,
+   "cpc": 1.06,
+   "cvr": 4.56
+  }
+ ],
+ "mtd": {
+  "through": "2026-11-01",
+  "days": 1,
+  "revenue": 221.04,
+  "units": 8,
+  "orders": 6,
+  "spend": 158.22,
+  "adSales": 144.75,
+  "acos": 109.31,
+  "tacos": 71.58,
+  "refundRate": 0
+ },
+ "mtdLY": {
+  "revenue": 31.06,
+  "units": 2,
+  "orders": 2,
+  "spend": 0
+ },
+ "daily": [
+  [
+   "2026-10-19",
+   212.62,
+   75.83,
+   173.7,
+   6,
+   6
+  ],
+  [
+   "2026-10-20",
+   78.82,
+   85.85,
+   86.85,
+   3,
+   3
+  ],
+  [
+   "2026-10-21",
+   252.59,
+   36.12,
+   144.75,
+   8,
+   5
+  ],
+  [
+   "2026-10-22",
+   84.42,
+   53.02,
+   86.85,
+   2,
+   2
+  ],
+  [
+   "2026-10-23",
+   296.08,
+   54.59,
+   231.6,
+   9,
+   8
+  ],
+  [
+   "2026-10-24",
+   172.7,
+   62.09,
+   57.9,
+   5,
+   2
+  ],
+  [
+   "2026-10-25",
+   301.72,
+   55.75,
+   173.7,
+   10,
+   5
+  ],
+  [
+   "2026-10-26",
+   114.79,
+   60.97,
+   202.65,
+   3,
+   3
+  ],
+  [
+   "2026-10-27",
+   301.23,
+   103.43,
+   144.75,
+   10,
+   5
+  ],
+  [
+   "2026-10-28",
+   163.42,
+   97.26,
+   202.65,
+   6,
+   6
+  ],
+  [
+   "2026-10-29",
+   379.86,
+   130.42,
+   231.6,
+   14,
+   8
+  ],
+  [
+   "2026-10-30",
+   251.8,
+   110.18,
+   165.75,
+   8,
+   5
+  ],
+  [
+   "2026-10-31",
+   146.29,
+   133.4,
+   115.8,
+   5,
+   4
+  ],
+  [
+   "2026-11-01",
+   221.04,
+   158.22,
+   144.75,
+   6,
+   3
+  ]
+ ],
+ "searchTerms": {
+  "total": 193,
+  "winners": 3,
+  "harvest": 1,
+  "negative": 1,
+  "noPurchase": 1,
+  "rows": [
+   [
+    "icube wrapsulator",
+    "SP",
+    502,
+    9,
+    7,
+    18.42,
+    202.65
+   ],
+   [
+    "icube can cooler",
+    "SB",
+    630,
+    3,
+    0,
+    5.76,
+    0
+   ]
+  ],
+  "category": [
+   [
+    "can cooler",
+    "SP",
+    3707,
+    17,
+    2,
+    23.53,
+    57.9
+   ],
+   [
+    "freezable can cooler",
+    "SP",
+    733,
+    13,
+    2,
+    18.92,
+    57.9
+   ],
+   [
+    "multi size insulated can cooler",
+    "SB",
+    1,
+    1,
+    2,
+    0.49,
+    57.9
+   ],
+   [
+    "single can cooler",
+    "SP",
+    92,
+    4,
+    1,
+    6.56,
+    28.95
+   ],
+   [
+    "the fridge freezable drink cooler",
+    "SB",
+    85,
+    4,
+    1,
+    3.89,
+    28.95
+   ]
+  ]
+ },
+ "targets": {
+  "total": 205,
+  "winners": 10,
+  "needsAttention": 48,
+  "highAcos": 2,
+  "noSales": 7,
+  "lowCtr": 18,
+  "rows": [
+   [
+    "can cooler (SB)",
+    "Phrase",
+    "Category",
+    61.71,
+    86.85,
+    71.05,
+    44,
+    3
+   ],
+   [
+    "can cooler",
+    "Phrase",
+    "Category",
+    34.78,
+    144.75,
+    24.03,
+    25,
+    5
+   ],
+   [
+    "caddy o wine carrier (SB)",
+    "Broad",
+    "Brand",
+    23.15,
+    0,
+    null,
+    16,
+    0
+   ],
+   [
+    "bottle caddy bag whiskey (SB)",
+    "Broad",
+    "Category",
+    19.15,
+    0,
+    null,
+    15,
+    0
+   ],
+   [
+    "slim can koozie",
+    "Exact",
+    "Category",
+    17.49,
+    0,
+    null,
+    9,
+    0
+   ]
+  ]
+ },
+ "reviews": {
+  "available": true,
+  "currentAvgRating": 3.5,
+  "periodReviews": 0,
+  "negative": 0,
+  "note": "one review signal (shared listing rating 3.5); no reviews dated in the last 90 days"
+ },
+ "alerts": {
+  "total": 133,
+  "actionable": 12,
+  "critical": 5,
+  "warning": 7,
+  "byType": {
+   "Title": 25,
+   "Listing images": 24,
+   "Description": 18,
+   "Listing price": 16,
+   "Bullets": 14,
+   "Title differentiation": 11,
+   "Brand": 6,
+   "Inactive": 5,
+   "Dimensions": 3,
+   "Out of stock": 2,
+   "Low stock": 2,
+   "Low inventory fee": 1,
+   "Days of supply": 1,
+   "Reimbursable units": 1,
+   "Buy Box lost": 1,
+   "Buy Box gained": 1
+  }
+ }
+}

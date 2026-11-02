@@ -1,0 +1,81 @@
+[
+ {
+  "key": "g1",
+  "short": "Regular cooler - Blue",
+  "name": "iCube Wrapsulator Regular Can Cooler - Blue",
+  "col": "--c1",
+  "asins": [
+   "B0G3T7LL5V"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g2",
+  "short": "Regular cooler - Black",
+  "name": "iCube Wrapsulator Regular Can Cooler - Black",
+  "col": "--c2",
+  "asins": [
+   "B0DSGQV1T5"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g3",
+  "short": "Regular cooler - other",
+  "name": "iCube Wrapsulator Regular Can Cooler - other colours",
+  "col": "--c3",
+  "asins": [
+   "B0G3T5N7YB",
+   "B0G3TDWNYR",
+   "B0GS3N2NM3",
+   "B0DSGRTT4G",
+   "B0DSGPTRFW",
+   "B0G3TD92RY"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g4",
+  "short": "Slim cooler",
+  "name": "iCube Wrapsulator Slim Can Cooler",
+  "col": "--c4",
+  "asins": [
+   "B0H91128PR",
+   "B0DQM48GQ7",
+   "B0DQM4KJXS",
+   "B0H95FVH51",
+   "B0DQMW3NKY"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g5",
+  "short": "Wine & travel totes",
+  "name": "CaddyO Wine & Travel Tote Chillers",
+  "col": "--c5",
+  "asins": [
+   "B0FWGYCLWB",
+   "B0FY3ZJHM8",
+   "B0FY41L5SB"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g6",
+  "short": "Regular + Slim bundle",
+  "name": "iCube Wrapsulator Regular + Slim bundle",
+  "col": "--c6",
+  "asins": [
+   "B0GS3NDXQ3"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "pr",
+  "short": "Other products",
+  "name": "Other products",
+  "col": "--c8",
+  "asins": [],
+  "sku": ""
+ }
+]

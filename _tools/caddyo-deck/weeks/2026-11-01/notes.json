@@ -1,0 +1,105 @@
+{
+ "_week": "2026-10-26 to 2026-11-01 (Week 44). Written from this week's numbers.",
+ "week_story": [
+  "Slim coolers led the gain: $387 vs $162 (+139%), with Blue Slim at 8 units.",
+  "Blue and Black Regular grew 82% and 63%; the other Regular colours fell 32% as Grey sold nothing (7 units left at FBA)."
+ ],
+ "refunds_title": "Refunds eased",
+ "refunds": [
+  "Refunds were $65 this week vs $117 the week before. No single product stands out."
+ ],
+ "pacing_reco": "November has one day in, so the run-rate is rough. October closed at $8,061; the lever now is cutting ad spend that brings no sales.",
+ "ads_context": [
+  "Ad spend rose 88% to $794 while ad sales rose 26% to $1,208.",
+  "ACoS went from 44.3% to 65.7%; Saturday and Sunday ran above 100%."
+ ],
+ "ads_strategy": [
+  "Branded keywords: $104 spend, $347 sales (29.8% ACoS), 10 orders.",
+  "Category keywords: $373 spend for $376 sales (99% ACoS). Auto: $261 for $484 (53.8%)."
+ ],
+ "bid_moves": [
+  "Raise “icube wrapsulator” exact: $10.71 spent for 6 orders and $174.",
+  "Pause the wine-tote brand-broad SB targets and “slim can koozie” exact: $60 and no sales.",
+  "Lower the Purple auto campaign: $73 for 1 order."
+ ],
+ "coupons": [
+  "This week: 33 coupon orders (24 last week)."
+ ],
+ "promotions": [
+  "This week: 21 promotion orders and $184 in discounts (vs 18 and $194 last week)."
+ ],
+ "events": [
+  "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+  "Coolers and wine totes fit the gifting season: set BF/CM deals and coupons now.",
+  "Restock the out-of-stock slims and the Red & Blue sleeve before Nov 20."
+ ],
+ "reviews_title": "Few review signals",
+ "reviews_body": [
+  "Sellerise shows one shared listing rating of 3.5 stars and no reviews dated in the last 90 days.",
+  "Review tracking covers only part of the catalog, so per-line ratings aren't available."
+ ],
+ "reviews_reco": [
+  "Pull Amazon's Customer Reviews report or turn on review tracking for all CaddyO ASINs.",
+  "A 3.5-star rating holds back conversion on ads; read the latest 1–3 star reviews for the Regular cooler."
+ ],
+ "recommendations": [
+  [
+   "Ads",
+   "Pause the 43 campaigns that spent $327 this week with no sales, after a quick search-term check.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Raise bids and budget on “icube wrapsulator” exact (6.2% ACoS, 6 orders).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Cut Category keyword bids: $373 spend at 99% ACoS. Add “multi size insulated can cooler” as exact; negate “slim can koozie”.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Cap weekend bids: Saturday and Sunday ran above 100% ACoS.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Inventory",
+   "Restock Blue Slim, Purple Slim and the Red & Blue sleeve (0 available) and Grey (7 units).",
+   "Account team",
+   "By Nov 6"
+  ],
+  [
+   "Marketing",
+   "Plan BF/CM coupons and deals for coolers and wine totes (Nov 27–30).",
+   "Account team",
+   "By Nov 6"
+  ],
+  [
+   "Account health",
+   "Get review data for all ASINs; check the 5 critical alerts (inactive and out-of-stock listings).",
+   "Account team",
+   "Next week"
+  ]
+ ],
+ "position": [
+  "Sales rose 12.8% to $1,578 on 56 units, but ad spend nearly doubled.",
+  "Net payout fell to $51 from $168 because of the extra spend."
+ ],
+ "next_steps": [
+  "Cut no-sale ad spend.",
+  "Scale the branded exact winner.",
+  "Restock the out-of-stock slims.",
+  "Lock BF/CM deals."
+ ],
+ "data_ask": [
+  "Inbound plan for the out-of-stock slims and sleeve.",
+  "BF/CM deal and coupon plan.",
+  "COGS per item in Sellerise.",
+  "Review tracking for all ASINs."
+ ]
+}
