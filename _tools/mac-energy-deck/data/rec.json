@@ -1,0 +1,128 @@
+{
+ "asOf": "Oct 26, 2026",
+ "ytd": 14750.22,
+ "units": 1589,
+ "shipments": 87,
+ "receiving": 35,
+ "closed": 35,
+ "missing": 647,
+ "receiveRate": 3464.5,
+ "recoveryRate": 98.6,
+ "resolved": 4,
+ "mtd": 6455.63,
+ "mtdUnits": 844,
+ "monthly": [],
+ "byType": [
+  [
+   "Damaged_Warehouse",
+   9250.69
+  ],
+  [
+   "CustomerReturn",
+   4631.85
+  ],
+  [
+   "Lost_Warehouse",
+   531.55
+  ],
+  [
+   "CustomerServiceIssue",
+   226.89
+  ],
+  [
+   "Lost_Inbound",
+   90.9
+  ],
+  [
+   "Lost Inventory",
+   63.63
+  ],
+  [
+   "Damaged_Inbound",
+   18.34
+  ]
+ ],
+ "cases": [
+  {
+   "id": "21758981461",
+   "date": "Aug 26, 2026",
+   "type": "Misplaced Inventory",
+   "note": "Amazon found 4 units and added them to inventory, while regraded items were marked as defective or expired and determined ineligible for reimbursement.",
+   "status": "Reconciled",
+   "units": 4,
+   "value": 0.0
+  },
+  {
+   "id": "21963647271",
+   "date": "Sep 9, 2026",
+   "type": "Misplaced Inventory",
+   "note": "Amazon located 3 misplaced units and reimbursed 2 confirmed missing units under Reimbursement IDs 23151950201 and 23184659071.",
+   "status": "Reconciled",
+   "units": 3,
+   "value": 0.0
+  },
+  {
+   "id": "22142381981",
+   "date": "Sep 18, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon initiated reimbursement 23347462591 ($36.36) for shipment FBA19KCY4FG3 and requested an invoice upload to investigate remaining unit discrepancies.",
+   "status": "Reimbursed",
+   "units": 4,
+   "value": 36.36
+  },
+  {
+   "id": "22138529821",
+   "date": "Sep 18, 2026",
+   "type": "Misplaced Inventory",
+   "note": "Amazon completed investigation for transaction ID 1787834498239555 and found 1 unit which was added back to inventory, requiring no reimbursement.",
+   "status": "Reconciled",
+   "units": 1,
+   "value": 0.0
+  },
+  {
+   "id": "22138419521",
+   "date": "Sep 18, 2026",
+   "type": "Misplaced Inventory",
+   "note": "Amazon located 1 unit previously marked as misplaced and returned it to sellable inventory under transaction ID 20081343798950, so no reimbursement was issued.",
+   "status": "Reconciled",
+   "units": 1,
+   "value": 0.0
+  },
+  {
+   "id": "22138796951",
+   "date": "Sep 18, 2026",
+   "type": "Misplaced Inventory",
+   "note": "Amazon confirmed 1 misplaced unit was located and returned to sellable inventory under event 20081654970161, requiring no reimbursement.",
+   "status": "Reconciled",
+   "units": 1,
+   "value": 0.0
+  },
+  {
+   "id": "22227176891",
+   "date": "Sep 23, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon Initiated $36.36 Reimbursement for Shipment FBA19JRKKV9R | Reimbursement ID 23408548001",
+   "status": "Reimbursed",
+   "units": 4,
+   "value": 36.36
+  },
+  {
+   "id": "22227233451",
+   "date": "Sep 23, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon Initiated $18.18 Reimbursement for Shipment FBA19JY4PVY6 | Reimbursement ID 23385852091",
+   "status": "Reimbursed",
+   "units": 2,
+   "value": 18.18
+  },
+  {
+   "id": "22289544191",
+   "date": "Sep 25, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon requested Transaction Reference IDs from the Inventory Ledger report for FNSKUs B0H4XHB9NM, B0H4WZBN85, and B0H4XJ5G4X to investigate damaged inventory.",
+   "status": "Reimbursed",
+   "units": 1,
+   "value": 9.09
+  }
+ ]
+}

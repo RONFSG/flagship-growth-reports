@@ -1,0 +1,106 @@
+{
+ "_week": "2026-10-26 to 2026-11-01 (Week 44), MAC Energy US. Written from this week's numbers.",
+ "week_story": [
+  "Sales rose 7.4% to $103,362 while ad spend fell 22% to $57,085, so TACoS dropped from 76.4% to 55.2%.",
+  "Every flavor grew: Green Apple +13%, Proper Punch +8%, Macberry Lychee +8%. The Variety Pack is still 46% of sales."
+ ],
+ "refunds_title": "Refunds are low",
+ "refunds": [
+  "Refunds were $1,089 (1.61% of units), down from $1,762 the week before. Nothing here needs action this week."
+ ],
+ "pacing_reco": "November has one day in ($18,160), so the straight-line figure is not a forecast yet. The lever is ad efficiency: October sold $483,507 but paid out a loss after $404,788 of ad spend.",
+ "ads_context": [
+  "Ad spend has come down each week since the Oct 5–11 peak ($150,787), and TACoS went from 100.3% that week to 55.2%.",
+  "ACoS is still 128.4%: ads bring in $0.78 of ad sales per $1 spent."
+ ],
+ "ads_strategy": [
+  "Category keywords took $30,450 of spend for $15,899 in sales (191.5% ACoS), down 35% in spend vs last week.",
+  "Branded keywords returned $5,575 on $1,666 (29.9% ACoS); competitor targeting tripled to $4,624 at 129.8% ACoS."
+ ],
+ "bid_moves": [
+  "Lower bids on the “energy drink” exact targets: $17,270 spent for $9,027 in sales this week.",
+  "Raise budget on the Orange Creamsicle brand-exact campaign: $566 brought $3,477 (16.3% ACoS)."
+ ],
+ "coupons": [
+  "This week: 602 coupon orders (703 last week).",
+  "October: 5,721 coupon orders in total."
+ ],
+ "promotions": [
+  "This week: 1,523 promotion orders and $15,633 in promotional discounts (vs 2,159 and $22,555 last week).",
+  "Lower discounting helped the payout this week while sales still grew."
+ ],
+ "events": [
+  "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+  "Deal and coupon set-up deadlines: to confirm with the account team.",
+  "Priority: the Variety Pack needs stock at FBA before BF/CM; it has about 1–2 weeks left with 400 inbound."
+ ],
+ "reviews_title": "Rating holding at 4.5 stars",
+ "reviews_body": [
+  "Sellerise shows a 4.5-star rating, shared across the flavors through the Variety Pack listing.",
+  "No new reviews are dated in the last 90 days, so there is no trend to read yet."
+ ],
+ "reviews_reco": [
+  "Check the review request settings: about 3,650 orders a week and no new reviews logged in 90 days is unusual.",
+  "Confirm review tracking covers each flavor ASIN, not only the shared listing."
+ ],
+ "recommendations": [
+  [
+   "Inventory",
+   "Send Variety Pack stock to FBA now: about 1–2 weeks left with 400 inbound, and it is 46% of sales.",
+   "Account team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Cut bids on the “energy drink” / “energy drinks” exact and broad targets running above 170% ACoS.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Move budget to brand searches: “mac energy drink” ran at 17.2% ACoS on $454 for $2,645.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Review the Variety Pack auto campaign: $4,699 spent for $1,342 (350% ACoS).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Pause the 9 no-sale campaigns ($424 this week).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Marketing",
+   "Plan BF/CM coupons and deals (Nov 27–30) around stock on hand.",
+   "Account team",
+   "By Nov 9"
+  ],
+  [
+   "Finance",
+   "Load product costs into Sellerise so payout shows profit after COGS.",
+   "Account team",
+   "Next week"
+  ]
+ ],
+ "position": [
+  "October closed at $483,507, the best month since launch, but with $404,788 of ad spend.",
+  "This week grew sales 7.4% on 22% less ad spend, the first clear step toward a profitable run rate."
+ ],
+ "next_steps": [
+  "Restock the Variety Pack at FBA.",
+  "Keep cutting category-keyword spend.",
+  "Shift budget to brand searches.",
+  "Lock BF/CM deals."
+ ],
+ "data_ask": [
+  "Variety Pack inbound ETA and next PO.",
+  "Product costs (COGS) and the BF/CM deal plan.",
+  "Search query report: not loaded in Sellerise yet.",
+  "Strategy table: top 100 campaign rows ($53,096 of $57,085 ad spend)."
+ ]
+}

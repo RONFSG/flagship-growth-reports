@@ -1,0 +1,60 @@
+[
+ {
+  "key": "g1",
+  "short": "Variety Pack",
+  "name": "MAC Energy 4-in-1 Variety Pack 12 Pack",
+  "col": "--c1",
+  "asins": [
+   "B0H4SCZBHY"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g2",
+  "short": "Macberry Lychee",
+  "name": "MAC Energy Macberry Lychee 12 Pack",
+  "col": "--c2",
+  "asins": [
+   "B0H4XJ5G4X"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g3",
+  "short": "Green Apple",
+  "name": "MAC Energy Forbidden Green Apple 12 Pack",
+  "col": "--c3",
+  "asins": [
+   "B0H4WZBN85"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g4",
+  "short": "Orange Creamsicle",
+  "name": "MAC Energy Orange Creamsicle 12 Pack",
+  "col": "--c4",
+  "asins": [
+   "B0H4XHB9NM"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g5",
+  "short": "Proper Punch",
+  "name": "MAC Energy Proper Punch 12 Pack",
+  "col": "--c5",
+  "asins": [
+   "B0H4X94TKY"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "pr",
+  "short": "Bundles & other",
+  "name": "Other products",
+  "col": "--c8",
+  "asins": [],
+  "sku": ""
+ }
+]

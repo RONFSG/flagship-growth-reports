@@ -10,11 +10,19 @@
  "recPage": "mac-energy-reconciliation",
  "brandTerms": [
   "mac energy",
-  "macenergy"
+  "macenergy",
+  "conor mcgregor",
+  "mcgregor"
  ],
  "competitors": [],
  "otherKey": "pr",
- "sqpAsin": "",
- "names": {},
+ "sqpAsin": "B0H4SCZBHY",
+ "names": {
+  "B0H4SCZBHY": "4-in-1 Variety Pack 12pk",
+  "B0H4XJ5G4X": "Macberry Lychee 12pk",
+  "B0H4WZBN85": "Forbidden Green Apple 12pk",
+  "B0H4XHB9NM": "Orange Creamsicle 12pk",
+  "B0H4X94TKY": "Proper Punch 12pk"
+ },
  "_about": "Brand settings for the shared weekly deck (see _tools/BRAND_DECK_RUNBOOK.md). invPage/recPage empty = no sheet page published yet. brandTerms = words that make a search 'branded'. sqpAsin is filled by deck.py init. names = short product names by ASIN."
 }
