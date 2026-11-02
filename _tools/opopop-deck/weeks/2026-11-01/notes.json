@@ -1,0 +1,75 @@
+{
+  "_week": "2026-10-26 to 2026-11-01 (Week 44). Written from this week's numbers.",
+  "week_story": [
+    "Sales rose 3.7% to $46,558 on 9.5% more units: Pop Cups 6-Packs grew 16% to $16,008 and the Gift Set grew 33% to $4,775.",
+    "The Variety 12-Pack Kit fell 33% to $5,882 as stock ran down (162 available, out-of-stock alert on Nov 1), and Flavor-Wrapped fell 17% to $6,536 with 0 units available on the sheet."
+  ],
+  "refunds_title": "Refunds steady",
+  "refunds": [
+    "Refunds were $895 on 44 units (2.3% rate) vs $677 on 42 units last week; the rate is slightly lower, so nothing points to a product problem."
+  ],
+  "pacing_reco": "November starts at $7,375 a day vs $8,022 on Nov 1 last year; restocking the 12-Pack and 4-Pack Kits before BF/CM is the biggest lever.",
+  "ads_context": [
+    "Ad spend was flat at $5,184 (+2.2%) but ad sales fell 14% to $14,235, so ACoS rose from 30.5% to 36.4%.",
+    "TACoS held at 11.1% because organic sales carried the growth: ads drove 30.6% of sales.",
+    "Campaign rows add up to $5,122 of the $5,184 account spend; about $62 isn't split by campaign in Sellerise."
+  ],
+  "ads_strategy": [
+    "Branded keywords: $2,190 spend (+20%) at 37.1% ACoS, 212 orders.",
+    "Category keywords: $1,759 at 55.1% ACoS for 125 orders; spend there fell 14%.",
+    "Auto targeting spent $260 for $265 in sales (98% ACoS)."
+  ],
+  "bid_moves": [
+    "Lower bids on Sponsored Brands “opopop popcorn” exact: $929 spent for $1,288 in sales (1.4x).",
+    "Cut or lower “opopop” exact (SB), “microwave popcorn” exact and “popcorn making kit” phrase: each returned about 1x.",
+    "Pause the 54 campaigns that spent $367 with no sales; keep “popcorn” exact (5.9x) and “popcorn opopop” broad (7.0x) funded."
+  ],
+  "coupons": [
+    "This week: 35 coupon redemptions (38 last week).",
+    "Subscribe & Save orders rose to 183 from 151."
+  ],
+  "promotions": [
+    "This week: 374 promotion orders and $808 in promotional discounts (vs 443 and $1,093 last week).",
+    "Lighter discounting while units still grew 9.5%."
+  ],
+  "events": [
+    "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+    "Deal and coupon set-up deadlines: to confirm with the account team.",
+    "Priority: Pop Cup Kits and Flavor-Wrapped back in stock at FBA before Nov 20."
+  ],
+  "reviews_title": "No review data in Sellerise",
+  "reviews_body": [
+    "Sellerise returned no review records, rating trend or negative reviews for the 19 Opopop products over the last 90 days.",
+    "That means review tracking isn't pulling for this account, not that there were no reviews."
+  ],
+  "reviews_reco": [
+    "Turn on review tracking for Opopop in Sellerise (or pull Amazon's Customer Reviews report) so the deck can show rating and review count per line.",
+    "Sellerise also shows 38 lost-Buy-Box alerts in 30 days, including Birthday Cake Pop Cups on Nov 1: worth checking alongside reviews."
+  ],
+  "recommendations": [
+    ["Inventory", "Send Pop Cups Variety 12-Pack and 4-Pack Kits now: about 1 week of stock left each.", "Account team", "This week"],
+    ["Inventory", "Find out why Flavor-Wrapped shows 0 available with 1,891 on the sheet and get it live at FBA.", "Inventory team", "This week"],
+    ["Inventory", "Restock Salty Caramel, Lightly Salted and Pickle Monster 6-Packs (1–2 weeks left) and Birthday Cake (out).", "Inventory team", "By Nov 9"],
+    ["Ads", "Lower bids on the SB “opopop popcorn” exact targets and the ~1x category targets listed above.", "Ads team", "This week"],
+    ["Ads", "Pause the 54 no-sale campaigns ($367); add the 18 converting search terms as exact keywords.", "Ads team", "This week"],
+    ["Ads", "Pull budget from 12-Pack Kit campaigns until it's back in stock; push the 6-Packs and Gift Set.", "Ads team", "Until restock"],
+    ["Marketing", "Lock BF/CM coupons and deals for kits, Gift Set and 6-Packs (Nov 27–30).", "Account team", "By Nov 6"],
+    ["Account health", "Review lost Buy Box and listing-price alerts (43 critical in 30 days).", "Account team", "Next week"]
+  ],
+  "position": [
+    "Week 44 sales of $46,558 were up 3.7% with units up 9.5%; TACoS steady at 11.1%.",
+    "November's first day ran at $7,375, 8% below Nov 1 last year; stock on the kits decides BF/CM."
+  ],
+  "next_steps": [
+    "Restock the Pop Cup Kits and Flavor-Wrapped.",
+    "Trim low-return branded and category bids.",
+    "Lock BF/CM deals and coupons.",
+    "Turn on review tracking."
+  ],
+  "data_ask": [
+    "Inbound ETAs for the kits and 6-Packs.",
+    "Flavor-Wrapped FBA status.",
+    "BF/CM deal and coupon plan.",
+    "Search query report (empty in Sellerise this week)."
+  ]
+}

@@ -1,0 +1,536 @@
+{
+ "asOf": "10/26/2026",
+ "week": 44,
+ "groups": {
+  "g1": {
+   "total": 3005.0,
+   "avail": 1548.0,
+   "inbound": 949.0,
+   "wkAvg": 647.0,
+   "l30": 2771.0,
+   "n": 3,
+   "asins": [
+    "B0DSJW26H1",
+    "B0DSJS6NY9",
+    "B0B75YMMZJ"
+   ]
+  },
+  "g2": {
+   "total": 7658.0,
+   "avail": 3859.0,
+   "inbound": 3738.0,
+   "wkAvg": 1255.0,
+   "l30": 5381.0,
+   "n": 6,
+   "asins": [
+    "B09W4JP4J6",
+    "B0C6NGZX6D",
+    "B0C6NHMQ5M",
+    "B09W453CR8",
+    "B0C6NMFLN2",
+    "B0C6N97L2D"
+   ]
+  },
+  "g3": {
+   "total": 1891.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 170.0,
+   "l30": 722.0,
+   "n": 9,
+   "asins": [
+    "B0HCQCSXYD",
+    "B0HCQCT8NZ",
+    "B0HCQKPSC8",
+    "B0HCQ4ZY5Y",
+    "B0HCR4DDSH",
+    "B0HCQCSXYD",
+    "B0HCQCT8NZ",
+    "B0HCQKPSC8",
+    "B0HCQ4ZY5Y"
+   ]
+  },
+  "g4": {
+   "total": 1232.0,
+   "avail": 619.0,
+   "inbound": 613.0,
+   "wkAvg": 64.0,
+   "l30": 273.0,
+   "n": 1,
+   "asins": [
+    "B0B6YZ6L56"
+   ]
+  },
+  "g5": {
+   "total": 4844.0,
+   "avail": 2432.0,
+   "inbound": 2286.0,
+   "wkAvg": 295.0,
+   "l30": 1269.0,
+   "n": 7,
+   "asins": [
+    "B0HBTDZYBB",
+    "B0F1DX7GW8",
+    "B0DMCDCC1H",
+    "B0DMBNGWVL",
+    "B0H2NNNZ8B",
+    "B0H2NMFRF4",
+    "B0H2NMFRF4"
+   ]
+  },
+  "g6": {
+   "total": 468.0,
+   "avail": 234.0,
+   "inbound": 234.0,
+   "wkAvg": 19.0,
+   "l30": 83.0,
+   "n": 1,
+   "asins": [
+    "B0C7Y5DKRX"
+   ]
+  },
+  "pr": {
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "n": 2,
+   "asins": [
+    "B0C7YCWKRV",
+    "B0C5ZCT9DK"
+   ]
+  }
+ },
+ "skus": [
+  {
+   "asin": "B09W4JP4J6",
+   "sku": "FG - 00125-",
+   "name": "Opopop Microwave Popcorn - Pop Cups Salty Caramel 6-Pack, Non-GMO Gourmet Popcorn Kernels & Popcorn Flavoring, Caramel Popcorn, Gluten Free Snacks, Easy to Make and No Mess",
+   "status": "Active",
+   "total": 970.0,
+   "avail": 494.0,
+   "inbound": 468.0,
+   "wkAvg": 313.0,
+   "l30": 1340.0,
+   "wkLeft": 2.0
+  },
+  {
+   "asin": "B0DSJW26H1",
+   "sku": "SX-AJGE-T0ZH",
+   "name": "Opopop Microwave Popcorn - Variety 12-Pack Gourmet Popcorn Kit, Collapsible Silicone Popcorn Popper, Popcorn Maker, Gluten Free Snacks Variety Pack, BPA-Free and Dishwasher Safe (New Flavors)",
+   "status": "Active",
+   "total": 305.0,
+   "avail": 162.0,
+   "inbound": 70.0,
+   "wkAvg": 241.0,
+   "l30": 1031.0,
+   "wkLeft": 1.0
+  },
+  {
+   "asin": "B0DSJS6NY9",
+   "sku": "AT-6NGM-1NMK",
+   "name": "Opopop Microwave Popcorn - Variety 4-Pack Gourmet Popcorn Kit, Collapsible Silicone Popcorn Popper, Popcorn Maker, Gluten Free Snacks Variety Pack, BPA-Free and Dishwasher Safe (New Flavors)",
+   "status": "Active",
+   "total": 707.0,
+   "avail": 367.0,
+   "inbound": 285.0,
+   "wkAvg": 249.0,
+   "l30": 1069.0,
+   "wkLeft": 1.0
+  },
+  {
+   "asin": "B0C6NGZX6D",
+   "sku": "FG - 00245",
+   "name": "Opopop Microwave Popcorn - Pop Cups Super Butter 6-Pack, Non-GMO Gourmet Popcorn Kernels & Flavoring, Butter Popcorn, Gluten Free Snacks, Easy to Make and No Mess",
+   "status": "Active",
+   "total": 5317.0,
+   "avail": 2673.0,
+   "inbound": 2601.0,
+   "wkAvg": 540.0,
+   "l30": 2315.0,
+   "wkLeft": 5.0
+  },
+  {
+   "asin": "B0C6NHMQ5M",
+   "sku": "FG - 00244",
+   "name": "Opopop Microwave Popcorn - Pop Cups Pickle Monster 6-Pack, Non-GMO Gourmet Popcorn Kernels & Popcorn Flavoring, Gluten Free Snacks, Easy to Make and No Mess",
+   "status": "Active",
+   "total": 291.0,
+   "avail": 147.0,
+   "inbound": 138.0,
+   "wkAvg": 122.0,
+   "l30": 523.0,
+   "wkLeft": 1.0
+  },
+  {
+   "asin": "B09W453CR8",
+   "sku": "FG - 00122-",
+   "name": "Opopop Microwave Popcorn - Pop Cups Lightly Salted 6-Pack, Non-GMO Gourmet Popcorn Kernels & Popcorn Flavoring, Gluten Free Snacks, Easy to Make and No Mess",
+   "status": "Active",
+   "total": 385.0,
+   "avail": 197.0,
+   "inbound": 184.0,
+   "wkAvg": 116.0,
+   "l30": 498.0,
+   "wkLeft": 2.0
+  },
+  {
+   "asin": "B0C6NMFLN2",
+   "sku": "FG - 00246",
+   "name": "Opopop Microwave Popcorn - Pop Cups Birthday Cake 6-Pack, Non-GMO Gourmet Popcorn Kernels & Popcorn Flavoring, Gluten Free Snacks, Easy to Make and No Mess",
+   "status": "Active",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 71.0,
+   "l30": 305.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0C6N97L2D",
+   "sku": "FG - 00243",
+   "name": "Opopop Microwave Popcorn - Pop Cups Maui Heat 6-Pack, Non-GMO Gourmet Popcorn Kernels & Popcorn Flavoring, Gluten Free Snacks, Easy to Make and No Mess",
+   "status": "Active",
+   "total": 695.0,
+   "avail": 348.0,
+   "inbound": 347.0,
+   "wkAvg": 93.0,
+   "l30": 400.0,
+   "wkLeft": 4.0
+  },
+  {
+   "asin": "B0HBTDZYBB",
+   "sku": "FG-00394",
+   "name": "Traditional Microwave - Maui Heat - Case of 2 CC (12 total bags)",
+   "status": "Active",
+   "total": 2.0,
+   "avail": 1.0,
+   "inbound": 1.0,
+   "wkAvg": 39.0,
+   "l30": 166.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0F1DX7GW8",
+   "sku": "FG-00425",
+   "name": "Opopop Microwave Popcorn - Super Butter 2.8 oz., 9-Count",
+   "status": "Active",
+   "total": 10.0,
+   "avail": 10.0,
+   "inbound": 0.0,
+   "wkAvg": 13.0,
+   "l30": 57.0,
+   "wkLeft": 1.0
+  },
+  {
+   "asin": "B0B75YMMZJ",
+   "sku": "FG - 00176-",
+   "name": "Opopop Silicone Popcorn Popper - Microwave Popcorn Maker Collapsible Bowl, BPA-Free and Dishwasher Safe",
+   "status": "Active",
+   "total": 1993.0,
+   "avail": 1019.0,
+   "inbound": 594.0,
+   "wkAvg": 157.0,
+   "l30": 671.0,
+   "wkLeft": 7.0
+  },
+  {
+   "asin": "B0HCQCSXYD",
+   "sku": "FG - 00397-FBA",
+   "name": "FWK - 6 Pack - Amazon - Super Butter",
+   "status": "Out of stock",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0HCQCT8NZ",
+   "sku": "FG - 00396-FBA",
+   "name": "FWK - 6 Pack - Amazon - Butter Luxe",
+   "status": "Active",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0HCQKPSC8",
+   "sku": "FG - 00399-FBA",
+   "name": "FWK - 6 Pack - Amazon - Vanilla Kettle",
+   "status": "Active",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0HCQ4ZY5Y",
+   "sku": "FG - 00398-FBA",
+   "name": "FWK - 6 Pack - Amazon - Salty Caramel",
+   "status": "Active",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0DMCDCC1H",
+   "sku": "FG - 00421",
+   "name": "Opopop Microwave Popcorn - Salty Caramel 2.8 oz., 9-Count - Sweet and Salty, Flavored Popcorn, Non-GMO",
+   "status": "Active",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 1.0,
+   "l30": 6.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0DMBNGWVL",
+   "sku": "FG - 00320",
+   "name": "Opopop Microwave Popcorn - Maui Heat 2.8 oz., 9-Count - Sweet and Hot Popcorn, Flavored Popcorn, Non-GMO",
+   "status": "Out of stock",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0C7YCWKRV",
+   "sku": "FG - 00220",
+   "name": "Opopop Traditional Microwave Popcorn - Maui Heat 9-Pack - Sweet and Hot Popcorn, Flavored Popcorn Bulk, Non-GMO",
+   "status": "Out of stock",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0HCR4DDSH",
+   "sku": "FG - 00395",
+   "name": "Flavor Wrapped Kernels Discovery Kit - 4 pack Amazon",
+   "status": "Active",
+   "total": 781.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 55.0,
+   "l30": 234.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0H2NNNZ8B",
+   "sku": "FG - 00392",
+   "name": "Opopop Cinnalicious Microwave Popcorn - Gourmet Theater Movie Snacks, Microwavable Butter Popcorn Snacks, Bags, Flavored, Non-GMO Whole Grain Gluten Free, No Artificial Preservatives, 12 Count",
+   "status": "Active",
+   "total": 1.0,
+   "avail": 1.0,
+   "inbound": 0.0,
+   "wkAvg": 68.0,
+   "l30": 292.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0H2NMFRF4",
+   "sku": "FBA19GMS9PK7.missing1",
+   "name": "Opopop Butter Bliss Microwave Popcorn - Gourmet Theater Movie Snacks, Microwavable Butter Popcorn Snacks, Bags, Flavored, Non-GMO Whole Grain Gluten Free, No Artificial Preservatives, 12 Count",
+   "status": "Out of stock",
+   "total": 4.0,
+   "avail": 2.0,
+   "inbound": 2.0,
+   "wkAvg": 0.0,
+   "l30": 2.0,
+   "wkLeft": 4.0
+  },
+  {
+   "asin": "B0B6YZ6L56",
+   "sku": "FG - 00175-",
+   "name": "Opopop Gourmet Popcorn Gift Set - Variety 12-Pack Microwave Popcorn Kit, Collapsible Silicone Popcorn Popper, Gift Ready Packaging, Gluten Free Snacks Variety Pack, BPA-Free and Dishwasher Safe",
+   "status": "Active",
+   "total": 1232.0,
+   "avail": 619.0,
+   "inbound": 613.0,
+   "wkAvg": 64.0,
+   "l30": 273.0,
+   "wkLeft": 10.0
+  },
+  {
+   "asin": "B0C7Y5DKRX",
+   "sku": "FG - 00221",
+   "name": "Opopop Traditional Microwave Popcorn - Salty Caramel Popcorn 9-Pack - Sweet and Salty Popcorn, Flavored Popcorn Bulk, Non-GMO",
+   "status": "Active",
+   "total": 468.0,
+   "avail": 234.0,
+   "inbound": 234.0,
+   "wkAvg": 19.0,
+   "l30": 83.0,
+   "wkLeft": 12.0
+  },
+  {
+   "asin": "B0H2NMFRF4",
+   "sku": "FG - 00391",
+   "name": "Opopop Butter Bliss Microwave Popcorn - Gourmet Theater Movie Snacks, Microwavable Butter Popcorn Snacks, Bags, Flavored, Non-GMO Whole Grain Gluten Free, No Artificial Preservatives, 12 Count",
+   "status": "Active",
+   "total": 4827.0,
+   "avail": 2418.0,
+   "inbound": 2283.0,
+   "wkAvg": 174.0,
+   "l30": 746.0,
+   "wkLeft": 14.0
+  },
+  {
+   "asin": "B0C5ZCT9DK",
+   "sku": "FG - 00231",
+   "name": "Opopop Microwave Popcorn - Variety 12-Pack Gourmet Popcorn Kit, Collapsible Silicone Popcorn Popper, Popcorn Maker, Gluten Free Snack-Sized Serving, BPA-Free and Dishwasher Safe",
+   "status": "\u2014",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0HCQCSXYD",
+   "sku": "FG - 00397",
+   "name": "FWK - 6 Pack - Amazon - Super Butter",
+   "status": "Active",
+   "total": 287.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 42.0,
+   "l30": 178.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0HCQCT8NZ",
+   "sku": "FG - 00396",
+   "name": "FWK - 6 Pack - Amazon - Butter Luxe",
+   "status": "Active",
+   "total": 315.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 27.0,
+   "l30": 116.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0HCQKPSC8",
+   "sku": "FG - 00399",
+   "name": "FWK - 6 Pack - Amazon - Vanilla Kettle",
+   "status": "Active",
+   "total": 335.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 24.0,
+   "l30": 101.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0HCQ4ZY5Y",
+   "sku": "FG - 00398",
+   "name": "FWK - 6 Pack - Amazon - Salty Caramel",
+   "status": "Active",
+   "total": 173.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 22.0,
+   "l30": 93.0,
+   "wkLeft": 0.0
+  }
+ ],
+ "po": [
+  [
+   "Opopop Microwave Popcorn - Pop Cups Salty Caramel 6-Pack, Non-GMO Gourmet Popcorn Kernels & Popcorn Flavoring, Caramel Popcorn, Gluten Free Snacks, Easy to Make and No Mess ASIN: B09W4JP4J6 \u00b7 SKU: FG - 00125-",
+   "\u2014",
+   "3,300"
+  ],
+  [
+   "Opopop Microwave Popcorn - Variety 12-Pack Gourmet Popcorn Kit, Collapsible Silicone Popcorn Popper, Popcorn Maker, Gluten Free Snacks Variety Pack, BPA-Free and Dishwasher Safe (New Flavors) ASIN: B0DSJW26H1 \u00b7 SKU: SX-AJGE-T0ZH",
+   "\u2014",
+   "3,000"
+  ],
+  [
+   "Opopop Microwave Popcorn - Variety 4-Pack Gourmet Popcorn Kit, Collapsible Silicone Popcorn Popper, Popcorn Maker, Gluten Free Snacks Variety Pack, BPA-Free and Dishwasher Safe (New Flavors) ASIN: B0DSJS6NY9 \u00b7 SKU: AT-6NGM-1NMK",
+   "\u2014",
+   "2,800"
+  ],
+  [
+   "Opopop Microwave Popcorn - Pop Cups Super Butter 6-Pack, Non-GMO Gourmet Popcorn Kernels & Flavoring, Butter Popcorn, Gluten Free Snacks, Easy to Make and No Mess ASIN: B0C6NGZX6D \u00b7 SKU: FG - 00245",
+   "\u2014",
+   "2,100"
+  ],
+  [
+   "Opopop Microwave Popcorn - Pop Cups Pickle Monster 6-Pack, Non-GMO Gourmet Popcorn Kernels & Popcorn Flavoring, Gluten Free Snacks, Easy to Make and No Mess ASIN: B0C6NHMQ5M \u00b7 SKU: FG - 00244",
+   "\u2014",
+   "1,400"
+  ],
+  [
+   "Opopop Microwave Popcorn - Pop Cups Lightly Salted 6-Pack, Non-GMO Gourmet Popcorn Kernels & Popcorn Flavoring, Gluten Free Snacks, Easy to Make and No Mess ASIN: B09W453CR8 \u00b7 SKU: FG - 00122-",
+   "\u2014",
+   "1,200"
+  ],
+  [
+   "Opopop Microwave Popcorn - Pop Cups Birthday Cake 6-Pack, Non-GMO Gourmet Popcorn Kernels & Popcorn Flavoring, Gluten Free Snacks, Easy to Make and No Mess ASIN: B0C6NMFLN2 \u00b7 SKU: FG - 00246",
+   "\u2014",
+   "1,000"
+  ],
+  [
+   "Opopop Microwave Popcorn - Pop Cups Maui Heat 6-Pack, Non-GMO Gourmet Popcorn Kernels & Popcorn Flavoring, Gluten Free Snacks, Easy to Make and No Mess ASIN: B0C6N97L2D \u00b7 SKU: FG - 00243",
+   "\u2014",
+   "600"
+  ],
+  [
+   "Traditional Microwave - Maui Heat - Case of 2 CC (12 total bags) ASIN: B0HBTDZYBB \u00b7 SKU: FG-00394",
+   "\u2014",
+   "550"
+  ],
+  [
+   "Opopop Microwave Popcorn - Super Butter 2.8 oz., 9-Count ASIN: B0F1DX7GW8 \u00b7 SKU: FG-00425",
+   "\u2014",
+   "200"
+  ],
+  [
+   "Opopop Silicone Popcorn Popper - Microwave Popcorn Maker Collapsible Bowl, BPA-Free and Dishwasher Safe ASIN: B0B75YMMZJ \u00b7 SKU: FG - 00176-",
+   "\u2014",
+   "200"
+  ],
+  [
+   "FWK - 6 Pack - Amazon - Super Butter ASIN: B0HCQCSXYD \u00b7 SKU: FG - 00397-FBA",
+   "\u2014",
+   "100"
+  ],
+  [
+   "FWK - 6 Pack - Amazon - Butter Luxe ASIN: B0HCQCT8NZ \u00b7 SKU: FG - 00396-FBA",
+   "\u2014",
+   "100"
+  ],
+  [
+   "FWK - 6 Pack - Amazon - Vanilla Kettle ASIN: B0HCQKPSC8 \u00b7 SKU: FG - 00399-FBA",
+   "\u2014",
+   "100"
+  ],
+  [
+   "FWK - 6 Pack - Amazon - Salty Caramel ASIN: B0HCQ4ZY5Y \u00b7 SKU: FG - 00398-FBA",
+   "\u2014",
+   "100"
+  ]
+ ],
+ "unmapped": [
+  "B0C7YCWKRV",
+  "B0C5ZCT9DK"
+ ]
+}

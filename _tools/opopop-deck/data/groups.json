@@ -1,0 +1,86 @@
+[
+ {
+  "key": "g1",
+  "short": "Pop Cup Kits + Popper",
+  "name": "Opopop Gourmet Popcorn Pop Cups Variety 4-Pack Kit + Silicone Popper",
+  "col": "--c1",
+  "asins": [
+   "B0B75YMMZJ",
+   "B0DSJS6NY9",
+   "B0DSJW26H1"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g2",
+  "short": "Pop Cups 6-Packs",
+  "name": "Opopop Microwave Popcorn Pop Cups - Maui Heat 6-Pack",
+  "col": "--c2",
+  "asins": [
+   "B09W453CR8",
+   "B09W4JP4J6",
+   "B0C6N97L2D",
+   "B0C6NGZX6D",
+   "B0C6NHMQ5M",
+   "B0C6NMFLN2"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g3",
+  "short": "Flavor-Wrapped",
+  "name": "Opopop Butter Luxe Flavor-Wrapped Microwave Popcorn, 6 Sachets",
+  "col": "--c3",
+  "asins": [
+   "B0HCQ4ZY5Y",
+   "B0HCQCSXYD",
+   "B0HCQCT8NZ",
+   "B0HCQKPSC8",
+   "B0HCR4DDSH"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g4",
+  "short": "Gift Set 12-Pack",
+  "name": "Opopop Gourmet Popcorn Gift Set - Variety 12-Pack + Silicone Popper",
+  "col": "--c4",
+  "asins": [
+   "B0B6YZ6L56"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g5",
+  "short": "Popcorn Bags",
+  "name": "Opopop Microwave Popcorn - Maui Heat 2.8oz, 12-Count",
+  "col": "--c5",
+  "asins": [
+   "B0DMBNGWVL",
+   "B0DMCDCC1H",
+   "B0F1DX7GW8",
+   "B0H2NMFRF4",
+   "B0H2NNNZ8B",
+   "B0HBTDZYBB"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g6",
+  "short": "Traditional 9-Pack",
+  "name": "Opopop Traditional Microwave Popcorn - Salty Caramel 9-Pack",
+  "col": "--c6",
+  "asins": [
+   "B0C7Y5DKRX"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "pr",
+  "short": "Other products",
+  "name": "Other products",
+  "col": "--c8",
+  "asins": [],
+  "sku": ""
+ }
+]

@@ -14,7 +14,16 @@
  ],
  "competitors": [],
  "otherKey": "pr",
- "sqpAsin": "",
- "names": {},
+ "sqpAsin": "B0DSJW26H1",
+ "names": {
+  "B0C6NGZX6D": "Super Butter Pop Cups 6-Pack",
+  "B0DSJS6NY9": "Pop Cups Variety 4-Pack Kit",
+  "B0DSJW26H1": "Pop Cups Variety 12-Pack Kit",
+  "B09W4JP4J6": "Salty Caramel Pop Cups 6-Pack",
+  "B09W453CR8": "Lightly Salted Pop Cups 6-Pack",
+  "B0C6NHMQ5M": "Pickle Monster Pop Cups 6-Pack",
+  "B0C6N97L2D": "Maui Heat Pop Cups 6-Pack",
+  "B0C6NMFLN2": "Birthday Cake Pop Cups 6-Pack"
+ },
  "_about": "Brand settings for the shared weekly deck (see _tools/BRAND_DECK_RUNBOOK.md). invPage/recPage empty = no sheet page published yet. brandTerms = words that make a search 'branded'. sqpAsin is filled by deck.py init. names = short product names by ASIN."
 }
