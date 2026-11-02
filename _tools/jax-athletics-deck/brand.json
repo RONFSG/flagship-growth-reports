@@ -14,7 +14,16 @@
  ],
  "competitors": [],
  "otherKey": "pr",
- "sqpAsin": "",
- "names": {},
+ "sqpAsin": "B0BZGS9QHR",
+ "names": {
+  "B0BZGLQQ8J": "Graphite Grey Strap Cuff (AM)",
+  "B0HKTQP1D8": "Big League Berry Pro Cuff (AS)",
+  "B0DNJGL199": "Pink Pro Cuff (AL, RH)",
+  "B0GRPPPVMG": "Blue Raspberry Strap Cuff (AS)",
+  "B0GRPS1QHS": "Blue Raspberry Strap Cuff (AM, no web)",
+  "B0BZGS5HVT": "Platinum White Strap Cuff (YL)",
+  "B0CNTT82RR": "Baby Blue Strap Cuff (AM)",
+  "B0DNJDT4RF": "Baby Blue Strap Cuff (AL, LH)"
+ },
  "_about": "Brand settings for the shared weekly deck (see _tools/BRAND_DECK_RUNBOOK.md). invPage/recPage empty = no sheet page published yet. brandTerms = words that make a search 'branded'. sqpAsin is filled by deck.py init. names = short product names by ASIN."
 }

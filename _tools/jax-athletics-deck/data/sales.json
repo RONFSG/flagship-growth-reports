@@ -1,0 +1,101 @@
+{
+ "PRODUCTS": [
+  {
+   "key": "g1",
+   "sales": [],
+   "units": [],
+   "sessions": [],
+   "adSpend": [],
+   "adSales": []
+  },
+  {
+   "key": "g2",
+   "sales": [],
+   "units": [],
+   "sessions": [],
+   "adSpend": [],
+   "adSales": []
+  },
+  {
+   "key": "g3",
+   "sales": [],
+   "units": [],
+   "sessions": [],
+   "adSpend": [],
+   "adSales": []
+  },
+  {
+   "key": "g4",
+   "sales": [],
+   "units": [],
+   "sessions": [],
+   "adSpend": [],
+   "adSales": []
+  },
+  {
+   "key": "pr",
+   "sales": [],
+   "units": [],
+   "sessions": [],
+   "adSpend": [],
+   "adSales": []
+  }
+ ],
+ "S25": {
+  "sales": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "units": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "a25": [
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  23416.23,
+  22313.47,
+  20566.69,
+  24831.25,
+  106580.13
+ ],
+ "act26": [
+  27369,
+  34545,
+  57497,
+  38231,
+  20822,
+  11548,
+  8694,
+  12898,
+  8123,
+  9607
+ ],
+ "notes": "Sellerise JAX Atheltics, US"
+}

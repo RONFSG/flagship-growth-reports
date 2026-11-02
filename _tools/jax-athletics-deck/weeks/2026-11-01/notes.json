@@ -1,0 +1,73 @@
+{
+  "_week": "2026-10-26 to 2026-11-01 (Week 44). Written from that week's numbers.",
+  "week_story": [
+    "Sales rose 25% to $1,845 on 25 orders (21 the week before) while ad spend fell 24% to $365.",
+    "Pro Cuff gloves grew 65% to $568 and the flavor Strap Cuff line doubled to $487; core Strap Cuff slipped 8% to $791."
+  ],
+  "refunds_title": "Refunds eased",
+  "refunds": [
+    "Refunds were $150 on 3 units (12% of orders), down from $409 on 7 units (33%) the week before. Refund rates have run above 10% every month this year, so return reasons are still worth a look."
+  ],
+  "pacing_reco": "November is off-season for batting gloves; last November did $24.8K and December $106.6K, so the job now is to get listings, stock and branded ads ready for holiday gifting.",
+  "ads_context": [
+    "Ad spend fell to $365 from $482 while ad sales rose 51% to $1,055.",
+    "ACoS improved to 34.6% from 68.9% and TACoS to 19.8% from 32.7%."
+  ],
+  "ads_strategy": [
+    "Branded keywords drove 11 of the ad orders: $76 spent for $785 in sales (9.7% ACoS).",
+    "Category keywords spent $110 for one $60 order, and auto targeting spent $99 for one $75 order."
+  ],
+  "bid_moves": [
+    "Scale “jax batting gloves” exact (SP): $56.70 spent for $634.91 and 9 orders.",
+    "Pause or negate the Sponsored Brands “jax athletic” phrase target: $31.54, 74,034 impressions, 0.03% CTR, no sales.",
+    "Lower bids on “baseball batting gloves” and “batting gloves” phrase targets: $56 spent with no sales."
+  ],
+  "coupons": [
+    "This week: no coupon redemptions.",
+    "Last week: no coupon redemptions.",
+    "October: no coupon redemptions."
+  ],
+  "promotions": [
+    "This week: 2 promotion orders, $20.25 in promotional discounts (vs $22.50 last week).",
+    "October: 4 promotion orders, $42.75 in discounts."
+  ],
+  "events": [
+    "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+    "Deal and coupon set-up deadlines: to confirm with the account team.",
+    "Last year December was the biggest month ($106.6K); plan holiday gifting offers now."
+  ],
+  "reviews_title": "No review data in Sellerise",
+  "reviews_body": [
+    "Sellerise returned no review records, rating trend or negative reviews for JAX Athletics over the last 90 days.",
+    "That means the review tracker isn't pulling for this account, not that there were no reviews."
+  ],
+  "reviews_reco": [
+    "Turn on review tracking for JAX Athletics in Sellerise so the deck can show star rating and review count per line.",
+    "With refunds above 10% most months, read the newest 1–3 star reviews to see whether sizing drives returns."
+  ],
+  "recommendations": [
+    ["Ads", "Raise budget and bids on the branded “jax batting gloves” exact campaign (9 orders at 8.9% ACoS).", "Ads team", "This week"],
+    ["Ads", "Pause the SB “jax athletic” phrase target and review the 20 campaigns that spent $86 with no sales.", "Ads team", "This week"],
+    ["Ads", "Cut category phrase bids (“baseball batting gloves”, “batting gloves”); keep only exact terms that convert.", "Ads team", "This week"],
+    ["Ads", "Shift spend toward Pro Cuff and the flavor Strap Cuff line, which grew 65% and 101%.", "Ads team", "Next 2 weeks"],
+    ["Marketing", "Plan BF/CM and December gifting deals; confirm deal and coupon deadlines.", "Account team", "By Nov 9"],
+    ["Inventory", "Share the stock position per line so holiday ads don't send traffic to sizes that are out.", "Account team", "This week"],
+    ["Account health", "Turn on review tracking and review return reasons behind the refund rate.", "Account team", "Next week"]
+  ],
+  "position": [
+    "October closed at $9.6K; November starts slow at $240 on day 1 (last year Nov 1: $898).",
+    "This week grew 25% with lower ad spend, led by branded search and the Pro Cuff line."
+  ],
+  "next_steps": [
+    "Scale branded exact; trim no-sale category targets.",
+    "Lock BF/CM and December offers.",
+    "Get a stock view per line.",
+    "Turn on review tracking."
+  ],
+  "data_ask": [
+    "Inventory sheet page for JAX (stock and inbound by size).",
+    "BF/CM and December deal plan.",
+    "Review tracking turned on in Sellerise.",
+    "Search query report not loaded for this week."
+  ]
+}
