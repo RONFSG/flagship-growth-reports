@@ -1,0 +1,60 @@
+[
+ {
+  "key": "g1",
+  "short": "Tarot",
+  "name": "Heavenly Bodies Tarot: Deck and Hardback Guidebook (Deluxe Boxset)",
+  "col": "--c1",
+  "asins": [
+   "B0HB125M7H"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g2",
+  "short": "Astrology",
+  "name": "Heavenly Bodies Astrology: Deck and Hardback Guidebook (Deluxe Boxset)",
+  "col": "--c2",
+  "asins": [
+   "B0HB19P39M"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g3",
+  "short": "Tarot + Astrology 2-pack",
+  "name": "Heavenly Bodies Tarot & Astrology: Deck and Hardback Guidebook (Deluxe Boxset) - 2 pack",
+  "col": "--c3",
+  "asins": [
+   "B0HB6KJXPX"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g4",
+  "short": "Tarot 3-pack",
+  "name": "Heavenly Bodies Tarot: Deck and Hardback Guidebook (Deluxe Boxset) - 3 pack",
+  "col": "--c4",
+  "asins": [
+   "B0HB783R1K"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "g5",
+  "short": "Astrology 3-pack",
+  "name": "Heavenly Bodies Astrology: Deck and Hardback Guidebook (Deluxe Boxset) - 3 pack",
+  "col": "--c5",
+  "asins": [
+   "B0HB73ZMDP"
+  ],
+  "sku": ""
+ },
+ {
+  "key": "pr",
+  "short": "Other products",
+  "name": "Other products",
+  "col": "--c8",
+  "asins": [],
+  "sku": ""
+ }
+]

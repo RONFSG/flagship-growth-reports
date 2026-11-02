@@ -1,0 +1,108 @@
+{
+ "_week": "2026-10-26 to 2026-11-01 (Week 44). Written from that week's numbers; rewrite every key each Monday.",
+ "week_story": [
+  "Revenue was $9,656, down 11% from $10,844, on 164 units (185 the week before).",
+  "The Tarot deck drove the drop: $8,125 on 139 units vs $9,731 on 168 (-17%). It is still 84% of sales.",
+  "Astrology grew 55% to $816 (17 units) and the Tarot + Astrology 2-pack grew 69% to $590 (7 units)."
+ ],
+ "refunds_title": "Refunds ticked up",
+ "refunds": [
+  "Refunds were $443 on 11 units (6.75% refund rate), up from $358 and 4.44% the week before. Worth reading the return reasons on the Tarot deck, which carries most of the volume."
+ ],
+ "pacing_reco": "Sales have held at about $10–11K a week since mid-October; the Tarot deck's ad efficiency and the holiday gifting run-up are the levers to lift November.",
+ "ads_context": [
+  "Since the Oct 5–11 week ($22,442 revenue, 8.8% TACoS), weekly sales have settled at $9.7–10.9K.",
+  "This week spend fell 22% to $647 while ad sales rose 34% to $1,830, so ACoS improved to 35.4% from 60.7% and TACoS to 6.7%."
+ ],
+ "ads_strategy": [
+  "There are no branded searches yet: all keyword spend is on category terms ($346 for $980 in sales, 18 orders).",
+  "Auto campaigns returned $850 on $260 (30.6% ACoS); the Books remarketing (Sponsored Display) spent $25 with no sales."
+ ],
+ "bid_moves": [
+  "Scale “tarot decks” (phrase): $100 spent for $485 and 9 orders (20.7% ACoS).",
+  "Lower the bid on “tarot cards” (exact): $89 for 3 orders (53.8% ACoS).",
+  "Pause or negate “tarot card” (exact, $27) and the Books remarketing ($25): clicks, no sales.",
+  "Add “light seers tarot deck” as an exact keyword: 2 orders on $1.62."
+ ],
+ "coupons": [
+  "This week: no coupon redemptions.",
+  "Last week: no coupon redemptions."
+ ],
+ "promotions": [
+  "This week: 71 promotion orders, $228 in promotional discounts (vs 90 orders and $274 last week)."
+ ],
+ "events": [
+  "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+  "Holiday gifting season: tarot and astrology boxsets are natural gifts; plan deals and coupons now.",
+  "Deal and coupon set-up deadlines: to confirm with the account team."
+ ],
+ "reviews_title": "No review data in Sellerise",
+ "reviews_body": [
+  "Sellerise returned no review records, rating trend or negative reviews for the 5 Heavenly Bodies products over the last 90 days.",
+  "That means the review tracker isn't pulling for this account, not that there were no reviews. A negative seller-feedback alert from Oct 20 is open."
+ ],
+ "reviews_reco": [
+  "Turn on review tracking in Sellerise (or pull Amazon's Customer Reviews report) so the deck can show star rating and review count.",
+  "Answer the open negative-feedback alert and check the newest 1–3 star reviews on the Tarot deck alongside the refund rise."
+ ],
+ "recommendations": [
+  [
+   "Ads",
+   "Raise budget/bids on “tarot decks” (phrase) and “tarot cards for beginners” (exact), both under 21% ACoS.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Lower the “tarot cards” exact bid; pause “tarot card” exact and the Books remarketing ($52 with no sales).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Harvest converting long-tail queries (e.g. “light seers tarot deck”) into exact keywords.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Listings",
+   "Fix the 2 critical dimension alerts on the Tarot deck and the 2-pack.",
+   "Catalog team",
+   "By Nov 6"
+  ],
+  [
+   "Promotions",
+   "Set up BF/CM deals and coupons for the Tarot and Astrology boxsets.",
+   "Account team",
+   "Before deadlines"
+  ],
+  [
+   "Inventory",
+   "Astrology 3-pack: 96 units, no sales in two weeks; add it to ads or a bundle offer.",
+   "Account team",
+   "Next 2 weeks"
+  ],
+  [
+   "Reviews",
+   "Turn on review tracking and answer the open negative-feedback alert.",
+   "Account team",
+   "This week"
+  ]
+ ],
+ "position": [
+  "November opened at $1,116 on Nov 1; at that pace the month lands near $33.5K vs October's $63,750.",
+  "Ads are leaner: ACoS 35.4% (from 60.7%), TACoS 6.7%."
+ ],
+ "next_steps": [
+  "Scale the tarot keywords that convert.",
+  "Cut no-sale targets.",
+  "Lock BF/CM deals and coupons.",
+  "Check refund reasons and dimension alerts."
+ ],
+ "data_ask": [
+  "BF/CM deal and coupon plan.",
+  "Review tracking turned on in Sellerise.",
+  "Product costs (COGS) in Sellerise for true profit.",
+  "Search Query Performance data for the Tarot deck (not in this deck yet)."
+ ]
+}

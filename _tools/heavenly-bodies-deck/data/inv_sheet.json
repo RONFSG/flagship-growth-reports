@@ -1,0 +1,160 @@
+{
+ "asOf": "10/26/2026",
+ "week": 44,
+ "groups": {
+  "g1": {
+   "total": 16182.0,
+   "avail": 2316.0,
+   "inbound": 1440.0,
+   "wkAvg": 242.0,
+   "l30": 1037.0,
+   "n": 2,
+   "asins": [
+    "B0HB125M7H",
+    "B0HB125M7H"
+   ]
+  },
+  "g2": {
+   "total": 784.0,
+   "avail": 744.0,
+   "inbound": 0.0,
+   "wkAvg": 27.0,
+   "l30": 116.0,
+   "n": 2,
+   "asins": [
+    "B0HB19P39M",
+    "B0HB19P39M"
+   ]
+  },
+  "g3": {
+   "total": 190.0,
+   "avail": 144.0,
+   "inbound": 1.0,
+   "wkAvg": 6.0,
+   "l30": 25.0,
+   "n": 1,
+   "asins": [
+    "B0HB6KJXPX"
+   ]
+  },
+  "g4": {
+   "total": 68.0,
+   "avail": 67.0,
+   "inbound": 0.0,
+   "wkAvg": 3.0,
+   "l30": 13.0,
+   "n": 1,
+   "asins": [
+    "B0HB783R1K"
+   ]
+  },
+  "g5": {
+   "total": 96.0,
+   "avail": 96.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 2.0,
+   "n": 1,
+   "asins": [
+    "B0HB73ZMDP"
+   ]
+  },
+  "pr": {
+   "total": 0,
+   "avail": 0,
+   "inbound": 0,
+   "wkAvg": 0,
+   "l30": 0,
+   "n": 0,
+   "asins": []
+  }
+ },
+ "skus": [
+  {
+   "asin": "B0HB125M7H",
+   "sku": "TAROT",
+   "name": "Heavenly Bodies Tarot: Deck and Hardback Guidebook (Deluxe Boxset)",
+   "status": "Active",
+   "total": 3878.0,
+   "avail": 2316.0,
+   "inbound": 1440.0,
+   "wkAvg": 242.0,
+   "l30": 1037.0,
+   "wkLeft": 12.0
+  },
+  {
+   "asin": "B0HB783R1K",
+   "sku": "Tarot-3PK",
+   "name": "Heavenly Bodies Tarot: Deck and Hardback Guidebook (Deluxe Boxset) - 3 pack",
+   "status": "Active",
+   "total": 68.0,
+   "avail": 67.0,
+   "inbound": 0.0,
+   "wkAvg": 3.0,
+   "l30": 13.0,
+   "wkLeft": 17.0
+  },
+  {
+   "asin": "B0HB19P39M",
+   "sku": "ASTROLOGY",
+   "name": "Heavenly Bodies Astrology: Deck and Hardback Guidebook (Deluxe Boxset)",
+   "status": "Active",
+   "total": 784.0,
+   "avail": 744.0,
+   "inbound": 0.0,
+   "wkAvg": 27.0,
+   "l30": 116.0,
+   "wkLeft": 22.0
+  },
+  {
+   "asin": "B0HB6KJXPX",
+   "sku": "Tarort + Astrology",
+   "name": "Heavenly Bodies Tarot & Astrology: Deck and Hardback Guidebook (Deluxe Boxset) - 2 pack",
+   "status": "Active",
+   "total": 190.0,
+   "avail": 144.0,
+   "inbound": 1.0,
+   "wkAvg": 6.0,
+   "l30": 25.0,
+   "wkLeft": 26.0
+  },
+  {
+   "asin": "B0HB73ZMDP",
+   "sku": "Astrology-3PK",
+   "name": "Heavenly Bodies Astrology: Deck and Hardback Guidebook (Deluxe Boxset) - 3 pack",
+   "status": "Active",
+   "total": 96.0,
+   "avail": 96.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 2.0,
+   "wkLeft": 160.0
+  },
+  {
+   "asin": "B0HB125M7H",
+   "sku": "TAROT-FBM",
+   "name": "Heavenly Bodies Tarot: Deck and Hardback Guidebook (Deluxe Boxset)",
+   "status": "Closed",
+   "total": 12304.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0HB19P39M",
+   "sku": "ASTROLOGY-FBM",
+   "name": "Heavenly Bodies Astrology: Deck and Hardback Guidebook (Deluxe Boxset)",
+   "status": "Closed",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  }
+ ],
+ "po": [],
+ "unmapped": []
+}

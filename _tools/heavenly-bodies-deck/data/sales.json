@@ -1,0 +1,109 @@
+{
+ "PRODUCTS": [
+  {
+   "key": "g1",
+   "sales": [],
+   "units": [],
+   "sessions": [],
+   "adSpend": [],
+   "adSales": []
+  },
+  {
+   "key": "g2",
+   "sales": [],
+   "units": [],
+   "sessions": [],
+   "adSpend": [],
+   "adSales": []
+  },
+  {
+   "key": "g3",
+   "sales": [],
+   "units": [],
+   "sessions": [],
+   "adSpend": [],
+   "adSales": []
+  },
+  {
+   "key": "g4",
+   "sales": [],
+   "units": [],
+   "sessions": [],
+   "adSpend": [],
+   "adSales": []
+  },
+  {
+   "key": "g5",
+   "sales": [],
+   "units": [],
+   "sessions": [],
+   "adSpend": [],
+   "adSales": []
+  },
+  {
+   "key": "pr",
+   "sales": [],
+   "units": [],
+   "sessions": [],
+   "adSpend": [],
+   "adSales": []
+  }
+ ],
+ "S25": {
+  "sales": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "units": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "a25": [
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0
+ ],
+ "act26": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  129,
+  60,
+  181310,
+  90706,
+  63750
+ ],
+ "notes": "Sellerise Heavenly Bodies Studio, US"
+}

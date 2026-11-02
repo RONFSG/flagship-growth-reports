@@ -1,0 +1,330 @@
+{
+ "_source": "Sellerise MCP, account Heavenly Bodies Studio, marketplace US, pulled 2026-11-02 (Monday-Sunday weeks; 4-week table from the saved weekly totals)",
+ "weeks": [
+  {
+   "label": "Oct 5 – 11",
+   "revenue": 22441.74,
+   "units": 442,
+   "orders": 432,
+   "impressions": 582668,
+   "clicks": 2430,
+   "refundUnits": 20,
+   "refundRate": 4.63,
+   "spend": 1965.62,
+   "adSales": 5487.0,
+   "acos": 35.82,
+   "tacos": 8.76
+  },
+  {
+   "label": "Oct 12 – 18",
+   "revenue": 10855.58,
+   "units": 186,
+   "orders": 184,
+   "impressions": 296787,
+   "clicks": 1063,
+   "refundUnits": 16,
+   "refundRate": 8.7,
+   "spend": 725.25,
+   "adSales": 2616.0,
+   "acos": 27.72,
+   "tacos": 6.68
+  },
+  {
+   "label": "Oct 19 – 25",
+   "revenue": 10844.08,
+   "units": 185,
+   "orders": 180,
+   "impressions": 298791,
+   "clicks": 1015,
+   "refundUnits": 8,
+   "refundRate": 4.44,
+   "spend": 831.02,
+   "adSales": 1370.0,
+   "acos": 60.66,
+   "tacos": 7.66
+  },
+  {
+   "label": "Oct 26 – Nov 1",
+   "revenue": 9656.03,
+   "units": 164,
+   "orders": 163,
+   "impressions": 257207,
+   "clicks": 928,
+   "refundUnits": 11,
+   "refundRate": 6.75,
+   "spend": 647.14,
+   "adSales": 1830.0,
+   "acos": 35.36,
+   "tacos": 6.7,
+   "net": 5648.38,
+   "refunds": 443.25,
+   "adOrders": 33,
+   "cpc": 0.7,
+   "cvr": 3.56
+  }
+ ],
+ "mtd": {
+  "through": "2026-11-01",
+  "days": 1,
+  "revenue": 1115.5,
+  "units": 20,
+  "orders": 19,
+  "spend": 77.71,
+  "adSales": 310,
+  "acos": 25.07,
+  "tacos": 6.97,
+  "refundRate": 5.26
+ },
+ "mtdLY": {
+  "revenue": 0,
+  "units": 0,
+  "orders": 0,
+  "spend": 0
+ },
+ "daily": [
+  [
+   "2026-10-19",
+   1841.73,
+   115.35,
+   200,
+   31,
+   4
+  ],
+  [
+   "2026-10-20",
+   2222.39,
+   128.38,
+   165,
+   36,
+   3
+  ],
+  [
+   "2026-10-21",
+   1530.42,
+   116.21,
+   155,
+   24,
+   3
+  ],
+  [
+   "2026-10-22",
+   1666.14,
+   123.94,
+   220,
+   28,
+   4
+  ],
+  [
+   "2026-10-23",
+   1206.61,
+   114.3,
+   200,
+   21,
+   4
+  ],
+  [
+   "2026-10-24",
+   1089.51,
+   116.78,
+   265,
+   19,
+   5
+  ],
+  [
+   "2026-10-25",
+   1287.28,
+   116.06,
+   165,
+   21,
+   3
+  ],
+  [
+   "2026-10-26",
+   1480.38,
+   106.08,
+   385,
+   25,
+   7
+  ],
+  [
+   "2026-10-27",
+   1690.18,
+   105.27,
+   265,
+   29,
+   5
+  ],
+  [
+   "2026-10-28",
+   1324.51,
+   107.67,
+   155,
+   21,
+   3
+  ],
+  [
+   "2026-10-29",
+   1517.96,
+   97.03,
+   220,
+   25,
+   4
+  ],
+  [
+   "2026-10-30",
+   1541.46,
+   78.89,
+   220,
+   27,
+   4
+  ],
+  [
+   "2026-10-31",
+   986.04,
+   74.49,
+   275,
+   17,
+   5
+  ],
+  [
+   "2026-11-01",
+   1115.5,
+   77.71,
+   310,
+   19,
+   5
+  ]
+ ],
+ "searchTerms": {
+  "total": 115,
+  "winners": 3,
+  "harvest": 1,
+  "negative": 3,
+  "noPurchase": 3,
+  "rows": [],
+  "category": [
+   [
+    "tarot cards",
+    "SP",
+    46635,
+    141,
+    3,
+    111.98,
+    165
+   ],
+   [
+    "tarot cards for beginners",
+    "SP",
+    11428,
+    24,
+    3,
+    29.77,
+    165
+   ],
+   [
+    "tarot deck",
+    "SP",
+    26005,
+    67,
+    2,
+    38.34,
+    110
+   ],
+   [
+    "light seers tarot deck",
+    "SP",
+    68,
+    2,
+    2,
+    1.62,
+    100
+   ],
+   [
+    "kabbalah tarot deck",
+    "SP",
+    15,
+    1,
+    1,
+    0.91,
+    55
+   ]
+  ]
+ },
+ "targets": {
+  "total": 36,
+  "winners": 4,
+  "needsAttention": 13,
+  "highAcos": 1,
+  "noSales": 4,
+  "lowCtr": 7,
+  "rows": [
+   [
+    "tarot cards",
+    "Exact",
+    "Category",
+    88.71,
+    165,
+    53.76,
+    110,
+    3
+   ],
+   [
+    "tarot cards for beginners",
+    "Exact",
+    "Category",
+    32.57,
+    165,
+    19.74,
+    27,
+    3
+   ],
+   [
+    "tarot card",
+    "Exact",
+    "Category",
+    27.45,
+    0,
+    null,
+    37,
+    0
+   ],
+   [
+    "Books views remarketing (SD)",
+    "Audience",
+    "Category",
+    24.04,
+    0,
+    null,
+    50,
+    0
+   ],
+   [
+    "tarot decks",
+    "Exact",
+    "Category",
+    21.34,
+    110,
+    19.4,
+    33,
+    2
+   ]
+  ]
+ },
+ "reviews": {
+  "available": false
+ },
+ "alerts": {
+  "total": 7,
+  "actionable": 5,
+  "critical": 3,
+  "warning": 2,
+  "byType": {
+   "Dimensions": 2,
+   "Negative feedback": 1,
+   "Out of stock": 1,
+   "Buy Box lost": 1,
+   "Buy Box gained": 1,
+   "Reimbursable units": 1
+  }
+ }
+}
