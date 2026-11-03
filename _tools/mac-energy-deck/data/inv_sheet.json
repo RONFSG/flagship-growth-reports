@@ -1,64 +1,59 @@
 {
- "asOf": "10/26/2026",
- "week": 44,
+ "asOf": "11/02/2026",
+ "week": 45,
  "groups": {
   "g1": {
-   "total": 8751.0,
-   "avail": 2432.0,
-   "inbound": 400.0,
-   "wkAvg": 2356.0,
-   "l30": 10096.0,
-   "n": 2,
+   "total": 12086.0,
+   "avail": 926.0,
+   "inbound": 8352.0,
+   "wkAvg": 2005.0,
+   "l30": 8592.0,
+   "n": 1,
    "asins": [
-    "B0H4SCZBHY",
     "B0H4SCZBHY"
    ]
   },
   "g2": {
-   "total": 8906.0,
-   "avail": 10427.0,
-   "inbound": 7800.0,
-   "wkAvg": 566.0,
-   "l30": 2425.0,
-   "n": 2,
+   "total": 9492.0,
+   "avail": 9264.0,
+   "inbound": 0.0,
+   "wkAvg": 675.0,
+   "l30": 2893.0,
+   "n": 1,
    "asins": [
-    "B0H4XJ5G4X",
     "B0H4XJ5G4X"
    ]
   },
   "g3": {
-   "total": 11835.0,
-   "avail": 9452.0,
-   "inbound": 0.0,
-   "wkAvg": 767.0,
-   "l30": 3285.0,
-   "n": 2,
+   "total": 15349.0,
+   "avail": 7402.0,
+   "inbound": 4018.0,
+   "wkAvg": 682.0,
+   "l30": 2922.0,
+   "n": 1,
    "asins": [
-    "B0H4WZBN85",
     "B0H4WZBN85"
    ]
   },
   "g4": {
-   "total": 6334.0,
-   "avail": 12360.0,
-   "inbound": 166.0,
-   "wkAvg": 549.0,
-   "l30": 2354.0,
-   "n": 2,
+   "total": 17209.0,
+   "avail": 9162.0,
+   "inbound": 7800.0,
+   "wkAvg": 512.0,
+   "l30": 2194.0,
+   "n": 1,
    "asins": [
-    "B0H4XHB9NM",
     "B0H4XHB9NM"
    ]
   },
   "g5": {
-   "total": 17432.0,
-   "avail": 8857.0,
-   "inbound": 8276.0,
-   "wkAvg": 725.0,
-   "l30": 3109.0,
-   "n": 2,
+   "total": 18032.0,
+   "avail": 11867.0,
+   "inbound": 0.0,
+   "wkAvg": 505.0,
+   "l30": 2163.0,
+   "n": 1,
    "asins": [
-    "B0H4X94TKY",
     "B0H4X94TKY"
    ]
   },
@@ -74,126 +69,72 @@
  },
  "skus": [
   {
-   "asin": "B0H4XJ5G4X",
-   "sku": "52000-FBA",
-   "name": "MAC Energy - Macberry Lychee 12ct Tray",
-   "status": "Active",
-   "total": 3142.0,
-   "avail": 3142.0,
-   "inbound": 0.0,
-   "wkAvg": 0.0,
-   "l30": 0.0,
-   "wkLeft": 0.0
-  },
-  {
-   "asin": "B0H4XHB9NM",
-   "sku": "53000-FBA",
-   "name": "MAC Energy - Orange Creamsicle 12ct Tray",
-   "status": "Active",
-   "total": 5764.0,
-   "avail": 5764.0,
-   "inbound": 0.0,
-   "wkAvg": 0.0,
-   "l30": 0.0,
-   "wkLeft": 0.0
-  },
-  {
    "asin": "B0H4SCZBHY",
    "sku": "55000-FBA",
    "name": "MAC Energy - Variety Pack 12ct Tray",
    "status": "Active",
-   "total": 5609.0,
-   "avail": 512.0,
-   "inbound": 400.0,
-   "wkAvg": 2356.0,
-   "l30": 10096.0,
-   "wkLeft": 2.0
+   "total": 12086.0,
+   "avail": 926.0,
+   "inbound": 8352.0,
+   "wkAvg": 2005.0,
+   "l30": 8592.0,
+   "wkLeft": 6.0
+  },
+  {
+   "asin": "B0H4XJ5G4X",
+   "sku": "52000-FBA",
+   "name": "MAC Energy - Macberry Lychee 12ct Tray",
+   "status": "Active",
+   "total": 9492.0,
+   "avail": 9264.0,
+   "inbound": 0.0,
+   "wkAvg": 675.0,
+   "l30": 2893.0,
+   "wkLeft": 14.0
   },
   {
    "asin": "B0H4WZBN85",
    "sku": "55000-FBA-New",
    "name": "MAC Energy - Forbidden Green Apple 12ct Tray",
    "status": "Active",
-   "total": 9915.0,
-   "avail": 8882.0,
-   "inbound": 0.0,
-   "wkAvg": 767.0,
-   "l30": 3285.0,
-   "wkLeft": 10.0
+   "total": 15349.0,
+   "avail": 7402.0,
+   "inbound": 4018.0,
+   "wkAvg": 682.0,
+   "l30": 2922.0,
+   "wkLeft": 23.0
+  },
+  {
+   "asin": "B0H4XHB9NM",
+   "sku": "53000-FBA",
+   "name": "MAC Energy - Orange Creamsicle 12ct Tray",
+   "status": "Active",
+   "total": 17209.0,
+   "avail": 9162.0,
+   "inbound": 7800.0,
+   "wkAvg": 512.0,
+   "l30": 2194.0,
+   "wkLeft": 34.0
   },
   {
    "asin": "B0H4X94TKY",
    "sku": "54000-FBA",
    "name": "MAC Energy - Proper Punch 12ct Tray",
    "status": "Active",
-   "total": 16299.0,
-   "avail": 7724.0,
-   "inbound": 8276.0,
-   "wkAvg": 725.0,
-   "l30": 3109.0,
-   "wkLeft": 17.0
-  },
-  {
-   "asin": "B0H4SCZBHY",
-   "sku": "55000",
-   "name": "MAC Energy - Variety Pack 12ct Tray",
-   "status": "Closed",
-   "total": 3142.0,
-   "avail": 1920.0,
+   "total": 18032.0,
+   "avail": 11867.0,
    "inbound": 0.0,
-   "wkAvg": 0.0,
-   "l30": 0.0,
-   "wkLeft": 0.0
-  },
-  {
-   "asin": "B0H4WZBN85",
-   "sku": "51000",
-   "name": "MAC Energy - Forbidden Green Apple 12ct Tray",
-   "status": "Closed",
-   "total": 1920.0,
-   "avail": 570.0,
-   "inbound": 0.0,
-   "wkAvg": 0.0,
-   "l30": 0.0,
-   "wkLeft": 0.0
-  },
-  {
-   "asin": "B0H4X94TKY",
-   "sku": "54000",
-   "name": "MAC Energy - Proper Punch 12ct Tray",
-   "status": "Closed",
-   "total": 1133.0,
-   "avail": 1133.0,
-   "inbound": 0.0,
-   "wkAvg": 0.0,
-   "l30": 0.0,
-   "wkLeft": 0.0
-  },
-  {
-   "asin": "B0H4XJ5G4X",
-   "sku": "52000",
-   "name": "MAC Energy - Macberry Lychee 12ct Tray",
-   "status": "Closed",
-   "total": 5764.0,
-   "avail": 7285.0,
-   "inbound": 7800.0,
-   "wkAvg": 566.0,
-   "l30": 2425.0,
-   "wkLeft": 24.0
-  },
-  {
-   "asin": "B0H4XHB9NM",
-   "sku": "53000",
-   "name": "MAC Energy - Orange Creamsicle 12ct Tray",
-   "status": "Closed",
-   "total": 570.0,
-   "avail": 6596.0,
-   "inbound": 166.0,
-   "wkAvg": 549.0,
-   "l30": 2354.0,
-   "wkLeft": 26.0
+   "wkAvg": 505.0,
+   "l30": 2163.0,
+   "wkLeft": 36.0
   }
  ],
- "po": [],
+ "po": [
+  [
+   "MAC Energy - Variety Pack 12ct Tray ASIN: B0H4SCZBHY \u00b7 SKU: 55000-FBA",
+   "\u2014",
+   "7,800"
+  ]
+ ],
  "unmapped": []
 }
