@@ -1,29 +1,29 @@
 {
- "asOf": "10/26/2026",
- "week": 44,
+ "asOf": "11/02/2026",
+ "week": 45,
  "groups": {
   "g1": {
-   "total": 839.0,
-   "avail": 803.0,
+   "total": 774.0,
+   "avail": 768.0,
    "inbound": 0.0,
-   "wkAvg": 63.0,
-   "l30": 270.0,
+   "wkAvg": 50.0,
+   "l30": 213.0,
    "n": 6,
    "asins": [
-    "B08CSXXX5M",
     "B0CTGGJ98X",
     "B0BWL4NB9H",
-    "B0BWL4NB9H",
+    "B08CSXXX5M",
     "B08RS7P59K",
+    "B0BWL4NB9H",
     "B08B5HQXJ5"
    ]
   },
   "g2": {
-   "total": 300.0,
-   "avail": 298.0,
+   "total": 272.0,
+   "avail": 271.0,
    "inbound": 0.0,
-   "wkAvg": 14.0,
-   "l30": 61.0,
+   "wkAvg": 15.0,
+   "l30": 64.0,
    "n": 2,
    "asins": [
     "B0FCKD54WY",
@@ -31,11 +31,11 @@
    ]
   },
   "g3": {
-   "total": 228.0,
-   "avail": 12.0,
-   "inbound": 216.0,
+   "total": 123.0,
+   "avail": 3.0,
+   "inbound": 120.0,
    "wkAvg": 11.0,
-   "l30": 45.0,
+   "l30": 47.0,
    "n": 2,
    "asins": [
     "B08TFDN7F3",
@@ -43,8 +43,8 @@
    ]
   },
   "g4": {
-   "total": 93.0,
-   "avail": 0.0,
+   "total": 90.0,
+   "avail": 88.0,
    "inbound": 0.0,
    "wkAvg": 3.0,
    "l30": 16.0,
@@ -55,42 +55,42 @@
    ]
   },
   "g5": {
-   "total": 15.0,
-   "avail": 12.0,
-   "inbound": 0.0,
-   "wkAvg": 10.0,
-   "l30": 44.0,
+   "total": 24.0,
+   "avail": 0.0,
+   "inbound": 24.0,
+   "wkAvg": 11.0,
+   "l30": 46.0,
    "n": 1,
    "asins": [
     "B0CKDN5WVQ"
    ]
   },
   "g6": {
-   "total": 29.0,
-   "avail": 28.0,
+   "total": 25.0,
+   "avail": 25.0,
    "inbound": 0.0,
    "wkAvg": 2.0,
-   "l30": 10.0,
+   "l30": 8.0,
    "n": 1,
    "asins": [
     "B08CJX3SDX"
    ]
   },
   "g7": {
-   "total": 25.0,
-   "avail": 24.0,
+   "total": 24.0,
+   "avail": 0.0,
    "inbound": 0.0,
    "wkAvg": 3.0,
-   "l30": 12.0,
+   "l30": 11.0,
    "n": 1,
    "asins": [
     "B09CX6ZJY1"
    ]
   },
   "pr": {
-   "total": 112.0,
-   "avail": 40.0,
-   "inbound": 72.0,
+   "total": 84.0,
+   "avail": 36.0,
+   "inbound": 48.0,
    "wkAvg": 3.0,
    "l30": 13.0,
    "n": 10,
@@ -110,100 +110,16 @@
  },
  "skus": [
   {
-   "asin": "B08CSXXX5M",
-   "sku": "RE8-ESSNTL-CA",
-   "name": "Essential Kit",
-   "status": "Active",
-   "total": 317.0,
-   "avail": 315.0,
-   "inbound": 0.0,
-   "wkAvg": 27.0,
-   "l30": 115.0,
-   "wkLeft": 8.0
-  },
-  {
-   "asin": "B0CKDN5WVQ",
-   "sku": "RE8-DEO",
-   "name": "Deodorizer Spray",
-   "status": "Active",
-   "total": 15.0,
-   "avail": 12.0,
-   "inbound": 0.0,
-   "wkAvg": 10.0,
-   "l30": 44.0,
-   "wkLeft": 1.0
-  },
-  {
    "asin": "B0CTGGJ98X",
    "sku": "RE8-8BRUSH-CA",
    "name": "Refresh Kit",
    "status": "Active",
-   "total": 64.0,
-   "avail": 40.0,
+   "total": 59.0,
+   "avail": 59.0,
    "inbound": 0.0,
-   "wkAvg": 10.0,
-   "l30": 42.0,
-   "wkLeft": 3.0
-  },
-  {
-   "asin": "B0BWL4NB9H",
-   "sku": "RE8-STARTER-CA",
-   "name": "Starter Kit",
-   "status": "Active",
-   "total": 80.0,
-   "avail": 75.0,
-   "inbound": 0.0,
-   "wkAvg": 7.0,
-   "l30": 30.0,
+   "wkAvg": 8.0,
+   "l30": 34.0,
    "wkLeft": 7.0
-  },
-  {
-   "asin": "B09CX6ZJY1",
-   "sku": "RE8-LDRY-BAG-FBA-UPC",
-   "name": "Laundry Bag",
-   "status": "Active",
-   "total": 25.0,
-   "avail": 24.0,
-   "inbound": 0.0,
-   "wkAvg": 3.0,
-   "l30": 12.0,
-   "wkLeft": 6.0
-  },
-  {
-   "asin": "B08CJX3SDX",
-   "sku": "RE8-TREE-FBA",
-   "name": "Shoe Trees",
-   "status": "Active",
-   "total": 29.0,
-   "avail": 28.0,
-   "inbound": 0.0,
-   "wkAvg": 2.0,
-   "l30": 10.0,
-   "wkLeft": 8.0
-  },
-  {
-   "asin": "B08H5XPWQD",
-   "sku": "RE8-DRY-KIT-CA",
-   "name": "Dry Suede Kit",
-   "status": "Active",
-   "total": 47.0,
-   "avail": 0.0,
-   "inbound": 0.0,
-   "wkAvg": 3.0,
-   "l30": 14.0,
-   "wkLeft": 0.0
-  },
-  {
-   "asin": "B08H5XPWQD",
-   "sku": "RE8-DRY-KIT-FBA",
-   "name": "Dry Suede Kit",
-   "status": "Active",
-   "total": 46.0,
-   "avail": 0.0,
-   "inbound": 0.0,
-   "wkAvg": 0.0,
-   "l30": 2.0,
-   "wkLeft": 0.0
   },
   {
    "asin": "B0B99HQYB8",
@@ -242,112 +158,196 @@
    "wkLeft": 0.0
   },
   {
+   "asin": "B0CKDN5WVQ",
+   "sku": "RE8-DEO",
+   "name": "Deodorizer Spray",
+   "status": "Active",
+   "total": 24.0,
+   "avail": 0.0,
+   "inbound": 24.0,
+   "wkAvg": 11.0,
+   "l30": 46.0,
+   "wkLeft": 2.0
+  },
+  {
+   "asin": "B09CX6ZJY1",
+   "sku": "RE8-LDRY-BAG-FBA-UPC",
+   "name": "Laundry Bag",
+   "status": "Active",
+   "total": 24.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 3.0,
+   "l30": 11.0,
+   "wkLeft": 9.0
+  },
+  {
    "asin": "B0BWL4NB9H",
-   "sku": "RE8-STARTER-FBA.1",
+   "sku": "RE8-STARTER-CA",
    "name": "Starter Kit",
    "status": "Active",
-   "total": 80.0,
-   "avail": 75.0,
+   "total": 65.0,
+   "avail": 64.0,
    "inbound": 0.0,
-   "wkAvg": 5.0,
-   "l30": 21.0,
-   "wkLeft": 10.0
-  },
-  {
-   "asin": "B0FCKD54WY",
-   "sku": "RE8-16OZ-BOT-CA",
-   "name": "16oz Cleaning Solution",
-   "status": "Active",
-   "total": 90.0,
-   "avail": 90.0,
-   "inbound": 0.0,
-   "wkAvg": 5.0,
-   "l30": 21.0,
-   "wkLeft": 12.0
-  },
-  {
-   "asin": "B08RS7P59K",
-   "sku": "RE8-SIG-KIT-CA",
-   "name": "Signature Kit",
-   "status": "Active",
-   "total": 242.0,
-   "avail": 242.0,
-   "inbound": 0.0,
-   "wkAvg": 12.0,
-   "l30": 53.0,
-   "wkLeft": 13.0
-  },
-  {
-   "asin": "B0FS38VB88",
-   "sku": "RE8-LDRY-SHEETS-CA",
-   "name": "Laundry Sheets",
-   "status": "Active",
-   "total": 19.0,
-   "avail": 19.0,
-   "inbound": 0.0,
-   "wkAvg": 1.0,
-   "l30": 4.0,
-   "wkLeft": 14.0
+   "wkAvg": 6.0,
+   "l30": 26.0,
+   "wkLeft": 11.0
   },
   {
    "asin": "B08TFDN7F3",
    "sku": "RE8-REPEL-CA",
    "name": "Repel (6.5oz)",
    "status": "Active",
-   "total": 228.0,
-   "avail": 12.0,
-   "inbound": 216.0,
+   "total": 123.0,
+   "avail": 3.0,
+   "inbound": 120.0,
    "wkAvg": 11.0,
-   "l30": 45.0,
+   "l30": 47.0,
+   "wkLeft": 11.0
+  },
+  {
+   "asin": "B08CSXXX5M",
+   "sku": "RE8-ESSNTL-CA",
+   "name": "Essential Kit",
+   "status": "Active",
+   "total": 290.0,
+   "avail": 288.0,
+   "inbound": 0.0,
+   "wkAvg": 22.0,
+   "l30": 95.0,
+   "wkLeft": 13.0
+  },
+  {
+   "asin": "B08CJX3SDX",
+   "sku": "RE8-TREE-FBA",
+   "name": "Shoe Trees",
+   "status": "Active",
+   "total": 25.0,
+   "avail": 25.0,
+   "inbound": 0.0,
+   "wkAvg": 2.0,
+   "l30": 8.0,
+   "wkLeft": 13.0
+  },
+  {
+   "asin": "B08H5XPWQD",
+   "sku": "RE8-DRY-KIT-CA",
+   "name": "Dry Suede Kit",
+   "status": "Active",
+   "total": 45.0,
+   "avail": 44.0,
+   "inbound": 0.0,
+   "wkAvg": 3.0,
+   "l30": 14.0,
+   "wkLeft": 13.0
+  },
+  {
+   "asin": "B0FCKD54WY",
+   "sku": "RE8-16OZ-BOT-CA",
+   "name": "16oz Cleaning Solution",
+   "status": "Active",
+   "total": 81.0,
+   "avail": 80.0,
+   "inbound": 0.0,
+   "wkAvg": 6.0,
+   "l30": 25.0,
    "wkLeft": 14.0
   },
   {
-   "asin": "B08DNG8XQZ",
-   "sku": "RE8-8OZ-BOT-FBA",
-   "name": "8oz Cleaning Solution",
+   "asin": "B0FS38VB88",
+   "sku": "RE8-LDRY-SHEETS-CA",
+   "name": "Laundry Sheets",
    "status": "Active",
-   "total": 210.0,
-   "avail": 208.0,
+   "total": 18.0,
+   "avail": 18.0,
    "inbound": 0.0,
-   "wkAvg": 9.0,
-   "l30": 40.0,
-   "wkLeft": 15.0
-  },
-  {
-   "asin": "B08B5HQXJ5",
-   "sku": "RE8-RT-FRESH-FBA",
-   "name": "Original Kit",
-   "status": "Active",
-   "total": 56.0,
-   "avail": 56.0,
-   "inbound": 0.0,
-   "wkAvg": 2.0,
-   "l30": 9.0,
-   "wkLeft": 18.0
+   "wkAvg": 1.0,
+   "l30": 4.0,
+   "wkLeft": 19.0
   },
   {
    "asin": "B0B99NMRWK",
    "sku": "RE8-TOWEL",
    "name": "Cleaning Cloth",
    "status": "Active",
-   "total": 21.0,
-   "avail": 21.0,
+   "total": 18.0,
+   "avail": 18.0,
    "inbound": 0.0,
    "wkAvg": 1.0,
-   "l30": 3.0,
-   "wkLeft": 20.0
+   "l30": 4.0,
+   "wkLeft": 19.0
+  },
+  {
+   "asin": "B08DNG8XQZ",
+   "sku": "RE8-8OZ-BOT-FBA",
+   "name": "8oz Cleaning Solution",
+   "status": "Active",
+   "total": 191.0,
+   "avail": 191.0,
+   "inbound": 0.0,
+   "wkAvg": 9.0,
+   "l30": 39.0,
+   "wkLeft": 21.0
+  },
+  {
+   "asin": "B08RS7P59K",
+   "sku": "RE8-SIG-KIT-CA",
+   "name": "Signature Kit",
+   "status": "Active",
+   "total": 238.0,
+   "avail": 238.0,
+   "inbound": 0.0,
+   "wkAvg": 10.0,
+   "l30": 41.0,
+   "wkLeft": 25.0
+  },
+  {
+   "asin": "B0BWL4NB9H",
+   "sku": "RE8-STARTER-FBA.1",
+   "name": "Starter Kit",
+   "status": "Active",
+   "total": 67.0,
+   "avail": 64.0,
+   "inbound": 0.0,
+   "wkAvg": 3.0,
+   "l30": 11.0,
+   "wkLeft": 26.0
+  },
+  {
+   "asin": "B08B5HQXJ5",
+   "sku": "RE8-RT-FRESH-FBA",
+   "name": "Original Kit",
+   "status": "Active",
+   "total": 55.0,
+   "avail": 55.0,
+   "inbound": 0.0,
+   "wkAvg": 1.0,
+   "l30": 6.0,
+   "wkLeft": 39.0
   },
   {
    "asin": "B0BFG5NH7B",
    "sku": "RE8-MINK-OIL-CA",
    "name": "Mink Oil Spray for Shoe Cleaning",
    "status": "Active",
-   "total": 72.0,
+   "total": 48.0,
    "avail": 0.0,
-   "inbound": 72.0,
+   "inbound": 48.0,
    "wkAvg": 1.0,
-   "l30": 6.0,
-   "wkLeft": 34.0
+   "l30": 5.0,
+   "wkLeft": 41.0
+  },
+  {
+   "asin": "B08H5XPWQD",
+   "sku": "RE8-DRY-KIT-FBA",
+   "name": "Dry Suede Kit",
+   "status": "Active",
+   "total": 45.0,
+   "avail": 44.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 2.0,
+   "wkLeft": 94.0
   },
   {
    "asin": "B08TFDN7F3",
@@ -412,34 +412,9 @@
  ],
  "po": [
   [
-   "Essential Kit ASIN: B08CSXXX5M \u00b7 SKU: RE8-ESSNTL-CA",
-   "\u2014",
-   "288"
-  ],
-  [
-   "Deodorizer Spray ASIN: B0CKDN5WVQ \u00b7 SKU: RE8-DEO",
-   "\u2014",
-   "240"
-  ],
-  [
    "Refresh Kit ASIN: B0CTGGJ98X \u00b7 SKU: RE8-8BRUSH-CA",
    "\u2014",
-   "192"
-  ],
-  [
-   "Starter Kit ASIN: B0BWL4NB9H \u00b7 SKU: RE8-STARTER-CA",
-   "\u2014",
-   "96"
-  ],
-  [
-   "Laundry Bag ASIN: B09CX6ZJY1 \u00b7 SKU: RE8-LDRY-BAG-FBA-UPC",
-   "\u2014",
-   "48"
-  ],
-  [
-   "Shoe Trees ASIN: B08CJX3SDX \u00b7 SKU: RE8-TREE-FBA",
-   "\u2014",
-   "23.5"
+   "72"
   ]
  ],
  "unmapped": [
