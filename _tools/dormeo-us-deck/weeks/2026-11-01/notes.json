@@ -1,0 +1,106 @@
+{
+ "_week": "2026-10-26 to 2026-11-01 (Week 44). Written from that week's numbers.",
+ "week_story": [
+  "Revenue fell 15% to $49.1K. King did most of the damage: 15 units vs 44 the week before (-66%). Queen came back to 31 units from 8 as stock returned."
+ ],
+ "refunds_title": "Refunds still high",
+ "refunds": [
+  "Refunds were $8,105 (19.3% refund rate), down from $12,091 last week. King ($2,018) and Queen ($1,821) toppers had the largest refunds; check their return reasons."
+ ],
+ "pacing_reco": "October closed at $414.0K. November starts slower: Nov 1 sold $6,250 vs $12,558 on the same day last year, so King and Queen stock matter before BF/CM.",
+ "ads_context": [
+  "Ad spend dropped 35% to $4,354 while ad sales fell 15% to $24,031.",
+  "ACoS improved to 18.1% (from 23.7%) and TACoS to 8.9% (from 11.7%)."
+ ],
+ "ads_strategy": [
+  "Branded keywords returned $20,951 on $2,533 spend (12.1% ACoS) and brought 63 orders.",
+  "Category keywords cost $936 for $760 in sales; Streaming TV spent $360 with no attributed sales."
+ ],
+ "bid_moves": [
+  "Pause or negate “mattress topper full” (phrase): $187 spent, 0 orders.",
+  "Lower the bid on “memory foam pillows” (exact): $175 spent for $136 in sales.",
+  "Add “dormeo 3\" premium mattress topper” as an exact keyword: 6 orders on under $13 of spend."
+ ],
+ "coupons": [
+  "This week: no coupon redemptions.",
+  "October in total: 127 coupon redemptions and 114 promotion orders."
+ ],
+ "promotions": [
+  "This week: 13 promotion orders and $548 in promotional discounts (vs $258 last week).",
+  "October's promotional discounts totalled $8,280, mostly around Prime Big Deal Days."
+ ],
+ "events": [
+  "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+  "Deal and coupon set-up deadlines: to confirm with the account team.",
+  "Priority: Queen and King toppers checked in at FBA before Nov 20 so BF/CM traffic converts."
+ ],
+ "reviews_title": "No review data in Sellerise",
+ "reviews_body": [
+  "Sellerise returned no review records, rating trend or negative reviews for the Dormeo US products over the last 90 days.",
+  "That means the review tracker isn't pulling for this account, not that there were no reviews."
+ ],
+ "reviews_reco": [
+  "Turn on review tracking for Dormeo US in Sellerise (or pull Amazon's Customer Reviews report) so the deck can show star rating and review count per line.",
+  "With the refund rate at 19.3%, reading the newest 1–3 star reviews for the Queen and King toppers is the fastest way to find a shared cause."
+ ],
+ "recommendations": [
+  [
+   "Inventory",
+   "Confirm the 400 Queen and 377 King toppers inbound are checked in at FBA; King sales fell 66% this week.",
+   "Account team",
+   "This week"
+  ],
+  [
+   "Inventory",
+   "Send RV Short Queen (out of stock, none inbound), SnowTek Queen (~2 weeks left) and True Evolution pillow (0 available).",
+   "Account team",
+   "By Nov 10"
+  ],
+  [
+   "Ads",
+   "Pause or negate the no-sale targets: “mattress topper full” phrase ($187) and the King auto campaign ($157).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Review Streaming TV: $360 this week with no attributed sales.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Add “dormeo 3\" premium mattress topper” and “dormeo mattress toppers” as exact keywords.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Marketing",
+   "Plan BF/CM coupons and deals for the toppers (Nov 27–30) and confirm submission deadlines.",
+   "Account team",
+   "By Nov 6"
+  ],
+  [
+   "Account health",
+   "Turn on review tracking and check return reasons behind the 19.3% refund rate.",
+   "Account team",
+   "Next week"
+  ]
+ ],
+ "position": [
+  "October closed at $414.0K; November opened with $6.2K on Nov 1, half of the same day last year.",
+  "This week slipped to $49.1K as King sales fell, while ads got cheaper: ACoS 18.1%, TACoS 8.9%."
+ ],
+ "next_steps": [
+  "Get King and Queen checked in at FBA.",
+  "Cut no-sale ad spend.",
+  "Lock BF/CM coupons and deals.",
+  "Find the cause of the refunds."
+ ],
+ "data_ask": [
+  "Queen and King inbound check-in dates.",
+  "BF/CM deal and coupon plan.",
+  "Review tracking turned on in Sellerise.",
+  "Category / brand impression share (Brand Analytics)."
+ ]
+}
