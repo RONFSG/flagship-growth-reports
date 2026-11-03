@@ -1,11 +1,11 @@
 {
- "asOf": "Oct 26, 2026",
+ "asOf": "Nov 2, 2026",
  "ytd": 8631.61,
  "units": 1091,
  "shipments": 32,
  "receiving": 2,
  "closed": 29,
- "missing": 1101,
+ "missing": 451,
  "receiveRate": 99.4,
  "recoveryRate": 99.3,
  "resolved": 20,
