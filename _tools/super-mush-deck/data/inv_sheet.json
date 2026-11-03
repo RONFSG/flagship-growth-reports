@@ -1,48 +1,44 @@
 {
- "asOf": "10/26/2026",
- "week": 44,
+ "asOf": "11/02/2026",
+ "week": 45,
  "groups": {
   "g1": {
-   "total": 3583.0,
-   "avail": 2785.0,
-   "inbound": 212.0,
-   "wkAvg": 281.0,
-   "l30": 1205.0,
-   "n": 7,
+   "total": 4002.0,
+   "avail": 2829.0,
+   "inbound": 656.0,
+   "wkAvg": 255.0,
+   "l30": 1093.0,
+   "n": 5,
    "asins": [
+    "B0FDM8VY56",
     "B0CLN1NQJ3",
     "B0CLN3LQF6",
-    "B0FDM8VY56",
     "B0F1B3ST2V",
-    "B0CLN17M2D",
-    "B0CLN1NQJ3",
     "B0CLN17M2D"
    ]
   },
   "g2": {
-   "total": 5575.0,
-   "avail": 5365.0,
+   "total": 4156.0,
+   "avail": 4092.0,
    "inbound": 0.0,
-   "wkAvg": 101.0,
-   "l30": 429.0,
-   "n": 8,
+   "wkAvg": 87.0,
+   "l30": 376.0,
+   "n": 6,
    "asins": [
-    "B0G6HMFPMZ",
     "B0G6J12SZ8",
     "B0G6HMFPMZ",
     "B0GWKD4VH8",
-    "B0G6HZ5Y7V",
     "B0GWKC2NLQ",
-    "B0GM3G3SXP",
-    "B0GWKD4VH8"
+    "B0G6HZ5Y7V",
+    "B0GM3G3SXP"
    ]
   },
   "g3": {
-   "total": 1162.0,
-   "avail": 621.0,
-   "inbound": 154.0,
+   "total": 1061.0,
+   "avail": 659.0,
+   "inbound": 213.0,
    "wkAvg": 74.0,
-   "l30": 318.0,
+   "l30": 320.0,
    "n": 3,
    "asins": [
     "B0GLJHX6J8",
@@ -62,102 +58,34 @@
    ]
   },
   "pr": {
-   "total": 5.0,
+   "total": 0.0,
    "avail": 0.0,
    "inbound": 0.0,
    "wkAvg": 0.0,
    "l30": 0.0,
-   "n": 9,
+   "n": 1,
    "asins": [
-    "B0BWLT82V1",
-    "B0BWLTVHT9",
-    "B0D9PJ49H9",
-    "B0GWKFYW7K",
-    "B09NQMPWKF",
-    "B0CB5XRC1Y",
-    "B0CB5XRC1Y",
-    "B0CB5X75N3",
-    "B09NQMZTX4"
+    "B0GWKFYW7K"
    ]
   }
  },
  "skus": [
   {
-   "asin": "B0CLN1NQJ3",
-   "sku": "GYSLBR60",
-   "name": "Daily Sleep Gummies (60 Count)",
+   "asin": "B0FDM8VY56",
+   "sku": "GYIMNG60",
+   "name": "Daily Immunity Gummies (60 Count)",
    "status": "Active",
-   "total": 927.0,
-   "avail": 240.0,
-   "inbound": 180.0,
-   "wkAvg": 127.0,
-   "l30": 546.0,
-   "wkLeft": 6.0
-  },
-  {
-   "asin": "B0CLN3LQF6",
-   "sku": "GYENTG60",
-   "name": "Daily Energy Gummies (60 Count)",
-   "status": "Active",
-   "total": 551.0,
-   "avail": 530.0,
-   "inbound": 0.0,
-   "wkAvg": 52.0,
-   "l30": 221.0,
-   "wkLeft": 8.0
-  },
-  {
-   "asin": "B0GLJHX6J8",
-   "sku": "GYSLBR10",
-   "name": "Daily Sleep Gummies (10 Count)",
-   "status": "Active",
-   "total": 190.0,
-   "avail": 83.0,
-   "inbound": 33.0,
-   "wkAvg": 19.0,
-   "l30": 83.0,
-   "wkLeft": 8.0
-  },
-  {
-   "asin": "B0G6HMFPMZ",
-   "sku": "GYSXSB28",
-   "name": "Daily Passion Gummies (28 Count)",
-   "status": "Closed",
-   "total": 1354.0,
-   "avail": 1304.0,
-   "inbound": 0.0,
-   "wkAvg": 0.0,
-   "l30": 0.0,
-   "wkLeft": 0.0
-  },
-  {
-   "asin": "B0BWLT82V1",
-   "sku": "DM02-MA",
-   "name": "Daily Flow SuppleMints",
-   "status": "Out of stock",
    "total": 0.0,
    "avail": 0.0,
    "inbound": 0.0,
-   "wkAvg": 0.0,
-   "l30": 0.0,
+   "wkAvg": 4.0,
+   "l30": 18.0,
    "wkLeft": 0.0
   },
   {
-   "asin": "B0BWLTVHT9",
-   "sku": "DM01-MA",
-   "name": "Daily Creativity SuppleMints",
-   "status": "Out of stock",
-   "total": 0.0,
-   "avail": 0.0,
-   "inbound": 0.0,
-   "wkAvg": 0.0,
-   "l30": 0.0,
-   "wkLeft": 0.0
-  },
-  {
-   "asin": "B0D9PJ49H9",
-   "sku": "BDM02",
-   "name": "Daily SuppleMint (2Pack)",
+   "asin": "B0GWKFYW7K",
+   "sku": "BGY10",
+   "name": "Daily Gummies - Trial Bundle (10 Count)",
    "status": "Inactive",
    "total": 0.0,
    "avail": 0.0,
@@ -167,112 +95,64 @@
    "wkLeft": 0.0
   },
   {
-   "asin": "B0GWKFYW7K",
-   "sku": "BGY10",
-   "name": "Daily Gummies - Trial Bundle (10 Count)",
+   "asin": "B0GLJHX6J8",
+   "sku": "GYSLBR10",
+   "name": "Daily Sleep Gummies (10 Count)",
    "status": "Active",
-   "total": 0.0,
-   "avail": 0.0,
-   "inbound": 0.0,
-   "wkAvg": 0.0,
-   "l30": 0.0,
-   "wkLeft": 0.0
-  },
-  {
-   "asin": "B09NQMPWKF",
-   "sku": "FBA181MWR78W.missing1",
-   "name": "Daily Energy Spray",
-   "status": "Out of stock",
-   "total": 4.0,
-   "avail": 0.0,
-   "inbound": 0.0,
-   "wkAvg": 0.0,
-   "l30": 0.0,
-   "wkLeft": 0.0
-  },
-  {
-   "asin": "B0CB5XRC1Y",
-   "sku": "MS02-V2-MA",
-   "name": "Daily Immunity Mouth Spray Organic",
-   "status": "Out of stock",
-   "total": 0.0,
-   "avail": 0.0,
-   "inbound": 0.0,
-   "wkAvg": 0.0,
-   "l30": 0.0,
-   "wkLeft": 0.0
-  },
-  {
-   "asin": "B0CB5XRC1Y",
-   "sku": "MS02-V2",
-   "name": "Daily Immunity Mouth Spray Organic",
-   "status": "Out of stock",
-   "total": 1.0,
-   "avail": 0.0,
-   "inbound": 0.0,
-   "wkAvg": 0.0,
-   "l30": 0.0,
-   "wkLeft": 0.0
-  },
-  {
-   "asin": "B0CB5X75N3",
-   "sku": "MS01-V2-MA",
-   "name": "Daily Energy Mouth Spray",
-   "status": "Active",
-   "total": 0.0,
-   "avail": 0.0,
-   "inbound": 0.0,
-   "wkAvg": 0.0,
-   "l30": 0.0,
-   "wkLeft": 0.0
-  },
-  {
-   "asin": "B09NQMZTX4",
-   "sku": "MS02",
-   "name": "Daily Immunity Spray",
-   "status": "Active",
-   "total": 0.0,
-   "avail": 0.0,
-   "inbound": 0.0,
-   "wkAvg": 0.0,
-   "l30": 0.0,
-   "wkLeft": 0.0
-  },
-  {
-   "asin": "B0FDM8VY56",
-   "sku": "GYIMNG60",
-   "name": "Daily Immunity Gummies (60 Count)",
-   "status": "Active",
-   "total": 4.0,
-   "avail": 4.0,
-   "inbound": 0.0,
-   "wkAvg": 5.0,
-   "l30": 22.0,
-   "wkLeft": 1.0
-  },
-  {
-   "asin": "B0F1B3ST2V",
-   "sku": "GYCRT60",
-   "name": "Daily Creatine Gummies with Cordyceps",
-   "status": "Active",
-   "total": 290.0,
-   "avail": 282.0,
-   "inbound": 0.0,
+   "total": 210.0,
+   "avail": 104.0,
+   "inbound": 74.0,
    "wkAvg": 19.0,
    "l30": 83.0,
+   "wkLeft": 11.0
+  },
+  {
+   "asin": "B0CLN1NQJ3",
+   "sku": "GYSLBR60",
+   "name": "Daily Sleep Gummies (60 Count)",
+   "status": "Active",
+   "total": 1347.0,
+   "avail": 355.0,
+   "inbound": 528.0,
+   "wkAvg": 115.0,
+   "l30": 494.0,
    "wkLeft": 12.0
+  },
+  {
+   "asin": "B0CLN3LQF6",
+   "sku": "GYENTG60",
+   "name": "Daily Energy Gummies (60 Count)",
+   "status": "Active",
+   "total": 619.0,
+   "avail": 506.0,
+   "inbound": 96.0,
+   "wkAvg": 46.0,
+   "l30": 196.0,
+   "wkLeft": 14.0
   },
   {
    "asin": "B0GLHZKB9Q",
    "sku": "GYPNSB10",
    "name": "Daily Passion Gummies (10 Count)",
    "status": "Active",
-   "total": 788.0,
-   "avail": 359.0,
-   "inbound": 121.0,
+   "total": 680.0,
+   "avail": 387.0,
+   "inbound": 139.0,
    "wkAvg": 47.0,
-   "l30": 200.0,
-   "wkLeft": 13.0
+   "l30": 203.0,
+   "wkLeft": 14.0
+  },
+  {
+   "asin": "B0F1B3ST2V",
+   "sku": "GYCRT60",
+   "name": "Daily Creatine Gummies with Cordyceps",
+   "status": "Active",
+   "total": 285.0,
+   "avail": 281.0,
+   "inbound": 0.0,
+   "wkAvg": 16.0,
+   "l30": 67.0,
+   "wkLeft": 18.0
   },
   {
    "asin": "B0D9PK2CBV",
@@ -284,167 +164,107 @@
    "inbound": 0.0,
    "wkAvg": 1.0,
    "l30": 3.0,
-   "wkLeft": 16.0
+   "wkLeft": 20.0
   },
   {
    "asin": "B0GLHX3TQM",
    "sku": "GYENTG10",
    "name": "Daily Energy Gummies (10 Count)",
    "status": "Active",
-   "total": 184.0,
-   "avail": 179.0,
+   "total": 171.0,
+   "avail": 168.0,
    "inbound": 0.0,
    "wkAvg": 8.0,
-   "l30": 35.0,
-   "wkLeft": 18.0
+   "l30": 34.0,
+   "wkLeft": 22.0
   },
   {
    "asin": "B0CLN17M2D",
    "sku": "GYSXSB60",
    "name": "Daily Passion Gummies (60 Count)",
    "status": "Active",
-   "total": 1811.0,
-   "avail": 1729.0,
+   "total": 1751.0,
+   "avail": 1687.0,
    "inbound": 32.0,
-   "wkAvg": 78.0,
-   "l30": 333.0,
-   "wkLeft": 18.0
+   "wkAvg": 74.0,
+   "l30": 318.0,
+   "wkLeft": 24.0
   },
   {
    "asin": "B0G6J12SZ8",
    "sku": "GYSLBR28",
    "name": "Daily Sleep Gummies (28 Count)",
    "status": "Active",
-   "total": 1103.0,
-   "avail": 998.0,
+   "total": 1076.0,
+   "avail": 1069.0,
    "inbound": 0.0,
-   "wkAvg": 43.0,
-   "l30": 185.0,
-   "wkLeft": 20.0
+   "wkAvg": 36.0,
+   "l30": 156.0,
+   "wkLeft": 30.0
   },
   {
    "asin": "B0G6HMFPMZ",
    "sku": "GYPNSB28",
    "name": "Daily Passion Gummies (28 Count)",
    "status": "Active",
-   "total": 1351.0,
-   "avail": 1303.0,
+   "total": 1337.0,
+   "avail": 1293.0,
    "inbound": 0.0,
-   "wkAvg": 39.0,
-   "l30": 166.0,
-   "wkLeft": 27.0
+   "wkAvg": 33.0,
+   "l30": 140.0,
+   "wkLeft": 41.0
   },
   {
    "asin": "B0GWKD4VH8",
    "sku": "GYLMG28",
    "name": "Daily Lion's Mane Gummies (28 Count)",
-   "status": "Closed",
-   "total": 219.0,
-   "avail": 218.0,
+   "status": "Active",
+   "total": 214.0,
+   "avail": 209.0,
    "inbound": 0.0,
    "wkAvg": 4.0,
-   "l30": 17.0,
-   "wkLeft": 43.0
-  },
-  {
-   "asin": "B0G6HZ5Y7V",
-   "sku": "GYENTG28",
-   "name": "Daily Energy Gummies (28 Count)",
-   "status": "Active",
-   "total": 549.0,
-   "avail": 549.0,
-   "inbound": 0.0,
-   "wkAvg": 6.0,
-   "l30": 25.0,
-   "wkLeft": 73.0
+   "l30": 19.0,
+   "wkLeft": 48.0
   },
   {
    "asin": "B0GWKC2NLQ",
    "sku": "GYSJTG28",
    "name": "Daily Shilajit Gummies (28 Count)",
    "status": "Active",
-   "total": 471.0,
-   "avail": 467.0,
+   "total": 462.0,
+   "avail": 458.0,
    "inbound": 0.0,
-   "wkAvg": 4.0,
-   "l30": 17.0,
-   "wkLeft": 92.0
+   "wkAvg": 6.0,
+   "l30": 24.0,
+   "wkLeft": 82.0
+  },
+  {
+   "asin": "B0G6HZ5Y7V",
+   "sku": "GYENTG28",
+   "name": "Daily Energy Gummies (28 Count)",
+   "status": "Active",
+   "total": 541.0,
+   "avail": 539.0,
+   "inbound": 0.0,
+   "wkAvg": 5.0,
+   "l30": 23.0,
+   "wkLeft": 101.0
   },
   {
    "asin": "B0GM3G3SXP",
    "sku": "GYCRT30",
    "name": "Daily Creatine Gummies 30ct",
    "status": "Active",
-   "total": 528.0,
-   "avail": 526.0,
+   "total": 526.0,
+   "avail": 524.0,
    "inbound": 0.0,
-   "wkAvg": 4.0,
-   "l30": 16.0,
-   "wkLeft": 110.0
-  },
-  {
-   "asin": "B0CLN1NQJ3",
-   "sku": "GYSLBR60-FBM",
-   "name": "Daily Sleep Gummies (60 Count)",
-   "status": "Out of stock",
-   "total": 0.0,
-   "avail": 0.0,
-   "inbound": 0.0,
-   "wkAvg": 0.0,
-   "l30": 0.0,
-   "wkLeft": 0.0
-  },
-  {
-   "asin": "B0CLN17M2D",
-   "sku": "GYSXSB60-FBM",
-   "name": "Daily Passion Gummies (60 Count)",
-   "status": "Out of stock",
-   "total": 0.0,
-   "avail": 0.0,
-   "inbound": 0.0,
-   "wkAvg": 0.0,
-   "l30": 0.0,
-   "wkLeft": 0.0
-  },
-  {
-   "asin": "B0GWKD4VH8",
-   "sku": "GYLMG28 - FBM",
-   "name": "Daily Lion's Mane Gummies (28 Count)",
-   "status": "Active",
-   "total": 0.0,
-   "avail": 0.0,
-   "inbound": 0.0,
-   "wkAvg": 1.0,
-   "l30": 3.0,
-   "wkLeft": 0.0
+   "wkAvg": 3.0,
+   "l30": 14.0,
+   "wkLeft": 161.0
   }
  ],
- "po": [
-  [
-   "Daily Sleep Gummies (60 Count) ASIN: B0CLN1NQJ3 \u00b7 SKU: GYSLBR60",
-   "\u2014",
-   "528"
-  ],
-  [
-   "Daily Energy Gummies (60 Count) ASIN: B0CLN3LQF6 \u00b7 SKU: GYENTG60",
-   "\u2014",
-   "96"
-  ],
-  [
-   "Daily Sleep Gummies (10 Count) ASIN: B0GLJHX6J8 \u00b7 SKU: GYSLBR10",
-   "\u2014",
-   "40"
-  ]
- ],
+ "po": [],
  "unmapped": [
-  "B0BWLT82V1",
-  "B0BWLTVHT9",
-  "B0D9PJ49H9",
-  "B0GWKFYW7K",
-  "B09NQMPWKF",
-  "B0CB5XRC1Y",
-  "B0CB5XRC1Y",
-  "B0CB5X75N3",
-  "B09NQMZTX4"
+  "B0GWKFYW7K"
  ]
 }

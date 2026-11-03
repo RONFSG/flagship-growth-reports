@@ -1,16 +1,16 @@
 {
- "asOf": "Oct 26, 2026",
- "ytd": 10092.09,
- "units": 1302,
+ "asOf": "Nov 2, 2026",
+ "ytd": 10220.33,
+ "units": 1323,
  "shipments": 63,
  "receiving": 4,
  "closed": 54,
  "missing": 323,
  "receiveRate": 97.9,
  "recoveryRate": 99.0,
- "resolved": 27,
- "mtd": 1846.29,
- "mtdUnits": 258,
+ "resolved": 29,
+ "mtd": 1974.53,
+ "mtdUnits": 279,
  "monthly": [
   [
    "Jan",
@@ -50,7 +50,7 @@
   ],
   [
    "Oct",
-   1846.0
+   1975.0
   ]
  ],
  "byType": [
@@ -60,15 +60,15 @@
   ],
   [
    "CustomerReturn",
-   2370.54
+   2408.76
   ],
   [
    "Lost_Warehouse",
-   1782.04
+   1828.08
   ],
   [
    "Lost_Inbound",
-   1675.71
+   1719.69
   ],
   [
    "Damaged_Warehouse",
@@ -80,7 +80,7 @@
   ],
   [
    "Shipment Reconciliation",
-   164.8
+   185.86
   ],
   [
    "Lost Inventory",
@@ -92,7 +92,7 @@
   ],
   [
    "Reimbursement",
-   12.03
+   26.07
   ],
   [
    "Damaged_Inbound",
@@ -338,6 +338,24 @@
    "value": 14.0
   },
   {
+   "id": "22119788111",
+   "date": "Sep 17, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon confirmed the misplaced unit under transaction ID 1786182623970258 was found at the warehouse under transaction ID 20080115925179, so no reimbursement is pending.",
+   "status": "Reconciled",
+   "units": 1,
+   "value": 0.0
+  },
+  {
+   "id": "22119875021",
+   "date": "Sep 17, 2026",
+   "type": "Warehouse Damage",
+   "note": "Amazon located the missing unit for FNSKU B0G6J12SZ8 under Transaction ID 20078464279778 and moved it to sellable inventory.",
+   "status": "Reconciled",
+   "units": 1,
+   "value": 0.0
+  },
+  {
    "id": "22139980911",
    "date": "Sep 18, 2026",
    "type": "Investigation",
@@ -365,6 +383,15 @@
    "value": 16.8
   },
   {
+   "id": "22590060031",
+   "date": "Oct 14, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon completed the investigation for 6 misplaced inventory adjustments, confirming reimbursements were processed for 3 units (under IDs 23037458341, 22966352161, 22990853911) and the remaining 3 units were located and returned to inventory.",
+   "status": "Reimbursed",
+   "units": 3,
+   "value": 0.0
+  },
+  {
    "id": "22726432431",
    "date": "Oct 21, 2026",
    "type": "Shipment Reconciliation",
@@ -372,6 +399,33 @@
    "status": "Reimbursed",
    "units": 20,
    "value": 134.0
+  },
+  {
+   "id": "22833725581",
+   "date": "Oct 27, 2026",
+   "type": "Reimbursement",
+   "note": "Amazon confirmed missing units for shipment FBA19PL7BPVL and initiated a reimbursement of 22.92 USD under Reimbursement ID 23676773711.",
+   "status": "Reimbursed",
+   "units": 2,
+   "value": 14.04
+  },
+  {
+   "id": "22833164961",
+   "date": "Oct 27, 2026",
+   "type": "Shipment Reconciliation",
+   "note": "Amazon denied the reimbursement claim due to a mismatch between physical items received and the shipping plan.",
+   "status": "Reimbursed",
+   "units": 3,
+   "value": 21.06
+  },
+  {
+   "id": "22852787811",
+   "date": "Oct 28, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon completed the investigation into six misplaced inventory adjustments, issuing reimbursements for 2 units under Reimbursement IDs 23028229501 and 23055123021, and locating 3 units in fulfillment center ledger reports.",
+   "status": "Reconciled",
+   "units": 3,
+   "value": 0.0
   }
  ]
 }
