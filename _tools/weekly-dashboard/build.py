@@ -146,8 +146,6 @@ def slack_text(cfg, slug, label, m):
     sym = cfg.get('currencySymbol', '$')
     table = '\n'.join(rows).replace('$', sym)
     links = ['[View Full Dashboard](https://reports.flagshipgrowth.com/%s-weekly)' % slug]
-    if cfg.get('weeklyAdReport'):
-        links.append('[Weekly Ad Performance](%s)' % cfg['weeklyAdReport'])
     return ('**%s Weekly Report — %s**\n```\n%s\n```\n%s\n_Flagship Growth · %s Weekly Report · %s · Confidential_' % (
         cfg['brand'], label, table, '  ·  '.join(links), cfg['brand'], label))
 

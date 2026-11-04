@@ -1,5 +1,10 @@
 {
   "_about": "Weekly dashboard brands. slug = <slug>-weekly folder. account/marketplace = Sellerise accountSearch + marketplaces. currency = Sellerise targetCurrency; currencySymbol replaces $ on the page (UK only).",
-  "opopop": {"brand": "Opopop", "account": "Opopop", "marketplace": "US", "currency": "USD", "currencySymbol": "$",
-             "weeklyAdReport": "https://docs.google.com/spreadsheets/d/1nqWmcxSh4EAHgnQ9vJqJZUU6BkjuKot7UnHMvaxGIB8/edit?gid=1204140926#gid=1204140926"}
+  "opopop": {
+    "brand": "Opopop",
+    "account": "Opopop",
+    "marketplace": "US",
+    "currency": "USD",
+    "currencySymbol": "$"
+  }
 }
