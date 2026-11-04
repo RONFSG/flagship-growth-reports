@@ -24,50 +24,19 @@ MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'Augus
           'September', 'October', 'November', 'December']
 
 
-LOGO_GRID = [
-    '.YYY..............',
-    'YYYYY.............',
-    'YYYYYBB...........',
-    'KYYYBBBBBBBB......',
-    'KKKBBBBBBBBBBBB...',
-    'KKKBBBBBBBBBBBBBBB',
-    'KKKBBBBBBBBBBBBBB.',
-    'KKKBBBBBBBBBBBB...',
-    'KKKBBBBBBBBBBB....',
-    'KKKBBBBBBBBBB.....',
-    'KKKBBBBBBBBBBBB...',
-    'KKKBBBBBBBBBBBBB..',
-    'KKKBBBBBBBBBBBBBBB',
-    'KKKBBBBBBBBBBBBB..',
-    'KKKBBBBBBBBB......',
-    'KKKBBBBB..........',
-    'KKKB..............',
-    'KKK...............',
-    'KKK...............',
-    'KKK...............',
-    'KKK...............',
-    'KKK...............',
-    '.K................',
-]
+LOGO_BANDS = [[1,[[None,1],['#5A5B5C',1],['#080A0C',2],['#ABACAC',1],[None,26]]],[1,[['#5A5B5C',1],['#080A0C',2],['#D1FB0B',3],['#EFFEAC',1],[None,24]]],[1,[['#080A0C',2],['#5A5B5C',1],['#D1FB0B',4],[None,24]]],[1,[['#080A0C',2],['#D1FB0B',5],['#6C9884',1],['#5A78FE',1],['#ABBBFF',1],[None,21]]],[1,[['#080A0C',2],['#5A5B5C',1],['#D1FB0B',4],['#0836FE',4],['#5A78FE',2],['#ABBBFF',1],[None,17]]],[1,[['#080A0C',3],['#5A5B5C',2],['#6C9884',1],['#0836FE',9],['#5A78FE',2],['#ABBBFF',1],[None,13]]],[1,[['#080A0C',5],['#0836FE',14],['#5A78FE',2],['#ABBBFF',1],[None,9]]],[1,[['#080A0C',5],['#0836FE',18],['#5A78FE',2],['#ABBBFF',1],[None,5]]],[1,[['#080A0C',5],['#0836FE',22],['#5A78FE',1],['#ABBBFF',2],[None,1]]],[1,[['#080A0C',5],['#0836FE',25],['#5A78FE',1]]],[1,[['#080A0C',5],['#0836FE',24],['#5A78FE',1],[None,1]]],[1,[['#080A0C',5],['#0836FE',23],['#ABBBFF',1],[None,2]]],[1,[['#080A0C',5],['#0836FE',21],['#5A78FE',1],[None,4]]],[1,[['#080A0C',5],['#0836FE',20],['#ABBBFF',1],[None,5]]],[1,[['#080A0C',5],['#0836FE',18],['#5A78FE',1],[None,7]]],[1,[['#080A0C',5],['#0836FE',17],['#ABBBFF',1],[None,8]]],[1,[['#080A0C',5],['#0836FE',17],['#5A78FE',1],['#ABBBFF',1],[None,7]]],[1,[['#080A0C',5],['#0836FE',19],['#ABBBFF',1],[None,6]]],[1,[['#080A0C',5],['#0836FE',20],['#5A78FE',1],[None,5]]],[1,[['#080A0C',5],['#0836FE',22],['#ABBBFF',1],[None,3]]],[1,[['#080A0C',5],['#0836FE',23],['#5A78FE',1],[None,2]]],[1,[['#080A0C',5],['#0836FE',24],['#5A78FE',1],['#ABBBFF',1]]],[1,[['#080A0C',5],['#0836FE',25],['#5A78FE',1]]],[1,[['#080A0C',5],['#0836FE',21],['#5A78FE',1],['#ABBBFF',2],[None,2]]],[1,[['#080A0C',5],['#0836FE',17],['#5A78FE',1],['#ABBBFF',2],[None,6]]],[1,[['#080A0C',5],['#0836FE',13],['#5A78FE',1],['#ABBBFF',2],[None,10]]],[1,[['#080A0C',5],['#0836FE',9],['#5A78FE',1],['#ABBBFF',2],[None,14]]],[1,[['#080A0C',5],['#0836FE',5],['#5A78FE',1],['#ABBBFF',2],[None,18]]],[1,[['#080A0C',5],['#0836FE',1],['#5A78FE',1],['#ABBBFF',2],[None,22]]],[1,[['#080A0C',5],['#ABBBFF',1],[None,25]]],[2,[['#080A0C',5],[None,26]]],[1,[['#080A0C',5],['#ABACAC',1],[None,25]]],[2,[['#080A0C',5],[None,26]]],[3,[['#080A0C',5],['#ABACAC',1],[None,25]]],[1,[['#5A5B5C',1],['#080A0C',4],[None,26]]],[1,[[None,1],['#5A5B5C',1],['#080A0C',1],['#5A5B5C',1],['#ABACAC',1],[None,26]]]]  # [height_px, [[colour|None, width_px], ...]] traced from assets/fsg-logo.png
+LOGO_W = 31
 
 
-def logo_cells_html(cell=2):
-    """FSG flag drawn with coloured table cells (Gmail connector strips <img>); grid traced from assets/fsg-logo.png.
-    Each grid row is its own fixed-width one-row table so run widths are exact in every mail client."""
-    colors = {'K': '#080A0C', 'B': '#0836FE', 'Y': '#D1FB0B'}
-    width = len(LOGO_GRID[0]) * cell
-    out = '<table cellpadding="0" cellspacing="0" border="0" width="%d" style="border-collapse:collapse;width:%dpx;">' % (width, width)
-    for row in LOGO_GRID:
-        out += '<tr><td style="font-size:0;line-height:0"><table cellpadding="0" cellspacing="0" border="0" width="%d"><tr>' % width
-        i = 0
-        while i < len(row):
-            j = i
-            while j < len(row) and row[j] == row[i]:
-                j += 1
-            n = j - i
-            bg = (' bgcolor="%s"' % colors[row[i]]) if row[i] in colors else ''
-            out += '<td%s width="%d" height="%d" style="font-size:0;line-height:0"></td>' % (bg, n * cell, cell)
-            i = j
+def logo_cells_html():
+    """FSG flag drawn with 1px table cells (the Gmail connector strips <img>). Each band is a fixed-width
+    one-row table so widths are exact; identical consecutive rows are merged into one taller band."""
+    out = '<table cellpadding="0" cellspacing="0" border="0" width="%d">' % LOGO_W
+    for h, runs in LOGO_BANDS:
+        out += '<tr><td style="font-size:0;line-height:0"><table cellpadding="0" cellspacing="0" border="0" width="%d"><tr>' % LOGO_W
+        for colour, w in runs:
+            bg = ' bgcolor="%s"' % colour if colour else ''
+            out += '<td%s width="%d" height="%d" style="font-size:0;line-height:0"></td>' % (bg, w, h)
         out += '</tr></table></td></tr>'
     return out + '</table>'
 
@@ -233,7 +202,7 @@ def email_html(cfg, slug, label, m, insights, logo_src=LOGO):
     gap = '<td width="6"></td>'
 
     one_line = ('<table width="100%%" cellpadding="0" cellspacing="0" style="margin-bottom:20px;"><tr><td bgcolor="#EEF2FF" style="background:#EEF2FF;border-left:3px solid #2447FF;padding:14px 16px;">'
-                '<div style="font-size:9px;font-weight:700;letter-spacing:1.5px;color:#2447FF;text-transform:uppercase;margin-bottom:6px;">▶ This week in one line</div>'
+                '<div style="font-size:9px;font-weight:700;letter-spacing:1.5px;color:#2447FF;text-transform:uppercase;margin-bottom:6px;">&#9656; This week in one line</div>'
                 '<div style="font-size:13px;color:%s;line-height:1.6;">%s</div></td></tr></table>' % (INK, html.escape(highlight))) if highlight else ''
 
     rev = (sec('REVENUE HIGHLIGHTS') + '<table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:20px;"><tr>' +
