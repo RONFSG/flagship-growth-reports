@@ -58,7 +58,7 @@ def logo_cells_html(cell=2):
     width = len(LOGO_GRID[0]) * cell
     out = '<table cellpadding="0" cellspacing="0" border="0" width="%d" style="border-collapse:collapse;width:%dpx;">' % (width, width)
     for row in LOGO_GRID:
-        out += '<tr><td style="padding:0;font-size:0;line-height:0;"><table cellpadding="0" cellspacing="0" border="0" width="%d" style="border-collapse:collapse;table-layout:fixed;width:%dpx;"><tr>' % (width, width)
+        out += '<tr><td style="font-size:0;line-height:0"><table cellpadding="0" cellspacing="0" border="0" width="%d"><tr>' % width
         i = 0
         while i < len(row):
             j = i
@@ -66,7 +66,7 @@ def logo_cells_html(cell=2):
                 j += 1
             n = j - i
             bg = (' bgcolor="%s"' % colors[row[i]]) if row[i] in colors else ''
-            out += '<td%s width="%d" height="%d" style="width:%dpx;height:%dpx;font-size:0;line-height:0;padding:0;"></td>' % (bg, n * cell, cell, n * cell, cell)
+            out += '<td%s width="%d" height="%d" style="font-size:0;line-height:0"></td>' % (bg, n * cell, cell)
             i = j
         out += '</tr></table></td></tr>'
     return out + '</table>'
