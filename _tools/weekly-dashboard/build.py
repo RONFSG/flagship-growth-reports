@@ -150,7 +150,7 @@ def slack_text(cfg, slug, label, m):
         cfg['brand'], label, table, '  ·  '.join(links), cfg['brand'], label))
 
 
-def email_html(cfg, slug, label, m, insights):
+def email_html(cfg, slug, label, m, insights, logo_src=LOGO):
     """Port of the old sendBrandEmail HTML (Google Doc button removed). Returns (subject, html)."""
     cur = cfg.get('currencySymbol', '$')
     G, R, A, MUT, INK = '#16A34A', '#DC2626', '#D97706', '#6B6558', '#0B0D12'
@@ -178,15 +178,15 @@ def email_html(cfg, slug, label, m, insights):
     actions = [x.strip().rstrip('.') + '.' for x in re.split(r'\.\s+', strip_label(insights[3])) if len(x.strip()) > 15][:3] if len(insights) > 3 else []
 
     sec = lambda t: '<div style="font-size:9px;font-weight:700;letter-spacing:1.5px;color:#2447FF;margin-bottom:10px;border-bottom:2px solid #2447FF;padding-bottom:5px;">' + t + '</div>'
-    card = lambda big, lbl, sub, subc: ('<td style="text-align:center;padding:12px 6px;background:#F8F8F5;border-radius:6px;">'
+    card = lambda big, lbl, sub, subc: ('<td bgcolor="#F8F8F5" style="text-align:center;padding:12px 6px;background:#F8F8F5;border-radius:6px;">'
                                        '<div style="font-size:17px;font-weight:bold;color:%s;">%s</div>'
                                        '<div style="font-size:10px;color:%s;margin-top:3px;">%s</div>'
                                        '<div style="font-size:11px;color:%s;margin-top:3px;font-weight:600;">%s</div></td>') % (INK, big, MUT, lbl, subc, sub)
     gap = '<td width="6"></td>'
 
-    one_line = ('<div style="background:#EEF2FF;border-left:3px solid #2447FF;border-radius:0 6px 6px 0;padding:14px 16px;margin-bottom:20px;">'
+    one_line = ('<table width="100%%" cellpadding="0" cellspacing="0" style="margin-bottom:20px;"><tr><td bgcolor="#EEF2FF" style="background:#EEF2FF;border-left:3px solid #2447FF;padding:14px 16px;">'
                 '<div style="font-size:9px;font-weight:700;letter-spacing:1.5px;color:#2447FF;text-transform:uppercase;margin-bottom:6px;">▶ This week in one line</div>'
-                '<div style="font-size:13px;color:%s;line-height:1.6;">%s</div></div>' % (INK, html.escape(highlight))) if highlight else ''
+                '<div style="font-size:13px;color:%s;line-height:1.6;">%s</div></td></tr></table>' % (INK, html.escape(highlight))) if highlight else ''
 
     rev = (sec('REVENUE HIGHLIGHTS') + '<table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:20px;"><tr>' +
            card(cm(s), 'Total Sales', wtxt(m['wow']), col(m['wow'])) + gap +
@@ -195,13 +195,13 @@ def email_html(cfg, slug, label, m, insights):
            card(cm(m['adSales']), 'PPC Revenue', wtxt(m['paidWoW']), col(m['paidWoW'])) + '</tr></table>')
 
     def ovp(lbl, val, w, share):
-        return ('<td style="vertical-align:top;background:#F8F8F5;border-radius:6px;padding:14px 12px;">'
+        return ('<td bgcolor="#F8F8F5" style="vertical-align:top;background:#F8F8F5;border-radius:6px;padding:14px 12px;">'
                 '<div style="font-size:9px;color:%s;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:6px;">%s</div>'
                 '<div style="font-size:16px;font-weight:bold;color:%s;">%s</div>'
                 '<div style="font-size:11px;color:%s;margin-top:3px;font-weight:600;">%s</div>'
                 '<div style="font-size:10px;color:%s;margin-top:2px;">%s%% of total</div></td>') % (MUT, lbl, INK, val, col(w), wtxt(w), MUT, share)
     eff_row = lambda k, v: '<tr><td style="font-size:11px;color:%s;padding:3px 0;width:52%%;">%s</td><td style="font-size:11px;font-weight:bold;color:%s;padding:3px 0;white-space:nowrap;">%s</td></tr>' % (MUT, k, INK, v)
-    eff = ('<td style="vertical-align:top;background:#F8F8F5;border-radius:6px;padding:14px 12px;">'
+    eff = ('<td bgcolor="#F8F8F5" style="vertical-align:top;background:#F8F8F5;border-radius:6px;padding:14px 12px;">'
            '<div style="font-size:9px;color:%s;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:8px;">Ad Efficiency</div>'
            '<table cellpadding="0" cellspacing="0" width="100%%" style="border-collapse:collapse;">' % MUT +
            eff_row('ACoS', '%.1f%% <span style="color:%s;">%s</span>' % (acos, G if acos <= 20 else R, '▲' if acos <= 20 else '▼')) +
@@ -222,9 +222,9 @@ def email_html(cfg, slug, label, m, insights):
         amt = (cur + str(int(v // 1000)) + 'k') if v >= 1000 else cur + str(int(v))
         bars += ('<td style="text-align:center;vertical-align:bottom;padding:0 3px;width:%d%%;">'
                  '<div style="font-size:9px;color:%s;margin-bottom:3px;">%s</div>'
-                 '<div style="background:%s;height:%dpx;border-radius:3px 3px 0 0;"></div>'
+                 '<table width="100%%" cellpadding="0" cellspacing="0"><tr><td bgcolor="%s" height="%d" style="height:%dpx;font-size:0;line-height:0;">&nbsp;</td></tr></table>'
                  '<div style="font-size:9px;margin-top:4px;font-weight:%s;color:%s;">%s</div></td>') % (
-            100 // len(m['dailyValues']), MUT, amt, '#2447FF' if peak else '#DDE4F5', h, '700' if peak else '400', '#2447FF' if peak else MUT, dl)
+            100 // len(m['dailyValues']), MUT, amt, '#2447FF' if peak else '#DDE4F5', h, h, '700' if peak else '400', '#2447FF' if peak else MUT, dl)
     daily = sec('DAILY SALES') + '<table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:20px;"><tr style="vertical-align:bottom;">' + bars + '</tr></table>'
 
     th = lambda t, a: '<th style="padding:7px 8px;font-size:9px;color:%s;font-weight:600;text-align:%s;">%s</th>' % (MUT, a, t)
@@ -238,23 +238,34 @@ def email_html(cfg, slug, label, m, insights):
                  '<td style="padding:9px 8px;font-size:11px;color:%s;text-align:right;white-space:nowrap;">%d units</td></tr>') % (
             MUT, i + 1, INK, html.escape(p['name']), INK, cm(p['sales']), col(p['wow']), wtxt(p['wow'], '%'), MUT, p['units'])
     prods = (sec('TOP SELLING PRODUCTS') + '<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin-bottom:20px;">'
-             '<tr style="background:#F8F8F5;">' + th('#', 'left') + th('Product', 'left') + th('Sales', 'right') + th('WoW', 'right') + th('Units', 'right') + '</tr>' + prow + '</table>') if m['products'] else ''
+             '<tr bgcolor="#F8F8F5" style="background:#F8F8F5;">' + th('#', 'left') + th('Product', 'left') + th('Sales', 'right') + th('WoW', 'right') + th('Units', 'right') + '</tr>' + prow + '</table>') if m['products'] else ''
 
     acts = (sec("WHAT WE'RE DOING THIS WEEK") + '<ul style="margin:0 0 20px 16px;padding:0;">' +
             ''.join('<li style="font-size:12px;color:%s;line-height:1.6;margin-bottom:8px;padding-left:4px;">%s</li>' % (INK, html.escape(a)) for a in actions) + '</ul>') if actions else ''
 
     url = 'https://reports.flagshipgrowth.com/%s-weekly' % slug
-    body = ('<!DOCTYPE html><html><body style="font-family:Arial,sans-serif;background:#F6F3EC;margin:0;padding:20px;"><div style="max-width:600px;margin:0 auto;">'
-            '<div style="background:#ffffff;padding:18px 24px 16px;border-radius:8px 8px 0 0;border:0.5px solid #e2e8f0;border-bottom:2px solid #2447FF;">'
-            '<table width="100%" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:middle;width:110px;"><img src="' + LOGO + '" height="36" style="display:block;" alt="Flagship Growth"></td>'
+    if logo_src == 'text':   # Gmail connector strips <img>; FSG wordmark as styled text instead
+        logo_cell = ('<span style="font-size:18px;font-weight:bold;font-family:Arial,sans-serif;color:#0F172A;"><span style="color:#2447FF;">&#9873;</span>&nbsp;Flagship</span>'
+                     '<span style="font-size:18px;font-weight:bold;font-family:Arial,sans-serif;color:#2447FF;">Growth</span>')
+    else:
+        logo_cell = '<img src="' + logo_src + '" width="96" height="36" style="display:block;" alt="Flagship Growth">'
+    btn = ('<table align="center" cellpadding="0" cellspacing="0" style="margin:0 auto 8px;"><tr>'
+           '<td bgcolor="#2447FF" style="background:#2447FF;border-radius:6px;padding:12px 28px;">'
+           '<a href="' + url + '" style="color:#FFFFFF;text-decoration:none;font-size:13px;font-weight:600;font-family:Arial,sans-serif;">'
+           '<span style="color:#FFFFFF;">View Full Dashboard &rarr;</span></a></td></tr></table>')
+    body = ('<!DOCTYPE html><html><body style="margin:0;padding:0;font-family:Arial,sans-serif;">'
+            '<table width="100%" cellpadding="0" cellspacing="0" bgcolor="#F6F3EC" style="background:#F6F3EC;"><tr><td style="padding:20px;">'
+            '<table width="100%" cellpadding="0" cellspacing="0" align="center" style="max-width:600px;margin:0 auto;">'
+            '<tr><td bgcolor="#FFFFFF" style="background:#FFFFFF;padding:18px 24px 16px;border:1px solid #e2e8f0;border-bottom:2px solid #2447FF;">'
+            '<table width="100%" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:middle;width:130px;">' + logo_cell + '</td>'
             '<td style="text-align:right;vertical-align:middle;"><div style="font-size:16px;font-weight:bold;color:' + INK + ';line-height:1.3;">Amazon Weekly Sales Report WK' + wn + '</div>'
-            '<div style="font-size:12px;color:' + MUT + ';margin-top:3px;">' + cfg['brand'] + ' · ' + date_range + '</div></td></tr></table></div>'
-            '<div style="background:#fff;padding:22px 24px;border:0.5px solid #e2e8f0;border-top:none;">' +
-            one_line + rev + wow_sec + daily + prods + acts +
-            '<div style="text-align:center;margin-bottom:8px;"><a href="' + url + '" style="display:inline-block;background:#2447FF;color:#fff;padding:12px 28px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600;">View Full Dashboard →</a></div>'
-            '</div><div style="background:#F6F3EC;padding:14px 24px;border-radius:0 0 8px 8px;text-align:center;border:0.5px solid #e2e8f0;border-top:none;">'
-            '<div style="font-size:10px;color:#9E9689;">Flagship Growth · ' + cfg['brand'] + ' Weekly Report · ' + date_range + ' · Confidential</div>'
-            '<div style="font-size:10px;color:#9E9689;margin-top:2px;">Questions? Reply to this email or reach us on Slack.</div></div></div></body></html>')
+            '<div style="font-size:12px;color:' + MUT + ';margin-top:3px;">' + cfg['brand'] + ' \u00b7 ' + date_range + '</div></td></tr></table></td></tr>'
+            '<tr><td bgcolor="#FFFFFF" style="background:#FFFFFF;padding:22px 24px;border:1px solid #e2e8f0;border-top:none;">' +
+            one_line + rev + wow_sec + daily + prods + acts + btn +
+            '</td></tr><tr><td bgcolor="#F6F3EC" style="background:#F6F3EC;padding:14px 24px;text-align:center;border:1px solid #e2e8f0;border-top:none;">'
+            '<div style="font-size:10px;color:#9E9689;">Flagship Growth \u00b7 ' + cfg['brand'] + ' Weekly Report \u00b7 ' + date_range + ' \u00b7 Confidential</div>'
+            '<div style="font-size:10px;color:#9E9689;margin-top:2px;">Questions? Reply to this email or reach us on Slack.</div></td></tr></table>'
+            '</td></tr></table></body></html>')
     subject = 'Weekly Performance Summary / %s / %s' % (cfg['brand'], date_range)
     return subject, body
 
@@ -390,7 +401,8 @@ def main():
         print(summary_text(cfg['brand'], label, m))
         return
     if '--email' in sys.argv:                      # --email <out.html>: write the client email (not published)
-        subject, body = email_html(cfg, slug, label, m, d.get('insights') or [])
+        logo = sys.argv[sys.argv.index('--logo') + 1] if '--logo' in sys.argv else LOGO   # e.g. cid:0 for Gmail inline logo
+        subject, body = email_html(cfg, slug, label, m, d.get('insights') or [], logo)
         out = sys.argv[sys.argv.index('--email') + 1]
         open(out, 'w').write(body)
         print('SUBJECT:', subject)
