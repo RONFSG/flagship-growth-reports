@@ -150,6 +150,115 @@ def slack_text(cfg, slug, label, m):
         cfg['brand'], label, table, '  ·  '.join(links), cfg['brand'], label))
 
 
+def email_html(cfg, slug, label, m, insights):
+    """Port of the old sendBrandEmail HTML (Google Doc button removed). Returns (subject, html)."""
+    cur = cfg.get('currencySymbol', '$')
+    G, R, A, MUT, INK = '#16A34A', '#DC2626', '#D97706', '#6B6558', '#0B0D12'
+
+    def cm(v):
+        return cur + '{:,}'.format(int(v // 1))
+
+    def wtxt(v, suffix='% WoW'):
+        return ('▲ +' if v >= 0 else '▼ ') + '%.1f' % abs(v) + suffix
+
+    def col(v):
+        return G if v >= 0 else R
+    roas, tacos = m['roas'], m['tacos']
+    acos = m['acos']
+    roas_c, roas_l = (G, '▲ Strong') if roas >= 4 else ((A, '— Moderate') if roas >= 2 else (R, '▼ Low'))
+    s = m['sales']
+    org_pct = '%.1f' % (m['organic'] / s * 100) if s else '0'
+    paid_pct = '%.1f' % (m['adSales'] / s * 100) if s else '0'
+    wn = label.split(' · ')[0].replace('Week ', '')
+    date_range = label
+
+    def strip_label(t):
+        return re.sub(r'^\*\*.*?\*\*\s*', '', t).strip()
+    highlight = strip_label(insights[0]) if insights else ''
+    actions = [x.strip().rstrip('.') + '.' for x in re.split(r'\.\s+', strip_label(insights[3])) if len(x.strip()) > 15][:3] if len(insights) > 3 else []
+
+    sec = lambda t: '<div style="font-size:9px;font-weight:700;letter-spacing:1.5px;color:#2447FF;margin-bottom:10px;border-bottom:2px solid #2447FF;padding-bottom:5px;">' + t + '</div>'
+    card = lambda big, lbl, sub, subc: ('<td style="text-align:center;padding:12px 6px;background:#F8F8F5;border-radius:6px;">'
+                                       '<div style="font-size:17px;font-weight:bold;color:%s;">%s</div>'
+                                       '<div style="font-size:10px;color:%s;margin-top:3px;">%s</div>'
+                                       '<div style="font-size:11px;color:%s;margin-top:3px;font-weight:600;">%s</div></td>') % (INK, big, MUT, lbl, subc, sub)
+    gap = '<td width="6"></td>'
+
+    one_line = ('<div style="background:#EEF2FF;border-left:3px solid #2447FF;border-radius:0 6px 6px 0;padding:14px 16px;margin-bottom:20px;">'
+                '<div style="font-size:9px;font-weight:700;letter-spacing:1.5px;color:#2447FF;text-transform:uppercase;margin-bottom:6px;">▶ This week in one line</div>'
+                '<div style="font-size:13px;color:%s;line-height:1.6;">%s</div></div>' % (INK, html.escape(highlight))) if highlight else ''
+
+    rev = (sec('REVENUE HIGHLIGHTS') + '<table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:20px;"><tr>' +
+           card(cm(s), 'Total Sales', wtxt(m['wow']), col(m['wow'])) + gap +
+           card('%.2fx' % roas, 'ROAS', roas_l, roas_c) + gap +
+           card(cm(m['spend']), 'Ad Spend', '%.1f%% TACoS' % tacos, MUT) + gap +
+           card(cm(m['adSales']), 'PPC Revenue', wtxt(m['paidWoW']), col(m['paidWoW'])) + '</tr></table>')
+
+    def ovp(lbl, val, w, share):
+        return ('<td style="vertical-align:top;background:#F8F8F5;border-radius:6px;padding:14px 12px;">'
+                '<div style="font-size:9px;color:%s;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:6px;">%s</div>'
+                '<div style="font-size:16px;font-weight:bold;color:%s;">%s</div>'
+                '<div style="font-size:11px;color:%s;margin-top:3px;font-weight:600;">%s</div>'
+                '<div style="font-size:10px;color:%s;margin-top:2px;">%s%% of total</div></td>') % (MUT, lbl, INK, val, col(w), wtxt(w), MUT, share)
+    eff_row = lambda k, v: '<tr><td style="font-size:11px;color:%s;padding:3px 0;width:52%%;">%s</td><td style="font-size:11px;font-weight:bold;color:%s;padding:3px 0;white-space:nowrap;">%s</td></tr>' % (MUT, k, INK, v)
+    eff = ('<td style="vertical-align:top;background:#F8F8F5;border-radius:6px;padding:14px 12px;">'
+           '<div style="font-size:9px;color:%s;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:8px;">Ad Efficiency</div>'
+           '<table cellpadding="0" cellspacing="0" width="100%%" style="border-collapse:collapse;">' % MUT +
+           eff_row('ACoS', '%.1f%% <span style="color:%s;">%s</span>' % (acos, G if acos <= 20 else R, '▲' if acos <= 20 else '▼')) +
+           eff_row('TACoS', '%.1f%% <span style="color:%s;">%s</span>' % (tacos, G if tacos <= 10 else R, '▲' if tacos <= 10 else '▼')) +
+           eff_row('Units', '{:,}'.format(m['units'])) +
+           eff_row('CVR', '%.2f%%' % m['cvr']) + '</table></td>')
+    wow_sec = (sec('WEEK-OVER-WEEK PERFORMANCE') + '<table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:20px;"><tr>' +
+               ovp('Organic Revenue', cm(m['organic']), m['orgWoW'], org_pct) + gap +
+               ovp('PPC Revenue', cm(m['adSales']), m['paidWoW'], paid_pct) + gap + eff + '</tr></table>')
+
+    bars = ''
+    mx = m['maxDaily'] or 1
+    for l, v in zip(m['dailyLabels'], m['dailyValues']):
+        dname, mon, day = l.split(' ')
+        dl = '%s %d/%s' % (dname, dt.datetime.strptime(mon, '%b').month, day)
+        peak = v == m['maxDaily']
+        h = max(4, round(v / mx * 56))
+        amt = (cur + str(int(v // 1000)) + 'k') if v >= 1000 else cur + str(int(v))
+        bars += ('<td style="text-align:center;vertical-align:bottom;padding:0 3px;width:%d%%;">'
+                 '<div style="font-size:9px;color:%s;margin-bottom:3px;">%s</div>'
+                 '<div style="background:%s;height:%dpx;border-radius:3px 3px 0 0;"></div>'
+                 '<div style="font-size:9px;margin-top:4px;font-weight:%s;color:%s;">%s</div></td>') % (
+            100 // len(m['dailyValues']), MUT, amt, '#2447FF' if peak else '#DDE4F5', h, '700' if peak else '400', '#2447FF' if peak else MUT, dl)
+    daily = sec('DAILY SALES') + '<table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:20px;"><tr style="vertical-align:bottom;">' + bars + '</tr></table>'
+
+    th = lambda t, a: '<th style="padding:7px 8px;font-size:9px;color:%s;font-weight:600;text-align:%s;">%s</th>' % (MUT, a, t)
+    prow = ''
+    for i, p in enumerate(m['products'][:3]):
+        prow += ('<tr style="border-bottom:1px solid #E5E0D6;">'
+                 '<td style="padding:9px 8px;font-size:12px;color:%s;width:20px;">%d</td>'
+                 '<td style="padding:9px 8px;font-size:12px;color:%s;font-weight:500;">%s</td>'
+                 '<td style="padding:9px 8px;font-size:12px;font-weight:700;color:%s;text-align:right;white-space:nowrap;">%s</td>'
+                 '<td style="padding:9px 8px;font-size:12px;color:%s;text-align:right;white-space:nowrap;font-weight:600;">%s</td>'
+                 '<td style="padding:9px 8px;font-size:11px;color:%s;text-align:right;white-space:nowrap;">%d units</td></tr>') % (
+            MUT, i + 1, INK, html.escape(p['name']), INK, cm(p['sales']), col(p['wow']), wtxt(p['wow'], '%'), MUT, p['units'])
+    prods = (sec('TOP SELLING PRODUCTS') + '<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin-bottom:20px;">'
+             '<tr style="background:#F8F8F5;">' + th('#', 'left') + th('Product', 'left') + th('Sales', 'right') + th('WoW', 'right') + th('Units', 'right') + '</tr>' + prow + '</table>') if m['products'] else ''
+
+    acts = (sec("WHAT WE'RE DOING THIS WEEK") + '<ul style="margin:0 0 20px 16px;padding:0;">' +
+            ''.join('<li style="font-size:12px;color:%s;line-height:1.6;margin-bottom:8px;padding-left:4px;">%s</li>' % (INK, html.escape(a)) for a in actions) + '</ul>') if actions else ''
+
+    url = 'https://reports.flagshipgrowth.com/%s-weekly' % slug
+    body = ('<!DOCTYPE html><html><body style="font-family:Arial,sans-serif;background:#F6F3EC;margin:0;padding:20px;"><div style="max-width:600px;margin:0 auto;">'
+            '<div style="background:#ffffff;padding:18px 24px 16px;border-radius:8px 8px 0 0;border:0.5px solid #e2e8f0;border-bottom:2px solid #2447FF;">'
+            '<table width="100%" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:middle;width:110px;"><img src="' + LOGO + '" height="36" style="display:block;" alt="Flagship Growth"></td>'
+            '<td style="text-align:right;vertical-align:middle;"><div style="font-size:16px;font-weight:bold;color:' + INK + ';line-height:1.3;">Amazon Weekly Sales Report WK' + wn + '</div>'
+            '<div style="font-size:12px;color:' + MUT + ';margin-top:3px;">' + cfg['brand'] + ' · ' + date_range + '</div></td></tr></table></div>'
+            '<div style="background:#fff;padding:22px 24px;border:0.5px solid #e2e8f0;border-top:none;">' +
+            one_line + rev + wow_sec + daily + prods + acts +
+            '<div style="text-align:center;margin-bottom:8px;"><a href="' + url + '" style="display:inline-block;background:#2447FF;color:#fff;padding:12px 28px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600;">View Full Dashboard →</a></div>'
+            '</div><div style="background:#F6F3EC;padding:14px 24px;border-radius:0 0 8px 8px;text-align:center;border:0.5px solid #e2e8f0;border-top:none;">'
+            '<div style="font-size:10px;color:#9E9689;">Flagship Growth · ' + cfg['brand'] + ' Weekly Report · ' + date_range + ' · Confidential</div>'
+            '<div style="font-size:10px;color:#9E9689;margin-top:2px;">Questions? Reply to this email or reach us on Slack.</div></div></div></body></html>')
+    subject = 'Weekly Performance Summary / %s / %s' % (cfg['brand'], date_range)
+    return subject, body
+
+
 def recs_html(insights):
     """insights: list of 4 strings like '**Weekly Highlights —** text'."""
     out = []
@@ -279,6 +388,13 @@ def main():
     label = week_label(start)
     if '--summary' in sys.argv:
         print(summary_text(cfg['brand'], label, m))
+        return
+    if '--email' in sys.argv:                      # --email <out.html>: write the client email (not published)
+        subject, body = email_html(cfg, slug, label, m, d.get('insights') or [])
+        out = sys.argv[sys.argv.index('--email') + 1]
+        open(out, 'w').write(body)
+        print('SUBJECT:', subject)
+        print('wrote', out)
         return
     if '--slack' in sys.argv:
         print(slack_text(cfg, slug, label, m))
