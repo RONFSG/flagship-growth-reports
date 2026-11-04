@@ -24,6 +24,54 @@ MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'Augus
           'September', 'October', 'November', 'December']
 
 
+LOGO_GRID = [
+    '.YYY..............',
+    'YYYYY.............',
+    'YYYYYBB...........',
+    'KYYYBBBBBBBB......',
+    'KKKBBBBBBBBBBBB...',
+    'KKKBBBBBBBBBBBBBBB',
+    'KKKBBBBBBBBBBBBBB.',
+    'KKKBBBBBBBBBBBB...',
+    'KKKBBBBBBBBBBB....',
+    'KKKBBBBBBBBBB.....',
+    'KKKBBBBBBBBBBBB...',
+    'KKKBBBBBBBBBBBBB..',
+    'KKKBBBBBBBBBBBBBBB',
+    'KKKBBBBBBBBBBBBB..',
+    'KKKBBBBBBBBB......',
+    'KKKBBBBB..........',
+    'KKKB..............',
+    'KKK...............',
+    'KKK...............',
+    'KKK...............',
+    'KKK...............',
+    'KKK...............',
+    '.K................',
+]
+
+
+def logo_cells_html(cell=2):
+    """FSG flag drawn with coloured table cells (Gmail connector strips <img>); grid traced from assets/fsg-logo.png.
+    Each grid row is its own fixed-width one-row table so run widths are exact in every mail client."""
+    colors = {'K': '#080A0C', 'B': '#0836FE', 'Y': '#D1FB0B'}
+    width = len(LOGO_GRID[0]) * cell
+    out = '<table cellpadding="0" cellspacing="0" border="0" width="%d" style="border-collapse:collapse;width:%dpx;">' % (width, width)
+    for row in LOGO_GRID:
+        out += '<tr><td style="padding:0;font-size:0;line-height:0;"><table cellpadding="0" cellspacing="0" border="0" width="%d" style="border-collapse:collapse;table-layout:fixed;width:%dpx;"><tr>' % (width, width)
+        i = 0
+        while i < len(row):
+            j = i
+            while j < len(row) and row[j] == row[i]:
+                j += 1
+            n = j - i
+            bg = (' bgcolor="%s"' % colors[row[i]]) if row[i] in colors else ''
+            out += '<td%s width="%d" height="%d" style="width:%dpx;height:%dpx;font-size:0;line-height:0;padding:0;"></td>' % (bg, n * cell, cell, n * cell, cell)
+            i = j
+        out += '</tr></table></td></tr>'
+    return out + '</table>'
+
+
 def money(v):            # '$' + Math.floor(v).toLocaleString()
     return '${:,}'.format(int(v // 1))
 
@@ -244,9 +292,12 @@ def email_html(cfg, slug, label, m, insights, logo_src=LOGO):
             ''.join('<li style="font-size:12px;color:%s;line-height:1.6;margin-bottom:8px;padding-left:4px;">%s</li>' % (INK, html.escape(a)) for a in actions) + '</ul>') if actions else ''
 
     url = 'https://reports.flagshipgrowth.com/%s-weekly' % slug
-    if logo_src == 'text':   # Gmail connector strips <img>; FSG wordmark as styled text instead
-        logo_cell = ('<span style="font-size:18px;font-weight:bold;font-family:Arial,sans-serif;color:#0F172A;"><span style="color:#2447FF;">&#9873;</span>&nbsp;Flagship</span>'
-                     '<span style="font-size:18px;font-weight:bold;font-family:Arial,sans-serif;color:#2447FF;">Growth</span>')
+    if logo_src == 'text':   # Gmail connector strips <img>; FSG flag drawn with table cells + wordmark
+        logo_cell = ('<table cellpadding="0" cellspacing="0" border="0"><tr><td style="vertical-align:middle;padding-right:8px;">' + logo_cells_html() +
+                     '</td><td style="vertical-align:middle;white-space:nowrap;">'
+                     '<span style="font-size:20px;font-weight:bold;font-family:Arial,Helvetica,sans-serif;letter-spacing:-0.5px;color:#080A0C;">Flagship</span>'
+                     '<span style="font-size:20px;font-weight:bold;font-family:Arial,Helvetica,sans-serif;letter-spacing:-0.5px;color:#0836FE;">Growth</span>'
+                     '</td></tr></table>')
     else:
         logo_cell = '<img src="' + logo_src + '" width="96" height="36" style="display:block;" alt="Flagship Growth">'
     btn = ('<table align="center" cellpadding="0" cellspacing="0" style="margin:0 auto 8px;"><tr>'
@@ -257,7 +308,7 @@ def email_html(cfg, slug, label, m, insights, logo_src=LOGO):
             '<table width="100%" cellpadding="0" cellspacing="0" bgcolor="#F6F3EC" style="background:#F6F3EC;"><tr><td style="padding:20px;">'
             '<table width="100%" cellpadding="0" cellspacing="0" align="center" style="max-width:600px;margin:0 auto;">'
             '<tr><td bgcolor="#FFFFFF" style="background:#FFFFFF;padding:18px 24px 16px;border:1px solid #e2e8f0;border-bottom:2px solid #2447FF;">'
-            '<table width="100%" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:middle;width:130px;">' + logo_cell + '</td>'
+            '<table width="100%" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:middle;width:180px;">' + logo_cell + '</td>'
             '<td style="text-align:right;vertical-align:middle;"><div style="font-size:16px;font-weight:bold;color:' + INK + ';line-height:1.3;">Amazon Weekly Sales Report WK' + wn + '</div>'
             '<div style="font-size:12px;color:' + MUT + ';margin-top:3px;">' + cfg['brand'] + ' \u00b7 ' + date_range + '</div></td></tr></table></td></tr>'
             '<tr><td bgcolor="#FFFFFF" style="background:#FFFFFF;padding:22px 24px;border:1px solid #e2e8f0;border-top:none;">' +
