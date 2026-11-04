@@ -121,6 +121,37 @@ def summary_text(brand, label, m):
     return '\n'.join(lines)
 
 
+def slack_text(cfg, slug, label, m):
+    """Same layout as the old sendBrandSlackNotification table (Markdown for the Slack connector)."""
+    def wow(cur, prev):
+        if not prev:
+            return '  —'
+        p = pct_change(cur, prev)
+        return ('▲ +' if p >= 0 else '▼ ') + ('%.1f%%' % p if p < 0 else '%.1f%%' % p)
+    metrics = [('Total Sales', money(m['sales']), wow(m['sales'], m['prevSales'])),
+               ('Units Sold', '{:,}'.format(m['units']), '  —'),
+               ('Ad Spend', money(m['spend']), wow(m['spend'], m['prevSpend'])),
+               ('ROAS', '%.2fx' % m['roas'], wow(m['roas'], m['prevRoas'])),
+               ('TACoS', '%.1f%%' % m['tacos'], wow(m['tacos'], m['prevTacos'])),
+               ('Ad Sales', money(m['adSales']), wow(m['adSales'], m['prevAdSales']))]
+    daily = []
+    for l, v in zip(m['dailyLabels'], m['dailyValues']):
+        dname, mon, day = l.split(' ')
+        mnum = dt.datetime.strptime(mon, '%b').month
+        daily.append('%-13s  %s' % ('%s %d/%s' % (dname, mnum, day), money(v)))
+    rows = ['%-15s%-14s%-14s%s' % ('Metric', 'Value', 'WoW', 'Daily Sales'), '─' * 65]
+    for i in range(max(len(metrics), len(daily))):
+        left = '%-15s%-14s%-14s' % metrics[i] if i < len(metrics) else ' ' * 43
+        rows.append(left + (daily[i] if i < len(daily) else ''))
+    sym = cfg.get('currencySymbol', '$')
+    table = '\n'.join(rows).replace('$', sym)
+    links = ['[View Full Dashboard](https://reports.flagshipgrowth.com/%s-weekly)' % slug]
+    if cfg.get('weeklyAdReport'):
+        links.append('[Weekly Ad Performance](%s)' % cfg['weeklyAdReport'])
+    return ('**%s Weekly Report — %s**\n```\n%s\n```\n%s\n_Flagship Growth · %s Weekly Report · %s · Confidential_' % (
+        cfg['brand'], label, table, '  ·  '.join(links), cfg['brand'], label))
+
+
 def recs_html(insights):
     """insights: list of 4 strings like '**Weekly Highlights —** text'."""
     out = []
@@ -250,6 +281,9 @@ def main():
     label = week_label(start)
     if '--summary' in sys.argv:
         print(summary_text(cfg['brand'], label, m))
+        return
+    if '--slack' in sys.argv:
+        print(slack_text(cfg, slug, label, m))
         return
     ins = d.get('insights') or []
     if len(ins) != 4:
