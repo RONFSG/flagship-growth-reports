@@ -138,7 +138,7 @@ def summary_text(brand, label, m):
     return '\n'.join(lines)
 
 
-def slack_text(cfg, slug, label, m, blocks=False):
+def slack_text(cfg, slug, label, m, blocks=False, sheet_url=None):
     """Same layout as the old sendBrandSlackNotification table (Markdown for the Slack connector)."""
     def wow(cur, prev):
         if not prev:
@@ -170,7 +170,8 @@ def slack_text(cfg, slug, label, m, blocks=False):
             {'type': 'divider'},
             {'type': 'actions', 'elements': [{'type': 'button', 'style': 'primary',
                 'text': {'type': 'plain_text', 'text': 'View Full Dashboard', 'emoji': False},
-                'url': 'https://reports.flagshipgrowth.com/%s-weekly' % slug}]},
+                'url': 'https://reports.flagshipgrowth.com/%s-weekly' % slug}] + ([{'type': 'button',
+                'text': {'type': 'plain_text', 'text': 'Master Spec Sheet', 'emoji': False}, 'url': sheet_url}] if sheet_url else [])},
             {'type': 'context', 'elements': [{'type': 'mrkdwn', 'text': 'Flagship Growth \u00b7 %s Weekly Report \u00b7 %s \u00b7 Confidential' % (cfg['brand'], label)}]}]}
     links = ['[View Full Dashboard](https://reports.flagshipgrowth.com/%s-weekly)' % slug]
     return ('**%s Weekly Report — %s**\n```\n%s\n```\n%s\n_Flagship Growth · %s Weekly Report · %s · Confidential_' % (
@@ -439,7 +440,8 @@ def main():
         print('wrote', out)
         return
     if '--slack-blocks' in sys.argv:              # JSON payload for the brand's FSG Reports incoming webhook
-        print(json.dumps(slack_text(cfg, slug, label, m, blocks=True), ensure_ascii=False))
+        sheet = sys.argv[sys.argv.index('--sheet') + 1] if '--sheet' in sys.argv else None   # Master Spec Sheet URL (kept out of the repo)
+        print(json.dumps(slack_text(cfg, slug, label, m, blocks=True, sheet_url=sheet), ensure_ascii=False))
         return
     if '--slack' in sys.argv:
         print(slack_text(cfg, slug, label, m))
