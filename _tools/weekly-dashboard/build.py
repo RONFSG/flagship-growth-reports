@@ -138,7 +138,7 @@ def summary_text(brand, label, m):
     return '\n'.join(lines)
 
 
-def slack_text(cfg, slug, label, m):
+def slack_text(cfg, slug, label, m, blocks=False):
     """Same layout as the old sendBrandSlackNotification table (Markdown for the Slack connector)."""
     def wow(cur, prev):
         if not prev:
@@ -162,6 +162,16 @@ def slack_text(cfg, slug, label, m):
         rows.append(left + (daily[i] if i < len(daily) else ''))
     sym = cfg.get('currencySymbol', '$')
     table = '\n'.join(rows).replace('$', sym)
+    if blocks:   # FSG Reports app via incoming webhook: same layout as the old sendBrandSlackNotification, no Doc/Sheet buttons
+        title = '%s Weekly Report \u2014 %s' % (cfg['brand'], label)
+        return {'text': title, 'blocks': [
+            {'type': 'header', 'text': {'type': 'plain_text', 'text': title, 'emoji': False}},
+            {'type': 'section', 'text': {'type': 'mrkdwn', 'text': '```\n' + table + '\n```'}},
+            {'type': 'divider'},
+            {'type': 'actions', 'elements': [{'type': 'button', 'style': 'primary',
+                'text': {'type': 'plain_text', 'text': 'View Full Dashboard', 'emoji': False},
+                'url': 'https://reports.flagshipgrowth.com/%s-weekly' % slug}]},
+            {'type': 'context', 'elements': [{'type': 'mrkdwn', 'text': 'Flagship Growth \u00b7 %s Weekly Report \u00b7 %s \u00b7 Confidential' % (cfg['brand'], label)}]}]}
     links = ['[View Full Dashboard](https://reports.flagshipgrowth.com/%s-weekly)' % slug]
     return ('**%s Weekly Report — %s**\n```\n%s\n```\n%s\n_Flagship Growth · %s Weekly Report · %s · Confidential_' % (
         cfg['brand'], label, table, '  ·  '.join(links), cfg['brand'], label))
@@ -427,6 +437,9 @@ def main():
         open(out, 'w').write(body)
         print('SUBJECT:', subject)
         print('wrote', out)
+        return
+    if '--slack-blocks' in sys.argv:              # JSON payload for the brand's FSG Reports incoming webhook
+        print(json.dumps(slack_text(cfg, slug, label, m, blocks=True), ensure_ascii=False))
         return
     if '--slack' in sys.argv:
         print(slack_text(cfg, slug, label, m))
