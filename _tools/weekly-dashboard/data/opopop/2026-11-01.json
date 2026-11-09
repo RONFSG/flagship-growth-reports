@@ -1,0 +1,188 @@
+{
+  "_source": "Sellerise MCP, account Opopop, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-09.",
+  "week": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "prevWeek": {
+    "start": "2026-10-25",
+    "end": "2026-10-31"
+  },
+  "current": {
+    "revenue": 54055.09,
+    "salesTaxes": 1379.77,
+    "units": 2286,
+    "ppcSpend": 4417.06,
+    "ppcSales": 16779.19,
+    "ppcClicks": 3654,
+    "ppcImpressions": 617258,
+    "ppcOrders": 539
+  },
+  "prev": {
+    "revenue": 44649.05,
+    "salesTaxes": 860.09,
+    "units": 1947,
+    "ppcSpend": 5243.58,
+    "ppcSales": 16182.61,
+    "ppcClicks": 3777,
+    "ppcImpressions": 842191,
+    "ppcOrders": 600
+  },
+  "daily": [
+    {
+      "date": "2026-11-01",
+      "revenue": 7071.32,
+      "salesTaxes": 184.29
+    },
+    {
+      "date": "2026-11-02",
+      "revenue": 8146.41,
+      "salesTaxes": 154.13
+    },
+    {
+      "date": "2026-11-03",
+      "revenue": 7963.42,
+      "salesTaxes": 155.3
+    },
+    {
+      "date": "2026-11-04",
+      "revenue": 7107.1,
+      "salesTaxes": 181.85
+    },
+    {
+      "date": "2026-11-05",
+      "revenue": 6204.13,
+      "salesTaxes": 163.58
+    },
+    {
+      "date": "2026-11-06",
+      "revenue": 8902.48,
+      "salesTaxes": 291.53
+    },
+    {
+      "date": "2026-11-07",
+      "revenue": 8660.23,
+      "salesTaxes": 249.09
+    }
+  ],
+  "products": [
+    {
+      "asin": "B0B6YZ6L56",
+      "title": "Opopop Gourmet Popcorn Gift Set - Variety 12-Pack + Silicone Popper",
+      "cur": {
+        "revenue": 11952.25,
+        "salesTaxes": 743.54,
+        "units": 225,
+        "sessions": 1973
+      },
+      "prev": {
+        "revenue": 4458.64,
+        "salesTaxes": 295.04,
+        "units": 84,
+        "sessions": 614
+      }
+    },
+    {
+      "asin": "B0C6NGZX6D",
+      "title": "Opopop Microwave Popcorn Pop Cups - Super Butter 6-Pack, Non-GMO",
+      "cur": {
+        "revenue": 8793.23,
+        "salesTaxes": 67.02,
+        "units": 594,
+        "sessions": 2005
+      },
+      "prev": {
+        "revenue": 7405.38,
+        "salesTaxes": 57.25,
+        "units": 503,
+        "sessions": 1709
+      }
+    },
+    {
+      "asin": "B0DSJS6NY9",
+      "title": "Opopop Gourmet Popcorn Pop Cups Variety 4-Pack Kit + Silicone Popper",
+      "cur": {
+        "revenue": 5406.36,
+        "salesTaxes": 47.67,
+        "units": 180,
+        "sessions": 1866
+      },
+      "prev": {
+        "revenue": 5804.52,
+        "salesTaxes": 42.0,
+        "units": 195,
+        "sessions": 1843
+      }
+    },
+    {
+      "asin": "B0B75YMMZJ",
+      "title": "Opopop Silicone Popcorn Popper - Collapsible Microwave Popcorn Maker",
+      "cur": {
+        "revenue": 4865.65,
+        "salesTaxes": 326.6,
+        "units": 190,
+        "sessions": 1158
+      },
+      "prev": {
+        "revenue": 3764.06,
+        "salesTaxes": 247.46,
+        "units": 147,
+        "sessions": 889
+      }
+    },
+    {
+      "asin": "B09W4JP4J6",
+      "title": "Opopop Microwave Popcorn Pop Cups - Salty Caramel 6-Pack, Non-GMO",
+      "cur": {
+        "revenue": 4140.79,
+        "salesTaxes": 36.7,
+        "units": 281,
+        "sessions": 1110
+      },
+      "prev": {
+        "revenue": 3566.37,
+        "salesTaxes": 38.6,
+        "units": 245,
+        "sessions": 1054
+      }
+    },
+    {
+      "asin": "B0HCR4DDSH",
+      "title": "Opopop Flavor-Wrapped Microwave Popcorn Kit, Popper Bowl + 4 Flavor Sachets",
+      "cur": {
+        "revenue": 5687.44,
+        "salesTaxes": 48.57,
+        "units": 121,
+        "sessions": 1566
+      },
+      "prev": {
+        "revenue": 2708.86,
+        "salesTaxes": 14.4,
+        "units": 54,
+        "sessions": 1028
+      }
+    },
+    {
+      "asin": "B0H2NMFRF4",
+      "title": "Opopop Butter Pop Microwave Popcorn, 2.8oz, 2-Pack Cases, 6 Bags Each",
+      "cur": {
+        "revenue": 2112.97,
+        "salesTaxes": 21.86,
+        "units": 192,
+        "sessions": 895
+      },
+      "prev": {
+        "revenue": 1833.9,
+        "salesTaxes": 17.22,
+        "units": 168,
+        "sessions": 637
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights —** Opopop delivered $52,675 in total sales for Week 45, up 20.3% from $43,788 the prior week, on 2286 units. Organic revenue grew 30.0% to $35,896, led by the Gift Set at $11,208 (+169.2%) and the Super Butter 6-Pack at $8,726 (+18.8%). Friday, Nov 6 was the peak day at $8,610.",
+    "**Metrics to Watch —** The Flavor-Wrapped Popcorn Kit is gaining fast at $5,638 (+109.3%) with CVR up 47.1% to 7.7%, and we will keep building its momentum. The Variety 4-Pack Kit eased to $5,358 (-7.0%) with CVR at 9.6% (-8.8%), so we are watching it closely to bring it back to growth.",
+    "**Ad Spend Efficiency —** Ad spend came down to $4,417 from $5,243 while PPC revenue rose 3.7% to $16,779, lifting ROAS to 3.80x from 3.09x at a 26.3% ACOS. TACoS improved to 8.4% from 11.97%, with a healthy 14.75% ad conversion rate on a 0.59% ad CTR.",
+    "**Actions This Week —** We will shift budget toward the Gift Set, Super Butter 6-Pack and Flavor-Wrapped Popcorn Kit to build on their strong gains. We will also refine targeting on the Variety 4-Pack Kit and test new Sponsored Product and Sponsored Brand ad creative to lift ad CTR above 0.59%."
+  ]
+}
