@@ -1,0 +1,106 @@
+{
+ "_week": "2026-11-02 to 2026-11-08 (Week 45), MAC Energy US. Written from this week's numbers.",
+ "week_story": [
+  "Sales rose 2.3% to $91,864 while ad spend fell 40% to $34,367, so TACoS dropped from 63.7% to 37.4%.",
+  "Proper Punch led the growth (+19%), Green Apple +8%, Macberry Lychee +5%. The Variety Pack dipped 2.6% and is 43% of sales."
+ ],
+ "refunds_title": "Refunds are low",
+ "refunds": [
+  "Refunds were $1,584 (2.5% of units), up from $1,089 the week before. Still a small share of sales; no action needed."
+ ],
+ "pacing_reco": "November is $106,302 through Nov 8; at that pace the month lands near $398,631, below October's $483,507. Payout was close to break-even this week (-$3,634 vs -$42,087).",
+ "ads_context": [
+  "Ad spend has fallen every week since the Oct 5–11 peak ($150,787); this week's $34,367 is the lowest in the 8-week view.",
+  "ACoS improved from 120.7% to 92.3%: ads now bring $1.08 of ad sales per $1 spent (was $0.83)."
+ ],
+ "ads_strategy": [
+  "Auto campaigns took $9,050 for $5,244 (172.6% ACoS); category keywords $8,809 for $5,739 (153.5%).",
+  "Branded keywords returned $6,565 on $1,275 (19.4% ACoS). Competitor targeting: $8,825 for $8,352 (105.7%)."
+ ],
+ "bid_moves": [
+  "Cut the Macberry Lychee auto campaign: $6,886 spent for $4,134 (166.6% ACoS), the biggest single line.",
+  "Raise budget on the Orange Creamsicle brand-exact campaign: $753 brought $5,172 (14.6% ACoS)."
+ ],
+ "coupons": [
+  "This week: 613 coupon orders (604 last week).",
+  "November so far: 745 coupon orders through Nov 8."
+ ],
+ "promotions": [
+  "This week: 1,396 promotion orders and $17,045 in promotional discounts (vs 1,799 and $19,530 last week).",
+  "Less discounting and lower ad spend lifted payout while sales held steady."
+ ],
+ "events": [
+  "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+  "Deal and coupon set-up deadlines: to confirm with the account team.",
+  "Priority: Variety Pack had 926 units available at FBA (Nov 2 sheet) against about 2,005 a week; 8,352 are inbound."
+ ],
+ "reviews_title": "Rating holding at 4.5 stars",
+ "reviews_body": [
+  "Sellerise shows a 4.5-star rating, shared across the flavors through the Variety Pack listing.",
+  "No new reviews are dated in the last 90 days, so there is no trend to read yet."
+ ],
+ "reviews_reco": [
+  "Check review request settings: about 3,300 orders a week and no new reviews logged in 90 days is unusual.",
+  "Confirm review tracking covers each flavor ASIN, not only the shared listing."
+ ],
+ "recommendations": [
+  [
+   "Inventory",
+   "Get the 8,352 inbound Variety Pack units checked in: 926 available on Nov 2 is under half a week of sales.",
+   "Account team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Lower bids or budget on the Macberry Lychee auto campaign: $6,886 for $4,134 (166.6% ACoS).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Cut bids on “energy drink” exact targets: $3,861 spent for $2,069 in sales this week.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Move budget to brand searches: “mac energy drink” exact ran $547 for $3,554.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Pause the 54 no-sale campaign lines ($1,045 this week).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Marketing",
+   "Lock BF/CM coupons and deals (Nov 27–30) around Variety Pack stock.",
+   "Account team",
+   "By Nov 13"
+  ],
+  [
+   "Finance",
+   "Load product costs into Sellerise so payout shows profit after COGS.",
+   "Account team",
+   "Next week"
+  ]
+ ],
+ "position": [
+  "Sales held at $91,864 on 40% less ad spend; payout moved from -$42,087 to -$3,634.",
+  "TACoS is now 37.4%, down from 101.6% in the Oct 5–11 week."
+ ],
+ "next_steps": [
+  "Land Variety Pack inbound at FBA.",
+  "Trim auto and category spend.",
+  "Shift budget to brand searches.",
+  "Lock BF/CM deals."
+ ],
+ "data_ask": [
+  "Variety Pack inbound ETA and next PO.",
+  "Product costs (COGS) and the BF/CM deal plan.",
+  "Search query report: no data in Sellerise for this week.",
+  "Campaign table covers $31,382 of $34,367 ad spend."
+ ]
+}
