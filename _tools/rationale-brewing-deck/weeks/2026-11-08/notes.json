@@ -1,0 +1,71 @@
+{
+"_week": "2026-11-02 to 2026-11-08 (Week 45). Written from this week's numbers.",
+"week_story": [
+"Sales slipped 4.1% to $4,656 while ad spend rose 11% to $1,193. Orders rose 3.3% to 218. West Coast IPA nearly doubled to $583 and Mexican Cerveza rebounded 42% to $576; Hazy IPA and Cherry Blossom both fell 28% and the Variety 12 Pack fell 11% to $2,251."
+],
+"refunds_title": "Refunds steady, mostly Variety Pack",
+"refunds": [
+"Refunds were $166.01 (6 units) vs $169.58 (6 units) last week. $135.97 (4 units) is the Variety 12 Pack, $18.47 (1 unit) the 19.2oz Tallboy and $11.57 (1 unit) the Hazy IPA."
+],
+"pacing_reco": "At $649 a day, November projects to $19,464, below October's $24,197. Getting closer needs cheaper category ads and the Variety Pack kept in stock into BF/CM.",
+"ads_context": [
+"ACoS rose to 76.5% from 61.8% and TACoS to 25.6% from 22.1%.",
+"Spend went up 11% while ad sales fell 10% to $1,561, so each ad dollar returned $1.31 vs $1.62."
+],
+"ads_strategy": [
+"Branded keywords returned $411.45 on $80.45 (19.6% ACoS) for 17 orders.",
+"Category keywords cost $814.21 for $938.77 (86.7% ACoS); remarketing spent $237.80 for $54.71."
+],
+"bid_moves": [
+"Lower bids on “non alcoholic beer” exact: $217.71 for $140.04 across SP and SB.",
+"Pause the no-sale remarketing campaigns: Japanese Style views 60d ($54.93) and Kolsch views 60d ($32.40)."
+],
+"coupons": [
+"This week: 67 coupon orders.",
+"November to date (Nov 1–8): 74 coupon orders."
+],
+"promotions": [
+"This week: 61 promotion orders and $312.89 in promotional discounts (vs $287.76 last week).",
+"Subscribe & Save orders: 29 this week."
+],
+"events": [
+"Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+"Deal and coupon set-up deadlines: to confirm with the account team.",
+"Priority: keep the Variety 12 Pack (6.5 weeks available, 2,326 inbound) stocked through BF/CM."
+],
+"reviews_title": "No review data in Sellerise",
+"reviews_body": [
+"Sellerise returned no review records, rating trend or negative reviews for the RationAle products over the last 90 days.",
+"That means the review tracker isn't pulling for this account, not that there were no reviews."
+],
+"reviews_reco": [
+"Turn on review tracking for RationAle in Sellerise (or pull Amazon's Customer Reviews report) so the deck can show ratings per product.",
+"Check the newest 1–3 star reviews on the Variety 12 Pack, where 4 of this week's 6 refunded units came from."
+],
+"recommendations": [
+["Ads", "Lower bids on “non alcoholic beer” exact ($217.71 spend, $140.04 sales) and the Variety Pack category exact campaign (80.8% ACoS).", "Ads team", "This week"],
+["Ads", "Cut the 25 campaigns with spend and no sales ($255.01), starting with remarketing at $237.80 for $54.71.", "Ads team", "This week"],
+["Ads", "Move budget to branded keywords: 19.6% ACoS, 17 orders; “rationale beer” exact made $154 on $5.80.", "Ads team", "This week"],
+["Ads", "Add “non alcoholic beer 12 pack” as an exact keyword: 2 orders, $27.83 from $6.24.", "Ads team", "This week"],
+["Inventory", "Hazy IPA has low-stock alerts (Nov 5 and Nov 7, 90 units in stock); confirm the restock.", "Inventory team", "This week"],
+["Buy Box", "West Coast IPA lost the Buy Box on Nov 6 and regained it the same day; watch its price.", "Account team", "Ongoing"],
+["Inventory", "Decide on the 19.2oz Tallboy: 0 available, 0 inbound, 52 sold in the last 30 days.", "Account team", "By Nov 16"],
+["Marketing", "Lock BF/CM coupons and deals (Nov 27–30) and confirm submission deadlines.", "Account team", "By Nov 16"]
+],
+"position": [
+"November is at $5,191 through Nov 8, vs $1,213 for the same days last year.",
+"Orders grew but ads got pricier: ACoS 76.5% and TACoS 25.6%, both up on last week."
+],
+"next_steps": [
+"Cut no-sale and high-ACoS ad spend.",
+"Shift budget to branded keywords.",
+"Restock Hazy IPA; decide on Tallboy.",
+"Lock BF/CM coupons and deals."
+],
+"data_ask": [
+"Tallboy restock plan.",
+"BF/CM deal and coupon plan.",
+"Review tracking turned on in Sellerise.",
+"Search Query Performance report (not loaded in Sellerise this week)."
+]
+}
