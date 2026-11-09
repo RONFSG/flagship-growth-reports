@@ -1,0 +1,71 @@
+{
+  "_week": "2026-11-02 to 2026-11-08 (Week 45). Written from this week's numbers.",
+  "week_story": [
+    "Revenue rose 4.0% to $47,877 while ad spend fell 20.8% to $5,366, so TACoS dropped from 14.7% to 11.2%.",
+    "The All-Natural cleaning solutions led the gain: 16oz +39% and 8oz +31%. Refresh Kit fell 15%; the top three products moved less than 3%."
+  ],
+  "refunds_title": "Refunds tick up, still low",
+  "refunds": [
+    "Refunds were $899 this week (2.25% refund rate), up from $628 (1.56%) the week before. Still a low rate; no action needed."
+  ],
+  "pacing_reco": "November is 9.7% behind last year to date ($55,717 vs $61,707). Essential Kit has about 2.3 weeks available at FBA, so getting its 552 inbound units checked in before Black Friday matters most.",
+  "ads_context": [
+    "Spend fell 21% but ad sales only slipped 3% to $17,401, so ACoS improved from 37.6% to 30.8%.",
+    "Sponsored Brands spend was cut 41% to $1,484; Sponsored Products held at $2,797 (31.0% ACoS)."
+  ],
+  "ads_strategy": [
+    "Branded keywords returned $9,102 on $1,354 (14.9% ACoS) and brought 266 orders.",
+    "Category keywords cost $3,237 for $6,496 in sales (49.8% ACoS); that spend was down 33% on last week."
+  ],
+  "bid_moves": [
+    "Lower bids on the Sponsored Brands “shoe cleaning” phrase target: $436 spent at 54.7% ACoS.",
+    "Lower or pause “shoe cleaning kit” (SB video, phrase): $98 for $55 in sales.",
+    "Competitor targeting spend more than doubled to $317 for $302 in sales; trim “jason markk” (71.5% ACoS)."
+  ],
+  "coupons": [
+    "This week: 138 coupon orders.",
+    "Last week: 94 coupon orders."
+  ],
+  "promotions": [
+    "This week: 342 promotion orders and $1,138 in promotional discounts (vs 339 orders and $927 last week).",
+    "Subscribe & Save orders: 53 (vs 47)."
+  ],
+  "events": [
+    "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+    "Deal and coupon set-up deadlines: to confirm with the account team.",
+    "Priority: Essential Kit inbound checked in at FBA before Nov 20."
+  ],
+  "reviews_title": "No review data in Sellerise",
+  "reviews_body": [
+    "Sellerise returned no review records, rating trend or negative reviews for the 18 Reshoevn8r US products over the last 90 days.",
+    "That means the review tracker isn't pulling for this account, not that there were no reviews."
+  ],
+  "reviews_reco": [
+    "Turn on review tracking for Reshoevn8r US in Sellerise (or pull Amazon's Customer Reviews report) so the deck can show star rating and review count per line."
+  ],
+  "recommendations": [
+    ["Inventory", "Get the 552 inbound Essential Kits checked in: 876 available vs about 386 sold a week (2.3 weeks).", "Account team", "This week"],
+    ["Inventory", "Restock the Laundry Bag: 0 available, 27 sold in the last 30 days.", "Account team", "This week"],
+    ["Ads", "Lower bids on the Sponsored Brands “shoe cleaning” and “shoe cleaning kit” phrase targets (54.7% and 178% ACoS).", "Ads team", "This week"],
+    ["Ads", "Add “reshoevn8r essential shoe cleaning kit” and “reshoev8r water and stain repellent” as exact keywords (25 orders combined, all under 14% ACoS).", "Ads team", "This week"],
+    ["Ads", "Pause or negate the 79 campaigns with spend and no sales ($490 this week).", "Ads team", "This week"],
+    ["Ads", "Move some category budget to the All-Natural cleaning solutions, which grew 35% this week.", "Ads team", "Next week"],
+    ["Marketing", "Lock BF/CM coupons and deals for the kits and solutions (Nov 27–30).", "Account team", "By Nov 13"]
+  ],
+  "position": [
+    "Revenue up 4% with 21% less ad spend: TACoS is back down to 11.2%.",
+    "November is 9.7% behind last year to date and pacing to about $208.9K."
+  ],
+  "next_steps": [
+    "Check in Essential Kit inbound before BF/CM.",
+    "Trim high-ACoS category and competitor targets.",
+    "Harvest the converting branded searches.",
+    "Lock BF/CM coupons and deals."
+  ],
+  "data_ask": [
+    "Essential Kit inbound ETA.",
+    "BF/CM deal and coupon plan.",
+    "Review tracking turned on in Sellerise.",
+    "Search query data for the Essential Kit (none for this week yet)."
+  ]
+}
