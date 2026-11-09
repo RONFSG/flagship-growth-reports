@@ -1,0 +1,370 @@
+{
+ "_source": "Sellerise MCP, account CaddyO, marketplace US, pulled 2026-11-09 (Monday-Sunday weeks; 4-week table from the saved weekly totals)",
+ "weeks": [
+  {
+   "label": "Oct 12 – 18",
+   "revenue": 1600.5,
+   "units": 54,
+   "orders": 47,
+   "impressions": 137326,
+   "clicks": 696,
+   "refundUnits": 6,
+   "refundRate": 12.77,
+   "spend": 699.15,
+   "adSales": 1073.2,
+   "acos": 65.15,
+   "tacos": 43.68
+  },
+  {
+   "label": "Oct 19 – 25",
+   "revenue": 1398.95,
+   "units": 48,
+   "orders": 43,
+   "impressions": 102622,
+   "clicks": 530,
+   "refundUnits": 5,
+   "refundRate": 11.63,
+   "spend": 423.25,
+   "adSales": 955.35,
+   "acos": 44.3,
+   "tacos": 30.25
+  },
+  {
+   "label": "Oct 26 – Nov 1",
+   "revenue": 1546.35,
+   "units": 55,
+   "orders": 51,
+   "impressions": 208267,
+   "clicks": 747,
+   "refundUnits": 3,
+   "refundRate": 5.88,
+   "spend": 796.82,
+   "adSales": 1294.8,
+   "acos": 61.54,
+   "tacos": 51.53
+  },
+  {
+   "label": "Nov 2 – 8",
+   "revenue": 2082.35,
+   "units": 69,
+   "orders": 63,
+   "impressions": 587431,
+   "clicks": 1549,
+   "refundUnits": 2,
+   "refundRate": 3.17,
+   "spend": 2195.47,
+   "adSales": 1462.6,
+   "acos": 150.11,
+   "tacos": 105.43,
+   "net": -1413.02,
+   "refunds": 47.14,
+   "adOrders": 41,
+   "cpc": 1.42,
+   "cvr": 2.65
+  }
+ ],
+ "mtd": {
+  "through": "2026-11-08",
+  "days": 8,
+  "revenue": 2300.53,
+  "units": 77,
+  "orders": 69,
+  "spend": 2355.13,
+  "adSales": 1607.35,
+  "acos": 146.52,
+  "tacos": 102.37,
+  "refundRate": 2.9
+ },
+ "mtdLY": {
+  "revenue": 156.18,
+  "units": 8,
+  "orders": 7,
+  "spend": 0
+ },
+ "daily": [
+  [
+   "2026-10-26",
+   114.79,
+   60.97,
+   202.65,
+   3,
+   3
+  ],
+  [
+   "2026-10-27",
+   301.23,
+   103.43,
+   144.75,
+   10,
+   5
+  ],
+  [
+   "2026-10-28",
+   163.42,
+   97.26,
+   231.6,
+   6,
+   6
+  ],
+  [
+   "2026-10-29",
+   379.59,
+   130.42,
+   260.55,
+   14,
+   9
+  ],
+  [
+   "2026-10-30",
+   222.85,
+   110.18,
+   194.7,
+   7,
+   6
+  ],
+  [
+   "2026-10-31",
+   146.29,
+   134.9,
+   115.8,
+   5,
+   4
+  ],
+  [
+   "2026-11-01",
+   218.18,
+   159.66,
+   144.75,
+   6,
+   3
+  ],
+  [
+   "2026-11-02",
+   216.94,
+   126.5,
+   202.65,
+   6,
+   5
+  ],
+  [
+   "2026-11-03",
+   307.51,
+   124.9,
+   144.75,
+   9,
+   3
+  ],
+  [
+   "2026-11-04",
+   330.98,
+   116.43,
+   194.7,
+   10,
+   6
+  ],
+  [
+   "2026-11-05",
+   302.75,
+   406.08,
+   283.6,
+   8,
+   7
+  ],
+  [
+   "2026-11-06",
+   315.54,
+   448.61,
+   173.7,
+   11,
+   6
+  ],
+  [
+   "2026-11-07",
+   305.15,
+   500.49,
+   144.75,
+   10,
+   5
+  ],
+  [
+   "2026-11-08",
+   303.48,
+   472.46,
+   318.45,
+   9,
+   9
+  ]
+ ],
+ "searchTerms": {
+  "total": 239,
+  "winners": 2,
+  "harvest": 1,
+  "negative": 2,
+  "noPurchase": 2,
+  "rows": [
+   [
+    "icube wrapsulator",
+    "SP",
+    2916,
+    19,
+    4,
+    37.76,
+    144.75
+   ],
+   [
+    "icube wrapsulator regular size 12 oz 16 oz",
+    "SP",
+    1,
+    1,
+    1,
+    0.17,
+    28.95
+   ],
+   [
+    "icube",
+    "SP",
+    20,
+    3,
+    0,
+    9.29,
+    0
+   ]
+  ],
+  "category": [
+   [
+    "wine carrier with glasses",
+    "SB",
+    4,
+    1,
+    1,
+    1.19,
+    59.95
+   ],
+   [
+    "freezer koozies",
+    "SB",
+    6,
+    2,
+    1,
+    1.26,
+    57.9
+   ],
+   [
+    "can chiller",
+    "SP",
+    13,
+    1,
+    1,
+    0.53,
+    57.9
+   ],
+   [
+    "10 below can cooler",
+    "SP",
+    0,
+    0,
+    2,
+    0,
+    57.9
+   ],
+   [
+    "wine bag",
+    "SP",
+    135,
+    3,
+    1,
+    4.06,
+    49.95
+   ]
+  ]
+ },
+ "targets": {
+  "total": 213,
+  "winners": 7,
+  "needsAttention": 65,
+  "highAcos": 3,
+  "noSales": 18,
+  "lowCtr": 31,
+  "rows": [
+   [
+    "Red past buyers 30d (SD)",
+    "Audience",
+    "Category",
+    110.59,
+    0,
+    null,
+    66,
+    0
+   ],
+   [
+    "Black past buyers 30d (SD)",
+    "Audience",
+    "Category",
+    98.79,
+    0,
+    null,
+    65,
+    0
+   ],
+   [
+    "Red past buyers 60d (SD)",
+    "Audience",
+    "Category",
+    98.76,
+    0,
+    null,
+    60,
+    0
+   ],
+   [
+    "Purple past buyers 60d (SD)",
+    "Audience",
+    "Category",
+    95.15,
+    0,
+    null,
+    43,
+    0
+   ],
+   [
+    "Red category viewers 60d (SD)",
+    "Audience",
+    "Category",
+    89.91,
+    0,
+    null,
+    84,
+    0
+   ]
+  ]
+ },
+ "reviews": {
+  "available": true,
+  "currentAvgRating": 3.5,
+  "periodReviews": 0,
+  "negative": 0,
+  "note": "one review signal (shared listing rating 3.5); no reviews dated in the last 90 days"
+ },
+ "alerts": {
+  "total": 125,
+  "actionable": 7,
+  "critical": 3,
+  "warning": 4,
+  "byType": {
+   "Listing images": 34,
+   "Bullets": 27,
+   "Title": 26,
+   "Brand": 19,
+   "Inactive": 4,
+   "Title differentiation": 4,
+   "Reimbursable units": 3,
+   "Dimensions": 2,
+   "Parent ASIN changed": 1,
+   "Description": 1,
+   "Out of stock": 1,
+   "Child ASINs changed": 1,
+   "Low inventory fee": 1,
+   "Days of supply": 1
+  }
+ }
+}

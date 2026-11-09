@@ -1,0 +1,70 @@
+{
+ "_week": "2026-11-02 to 2026-11-08 (Week 45). Written fresh from this week's numbers.",
+ "week_story": [
+  "Sales rose 34.7% to $2,082: Regular colours up 75% ($826), Camo 6 units vs 1, wine totes $244 vs $45.",
+  "Slim fell 44% to $219 (Blue Slim 1 unit vs 8); Black Regular fell 20% to $205."
+ ],
+ "refunds_title": "Refunds stayed low",
+ "refunds": [
+  "Refunds were $47 (2 units, 3.2% rate) vs $65 the week before."
+ ],
+ "pacing_reco": "November is at $2,301 through Nov 8, a pace of about $8,627 vs October's $8,061. The pace is real, but ad spend is eating it.",
+ "ads_context": [
+  "Ad spend jumped 176% to $2,195 while ad sales rose only 13% to $1,463.",
+  "ACoS went from 61.5% to 150.1%; daily spend went from about $120 to $406–$500 from Thursday."
+ ],
+ "ads_strategy": [
+  "Sponsored Display remarketing: $1,023 spend, $0 sales (vs $15 spend the week before).",
+  "Auto: $492 for $716 (68.7% ACoS). Branded: $184 for $292 (63.1%). Category: $456 for $397."
+ ],
+ "bid_moves": [
+  "Pause the new SD remarketing campaigns: about $1,000 this week, no sales.",
+  "Lower the Blue SBV “can cooler” phrase: $132 for 1 order.",
+  "Raise “icube wrapsulator” exact: $37.53 for 4 orders and $145."
+ ],
+ "coupons": [
+  "This week: 44 coupon orders (23 last week)."
+ ],
+ "promotions": [
+  "This week: 19 promotion orders and $244 in discounts (vs 22 and $197 last week)."
+ ],
+ "events": [
+  "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+  "Coolers and wine totes are gift items: confirm BF/CM coupons this week.",
+  "Restock the slims and the Red & Blue sleeve before Nov 20."
+ ],
+ "reviews_title": "Few review signals",
+ "reviews_body": [
+  "Sellerise still shows one shared listing rating of 3.5 stars and no reviews dated in the last 90 days.",
+  "Per-line ratings aren't available from Sellerise for CaddyO."
+ ],
+ "reviews_reco": [
+  "Turn on review tracking for all CaddyO ASINs or pull Amazon's Customer Reviews report.",
+  "A 3.5-star rating weighs on ad conversion; read the latest 1–3 star reviews."
+ ],
+ "recommendations": [
+  ["Ads", "Pause the Sponsored Display remarketing campaigns: $1,023 spend, $0 sales this week.", "Ads team", "Today"],
+  ["Ads", "Set a weekly ad budget cap so spend can't jump from $797 to $2,195 again.", "Ads team", "This week"],
+  ["Ads", "Raise bids on “icube wrapsulator” exact (4 orders, $145 on $38).", "Ads team", "This week"],
+  ["Ads", "Add “frost buddy” and “can cooler” as negative exact where they spent $40 and $30 with no orders; harvest “10 below can cooler” (2 orders).", "Ads team", "This week"],
+  ["Inventory", "Restock Blue Slim, Purple Slim and the Red & Blue sleeve (0 available on the Oct 26 sheet) and Grey (7 units).", "Account team", "By Nov 13"],
+  ["Marketing", "Lock BF/CM coupons and deals for coolers and wine totes (Nov 27–30).", "Account team", "By Nov 13"],
+  ["Account health", "Check the 3 critical and 4 warning alerts; set up review tracking.", "Account team", "Next week"]
+ ],
+ "position": [
+  "Sales rose 34.7% to $2,082 on 69 units, the best week since early October.",
+  "Net payout fell to −$1,413 from −$239 because ad spend reached 105% of sales."
+ ],
+ "next_steps": [
+  "Pause no-sale remarketing.",
+  "Cap the weekly ad budget.",
+  "Restock the slims.",
+  "Lock BF/CM deals."
+ ],
+ "data_ask": [
+  "Who launched the SD remarketing campaigns, and their budget.",
+  "Inbound plan for the out-of-stock slims and sleeve.",
+  "COGS per item in Sellerise.",
+  "Review tracking for all ASINs."
+ ]
+}
