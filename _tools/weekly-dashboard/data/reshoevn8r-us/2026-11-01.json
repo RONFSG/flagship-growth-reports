@@ -1,0 +1,204 @@
+{
+  "_source": "Sellerise MCP, account Reshoevn8r, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-09.",
+  "week": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "prevWeek": {
+    "start": "2026-10-25",
+    "end": "2026-10-31"
+  },
+  "current": {
+    "revenue": 48155.11,
+    "salesTaxes": 3271.89,
+    "units": 1555,
+    "ppcSpend": 5662.03,
+    "ppcSales": 17943.76,
+    "ppcClicks": 3325,
+    "ppcImpressions": 1100180,
+    "ppcOrders": 566
+  },
+  "prev": {
+    "revenue": 46336.19,
+    "salesTaxes": 3165.58,
+    "units": 1488,
+    "ppcSpend": 6638.78,
+    "ppcSales": 19778.11,
+    "ppcClicks": 3388,
+    "ppcImpressions": 1051592,
+    "ppcOrders": 622
+  },
+  "daily": [
+    {
+      "date": "2026-11-01",
+      "revenue": 7848.87,
+      "salesTaxes": 553.05
+    },
+    {
+      "date": "2026-11-02",
+      "revenue": 7255.41,
+      "salesTaxes": 508.53
+    },
+    {
+      "date": "2026-11-03",
+      "revenue": 6769.82,
+      "salesTaxes": 468.84
+    },
+    {
+      "date": "2026-11-04",
+      "revenue": 5999.93,
+      "salesTaxes": 413.28
+    },
+    {
+      "date": "2026-11-05",
+      "revenue": 6002.37,
+      "salesTaxes": 387.26
+    },
+    {
+      "date": "2026-11-06",
+      "revenue": 7290.22,
+      "salesTaxes": 478.98
+    },
+    {
+      "date": "2026-11-07",
+      "revenue": 6988.49,
+      "salesTaxes": 461.95
+    }
+  ],
+  "products": [
+    {
+      "asin": "B08CSXXX5M",
+      "title": "RESHOEVN8R Essential Kit - Shoe Cleaner Set for Sneakers & Leather",
+      "cur": {
+        "revenue": 14274.97,
+        "salesTaxes": 1037.29,
+        "units": 341,
+        "sessions": 1373
+      },
+      "prev": {
+        "revenue": 15113.42,
+        "salesTaxes": 1064.07,
+        "units": 363,
+        "sessions": 1686
+      }
+    },
+    {
+      "asin": "B08TFDN7F3",
+      "title": "RESHOEVN8R Waterproof Shoe Spray - Rain & Stain Protector, 6.5oz",
+      "cur": {
+        "revenue": 10820.31,
+        "salesTaxes": 718.44,
+        "units": 458,
+        "sessions": 1491
+      },
+      "prev": {
+        "revenue": 11007.1,
+        "salesTaxes": 735.17,
+        "units": 480,
+        "sessions": 1880
+      }
+    },
+    {
+      "asin": "B08RS7P59K",
+      "title": "RESHOEVN8R Signature Kit - Flagship Shoe Cleaner Set, All Materials",
+      "cur": {
+        "revenue": 7165.68,
+        "salesTaxes": 491.02,
+        "units": 123,
+        "sessions": 2068
+      },
+      "prev": {
+        "revenue": 7221.32,
+        "salesTaxes": 499.18,
+        "units": 124,
+        "sessions": 1079
+      }
+    },
+    {
+      "asin": "B08DNG8XQZ",
+      "title": "RESHOEVN8R All-Natural Shoe Cleaning Solution, 8oz - Sneaker Care",
+      "cur": {
+        "revenue": 3202.38,
+        "salesTaxes": 204.46,
+        "units": 134,
+        "sessions": 451
+      },
+      "prev": {
+        "revenue": 2184.66,
+        "salesTaxes": 136.49,
+        "units": 97,
+        "sessions": 413
+      }
+    },
+    {
+      "asin": "B0FCKD54WY",
+      "title": "RESHOEVN8R All-Natural Sneaker Cleaning Solution, 16oz Bottle",
+      "cur": {
+        "revenue": 3176.04,
+        "salesTaxes": 201.24,
+        "units": 96,
+        "sessions": 214
+      },
+      "prev": {
+        "revenue": 2484.4,
+        "salesTaxes": 166.86,
+        "units": 74,
+        "sessions": 218
+      }
+    },
+    {
+      "asin": "B0CTGGJ98X",
+      "title": "RESHOEVN8R Refresh Kit - Routine Shoe Cleaner Set, All Materials",
+      "cur": {
+        "revenue": 3121.66,
+        "salesTaxes": 202.68,
+        "units": 127,
+        "sessions": 529
+      },
+      "prev": {
+        "revenue": 3524.83,
+        "salesTaxes": 243.64,
+        "units": 145,
+        "sessions": 671
+      }
+    },
+    {
+      "asin": "B08H5XPWQD",
+      "title": "RESHOEVN8R Dry Suede Kit - Nubuck & Suede Cleaner Set",
+      "cur": {
+        "revenue": 1436.8,
+        "salesTaxes": 98.27,
+        "units": 56,
+        "sessions": 196
+      },
+      "prev": {
+        "revenue": 1192.97,
+        "salesTaxes": 83.04,
+        "units": 47,
+        "sessions": 215
+      }
+    },
+    {
+      "asin": "B0BFG5NH7B",
+      "title": "RESHOEVN8R Leather Conditioner Mink Oil Spray, 6oz - Boots & Shoes",
+      "cur": {
+        "revenue": 1392.48,
+        "salesTaxes": 83.14,
+        "units": 60,
+        "sessions": 207
+      },
+      "prev": {
+        "revenue": 1203.26,
+        "salesTaxes": 83.05,
+        "units": 51,
+        "sessions": 180
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights \u2014** Reshoevn8r US delivered $44,883 in total sales for Week 45, up 4.0% from $43,170 the prior week, on 1,555 units. Organic revenue grew 15.2% to $26,939, led by the 8oz Cleaning Solution at $2,997 (+46.4%) and the 16oz Cleaning Solution at $2,974 (+28.4%). Sunday, Nov 1 was the peak day at $7,295.",
+    "**Metrics to Watch \u2014** The Essential Kit eased to $13,237 (-5.8%) as sessions fell 18.6% to 1373, although its CVR improved to 24.8% (+15.4%). The Signature Kit held steady at $6,674 (-0.7%) while sessions jumped 91.7% to 2068 and CVR dipped to 5.9% (-48.2%), so we are reviewing the traffic driving visits to this listing.",
+    "**Ad Spend Efficiency \u2014** Ad spend of $5,662, down from $6,638, generated $17,943 in PPC revenue for a 3.17x ROAS (prior 2.98x) and 31.6% ACOS. TACoS improved to 12.6% from 15.38%, and ad conversion is strong at 17.02% on a 0.30% ad CTR.",
+    "**Actions This Week \u2014** We will reinvest part of the ad savings into the 8oz and 16oz Cleaning Solutions, where CVR reached 29.7% and 44.9%, and refine Signature Kit targeting toward higher-intent search terms to lift its 5.9% CVR. We will also test new Sponsored Brand and video ad creative to raise ad CTR above 0.30% and grow PPC revenue back from $17,943 (-9.3%)."
+  ]
+}
