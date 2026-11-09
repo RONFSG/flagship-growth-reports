@@ -1,0 +1,204 @@
+{
+  "_source": "Sellerise MCP, account BeYouTiful, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-09.",
+  "week": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "prevWeek": {
+    "start": "2026-10-25",
+    "end": "2026-10-31"
+  },
+  "current": {
+    "revenue": 202.65,
+    "salesTaxes": 14.35,
+    "units": 7,
+    "ppcSpend": 427.54,
+    "ppcSales": 156,
+    "ppcClicks": 270,
+    "ppcImpressions": 82697,
+    "ppcOrders": 5
+  },
+  "prev": {
+    "revenue": 477.56,
+    "salesTaxes": 33.37,
+    "units": 11,
+    "ppcSpend": 292.96,
+    "ppcSales": 434,
+    "ppcClicks": 190,
+    "ppcImpressions": 61671,
+    "ppcOrders": 9
+  },
+  "daily": [
+    {
+      "date": "2026-11-01",
+      "revenue": 0,
+      "salesTaxes": 0
+    },
+    {
+      "date": "2026-11-02",
+      "revenue": 55.88,
+      "salesTaxes": 3.88
+    },
+    {
+      "date": "2026-11-03",
+      "revenue": 39.02,
+      "salesTaxes": 2.92
+    },
+    {
+      "date": "2026-11-04",
+      "revenue": 53.92,
+      "salesTaxes": 3.82
+    },
+    {
+      "date": "2026-11-05",
+      "revenue": 38.85,
+      "salesTaxes": 2.75
+    },
+    {
+      "date": "2026-11-06",
+      "revenue": 0,
+      "salesTaxes": 0
+    },
+    {
+      "date": "2026-11-07",
+      "revenue": 14.98,
+      "salesTaxes": 0.98
+    }
+  ],
+  "products": [
+    {
+      "asin": "B0G8NK61XB",
+      "title": "BEYOUTIFUL ATHLETICS, BE SECURE Hot Yoga Towel, Moisture Grip, Dark Gray",
+      "cur": {
+        "revenue": 119.24,
+        "salesTaxes": 9.04,
+        "units": 3,
+        "sessions": 0
+      },
+      "prev": {
+        "revenue": 121.66,
+        "salesTaxes": 9.56,
+        "units": 3,
+        "sessions": 0
+      }
+    },
+    {
+      "asin": "B0HDR6CKDS",
+      "title": "BEYOUTIFUL ATHLETICS, BE YOU Sling & Stretch Strap, Adjustable Mat Carrier",
+      "cur": {
+        "revenue": 44.56,
+        "salesTaxes": 2.56,
+        "units": 3,
+        "sessions": 0
+      },
+      "prev": {
+        "revenue": 52.67,
+        "salesTaxes": 3.68,
+        "units": 3,
+        "sessions": 0
+      }
+    },
+    {
+      "asin": "B0G8MDNNNY",
+      "title": "BEYOUTIFUL ATHLETICS, BE SECURE Hot Yoga Towel, Moisture Grip, Blue",
+      "cur": {
+        "revenue": 38.85,
+        "salesTaxes": 2.75,
+        "units": 1,
+        "sessions": 0
+      },
+      "prev": {
+        "revenue": 80.94,
+        "salesTaxes": 4.94,
+        "units": 2,
+        "sessions": 0
+      }
+    },
+    {
+      "asin": "B0G8QHM24R",
+      "title": "BEYOUTIFUL ATHLETICS, BE YOU Yoga Mat, 6mm Premium Cushion, Non-Slip, Black",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0
+      }
+    },
+    {
+      "asin": "B0G8R8HK3L",
+      "title": "BEYOUTIFUL ATHLETICS, BE YOU Yoga Mat, 6mm Premium Cushion, Non-Slip, Blue",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0
+      },
+      "prev": {
+        "revenue": 181.15,
+        "salesTaxes": 12.05,
+        "units": 2,
+        "sessions": 0
+      }
+    },
+    {
+      "asin": "B0G8NBHVG2",
+      "title": "BEYOUTIFUL ATHLETICS, BE YOU Yoga Mat, 6mm Premium Cushion, Purple",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0
+      }
+    },
+    {
+      "asin": "B0G8NKV4QX",
+      "title": "BEYOUTIFUL ATHLETICS, CHAKRA Print Yoga Mat, 6mm Premium, Non-Slip, Black",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0
+      }
+    },
+    {
+      "asin": "B0G8S8MMG1",
+      "title": "BEYOUTIFUL ATHLETICS, BE SECURE Hot Yoga Towel, Moisture Grip, Light Gray",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0
+      },
+      "prev": {
+        "revenue": 41.14,
+        "salesTaxes": 3.14,
+        "units": 1,
+        "sessions": 0
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights \u2014** Be-You-Tiful Athletics delivered $188 in total sales for Week 45 on 7 units, versus $444 the prior week (-57.6% WoW). Organic sales were a bright spot, climbing 217.0% to $32, and the BE SECURE Hot Yoga Towel in Dark Gray led the catalog at $110 with 3 units. Monday, Nov 2 was the peak day at $52.",
+    "**Metrics to Watch \u2014** PPC revenue eased to $156 from $434 (-64.1%), and the BE SECURE Hot Yoga Towel in Blue slipped to $36 (-52.5%) while the BE YOU Yoga Mat in Blue moved to $0 (-100.0%). The Sling & Stretch Strap held steady at 3 units ($42), and we are focused on bringing the yoga mats back into the sales mix alongside the towels.",
+    "**Ad Spend Efficiency \u2014** Ad spend of $427 (prior $292) generated $156 in PPC revenue for a 0.36x ROAS and 274.1% ACOS, with TACoS at 227.1%. Ad CTR is 0.33% with ad conversion at 1.85%, so we are tightening spend toward the targets that are converting to bring efficiency back toward the prior week's 1.48x ROAS.",
+    "**Actions This Week \u2014** We will reduce bids on non-converting search terms and reallocate budget to the BE SECURE Hot Yoga Towel and Sling & Stretch Strap campaigns, which drove this week's sales. We will also test new Sponsored Product and Sponsored Brand ad creative to lift ad CTR above 0.33% and build on the 217.0% organic growth."
+  ]
+}
