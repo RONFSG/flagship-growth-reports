@@ -1,0 +1,204 @@
+{
+  "_source": "Sellerise MCP, account Reshoevn8r - UK, marketplace GB, targetCurrency GBP. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-09.",
+  "week": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "prevWeek": {
+    "start": "2026-10-25",
+    "end": "2026-10-31"
+  },
+  "current": {
+    "revenue": 2486.65,
+    "salesTaxes": 397.7,
+    "units": 101,
+    "ppcSpend": 933.55,
+    "ppcSales": 1221.71,
+    "ppcClicks": 543,
+    "ppcImpressions": 426240,
+    "ppcOrders": 57
+  },
+  "prev": {
+    "revenue": 2520.98,
+    "salesTaxes": 436.57,
+    "units": 103,
+    "ppcSpend": 874.81,
+    "ppcSales": 1588.05,
+    "ppcClicks": 793,
+    "ppcImpressions": 541698,
+    "ppcOrders": 71
+  },
+  "daily": [
+    {
+      "date": "2026-11-01",
+      "revenue": 323.99,
+      "salesTaxes": 50.99
+    },
+    {
+      "date": "2026-11-02",
+      "revenue": 500.11,
+      "salesTaxes": 78.06
+    },
+    {
+      "date": "2026-11-03",
+      "revenue": 442.28,
+      "salesTaxes": 73.71
+    },
+    {
+      "date": "2026-11-04",
+      "revenue": 299.23,
+      "salesTaxes": 49.87
+    },
+    {
+      "date": "2026-11-05",
+      "revenue": 396.37,
+      "salesTaxes": 60.76
+    },
+    {
+      "date": "2026-11-06",
+      "revenue": 322.14,
+      "salesTaxes": 50.55
+    },
+    {
+      "date": "2026-11-07",
+      "revenue": 202.53,
+      "salesTaxes": 33.76
+    }
+  ],
+  "products": [
+    {
+      "asin": "B08CSXXX5M",
+      "title": "RESHOEVN8R Essential Kit - Shoe Cleaner Set for Sneakers & Leather",
+      "cur": {
+        "revenue": 805.96,
+        "salesTaxes": 120.53,
+        "units": 26,
+        "sessions": 271
+      },
+      "prev": {
+        "revenue": 716.96,
+        "salesTaxes": 124.01,
+        "units": 23,
+        "sessions": 233
+      }
+    },
+    {
+      "asin": "B08RS7P59K",
+      "title": "RESHOEVN8R Shoe Cleaner Kit - Sneakers, Mesh, Canvas, Suede, Knit, Leather",
+      "cur": {
+        "revenue": 394.88,
+        "salesTaxes": 65.83,
+        "units": 9,
+        "sessions": 135
+      },
+      "prev": {
+        "revenue": 492.97,
+        "salesTaxes": 84.39,
+        "units": 11,
+        "sessions": 166
+      }
+    },
+    {
+      "asin": "B0FCKD54WY",
+      "title": "RESHOEVN8R All-Natural Sneaker Cleaning Solution, 16oz Bottle",
+      "cur": {
+        "revenue": 303.57,
+        "salesTaxes": 50.59,
+        "units": 12,
+        "sessions": 46
+      },
+      "prev": {
+        "revenue": 249.76,
+        "salesTaxes": 44.37,
+        "units": 10,
+        "sessions": 77
+      }
+    },
+    {
+      "asin": "B08TFDN7F3",
+      "title": "RESHOEVN8R Waterproof Shoe Spray - Rain & Stain Protector, 6.5oz",
+      "cur": {
+        "revenue": 218.63,
+        "salesTaxes": 36.45,
+        "units": 12,
+        "sessions": 60
+      },
+      "prev": {
+        "revenue": 180.24,
+        "salesTaxes": 30.85,
+        "units": 10,
+        "sessions": 85
+      }
+    },
+    {
+      "asin": "B0CTGGJ98X",
+      "title": "RESHOEVN8R Refresh Kit - Routine Shoe Cleaner Set, All Materials",
+      "cur": {
+        "revenue": 173.97,
+        "salesTaxes": 28.99,
+        "units": 9,
+        "sessions": 132
+      },
+      "prev": {
+        "revenue": 95.44,
+        "salesTaxes": 16.71,
+        "units": 5,
+        "sessions": 97
+      }
+    },
+    {
+      "asin": "B08DNG8XQZ",
+      "title": "RESHOEVN8R All-Natural Shoe Cleaning Solution, 8oz - Sneaker Care",
+      "cur": {
+        "revenue": 165.21,
+        "salesTaxes": 24.41,
+        "units": 9,
+        "sessions": 62
+      },
+      "prev": {
+        "revenue": 202.76,
+        "salesTaxes": 34.8,
+        "units": 11,
+        "sessions": 91
+      }
+    },
+    {
+      "asin": "B08B5HQXJ5",
+      "title": "RESHOEVN8R Original Kit - Versatile Shoe Cleaner Set, All Materials",
+      "cur": {
+        "revenue": 127.46,
+        "salesTaxes": 21.41,
+        "units": 7,
+        "sessions": 81
+      },
+      "prev": {
+        "revenue": 17.94,
+        "salesTaxes": 3.15,
+        "units": 1,
+        "sessions": 98
+      }
+    },
+    {
+      "asin": "B08CJX3SDX",
+      "title": "RESHOEVN8R Adjustable Shoe Trees for Men - Sneaker Shaper, 7-12",
+      "cur": {
+        "revenue": 103.94,
+        "salesTaxes": 17.33,
+        "units": 6,
+        "sessions": 41
+      },
+      "prev": {
+        "revenue": 141.56,
+        "salesTaxes": 25.07,
+        "units": 8,
+        "sessions": 86
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights —** Reshoevn8r UK delivered $2,088 in total sales for Week 45, up 0.2% from $2,084 the prior week, on 101 units. Organic revenue grew 74.7% to $867, led by the Essential Kit at $685 (+15.6%) and the 16oz Cleaning Solution at $252 (+23.2%), with the Refresh Kit up 84.1% to $144. Monday, Nov 2 was the peak day at $422.",
+    "**Metrics to Watch —** The Shoe Cleaner Kit eased to $329 (-19.5%) as sessions fell 18.7%, while its CVR held steady at 6.7%. The 16oz Cleaning Solution and Waterproof Shoe Spray converted strongly at 26.1% and 20.0% but saw sessions dip 40.3% and 29.4%, so we are working to bring more traffic to these high-converting products.",
+    "**Ad Spend Efficiency —** Ad spend of $933 (prior $874) generated $1,221 in PPC revenue for a 1.31x ROAS and 76.4% ACOS, with TACoS at 44.7%. Ad conversion is strong at 10.50%, while the 0.13% ad CTR is limiting click volume, so we are trimming bids on high-ACOS terms to bring ROAS back toward the prior week's 1.82x.",
+    "**Actions This Week —** We will audit search terms to pause or reduce bids on low-converting keywords and reallocate budget to the Essential Kit, 16oz Cleaning Solution and Waterproof Shoe Spray. We will also test new Sponsored Products and Sponsored Brands ad creative to lift ad CTR above 0.13%."
+  ]
+}
