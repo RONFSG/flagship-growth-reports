@@ -1,0 +1,204 @@
+{
+  "_source": "Sellerise MCP, account Addasound, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-09.",
+  "week": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "prevWeek": {
+    "start": "2026-10-25",
+    "end": "2026-10-31"
+  },
+  "current": {
+    "revenue": 199.52,
+    "salesTaxes": 13.46,
+    "units": 8,
+    "ppcSpend": 323.37,
+    "ppcSales": 194.35,
+    "ppcClicks": 221,
+    "ppcImpressions": 52598,
+    "ppcOrders": 3
+  },
+  "prev": {
+    "revenue": 236.97,
+    "salesTaxes": 11.24,
+    "units": 29,
+    "ppcSpend": 110.32,
+    "ppcSales": 51.55,
+    "ppcClicks": 196,
+    "ppcImpressions": 39931,
+    "ppcOrders": 1
+  },
+  "daily": [
+    {
+      "date": "2026-11-01",
+      "revenue": 0,
+      "salesTaxes": 0
+    },
+    {
+      "date": "2026-11-02",
+      "revenue": 54.39,
+      "salesTaxes": 2.84
+    },
+    {
+      "date": "2026-11-03",
+      "revenue": 79.07,
+      "salesTaxes": 4.48
+    },
+    {
+      "date": "2026-11-04",
+      "revenue": 66.06,
+      "salesTaxes": 6.14
+    },
+    {
+      "date": "2026-11-05",
+      "revenue": 0,
+      "salesTaxes": 0
+    },
+    {
+      "date": "2026-11-06",
+      "revenue": 0,
+      "salesTaxes": 0
+    },
+    {
+      "date": "2026-11-07",
+      "revenue": 0,
+      "salesTaxes": 0
+    }
+  ],
+  "products": [
+    {
+      "asin": "B0BSV6XGGT",
+      "title": "ADDASOUND Epic 512 USB Headset with Dual Noise Cancelling Mics, Stereo",
+      "cur": {
+        "revenue": 79.07,
+        "salesTaxes": 4.48,
+        "units": 1,
+        "sessions": 15
+      },
+      "prev": {
+        "revenue": 74.59,
+        "salesTaxes": 0,
+        "units": 1,
+        "sessions": 9
+      }
+    },
+    {
+      "asin": "B07WNKL6PB",
+      "title": "ADDASOUND Crystal 2732 QD Call Center Headset, Dual-Ear, Noise Cancelling",
+      "cur": {
+        "revenue": 66.06,
+        "salesTaxes": 6.14,
+        "units": 1,
+        "sessions": 34
+      },
+      "prev": {
+        "revenue": 53.21,
+        "salesTaxes": 3.48,
+        "units": 1,
+        "sessions": 9
+      }
+    },
+    {
+      "asin": "B0BSV7V95M",
+      "title": "ADDASOUND Epic 302 USB Headset with Noise Cancelling Mic and DSP, Stereo",
+      "cur": {
+        "revenue": 54.39,
+        "salesTaxes": 2.84,
+        "units": 1,
+        "sessions": 35
+      },
+      "prev": {
+        "revenue": 56.32,
+        "salesTaxes": 4.77,
+        "units": 1,
+        "sessions": 37
+      }
+    },
+    {
+      "asin": "B0HCFB99PS",
+      "title": "ADDASOUND Crystal 2871 Premium QD Call Center Headset, Single-Ear",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 9
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 5
+      }
+    },
+    {
+      "asin": "B0HCRH3V8J",
+      "title": "ADDASOUND Crystal SR2731 USB Headset with Noise Cancelling Mic, Mono",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 45
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 23
+      }
+    },
+    {
+      "asin": "B0HCRLF41N",
+      "title": "ADDASOUND Crystal SR2831 USB Headset with Noise Cancelling Mic, Mono",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 5
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 4
+      }
+    },
+    {
+      "asin": "B07WRF6ZMM",
+      "title": "ADDASOUND Crystal 2731 QD Call Center Headset, Single-Ear, Noise Cancelling",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 5
+      },
+      "prev": {
+        "revenue": 52.85,
+        "salesTaxes": 2.99,
+        "units": 1,
+        "sessions": 7
+      }
+    },
+    {
+      "asin": "B07WDR2LTZ",
+      "title": "ADDASOUND Crystal 2831 QD Call Center Headset, Single-Ear, Noise Cancelling",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 3
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 2
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights \u2014** Addasound recorded $186 in total sales for Week 45 on 8 units, compared with $225 the prior week (-17.6% WoW). PPC revenue grew 277.0% to $194, and the Crystal 2732 Dual-Ear headset rose 20.5% to $59 as its sessions climbed 277.8%. Tuesday, Nov 3 was the peak day at $74.",
+    "**Metrics to Watch \u2014** Sales were concentrated from Mon Nov 2 through Wed Nov 4, with $0 recorded Thu Nov 5 through Sat Nov 7. Newer models like the Crystal SR2731 drew 45 sessions (+95.7%) without a sale yet, so we are focused on turning that rising traffic into orders.",
+    "**Ad Spend Efficiency \u2014** Ad spend of $323 (prior $110) produced $194 in PPC revenue for a 0.60x ROAS, up from 0.47x, at 166.4% ACOS and 173.8% TACoS. Ad CTR held at 0.42% with a 1.36% ad conversion rate, so we will tighten targeting to make every click work harder.",
+    "**Actions This Week \u2014** We will cut bids on non-converting search terms and shift budget toward the Epic 512, Crystal 2732 and Epic 302, which each sold this week. We will also test new Sponsored Product ad creative to build on the 0.42% ad CTR and keep the Crystal SR2731 visible as its sessions grow."
+  ]
+}
