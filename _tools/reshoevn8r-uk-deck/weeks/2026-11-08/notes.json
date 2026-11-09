@@ -1,0 +1,114 @@
+{
+  "_week": "2026-11-02 to 2026-11-08 (Week 45). Written from that week's numbers; rewrite every key each Monday.",
+  "week_story": [
+    "Sales slipped 3.1% to £2,403 on 97 units. The Essential Kit fell to £656 from £805, while the 16oz Solution (£329), Repel (£201) and Refresh Kit (£194) all grew.",
+    "Ad spend rose 15% to £945 but ad sales fell 27% to £1,137, so ACoS jumped from 52.7% to 83.2%. Most of the extra cost is one keyword: “suede shoe cleaner” (broad, £22 bid) spent £187 for one £17 order."
+  ],
+  "refunds_title": "Refunds up from a low base",
+  "refunds": [
+    "Refunds were £69 on 5 units (5.3% refund rate) vs £28 on 2 units last week. Three of the five were the 8oz Cleaning Solution (£23)."
+  ],
+  "pacing_reco": "November is £2,727 through Nov 8 (£341 a day), on pace for about £10.2K vs £11.3K in October. The quickest lever is the suede keyword: £187 of this week's spend brought one £17 order.",
+  "ads_context": [
+    "TACoS rose from 33.1% to 39.4%; sales slowed through the week while spend did not.",
+    "Saturday and Sunday ads cost more than they brought in (£261 spend for £214 in ad sales)."
+  ],
+  "ads_strategy": [
+    "Branded keywords cost £60 for £178 in sales and 7 orders (33.9% ACoS).",
+    "Category keywords cost £531 for £494 in sales (107% ACoS); 54 campaigns spent £228 with no sales."
+  ],
+  "bid_moves": [
+    "Cut the £22 bid on “suede shoe cleaner” (broad): £187 spent for 1 order.",
+    "Negate “crep protect spray” (£32, 22 clicks) and “shoe trees for men” (£18, 14 clicks): no orders.",
+    "Add “reshoev8r brushes” as an exact keyword: £5 for £53 and 2 orders."
+  ],
+  "coupons": [
+    "This week: 49 coupon orders.",
+    "Last week: 53 coupon orders.",
+    "Coupons are still behind about half of all orders."
+  ],
+  "promotions": [
+    "This week: 11 promotion orders, £71 in promotional discounts (vs 25 orders and £102 last week).",
+    "Fewer promotion orders this week, with no matching lift in sales."
+  ],
+  "events": [
+    "Black Friday: Fri Nov 27. Cyber Monday: Mon Nov 30.",
+    "Deal and coupon set-up deadlines: to confirm with the account team.",
+    "Priority: get the 144 inbound Repel and 36 inbound Shoe Trees checked in before Black Friday week."
+  ],
+  "reviews_title": "No review data in Sellerise",
+  "reviews_body": [
+    "Sellerise returned no review records, rating trend or negative reviews for the 13 Reshoevn8r UK products over the last 90 days.",
+    "That means the review tracker isn't pulling for this account, not that there were no reviews."
+  ],
+  "reviews_reco": [
+    "Turn on review tracking for the UK account in Sellerise (or pull Amazon's Customer Reviews report) so the deck can show star ratings.",
+    "Sellerise shows 3 critical alerts this month, including a new listing suppression (Nov 9) and a hijacker: check both."
+  ],
+  "recommendations": [
+    [
+      "Ads",
+      "Cut the £22 bid on “suede shoe cleaner” (broad) in the Refresh Kit campaign: £187 for 1 order.",
+      "Ads team",
+      "Today"
+    ],
+    [
+      "Ads",
+      "Negate “crep protect spray” and “shoe trees for men” (£51, no orders); review the 54 no-sale campaigns (£228).",
+      "Ads team",
+      "This week"
+    ],
+    [
+      "Ads",
+      "Trim weekend budgets: Sat–Sun ads spent £261 for £214 in ad sales.",
+      "Ads team",
+      "This week"
+    ],
+    [
+      "Ads",
+      "Add “reshoev8r brushes” as exact and keep budget on branded keywords (33.9% ACoS).",
+      "Ads team",
+      "This week"
+    ],
+    [
+      "Inventory",
+      "Repel has 36 units available (3.3 weeks) and Shoe Trees 20 (3.3 weeks): confirm the inbound check-ins.",
+      "Account team",
+      "This week"
+    ],
+    [
+      "Inventory",
+      "Deodorizer Spray is down to 1 unit with nothing inbound (10 sold in 30 days); send replenishment.",
+      "Account team",
+      "This week"
+    ],
+    [
+      "Account health",
+      "Resolve the new suppression alert and the hijacker alert; turn on review tracking.",
+      "Account team",
+      "This week"
+    ],
+    [
+      "Marketing",
+      "Lock Black Friday / Cyber Monday coupons for the Essential Kit and 16oz Solution.",
+      "Account team",
+      "By Nov 13"
+    ]
+  ],
+  "position": [
+    "November is £2,727 through Nov 8, 25% behind the same days last year (£3,646, when no ads ran).",
+    "This week held at £2,403, but ad spend rose 15% and ACoS hit 83%, driven by one overbid keyword."
+  ],
+  "next_steps": [
+    "Fix the suede keyword bid today.",
+    "Cut no-sale and weekend spend.",
+    "Check in Repel and Shoe Trees; restock Deodorizer.",
+    "Clear the suppression and hijacker alerts."
+  ],
+  "data_ask": [
+    "Repel and Shoe Trees inbound ETAs.",
+    "Black Friday deal and coupon plan.",
+    "Review tracking turned on in Sellerise.",
+    "Deodorizer replenishment plan."
+  ]
+}
