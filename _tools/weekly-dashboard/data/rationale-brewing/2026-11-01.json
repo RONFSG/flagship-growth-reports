@@ -1,0 +1,188 @@
+{
+  "_source": "Sellerise MCP, account Rationale Brewing, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-09.",
+  "week": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "prevWeek": {
+    "start": "2026-10-25",
+    "end": "2026-10-31"
+  },
+  "current": {
+    "revenue": 4376.17,
+    "salesTaxes": 223.7,
+    "units": 240,
+    "ppcSpend": 1140.19,
+    "ppcSales": 1550,
+    "ppcClicks": 436,
+    "ppcImpressions": 105510,
+    "ppcOrders": 71
+  },
+  "prev": {
+    "revenue": 5352.79,
+    "salesTaxes": 333.16,
+    "units": 276,
+    "ppcSpend": 1162.83,
+    "ppcSales": 1992.51,
+    "ppcClicks": 462,
+    "ppcImpressions": 112912,
+    "ppcOrders": 93
+  },
+  "daily": [
+    {
+      "date": "2026-11-01",
+      "revenue": 534.1,
+      "salesTaxes": 30.73
+    },
+    {
+      "date": "2026-11-02",
+      "revenue": 762.43,
+      "salesTaxes": 40.32
+    },
+    {
+      "date": "2026-11-03",
+      "revenue": 442.44,
+      "salesTaxes": 26.47
+    },
+    {
+      "date": "2026-11-04",
+      "revenue": 791.33,
+      "salesTaxes": 34.29
+    },
+    {
+      "date": "2026-11-05",
+      "revenue": 477.68,
+      "salesTaxes": 29.02
+    },
+    {
+      "date": "2026-11-06",
+      "revenue": 534.77,
+      "salesTaxes": 26.68
+    },
+    {
+      "date": "2026-11-07",
+      "revenue": 833.42,
+      "salesTaxes": 36.19
+    }
+  ],
+  "products": [
+    {
+      "asin": "B0F9HRTK2M",
+      "title": "Rationale Non-Alcoholic Variety Pack - 4 Styles - 12 Pack 12oz Cans",
+      "cur": {
+        "revenue": 2156.59,
+        "salesTaxes": 107.04,
+        "units": 75,
+        "sessions": 263
+      },
+      "prev": {
+        "revenue": 2793.89,
+        "salesTaxes": 176.15,
+        "units": 96,
+        "sessions": 338
+      }
+    },
+    {
+      "asin": "B0B7NX8KDR",
+      "title": "RationAle Non-Alcoholic West Coast IPA Craft Beer - 6 Pack 12oz Cans",
+      "cur": {
+        "revenue": 583,
+        "salesTaxes": 30.18,
+        "units": 45,
+        "sessions": 91
+      },
+      "prev": {
+        "revenue": 312.81,
+        "salesTaxes": 15.91,
+        "units": 24,
+        "sessions": 120
+      }
+    },
+    {
+      "asin": "B0B7NWRNXF",
+      "title": "RationAle Non-Alcoholic Hazy IPA Craft Beer - 6 Pack 12oz Cans",
+      "cur": {
+        "revenue": 464.97,
+        "salesTaxes": 27.81,
+        "units": 37,
+        "sessions": 125
+      },
+      "prev": {
+        "revenue": 699.75,
+        "salesTaxes": 42.96,
+        "units": 54,
+        "sessions": 187
+      }
+    },
+    {
+      "asin": "B0FTBSQP28",
+      "title": "Rationale Non-Alcoholic Cherry Blossom Japanese Style - 6 Pack 12oz Cans",
+      "cur": {
+        "revenue": 430.16,
+        "salesTaxes": 25.29,
+        "units": 28,
+        "sessions": 88
+      },
+      "prev": {
+        "revenue": 538.31,
+        "salesTaxes": 34.68,
+        "units": 35,
+        "sessions": 103
+      }
+    },
+    {
+      "asin": "B0B7P1FXTZ",
+      "title": "RationAle Non-Alcoholic Mexican Cerveza Craft Beer - 6 Pack 12oz Cans",
+      "cur": {
+        "revenue": 419.58,
+        "salesTaxes": 16.71,
+        "units": 33,
+        "sessions": 74
+      },
+      "prev": {
+        "revenue": 522.4,
+        "salesTaxes": 33.59,
+        "units": 33,
+        "sessions": 154
+      }
+    },
+    {
+      "asin": "B0DQX8JHSF",
+      "title": "RationAle Non-Alcoholic Kolsch Style Craft Beer - 6 Pack 12oz Cans",
+      "cur": {
+        "revenue": 321.87,
+        "salesTaxes": 16.67,
+        "units": 22,
+        "sessions": 84
+      },
+      "prev": {
+        "revenue": 485.63,
+        "salesTaxes": 29.87,
+        "units": 34,
+        "sessions": 103
+      }
+    },
+    {
+      "asin": "B0GYV1MSTY",
+      "title": "RationAle Non-Alcoholic Mexican Lager Craft Beer-12 Pack 19.2oz Tallboy Can",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights \u2014** RationAle Brewing delivered $4,152 in total sales for Week 45 on 240 units, versus $5,019 the prior week (-17.3% WoW). The West Coast IPA 6-Pack was the standout at $552 (+86.2%) with units up 87.5% to 45 and a 49.5% conversion rate, and the week finished strong with Saturday, Nov 7 as the peak day at $797.",
+    "**Metrics to Watch \u2014** The Variety Pack 12-Pack remains our top seller at $2,049 but eased 21.7% as sessions dipped 22.2% to 263, while the Hazy IPA 6-Pack slipped to $437 (-33.4%) on 33.2% fewer sessions. Conversion is holding up well on both (28.5% and 29.6%), so we are focused on rebuilding traffic to these listings to bring organic sales of $2,602 (-14.0% WoW) back up.",
+    "**Ad Spend Efficiency \u2014** Ad spend held steady at $1,140 (prior $1,162) and generated $1,550 in PPC revenue for a 1.36x ROAS and 73.6% ACOS, with TACoS at 27.5%. Ad conversion is healthy at 16.28% on a 0.41% ad CTR, so the opportunity is in tightening targeting and bids to lift ROAS back toward the prior week's 1.71x.",
+    "**Actions This Week \u2014** We will trim bids on low-converting search terms and shift budget toward the West Coast IPA and Mexican Cerveza 6-Packs, which converted at 49.5% and 44.6%. We will also increase visibility for the Variety Pack and Hazy IPA to recover sessions, and test new Sponsored Brand ad creative to lift ad CTR above 0.41%."
+  ]
+}
