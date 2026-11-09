@@ -1,0 +1,204 @@
+{
+  "_source": "Sellerise MCP, account MAC Energy, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-09.",
+  "week": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "prevWeek": {
+    "start": "2026-10-25",
+    "end": "2026-10-31"
+  },
+  "current": {
+    "revenue": 91453.78,
+    "salesTaxes": 3597.02,
+    "units": 3570,
+    "ppcSpend": 37500.1,
+    "ppcSales": 39983.51,
+    "ppcClicks": 7571,
+    "ppcImpressions": 3265172,
+    "ppcOrders": 1359
+  },
+  "prev": {
+    "revenue": 89169.41,
+    "salesTaxes": 4235.84,
+    "units": 3466,
+    "ppcSpend": 59527.11,
+    "ppcSales": 48890.39,
+    "ppcClicks": 8445,
+    "ppcImpressions": 4316510,
+    "ppcOrders": 1669
+  },
+  "daily": [
+    {
+      "date": "2026-11-01",
+      "revenue": 14437.86,
+      "salesTaxes": 615.33
+    },
+    {
+      "date": "2026-11-02",
+      "revenue": 14500.93,
+      "salesTaxes": 582.35
+    },
+    {
+      "date": "2026-11-03",
+      "revenue": 13159.57,
+      "salesTaxes": 500.3
+    },
+    {
+      "date": "2026-11-04",
+      "revenue": 10784.49,
+      "salesTaxes": 415.33
+    },
+    {
+      "date": "2026-11-05",
+      "revenue": 13232.05,
+      "salesTaxes": 551.55
+    },
+    {
+      "date": "2026-11-06",
+      "revenue": 11592.83,
+      "salesTaxes": 455.39
+    },
+    {
+      "date": "2026-11-07",
+      "revenue": 13746.05,
+      "salesTaxes": 476.77
+    }
+  ],
+  "products": [
+    {
+      "asin": "B0H4SCZBHY",
+      "title": "MAC Energy by Conor McGregor 4-in-1 Variety Pack Sugar Free Energy Drink",
+      "cur": {
+        "revenue": 40754.59,
+        "salesTaxes": 1574.66,
+        "units": 1662,
+        "sessions": 5574
+      },
+      "prev": {
+        "revenue": 40056.59,
+        "salesTaxes": 1892.38,
+        "units": 1577,
+        "sessions": 5960
+      }
+    },
+    {
+      "asin": "B0H4XJ5G4X",
+      "title": "MAC Energy by Conor McGregor Macberry Lychee Sugar Free Energy Drink",
+      "cur": {
+        "revenue": 16318.92,
+        "salesTaxes": 657.42,
+        "units": 619,
+        "sessions": 3361
+      },
+      "prev": {
+        "revenue": 15686.09,
+        "salesTaxes": 758.01,
+        "units": 606,
+        "sessions": 3367
+      }
+    },
+    {
+      "asin": "B0H4WZBN85",
+      "title": "MAC Energy by Conor McGregor Forbidden Green Apple Sugar Free Energy Drink",
+      "cur": {
+        "revenue": 12960.95,
+        "salesTaxes": 535.36,
+        "units": 484,
+        "sessions": 2201
+      },
+      "prev": {
+        "revenue": 12165.45,
+        "salesTaxes": 583,
+        "units": 470,
+        "sessions": 2289
+      }
+    },
+    {
+      "asin": "B0H4X94TKY",
+      "title": "MAC Energy by Conor McGregor Proper Punch Sugar Free Energy Drink",
+      "cur": {
+        "revenue": 11032.82,
+        "salesTaxes": 424.1,
+        "units": 412,
+        "sessions": 1331
+      },
+      "prev": {
+        "revenue": 9723.66,
+        "salesTaxes": 445.59,
+        "units": 376,
+        "sessions": 1417
+      }
+    },
+    {
+      "asin": "B0H4XHB9NM",
+      "title": "MAC Energy by Conor McGregor Orange Creamsicle Sugar Free Energy Drink",
+      "cur": {
+        "revenue": 10386.5,
+        "salesTaxes": 405.48,
+        "units": 393,
+        "sessions": 1819
+      },
+      "prev": {
+        "revenue": 11537.62,
+        "salesTaxes": 556.86,
+        "units": 437,
+        "sessions": 2045
+      }
+    },
+    {
+      "asin": "B0HHT1W43Q",
+      "title": "MAC Energy Macberry Lychee/Orange Creamsicle Sugar Free Energy Drink",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 21
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 33
+      }
+    },
+    {
+      "asin": "B0HHTDK426",
+      "title": "MAC Energy Macberry Lychee/Proper Punch Sugar Free Energy Drink",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 56
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 65
+      }
+    },
+    {
+      "asin": "B0HHTNN2T4",
+      "title": "MAC Energy Forbidden Green Apple/Proper Punch Sugar Free Energy Drink",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 33
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 25
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights \u2014** MAC Energy delivered $87,856 in total sales for Week 45, up 3.4% from $84,933 the prior week, on 3570 units. Organic revenue jumped 32.8% to $47,873, led by the 4-in-1 Variety Pack at $39,179 (+2.7%) and a strong lift from Proper Punch at $10,608 (+14.3%). Monday, Nov 2 was the peak day at $13,918.",
+    "**Metrics to Watch \u2014** Orange Creamsicle eased to $9,981 (-9.1%) as sessions declined 11.1% to 1819, while its conversion held at 21.6%. Sessions also dipped on the Variety Pack (-6.5%), but its conversion rose to 29.8%, so we are focused on restoring traffic to these listings to keep the organic momentum going.",
+    "**Ad Spend Efficiency \u2014** We cut ad spend to $37,500 from $59,527 while PPC revenue held at $39,983 (-18.2%), lifting ROAS to 1.07x from 0.82x and bringing TACoS down to 42.7% from 70.09%. ACOS is at 93.8% with a strong 17.95% ad conversion rate on a 0.23% ad CTR, and we will keep pushing efficiency as organic sales carry more of the volume.",
+    "**Actions This Week \u2014** We will continue reducing bids on high-ACOS terms and reallocate budget toward the Variety Pack and Proper Punch, which converted at 29.8% and 31.0%. We will also support Orange Creamsicle with targeted campaigns to rebuild sessions, and test new Sponsored Brand and video ad creative to lift ad CTR above 0.23%."
+  ]
+}
