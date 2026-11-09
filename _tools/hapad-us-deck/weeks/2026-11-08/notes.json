@@ -1,0 +1,107 @@
+{
+ "_week": "2026-11-02 to 2026-11-08 (Week 45). Written from that week's numbers; rewrite every key each Monday.",
+ "week_story": [
+  "Revenue held flat at $19,432 (-1.6%) while orders rose 2.3% to 1,020.",
+  "Metatarsal Pads (57% of sales) grew 5.6% to $11,145, led by the Large 6-pack (+39% to $2,275).",
+  "Metatarsal Bars fell 33% to $951 and the 2.5\" Heel Lifts fell 25% to $641; Long. Arch Pads (+19%) and the Posting Heel Wedge (+17%) grew."
+ ],
+ "refunds_title": "Refunds rose",
+ "refunds": [
+  "Refunds were $1,215 (77 units, 7.6% of orders) vs $943 last week. The three Metatarsal Pad 6-packs account for $663 of it, led by the Medium 6-pack ($338, 13 units)."
+ ],
+ "pacing_reco": "November is $21,738 through Nov 8 ($2,717 a day), pacing to about $81.5K vs $88,044 in October. The same 8 days last year were $3,995.",
+ "ads_context": [
+  "Ad spend rose 8.7% to $3,324 while ad sales fell 11.9% to $6,846, so ACoS rose to 48.6% (from 39.4%) and TACoS to 17.1%.",
+  "Most of the jump is Sponsored Display: $522 spent (vs $146) for $100 in sales; remarketing audiences took $430 with no sales."
+ ],
+ "ads_strategy": [
+  "Branded keywords returned $2,981 on $1,093 (36.7% ACoS) and brought 134 orders.",
+  "Category keywords cost $1,020 for $1,926 in sales (52.9% ACoS); auto targeting ran at 41.2%."
+ ],
+ "bid_moves": [
+  "Pause the Sponsored Display remarketing campaigns: $430 spent, no sales.",
+  "Lower bids on SB “hapad” phrase ($145 for $58) and SB “metatarsal pads men” broad ($131 for $114)."
+ ],
+ "coupons": [
+  "This week: 8 coupon orders.",
+  "Last week: 18 coupon orders."
+ ],
+ "promotions": [
+  "This week: 258 promotion orders and $505 in promotional discounts (vs 264 and $579 last week).",
+  "Discount levels are steady week to week."
+ ],
+ "events": [
+  "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+  "Deal and coupon set-up deadlines: to confirm with the account team.",
+  "Priority: keep the Metatarsal Pad 6-packs well stocked at FBA into late November."
+ ],
+ "reviews_title": "No review data in Sellerise",
+ "reviews_body": [
+  "Sellerise returned no review records, rating trend or negative reviews for the 110 Hapad US products over the last 90 days.",
+  "That means the review tracker isn't pulling for this account, not that there were no reviews."
+ ],
+ "reviews_reco": [
+  "Turn on review tracking for Hapad US in Sellerise (or pull Amazon's Customer Reviews report) so the deck can show star rating and review count per line.",
+  "Sellerise shows 55 lost-Buy-Box and 50 hijacker alerts in the last 30 days, including on the Women's IPK Pad and Scaphoid Pad Medium; worth checking alongside reviews."
+ ],
+ "recommendations": [
+  [
+   "Advertising",
+   "Pause the Sponsored Display remarketing campaigns (Scaphoid, Neuroma, Metatarsal Bar, Metatarsal Pad): $430 spent, no sales.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Advertising",
+   "Lower bids on SB “hapad” phrase (250% ACoS), SB “hapad metatarsal pads” broad (119%) and SB “metatarsal pads men” broad (116%).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Advertising",
+   "Add converting searches as exact keywords: “metatarsal bars for men”, “hapad felt metatarsal pads”, “metatarsal pads hapad”, “metatarsal cookies”.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Advertising",
+   "Give more budget to the SB video campaign for the Small 6-pack (21% ACoS, 21 orders) and the metatarsal bar exact campaigns (17% ACoS).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Inventory",
+   "Restock the Comf-Orthotic 3/4 Insole (Women 6): 1 unit left, none inbound. Confirm the 225 inbound Dancer Pads (Men) land.",
+   "Inventory team",
+   "This week"
+  ],
+  [
+   "Listings",
+   "Review the 55 lost-Buy-Box and 50 hijacker alerts, starting with the Women's IPK Pad and Scaphoid Pad Medium.",
+   "Account team",
+   "This week"
+  ],
+  [
+   "Promotions",
+   "Lock BF/CM coupons and deals for the Metatarsal Pad 6-packs and Metatarsal Bars.",
+   "Account team",
+   "By Nov 14"
+  ]
+ ],
+ "position": [
+  "November is $21,738 through Nov 8, pacing to about $81.5K vs $88,044 in October.",
+  "Sales held steady; ad efficiency slipped as Sponsored Display spend tripled with almost no sales."
+ ],
+ "next_steps": [
+  "Pause Display remarketing; trim weak SB targets.",
+  "Restock the Women 6 insole.",
+  "Check Buy Box and hijacker alerts.",
+  "Lock BF/CM coupons and deals."
+ ],
+ "data_ask": [
+  "BF/CM deal and coupon plan.",
+  "Inbound ETA for the Women 6 insole.",
+  "Review tracking turned on in Sellerise.",
+  "Search query (SQP) data for the Medium 6-pack: none in Sellerise this week."
+ ]
+}
