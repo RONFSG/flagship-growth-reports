@@ -1,0 +1,172 @@
+{
+  "_source": "Sellerise MCP, account NogginBoss, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-09.",
+  "week": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "prevWeek": {
+    "start": "2026-10-25",
+    "end": "2026-10-31"
+  },
+  "current": {
+    "revenue": 247.15,
+    "salesTaxes": 17.18,
+    "units": 3,
+    "ppcSpend": 15.8,
+    "ppcSales": 0,
+    "ppcClicks": 17,
+    "ppcImpressions": 927,
+    "ppcOrders": 0
+  },
+  "prev": {
+    "revenue": 465.28,
+    "salesTaxes": 15.34,
+    "units": 6,
+    "ppcSpend": 0,
+    "ppcSales": 0,
+    "ppcClicks": 0,
+    "ppcImpressions": 0,
+    "ppcOrders": 0
+  },
+  "daily": [
+    {
+      "date": "2026-11-01",
+      "revenue": 80.24,
+      "salesTaxes": 5.25
+    },
+    {
+      "date": "2026-11-02",
+      "revenue": 81.96,
+      "salesTaxes": 6.97
+    },
+    {
+      "date": "2026-11-03",
+      "revenue": 84.95,
+      "salesTaxes": 4.96
+    },
+    {
+      "date": "2026-11-04",
+      "revenue": 0,
+      "salesTaxes": 0
+    },
+    {
+      "date": "2026-11-05",
+      "revenue": 0,
+      "salesTaxes": 0
+    },
+    {
+      "date": "2026-11-06",
+      "revenue": 0,
+      "salesTaxes": 0
+    },
+    {
+      "date": "2026-11-07",
+      "revenue": 0,
+      "salesTaxes": 0
+    }
+  ],
+  "products": [
+    {
+      "asin": "B0HNLQ7P6J",
+      "title": "Noggin Boss Plain Grey Crazy Party Hat, Big Novelty Cap for Adults",
+      "cur": {
+        "revenue": 84.95,
+        "salesTaxes": 4.96,
+        "units": 1,
+        "sessions": 7
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0
+      }
+    },
+    {
+      "asin": "B0HNLXRG3B",
+      "title": "Noggin Boss Plain Purple Crazy Party Hat, Big Novelty Cap for Adults",
+      "cur": {
+        "revenue": 81.96,
+        "salesTaxes": 6.97,
+        "units": 1,
+        "sessions": 8
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0
+      }
+    },
+    {
+      "asin": "B0HNM61VLB",
+      "title": "Noggin Boss Plain Navy Crazy Party Hat, Big Novelty Cap for Adults",
+      "cur": {
+        "revenue": 80.24,
+        "salesTaxes": 5.25,
+        "units": 1,
+        "sessions": 22
+      },
+      "prev": {
+        "revenue": 79.68,
+        "salesTaxes": 4.69,
+        "units": 1,
+        "sessions": 25
+      }
+    },
+    {
+      "asin": "B0HNMD984Y",
+      "title": "Noggin Boss Blank Oversized Hat, Brown, Funny Giant Cap for Game Day",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 13
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0
+      }
+    },
+    {
+      "asin": "B0HNM5HTZQ",
+      "title": "Noggin Boss Blank Oversized Hat, Camo, Funny Giant Cap for Game Day",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 8
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0
+      }
+    },
+    {
+      "asin": "B0HNMRXFNG",
+      "title": "Noggin Boss Blank Oversized Hat, Pink, Funny Giant Cap for Game Day",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 6
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights —** Noggin Boss delivered $229 in total sales for Week 45 on 3 units, with every sale coming from organic demand. The Plain Grey Crazy Party Hat led at $79 with a strong 14.3% conversion rate, followed by the Plain Purple hat at $74 (12.5% CVR) and the Plain Navy hat at $74. Tuesday, Nov 3 was the peak day at $79.",
+    "**Metrics to Watch —** Total sales were $229 versus $449 the prior week (-48.9% WoW), with all sales landing Sunday through Tuesday and $0 from Wednesday to Saturday. The Plain Navy hat drew 22 sessions (-12.0%) at a 4.5% CVR, and the Brown, Camo and Pink Oversized Hats picked up 13, 8 and 6 sessions without converting yet, so we are focused on turning that traffic into orders.",
+    "**Ad Spend Efficiency —** We restarted advertising this week with $15 in ad spend, generating a solid 1.83% ad CTR but no attributed PPC revenue yet, putting TACoS at 6.9%. Spend remains small while campaigns gather data, and we will keep budgets tight until ad clicks begin converting.",
+    "**Actions This Week —** We will shift ad budget toward the Plain Grey and Plain Purple hats, which converted at 14.3% and 12.5%, and refine targeting and bids to lift ad CVR above 0.00%. We will also test new Sponsored Product and Sponsored Brand ad creative for the Oversized Hat line to build on the 1.83% ad CTR and convert its growing sessions."
+  ]
+}
