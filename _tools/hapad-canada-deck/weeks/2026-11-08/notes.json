@@ -1,0 +1,107 @@
+{
+ "_week": "2026-11-02 to 2026-11-08 (Week 45), Hapad Canada. Written fresh from this week's numbers.",
+ "week_story": [
+  "Only 1 order this week ($19.49, Heel Lifts 7/16\" on Thu Nov 5) vs 4 orders ($76.18) the week before.",
+  "That one sale came without an ad click: ads spent $117.58 for $0 in ad sales."
+ ],
+ "refunds_title": "One refund on Sunday",
+ "refunds": [
+  "1 Heel Lifts unit was refunded on Nov 8 ($17.15), against an earlier order.",
+  "With 1 order a week, a single return reads as a 100% refund rate; the count is what matters."
+ ],
+ "pacing_reco": "November is $36.76 through Nov 8 (October closed at $465). The fastest lever is cutting ad spend that brings no orders.",
+ "ads_context": [
+  "Spend fell 19% to $117.58, but 91 clicks produced no ad orders (last week: 4 ad orders, $66.98).",
+  "All 10 campaigns spent with zero sales this week."
+ ],
+ "ads_strategy": [
+  "Category keywords cost $96.51 for $0; auto targeting $20.39 for $0.",
+  "Heel Lifts Broad ($38.80) and Heel Wedge Broad ($21.55) took half the budget."
+ ],
+ "bid_moves": [
+  "Pause \"breathable shoe heel inserts\" (broad): $18.84, 9 clicks, 0 orders, lowest click rate.",
+  "Lower bids on \"dancers pads for feet\" ($9.11, 0 orders) and the Heel Lifts Broad campaign."
+ ],
+ "coupons": [
+  "This week: no coupon redemptions.",
+  "Last week: no coupon redemptions."
+ ],
+ "promotions": [
+  "This week: no promotion orders.",
+  "Last week: 1 promotion order, $1.74 in discounts."
+ ],
+ "events": [
+  "Black Friday / Cyber Monday: Nov 27 - Nov 30.",
+  "Posting Heel Wedges has 0 units in stock; restock before BF/CM or it can't sell.",
+  "Heel Lifts 7/16\" has 5 units; 2\" Heel Wedges has 13."
+ ],
+ "reviews_title": "No review data in Sellerise",
+ "reviews_body": [
+  "Sellerise returned no review records, rating trend or negative reviews for Hapad Canada over the last 90 days.",
+  "That means the review tracker isn't pulling for this account, not that there were no reviews."
+ ],
+ "reviews_reco": [
+  "Pull Amazon's Customer Reviews report (or turn on review tracking) so the deck can show rating and review count.",
+  "Read the newest reviews on Heel Lifts 7/16\": 41 sessions and 1 sale this week points to a listing that isn't converting."
+ ],
+ "recommendations": [
+  [
+   "Ads",
+   "Pause or cut bids on the zero-order broad keywords, starting with \"breathable shoe heel inserts\" and \"dancers pads for feet\".",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Pause the two auto campaigns ($20.39, 0 orders) until the keyword campaigns start converting again.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Consolidate the 4 searches running through several targets (e.g. \"heel pad for shoes\", \"heel lift\") into one exact keyword each.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Inventory",
+   "Restock Posting Heel Wedges (0 units, marked inactive) and top up Heel Lifts 7/16\" (5 units) before BF/CM.",
+   "Account team",
+   "By Nov 20"
+  ],
+  [
+   "Listing",
+   "Review the Heel Lifts 7/16\" and 2\" Heel Wedges pages (images, price, bullets): 66 sessions combined, 1 sale.",
+   "Account team",
+   "Next week"
+  ],
+  [
+   "Account health",
+   "Fix the critical dimensions alert open since Nov 2 (1 of 4 critical alerts).",
+   "Account team",
+   "This week"
+  ],
+  [
+   "Data",
+   "Pull Amazon review data and confirm COGS in Sellerise so profit can be judged.",
+   "Account team",
+   "Next week"
+  ]
+ ],
+ "position": [
+  "Week 45: $19.49 in sales on 1 order, down 74% from $76.18.",
+  "Ads spent $117.58 with no ad sales; TACoS rose to 603% from 191%."
+ ],
+ "next_steps": [
+  "Cut ad spend that brings no orders.",
+  "Restock Posting Heel Wedges and Heel Lifts.",
+  "Fix listing conversion on Heel Lifts.",
+  "Clear the critical dimensions alert."
+ ],
+ "data_ask": [
+  "Inbound plan / PO dates for Posting Heel Wedges.",
+  "COGS per product in Sellerise.",
+  "Review tracking or Customer Reviews report.",
+  "Search query data (latest loaded week is Oct 25)."
+ ]
+}
