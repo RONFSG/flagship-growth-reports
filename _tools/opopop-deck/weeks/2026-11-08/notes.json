@@ -1,0 +1,74 @@
+{
+ "_week": "2026-11-02 to 2026-11-08 (Week 45). Written from this week's numbers.",
+ "week_story": [
+  "Sales rose 18.8% to $55,333 on 9.8% more units (2,269). The Gift Set 12-Pack nearly tripled to $14,113 (268 units vs 91) and Flavor-Wrapped grew 83% to $11,973.",
+  "Pop Cup Kits + Popper fell 42% to $9,631: the Variety 12-Pack Kit dropped to $585 from $5,882 as stock ran low, and the 4-Pack Kit fell 36% to $4,203."
+ ],
+ "refunds_title": "Refunds steady",
+ "refunds": [
+  "Refunds were $742 on 49 units (2.43% rate) vs $895 on 44 units (2.31%) last week; nothing points to a product problem."
+ ],
+ "pacing_reco": "November is $62,404 through Nov 8, 8% ahead of the same days last year ($57,602); getting the 12-Pack and 4-Pack Kits restocked before BF/CM is the biggest lever.",
+ "ads_context": [
+  "Ad spend fell 18.9% to $4,203 while ad sales rose 14.3% to $16,277, so ACoS dropped from 36.4% to 25.8%.",
+  "TACoS fell from 11.1% to 7.6%: organic sales carried the growth and ads drove 29% of sales."
+ ],
+ "ads_strategy": [
+  "Branded keywords: $1,827 spend (-18%) at 32.6% ACoS, 182 orders.",
+  "Category keywords: $1,188 (-32%) at 62.8% ACoS for 69 orders. Brand defense: $357 at 16.0% ACoS, 58 orders.",
+  "Competitor targeting spent $150 for $24 in sales (1 order)."
+ ],
+ "bid_moves": [
+  "Lower bids on Sponsored Brands “opopop popcorn” exact in the Salty Caramel ($215 for $148) and Kit ($218 for $239) campaigns.",
+  "Cut “microwave popcorn” phrase ($124 for $104) and the SB “opopop” exact target with $69 and no sales.",
+  "Pause the 67 campaigns that spent $492 with no sales; keep “opopop popcorn kit with bowl” phrase ($84 → $807) funded."
+ ],
+ "coupons": [
+  "This week: 30 coupon redemptions (35 last week).",
+  "Subscribe & Save orders: 169 (183 last week)."
+ ],
+ "promotions": [
+  "This week: 404 promotion orders and $1,827 in promotional discounts (vs 374 and $808 last week).",
+  "Heavier discounting went with the jump in Gift Set sales."
+ ],
+ "events": [
+  "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+  "Deal and coupon set-up deadlines: to confirm with the account team.",
+  "Priority: Pop Cup Kits and Flavor-Wrapped stocked at FBA before Nov 20."
+ ],
+ "reviews_title": "No review data in Sellerise",
+ "reviews_body": [
+  "Sellerise returned no review records, rating trend or negative reviews for the 18 Opopop products over the last 90 days.",
+  "That means review tracking isn't pulling for this account, not that there were no reviews."
+ ],
+ "reviews_reco": [
+  "Turn on review tracking for Opopop in Sellerise (or pull Amazon's Customer Reviews report) so the deck can show rating and review count.",
+  "Sellerise lists 86 critical alerts in the last 30 days, 76 of them Buy Box lost; check those listings before BF/CM."
+ ],
+ "recommendations": [
+  ["Inventory", "Replenish the Variety 12-Pack Kit (162 available, about 1 week) and 4-Pack Kit (367, about 1 week).", "Account team", "This week"],
+  ["Inventory", "Confirm Flavor-Wrapped FBA stock: the Oct 26 sheet shows 0 available, yet 293 units sold this week.", "Account team", "This week"],
+  ["Inventory", "Send Pickle Monster (1 week) and Salty Caramel (2 weeks) Pop Cups before BF/CM.", "Account team", "By Nov 14"],
+  ["Ads", "Lower bids on SB “opopop popcorn” exact (Salty Caramel and Kit campaigns) and “microwave popcorn” phrase.", "Ads team", "This week"],
+  ["Ads", "Pause the 67 no-sale campaigns ($492) and the $150 competitor targeting with 1 order.", "Ads team", "This week"],
+  ["Ads", "Add the 14 converting searches (e.g. “opopop birthday”) as exact keywords; review the 3 negative candidates.", "Ads team", "This week"],
+  ["Marketing", "Plan BF/CM deals around the Gift Set 12-Pack, this week's top seller at $14,113.", "Account team", "By Nov 14"],
+  ["Account health", "Review the 76 Buy Box lost alerts and turn on review tracking.", "Account team", "Next week"]
+ ],
+ "position": [
+  "November is 8% ahead of last year to date and pacing to about $234.0K at the current daily rate.",
+  "This week grew to $55.3K on the Gift Set and Flavor-Wrapped while ad spend fell."
+ ],
+ "next_steps": [
+  "Restock the 12-Pack and 4-Pack Kits.",
+  "Confirm Flavor-Wrapped stock at FBA.",
+  "Trim high-ACoS SB and no-sale spend.",
+  "Lock BF/CM deals around the Gift Set."
+ ],
+ "data_ask": [
+  "Updated inventory sheet (latest is Oct 26).",
+  "Kit and Flavor-Wrapped inbound ETAs.",
+  "BF/CM deal and coupon plan.",
+  "Review tracking turned on in Sellerise."
+ ]
+}

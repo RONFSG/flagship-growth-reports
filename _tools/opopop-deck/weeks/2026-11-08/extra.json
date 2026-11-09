@@ -1,0 +1,417 @@
+{
+ "_source": "Sellerise MCP, account Opopop, marketplace US, pulled 2026-11-09 (Monday-Sunday weeks; 4-week table from the saved weekly totals)",
+ "weeks": [
+  {
+   "label": "Oct 12 – 18",
+   "revenue": 46080.32,
+   "units": 1986,
+   "orders": 1838,
+   "impressions": 670982,
+   "clicks": 5515,
+   "refundUnits": 40,
+   "refundRate": 2.18,
+   "spend": 5548.97,
+   "adSales": 21872.95,
+   "acos": 25.37,
+   "tacos": 12.04
+  },
+  {
+   "label": "Oct 19 – 25",
+   "revenue": 44877.71,
+   "units": 1887,
+   "orders": 1734,
+   "impressions": 810256,
+   "clicks": 3978,
+   "refundUnits": 42,
+   "refundRate": 2.42,
+   "spend": 5073.52,
+   "adSales": 16629.82,
+   "acos": 30.51,
+   "tacos": 11.31
+  },
+  {
+   "label": "Oct 26 – Nov 1",
+   "revenue": 46558.19,
+   "units": 2067,
+   "orders": 1904,
+   "impressions": 803655,
+   "clicks": 3759,
+   "refundUnits": 44,
+   "refundRate": 2.31,
+   "spend": 5184.36,
+   "adSales": 14234.61,
+   "acos": 36.42,
+   "tacos": 11.14
+  },
+  {
+   "label": "Nov 2 – 8",
+   "revenue": 55332.95,
+   "units": 2269,
+   "orders": 2014,
+   "impressions": 582899,
+   "clicks": 3470,
+   "refundUnits": 49,
+   "refundRate": 2.43,
+   "spend": 4203.0,
+   "adSales": 16276.94,
+   "acos": 25.82,
+   "tacos": 7.6,
+   "net": 30538.21,
+   "refunds": 741.64,
+   "adOrders": 492,
+   "cpc": 1.21,
+   "cvr": 14.18
+  }
+ ],
+ "mtd": {
+  "through": "2026-11-08",
+  "days": 8,
+  "revenue": 62404.27,
+  "units": 2573,
+  "orders": 2294,
+  "spend": 4943.06,
+  "adSales": 18915.51,
+  "acos": 26.13,
+  "tacos": 7.92,
+  "refundRate": 2.44
+ },
+ "mtdLY": {
+  "revenue": 57601.99,
+  "units": 2368,
+  "orders": 2144,
+  "spend": 0
+ },
+ "daily": [
+  [
+   "2026-10-26",
+   6002.25,
+   816.41,
+   1906.37,
+   242,
+   70
+  ],
+  [
+   "2026-10-27",
+   4728.56,
+   685.25,
+   1307.39,
+   204,
+   49
+  ],
+  [
+   "2026-10-28",
+   6870.11,
+   774.13,
+   2301.05,
+   276,
+   79
+  ],
+  [
+   "2026-10-29",
+   6747.64,
+   734.99,
+   1921.75,
+   290,
+   76
+  ],
+  [
+   "2026-10-30",
+   7214.9,
+   709.81,
+   2395.66,
+   290,
+   88
+  ],
+  [
+   "2026-10-31",
+   7619.42,
+   721.61,
+   2402.23,
+   301,
+   94
+  ],
+  [
+   "2026-11-01",
+   7375.31,
+   742.16,
+   2000.16,
+   301,
+   76
+  ],
+  [
+   "2026-11-02",
+   8146.41,
+   652.56,
+   3977.6,
+   270,
+   88
+  ],
+  [
+   "2026-11-03",
+   7963.42,
+   635.55,
+   2241.16,
+   311,
+   82
+  ],
+  [
+   "2026-11-04",
+   7107.1,
+   641.64,
+   2165.44,
+   277,
+   67
+  ],
+  [
+   "2026-11-05",
+   6204.13,
+   626.11,
+   2083.61,
+   257,
+   77
+  ],
+  [
+   "2026-11-06",
+   8902.48,
+   521.24,
+   2257.41,
+   327,
+   75
+  ],
+  [
+   "2026-11-07",
+   8570.16,
+   599.9,
+   1465.39,
+   320,
+   50
+  ],
+  [
+   "2026-11-08",
+   8439.25,
+   526,
+   2086.33,
+   252,
+   53
+  ]
+ ],
+ "searchTerms": {
+  "total": 630,
+  "winners": 37,
+  "harvest": 14,
+  "negative": 3,
+  "noPurchase": 3,
+  "rows": [
+   [
+    "opopop popcorn",
+    "SB",
+    7959,
+    346,
+    78,
+    949.08,
+    2347.63
+   ],
+   [
+    "opopop cups",
+    "SB",
+    2,
+    1,
+    1,
+    0.15,
+    1349.1
+   ],
+   [
+    "opopop popcorn kit with bowl",
+    "SB",
+    1399,
+    138,
+    47,
+    133.87,
+    1256.13
+   ],
+   [
+    "opopop popcorn",
+    "SP",
+    6442,
+    221,
+    29,
+    157.5,
+    954.24
+   ],
+   [
+    "opopop",
+    "SB",
+    4304,
+    128,
+    19,
+    353.3,
+    592
+   ],
+   [
+    "opopop popcorn kit with bowl",
+    "SP",
+    5342,
+    82,
+    12,
+    50.78,
+    350.03
+   ],
+   [
+    "opopop microwave popcorn",
+    "SP",
+    2644,
+    52,
+    11,
+    68.49,
+    305.74
+   ],
+   [
+    "opopop microwave popcorn",
+    "SB",
+    424,
+    17,
+    9,
+    10.39,
+    272.86
+   ]
+  ],
+  "category": [
+   [
+    "popcorn microwave",
+    "SB",
+    4210,
+    44,
+    8,
+    73.09,
+    273.37
+   ],
+   [
+    "popcorn",
+    "SB",
+    6357,
+    92,
+    7,
+    114.33,
+    199.93
+   ],
+   [
+    "microwave popcorn",
+    "SB",
+    10513,
+    66,
+    4,
+    96.1,
+    153.96
+   ],
+   [
+    "microwave popcorn popper",
+    "SB",
+    2088,
+    41,
+    3,
+    66.73,
+    94.97
+   ],
+   [
+    "popcorn microwave",
+    "SP",
+    431,
+    7,
+    3,
+    10.41,
+    71.97
+   ]
+  ]
+ },
+ "targets": {
+  "total": 2165,
+  "winners": 91,
+  "needsAttention": 121,
+  "highAcos": 26,
+  "noSales": 10,
+  "lowCtr": 61,
+  "rows": [
+   [
+    "opopop popcorn (SB)",
+    "Exact",
+    "Brand",
+    218.31,
+    238.95,
+    91.36,
+    54,
+    5
+   ],
+   [
+    "opopop popcorn (SB)",
+    "Exact",
+    "Brand",
+    214.59,
+    148.16,
+    144.84,
+    41,
+    4
+   ],
+   [
+    "microwave popcorn (SB)",
+    "Phrase",
+    "Category",
+    124.47,
+    103.97,
+    119.72,
+    83,
+    3
+   ],
+   [
+    "microwave popcorn (SB)",
+    "Exact",
+    "Category",
+    87.49,
+    99.98,
+    87.51,
+    42,
+    2
+   ],
+   [
+    "opopop popcorn (SB)",
+    "Phrase",
+    "Brand",
+    74.76,
+    199.9,
+    37.4,
+    36,
+    5
+   ]
+  ]
+ },
+ "reviews": {
+  "available": false
+ },
+ "alerts": {
+  "total": 400,
+  "actionable": 102,
+  "critical": 86,
+  "warning": 16,
+  "byType": {
+   "Listing images": 121,
+   "Buy Box lost": 76,
+   "Buy Box gained": 74,
+   "Title": 19,
+   "Listing price": 18,
+   "Category": 16,
+   "Inactive": 14,
+   "Badge lost": 12,
+   "Badge gained": 12,
+   "Reimbursable units": 11,
+   "Out of stock": 6,
+   "Low inventory fee": 4,
+   "Low stock": 3,
+   "Negative feedback": 3,
+   "Hijacker": 3,
+   "Days of supply": 3,
+   "Dimensions": 2,
+   "Stranded": 1,
+   "Hijacker (liquidation)": 1,
+   "Large order": 1
+  }
+ }
+}
