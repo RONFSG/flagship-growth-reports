@@ -1,0 +1,392 @@
+{
+ "_source": "Sellerise MCP, account Heavenly Bodies Studio, marketplace US, pulled 2026-11-09 (Monday-Sunday weeks; 4-week table from the saved weekly totals)",
+ "weeks": [
+  {
+   "label": "Oct 12 – 18",
+   "revenue": 10855.58,
+   "units": 186,
+   "orders": 184,
+   "impressions": 296787,
+   "clicks": 1063,
+   "refundUnits": 16,
+   "refundRate": 8.7,
+   "spend": 725.25,
+   "adSales": 2616.0,
+   "acos": 27.72,
+   "tacos": 6.68
+  },
+  {
+   "label": "Oct 19 – 25",
+   "revenue": 10844.08,
+   "units": 185,
+   "orders": 180,
+   "impressions": 298791,
+   "clicks": 1015,
+   "refundUnits": 8,
+   "refundRate": 4.44,
+   "spend": 831.02,
+   "adSales": 1370.0,
+   "acos": 60.66,
+   "tacos": 7.66
+  },
+  {
+   "label": "Oct 26 – Nov 1",
+   "revenue": 9656.03,
+   "units": 164,
+   "orders": 163,
+   "impressions": 257207,
+   "clicks": 928,
+   "refundUnits": 11,
+   "refundRate": 6.75,
+   "spend": 647.14,
+   "adSales": 1830.0,
+   "acos": 35.36,
+   "tacos": 6.7
+  },
+  {
+   "label": "Nov 2 – 8",
+   "revenue": 10793.98,
+   "units": 185,
+   "orders": 174,
+   "impressions": 274815,
+   "clicks": 1018,
+   "refundUnits": 10,
+   "refundRate": 5.75,
+   "spend": 627.27,
+   "adSales": 1929.0,
+   "acos": 32.52,
+   "tacos": 5.81,
+   "net": 6413.28,
+   "refunds": 474.55,
+   "adOrders": 34,
+   "cpc": 0.62,
+   "cvr": 3.34
+  }
+ ],
+ "mtd": {
+  "through": "2026-11-08",
+  "days": 8,
+  "revenue": 11921.4,
+  "units": 205,
+  "orders": 193,
+  "spend": 705.1,
+  "adSales": 2284,
+  "acos": 30.87,
+  "tacos": 5.91,
+  "refundRate": 5.7
+ },
+ "mtdLY": {
+  "revenue": 0,
+  "units": 0,
+  "orders": 0,
+  "spend": 0
+ },
+ "daily": [
+  [
+   "2026-10-26",
+   1480.38,
+   106.08,
+   385,
+   25,
+   7
+  ],
+  [
+   "2026-10-27",
+   1690.18,
+   105.27,
+   265,
+   29,
+   5
+  ],
+  [
+   "2026-10-28",
+   1324.51,
+   107.67,
+   155,
+   21,
+   3
+  ],
+  [
+   "2026-10-29",
+   1517.96,
+   97.03,
+   220,
+   25,
+   4
+  ],
+  [
+   "2026-10-30",
+   1541.46,
+   78.89,
+   220,
+   27,
+   4
+  ],
+  [
+   "2026-10-31",
+   986.04,
+   74.49,
+   275,
+   17,
+   5
+  ],
+  [
+   "2026-11-01",
+   1115.5,
+   77.71,
+   310,
+   19,
+   5
+  ],
+  [
+   "2026-11-02",
+   1570.38,
+   75.95,
+   165,
+   20,
+   3
+  ],
+  [
+   "2026-11-03",
+   1962.87,
+   82.59,
+   330,
+   33,
+   6
+  ],
+  [
+   "2026-11-04",
+   1515.24,
+   105.23,
+   320,
+   25,
+   5
+  ],
+  [
+   "2026-11-05",
+   1977.09,
+   94.03,
+   337,
+   30,
+   6
+  ],
+  [
+   "2026-11-06",
+   1680.84,
+   97.41,
+   447,
+   29,
+   8
+  ],
+  [
+   "2026-11-07",
+   1031.97,
+   75.73,
+   220,
+   18,
+   4
+  ],
+  [
+   "2026-11-08",
+   1055.59,
+   96.33,
+   110,
+   19,
+   2
+  ]
+ ],
+ "searchTerms": {
+  "total": 140,
+  "winners": 3,
+  "harvest": 0,
+  "negative": 1,
+  "noPurchase": 1,
+  "rows": [
+   [
+    "heavenly bodies tarot",
+    "SB",
+    485,
+    10,
+    2,
+    6.76,
+    110
+   ],
+   [
+    "heavenly bodies tarot",
+    "SP",
+    2162,
+    26,
+    1,
+    13.86,
+    55
+   ],
+   [
+    "heavenly bodies tarot deck",
+    "SP",
+    9,
+    2,
+    1,
+    0.7,
+    55
+   ],
+   [
+    "heavenly bodies",
+    "SP",
+    90,
+    1,
+    1,
+    1.34,
+    55
+   ],
+   [
+    "heavenly bodies astrology",
+    "SP",
+    2,
+    1,
+    1,
+    0.42,
+    45
+   ],
+   [
+    "heavenly bodies tarot deck",
+    "SB",
+    265,
+    3,
+    0,
+    1.63,
+    0
+   ],
+   [
+    "heavenly bodies book",
+    "SP",
+    305,
+    2,
+    0,
+    1.6,
+    0
+   ]
+  ],
+  "category": [
+   [
+    "tarot deck",
+    "SP",
+    30569,
+    89,
+    4,
+    52.13,
+    220
+   ],
+   [
+    "tarot cards",
+    "SP",
+    55281,
+    137,
+    2,
+    77.65,
+    110
+   ],
+   [
+    "tarot decks",
+    "SP",
+    5045,
+    27,
+    2,
+    10.49,
+    110
+   ],
+   [
+    "astrology for beginners",
+    "SP",
+    154,
+    3,
+    1,
+    2.63,
+    82
+   ],
+   [
+    "tarot cards for beginners",
+    "SP",
+    7636,
+    17,
+    1,
+    19.42,
+    55
+   ]
+  ]
+ },
+ "targets": {
+  "total": 57,
+  "winners": 11,
+  "needsAttention": 12,
+  "highAcos": 3,
+  "noSales": 2,
+  "lowCtr": 8,
+  "rows": [
+   [
+    "tarot decks",
+    "Phrase",
+    "Category",
+    97.45,
+    220,
+    44.3,
+    167,
+    4
+   ],
+   [
+    "tarot cards",
+    "Exact",
+    "Category",
+    53.25,
+    110,
+    48.41,
+    96,
+    2
+   ],
+   [
+    "tarot card",
+    "Exact",
+    "Category",
+    26.59,
+    0,
+    null,
+    46,
+    0
+   ],
+   [
+    "tarot decks",
+    "Exact",
+    "Category",
+    21.32,
+    55,
+    38.76,
+    25,
+    1
+   ],
+   [
+    "tarot cards for beginners",
+    "Exact",
+    "Category",
+    18.46,
+    55,
+    33.56,
+    16,
+    1
+   ]
+  ]
+ },
+ "reviews": {
+  "available": false
+ },
+ "alerts": {
+  "total": 6,
+  "actionable": 5,
+  "critical": 2,
+  "warning": 3,
+  "byType": {
+   "Negative feedback": 2,
+   "Dimensions": 2,
+   "Out of stock": 1,
+   "Reimbursable units": 1
+  }
+ }
+}

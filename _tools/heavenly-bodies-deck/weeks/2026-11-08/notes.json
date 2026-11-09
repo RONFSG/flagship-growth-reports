@@ -1,0 +1,73 @@
+{
+ "_week": "2026-11-02 to 2026-11-08 (Week 45). Written from this week's numbers; rewrite every key each Monday.",
+ "week_story": [
+  "Revenue was $10,794, up 12% from $9,656, on 185 units (164 the week before) and 174 orders.",
+  "The Tarot deck led the rebound: $9,292 on 160 units vs $8,125 on 139 (+14%). It is 86% of sales.",
+  "Astrology rose 5% to $857 (18 units); the Tarot + Astrology 2-pack slipped 10% to $529 (6 units)."
+ ],
+ "refunds_title": "Refund rate eased",
+ "refunds": [
+  "Refunds were $475 on 10 units (5.75% refund rate), vs $443 on 11 units and 6.75% the week before. Two negative-feedback alerts (Oct 20, Nov 6) are still open."
+ ],
+ "pacing_reco": "November is running $1,490 a day (about $44.7K for the month vs October's $63,750); BF/CM deals on the Tarot deck are the main lever to close the gap.",
+ "ads_context": [
+  "Weekly sales have held at $9.6–10.9K since mid-October, down from $22,442 in the Oct 5–11 week.",
+  "Spend fell 3% to $627 while ad sales rose 5% to $1,929, so ACoS improved to 32.5% from 35.4% and TACoS to 5.8% from 6.7%."
+ ],
+ "ads_strategy": [
+  "Brand defense product targets were the best spend: $115 for $677 and 11 orders (16.9% ACoS). Branded keywords returned $320 on $32 (9.9% ACoS).",
+  "Auto campaigns spent $139 for $90 (2 orders); the Tarot auto spent $67 with no sales. Category keywords: $299 for $842, 15 orders (35.5% ACoS)."
+ ],
+ "bid_moves": [
+  "Scale the Tarot brand defense campaign: $112 for $677 and 11 orders (16.5% ACoS).",
+  "Lower bids on “tarot decks” (phrase, $97 for $220, 44.3% ACoS) and “tarot cards” (exact, $53 for $110, 48.4%).",
+  "Pause or negate “tarot card” (exact, $27), “astrology” (exact, $16) and the Tarot auto ($67): clicks, no sales.",
+  "Add “millennial tarot deck” as an exact keyword: 1 order on $2.64."
+ ],
+ "coupons": [
+  "This week: no coupon redemptions.",
+  "Last week: no coupon redemptions."
+ ],
+ "promotions": [
+  "This week: 83 promotion orders, $290 in promotional discounts (vs 71 orders and $228 last week)."
+ ],
+ "events": [
+  "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+  "Holiday gifting season: tarot and astrology boxsets are natural gifts; deals and coupons should be live before BF/CM.",
+  "Deal and coupon set-up deadlines: to confirm with the account team."
+ ],
+ "reviews_title": "No review data in Sellerise",
+ "reviews_body": [
+  "Sellerise returned no review records, rating trend or negative reviews for the 5 Heavenly Bodies products over the last 90 days.",
+  "That means the review tracker isn't pulling for this account, not that there were no reviews. Two negative seller-feedback alerts (Oct 20, Nov 6) are open."
+ ],
+ "reviews_reco": [
+  "Turn on review tracking in Sellerise (or pull Amazon's Customer Reviews report) so the deck can show star rating and review count.",
+  "Answer both open negative-feedback alerts and read the newest 1–3 star reviews on the Tarot deck."
+ ],
+ "recommendations": [
+  ["Ads", "Raise budget on the Tarot brand defense campaign (16.5% ACoS, 11 orders) and the branded “heavenly bodies tarot” keywords.", "Ads team", "This week"],
+  ["Ads", "Lower bids on “tarot decks” phrase and “tarot cards” exact (44–48% ACoS).", "Ads team", "This week"],
+  ["Ads", "Pause “tarot card” exact, “astrology” exact, the Tarot auto and the own-ASIN cross-sell (no sales this week).", "Ads team", "This week"],
+  ["Ads", "Harvest “millennial tarot deck” and “heavenly bodies astrology” into exact keywords.", "Ads team", "This week"],
+  ["Promotions", "Set up BF/CM deals and coupons for the Tarot and Astrology boxsets.", "Account team", "Before deadlines"],
+  ["Listings", "Fix the 2 critical dimension alerts on the Tarot deck and the 2-pack.", "Catalog team", "By Nov 13"],
+  ["Reviews", "Answer the 2 open negative-feedback alerts and turn on review tracking.", "Account team", "This week"]
+ ],
+ "position": [
+  "November is $11,921 through Nov 8 ($1,490 a day), pacing near $44.7K vs October's $63,750.",
+  "Ads are leaner again: ACoS 32.5% (from 35.4%), TACoS 5.8%."
+ ],
+ "next_steps": [
+  "Scale brand defense and branded keywords.",
+  "Cut no-sale targets.",
+  "Lock BF/CM deals and coupons.",
+  "Clear dimension and feedback alerts."
+ ],
+ "data_ask": [
+  "BF/CM deal and coupon plan.",
+  "Review tracking turned on in Sellerise.",
+  "Product costs (COGS) in Sellerise for true profit.",
+  "Search Query Performance for the Tarot deck (Sellerise has nothing after the Oct 25 week)."
+ ]
+}
