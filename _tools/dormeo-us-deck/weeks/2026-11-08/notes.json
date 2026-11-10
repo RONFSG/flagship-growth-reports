@@ -1,0 +1,71 @@
+{
+ "_week": "2026-11-02 to 2026-11-08 (Week 45). Written from that week's numbers.",
+ "week_story": [
+  "Revenue rose 33% to $65.5K. The Queen topper led it: 58 units vs 31 the week before (+87%), with King up to 27 units from 15 and Full up to 28 from 20."
+ ],
+ "refunds_title": "Refunds eased",
+ "refunds": [
+  "Refunds were $7,548 (13.6% refund rate), down from $8,105 (19.3%) last week. The King topper was $4,072 of it (10 units); check its return reasons."
+ ],
+ "pacing_reco": "November is at $71.4K through Nov 8, 36% behind the same days last year ($111.3K). BF/CM (Nov 27–30) has to close most of that gap.",
+ "ads_context": [
+  "Ad spend held flat at $4,364 while ad sales rose 35% to $32,473.",
+  "ACoS improved to 13.4% (from 18.1%) and TACoS to 6.7% (from 8.9%)."
+ ],
+ "ads_strategy": [
+  "Branded keywords returned $22,491 on $2,501 spend (11.1% ACoS) and brought 63 orders; brand defense added $6,690 at 6.0% ACoS.",
+  "Category keywords cost $687 for $2,335 in sales (29.4% ACoS); Streaming TV spent $347 with no attributed sales."
+ ],
+ "bid_moves": [
+  "Pause or negate “dormeo mattress toppers king” (phrase): $125 spent, 95 clicks, 0 orders.",
+  "Lower the bid on “dormeo” (phrase) in the SnowTek campaign: $186 spent at 39.0% ACoS.",
+  "Add “dormeo mattress pads or toppers” as an exact keyword: 8 orders and $3,423 in sales on $439."
+ ],
+ "coupons": [
+  "This week: 15 coupon orders (none last week).",
+  "November to date: 15 coupon orders and 18 promotion orders."
+ ],
+ "promotions": [
+  "This week: 16 promotion orders and $631 in promotional discounts (vs $548 last week).",
+  "November to date: $739 in promotional discounts."
+ ],
+ "events": [
+  "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+  "Deal and coupon set-up deadlines: to confirm with the account team.",
+  "Priority: Queen and King toppers checked in at FBA before Nov 20 so BF/CM traffic converts."
+ ],
+ "reviews_title": "No review data in Sellerise",
+ "reviews_body": [
+  "Sellerise returned no review records, rating trend or negative reviews for the Dormeo US products over the last 90 days.",
+  "That means the review tracker isn't pulling for this account, not that there were no reviews."
+ ],
+ "reviews_reco": [
+  "Turn on review tracking for Dormeo US in Sellerise (or pull Amazon's Customer Reviews report) so the deck can show star rating and review count per line.",
+  "The King topper had $4,072 in refunds this week; its newest 1–3 star reviews are the fastest way to find a shared cause."
+ ],
+ "recommendations": [
+  ["Inventory", "Confirm the 400 Queen and 377 King toppers shown inbound on the Oct 26 sheet are checked in at FBA.", "Account team", "This week"],
+  ["Inventory", "Send RV Short Queen (0 available, none inbound), SnowTek Queen (~2 weeks left) and True Evolution pillow (0 available).", "Account team", "By Nov 17"],
+  ["Ads", "Pause or negate the no-sale targets: “dormeo mattress toppers king” phrase ($125) and “tempur topper” exact ($56).", "Ads team", "This week"],
+  ["Ads", "Review Streaming TV: $347 this week with no attributed sales.", "Ads team", "This week"],
+  ["Ads", "Add “dormeo mattress pads or toppers” as an exact keyword; keep budget on the branded and defense campaigns at 6–11% ACoS.", "Ads team", "This week"],
+  ["Marketing", "Lock BF/CM coupons and deals for the toppers (Nov 27–30) and confirm submission deadlines.", "Account team", "By Nov 13"],
+  ["Account health", "Check return reasons on the King topper ($4,072 of $7,548 refunds) and turn on review tracking.", "Account team", "Next week"]
+ ],
+ "position": [
+  "This week grew 33% to $65.5K as the Queen topper sold 58 units, with ads cheaper: ACoS 13.4%, TACoS 6.7%.",
+  "November is at $71.4K through Nov 8, 36% behind last year's $111.3K, so BF/CM stock and deals matter most."
+ ],
+ "next_steps": [
+  "Get Queen and King checked in at FBA.",
+  "Cut no-sale ad spend.",
+  "Lock BF/CM coupons and deals.",
+  "Find the cause of King refunds."
+ ],
+ "data_ask": [
+  "Updated inventory sheet (latest is Oct 26).",
+  "BF/CM deal and coupon plan.",
+  "Review tracking turned on in Sellerise.",
+  "Category / brand impression share (Brand Analytics)."
+ ]
+}
