@@ -1,5 +1,5 @@
 {
- "asOf": "Nov 2, 2026",
+ "asOf": "Nov 9, 2026",
  "ytd": 23913.41,
  "units": 1639,
  "shipments": 174,
@@ -8,7 +8,7 @@
  "missing": 661,
  "receiveRate": 99.7,
  "recoveryRate": 99.9,
- "resolved": 41,
+ "resolved": 44,
  "mtd": 1401.95,
  "mtdUnits": 92,
  "monthly": [
@@ -83,6 +83,10 @@
    882.22
   ],
   [
+   "Reimbursement",
+   410.14
+  ],
+  [
    "Damaged Inventory",
    43.5
   ],
@@ -100,6 +104,10 @@
   ],
   [
    "Misplaced Inventory",
+   null
+  ],
+  [
+   "Found Inventory",
    null
   ]
  ],
@@ -663,7 +671,7 @@
    "value": 0.0
   },
   {
-   "id": "21522998901",
+   "id": "1522998901",
    "date": "Aug 7, 2026",
    "type": "Warehouse Damage",
    "note": "Amazon confirmed that the misplaced unit was found as sellable and added back to the inventory under transaction ID 20072513155490.",
@@ -825,12 +833,129 @@
    "value": 0.0
   },
   {
+   "id": "22137790661",
+   "date": "Sep 18, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon located 2 units of FNSKU B08DNG8XQZ and returned them to active inventory.",
+   "status": "Reconciled",
+   "units": 2,
+   "value": 0.0
+  },
+  {
+   "id": "22137900261",
+   "date": "Sep 18, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon located 2 units of FNSKU B08DNG8XQZ and returned them to active inventory.",
+   "status": "Reconciled",
+   "units": 2,
+   "value": 0.0
+  },
+  {
+   "id": "22137961011",
+   "date": "Sep 18, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon located 2 units of FNSKU B08DNG8XQZ and returned them to active inventory.",
+   "status": "Reconciled",
+   "units": 2,
+   "value": 0.0
+  },
+  {
+   "id": "22137952361",
+   "date": "Sep 18, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon located 2 units of FNSKU B08DNG8XQZ and returned them to active inventory.",
+   "status": "Reconciled",
+   "units": 2,
+   "value": 0.0
+  },
+  {
+   "id": "2138092081",
+   "date": "Sep 18, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon located 2 units of FNSKU B08DNG8XQZ and returned them to active inventory.",
+   "status": "Reconciled",
+   "units": 2,
+   "value": 0.0
+  },
+  {
+   "id": "22138976591",
+   "date": "Sep 18, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon located 2 units of FNSKU B08DNG8XQZ and returned them to active inventory.",
+   "status": "Reconciled",
+   "units": 2,
+   "value": 0.0
+  },
+  {
+   "id": "22141828021",
+   "date": "Sep 18, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon located 2 units of FNSKU B08DNG8XQZ and returned them to active inventory.",
+   "status": "Reconciled",
+   "units": 2,
+   "value": 0.0
+  },
+  {
+   "id": "22230621141",
+   "date": "Sep 23, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon located 2 units of FNSKU B08DNG8XQZ and returned them to active inventory.",
+   "status": "Reconciled",
+   "units": 2,
+   "value": 0.0
+  },
+  {
+   "id": "22287540151",
+   "date": "Sep 25, 2026",
+   "type": "Lost Inventory",
+   "note": "Amazon located 2 units of FNSKU B08DNG8XQZ and returned them to active inventory.",
+   "status": "Reconciled",
+   "units": 2,
+   "value": 0.0
+  },
+  {
    "id": "22370131781",
    "date": "Oct 1, 2026",
    "type": "Misplaced Inventory",
    "note": "Amazon completed the investigation across 6 Reference IDs, locating and returning 24 misplaced units to inventory while confirming all 26 units were accounted for.",
    "status": "Reconciled",
    "units": 24,
+   "value": 0.0
+  },
+  {
+   "id": "22454827151",
+   "date": "Oct 7, 2026",
+   "type": "Reimbursement",
+   "note": "Amazon completed the review of shipment FBA19KXFB7V0 and initiated reimbursement ID 23687071351 for missing items.",
+   "status": "Reimbursed",
+   "units": 12,
+   "value": 112.8
+  },
+  {
+   "id": "22487563251",
+   "date": "Oct 9, 2026",
+   "type": "—",
+   "note": "Amazon confirmed 32 units were missing and initiated a reimbursement of 289.60 USD.",
+   "status": "—",
+   "units": 5,
+   "value": 43.5
+  },
+  {
+   "id": "22997251591",
+   "date": "46330.066666666666",
+   "type": "Found Inventory",
+   "note": "Amazon located 1 unit for FNSKU B08DNG8XQZ under reference ID 20082790556297 and returned it to sellable inventory.",
+   "status": "Resolved",
+   "units": 1,
+   "value": 0.0
+  },
+  {
+   "id": "22994347571",
+   "date": "46330.06736111111",
+   "type": "Damaged Inventory",
+   "note": "Amazon completed the investigation, located 3 units of FNSKU B08DNG8XQZ under reference ID 20082790291769, and returned them to sellable status.",
+   "status": "Resolved",
+   "units": 3,
    "value": 0.0
   }
  ]
