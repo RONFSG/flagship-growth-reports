@@ -1,5 +1,5 @@
 {
-  "_source": "Sellerise MCP, account CaddyO, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-09.",
+  "_source": "Sellerise MCP, account CaddyO, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-09, refreshed 2026-11-10.",
   "week": {
     "start": "2026-11-01",
     "end": "2026-11-07"
@@ -9,13 +9,13 @@
     "end": "2026-10-31"
   },
   "current": {
-    "revenue": 1997.05,
-    "salesTaxes": 138.17,
+    "revenue": 1988.6,
+    "salesTaxes": 147.09,
     "units": 66,
     "ppcSpend": 1882.67,
     "ppcSales": 1288.9,
     "ppcClicks": 1355,
-    "ppcImpressions": 508899,
+    "ppcImpressions": 508482,
     "ppcOrders": 35
   },
   "prev": {
@@ -23,10 +23,10 @@
     "salesTaxes": 110.98,
     "units": 57,
     "ppcSpend": 692.91,
-    "ppcSales": 1323.75,
+    "ppcSales": 1352.7,
     "ppcClicks": 678,
-    "ppcImpressions": 178543,
-    "ppcOrders": 38
+    "ppcImpressions": 178523,
+    "ppcOrders": 39
   },
   "daily": [
     {
@@ -61,8 +61,8 @@
     },
     {
       "date": "2026-11-07",
-      "revenue": 305.15,
-      "salesTaxes": 12.75
+      "revenue": 296.7,
+      "salesTaxes": 21.67
     }
   ],
   "products": [
@@ -70,10 +70,10 @@
       "asin": "B0G3T7LL5V",
       "title": "CaddyO Wrapsulator Insulated Can Cooler for Regular 12oz & 16oz Cans - Blue",
       "cur": {
-        "revenue": 553.18,
-        "salesTaxes": 34.97,
+        "revenue": 550.8,
+        "salesTaxes": 36.94,
         "units": 20,
-        "sessions": 249
+        "sessions": 310
       },
       "prev": {
         "revenue": 303.72,
@@ -86,10 +86,10 @@
       "asin": "B0G3T5N7YB",
       "title": "CaddyO Wrapsulator Insulated Can Cooler for Regular 12oz & 16oz Cans",
       "cur": {
-        "revenue": 305.66,
-        "salesTaxes": 17.6,
+        "revenue": 302.77,
+        "salesTaxes": 23.39,
         "units": 11,
-        "sessions": 176
+        "sessions": 201
       },
       "prev": {
         "revenue": 288.19,
@@ -105,7 +105,7 @@
         "revenue": 205.21,
         "salesTaxes": 19.63,
         "units": 7,
-        "sessions": 122
+        "sessions": 161
       },
       "prev": {
         "revenue": 283.7,
@@ -121,7 +121,7 @@
         "revenue": 144.93,
         "salesTaxes": 10.06,
         "units": 3,
-        "sessions": 81
+        "sessions": 97
       },
       "prev": {
         "revenue": 45.01,
@@ -137,7 +137,7 @@
         "revenue": 137.11,
         "salesTaxes": 9.73,
         "units": 5,
-        "sessions": 50
+        "sessions": 61
       },
       "prev": {
         "revenue": 0,
@@ -150,10 +150,10 @@
       "asin": "B0G3TD92RY",
       "title": "CaddyO Wrapsulator Insulated Can Cooler for Regular 12oz & 16oz Cans - Red",
       "cur": {
-        "revenue": 113.35,
-        "salesTaxes": 6.23,
+        "revenue": 110.17,
+        "salesTaxes": 7.39,
         "units": 4,
-        "sessions": 50
+        "sessions": 76
       },
       "prev": {
         "revenue": 83.63,
@@ -169,7 +169,7 @@
         "revenue": 107.27,
         "salesTaxes": 8.85,
         "units": 4,
-        "sessions": 26
+        "sessions": 33
       },
       "prev": {
         "revenue": 26.58,
@@ -185,7 +185,7 @@
         "revenue": 79.64,
         "salesTaxes": 5.81,
         "units": 3,
-        "sessions": 52
+        "sessions": 58
       },
       "prev": {
         "revenue": 136.34,
@@ -196,9 +196,9 @@
     }
   ],
   "insights": [
-    "**Weekly Highlights \u2014** CaddyO delivered $1,858 in total sales for Week 45, up 22.4% from $1,518 the prior week, on 66 units. Organic sales grew 192.1% to $569, led by the Blue Wrapsulator at $518 (+82.6%) and a strong lift from the Dual Travel Tote at $134 (+217.6%). Wednesday, Nov 4 was the peak day at $301.",
-    "**Metrics to Watch \u2014** The Black Wrapsulator eased to $185 (-29.6%) as its CVR slipped to 5.7% even though sessions rose 20.8%. We are watching its conversion closely and will support it with tighter ad targeting so it can return to its prior velocity alongside the rest of the Wrapsulator line.",
-    "**Ad Spend Efficiency \u2014** Ad spend rose to $1,882 from $692, generating $1,288 in PPC revenue for a 0.68x ROAS and 146.1% ACOS, with TACoS at 101.3%. Ad CTR is 0.27% with a 2.58% ad conversion rate, so our priority this week is bringing spend back in line with returns while protecting the organic gains.",
-    "**Actions This Week \u2014** We will reduce bids on high-ACOS targets and pull budget back toward the prior $692 level, concentrating spend on proven converters like the Blue Wrapsulator (8.0% CVR) and the Slim Can Cooler (10.0% CVR). We will also test new Sponsored Product and Sponsored Brand ad creative to lift ad CTR above 0.27%."
+    "**Weekly Highlights \u2014** CaddyO delivered $1,841 in total sales for Week 45, up 21.2% from $1,518 the prior week, on 66 units. Organic sales grew 232.5% to $552, led by the Blue Wrapsulator at $513 (+81.1%) and a strong lift from the Dual Travel Tote at $134 (+217.6%). Wednesday, Nov 4 was the peak day at $301.",
+    "**Metrics to Watch \u2014** The Black Wrapsulator eased to $185 (-29.6%) as its CVR slipped to 4.3% even though sessions rose 59.4%. We are watching its conversion closely and will support it with tighter ad targeting so it can return to its prior velocity alongside the rest of the Wrapsulator line.",
+    "**Ad Spend Efficiency \u2014** Ad spend rose to $1,882 from $692, generating $1,288 in PPC revenue for a 0.68x ROAS and 146.1% ACOS, with TACoS at 102.2%. Ad CTR is 0.27% with a 2.58% ad conversion rate, so our priority this week is bringing spend back in line with returns while protecting the organic gains.",
+    "**Actions This Week \u2014** We will reduce bids on high-ACOS targets and pull budget back toward the prior $692 level, concentrating spend on proven converters like the Blue Wrapsulator (6.5% CVR) and the Slim Can Cooler (8.2% CVR). We will also test new Sponsored Product and Sponsored Brand ad creative to lift ad CTR above 0.27%."
   ]
 }

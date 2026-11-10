@@ -1,5 +1,5 @@
 {
-  "_source": "Sellerise MCP, account Hapad, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-09.",
+  "_source": "Sellerise MCP, account Hapad, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-09, refreshed 2026-11-10.",
   "week": {
     "start": "2026-11-01",
     "end": "2026-11-07"
@@ -9,30 +9,30 @@
     "end": "2026-10-31"
   },
   "current": {
-    "revenue": 19216.37,
-    "salesTaxes": 803.54,
-    "units": 1178,
-    "ppcSpend": 3252.1,
-    "ppcSales": 6899.32,
-    "ppcClicks": 2204,
-    "ppcImpressions": 317516,
-    "ppcOrders": 376
+    "revenue": 19212.57,
+    "salesTaxes": 810.04,
+    "units": 1177,
+    "ppcSpend": 3254.29,
+    "ppcSales": 6965.77,
+    "ppcClicks": 2205,
+    "ppcImpressions": 317446,
+    "ppcOrders": 382
   },
   "prev": {
     "revenue": 19959.23,
     "salesTaxes": 829.21,
     "units": 1219,
-    "ppcSpend": 3069.11,
-    "ppcSales": 7961.28,
-    "ppcClicks": 2015,
-    "ppcImpressions": 305014,
+    "ppcSpend": 3068.97,
+    "ppcSales": 7961.58,
+    "ppcClicks": 2014,
+    "ppcImpressions": 304998,
     "ppcOrders": 396
   },
   "daily": [
     {
       "date": "2026-11-01",
-      "revenue": 2305.82,
-      "salesTaxes": 101.3
+      "revenue": 2295.55,
+      "salesTaxes": 100.72
     },
     {
       "date": "2026-11-02",
@@ -46,7 +46,7 @@
     },
     {
       "date": "2026-11-04",
-      "revenue": 3173.3,
+      "revenue": 3180.29,
       "salesTaxes": 132.62
     },
     {
@@ -61,8 +61,8 @@
     },
     {
       "date": "2026-11-07",
-      "revenue": 2603.1,
-      "salesTaxes": 116.63
+      "revenue": 2602.58,
+      "salesTaxes": 123.71
     }
   ],
   "products": [
@@ -70,7 +70,7 @@
       "asin": "B008DW1DS0",
       "title": "HAPAD Metatarsal Pad 5/16\" - Medium, 6 Pair Pack Wool Felt Ball of Foot Pad",
       "cur": {
-        "revenue": 5281.17,
+        "revenue": 5288.16,
         "salesTaxes": 210.82,
         "units": 174,
         "sessions": 616
@@ -150,8 +150,8 @@
       "asin": "B00LERXYBU",
       "title": "HAPAD Scaphoid Pad - Medium, Wool Felt Medial Arch Insert Pair Shoe Insert",
       "cur": {
-        "revenue": 760.17,
-        "salesTaxes": 27.07,
+        "revenue": 763.02,
+        "salesTaxes": 29.92,
         "units": 75,
         "sessions": 209
       },
@@ -166,9 +166,9 @@
       "asin": "B00LG4MCBE",
       "title": "HAPAD Mortons Neuroma Pads - Teardrop Wool Felt Ball-of-Foot Pad Insert",
       "cur": {
-        "revenue": 639.04,
-        "salesTaxes": 23.09,
-        "units": 81,
+        "revenue": 632.11,
+        "salesTaxes": 23.76,
+        "units": 80,
         "sessions": 366
       },
       "prev": {
@@ -182,8 +182,8 @@
       "asin": "B0FVHJKYF6",
       "title": "HAPAD Metatarsal Bar - Medium, Ball of Foot Pad Wool Felt Shoe Insert",
       "cur": {
-        "revenue": 543.59,
-        "salesTaxes": 28.58,
+        "revenue": 547.15,
+        "salesTaxes": 32.14,
         "units": 51,
         "sessions": 168
       },
@@ -196,9 +196,9 @@
     }
   ],
   "insights": [
-    "**Weekly Highlights —** Hapad US delivered $18,412 in total sales for Week 45 on 1178 units, versus $19,130 the prior week (-3.7% WoW). Organic revenue grew 3.1% to $11,513, and the Metatarsal Pad 3/8\" Large 6-Pack rose to $2,032 (+34.8%) with CVR up 52.3%. Monday, Nov 2 was the peak day at $3,085.",
-    "**Metrics to Watch —** The Metatarsal Pad 5/16\" Medium 6-Pack remains the top seller at $5,070 (-2.9%), with sessions up 7.1% but CVR down 8.2% to 28.2%. The Metatarsal Pad 1/4\" Small 6-Pack eased to $1,655 (-6.8%) on CVR of 20.1% (-23.4%), so we are focused on converting its 19.7% session growth into sales.",
-    "**Ad Spend Efficiency —** Ad spend of $3,252 (prior $3,069) generated $6,899 in PPC revenue (-13.3%), for a 2.12x ROAS versus 2.59x and a 47.1% ACOS. TACoS moved to 17.7% from 16.04%, while ad conversion stayed strong at 17.06% on a 0.69% ad CTR.",
-    "**Actions This Week —** We will lower bids on high-ACOS targets and audit search terms to bring ACOS down from 47.1% and lift ROAS back toward 2.59x. We will reallocate budget to proven converters like the Posting Heel Wedge (36.8% CVR) and the 1-Pair Medium Metatarsal Pad (24.7% CVR), and test new ad creative to grow ad CTR above 0.69%."
+    "**Weekly Highlights \u2014** Hapad US delivered $18,402 in total sales for Week 45 on 1,177 units, versus $19,130 the prior week (-3.8% WoW). Organic revenue grew 2.4% to $11,436, and the Metatarsal Pad 3/8\" Large 6-Pack rose to $2,032 (+34.8%) with CVR up 52.3%. Monday, Nov 2 was the peak day at $3,085.",
+    "**Metrics to Watch \u2014** The Metatarsal Pad 5/16\" Medium 6-Pack remains the top seller at $5,077 (-2.8%), with sessions up 7.1% but CVR down 8.2% to 28.2%. The Metatarsal Pad 1/4\" Small 6-Pack eased to $1,655 (-6.8%) on CVR of 20.1% (-23.4%), so we are focused on converting its 19.7% session growth into sales.",
+    "**Ad Spend Efficiency \u2014** Ad spend of $3,254 (prior $3,068) generated $6,965 in PPC revenue (-12.5%), for a 2.14x ROAS versus 2.59x and a 46.7% ACOS. TACoS moved to 17.7% from 16.04%, while ad conversion stayed strong at 17.32% on a 0.69% ad CTR.",
+    "**Actions This Week \u2014** We will lower bids on high-ACOS targets and audit search terms to bring ACOS down from 46.7% and lift ROAS back toward 2.59x. We will reallocate budget to proven converters like the Posting Heel Wedge (36.8% CVR) and the 1-Pair Medium Metatarsal Pad (24.7% CVR), and test new ad creative to grow ad CTR above 0.69%."
   ]
 }

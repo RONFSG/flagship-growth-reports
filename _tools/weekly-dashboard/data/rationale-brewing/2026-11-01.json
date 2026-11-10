@@ -1,5 +1,5 @@
 {
-  "_source": "Sellerise MCP, account Rationale Brewing, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-09.",
+  "_source": "Sellerise MCP, account Rationale Brewing, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-09, refreshed 2026-11-10.",
   "week": {
     "start": "2026-11-01",
     "end": "2026-11-07"
@@ -9,24 +9,24 @@
     "end": "2026-10-31"
   },
   "current": {
-    "revenue": 4376.17,
-    "salesTaxes": 223.7,
-    "units": 240,
+    "revenue": 4362.29,
+    "salesTaxes": 235.71,
+    "units": 239,
     "ppcSpend": 1140.19,
-    "ppcSales": 1550,
+    "ppcSales": 1591.47,
     "ppcClicks": 436,
-    "ppcImpressions": 105510,
-    "ppcOrders": 71
+    "ppcImpressions": 105322,
+    "ppcOrders": 73
   },
   "prev": {
-    "revenue": 5352.79,
-    "salesTaxes": 333.16,
+    "revenue": 5337.28,
+    "salesTaxes": 336.95,
     "units": 276,
     "ppcSpend": 1162.83,
-    "ppcSales": 1992.51,
+    "ppcSales": 2026.75,
     "ppcClicks": 462,
-    "ppcImpressions": 112912,
-    "ppcOrders": 93
+    "ppcImpressions": 112904,
+    "ppcOrders": 95
   },
   "daily": [
     {
@@ -36,7 +36,7 @@
     },
     {
       "date": "2026-11-02",
-      "revenue": 762.43,
+      "revenue": 762.07,
       "salesTaxes": 40.32
     },
     {
@@ -46,7 +46,7 @@
     },
     {
       "date": "2026-11-04",
-      "revenue": 791.33,
+      "revenue": 778.85,
       "salesTaxes": 34.29
     },
     {
@@ -56,13 +56,13 @@
     },
     {
       "date": "2026-11-06",
-      "revenue": 534.77,
-      "salesTaxes": 26.68
+      "revenue": 534.54,
+      "salesTaxes": 30.88
     },
     {
       "date": "2026-11-07",
-      "revenue": 833.42,
-      "salesTaxes": 36.19
+      "revenue": 832.61,
+      "salesTaxes": 44
     }
   ],
   "products": [
@@ -70,14 +70,14 @@
       "asin": "B0F9HRTK2M",
       "title": "Rationale Non-Alcoholic Variety Pack - 4 Styles - 12 Pack 12oz Cans",
       "cur": {
-        "revenue": 2156.59,
-        "salesTaxes": 107.04,
+        "revenue": 2160.61,
+        "salesTaxes": 113.96,
         "units": 75,
-        "sessions": 263
+        "sessions": 318
       },
       "prev": {
-        "revenue": 2793.89,
-        "salesTaxes": 176.15,
+        "revenue": 2791.64,
+        "salesTaxes": 179.7,
         "units": 96,
         "sessions": 338
       }
@@ -86,14 +86,14 @@
       "asin": "B0B7NX8KDR",
       "title": "RationAle Non-Alcoholic West Coast IPA Craft Beer - 6 Pack 12oz Cans",
       "cur": {
-        "revenue": 583,
-        "salesTaxes": 30.18,
-        "units": 45,
-        "sessions": 91
+        "revenue": 571.7,
+        "salesTaxes": 31.97,
+        "units": 44,
+        "sessions": 111
       },
       "prev": {
-        "revenue": 312.81,
-        "salesTaxes": 15.91,
+        "revenue": 299.55,
+        "salesTaxes": 16.15,
         "units": 24,
         "sessions": 120
       }
@@ -105,7 +105,7 @@
         "revenue": 464.97,
         "salesTaxes": 27.81,
         "units": 37,
-        "sessions": 125
+        "sessions": 151
       },
       "prev": {
         "revenue": 699.75,
@@ -118,10 +118,10 @@
       "asin": "B0FTBSQP28",
       "title": "Rationale Non-Alcoholic Cherry Blossom Japanese Style - 6 Pack 12oz Cans",
       "cur": {
-        "revenue": 430.16,
-        "salesTaxes": 25.29,
+        "revenue": 428.9,
+        "salesTaxes": 26.28,
         "units": 28,
-        "sessions": 88
+        "sessions": 106
       },
       "prev": {
         "revenue": 538.31,
@@ -134,10 +134,10 @@
       "asin": "B0B7P1FXTZ",
       "title": "RationAle Non-Alcoholic Mexican Cerveza Craft Beer - 6 Pack 12oz Cans",
       "cur": {
-        "revenue": 419.58,
-        "salesTaxes": 16.71,
+        "revenue": 414.24,
+        "salesTaxes": 19.02,
         "units": 33,
-        "sessions": 74
+        "sessions": 110
       },
       "prev": {
         "revenue": 522.4,
@@ -153,7 +153,7 @@
         "revenue": 321.87,
         "salesTaxes": 16.67,
         "units": 22,
-        "sessions": 84
+        "sessions": 100
       },
       "prev": {
         "revenue": 485.63,
@@ -180,9 +180,9 @@
     }
   ],
   "insights": [
-    "**Weekly Highlights \u2014** RationAle Brewing delivered $4,152 in total sales for Week 45 on 240 units, versus $5,019 the prior week (-17.3% WoW). The West Coast IPA 6-Pack was the standout at $552 (+86.2%) with units up 87.5% to 45 and a 49.5% conversion rate, and the week finished strong with Saturday, Nov 7 as the peak day at $797.",
-    "**Metrics to Watch \u2014** The Variety Pack 12-Pack remains our top seller at $2,049 but eased 21.7% as sessions dipped 22.2% to 263, while the Hazy IPA 6-Pack slipped to $437 (-33.4%) on 33.2% fewer sessions. Conversion is holding up well on both (28.5% and 29.6%), so we are focused on rebuilding traffic to these listings to bring organic sales of $2,602 (-14.0% WoW) back up.",
-    "**Ad Spend Efficiency \u2014** Ad spend held steady at $1,140 (prior $1,162) and generated $1,550 in PPC revenue for a 1.36x ROAS and 73.6% ACOS, with TACoS at 27.5%. Ad conversion is healthy at 16.28% on a 0.41% ad CTR, so the opportunity is in tightening targeting and bids to lift ROAS back toward the prior week's 1.71x.",
-    "**Actions This Week \u2014** We will trim bids on low-converting search terms and shift budget toward the West Coast IPA and Mexican Cerveza 6-Packs, which converted at 49.5% and 44.6%. We will also increase visibility for the Variety Pack and Hazy IPA to recover sessions, and test new Sponsored Brand ad creative to lift ad CTR above 0.41%."
+    "**Weekly Highlights \u2014** RationAle Brewing delivered $4,126 in total sales for Week 45 on 239 units, versus $5,000 the prior week (-17.5% WoW). The West Coast IPA 6-Pack was the standout at $539 (+90.4%) with units up 83.3% to 44 and a 39.6% conversion rate, and the week finished strong with Saturday, Nov 7 as the peak day at $788.",
+    "**Metrics to Watch \u2014** The Variety Pack 12-Pack remains our top seller at $2,046 but eased 21.6% as sessions dipped 5.9% to 318, while the Hazy IPA 6-Pack slipped to $437 (-33.4%) on 19.3% fewer sessions. Conversion is holding up on both (23.6% and 24.5%), so we are focused on rebuilding traffic to these listings to bring organic sales of $2,535 (-14.7% WoW) back up.",
+    "**Ad Spend Efficiency \u2014** Ad spend held steady at $1,140 (prior $1,162) and generated $1,591 in PPC revenue for a 1.40x ROAS and 71.6% ACOS, with TACoS at 27.6%. Ad conversion is healthy at 16.74% on a 0.41% ad CTR, so the opportunity is in tightening targeting and bids to lift ROAS back toward the prior week's 1.74x.",
+    "**Actions This Week \u2014** We will trim bids on low-converting search terms and shift budget toward the West Coast IPA and Mexican Cerveza 6-Packs, which converted at 39.6% and 30.0%. We will also increase visibility for the Variety Pack and Hazy IPA to recover sessions, and test new Sponsored Brand ad creative to lift ad CTR above 0.41%."
   ]
 }

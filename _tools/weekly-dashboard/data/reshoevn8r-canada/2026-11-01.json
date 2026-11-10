@@ -1,5 +1,5 @@
 {
-  "_source": "Sellerise MCP, account Reshoevn8r, marketplace CA, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: ASINs, units and sessions from get_products salesProfitSummaryByAsin; product revenue and salesTaxes converted to USD via per-ASIN get_account_metrics (groupBy none, asin=<ASIN>, targetCurrency USD) for each week. Sales on the page = revenue - salesTaxes. Pulled 2026-11-09.",
+  "_source": "Sellerise MCP, account Reshoevn8r, marketplace CA, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: ASINs, units and sessions from get_products salesProfitSummaryByAsin; product revenue and salesTaxes converted to USD via per-ASIN get_account_metrics (groupBy none, asin=<ASIN>, targetCurrency USD) for each week. Sales on the page = revenue - salesTaxes. Pulled 2026-11-09, refreshed 2026-11-10.",
   "week": {
     "start": "2026-11-01",
     "end": "2026-11-07"
@@ -9,13 +9,13 @@
     "end": "2026-10-31"
   },
   "current": {
-    "revenue": 2559.23,
-    "salesTaxes": 276.18,
+    "revenue": 2563.34,
+    "salesTaxes": 286.84,
     "units": 80,
     "ppcSpend": 753.13,
     "ppcSales": 1116.19,
     "ppcClicks": 556,
-    "ppcImpressions": 220678,
+    "ppcImpressions": 220415,
     "ppcOrders": 36
   },
   "prev": {
@@ -25,7 +25,7 @@
     "ppcSpend": 759.9,
     "ppcSales": 1412.22,
     "ppcClicks": 636,
-    "ppcImpressions": 254683,
+    "ppcImpressions": 254682,
     "ppcOrders": 48
   },
   "daily": [
@@ -56,8 +56,8 @@
     },
     {
       "date": "2026-11-06",
-      "revenue": 634.71,
-      "salesTaxes": 58.95
+      "revenue": 638.82,
+      "salesTaxes": 69.61
     },
     {
       "date": "2026-11-07",
@@ -86,8 +86,8 @@
       "asin": "B08RS7P59K",
       "title": "RESHOEVN8R Signature Kit - Flagship Shoe Cleaner Set, All Materials",
       "cur": {
-        "revenue": 571.84,
-        "salesTaxes": 56.72,
+        "revenue": 576.02,
+        "salesTaxes": 63.73,
         "units": 9,
         "sessions": 171
       },
@@ -102,8 +102,8 @@
       "asin": "B0CTGGJ98X",
       "title": "RESHOEVN8R Refresh Kit - Routine Shoe Cleaner Set, All Materials",
       "cur": {
-        "revenue": 322.01,
-        "salesTaxes": 34.6,
+        "revenue": 321.03,
+        "salesTaxes": 37.34,
         "units": 12,
         "sessions": 150
       },
@@ -196,9 +196,9 @@
     }
   ],
   "insights": [
-    "**Weekly Highlights —** Reshoevn8r Canada delivered $2,283 in total sales for Week 45, up 9.1% from $2,092 the prior week, on 80 units. Organic revenue grew 71.5% to $1,166, with the Refresh Kit up 542.0% on 12 units and the Signature Kit up 134.3% on 9 units. Friday, Nov 6 was the peak day at $575.",
-    "**Metrics to Watch —** The Essential Kit eased 25.0% on 15 units with sessions down 14.4%, and the 8oz Cleaning Solution dipped 56.4% even as its sessions grew 46.1%. We are reviewing targeting and ad placements on both so the added traffic converts, and we expect the Essential Kit to regain momentum as we refocus spend behind it.",
-    "**Ad Spend Efficiency —** Ad spend of $753 (prior $759) generated $1,116 in PPC revenue for a 1.48x ROAS and 67.5% ACOS, while TACoS improved to 33.0% from 36.32% as organic sales carried more of the week. Ad conversion held at 6.47% on a 0.25% ad CTR, and we are tightening bids on high-ACOS terms to bring ROAS back toward the prior week's 1.86x.",
-    "**Actions This Week —** We will audit search terms to reduce bids on high-spend, low-converting keywords and shift budget toward the Refresh Kit, Signature Kit and Waterproof Shoe Spray, which grew 79.9% on 12 units. We will also test new Sponsored Products and Sponsored Brands ad creative to lift ad CTR above 0.25%."
+    "**Weekly Highlights \u2014** Reshoevn8r Canada delivered $2,276 in total sales for Week 45, up 8.8% from $2,092 the prior week, on 80 units. Organic revenue grew 70.6% to $1,160, with the Refresh Kit up 533.7% on 12 units and the Signature Kit up 133.0% on 9 units. Friday, Nov 6 was the peak day at $569.",
+    "**Metrics to Watch \u2014** The Essential Kit eased 25.0% on 15 units with sessions down 14.4%, and the 8oz Cleaning Solution dipped 56.4% even as its sessions grew 46.1%. We are reviewing targeting and ad placements on both so the added traffic converts, and we expect the Essential Kit to regain momentum as we refocus spend behind it.",
+    "**Ad Spend Efficiency \u2014** Ad spend of $753 (prior $759) generated $1,116 in PPC revenue for a 1.48x ROAS and 67.5% ACOS, while TACoS improved to 33.1% from 36.32% as organic sales carried more of the week. Ad conversion held at 6.47% on a 0.25% ad CTR, and we are tightening bids on high-ACOS terms to bring ROAS back toward the prior week's 1.86x.",
+    "**Actions This Week \u2014** We will audit search terms to reduce bids on high-spend, low-converting keywords and shift budget toward the Refresh Kit, Signature Kit and Waterproof Shoe Spray, which grew 79.9% on 12 units. We will also test new Sponsored Products and Sponsored Brands ad creative to lift ad CTR above 0.25%."
   ]
 }
