@@ -148,6 +148,13 @@
    "runbook": "_tools/jax-athletics-deck/RUNBOOK.md",
    "googleSlidesId": "1suPqesJYXBc-5aZ96Q9xcw0VUxV8hxFN3pNcg17G6i4",
    "enabled": true
+  },
+  {
+   "brand": "Noggin Boss",
+   "slug": "noggin-boss",
+   "runbook": "_tools/noggin-boss-deck/RUNBOOK.md",
+   "googleSlidesId": "",
+   "enabled": true
   }
  ]
 }

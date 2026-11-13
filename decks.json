@@ -80,6 +80,11 @@
    "name": "JAX Athletics",
    "slug": "jax-athletics",
    "manifest": "https://reports.flagshipgrowth.com/jax-athletics/deck/manifest.json"
+  },
+  {
+   "name": "Noggin Boss",
+   "slug": "noggin-boss",
+   "manifest": "https://reports.flagshipgrowth.com/noggin-boss/deck/manifest.json"
   }
  ]
 }
