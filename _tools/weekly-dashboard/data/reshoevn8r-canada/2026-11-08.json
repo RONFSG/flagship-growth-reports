@@ -1,0 +1,204 @@
+{
+  "_source": "Sellerise MCP, account Reshoevn8r, marketplace CA, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: ASINs, units and sessions from get_products salesProfitSummaryByAsin; product revenue and salesTaxes converted to USD via per-ASIN get_account_metrics (groupBy none, asin=<ASIN>, targetCurrency USD) for each week. Sales on the page = revenue - salesTaxes. Pulled 2026-11-16.",
+  "week": {
+    "start": "2026-11-08",
+    "end": "2026-11-14"
+  },
+  "prevWeek": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "current": {
+    "revenue": 2734.58,
+    "salesTaxes": 300.85,
+    "units": 85,
+    "ppcSpend": 588.21,
+    "ppcSales": 1459.58,
+    "ppcClicks": 489,
+    "ppcImpressions": 167185,
+    "ppcOrders": 47
+  },
+  "prev": {
+    "revenue": 2563.34,
+    "salesTaxes": 286.84,
+    "units": 80,
+    "ppcSpend": 752.06,
+    "ppcSales": 1334.02,
+    "ppcClicks": 554,
+    "ppcImpressions": 220296,
+    "ppcOrders": 42
+  },
+  "daily": [
+    {
+      "date": "2026-11-08",
+      "revenue": 256.73,
+      "salesTaxes": 29.13
+    },
+    {
+      "date": "2026-11-09",
+      "revenue": 480.22,
+      "salesTaxes": 52.22
+    },
+    {
+      "date": "2026-11-10",
+      "revenue": 641.42,
+      "salesTaxes": 74.17
+    },
+    {
+      "date": "2026-11-11",
+      "revenue": 308.02,
+      "salesTaxes": 35.5
+    },
+    {
+      "date": "2026-11-12",
+      "revenue": 367.92,
+      "salesTaxes": 43.32
+    },
+    {
+      "date": "2026-11-13",
+      "revenue": 264.67,
+      "salesTaxes": 30.04
+    },
+    {
+      "date": "2026-11-14",
+      "revenue": 415.6,
+      "salesTaxes": 36.47
+    }
+  ],
+  "products": [
+    {
+      "asin": "B08RS7P59K",
+      "title": "RESHOEVN8R Signature Kit - Flagship Shoe Cleaner Set, All Materials",
+      "cur": {
+        "revenue": 956.59,
+        "salesTaxes": 107.11,
+        "units": 15,
+        "sessions": 200
+      },
+      "prev": {
+        "revenue": 576.02,
+        "salesTaxes": 63.73,
+        "units": 9,
+        "sessions": 171
+      }
+    },
+    {
+      "asin": "B0CTGGJ98X",
+      "title": "RESHOEVN8R Refresh Kit - Routine Shoe Cleaner Set, All Materials",
+      "cur": {
+        "revenue": 384.75,
+        "salesTaxes": 39.69,
+        "units": 14,
+        "sessions": 127
+      },
+      "prev": {
+        "revenue": 321.03,
+        "salesTaxes": 37.34,
+        "units": 12,
+        "sessions": 150
+      }
+    },
+    {
+      "asin": "B08TFDN7F3",
+      "title": "RESHOEVN8R Waterproof Shoe Spray - Rain & Stain Protector, 6.5oz",
+      "cur": {
+        "revenue": 307.74,
+        "salesTaxes": 33.11,
+        "units": 13,
+        "sessions": 84
+      },
+      "prev": {
+        "revenue": 290.39,
+        "salesTaxes": 30.99,
+        "units": 12,
+        "sessions": 91
+      }
+    },
+    {
+      "asin": "B08DNG8XQZ",
+      "title": "RESHOEVN8R All-Natural Shoe Cleaning Solution, 8oz - Sneaker Care",
+      "cur": {
+        "revenue": 298.74,
+        "salesTaxes": 33.6,
+        "units": 11,
+        "sessions": 146
+      },
+      "prev": {
+        "revenue": 187.21,
+        "salesTaxes": 22.54,
+        "units": 7,
+        "sessions": 149
+      }
+    },
+    {
+      "asin": "B08H5XPWQD",
+      "title": "RESHOEVN8R Shoe Cleaner Kit - Sneaker Cleaner for Nubuck & Suede",
+      "cur": {
+        "revenue": 146.33,
+        "salesTaxes": 16.15,
+        "units": 5,
+        "sessions": 49
+      },
+      "prev": {
+        "revenue": 57.56,
+        "salesTaxes": 6.85,
+        "units": 2,
+        "sessions": 28
+      }
+    },
+    {
+      "asin": "B0FCKD54WY",
+      "title": "RESHOEVN8R All-Natural Sneaker Cleaning Solution, 16oz Bottle",
+      "cur": {
+        "revenue": 114.34,
+        "salesTaxes": 12.85,
+        "units": 3,
+        "sessions": 43
+      },
+      "prev": {
+        "revenue": 107.75,
+        "salesTaxes": 10.08,
+        "units": 3,
+        "sessions": 60
+      }
+    },
+    {
+      "asin": "B08CSXXX5M",
+      "title": "RESHOEVN8R Essential Kit - Shoe Cleaner Set for Sneakers & Leather",
+      "cur": {
+        "revenue": 89.41,
+        "salesTaxes": 10.97,
+        "units": 2,
+        "sessions": 48
+      },
+      "prev": {
+        "revenue": 646.02,
+        "salesTaxes": 70.76,
+        "units": 15,
+        "sessions": 196
+      }
+    },
+    {
+      "asin": "B08B5HQXJ5",
+      "title": "RESHOEVN8R Original Kit - Versatile Shoe Cleaner Set, All Materials",
+      "cur": {
+        "revenue": 81.07,
+        "salesTaxes": 9.12,
+        "units": 3,
+        "sessions": 99
+      },
+      "prev": {
+        "revenue": 26.02,
+        "salesTaxes": 2.99,
+        "units": 1,
+        "sessions": 91
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights \u2014** Reshoevn8r Canada grew total sales to $2,433 for Week 46, up +6.9% WoW from $2,276, on 85 units. The Signature Kit led the account at $849 (+65.8%) on 15 units, and the 8oz Cleaning Solution jumped to $265 (+61.0%). Tuesday, Nov 10 was the peak day at $567.",
+    "**Metrics to Watch \u2014** Conversion improved across the top sellers: the Signature Kit CVR rose to 7.5% (+42.5%) and the Refresh Kit reached 11.0% (+37.8%) at $345 (+21.6%). Refresh Kit sessions eased to 127 (-15.3%) and Waterproof Shoe Spray sessions to 84 (-7.7%), so adding traffic to these strong converters is the next growth lever. The Nubuck & Suede Kit is building momentum at $130 (+156.7%).",
+    "**Ad Spend Efficiency \u2014** Efficiency improved sharply: ad spend came down to $588 from $752 while PPC revenue grew to $1,459 (+9.4%), lifting ROAS to 2.48x from 1.77x. TACoS improved to 24.2% from 33.04%, with ACOS at 40.3%, a 9.61% ad CVR and a 0.29% ad CTR. Organic sales also grew +3.4% WoW to $974.",
+    "**Actions This Week \u2014** We will keep the tighter bid structure that drove ROAS to 2.48x and shift incremental budget toward the Signature Kit and Refresh Kit, where conversion is rising. We will add targeted campaigns to rebuild sessions for the Refresh Kit and Waterproof Shoe Spray, and test new ad creative to lift ad CTR above 0.29% heading into the holiday season."
+  ]
+}
