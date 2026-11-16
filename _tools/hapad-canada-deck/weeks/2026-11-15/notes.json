@@ -1,0 +1,72 @@
+{
+ "_week": "2026-11-09 to 2026-11-15 (Week 46), Hapad Canada. Written fresh from this week's numbers.",
+ "week_story": [
+  "5 orders for $93.58 this week, after a week with no sales at all (Nov 2-8: $0).",
+  "Heel Lifts 7/16\" brought $65.28 (3 units); 2\" Heel Wedges $28.30 (2 units). Sales landed Mon, Wed and Sat."
+ ],
+ "refunds_title": "One refund on 2\" Heel Wedges",
+ "refunds": [
+  "1 unit of 2\" Heel Wedges was refunded on Nov 10 ($11.42).",
+  "That is 1 refund on 5 orders (20%); last week had 1 refund ($17.15) and no orders."
+ ],
+ "pacing_reco": "November is $110.85 through Nov 15, on pace for about $222 vs $465 in October. Ad spend is $295.07 month to date, more than sales.",
+ "ads_context": [
+  "Spend rose 24% to $148.09 and brought $64.94 in ad sales (4 ad orders); last week $119.73 brought $0.",
+  "ACoS 228% and TACoS 158%: ads still cost more than the sales they bring."
+ ],
+ "ads_strategy": [
+  "Category keywords: $123.68 for $32.47 (2 orders). Auto targeting: $22.97 for $32.47 (2 orders).",
+  "Auto campaigns earned as much as category keywords for a fifth of the spend."
+ ],
+ "bid_moves": [
+  "Pause \"breathable shoe heel inserts\" (broad): $26.64, 13 clicks, 0 orders.",
+  "Raise \"lateral heel wedge\" (exact) a little: $2.76 spend, $12.98 sales, 21% ACoS."
+ ],
+ "coupons": [
+  "This week: no coupon redemptions.",
+  "Last week: no coupon redemptions."
+ ],
+ "promotions": [
+  "This week: no promotion orders.",
+  "Last week: no promotion orders."
+ ],
+ "events": [
+  "Black Friday / Cyber Monday: Nov 27 - Nov 30.",
+  "Sellerise flags Heel Lifts 7/16\" as low on stock; confirm stock before BF/CM.",
+  "No inventory sheet is published for Hapad Canada yet."
+ ],
+ "reviews_title": "No review data in Sellerise",
+ "reviews_body": [
+  "Sellerise returned no review records, rating trend or negative reviews for Hapad Canada over the last 90 days.",
+  "That means the review tracker isn't pulling for this account, not that there were no reviews."
+ ],
+ "reviews_reco": [
+  "Pull Amazon's Customer Reviews report (or turn on review tracking) so the deck can show rating and reviews.",
+  "Check the 2\" Heel Wedges reviews for why this week's unit was returned."
+ ],
+ "recommendations": [
+  ["Ads", "Pause \"breathable shoe heel inserts\" (broad, $26.64, 0 orders) and cut bids on \"dancers pads for feet\" ($9.81, 0 orders).", "Ads team", "This week"],
+  ["Ads", "Pause or trim the 5 campaigns that spent $49.95 with no sales, starting with Heel Wedge Broad ($25.85).", "Ads team", "This week"],
+  ["Ads", "Lower bids on Heel Lifts Broad: $72.41 for one $19.49 sale (372% ACoS).", "Ads team", "This week"],
+  ["Ads", "Add \"support for womens heel pain\" as an exact keyword ($3.60 spend, $19.49 sale) and nudge up \"lateral heel wedge\" (21% ACoS).", "Ads team", "This week"],
+  ["Inventory", "Confirm stock on Heel Lifts 7/16\" (Sellerise low-stock flag) before BF/CM, Nov 27-30.", "Account team", "By Nov 20"],
+  ["Account health", "Work through the 4 critical alerts among 47 open (dimensions, inactive, hijacker).", "Account team", "This week"],
+  ["Data", "Load COGS and review tracking in Sellerise so profit and ratings can be judged.", "Account team", "Next week"]
+ ],
+ "position": [
+  "Week 46: $93.58 in sales on 5 orders, up from $0 the week before.",
+  "Ads spent $148.09 for $64.94 in ad sales; ACoS 228%, TACoS 158%."
+ ],
+ "next_steps": [
+  "Cut ad spend that brings no orders.",
+  "Shift budget toward auto and the exact winners.",
+  "Confirm Heel Lifts stock before BF/CM.",
+  "Clear the critical alerts."
+ ],
+ "data_ask": [
+  "Inventory sheet for Hapad Canada.",
+  "COGS per product in Sellerise.",
+  "Review tracking or Customer Reviews report.",
+  "Search query data (Nov 8-14 not loaded yet)."
+ ]
+}
