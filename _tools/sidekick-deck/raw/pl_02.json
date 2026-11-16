@@ -1,0 +1,42 @@
+{
+ "revenue": 10720.74,
+ "productSales": 9904.42,
+ "net": 7342.79,
+ "margin": 68.49,
+ "roi": 0,
+ "orders": 366,
+ "units": 424,
+ "removalOrders": 0,
+ "removalUnits": 0,
+ "mcf": {
+  "orders": 0,
+  "units": 0
+ },
+ "refunds": 129.8,
+ "refundAmount": 5,
+ "refundRate": 1.37,
+ "fees": 1523.92,
+ "fba": 1007.04,
+ "cog": 0,
+ "salesTaxes": 717.19,
+ "promos": 55.93,
+ "couponsAmount": 0,
+ "promoAmount": 28,
+ "subAmount": 0,
+ "storageFee": 0,
+ "ppc": {
+  "spend": 0,
+  "sales": 0,
+  "acos": 0,
+  "tacos": 0,
+  "clicks": 0,
+  "impressions": 0,
+  "ctr": 0,
+  "cpc": 0,
+  "orders": 0,
+  "units": 0,
+  "unitsPercent": 0,
+  "salesPerUnit": 0
+ },
+ "notAllCog": true
+}

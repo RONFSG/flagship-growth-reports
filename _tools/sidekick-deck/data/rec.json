@@ -1,0 +1,102 @@
+{
+ "asOf": "Oct 26, 2026",
+ "ytd": 310.27,
+ "units": 19,
+ "shipments": 127,
+ "receiving": 23,
+ "closed": 93,
+ "missing": 40,
+ "receiveRate": 100.0,
+ "recoveryRate": 100.0,
+ "resolved": 0,
+ "mtd": 27.48,
+ "mtdUnits": 1,
+ "monthly": [],
+ "byType": [
+  [
+   "CustomerReturn",
+   216.8
+  ],
+  [
+   "CustomerServiceIssue",
+   51.75
+  ],
+  [
+   "Damaged_Warehouse",
+   38.03
+  ],
+  [
+   "Lost_Warehouse",
+   3.69
+  ],
+  [
+   "Lost Inventory",
+   null
+  ]
+ ],
+ "cases": [
+  {
+   "id": "21758286541",
+   "date": "Aug 26, 2026",
+   "type": "Damaged Inventory",
+   "note": "Located units from warehouse damage investigation and returned them to sellable inventory.",
+   "status": "Reconciled",
+   "units": 1,
+   "value": 0.0
+  },
+  {
+   "id": "21758394721",
+   "date": "Aug 26, 2026",
+   "type": "Lost Inventory",
+   "note": "The misplaced inventory was located under event 20076183169943 and returned to sellable inventory.",
+   "status": "Reconciled",
+   "units": 1,
+   "value": 0.0
+  },
+  {
+   "id": "21758472581",
+   "date": "Aug 26, 2026",
+   "type": "Lost Inventory",
+   "note": "The misplaced unit was found in sellable condition and added to inventory under Transaction ID 20076779957348, so no reimbursement is required.",
+   "status": "Reconciled",
+   "units": 1,
+   "value": 0.0
+  },
+  {
+   "id": "21758342151",
+   "date": "Aug 26, 2026",
+   "type": "Damaged Inventory",
+   "note": "All 4 damaged units across the referenced transactions have already been reimbursed to the seller account.",
+   "status": "Reconciled",
+   "units": 4,
+   "value": 0.0
+  },
+  {
+   "id": "21964163571",
+   "date": "Sep 9, 2026",
+   "type": "Lost Inventory",
+   "note": "Misplaced unit was located and returned to sellable inventory under Transaction ID 20076776147570, so no reimbursement is required.",
+   "status": "Resolved",
+   "units": 1,
+   "value": 0.0
+  },
+  {
+   "id": "21963963691",
+   "date": "Sep 9, 2026",
+   "type": "Lost Inventory",
+   "note": "The misplaced unit was located and returned to inventory under transaction ID 20079659972462.",
+   "status": "Resolved",
+   "units": 1,
+   "value": 0.0
+  },
+  {
+   "id": "21963878561",
+   "date": "Sep 9, 2026",
+   "type": "Lost Inventory",
+   "note": "The misplaced unit was located during investigation and recovered.",
+   "status": "Resolved",
+   "units": 1,
+   "value": 0.0
+  }
+ ]
+}

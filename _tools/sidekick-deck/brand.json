@@ -1,7 +1,7 @@
 {
  "brand": "Sidekick",
  "slug": "sidekick",
- "account": "SideKicks Supplies",
+ "account": "Sidekick",
  "marketplace": "US",
  "currency": "USD",
  "money": "$",
@@ -13,7 +13,10 @@
  ],
  "competitors": [],
  "otherKey": "pr",
- "sqpAsin": "",
- "names": {},
+ "sqpAsin": "B0BZW3LB8Z",
+ "names": {
+  "B0HHXVNQ19": "Comic Box Divider (15-Pack)",
+  "B0HHXW37S7": "Comic Box Divider (15-Pack White)"
+ },
  "_about": "Brand settings for the shared weekly deck (see _tools/BRAND_DECK_RUNBOOK.md). invPage/recPage empty = no sheet page published yet. brandTerms = words that make a search 'branded'. sqpAsin is filled by deck.py init. names = short product names by ASIN."
 }

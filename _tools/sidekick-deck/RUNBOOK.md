@@ -3,7 +3,7 @@
 This brand uses the shared weekly-deck runbook: **follow `_tools/BRAND_DECK_RUNBOOK.md` with `SLUG=sidekick`**
 (Monday steps, and its "Tuesday: inventory update" section on Tuesdays). Same 17-slide design as every brand.
 
-- Sellerise: account "SideKicks Supplies", marketplace US, amounts in USD.
+- Sellerise: account "Sidekick" (the Sellerise account name; "SideKicks Supplies" matched nothing on 2026-11-16), marketplace US, amounts in USD.
 - Inventory sheet page: `sidekick-inventory/`. Reconciliation page: `sidekick-reconciliation/`.
 - Settings: `brand.json` (account, pages, branded-search words). Event days for month pacing: `deck_config.json`.
 - Google Slides: the editable file in `googleSlidesId` (`_tools/deck-schedule.json`) is filled by the Apps Script. Never send

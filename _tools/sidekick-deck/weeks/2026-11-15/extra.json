@@ -1,0 +1,402 @@
+{
+ "_source": "Sellerise MCP, account Sidekick, marketplace US, pulled 2026-11-16 (Monday-Sunday weeks; 4-week table from the saved weekly totals)",
+ "weeks": [
+  {
+   "label": "Oct 19 – 25",
+   "revenue": 4383.53,
+   "units": 150,
+   "orders": 132,
+   "impressions": 121188,
+   "clicks": 587,
+   "refundUnits": 3,
+   "refundRate": 2.27,
+   "spend": 488.22,
+   "adSales": 1826.25,
+   "acos": 26.73,
+   "tacos": 11.14
+  },
+  {
+   "label": "Oct 26 – Nov 1",
+   "revenue": 5374.9,
+   "units": 163,
+   "orders": 152,
+   "impressions": 141110,
+   "clicks": 649,
+   "refundUnits": 4,
+   "refundRate": 2.63,
+   "spend": 490.31,
+   "adSales": 1998.35,
+   "acos": 24.54,
+   "tacos": 9.12
+  },
+  {
+   "label": "Nov 2 – 8",
+   "revenue": 5046.91,
+   "units": 166,
+   "orders": 154,
+   "impressions": 208613,
+   "clicks": 794,
+   "refundUnits": 5,
+   "refundRate": 3.25,
+   "spend": 666.7,
+   "adSales": 2565.22,
+   "acos": 25.99,
+   "tacos": 13.21
+  },
+  {
+   "label": "Nov 9 – 15",
+   "revenue": 6878.2,
+   "units": 204,
+   "orders": 193,
+   "impressions": 196241,
+   "clicks": 894,
+   "refundUnits": 6,
+   "refundRate": 3.11,
+   "spend": 791.83,
+   "adSales": 2872.11,
+   "acos": 27.57,
+   "tacos": 11.51,
+   "net": 3321.81,
+   "refunds": 175.82,
+   "adOrders": 92,
+   "cpc": 0.89,
+   "cvr": 10.29
+  }
+ ],
+ "mtd": {
+  "through": "2026-11-15",
+  "days": 15,
+  "revenue": 12725.52,
+  "units": 392,
+  "orders": 369,
+  "spend": 1541.54,
+  "adSales": 5669.72,
+  "acos": 27.19,
+  "tacos": 12.11,
+  "refundRate": 2.98
+ },
+ "mtdLY": {
+  "through": "2025-11-15",
+  "days": 15,
+  "revenue": 2054.24,
+  "units": 78,
+  "orders": 69,
+  "spend": 0,
+  "adSales": 0,
+  "acos": 0,
+  "tacos": 0,
+  "refundRate": 0
+ },
+ "daily": [
+  [
+   "2026-11-02",
+   751.36,
+   101.27,
+   591.05,
+   23,
+   17
+  ],
+  [
+   "2026-11-03",
+   526.78,
+   84.51,
+   231.78,
+   14,
+   6
+  ],
+  [
+   "2026-11-04",
+   940.76,
+   97.27,
+   350.52,
+   24,
+   11
+  ],
+  [
+   "2026-11-05",
+   614.55,
+   89.12,
+   306.56,
+   18,
+   11
+  ],
+  [
+   "2026-11-06",
+   543.38,
+   79.69,
+   156.73,
+   20,
+   6
+  ],
+  [
+   "2026-11-07",
+   907.54,
+   99.63,
+   566.27,
+   29,
+   20
+  ],
+  [
+   "2026-11-08",
+   762.54,
+   115.21,
+   362.31,
+   26,
+   12
+  ],
+  [
+   "2026-11-09",
+   748.42,
+   110.27,
+   278.27,
+   20,
+   9
+  ],
+  [
+   "2026-11-10",
+   848.22,
+   99.32,
+   325.28,
+   24,
+   11
+  ],
+  [
+   "2026-11-11",
+   691.1,
+   98.77,
+   236.48,
+   21,
+   8
+  ],
+  [
+   "2026-11-12",
+   645.83,
+   95.65,
+   341.82,
+   20,
+   10
+  ],
+  [
+   "2026-11-13",
+   888.49,
+   78.87,
+   272.08,
+   22,
+   8
+  ],
+  [
+   "2026-11-14",
+   1561.28,
+   168.73,
+   877.77,
+   44,
+   28
+  ],
+  [
+   "2026-11-15",
+   1494.86,
+   140.22,
+   540.41,
+   42,
+   18
+  ]
+ ],
+ "searchTerms": {
+  "total": 88,
+  "winners": 8,
+  "harvest": 2,
+  "negative": 1,
+  "noPurchase": 2,
+  "rows": [
+   [
+    "sidekick comic box divider",
+    "SB",
+    101,
+    34,
+    8,
+    16.26,
+    209
+   ],
+   [
+    "sidekick comic box divider",
+    "SP",
+    719,
+    34,
+    5,
+    42.39,
+    129.5
+   ],
+   [
+    "sidekick",
+    "SB",
+    203,
+    6,
+    2,
+    7.5,
+    97.9
+   ],
+   [
+    "sidekick",
+    "SP",
+    1644,
+    16,
+    3,
+    24.48,
+    90.79
+   ],
+   [
+    "sidekick comic divider",
+    "SP",
+    89,
+    8,
+    2,
+    15.59,
+    79.5
+   ],
+   [
+    "sidekick mini card box divider",
+    "SB",
+    64,
+    2,
+    1,
+    0.83,
+    29.95
+   ],
+   [
+    "sidekick card divider",
+    "SB",
+    637,
+    5,
+    0,
+    7.25,
+    0
+   ]
+  ],
+  "category": [
+   [
+    "comic box dividers",
+    "SP",
+    733,
+    8,
+    3,
+    10.83,
+    97.45
+   ],
+   [
+    "comic book dividers",
+    "SB",
+    171,
+    4,
+    1,
+    3.78,
+    79.95
+   ],
+   [
+    "comic book box dividers",
+    "SP",
+    361,
+    4,
+    1,
+    5.76,
+    79.5
+   ],
+   [
+    "card dividers for storage boxes",
+    "SB",
+    27,
+    3,
+    2,
+    2.8,
+    73.94
+   ],
+   [
+    "box buddy card divider",
+    "SP",
+    773,
+    23,
+    2,
+    38.96,
+    59.9
+   ]
+  ]
+ },
+ "targets": {
+  "total": 147,
+  "winners": 20,
+  "needsAttention": 19,
+  "highAcos": 5,
+  "noSales": 2,
+  "lowCtr": 8,
+  "rows": [
+   [
+    "box buddy card divider",
+    "Exact",
+    "Category",
+    38.96,
+    59.9,
+    65.04,
+    23,
+    2
+   ],
+   [
+    "views=(exact-product lookback=30) (SD)",
+    "Audience",
+    "Category",
+    36.77,
+    0,
+    null,
+    28,
+    0
+   ],
+   [
+    "card dividers",
+    "Exact",
+    "Category",
+    17.82,
+    29.95,
+    59.5,
+    12,
+    1
+   ],
+   [
+    "sidekick",
+    "Exact",
+    "Brand",
+    14.09,
+    36.94,
+    38.14,
+    17,
+    2
+   ],
+   [
+    "comic book bags and boards",
+    "Exact",
+    "Category",
+    11.74,
+    0,
+    null,
+    13,
+    0
+   ]
+  ]
+ },
+ "reviews": {
+  "available": false
+ },
+ "alerts": {
+  "total": 135,
+  "actionable": 63,
+  "critical": 63,
+  "warning": 0,
+  "byType": {
+   "Buy Box gained": 63,
+   "Buy Box lost": 62,
+   "Hijacker (liquidation)": 2,
+   "Badge lost": 2,
+   "Badge gained": 2,
+   "Listing price": 2,
+   "Hijacker": 1,
+   "Reimbursable units": 1
+  }
+ }
+}

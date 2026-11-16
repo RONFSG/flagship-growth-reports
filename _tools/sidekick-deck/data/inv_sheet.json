@@ -1,0 +1,370 @@
+{
+ "asOf": "10/26/2026",
+ "week": 44,
+ "groups": {
+  "g1": {
+   "total": 738.0,
+   "avail": 364.0,
+   "inbound": 200.0,
+   "wkAvg": 58.0,
+   "l30": 247.0,
+   "n": 7,
+   "asins": [
+    "B0BSYPZ2MV",
+    "B0BZW3LB8Z",
+    "B0BMKL9VZP",
+    "B0HBWV7GXP",
+    "B0HBWX8GB2",
+    "B0BSYPZ2MV",
+    "B0BMKL9VZP"
+   ]
+  },
+  "g2": {
+   "total": 2211.0,
+   "avail": 915.0,
+   "inbound": 120.0,
+   "wkAvg": 67.0,
+   "l30": 286.0,
+   "n": 8,
+   "asins": [
+    "B0CM6JVYND",
+    "B0GXPYV1YT",
+    "B0CM6R3FG5",
+    "B0H1N3KWFY",
+    "B0H1N27FRL",
+    "B0H1MMTG6F",
+    "B0CM6R3FG5",
+    "B0CM6JVYND"
+   ]
+  },
+  "g3": {
+   "total": 1494.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 16.0,
+   "l30": 70.0,
+   "n": 4,
+   "asins": [
+    "B0DPL3F445",
+    "B0DPL7WB25",
+    "B0GXQX8Z48",
+    "B0GXQL52VC"
+   ]
+  },
+  "g4": {
+   "total": 0,
+   "avail": 0,
+   "inbound": 0,
+   "wkAvg": 0,
+   "l30": 0,
+   "n": 0,
+   "asins": []
+  },
+  "g5": {
+   "total": 0,
+   "avail": 0,
+   "inbound": 0,
+   "wkAvg": 0,
+   "l30": 0,
+   "n": 0,
+   "asins": []
+  },
+  "g6": {
+   "total": 966.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 6.0,
+   "l30": 24.0,
+   "n": 2,
+   "asins": [
+    "B0G5LF1YP7",
+    "B0G5LRHSC2"
+   ]
+  },
+  "g7": {
+   "total": 0,
+   "avail": 0,
+   "inbound": 0,
+   "wkAvg": 0,
+   "l30": 0,
+   "n": 0,
+   "asins": []
+  },
+  "pr": {
+   "total": 0,
+   "avail": 0,
+   "inbound": 0,
+   "wkAvg": 0,
+   "l30": 0,
+   "n": 0,
+   "asins": []
+  }
+ },
+ "skus": [
+  {
+   "asin": "B0BSYPZ2MV",
+   "sku": "SideKick-2",
+   "name": "SIDEKICK Comic Box Divider (2-Pack)",
+   "status": "Active",
+   "total": 293.0,
+   "avail": 128.0,
+   "inbound": 50.0,
+   "wkAvg": 33.0,
+   "l30": 143.0,
+   "wkLeft": 6.0
+  },
+  {
+   "asin": "B0BZW3LB8Z",
+   "sku": "SideKick-6",
+   "name": "SIDEKICK Comic Box Divider (6-Pack)",
+   "status": "Active",
+   "total": 157.0,
+   "avail": 69.0,
+   "inbound": 100.0,
+   "wkAvg": 15.0,
+   "l30": 63.0,
+   "wkLeft": 8.0
+  },
+  {
+   "asin": "B0CM6JVYND",
+   "sku": "SideKick Mini-10",
+   "name": "SIDEKICK Mini Trading Card Box Divider (10-Pack)",
+   "status": "Active",
+   "total": 314.0,
+   "avail": 167.0,
+   "inbound": 0.0,
+   "wkAvg": 22.0,
+   "l30": 95.0,
+   "wkLeft": 9.0
+  },
+  {
+   "asin": "B0GXPYV1YT",
+   "sku": "SideKick-25",
+   "name": "SIDEKICK Mini Trading Card Box Divider (25-Pack)",
+   "status": "Active",
+   "total": 139.0,
+   "avail": 112.0,
+   "inbound": 0.0,
+   "wkAvg": 10.0,
+   "l30": 42.0,
+   "wkLeft": 9.0
+  },
+  {
+   "asin": "B0CM6R3FG5",
+   "sku": "SideKick Mini-5",
+   "name": "SIDEKICK Mini Trading Card Box Divider (5-Pack)",
+   "status": "Active",
+   "total": 402.0,
+   "avail": 276.0,
+   "inbound": 120.0,
+   "wkAvg": 28.0,
+   "l30": 119.0,
+   "wkLeft": 10.0
+  },
+  {
+   "asin": "B0BMKL9VZP",
+   "sku": "SideKick-1 FBA",
+   "name": "SIDEKICK Comic Box Divider (Single)",
+   "status": "Active",
+   "total": 111.0,
+   "avail": 29.0,
+   "inbound": 50.0,
+   "wkAvg": 5.0,
+   "l30": 23.0,
+   "wkLeft": 14.0
+  },
+  {
+   "asin": "B0HBWV7GXP",
+   "sku": "SideKick-6 White",
+   "name": "SIDEKICK Comic Box Divider (6-Pack White)",
+   "status": "Active",
+   "total": 60.0,
+   "avail": 49.0,
+   "inbound": 0.0,
+   "wkAvg": 2.0,
+   "l30": 7.0,
+   "wkLeft": 20.0
+  },
+  {
+   "asin": "B0H1N3KWFY",
+   "sku": "SideKick Mini-10 White",
+   "name": "SIDEKICK Mini Trading Card Box Divider (10-Pack White)",
+   "status": "Active",
+   "total": 129.0,
+   "avail": 128.0,
+   "inbound": 0.0,
+   "wkAvg": 4.0,
+   "l30": 16.0,
+   "wkLeft": 23.0
+  },
+  {
+   "asin": "B0H1N27FRL",
+   "sku": "SideKick-25 White",
+   "name": "SIDEKICK Mini Trading Card Box Divider (25-Pack White)",
+   "status": "Out of stock",
+   "total": 82.0,
+   "avail": 81.0,
+   "inbound": 0.0,
+   "wkAvg": 2.0,
+   "l30": 8.0,
+   "wkLeft": 29.0
+  },
+  {
+   "asin": "B0HBWX8GB2",
+   "sku": "SideKick-2 Wht",
+   "name": "SIDEKICK Comic Box Divider (2-Pack White)",
+   "status": "Active",
+   "total": 117.0,
+   "avail": 89.0,
+   "inbound": 0.0,
+   "wkAvg": 3.0,
+   "l30": 11.0,
+   "wkLeft": 30.0
+  },
+  {
+   "asin": "B0H1MMTG6F",
+   "sku": "SideKick Mini-5 White",
+   "name": "SIDEKICK Mini Trading Card Box Divider (5-Pack White)",
+   "status": "Active",
+   "total": 152.0,
+   "avail": 151.0,
+   "inbound": 0.0,
+   "wkAvg": 1.0,
+   "l30": 6.0,
+   "wkLeft": 72.0
+  },
+  {
+   "asin": "B0CM6R3FG5",
+   "sku": "SideKick Mini-5FBM",
+   "name": "SIDEKICK Mini Trading Card Box Divider (5-Pack)",
+   "status": "Active",
+   "total": 499.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0CM6JVYND",
+   "sku": "SideKick Mini-10FBM",
+   "name": "SIDEKICK Mini Trading Card Box Divider (10-Pack)",
+   "status": "Closed",
+   "total": 494.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0BSYPZ2MV",
+   "sku": "SideKick-2FBM",
+   "name": "SIDEKICK Comic Box Divider (2-Pack)",
+   "status": "Active",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0BMKL9VZP",
+   "sku": "SideKick-1",
+   "name": "SIDEKICK Comic Box Divider (Single)",
+   "status": "Active",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0DPL3F445",
+   "sku": "CPL-Silver-100Ct",
+   "name": "Comic ProLine 100-Ct Bags & Boards Silver Size",
+   "status": "Active",
+   "total": 439.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 10.0,
+   "l30": 43.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0DPL7WB25",
+   "sku": "WZ-BX19-ZG6J",
+   "name": "Comic ProLine 100-Ct Bags & Boards Regular Size",
+   "status": "Active",
+   "total": 483.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 3.0,
+   "l30": 14.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0G5LF1YP7",
+   "sku": "CPL-Regular-35",
+   "name": "Comic ProLine PRE-Made 35-Count Bags & Boards Combo Regular",
+   "status": "Active",
+   "total": 490.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 1.0,
+   "l30": 4.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0G5LRHSC2",
+   "sku": "ND-Q1FS-ZY8I",
+   "name": "Comic ProLine PRE-Made 35-Count Bags & Boards Combo Silver",
+   "status": "Active",
+   "total": 476.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 5.0,
+   "l30": 20.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0GXQX8Z48",
+   "sku": "CPL-Silv200",
+   "name": "Comic ProLine 200-Ct Bags & Boards Silver Size",
+   "status": "Active",
+   "total": 85.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 2.0,
+   "l30": 10.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0GXQL52VC",
+   "sku": "CPL-Reg200",
+   "name": "Comic ProLine 200-Ct Bags & Boards Regular Size",
+   "status": "Active",
+   "total": 487.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 1.0,
+   "l30": 3.0,
+   "wkLeft": 0.0
+  }
+ ],
+ "po": [
+  [
+   "SIDEKICK Comic Box Divider (2-Pack) ASIN: B0BSYPZ2MV \u00b7 SKU: SideKick-2",
+   "\u2014",
+   "160"
+  ],
+  [
+   "SIDEKICK Comic Box Divider (6-Pack) ASIN: B0BZW3LB8Z \u00b7 SKU: SideKick-6",
+   "\u2014",
+   "49.5"
+  ]
+ ],
+ "unmapped": []
+}
