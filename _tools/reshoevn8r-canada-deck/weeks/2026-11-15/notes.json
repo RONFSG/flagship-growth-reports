@@ -1,0 +1,109 @@
+{
+ "_week": "2026-11-09 to 2026-11-15 (Week 46). Written from this week's numbers.",
+ "week_story": [
+  "Revenue rose 14% to $4,135 (from $3,617) on 89 units vs 83, and net payout tripled to $1,084 from $334 as ad spend fell 36% to $711.",
+  "Signature Kit led at $1,532 (17 units, vs $807); Essential Kit fell to $64 (1 unit) from $788 (13 units).",
+  "Cleaning Solution rose 83% to $761 (18 units vs 10); Waterproof Spray slipped 16% to $399."
+ ],
+ "refunds_title": "Refunds stayed low",
+ "refunds": [
+  "Refunds were $8.70 on 1 unit (1.1% of orders), vs $0 the week before.",
+  "The one refund was an Odor Eliminator; nothing points to a product problem."
+ ],
+ "pacing_reco": "November is $8,085 through Nov 15, 89% ahead of the same days last year ($4,287), and pacing to about $16,169. The levers are keeping ACoS near this week's 35% and planning BF/CM deals.",
+ "ads_context": [
+  "ACoS fell to 35.0% from 59.1%; TACoS fell to 17.2% from 30.7%.",
+  "Each $1 of ads returned $2.86 in ad sales, up from $1.69."
+ ],
+ "ads_strategy": [
+  "Branded keywords returned $1,365 on $248 (18.2% ACoS, 29 orders).",
+  "Category keywords took $374 for $600 in sales (62.3% ACoS, 14 orders), down from $642 spent.",
+  "Competitor targets spent $35 with no sales; auto spent $50 for $66."
+ ],
+ "bid_moves": [
+  "Scale the Refresh Kit ($70 → $300) and Signature Kit ($14 → $275) product-defense campaigns.",
+  "Lower the “shoe cleaner” broad bid in the Solution campaign: $134 for $299 (44.7% ACoS).",
+  "Pause the Solution “shoe cleaner” exact ($40) and phrase ($31) campaigns: no sales."
+ ],
+ "coupons": [
+  "This week: 0 coupon orders (47 last week). The coupon looks to have ended."
+ ],
+ "promotions": [
+  "This week: 13 promotion orders and $65 in promotional discounts (vs 13 orders and $166 last week)."
+ ],
+ "events": [
+  "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+  "Boxing Day (Canada): Dec 26.",
+  "Deal and coupon set-up deadlines: to confirm with the account team.",
+  "Priority: restock Odor Eliminator (16 available, about 2 weeks left on the Nov 9 sheet)."
+ ],
+ "reviews_title": "No review data in Sellerise",
+ "reviews_body": [
+  "Sellerise returned no review records, rating trend or negative reviews for the Reshoevn8r Canada products over the last 90 days.",
+  "That means the review tracker isn't pulling for this marketplace, not that there were no reviews."
+ ],
+ "reviews_reco": [
+  "Turn on review tracking for Reshoevn8r Canada in Sellerise (or pull Amazon's Customer Reviews report).",
+  "Read the newest reviews on the Essential Kit, which sold 1 unit this week vs 13."
+ ],
+ "recommendations": [
+  [
+   "Ads",
+   "Keep the cuts that brought ACoS to 35%: pause the 39 campaigns with spend and no sales ($238).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Move budget to branded winners: Refresh Kit and Signature Kit product defense and “re shoe vn8r” broad ($26 → $377).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Lower the “shoe cleaner” broad bid in the Solution campaign (44.7% ACoS).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Catalog",
+   "Find out why the Essential Kit fell to $64 from $788: check its listing, Buy Box and ads.",
+   "Account team",
+   "This week"
+  ],
+  [
+   "Inventory",
+   "Send more Odor Eliminator: 16 available and none inbound on the Nov 9 sheet.",
+   "Account team",
+   "This week"
+  ],
+  [
+   "Marketing",
+   "Set up BF/CM coupons and deals (Nov 27–30); no coupon orders ran this week.",
+   "Account team",
+   "By Nov 20"
+  ],
+  [
+   "Account health",
+   "Review the 135 Buy Box lost alerts (the latest are on Waterproof Spray) and the 1 suppressed listing.",
+   "Account team",
+   "This week"
+  ]
+ ],
+ "position": [
+  "November is $8,085 through Nov 15 and pacing to about $16,169, ahead of November last year ($14,733).",
+  "Sales grew 14% while ad spend fell 36%: ACoS 35.0% vs 59.1%."
+ ],
+ "next_steps": [
+  "Pause no-sale campaigns; scale branded winners.",
+  "Diagnose the Essential Kit drop.",
+  "Restock Odor Eliminator.",
+  "Lock BF/CM coupons and deals."
+ ],
+ "data_ask": [
+  "Inventory sheet: ASIN and SKU columns are shifted, so slide 12 can't split stock by product line.",
+  "Odor Eliminator replenishment date.",
+  "BF/CM deal and coupon plan.",
+  "Review tracking and Brand Analytics (search query) data for Canada: none in Sellerise."
+ ]
+}

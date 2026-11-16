@@ -1,14 +1,14 @@
 {
- "asOf": "Nov 2, 2026",
+ "asOf": "Nov 9, 2026",
  "ytd": 3139.6,
  "units": 171,
- "shipments": 62,
+ "shipments": 66,
  "receiving": 20,
- "closed": 38,
- "missing": 244,
+ "closed": 41,
+ "missing": 364,
  "receiveRate": 98.9,
  "recoveryRate": 99.0,
- "resolved": 41,
+ "resolved": 44,
  "mtd": 191.17,
  "mtdUnits": 8,
  "monthly": [
@@ -69,6 +69,10 @@
   [
    "Inbound Shipment Shortage",
    890.94
+  ],
+  [
+   "Reimbursement",
+   410.14
   ],
   [
    "Lost_Warehouse",
@@ -482,6 +486,24 @@
    "status": "Reimbursed",
    "units": 1,
    "value": 14.7
+  },
+  {
+   "id": "22454827151",
+   "date": "Oct 7, 2026",
+   "type": "Reimbursement",
+   "note": "Amazon completed the review of shipment FBA19KXFB7V0 and initiated reimbursement ID 23687071351 for missing items.",
+   "status": "Reimbursed",
+   "units": 12,
+   "value": 112.8
+  },
+  {
+   "id": "22487563251",
+   "date": "Oct 9, 2026",
+   "type": "—",
+   "note": "Amazon confirmed 32 units were missing and initiated a reimbursement of 289.60 USD.",
+   "status": "—",
+   "units": 5,
+   "value": 43.5
   }
  ]
 }
