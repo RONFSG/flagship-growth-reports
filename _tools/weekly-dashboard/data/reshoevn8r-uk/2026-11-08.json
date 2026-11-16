@@ -1,0 +1,204 @@
+{
+  "_source": "Sellerise MCP, account Reshoevn8r - UK, marketplace GB, targetCurrency GBP. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-16.",
+  "week": {
+    "start": "2026-11-08",
+    "end": "2026-11-14"
+  },
+  "prevWeek": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "current": {
+    "revenue": 1971.95,
+    "salesTaxes": 325.51,
+    "units": 78,
+    "ppcSpend": 853.05,
+    "ppcSales": 1204.16,
+    "ppcClicks": 541,
+    "ppcImpressions": 474273,
+    "ppcOrders": 54
+  },
+  "prev": {
+    "revenue": 2435.89,
+    "salesTaxes": 412.34,
+    "units": 99,
+    "ppcSpend": 933.55,
+    "ppcSales": 1238.28,
+    "ppcClicks": 543,
+    "ppcImpressions": 425846,
+    "ppcOrders": 58
+  },
+  "daily": [
+    {
+      "date": "2026-11-08",
+      "revenue": 239.98,
+      "salesTaxes": 40.01
+    },
+    {
+      "date": "2026-11-09",
+      "revenue": 249.93,
+      "salesTaxes": 41.66
+    },
+    {
+      "date": "2026-11-10",
+      "revenue": 316.92,
+      "salesTaxes": 52.81
+    },
+    {
+      "date": "2026-11-11",
+      "revenue": 185.88,
+      "salesTaxes": 30.98
+    },
+    {
+      "date": "2026-11-12",
+      "revenue": 287.55,
+      "salesTaxes": 47.92
+    },
+    {
+      "date": "2026-11-13",
+      "revenue": 449.18,
+      "salesTaxes": 71.71
+    },
+    {
+      "date": "2026-11-14",
+      "revenue": 242.51,
+      "salesTaxes": 40.42
+    }
+  ],
+  "products": [
+    {
+      "asin": "B08CSXXX5M",
+      "title": "RESHOEVN8R Essential Kit - Shoe Cleaner Set for Sneakers & Leather",
+      "cur": {
+        "revenue": 483.4,
+        "salesTaxes": 80.52,
+        "units": 15,
+        "sessions": 207
+      },
+      "prev": {
+        "revenue": 774.08,
+        "salesTaxes": 124.75,
+        "units": 25,
+        "sessions": 300
+      }
+    },
+    {
+      "asin": "B08RS7P59K",
+      "title": "RESHOEVN8R Shoe Cleaner Kit - Sneakers, Mesh, Canvas, Suede, Knit, Leather",
+      "cur": {
+        "revenue": 367.92,
+        "salesTaxes": 61.36,
+        "units": 8,
+        "sessions": 159
+      },
+      "prev": {
+        "revenue": 394.88,
+        "salesTaxes": 68.91,
+        "units": 9,
+        "sessions": 152
+      }
+    },
+    {
+      "asin": "B0CTGGJ98X",
+      "title": "RESHOEVN8R Refresh Kit - Routine Shoe Cleaner Set, All Materials",
+      "cur": {
+        "revenue": 295.21,
+        "salesTaxes": 49.16,
+        "units": 15,
+        "sessions": 160
+      },
+      "prev": {
+        "revenue": 173.97,
+        "salesTaxes": 29.94,
+        "units": 9,
+        "sessions": 156
+      }
+    },
+    {
+      "asin": "B0FCKD54WY",
+      "title": "RESHOEVN8R All-Natural Sneaker Cleaning Solution, 16oz Bottle",
+      "cur": {
+        "revenue": 284.68,
+        "salesTaxes": 47.42,
+        "units": 11,
+        "sessions": 47
+      },
+      "prev": {
+        "revenue": 303.57,
+        "salesTaxes": 52.61,
+        "units": 12,
+        "sessions": 56
+      }
+    },
+    {
+      "asin": "B08TFDN7F3",
+      "title": "RESHOEVN8R Waterproof Shoe Spray - Rain & Stain Protector, 6.5oz",
+      "cur": {
+        "revenue": 129.33,
+        "salesTaxes": 18.43,
+        "units": 7,
+        "sessions": 65
+      },
+      "prev": {
+        "revenue": 218.63,
+        "salesTaxes": 37.86,
+        "units": 12,
+        "sessions": 68
+      }
+    },
+    {
+      "asin": "B08B5HQXJ5",
+      "title": "RESHOEVN8R Original Kit - Versatile Shoe Cleaner Set, All Materials",
+      "cur": {
+        "revenue": 113.28,
+        "salesTaxes": 18.9,
+        "units": 6,
+        "sessions": 112
+      },
+      "prev": {
+        "revenue": 127.46,
+        "salesTaxes": 22.05,
+        "units": 7,
+        "sessions": 98
+      }
+    },
+    {
+      "asin": "B08H5XPWQD",
+      "title": "RESHOEVN8R Dry Suede Kit - Nubuck & Suede Cleaner Set",
+      "cur": {
+        "revenue": 99.4,
+        "salesTaxes": 16.56,
+        "units": 5,
+        "sessions": 41
+      },
+      "prev": {
+        "revenue": 98.41,
+        "salesTaxes": 16.55,
+        "units": 5,
+        "sessions": 50
+      }
+    },
+    {
+      "asin": "B08DNG8XQZ",
+      "title": "RESHOEVN8R All-Natural Shoe Cleaning Solution, 8oz - Sneaker Care",
+      "cur": {
+        "revenue": 94.4,
+        "salesTaxes": 15.75,
+        "units": 5,
+        "sessions": 64
+      },
+      "prev": {
+        "revenue": 146.33,
+        "salesTaxes": 25.31,
+        "units": 8,
+        "sessions": 69
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights \u2014** Reshoevn8r UK delivered $1,646 in total sales for Week 46 on 78 units, versus $2,023 the prior week (-18.6% WoW). The Refresh Kit was the standout at $246 (+70.8%) on 15 units, with its CVR up +62.5% to 9.4%, and the 16oz Cleaning Solution converted at a strong 23.4% (+9.2%). Friday, Nov 13 was the peak day at $377.",
+    "**Metrics to Watch \u2014** Organic sales eased to $442 (-43.7% WoW), driving most of the softer week. The Essential Kit came in at $402 (-38.0%) as sessions fell -31.0% to 207, and the Waterproof Shoe Spray slipped to $110 (-38.7%). The Shoe Cleaner Kit held steady at $306 (-6.0%) with sessions up +4.6% to 159, giving us a stable base to rebuild from.",
+    "**Ad Spend Efficiency \u2014** Ad spend came down to $853 from $933 while PPC revenue held at $1,204 (-2.8%), improving ROAS to 1.41x from 1.33x. ACOS is 70.8% and TACoS is 51.8% (prior 46.13%) as organic sales softened, with ad CVR at 9.98% on a 0.11% ad CTR.",
+    "**Actions This Week \u2014** We will restore traffic to the Essential Kit and Waterproof Shoe Spray with targeted Sponsored Products campaigns, and shift budget toward the Refresh Kit and 16oz Cleaning Solution where conversion is strongest. We will also trim high-ACOS search terms to keep improving on the 1.41x ROAS and test new ad creative to lift ad CTR above 0.11% heading into the holiday season."
+  ]
+}
