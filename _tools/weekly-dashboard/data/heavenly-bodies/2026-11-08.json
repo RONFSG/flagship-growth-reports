@@ -1,0 +1,156 @@
+{
+  "_source": "Sellerise MCP, account Heavenly Bodies Studio, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-16.",
+  "week": {
+    "start": "2026-11-08",
+    "end": "2026-11-14"
+  },
+  "prevWeek": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "current": {
+    "revenue": 9057.25,
+    "salesTaxes": 610.78,
+    "units": 150,
+    "ppcSpend": 749.93,
+    "ppcSales": 1916,
+    "ppcClicks": 1165,
+    "ppcImpressions": 310865,
+    "ppcOrders": 33
+  },
+  "prev": {
+    "revenue": 10772.3,
+    "salesTaxes": 729.69,
+    "units": 184,
+    "ppcSpend": 607.35,
+    "ppcSales": 2256,
+    "ppcClicks": 1023,
+    "ppcImpressions": 277817,
+    "ppcOrders": 39
+  },
+  "daily": [
+    {
+      "date": "2026-11-08",
+      "revenue": 1105.35,
+      "salesTaxes": 75.36
+    },
+    {
+      "date": "2026-11-09",
+      "revenue": 1699.07,
+      "salesTaxes": 120.07
+    },
+    {
+      "date": "2026-11-10",
+      "revenue": 1397.91,
+      "salesTaxes": 96.42
+    },
+    {
+      "date": "2026-11-11",
+      "revenue": 1271.3,
+      "salesTaxes": 96.31
+    },
+    {
+      "date": "2026-11-12",
+      "revenue": 1196.89,
+      "salesTaxes": 78.39
+    },
+    {
+      "date": "2026-11-13",
+      "revenue": 1100.12,
+      "salesTaxes": 76.12
+    },
+    {
+      "date": "2026-11-14",
+      "revenue": 1286.61,
+      "salesTaxes": 68.11
+    }
+  ],
+  "products": [
+    {
+      "asin": "B0HB125M7H",
+      "title": "Heavenly Bodies Tarot: Deck and Hardback Guidebook (Deluxe Boxset) [Hardcover] Lily Ashwell and Blu",
+      "cur": {
+        "revenue": 7396.05,
+        "salesTaxes": 500.08,
+        "units": 126,
+        "sessions": 1986
+      },
+      "prev": {
+        "revenue": 8932.84,
+        "salesTaxes": 600.7,
+        "units": 153,
+        "sessions": 2770
+      }
+    },
+    {
+      "asin": "B0HB19P39M",
+      "title": "Heavenly Bodies Astrology: Deck and Hardback Guidebook (Deluxe Boxset) [Hardcover] Lily Ashwell",
+      "cur": {
+        "revenue": 670.84,
+        "salesTaxes": 45.34,
+        "units": 14,
+        "sessions": 461
+      },
+      "prev": {
+        "revenue": 1094.54,
+        "salesTaxes": 72.17,
+        "units": 23,
+        "sessions": 498
+      }
+    },
+    {
+      "asin": "B0HB6KJXPX",
+      "title": "Heavenly Bodies Tarot & Astrology: Deck and Hardback Guidebook (Deluxe Boxset) - 2 pack [Hardcover] Lily Ashwell and Blu",
+      "cur": {
+        "revenue": 617.75,
+        "salesTaxes": 43.75,
+        "units": 7,
+        "sessions": 76
+      },
+      "prev": {
+        "revenue": 618.97,
+        "salesTaxes": 47.87,
+        "units": 7,
+        "sessions": 85
+      }
+    },
+    {
+      "asin": "B0HB783R1K",
+      "title": "Heavenly Bodies Tarot: Deck and Hardback Guidebook (Deluxe Boxset) - 3 pack [Hardcover] Lily Ashwell and Blu",
+      "cur": {
+        "revenue": 372.61,
+        "salesTaxes": 21.61,
+        "units": 3,
+        "sessions": 36
+      },
+      "prev": {
+        "revenue": 125.95,
+        "salesTaxes": 8.95,
+        "units": 1,
+        "sessions": 37
+      }
+    },
+    {
+      "asin": "B0HB73ZMDP",
+      "title": "Heavenly Bodies Astrology: Deck and Hardback Guidebook (Deluxe Boxset) - 3 pack [Hardcover] Lily Ashwell",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 37
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 30
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights \u2014** Heavenly Bodies generated $8,446 in total sales in Week 46 on 150 units, with the Tarot Deluxe Boxset leading at $6,895 and improving its conversion to 6.3% (+14.9%). The Tarot 3-pack grew to $351 (+200.0%) and the Tarot & Astrology 2-pack held steady at $574 (+0.5%). Monday, Nov 9 was the peak day at $1,579.",
+    "**Metrics to Watch \u2014** Total sales eased 15.9% from $10,042 the prior week, mainly because Tarot Boxset sessions fell 28.3% to 1986. The Astrology Boxset dipped to $625 (-38.8%) with conversion at 3.0%. Our focus is rebuilding traffic to both decks so the stronger Tarot conversion turns into more sales.",
+    "**Ad Spend Efficiency \u2014** Ad spend of $749 generated $1,916 in PPC revenue for a 2.55x ROAS (prior 3.71x) and 39.1% ACOS, with TACoS a lean 8.9%. Ad CTR is 0.37% and ad conversion is 2.83% of clicks, so tightening targeting toward high-intent tarot and astrology gift searches is the clearest path back toward last week's ROAS.",
+    "**Actions This Week \u2014** We will shift budget toward the best-converting Tarot Boxset keywords, add negatives on clicks that are not converting, and test new Sponsored Brand ad creative to lift the 0.37% ad CTR. We will also build gift-focused campaigns for the bundle packs, following the Tarot 3-pack's +200.0% week, as we head into the holiday season."
+  ]
+}
