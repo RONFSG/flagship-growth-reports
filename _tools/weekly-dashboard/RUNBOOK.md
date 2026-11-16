@@ -20,9 +20,22 @@ All Sellerise calls use `accountSearch`, `marketplaces`, `targetCurrency` from b
 4. Write `data/<slug>/<weekStart>.json` (copy `data/opopop/2026-10-25.json` for the shape), `insights: null`.
 5. `python3 _tools/weekly-dashboard/build.py <slug> <weekStart> --summary` and write the 4 insights from that output
    only (Weekly Highlights / Metrics to Watch / Ad Spend Efficiency / Actions This Week, `**Label —** text`).
-   Rules from the old prompt: positive, action-focused tone; specific numbers copied from the summary; CTR is ad CTR
-   (never suggest listing/image A/B tests; ad creative tests are fine); never mention Prime Day or any event unless
-   it really happened in the week or prior week.
+   Rules:
+   - **Tone:** positive and action-focused throughout; frame every drop with a "why" and a silver lining.
+   - **Specific numbers:** always copy exact figures from the --summary output; never invent or round differently.
+   - **CTR** = ad CTR only (clicks ÷ impressions); never suggest listing/image A/B tests; ad creative tests are fine.
+   - **Never mention** Prime Day or any seasonal event unless it actually fell in the current or prior week.
+   - **Weekly Highlights:** lead with the strongest result (organic growth, top SKU lift, peak day). Celebrate wins first.
+   - **Metrics to Watch:** when total sales or a key SKU is down, always explain the primary driver (e.g. reduced ad
+     spend, fewer ad impressions, PPC pullback) before citing the number. Then note what held up or improved (organic,
+     ROAS, efficiency). Frame as "controlled adjustment" or "efficiency-driven" rather than a plain decline. End with
+     one forward-looking sentence about what we are doing to bring it back.
+     Example pattern: "The easing in overall sales was primarily driven by a [X]% reduction in ad spend — a deliberate
+     efficiency move — while organic revenue held at $Y. We are focusing on [specific SKU/action] to restore volume."
+   - **Ad Spend Efficiency:** when ROAS improved or TACoS fell, lead with that win. When both worsened, explain what
+     is being corrected and why the spend level was set where it was.
+   - **Actions This Week:** 2–3 concrete, specific actions tied directly to the numbers above (SKU name, metric target,
+     tactic). Never generic. Must feel like a real plan, not boilerplate.
 6. `python3 _tools/weekly-dashboard/build.py <slug> <weekStart>` → writes `<slug>-weekly/index.html`.
    Screenshot it and check the numbers before pushing.
 7. Commit only `<slug>-weekly/index.html` and `_tools/weekly-dashboard/`, push to main.
