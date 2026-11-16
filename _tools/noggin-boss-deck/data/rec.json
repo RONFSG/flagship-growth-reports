@@ -1,0 +1,17 @@
+{
+ "asOf": "",
+ "ytd": 0.0,
+ "units": 0,
+ "shipments": 0,
+ "receiving": 0,
+ "closed": 0,
+ "missing": 0,
+ "receiveRate": 0.0,
+ "recoveryRate": 0.0,
+ "resolved": 0,
+ "mtd": null,
+ "mtdUnits": null,
+ "monthly": [],
+ "byType": [],
+ "cases": []
+}

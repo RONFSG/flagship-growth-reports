@@ -1,7 +1,7 @@
 {
  "brand": "Noggin Boss",
  "slug": "noggin-boss",
- "account": "Noggin Boss",
+ "account": "NogginBoss",
  "marketplace": "US",
  "currency": "USD",
  "money": "$",
@@ -14,7 +14,22 @@
  ],
  "competitors": [],
  "otherKey": "pr",
- "sqpAsin": "",
- "names": {},
+ "sqpAsin": "B0HNLQ7P6J",
+ "names": {
+  "B0FSPQMVVY": "Fitted Cap – Black",
+  "B0HNLQ7P6J": "Party Hat – Grey L/XL",
+  "B0HNM61VLB": "Party Hat – Navy L/XL",
+  "B0HNM4VGMT": "Oversized Hat – Powder Blue S/M",
+  "B0HNL9G87H": "Oversized Hat – Royal L/XL",
+  "B0HNL9TMNT": "Oversized Hat – Royal S/M",
+  "B0HNMPT4T6": "Oversized Hat – Maroon L/XL",
+  "B0HNLXRG3B": "Party Hat – Purple L/XL",
+  "B0HNMDCRS8": "Oversized Hat – Burnt Orange S/M",
+  "B0HNMD984Y": "Oversized Hat – Brown L/XL",
+  "B0HNM5HTZQ": "Oversized Hat – Camo L/XL",
+  "B0HNMRXFNG": "Oversized Hat – Pink S/M",
+  "B0HNMBTY31": "Party Hat – Red S/M",
+  "B0HNLWFHXQ": "Oversized Hat – Yellow L/XL"
+ },
  "_about": "Brand settings for the shared weekly deck (see _tools/BRAND_DECK_RUNBOOK.md). invPage/recPage empty = no sheet page published yet. brandTerms = words that make a search 'branded'. sqpAsin is filled by deck.py init. names = short product names by ASIN."
 }

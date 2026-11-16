@@ -1,0 +1,71 @@
+{
+  "_week": "2026-11-09 to 2026-11-15 (Week 46), Noggin Boss first deck.",
+  "week_story": [
+    "Revenue fell to $171 from $435 (-61%): 2 orders vs 5, both Royal oversized hats (L/XL $91, S/M $80).",
+    "Ad spend rose to $209 from $45 as the new campaigns ran a full week, so net payout went to -$58."
+  ],
+  "refunds_title": "No refunds this week",
+  "refunds": [
+    "No refunds this week or last week."
+  ],
+  "pacing_reco": "November is at $686 through the 15th, already above October's $627; ads need to convert before spend grows.",
+  "ads_context": [
+    "This was the first full week of the new campaigns: $209 spend for $150 ad sales (139% ACoS).",
+    "Last week ran at 19.6% ACoS on $45 spend, so most of the new spend has not converted yet."
+  ],
+  "ads_strategy": [
+    "Category keywords: $119 spend, 1 order (158% ACoS).",
+    "Branded keywords: $90 spend, 1 order (120% ACoS); Sponsored Brands spent $85 with no sales."
+  ],
+  "bid_moves": [
+    "Lower or pause “funny hat” (phrase): $54, 63 clicks, no sales.",
+    "Cut Sponsored Brands “noggin boss” phrase: $38, 27 clicks, no sales.",
+    "Keep “oversized hat” and “noggin boss giant hat” (exact): 1 order each."
+  ],
+  "coupons": [
+    "This week: no coupon redemptions.",
+    "Last week: no coupon redemptions."
+  ],
+  "promotions": [
+    "No promotion orders or promotional discounts this week or last week."
+  ],
+  "events": [
+    "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+    "Game-day and holiday gifting searches peak into December.",
+    "Deal and coupon set-up deadlines: to confirm with the account team."
+  ],
+  "reviews_title": "No review data in Sellerise",
+  "reviews_body": [
+    "Sellerise returned no review records or rating trend for Noggin Boss over the last 90 days.",
+    "The listings are new, so there may simply be no reviews yet."
+  ],
+  "reviews_reco": [
+    "Turn on review requests for every order so the first ratings land before BF/CM.",
+    "Check star rating and review count on the Royal hats, the only items selling."
+  ],
+  "recommendations": [
+    ["Ads", "Pause or cut bids on “funny hat” phrase and the Sponsored Brands “noggin boss” phrase targets (no sales, $92).", "Ads team", "This week"],
+    ["Ads", "Negate the 5 no-sale search terms flagged (e.g. “funny hats”, “oversized hats”) after review.", "Ads team", "This week"],
+    ["Ads", "Keep exact “oversized hat” and “noggin boss giant hat”, which each brought an order.", "Ads team", "Ongoing"],
+    ["Ads", "Cap weekly spend near last week's level until ACoS is back under 35%.", "Ads team", "This week"],
+    ["Listings", "Review the 6 actionable Sellerise alerts, incl. 3 Buy Box losses.", "Account team", "This week"],
+    ["Inventory", "Publish the inventory sheet so stock shows on slide 12.", "Account team", "Next week"],
+    ["Marketing", "Plan a BF/CM coupon on the oversized hats and confirm deadlines.", "Account team", "By Nov 20"]
+  ],
+  "position": [
+    "November to date: $686 in 15 days, ahead of October's $627 for the full month.",
+    "This week slowed to $171 while ad spend jumped to $209."
+  ],
+  "next_steps": [
+    "Cut no-sale ad targets.",
+    "Keep the two converting exact keywords.",
+    "Fix Buy Box alerts.",
+    "Set up BF/CM coupon."
+  ],
+  "data_ask": [
+    "Inventory sheet / FBA stock by hat.",
+    "Product costs (COGS) in Sellerise.",
+    "BF/CM deal and coupon plan.",
+    "Review tracking turned on."
+  ]
+}
