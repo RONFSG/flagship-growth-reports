@@ -1,0 +1,73 @@
+{
+  "_week": "2026-11-09 to 2026-11-15 (Week 46). Written from this week's deck_data.json and extra.json.",
+  "week_story": [
+    "Sales rose 9% to $2,250 on 31 orders (29 the week before); Saturday Nov 14 was the best day at $688 and 9 orders.",
+    "Tuesday Nov 10 had no sales while ads spent $55. Flavor Strap Cuff doubled to $334; Pro Cuff fell 18% to $253."
+  ],
+  "refunds_title": "Refunds still high",
+  "refunds": [
+    "Refunds were $339 on 6 units (19.4% of orders), vs $288 on 6 units (20.7%) the week before. Second week near 20%."
+  ],
+  "pacing_reco": "November is $4,555 through Nov 15 and pacing to about $9.1K, just under October ($9.6K) and well below last November ($24.8K); Nov 1–15 last year did $10,969 with no ads.",
+  "ads_context": [
+    "Ad spend rose 17% to $516 and ad sales rose 20% to $1,135.",
+    "ACoS eased to 45.5% from 46.7%; TACoS rose to 23.0% from 21.4%."
+  ],
+  "ads_strategy": [
+    "Branded keywords spent $108 for $490 and 7 orders (22.0% ACoS).",
+    "Category keywords spent $209 for $285 (73.2% ACoS); auto targeting spent $60 with no sales."
+  ],
+  "bid_moves": [
+    "Keep “jax batting gloves” exact funded: $78.20 for $499.93 and 7 orders.",
+    "Cut the SB phrase “jax athletic”: $71.05, 53 clicks, no sales.",
+    "Cut bids on “batting gloves” and “bruce bolt batting gloves”: $54.67 spent, no sales."
+  ],
+  "coupons": [
+    "This week: no coupon redemptions.",
+    "Last week: no coupon redemptions.",
+    "November to date: no coupon redemptions."
+  ],
+  "promotions": [
+    "This week: no promotion orders (2 orders and $22.50 last week).",
+    "November to date: 2 promotion orders, $22.50 in discounts. BF/CM is the next offer window."
+  ],
+  "events": [
+    "Black Friday / Cyber Monday: Nov 27 – Nov 30, under two weeks away.",
+    "Deal and coupon set-up deadlines: confirm with the account team now.",
+    "Holiday gifting runs after BF/CM; keep branded ads funded through December."
+  ],
+  "reviews_title": "No review data in Sellerise",
+  "reviews_body": [
+    "Sellerise returned no review records, rating trend or negative reviews for JAX Athletics over the last 90 days.",
+    "That means the review tracker isn't pulling for this account, not that there were no reviews."
+  ],
+  "reviews_reco": [
+    "Turn on review tracking for JAX Athletics in Sellerise so the deck can show rating and review count.",
+    "With refunds near 20% two weeks running, read the newest 1–3 star reviews for sizing or fit issues."
+  ],
+  "recommendations": [
+    ["Ads", "Pause or cut the 18 campaign groups that spent $214 with no sales, starting with Strap Cuff category phrase ($52).", "Ads team", "This week"],
+    ["Ads", "Cut or negate the SB phrase “jax athletic”: $71 spent, 53 clicks, no sales.", "Ads team", "This week"],
+    ["Ads", "Lower category bids on “batting gloves” and “bruce bolt batting gloves” ($55, no sales).", "Ads team", "This week"],
+    ["Ads", "Add “jax strap cuff batting gloves” and “baseball & softball batting gloves” as exact keywords (1 order each).", "Ads team", "This week"],
+    ["Ads", "Shift budget to branded exact, which returned $490 on $108 (22.0% ACoS).", "Ads team", "Next 2 weeks"],
+    ["Marketing", "Lock BF/CM offers and confirm deal and coupon deadlines for Nov 27–30.", "Account team", "By Nov 18"],
+    ["Account health", "Check return reasons behind the 19.4% refund rate and turn on review tracking.", "Account team", "This week"]
+  ],
+  "position": [
+    "November is $4,555 through Nov 15, pacing to about $9.1K (October: $9.6K).",
+    "Sales grew 9% this week; ad sales rose 20% and ACoS eased to 45.5%."
+  ],
+  "next_steps": [
+    "Cut no-sale campaigns and the “jax athletic” SB phrase.",
+    "Harvest the converting branded searches.",
+    "Lock BF/CM offers this week.",
+    "Look into the refund rate."
+  ],
+  "data_ask": [
+    "Inventory sheet page for JAX (stock and inbound by size).",
+    "BF/CM and holiday deal plan.",
+    "Review tracking turned on in Sellerise.",
+    "Search query report not available yet for this week."
+  ]
+}

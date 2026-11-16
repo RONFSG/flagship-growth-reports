@@ -1,0 +1,418 @@
+{
+ "_source": "Sellerise MCP, account JAX Atheltics, marketplace US, pulled 2026-11-16 (Monday-Sunday weeks; 4-week table from the saved weekly totals)",
+ "weeks": [
+  {
+   "label": "Oct 19 – 25",
+   "revenue": 1473.04,
+   "units": 21,
+   "orders": 21,
+   "impressions": 201004,
+   "clicks": 741,
+   "refundUnits": 7,
+   "refundRate": 33.33,
+   "spend": 482.16,
+   "adSales": 699.91,
+   "acos": 68.89,
+   "tacos": 32.73
+  },
+  {
+   "label": "Oct 26 – Nov 1",
+   "revenue": 1845.41,
+   "units": 25,
+   "orders": 25,
+   "impressions": 155594,
+   "clicks": 485,
+   "refundUnits": 3,
+   "refundRate": 12.0,
+   "spend": 365.19,
+   "adSales": 1054.85,
+   "acos": 34.62,
+   "tacos": 19.79
+  },
+  {
+   "label": "Nov 2 – 8",
+   "revenue": 2065.0,
+   "units": 29,
+   "orders": 29,
+   "impressions": 192580,
+   "clicks": 627,
+   "refundUnits": 6,
+   "refundRate": 20.69,
+   "spend": 441.45,
+   "adSales": 944.86,
+   "acos": 46.72,
+   "tacos": 21.38
+  },
+  {
+   "label": "Nov 9 – 15",
+   "revenue": 2250.46,
+   "units": 31,
+   "orders": 31,
+   "impressions": 194313,
+   "clicks": 657,
+   "refundUnits": 6,
+   "refundRate": 19.35,
+   "spend": 516.37,
+   "adSales": 1134.84,
+   "acos": 45.5,
+   "tacos": 22.95,
+   "net": 808.66,
+   "refunds": 339.22,
+   "adOrders": 14,
+   "cpc": 0.79,
+   "cvr": 2.13
+  }
+ ],
+ "mtd": {
+  "through": "2026-11-15",
+  "days": 15,
+  "revenue": 4555.43,
+  "units": 63,
+  "orders": 63,
+  "spend": 1004.98,
+  "adSales": 2154.69,
+  "acos": 46.64,
+  "tacos": 22.06,
+  "refundRate": 22.22
+ },
+ "mtdLY": {
+  "revenue": 10968.8,
+  "units": 162,
+  "orders": 155,
+  "spend": 0,
+  "adSales": 0,
+  "acos": 0,
+  "tacos": 0,
+  "refundRate": 5.16
+ },
+ "daily": [
+  [
+   "2026-11-02",
+   309.08,
+   55.5,
+   74.99,
+   4,
+   1
+  ],
+  [
+   "2026-11-03",
+   360.75,
+   71.82,
+   194.97,
+   5,
+   3
+  ],
+  [
+   "2026-11-04",
+   295.33,
+   71.57,
+   0,
+   4,
+   0
+  ],
+  [
+   "2026-11-05",
+   0,
+   71.07,
+   0,
+   0,
+   0
+  ],
+  [
+   "2026-11-06",
+   160.95,
+   46.01,
+   24.99,
+   2,
+   1
+  ],
+  [
+   "2026-11-07",
+   453.24,
+   61.56,
+   284.96,
+   6,
+   4
+  ],
+  [
+   "2026-11-08",
+   485.65,
+   63.92,
+   364.95,
+   8,
+   5
+  ],
+  [
+   "2026-11-09",
+   166.83,
+   51.95,
+   149.98,
+   2,
+   2
+  ],
+  [
+   "2026-11-10",
+   0,
+   54.77,
+   149.98,
+   0,
+   0
+  ],
+  [
+   "2026-11-11",
+   393.64,
+   79.18,
+   0,
+   5,
+   0
+  ],
+  [
+   "2026-11-12",
+   272.04,
+   71.59,
+   0,
+   4,
+   0
+  ],
+  [
+   "2026-11-13",
+   392.91,
+   69.55,
+   269.96,
+   6,
+   4
+  ],
+  [
+   "2026-11-14",
+   688.27,
+   91.93,
+   349.95,
+   9,
+   5
+  ],
+  [
+   "2026-11-15",
+   336.77,
+   97.4,
+   214.97,
+   5,
+   3
+  ]
+ ],
+ "searchTerms": {
+  "total": 137,
+  "winners": 2,
+  "harvest": 0,
+  "negative": 2,
+  "noPurchase": 3,
+  "rows": [
+   [
+    "jax batting gloves",
+    "SP",
+    5161,
+    73,
+    5,
+    61.26,
+    329.95
+   ],
+   [
+    "jax batting gloves",
+    "SB",
+    483,
+    25,
+    3,
+    32.23,
+    209.97
+   ],
+   [
+    "jax batting gloves youth",
+    "SP",
+    628,
+    19,
+    1,
+    11.48,
+    79.99
+   ],
+   [
+    "jax strap cuff batting gloves",
+    "SB",
+    2,
+    1,
+    1,
+    0.39,
+    74.99
+   ],
+   [
+    "jax athletic",
+    "SB",
+    94850,
+    40,
+    0,
+    57.57,
+    0
+   ],
+   [
+    "jax batting gloves youth",
+    "SB",
+    79,
+    6,
+    0,
+    6.32,
+    0
+   ],
+   [
+    "jax batting gloves adult",
+    "SB",
+    48,
+    6,
+    0,
+    5.52,
+    0
+   ],
+   [
+    "jax webbed batting gloves",
+    "SB",
+    10,
+    4,
+    0,
+    3.1,
+    0
+   ]
+  ],
+  "category": [
+   [
+    "baseball batting gloves",
+    "SP",
+    1068,
+    15,
+    1,
+    12.96,
+    74.99
+   ],
+   [
+    "baseball & softball batting gloves",
+    "SB",
+    1,
+    1,
+    1,
+    1.37,
+    59.99
+   ],
+   [
+    "bruce bolt batting gloves",
+    "SP",
+    2905,
+    17,
+    0,
+    15.68,
+    0
+   ],
+   [
+    "batting gloves men",
+    "SP",
+    711,
+    9,
+    0,
+    6.7,
+    0
+   ],
+   [
+    "bruce bolt batting gloves",
+    "SB",
+    384,
+    7,
+    0,
+    8.25,
+    0
+   ]
+  ]
+ },
+ "targets": {
+  "total": 146,
+  "winners": 9,
+  "needsAttention": 21,
+  "highAcos": 0,
+  "noSales": 5,
+  "lowCtr": 7,
+  "rows": [
+   [
+    "jax athletic (SB)",
+    "Phrase",
+    "Brand",
+    71.05,
+    0,
+    null,
+    53,
+    0
+   ],
+   [
+    "batting gloves",
+    "Phrase",
+    "Category",
+    37.01,
+    0,
+    null,
+    39,
+    0
+   ],
+   [
+    "baseball batting gloves (SB)",
+    "Phrase",
+    "Category",
+    24.25,
+    0,
+    null,
+    23,
+    0
+   ],
+   [
+    "bruce bolt batting gloves",
+    "Phrase",
+    "Category",
+    17.66,
+    0,
+    null,
+    19,
+    0
+   ],
+   [
+    "jax batting gloves",
+    "Exact",
+    "Brand",
+    11.83,
+    0,
+    null,
+    16,
+    0
+   ]
+  ]
+ },
+ "reviews": {
+  "available": false
+ },
+ "alerts": {
+  "total": 3038,
+  "actionable": 871,
+  "critical": 144,
+  "warning": 727,
+  "byType": {
+   "Listing images": 1298,
+   "Parent ASIN changed": 715,
+   "Bullets": 509,
+   "Title": 147,
+   "Dimensions": 87,
+   "Buy Box gained": 84,
+   "Suppression": 39,
+   "Description": 35,
+   "Inactive": 33,
+   "Category": 32,
+   "Buy Box lost": 18,
+   "Child ASINs changed": 12,
+   "Badge gained": 10,
+   "Badge lost": 9,
+   "Title differentiation": 7,
+   "Unsuppressed": 2,
+   "Listing price": 1
+  }
+ }
+}
