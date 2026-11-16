@@ -1,0 +1,71 @@
+{
+ "_week": "2026-11-09 to 2026-11-15 (Week 46). Written fresh from this week's numbers.",
+ "week_story": [
+  "Sales fell 22.5% to $1,608 on 53 units (69 the week before).",
+  "Black Regular more than doubled to $460 (16 units vs 7); Blue fell 48% to $273 and Purple 54% to $151."
+ ],
+ "refunds_title": "Refunds rose",
+ "refunds": [
+  "Refunds were $155 (7 units, 14.0% rate) vs $47 (2 units, 3.2%) last week.",
+  "Blue had 4 refunded units ($87)."
+ ],
+ "pacing_reco": "November is at $3,903 through Nov 15, a pace of about $7,805 vs October's $8,061 and $1,711 last November. Hold spend near this week's level to finish ahead of last year without losing money on ads.",
+ "ads_context": [
+  "Ad spend fell 65% to $772 from $2,195; ad sales fell 40% to $934.",
+  "ACoS improved from 140.7% to 82.6% and TACoS from 105.7% to 48.0%."
+ ],
+ "ads_strategy": [
+  "Remarketing (SD) dropped to $146 from $999, still with no sales.",
+  "Category keywords: $269 for $489 (54.9% ACoS). Auto: $274 for $214 (128.1%). Branded: $69 for $116."
+ ],
+ "bid_moves": [
+  "Pause the remaining SD remarketing: $146 this week, $0 sales.",
+  "Cut the bottles auto campaign: $166 for 2 orders.",
+  "Raise “icube wrapsulator” exact ($18.53 for 4 orders) and the HydroJug competitor term ($8.68 for 2 orders)."
+ ],
+ "coupons": [
+  "This week: 6 coupon orders (38 last week)."
+ ],
+ "promotions": [
+  "This week: 22 promotion orders and $120 in discounts (vs 22 and $270 last week)."
+ ],
+ "events": [
+  "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+  "Coupon orders fell from 38 to 6: confirm BF/CM coupons and deals now.",
+  "Blue Slim, Purple Slim and the Red & Blue sleeve show 0 on the Oct 26 sheet."
+ ],
+ "reviews_title": "Few review signals",
+ "reviews_body": [
+  "Sellerise shows listing ratings of 4.1 (sleeve family), 3.5 (Regular family) and 5.0 (leather wine tote).",
+  "No reviews dated in the last 90 days."
+ ],
+ "reviews_reco": [
+  "Refunds rose to 14%: read the latest returns and 1–3 star reviews on Blue.",
+  "Set up review tracking for every CaddyO ASIN."
+ ],
+ "recommendations": [
+  ["Ads", "Pause the SD remarketing campaigns: $146 spend, $0 sales this week.", "Ads team", "Today"],
+  ["Ads", "Cut bids or negate in the bottles auto campaign ($166 for 2 orders).", "Ads team", "This week"],
+  ["Ads", "Raise bids on “icube wrapsulator” exact and the HydroJug competitor term (4 and 2 orders, under 17% ACoS).", "Ads team", "This week"],
+  ["Ads", "Add “12oz skinny can cooler insulated” as an exact keyword (2 orders on $1.81).", "Ads team", "This week"],
+  ["Returns", "Check why Blue had 4 refunds; refund rate rose to 14.0%.", "Account team", "This week"],
+  ["Inventory", "Get an updated inventory sheet (still Oct 26) and restock the slims, Red & Blue sleeve and Grey.", "Account team", "By Nov 20"],
+  ["Marketing", "Lock BF/CM coupons and deals for coolers and wine totes (Nov 27–30).", "Account team", "By Nov 20"]
+ ],
+ "position": [
+  "Sales fell 22.5% to $1,608, but ad spend fell 65% to $772.",
+  "Net payout improved to −$354 from −$1,784; TACoS is 48.0%."
+ ],
+ "next_steps": [
+  "Pause no-sale remarketing.",
+  "Trim the bottles auto campaign.",
+  "Check Blue returns.",
+  "Lock BF/CM deals."
+ ],
+ "data_ask": [
+  "Updated inventory sheet (last update Oct 26).",
+  "Inbound plan for the slims and sleeve.",
+  "COGS per item in Sellerise.",
+  "Review tracking for all ASINs."
+ ]
+}
