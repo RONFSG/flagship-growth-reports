@@ -1,0 +1,204 @@
+{
+  "_source": "Sellerise MCP, account JAX Atheltics, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-16.",
+  "week": {
+    "start": "2026-11-08",
+    "end": "2026-11-14"
+  },
+  "prevWeek": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "current": {
+    "revenue": 2399.34,
+    "salesTaxes": 162.17,
+    "units": 34,
+    "ppcSpend": 482.89,
+    "ppcSales": 1284.82,
+    "ppcClicks": 616,
+    "ppcImpressions": 212521,
+    "ppcOrders": 16
+  },
+  "prev": {
+    "revenue": 1819.32,
+    "salesTaxes": 124.56,
+    "units": 24,
+    "ppcSpend": 424.69,
+    "ppcSales": 654.9,
+    "ppcClicks": 598,
+    "ppcImpressions": 171350,
+    "ppcOrders": 10
+  },
+  "daily": [
+    {
+      "date": "2026-11-08",
+      "revenue": 485.65,
+      "salesTaxes": 33.22
+    },
+    {
+      "date": "2026-11-09",
+      "revenue": 166.83,
+      "salesTaxes": 11.85
+    },
+    {
+      "date": "2026-11-10",
+      "revenue": 0,
+      "salesTaxes": 0
+    },
+    {
+      "date": "2026-11-11",
+      "revenue": 393.64,
+      "salesTaxes": 28.69
+    },
+    {
+      "date": "2026-11-12",
+      "revenue": 272.04,
+      "salesTaxes": 17.08
+    },
+    {
+      "date": "2026-11-13",
+      "revenue": 392.91,
+      "salesTaxes": 22.97
+    },
+    {
+      "date": "2026-11-14",
+      "revenue": 688.27,
+      "salesTaxes": 48.36
+    }
+  ],
+  "products": [
+    {
+      "asin": "B0GRPPPVMG",
+      "title": "Jax Strap Cuff Batting Gloves - Blue Raspberry Blast - Small - Right Handed Swing",
+      "cur": {
+        "revenue": 170.78,
+        "salesTaxes": 10.8,
+        "units": 2,
+        "sessions": 11
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0
+      }
+    },
+    {
+      "asin": "B0BZGS5HVT",
+      "title": "JAX Platinum White Strap Cuff Batting Gloves, Leather, Baseball/Softball",
+      "cur": {
+        "revenue": 162.05,
+        "salesTaxes": 12.07,
+        "units": 2,
+        "sessions": 38
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 45
+      }
+    },
+    {
+      "asin": "B0BZGLQQ8J",
+      "title": "JAX Graphite Grey Strap Cuff Batting Gloves, Leather, Baseball/Softball",
+      "cur": {
+        "revenue": 161.3,
+        "salesTaxes": 11.32,
+        "units": 2,
+        "sessions": 95
+      },
+      "prev": {
+        "revenue": 80.24,
+        "salesTaxes": 5.25,
+        "units": 1,
+        "sessions": 85
+      }
+    },
+    {
+      "asin": "B0DNJDT4RF",
+      "title": "JAX Baby Blue Strap Cuff Batting Gloves, Leather, Baseball/Softball",
+      "cur": {
+        "revenue": 159.35,
+        "salesTaxes": 9.37,
+        "units": 2,
+        "sessions": 25
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0
+      }
+    },
+    {
+      "asin": "B0DNJG4WL6",
+      "title": "JAX Pro Cuff Leather Batting Gloves, Baseball/Softball, Pink",
+      "cur": {
+        "revenue": 130.7,
+        "salesTaxes": 10.72,
+        "units": 2,
+        "sessions": 26
+      },
+      "prev": {
+        "revenue": 65.24,
+        "salesTaxes": 5.25,
+        "units": 1,
+        "sessions": 15
+      }
+    },
+    {
+      "asin": "B0GRPS1QHS",
+      "title": "Jax Strap Cuff Batting Gloves - Blue Raspberry Blast - Medium - NO Web (Traditional Batting Gloves)",
+      "cur": {
+        "revenue": 86.59,
+        "salesTaxes": 6.6,
+        "units": 1,
+        "sessions": 5
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0
+      }
+    },
+    {
+      "asin": "B0HKY772LN",
+      "title": "JAX On-Deck Orange Strap Cuff Batting Gloves, Leather, Baseball/Softball",
+      "cur": {
+        "revenue": 86.49,
+        "salesTaxes": 6.5,
+        "units": 1,
+        "sessions": 2
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0
+      }
+    },
+    {
+      "asin": "B0HKY8C5LN",
+      "title": "JAX Big League Berry Strap Cuff Batting Gloves, Leather, Baseball/Softball",
+      "cur": {
+        "revenue": 84.79,
+        "salesTaxes": 4.8,
+        "units": 1,
+        "sessions": 26
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights —** JAX Athletics delivered $2,237 in total sales for Week 46, up 32.0% from $1,694 the prior week, on 34 units. PPC revenue nearly doubled to $1,284 (+96.2%), and Saturday, Nov 14 was the peak day at $639. The Graphite Grey Strap Cuff Batting Gloves reached $149 (+100.0%) and the Pink Pro Cuff Batting Gloves $119 (+100.0%).",
+    "**Metrics to Watch —** Organic sales eased to $952 (-8.4% WoW) and Tuesday, Nov 10 recorded $0 in sales, so daily volume was uneven. The Platinum White Strap Cuff Batting Gloves drew 38 sessions (-15.6%) at a 5.3% conversion rate; we are focused on building steadier day-to-day organic momentum.",
+    "**Ad Spend Efficiency —** Ad spend of $482 (prior $424) generated $1,284 in PPC revenue for a 2.66x ROAS, up from 1.54x, at a 37.6% ACOS. TACoS improved to 21.6% from 25.06%, with a 0.29% ad CTR and a 2.60% ad conversion rate.",
+    "**Actions This Week —** We will shift budget toward the strongest-converting gloves, including the Blue Raspberry Blast Small (18.2% CVR) and Baby Blue Strap Cuff (8.0% CVR), and trim bids on low-converting search terms to keep ACOS moving down from 37.6%. We will also test new Sponsored Product and Sponsored Brand ad creative to lift ad CTR above 0.29% heading into the holiday season."
+  ]
+}
