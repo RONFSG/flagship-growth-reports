@@ -1,0 +1,204 @@
+{
+  "_source": "Sellerise MCP, account SuperMush, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-16.",
+  "week": {
+    "start": "2026-11-08",
+    "end": "2026-11-14"
+  },
+  "prevWeek": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "current": {
+    "revenue": 10260.87,
+    "salesTaxes": 312.02,
+    "units": 472,
+    "ppcSpend": 2297.57,
+    "ppcSales": 2026.85,
+    "ppcClicks": 1340,
+    "ppcImpressions": 290996,
+    "ppcOrders": 95
+  },
+  "prev": {
+    "revenue": 9386.64,
+    "salesTaxes": 333.3,
+    "units": 459,
+    "ppcSpend": 2058.53,
+    "ppcSales": 2565.04,
+    "ppcClicks": 1203,
+    "ppcImpressions": 183742,
+    "ppcOrders": 110
+  },
+  "daily": [
+    {
+      "date": "2026-11-08",
+      "revenue": 1554.15,
+      "salesTaxes": 54.16
+    },
+    {
+      "date": "2026-11-09",
+      "revenue": 1887.3,
+      "salesTaxes": 66.02
+    },
+    {
+      "date": "2026-11-10",
+      "revenue": 1622.36,
+      "salesTaxes": 52.36
+    },
+    {
+      "date": "2026-11-11",
+      "revenue": 1423.34,
+      "salesTaxes": 47.11
+    },
+    {
+      "date": "2026-11-12",
+      "revenue": 1495.3,
+      "salesTaxes": 39.07
+    },
+    {
+      "date": "2026-11-13",
+      "revenue": 833.44,
+      "salesTaxes": 18.7
+    },
+    {
+      "date": "2026-11-14",
+      "revenue": 1444.98,
+      "salesTaxes": 34.6
+    }
+  ],
+  "products": [
+    {
+      "asin": "B0CLN1NQJ3",
+      "title": "SuperMush Daily Sleep Gummies - Melatonin-Free Sleep Aid - 60 Count",
+      "cur": {
+        "revenue": 3767.7,
+        "salesTaxes": 115.96,
+        "units": 129,
+        "sessions": 211
+      },
+      "prev": {
+        "revenue": 3278.75,
+        "salesTaxes": 119.82,
+        "units": 112,
+        "sessions": 245
+      }
+    },
+    {
+      "asin": "B0CLN17M2D",
+      "title": "SuperMush Daily Passion Gummies - Cordyceps, Reishi & Maca Root - 60 Count",
+      "cur": {
+        "revenue": 2072.98,
+        "salesTaxes": 57.42,
+        "units": 71,
+        "sessions": 431
+      },
+      "prev": {
+        "revenue": 1750.04,
+        "salesTaxes": 70.33,
+        "units": 59,
+        "sessions": 452
+      }
+    },
+    {
+      "asin": "B0CLN3LQF6",
+      "title": "SuperMush Daily Energy Gummies - Lion's Mane & Cordyceps - 60 Count",
+      "cur": {
+        "revenue": 1169.09,
+        "salesTaxes": 27.07,
+        "units": 36,
+        "sessions": 114
+      },
+      "prev": {
+        "revenue": 723.47,
+        "salesTaxes": 13.81,
+        "units": 24,
+        "sessions": 90
+      }
+    },
+    {
+      "asin": "B0GLHZKB9Q",
+      "title": "SuperMush Daily Passion Gummies - Cordyceps, Reishi & Maca Root - 10 Count",
+      "cur": {
+        "revenue": 906.73,
+        "salesTaxes": 35.73,
+        "units": 97,
+        "sessions": 768
+      },
+      "prev": {
+        "revenue": 911.95,
+        "salesTaxes": 32.43,
+        "units": 98,
+        "sessions": 888
+      }
+    },
+    {
+      "asin": "B0G6J12SZ8",
+      "title": "SuperMush Daily Sleep Gummies - Melatonin-Free Sleep Aid - 28 Count",
+      "cur": {
+        "revenue": 620.2,
+        "salesTaxes": 22.83,
+        "units": 31,
+        "sessions": 156
+      },
+      "prev": {
+        "revenue": 737.97,
+        "salesTaxes": 27.34,
+        "units": 37,
+        "sessions": 142
+      }
+    },
+    {
+      "asin": "B0G6HMFPMZ",
+      "title": "SuperMush Daily Passion Gummies - Cordyceps, Reishi & Maca Root - 28 Count",
+      "cur": {
+        "revenue": 514.24,
+        "salesTaxes": 17.5,
+        "units": 25,
+        "sessions": 178
+      },
+      "prev": {
+        "revenue": 726.09,
+        "salesTaxes": 31.46,
+        "units": 36,
+        "sessions": 293
+      }
+    },
+    {
+      "asin": "B0F1B3ST2V",
+      "title": "SuperMush Daily Creatine Gummies - Strength & Recovery - 60 Count",
+      "cur": {
+        "revenue": 347.25,
+        "salesTaxes": 3.14,
+        "units": 14,
+        "sessions": 66
+      },
+      "prev": {
+        "revenue": 318.3,
+        "salesTaxes": 4.92,
+        "units": 12,
+        "sessions": 57
+      }
+    },
+    {
+      "asin": "B0G6HZ5Y7V",
+      "title": "SuperMush Daily Energy Gummies - Lion's Mane & Cordyceps - 28 Count",
+      "cur": {
+        "revenue": 280.92,
+        "salesTaxes": 8.06,
+        "units": 14,
+        "sessions": 59
+      },
+      "prev": {
+        "revenue": 96.4,
+        "salesTaxes": 1.45,
+        "units": 5,
+        "sessions": 59
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights \u2014** SuperMush grew total sales +9.9% WoW to $9,948 for Week 46 on 472 units, powered by organic revenue climbing +22.1% to $7,922. The Daily Sleep Gummies 60 Count led at $3,651 (+15.6%) with an excellent 61.1% conversion rate, Daily Passion Gummies 60 Count rose to $2,015 (+20.0%), and Daily Energy Gummies 60 Count jumped to $1,142 (+60.9%). Monday, Nov 9 was the peak day at $1,821.",
+    "**Metrics to Watch \u2014** Advertising efficiency is the key area to tighten: ACOS reached 113.4% and ROAS moved to 0.88x (prior 1.25x), with PPC revenue at $2,026 (-21.0%). Friday, Nov 13 was the softest day at $814, and the Daily Sleep Gummies 28 Count eased to $597 (-15.9%).",
+    "**Ad Spend Efficiency \u2014** Ad spend of $2,297 (prior $2,058) generated $2,026 in PPC revenue, with TACoS at 23.1% (prior 22.74%). Ad CTR was 0.46% and ad conversion was 7.09%, so the opportunity is to shift spend toward the high-converting 60 Count gummies that are already winning organically.",
+    "**Actions This Week \u2014** We will cut bids on search terms that spend without converting and reallocate budget to the Daily Sleep, Passion and Energy 60 Count campaigns to bring ACOS well below 113.4%. We will also test new Sponsored Brand ad creative to lift ad CTR above 0.46% as we head into the holiday season."
+  ]
+}
