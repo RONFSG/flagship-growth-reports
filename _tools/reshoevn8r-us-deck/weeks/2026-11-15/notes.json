@@ -1,0 +1,71 @@
+{
+  "_week": "2026-11-09 to 2026-11-15 (Week 46). Written from this week's numbers.",
+  "week_story": [
+    "Revenue fell 7.5% to $44,287 (from $47,877). Ad spend fell 6.0% to $5,043 but ad sales fell 14.1%, so ACoS rose to 33.8% and TACoS to 11.4%.",
+    "Waterproof Shoe Spray was the only line up (+7.7% to $11,978). Essential Kit fell 10.8% and Signature Kit 13.3%; Mink Oil (-32%) and Dry Suede (-25%) fell most."
+  ],
+  "refunds_title": "Refunds steady and low",
+  "refunds": [
+    "Refunds were $909 this week (2.51% refund rate), close to $899 (2.25%) the week before. No action needed."
+  ],
+  "pacing_reco": "November is 14.4% behind last year to date ($99,534 vs $116,244). Essential Kit has about 1.8 weeks at FBA (615 available, 385 inbound), so its inbound must land before Black Friday.",
+  "ads_context": [
+    "Spend fell 6% to $5,043 while ad sales fell 14% to $14,945, so ACoS rose from 30.8% to 33.8%.",
+    "Sponsored Brands Video spend was cut 31% to $683 (40.4% ACoS). Sponsored Products held at $2,810 (34.7% ACoS)."
+  ],
+  "ads_strategy": [
+    "Branded keywords returned $6,925 on $1,429 (20.6% ACoS) and brought 213 orders.",
+    "Category keywords cost $3,052 for $6,752 in sales (45.2% ACoS). Competitor targeting spent $255 for $254."
+  ],
+  "bid_moves": [
+    "Lower bids on the Sponsored Brands “sneaker cleaning kit” exact target: $432 spent at 62.9% ACoS.",
+    "Lower or pause “shoes cleaner kit for sneakers” (SB, $118 for $94) and SB “shoe cleaner” exact ($102 for $110).",
+    "Pause “sneaker waterproofing spray” exact (SP): $44 spent, no sales."
+  ],
+  "coupons": [
+    "This week: 0 coupon orders.",
+    "Last week: 138 coupon orders."
+  ],
+  "promotions": [
+    "This week: 305 promotion orders and $748 in promotional discounts (vs 342 orders and $1,138 last week).",
+    "Subscribe & Save orders: 66 (vs 53)."
+  ],
+  "events": [
+    "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+    "Deal and coupon set-up deadlines: to confirm with the account team.",
+    "Priority: Essential Kit inbound (385 units) checked in at FBA before Nov 27."
+  ],
+  "reviews_title": "No new reviews in Sellerise",
+  "reviews_body": [
+    "Sellerise shows no reviews dated in the last 90 days for the 17 Reshoevn8r US products, so there is no review trend to chart.",
+    "Current listing ratings on the top 10 products are 4.5 to 4.7 stars."
+  ],
+  "reviews_reco": [
+    "Check review tracking for Reshoevn8r US in Sellerise (or pull Amazon's Customer Reviews report) so the deck can show new reviews and rating trend per line."
+  ],
+  "recommendations": [
+    ["Inventory", "Get the 385 inbound Essential Kits checked in: 615 available vs about 341 sold a week (1.8 weeks).", "Account team", "This week"],
+    ["Inventory", "Restock the Mesh Laundry Bag: 0 available at FBA.", "Account team", "This week"],
+    ["Ads", "Lower bids on SB “sneaker cleaning kit” exact (62.9% ACoS) and “shoes cleaner kit for sneakers” phrase (126% ACoS).", "Ads team", "This week"],
+    ["Ads", "Add “reshoevn8r essential shoe cleaning kit” and “re shoe vn8r” as exact keywords (25 orders combined, all under 19% ACoS).", "Ads team", "This week"],
+    ["Ads", "Pause or negate the 71 campaigns with spend and no sales ($404 this week).", "Ads team", "This week"],
+    ["Marketing", "Coupon orders went from 138 to 0: check whether the coupons ended and relaunch for BF/CM.", "Account team", "This week"],
+    ["Marketing", "Lock BF/CM deals for the kits, spray and solutions (Nov 27–30).", "Account team", "By Nov 20"]
+  ],
+  "position": [
+    "Revenue down 7.5% to $44,287; ad sales fell faster than spend, so ACoS rose to 33.8%.",
+    "November is 14.4% behind last year to date and pacing to about $199.1K."
+  ],
+  "next_steps": [
+    "Check in Essential Kit inbound before BF/CM.",
+    "Trim high-ACoS SB category targets.",
+    "Relaunch coupons and lock BF/CM deals.",
+    "Harvest the converting branded searches."
+  ],
+  "data_ask": [
+    "Essential Kit inbound ETA.",
+    "Why coupon orders dropped to 0.",
+    "BF/CM deal and coupon plan.",
+    "Search query data for the Essential Kit (none for this week yet)."
+  ]
+}

@@ -1,0 +1,427 @@
+{
+ "_source": "Sellerise MCP, account Reshoevn8r, marketplace US, pulled 2026-11-16 (Monday-Sunday weeks; 4-week table from the saved weekly totals)",
+ "weeks": [
+  {
+   "label": "Oct 19 – 25",
+   "revenue": 50990.29,
+   "units": 1585,
+   "orders": 1551,
+   "impressions": 770779,
+   "clicks": 3154,
+   "refundUnits": 36,
+   "refundRate": 2.32,
+   "spend": 5256.53,
+   "adSales": 19772.41,
+   "acos": 26.59,
+   "tacos": 10.31
+  },
+  {
+   "label": "Oct 26 – Nov 1",
+   "revenue": 46014.1,
+   "units": 1511,
+   "orders": 1476,
+   "impressions": 1084678,
+   "clicks": 3439,
+   "refundUnits": 23,
+   "refundRate": 1.56,
+   "spend": 6774.01,
+   "adSales": 18000.56,
+   "acos": 37.63,
+   "tacos": 14.72
+  },
+  {
+   "label": "Nov 2 – 8",
+   "revenue": 47876.68,
+   "units": 1542,
+   "orders": 1514,
+   "impressions": 1057505,
+   "clicks": 3249,
+   "refundUnits": 34,
+   "refundRate": 2.25,
+   "spend": 5365.77,
+   "adSales": 17401.08,
+   "acos": 30.84,
+   "tacos": 11.21
+  },
+  {
+   "label": "Nov 9 – 15",
+   "revenue": 44287.48,
+   "units": 1433,
+   "orders": 1397,
+   "impressions": 989849,
+   "clicks": 3103,
+   "refundUnits": 35,
+   "refundRate": 2.51,
+   "spend": 5043.31,
+   "adSales": 14945.28,
+   "acos": 33.75,
+   "tacos": 11.39,
+   "net": 13394.18,
+   "refunds": 909.19,
+   "adOrders": 487,
+   "cpc": 1.63,
+   "cvr": 15.69
+  }
+ ],
+ "mtd": {
+  "through": "2026-11-15",
+  "days": 15,
+  "revenue": 99533.59,
+  "units": 3211,
+  "orders": 3142,
+  "spend": 11492.06,
+  "adSales": 36533.11,
+  "acos": 31.46,
+  "tacos": 11.55,
+  "refundRate": 2.29
+ },
+ "mtdLY": {
+  "revenue": 116243.72,
+  "units": 3838,
+  "orders": 3682,
+  "spend": 0,
+  "adSales": 0,
+  "acos": 0,
+  "tacos": 0,
+  "refundRate": 1.66
+ },
+ "daily": [
+  [
+   "2026-11-02",
+   7255.41,
+   1005.51,
+   3118.84,
+   236,
+   103
+  ],
+  [
+   "2026-11-03",
+   6769.82,
+   762.32,
+   2612.43,
+   216,
+   88
+  ],
+  [
+   "2026-11-04",
+   5999.93,
+   653.02,
+   2405.97,
+   190,
+   73
+  ],
+  [
+   "2026-11-05",
+   6002.37,
+   682.27,
+   2241.4,
+   186,
+   65
+  ],
+  [
+   "2026-11-06",
+   7290.22,
+   692.41,
+   2416.05,
+   223,
+   77
+  ],
+  [
+   "2026-11-07",
+   6986.28,
+   773.29,
+   2196.2,
+   216,
+   63
+  ],
+  [
+   "2026-11-08",
+   7563.94,
+   796.95,
+   2410.19,
+   247,
+   79
+  ],
+  [
+   "2026-11-09",
+   6180.93,
+   791.65,
+   2080.84,
+   193,
+   67
+  ],
+  [
+   "2026-11-10",
+   5568.11,
+   701.56,
+   1881.12,
+   169,
+   61
+  ],
+  [
+   "2026-11-11",
+   6051.73,
+   725.35,
+   2793.67,
+   191,
+   94
+  ],
+  [
+   "2026-11-12",
+   6402.96,
+   691.18,
+   2020.07,
+   202,
+   67
+  ],
+  [
+   "2026-11-13",
+   5887.9,
+   737.77,
+   1641.83,
+   188,
+   57
+  ],
+  [
+   "2026-11-14",
+   6863.41,
+   681.95,
+   2094.11,
+   213,
+   63
+  ],
+  [
+   "2026-11-15",
+   7332.44,
+   713.85,
+   2433.64,
+   241,
+   78
+  ]
+ ],
+ "searchTerms": {
+  "total": 623,
+  "winners": 33,
+  "harvest": 10,
+  "negative": 6,
+  "noPurchase": 6,
+  "rows": [
+   [
+    "reshoev8r",
+    "SB",
+    121041,
+    127,
+    31,
+    158.28,
+    1079.28
+   ],
+   [
+    "reshoevn8r essential shoe cleaning kit",
+    "SB",
+    448,
+    31,
+    13,
+    38.21,
+    537.44
+   ],
+   [
+    "reshoevn8r shoe cleaner kit",
+    "SB",
+    409,
+    32,
+    7,
+    58.36,
+    339.72
+   ],
+   [
+    "reshoevn8r essential shoe cleaning kit",
+    "SP",
+    2106,
+    32,
+    8,
+    59,
+    327.04
+   ],
+   [
+    "reshoevn8r",
+    "SP",
+    5105,
+    57,
+    9,
+    76.3,
+    245.92
+   ],
+   [
+    "reshoev8r",
+    "SP",
+    6684,
+    52,
+    8,
+    65.46,
+    219.6
+   ],
+   [
+    "reshoevn8r shoe cleaner kit",
+    "SP",
+    1608,
+    29,
+    6,
+    31.17,
+    172.28
+   ],
+   [
+    "reshoevn8r cleaning solution",
+    "SP",
+    283,
+    10,
+    3,
+    16.94,
+    95.64
+   ]
+  ],
+  "category": [
+   [
+    "shoe cleaning kit",
+    "SB",
+    6625,
+    97,
+    17,
+    254.14,
+    742.96
+   ],
+   [
+    "waterproof shoe spray",
+    "SP",
+    15781,
+    80,
+    13,
+    98.31,
+    343.2
+   ],
+   [
+    "shoe cleaner",
+    "SB",
+    20546,
+    72,
+    8,
+    165.08,
+    297.04
+   ],
+   [
+    "suede protector spray",
+    "SP",
+    6039,
+    46,
+    12,
+    119.49,
+    274.56
+   ],
+   [
+    "shoe cleaner kit",
+    "SB",
+    1236,
+    22,
+    6,
+    54.75,
+    265.28
+   ]
+  ]
+ },
+ "targets": {
+  "total": 680,
+  "winners": 67,
+  "needsAttention": 63,
+  "highAcos": 22,
+  "noSales": 6,
+  "lowCtr": 31,
+  "rows": [
+   [
+    "sneaker cleaning kit (SB)",
+    "Exact",
+    "Category",
+    432.17,
+    687.08,
+    62.9,
+    170,
+    16
+   ],
+   [
+    "shoe cleaning (SB)",
+    "Phrase",
+    "Category",
+    325.91,
+    1088,
+    29.95,
+    151,
+    25
+   ],
+   [
+    "shoe cleaner (SP)",
+    "Broad",
+    "Category",
+    159.6,
+    436.08,
+    36.6,
+    83,
+    16
+   ],
+   [
+    "reshoev8r (SB)",
+    "Phrase",
+    "Brand",
+    144.56,
+    1040.4,
+    13.89,
+    111,
+    30
+   ],
+   [
+    "shoe protector spray (SP)",
+    "Phrase",
+    "Category",
+    140.9,
+    252.53,
+    55.8,
+    63,
+    10
+   ]
+  ]
+ },
+ "reviews": {
+  "available": false,
+  "note": "Sellerise shows 0 reviews dated in the last 90 days for all 17 products; current listing ratings on the top 10 products are 4.5 to 4.7 stars",
+  "currentRatings": {
+   "B08CSXXX5M": 4.7,
+   "B08TFDN7F3": 4.5,
+   "B08RS7P59K": 4.6,
+   "B08DNG8XQZ": 4.7,
+   "B0CTGGJ98X": 4.6,
+   "B08H5XPWQD": 4.5,
+   "B0BFG5NH7B": 4.7,
+   "B08HSH7VHV": 4.7,
+   "B08B5HQXJ5": 4.6,
+   "B0DJ4BSQ3D": 4.6
+  }
+ },
+ "alerts": {
+  "total": 78,
+  "actionable": 9,
+  "critical": 7,
+  "warning": 2,
+  "byType": {
+   "Badge gained": 23,
+   "Badge lost": 17,
+   "Listing price": 10,
+   "Listing images": 7,
+   "New reimbursable units": 5,
+   "Inactive": 3,
+   "Buy Box gained": 3,
+   "Buy Box lost": 3,
+   "Low stock": 2,
+   "Dimensions": 2,
+   "Bullets": 1,
+   "Stranded": 1,
+   "Low inventory fee": 1
+  }
+ }
+}

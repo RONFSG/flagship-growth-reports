@@ -16,6 +16,26 @@
  "competitors": [],
  "otherKey": "pr",
  "sqpAsin": "B08CSXXX5M",
- "names": {},
+ "names": {
+  "B08CSXXX5M": "Essential Kit",
+  "B08TFDN7F3": "Waterproof Shoe Spray",
+  "B08RS7P59K": "Signature Kit",
+  "B08DNG8XQZ": "Cleaning Solution 8oz",
+  "B0FCKD54WY": "Cleaning Solution 16oz",
+  "B0CTGGJ98X": "Refresh Kit",
+  "B08H5XPWQD": "Dry Suede Kit",
+  "B0BFG5NH7B": "Mink Oil Spray",
+  "B08HSH7VHV": "Laundry Sheets",
+  "B0F5Z1L662": "Culture Collab Kit",
+  "B08B5HQXJ5": "Original Kit",
+  "B0DJ4BSQ3D": "OxiClean Foam Cleaner",
+  "B0CKDN5WVQ": "Odor Eliminator Spray",
+  "B0BWL4NB9H": "Starter Kit",
+  "B08CJX3SDX": "Shoe Trees",
+  "B0H96QDVF8": "Cleaning Wipes",
+  "B08HWWWDB6": "Cleaning Mat",
+  "B0FS38VB88": "Laundry Sheets 16 Loads",
+  "B09CX6ZJY1": "Mesh Laundry Bag"
+ },
  "_about": "Brand settings for the shared weekly deck (see _tools/BRAND_DECK_RUNBOOK.md). invPage/recPage empty = no sheet page published yet. brandTerms = words that make a search 'branded'. sqpAsin is filled by deck.py init. names = short product names by ASIN."
 }
