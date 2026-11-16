@@ -1,0 +1,204 @@
+{
+  "_source": "Sellerise MCP, account NogginBoss, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-16.",
+  "week": {
+    "start": "2026-11-08",
+    "end": "2026-11-14"
+  },
+  "prevWeek": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "current": {
+    "revenue": 438.96,
+    "salesTaxes": 26.04,
+    "units": 5,
+    "ppcSpend": 210.45,
+    "ppcSales": 379.95,
+    "ppcClicks": 213,
+    "ppcImpressions": 58039,
+    "ppcOrders": 5
+  },
+  "prev": {
+    "revenue": 247.15,
+    "salesTaxes": 17.18,
+    "units": 3,
+    "ppcSpend": 15.8,
+    "ppcSales": 0,
+    "ppcClicks": 17,
+    "ppcImpressions": 922,
+    "ppcOrders": 0
+  },
+  "daily": [
+    {
+      "date": "2026-11-08",
+      "revenue": 268.05,
+      "salesTaxes": 16.1
+    },
+    {
+      "date": "2026-11-09",
+      "revenue": 0,
+      "salesTaxes": 0
+    },
+    {
+      "date": "2026-11-10",
+      "revenue": 0,
+      "salesTaxes": 0
+    },
+    {
+      "date": "2026-11-11",
+      "revenue": 0,
+      "salesTaxes": 0
+    },
+    {
+      "date": "2026-11-12",
+      "revenue": 79.77,
+      "salesTaxes": 4.78
+    },
+    {
+      "date": "2026-11-13",
+      "revenue": 0,
+      "salesTaxes": 0
+    },
+    {
+      "date": "2026-11-14",
+      "revenue": 91.14,
+      "salesTaxes": 5.16
+    }
+  ],
+  "products": [
+    {
+      "asin": "B0HNM4VGMT",
+      "title": "Noggin Boss Blank Oversized Hat, Powder Blue, Funny Giant Cap for Game Day",
+      "cur": {
+        "revenue": 91.23,
+        "salesTaxes": 5.25,
+        "units": 1,
+        "sessions": 15
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0
+      }
+    },
+    {
+      "asin": "B0HNL9G87H",
+      "title": "Noggin Boss Oversized Blank Hat, Royal, Giant Baseball Cap for Men",
+      "cur": {
+        "revenue": 91.14,
+        "salesTaxes": 5.16,
+        "units": 1,
+        "sessions": 21
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0
+      }
+    },
+    {
+      "asin": "B0HNLQ7P6J",
+      "title": "Noggin Boss Plain Grey Crazy Party Hat, Big Novelty Cap for Adults",
+      "cur": {
+        "revenue": 91.09,
+        "salesTaxes": 5.6,
+        "units": 1,
+        "sessions": 9
+      },
+      "prev": {
+        "revenue": 84.95,
+        "salesTaxes": 4.96,
+        "units": 1,
+        "sessions": 7
+      }
+    },
+    {
+      "asin": "B0HNMPT4T6",
+      "title": "Noggin Boss Blank Oversized Hat, Maroon, Funny Giant Cap for Game Day",
+      "cur": {
+        "revenue": 85.73,
+        "salesTaxes": 5.25,
+        "units": 1,
+        "sessions": 18
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0
+      }
+    },
+    {
+      "asin": "B0HNL9TMNT",
+      "title": "Noggin Boss Oversized Blank Hat, Royal, Giant Baseball Cap for Men",
+      "cur": {
+        "revenue": 79.77,
+        "salesTaxes": 4.78,
+        "units": 1,
+        "sessions": 13
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0
+      }
+    },
+    {
+      "asin": "B0FSPQMVVY",
+      "title": "Noggin Boss Blank Fitted Baseball Cap - Black, Structured for Teams",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 69
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0
+      }
+    },
+    {
+      "asin": "B0HNMDCRS8",
+      "title": "Noggin Boss Blank Oversized Hat, Burnt Orange, Funny Giant Cap for Game Day",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 15
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0
+      }
+    },
+    {
+      "asin": "B0HNMD984Y",
+      "title": "Noggin Boss Blank Oversized Hat, Brown, Funny Giant Cap for Game Day",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 81
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 13
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights \u2014** Noggin Boss delivered $412 in total sales for Week 46, up 79.6% from $229 the prior week, on 5 units. Sales were spread across five oversized hat styles, led by the Powder Blue, Royal L/XL and Plain Grey hats at $85 each, with the Plain Grey hat up 6.9%. Sunday, Nov 8 was the peak day at $251.",
+    "**Metrics to Watch \u2014** Sales landed on Sun Nov 8 ($251), Thu Nov 12 ($74) and Sat Nov 14 ($85), with the other days at $0, so building steadier daily volume is the focus. Organic sales were $32 (-85.7% WoW) as paid traffic drove most orders, and the Plain Grey hat converted at 11.1% (-22.2%) on 9 sessions.",
+    "**Ad Spend Efficiency \u2014** Ad spend of $210 (prior $15) generated $379 in PPC revenue for a 1.81x ROAS and 55.4% ACOS, with TACoS at 51.0%. Ads drove the bulk of this week's growth on a 0.37% ad CTR and 2.35% ad conversion, and we are now tightening targeting to bring ACOS down while keeping the momentum.",
+    "**Actions This Week \u2014** We will shift budget toward the search terms and hat styles that converted, such as the Royal S/M hat at 7.7% CVR and the Powder Blue hat at 6.7%, and add negative keywords on non-converting traffic. We will also test new Sponsored Products and Sponsored Brands ad creative to lift the 0.37% ad CTR as we head into the holiday season."
+  ]
+}
