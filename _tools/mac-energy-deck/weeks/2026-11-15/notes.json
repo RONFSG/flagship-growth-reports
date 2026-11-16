@@ -1,0 +1,106 @@
+{
+ "_week": "2026-11-09 to 2026-11-15 (Week 46), MAC Energy US. Written from this week's numbers.",
+ "week_story": [
+  "Sales rose 26.3% to $100,411, but ad spend more than doubled (+147%) to $84,752, so TACoS jumped from 43.2% to 84.4%.",
+  "The Variety Pack led (+36.7% to $47,625, 47% of sales). Green Apple +26.6%, Orange Creamsicle +25.9%, Macberry Lychee +14.1%, Proper Punch +7.3%."
+ ],
+ "refunds_title": "Refunds are low",
+ "refunds": [
+  "Refunds were $1,406 (2.2% refund rate), down from $1,584 the week before. A small share of sales; no action needed."
+ ],
+ "pacing_reco": "November is $193,243 through Nov 15; at $12,883 a day it lands near $386,487, below October's $483,507. Ad spend is $127,521 month to date.",
+ "ads_context": [
+  "Ad spend went from $34,333 to $84,752, while ad sales grew only 15% to $45,440.",
+  "ACoS rose from 87.1% to 186.5%: each $1 of ads now brings $0.54 of ad sales (was $1.15)."
+ ],
+ "ads_strategy": [
+  "Category keywords took $34,923 for $11,857 (294.5% ACoS), up from $8,800. Competitor targeting: $31,117 for $14,114 (220.5%).",
+  "Branded keywords returned $5,294 on $1,480 (28.0% ACoS). Auto was cut to $2,611 (was $9,060)."
+ ],
+ "bid_moves": [
+  "Cut the three Green Apple category campaigns: $23,284 spent for $7,871 in sales (broad 352%, exact 219%, phrase 376%).",
+  "Raise budget on the Orange Creamsicle brand-exact campaign: $767 brought $3,376 (22.7% ACoS)."
+ ],
+ "coupons": [
+  "This week: 589 coupon orders (613 last week).",
+  "November so far: 1,343 coupon orders through Nov 15."
+ ],
+ "promotions": [
+  "This week: 1,700 promotion orders and $17,175 in promotional discounts (vs 1,692 and $19,136 last week).",
+  "Payout fell to -$44,158 from -$9,207, driven by the extra $50,419 of ad spend."
+ ],
+ "events": [
+  "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+  "Deal and coupon set-up deadlines: to confirm with the account team.",
+  "Stock sheet not updated since Nov 2 (Variety Pack 926 available, 8,352 inbound); it sold 1,791 units this week."
+ ],
+ "reviews_title": "Rating holding at 4.5 stars",
+ "reviews_body": [
+  "Sellerise shows a 4.5-star rating, shared across the flavors through the Variety Pack listing.",
+  "No new reviews are dated in the last 90 days, so there is no trend to read yet."
+ ],
+ "reviews_reco": [
+  "Check review request settings: about 3,500 orders this week and no new reviews logged in 90 days is unusual.",
+  "Confirm review tracking covers each flavor ASIN, not only the shared listing."
+ ],
+ "recommendations": [
+  [
+   "Ads",
+   "Cut bids and budgets on the Green Apple category campaigns: $23,284 for $7,871 this week.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Set a weekly spend cap: spend rose 147% to $84,752 for 15% more ad sales.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Lower bids on the “energy drink” search term: $10,847 spent for $4,914 (220.7% ACoS).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Move budget to brand searches: “mac energy drink” ran $724 for $3,106 (23.3% ACoS).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Pause the 39 no-sale campaign lines ($989 this week).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Catalog",
+   "Fix the critical dimensions alert on Proper Punch (B0H4X94TKY).",
+   "Account team",
+   "This week"
+  ],
+  [
+   "Marketing",
+   "Lock BF/CM coupons and deals (Nov 27–30) and confirm Variety Pack stock.",
+   "Account team",
+   "By Nov 20"
+  ]
+ ],
+ "position": [
+  "Sales grew 26% to $100,411, the best week since Oct 5–11, but payout fell to -$44,158.",
+  "TACoS is 84.4%, back near the Oct 19–25 level (81.4%)."
+ ],
+ "next_steps": [
+  "Cap ad spend.",
+  "Trim Green Apple category bids.",
+  "Shift budget to brand searches.",
+  "Lock BF/CM deals."
+ ],
+ "data_ask": [
+  "Updated inventory sheet (last update Nov 2).",
+  "Product costs (COGS) and the BF/CM deal plan.",
+  "Search query report: no data in Sellerise for this week.",
+  "Campaign table covers $77,126 of $84,752 ad spend."
+ ]
+}
