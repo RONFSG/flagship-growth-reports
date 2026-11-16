@@ -1,0 +1,204 @@
+{
+  "_source": "Sellerise MCP, account Hapad, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-16.",
+  "week": {
+    "start": "2026-11-08",
+    "end": "2026-11-14"
+  },
+  "prevWeek": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "current": {
+    "revenue": 18299.68,
+    "salesTaxes": 710.22,
+    "units": 1209,
+    "ppcSpend": 2462.58,
+    "ppcSales": 5705.38,
+    "ppcClicks": 1470,
+    "ppcImpressions": 175402,
+    "ppcOrders": 306
+  },
+  "prev": {
+    "revenue": 19213.99,
+    "salesTaxes": 811.76,
+    "units": 1177,
+    "ppcSpend": 3251.91,
+    "ppcSales": 7151.65,
+    "ppcClicks": 2202,
+    "ppcImpressions": 317418,
+    "ppcOrders": 392
+  },
+  "daily": [
+    {
+      "date": "2026-11-08",
+      "revenue": 2536.13,
+      "salesTaxes": 89.74
+    },
+    {
+      "date": "2026-11-09",
+      "revenue": 2516.99,
+      "salesTaxes": 106.26
+    },
+    {
+      "date": "2026-11-10",
+      "revenue": 2511.16,
+      "salesTaxes": 93.18
+    },
+    {
+      "date": "2026-11-11",
+      "revenue": 3287.3,
+      "salesTaxes": 132.17
+    },
+    {
+      "date": "2026-11-12",
+      "revenue": 2571.54,
+      "salesTaxes": 113.14
+    },
+    {
+      "date": "2026-11-13",
+      "revenue": 2507.92,
+      "salesTaxes": 100.15
+    },
+    {
+      "date": "2026-11-14",
+      "revenue": 2368.64,
+      "salesTaxes": 75.58
+    }
+  ],
+  "products": [
+    {
+      "asin": "B008DW1DS0",
+      "title": "HAPAD Metatarsal Pad 5/16\" - Medium, 6 Pair Pack Wool Felt Ball of Foot Pad",
+      "cur": {
+        "revenue": 4567.49,
+        "salesTaxes": 140.48,
+        "units": 150,
+        "sessions": 544
+      },
+      "prev": {
+        "revenue": 5288.16,
+        "salesTaxes": 210.82,
+        "units": 174,
+        "sessions": 616
+      }
+    },
+    {
+      "asin": "B008DW1EX4",
+      "title": "HAPAD Metatarsal Pad 3/8\" - Large, 6 Pair Pack Wool Felt Ball of Foot Pad",
+      "cur": {
+        "revenue": 2318.29,
+        "salesTaxes": 124.94,
+        "units": 79,
+        "sessions": 424
+      },
+      "prev": {
+        "revenue": 2145.78,
+        "salesTaxes": 113.71,
+        "units": 73,
+        "sessions": 418
+      }
+    },
+    {
+      "asin": "B0FVHR4T99",
+      "title": "HAPAD Posting Heel Wedge - Reversible Medial/Lateral Insert Pair Shoe Pad",
+      "cur": {
+        "revenue": 1114.04,
+        "salesTaxes": 38.12,
+        "units": 108,
+        "sessions": 207
+      },
+      "prev": {
+        "revenue": 820.28,
+        "salesTaxes": 26.58,
+        "units": 81,
+        "sessions": 220
+      }
+    },
+    {
+      "asin": "B00F4JIIPG",
+      "title": "HAPAD Metatarsal Pad 5/16\" - Medium, Wool Felt Ball of Foot Pad - 1 Pair",
+      "cur": {
+        "revenue": 971.4,
+        "salesTaxes": 29.07,
+        "units": 97,
+        "sessions": 295
+      },
+      "prev": {
+        "revenue": 933.23,
+        "salesTaxes": 39.52,
+        "units": 89,
+        "sessions": 360
+      }
+    },
+    {
+      "asin": "B008DW1DJE",
+      "title": "HAPAD Metatarsal Pad 1/4\" - Small, 6 Pair Pack Wool Felt Ball of Foot Pad",
+      "cur": {
+        "revenue": 903.46,
+        "salesTaxes": 32.12,
+        "units": 23,
+        "sessions": 201
+      },
+      "prev": {
+        "revenue": 1745.03,
+        "salesTaxes": 89.46,
+        "units": 44,
+        "sessions": 219
+      }
+    },
+    {
+      "asin": "B00LG4MCBE",
+      "title": "HAPAD Mortons Neuroma Pads - Teardrop Wool Felt Ball-of-Foot Pad Insert",
+      "cur": {
+        "revenue": 692.53,
+        "salesTaxes": 24.43,
+        "units": 87,
+        "sessions": 292
+      },
+      "prev": {
+        "revenue": 632.53,
+        "salesTaxes": 24.18,
+        "units": 80,
+        "sessions": 366
+      }
+    },
+    {
+      "asin": "B00LERXYBU",
+      "title": "HAPAD Scaphoid Pad - Medium, Wool Felt Medial Arch Insert Pair Shoe Insert",
+      "cur": {
+        "revenue": 576.15,
+        "salesTaxes": 20.47,
+        "units": 62,
+        "sessions": 208
+      },
+      "prev": {
+        "revenue": 763.02,
+        "salesTaxes": 29.92,
+        "units": 75,
+        "sessions": 209
+      }
+    },
+    {
+      "asin": "B0FVHJKYF6",
+      "title": "HAPAD Metatarsal Bar - Medium, Ball of Foot Pad Wool Felt Shoe Insert",
+      "cur": {
+        "revenue": 544.76,
+        "salesTaxes": 19.79,
+        "units": 53,
+        "sessions": 181
+      },
+      "prev": {
+        "revenue": 547.15,
+        "salesTaxes": 32.14,
+        "units": 51,
+        "sessions": 168
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights \u2014** Hapad US generated $17,589 in total sales for Week 46 on 1209 units, with organic revenue growing +5.6% WoW to $11,884. The Posting Heel Wedge was a standout at $1,075 (+35.6%) with a 52.2% conversion rate, and the Metatarsal Pad 3/8\" Large 6-Pair Pack grew to $2,193 (+7.9%). Wednesday, Nov 11 was the peak day at $3,155.",
+    "**Metrics to Watch \u2014** Total sales eased -4.4% WoW from $18,402 as PPC revenue moved to $5,705 (-20.2%). The Metatarsal Pad 5/16\" Medium 6-Pair Pack, our top seller, came in at $4,427 (-12.8%), and the 1/4\" Small 6-Pair Pack softened to $871 (-47.4%) with conversion at 11.4%, so we are focusing on bringing both back to their recent run rate.",
+    "**Ad Spend Efficiency \u2014** Ad spend came down to $2,462 (prior $3,251) while ROAS improved to 2.32x from 2.20x and TACoS dropped to 14.0% from 17.67%. ACOS sits at 43.2%, with a healthy 0.84% ad CTR and 20.82% ad conversion rate, showing tighter spend is landing on higher-intent shoppers.",
+    "**Actions This Week \u2014** We will lift bids on the Medium 6-Pair Pack's best-converting search terms to recover its volume, and expand targeting for the Posting Heel Wedge to capitalize on its 52.2% conversion. We will also refine campaigns for the Small 6-Pair Pack and keep trimming low-converting terms to bring ACOS below 43.2% as we head into the holiday season."
+  ]
+}
