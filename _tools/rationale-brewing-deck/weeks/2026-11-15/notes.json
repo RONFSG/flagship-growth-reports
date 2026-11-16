@@ -1,0 +1,72 @@
+{
+"_week": "2026-11-09 to 2026-11-15 (Week 46). Written from this week's numbers.",
+"week_story": [
+"Sales rose 5.5% to $4,819 on 293 units (+15.8%) and 241 orders (+13.7%). Mexican Cerveza more than doubled to $1,142 (91 units); the Variety 12 Pack fell 23% to $1,715. Kolsch (+24%), Hazy IPA (+15%) and Cherry Blossom (+15%) grew; West Coast IPA fell 15%."
+],
+"refunds_title": "Refunds down to $118",
+"refunds": [
+"Refunds were $118.02 (5 units) vs $166.01 (6 units) last week: $72.10 (3 units) on West Coast IPA and $45.92 (2 units) on the Variety 12 Pack."
+],
+"pacing_reco": "At $661 a day, November projects to $19,838, below October's $24,197. Closing the gap needs cheaper category ads and stock in place for BF/CM.",
+"ads_context": [
+"ACoS rose to 89.1% from 71.2%; TACoS was steady at 26.3% (26.0% last week).",
+"Spend rose 6.8% to $1,267 while ad sales fell 14.6% to $1,422, so each ad dollar returned $1.12 vs $1.40."
+],
+"ads_strategy": [
+"Branded keywords returned $368.38 on $82.85 (22.5% ACoS) for 15 orders.",
+"Category keywords cost $954.50 for $963.53 (99.1% ACoS); remarketing spent $139.10 for $10.99."
+],
+"bid_moves": [
+"Lower bids on the Variety Pack category exact campaign: $266.09 for $202.93, 7 orders.",
+"Pause no-sale spend: Hazy IPA remarketing ($59.77), Cherry Blossom broad ($34.91), Kolsch competitor targets ($30.51)."
+],
+"coupons": [
+"This week: 52 coupon orders.",
+"November to date (Nov 1–15): 124 coupon orders.",
+"Coupons ran on about 1 in 5 orders this week."
+],
+"promotions": [
+"This week: 65 promotion orders and $262.80 in promotional discounts (vs $357.21 last week).",
+"Subscribe & Save orders: 30 this week."
+],
+"events": [
+"Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+"Deal and coupon set-up deadlines: to confirm with the account team.",
+"Stock below is the Nov 2 sheet: the Nov 13 sheet update has mismatched ASINs and SKUs."
+],
+"reviews_title": "Little review data in Sellerise",
+"reviews_body": [
+"Sellerise has a review signal for one product only: Hazy IPA, rated 4.3, with no new or negative reviews in the last 90 days.",
+"The other five products return no review records, so ratings per product can't be shown yet."
+],
+"reviews_reco": [
+"Turn on review tracking for every RationAle ASIN in Sellerise (or pull Amazon's Customer Reviews report).",
+"Check recent reviews on West Coast IPA, where 3 of this week's 5 refunded units came from."
+],
+"recommendations": [
+["Ads", "Lower bids on the Variety Pack category exact campaign ($266.09 spend, $202.93 sales, 131% ACoS) and “non alcoholic beer” exact ($206.88 for $170.43).", "Ads team", "This week"],
+["Ads", "Cut the 31 campaigns with spend and no sales ($315.41), starting with remarketing: $139.10 for $10.99.", "Ads team", "This week"],
+["Ads", "Move budget to branded keywords: 22.5% ACoS, 15 orders; “rationale” exact made $190.62 on $17.02.", "Ads team", "This week"],
+["Ads", "Add “non alcoholic ipa beer” as an exact keyword: 2 orders, $37.21 from $3.55.", "Ads team", "This week"],
+["Catalog", "Clear the dimensions alerts on Mexican Cerveza (Nov 11, Nov 14) and Cherry Blossom (Nov 14).", "Catalog team", "This week"],
+["Inventory", "Republish the inventory sheet: the Nov 13 update pairs ASINs with the wrong SKUs and has no as-of date.", "Inventory team", "By Nov 17"],
+["Inventory", "Decide on the 19.2oz Tallboy: 0 available, 0 inbound, 52 sold in 30 days (Nov 2 sheet).", "Account team", "By Nov 20"],
+["Marketing", "Lock BF/CM coupons and deals (Nov 27–30) and confirm submission deadlines.", "Account team", "By Nov 20"]
+],
+"position": [
+"November is at $9,919 through Nov 15, vs $2,274 for the same days last year.",
+"Orders grew, but ads cost more: ACoS 89.1%, ad sales down 14.6%."
+],
+"next_steps": [
+"Cut no-sale and high-ACoS ad spend.",
+"Shift budget to branded keywords.",
+"Fix the inventory sheet; decide on Tallboy.",
+"Lock BF/CM coupons and deals."
+],
+"data_ask": [
+"Corrected inventory sheet (Nov 13 update).",
+"Tallboy restock plan.",
+"BF/CM deal and coupon plan.",
+"Search Query Performance (empty in Sellerise this week)."
+]
+}
