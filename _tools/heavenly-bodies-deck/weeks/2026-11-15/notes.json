@@ -1,0 +1,108 @@
+{
+ "_week": "2026-11-09 to 2026-11-15 (Week 46). Written from this week's numbers; rewrite every key each Monday.",
+ "week_story": [
+  "Revenue was $8,991, down 16% from $10,746, on 149 units (183 the week before) and 137 orders (172).",
+  "The Tarot deck drove the drop: $7,200 on 123 units vs $9,235 on 158 (-22%). It is 80% of sales.",
+  "Astrology fell 16% to $719 (15 units); the Tarot + Astrology 2-pack rose 32% to $700 (8 units) and the Tarot 3-pack sold $373 (3 units)."
+ ],
+ "refunds_title": "Refund rate rose",
+ "refunds": [
+  "Refunds were $602 on 10 units (7.3% refund rate), vs $475 on 10 units and 5.8% the week before. Two negative-feedback alerts (Oct 20, Nov 6) are still open."
+ ],
+ "pacing_reco": "November is running $1,391 a day (about $41.7K for the month vs October's $63,750); BF/CM deals on the Tarot deck are the main lever to close the gap.",
+ "ads_context": [
+  "Daily sales eased through the week, from $1,699 on Monday to $1,039 on Sunday.",
+  "Spend rose 25% to $786 while ad sales rose only 3% to $2,136, so ACoS climbed to 36.8% from 30.4% and TACoS to 8.7% from 5.8%."
+ ],
+ "ads_strategy": [
+  "Brand defense product targets were the best spend: $169 for $867 and 13 orders (19.5% ACoS). Branded keywords returned $282 on $37 (13.1% ACoS).",
+  "Category keywords spent $377 for $530 and 10 orders (71.2% ACoS). Auto campaigns: $194 for $457, 8 orders (42.3%)."
+ ],
+ "bid_moves": [
+  "Scale the Tarot brand defense campaign: $168 for $867 and 13 orders (19.4% ACoS).",
+  "Cut bids in the Tarot For Beginners exact campaign: $182 for $110 (166% ACoS); “tarot decks” and “tarot deck” spent $57 and $52 for one order each.",
+  "Pause or negate “tarot decks” (phrase, $46, 115 clicks), “tarot cards deck” (exact, $40) and “astrology” (exact, $18): no sales.",
+  "Keep “tarot cards” exact: $80 for $275 and 5 orders (29.0% ACoS)."
+ ],
+ "coupons": [
+  "This week: no coupon redemptions.",
+  "Last week: no coupon redemptions."
+ ],
+ "promotions": [
+  "This week: 57 promotion orders, $177 in promotional discounts (vs 94 orders and $327 last week)."
+ ],
+ "events": [
+  "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+  "Holiday gifting season: tarot and astrology boxsets are natural gifts; deals and coupons should be live before BF/CM.",
+  "Deal and coupon set-up deadlines: to confirm with the account team."
+ ],
+ "reviews_title": "No new reviews in 90 days",
+ "reviews_body": [
+  "Sellerise shows no reviews dated in the last 90 days for the 3 rated products.",
+  "Current listing ratings: Tarot deck 5.0, Astrology 4.0, Tarot + Astrology 2-pack 3.5. Two negative seller-feedback alerts (Oct 20, Nov 6) are open."
+ ],
+ "reviews_reco": [
+  "Start a review request push on the Tarot and Astrology decks before BF/CM.",
+  "Read the 2-pack's low reviews (3.5 stars) and answer both open negative-feedback alerts."
+ ],
+ "recommendations": [
+  [
+   "Ads",
+   "Raise budget on the Tarot brand defense campaign (19.4% ACoS, 13 orders) and branded “heavenly bodies tarot” keywords.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Cut bids in the Tarot For Beginners exact campaign ($182 for $110).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Pause or negate “tarot decks” phrase, “tarot cards deck” and “astrology” exact (no sales).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Harvest “lily ashwell astrology cards” into an exact keyword (1 order on $1.58).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Promotions",
+   "Set up BF/CM deals and coupons for the Tarot and Astrology boxsets.",
+   "Account team",
+   "Before deadlines"
+  ],
+  [
+   "Listings",
+   "Fix the critical dimension alert on the Tarot deck and the low-inventory fee on the Astrology 3-pack.",
+   "Catalog team",
+   "By Nov 20"
+  ],
+  [
+   "Reviews",
+   "Answer the 2 open negative-feedback alerts; check the 2-pack's 3.5-star rating.",
+   "Account team",
+   "This week"
+  ]
+ ],
+ "position": [
+  "November is $20,868 through Nov 15 ($1,391 a day), pacing near $41.7K vs October's $63,750.",
+  "Ads got costlier: ACoS 36.8% (from 30.4%), TACoS 8.7%."
+ ],
+ "next_steps": [
+  "Scale brand defense and branded keywords.",
+  "Cut costly category bids.",
+  "Lock BF/CM deals and coupons.",
+  "Clear dimension and feedback alerts."
+ ],
+ "data_ask": [
+  "BF/CM deal and coupon plan.",
+  "Updated inventory sheet (latest is Oct 26).",
+  "Product costs (COGS) in Sellerise for true profit.",
+  "Search Query Performance for the Tarot deck (nothing yet for the Nov 8 week)."
+ ]
+}

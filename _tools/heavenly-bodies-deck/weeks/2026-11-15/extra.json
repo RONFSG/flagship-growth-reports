@@ -1,0 +1,419 @@
+{
+ "_source": "Sellerise MCP, account Heavenly Bodies Studio, marketplace US, pulled 2026-11-16 (Monday-Sunday weeks; 4-week table from the saved weekly totals)",
+ "weeks": [
+  {
+   "label": "Oct 19 – 25",
+   "revenue": 10844.08,
+   "units": 185,
+   "orders": 180,
+   "impressions": 298791,
+   "clicks": 1015,
+   "refundUnits": 8,
+   "refundRate": 4.44,
+   "spend": 831.02,
+   "adSales": 1370.0,
+   "acos": 60.66,
+   "tacos": 7.66
+  },
+  {
+   "label": "Oct 26 – Nov 1",
+   "revenue": 9656.03,
+   "units": 164,
+   "orders": 163,
+   "impressions": 257207,
+   "clicks": 928,
+   "refundUnits": 11,
+   "refundRate": 6.75,
+   "spend": 647.14,
+   "adSales": 1830.0,
+   "acos": 35.36,
+   "tacos": 6.7
+  },
+  {
+   "label": "Nov 2 – 8",
+   "revenue": 10746.17,
+   "units": 183,
+   "orders": 172,
+   "impressions": 273871,
+   "clicks": 1018,
+   "refundUnits": 10,
+   "refundRate": 5.81,
+   "spend": 627.35,
+   "adSales": 2066.0,
+   "acos": 30.37,
+   "tacos": 5.84
+  },
+  {
+   "label": "Nov 9 – 15",
+   "revenue": 8990.76,
+   "units": 149,
+   "orders": 137,
+   "impressions": 322639,
+   "clicks": 1211,
+   "refundUnits": 10,
+   "refundRate": 7.3,
+   "spend": 785.74,
+   "adSales": 2136.0,
+   "acos": 36.79,
+   "tacos": 8.74,
+   "net": 4900.63,
+   "refunds": 602.1,
+   "adOrders": 35,
+   "cpc": 0.65,
+   "cvr": 2.89
+  }
+ ],
+ "mtd": {
+  "through": "2026-11-15",
+  "days": 15,
+  "revenue": 20868.41,
+  "units": 352,
+  "orders": 328,
+  "spend": 1489.87,
+  "adSales": 4557,
+  "acos": 32.69,
+  "tacos": 7.14,
+  "refundRate": 6.4
+ },
+ "mtdLY": {
+  "revenue": 0,
+  "units": 0,
+  "orders": 0,
+  "spend": 0
+ },
+ "daily": [
+  [
+   "2026-11-02",
+   1570.38,
+   75.95,
+   165,
+   20,
+   3
+  ],
+  [
+   "2026-11-03",
+   1962.87,
+   82.59,
+   330,
+   33,
+   6
+  ],
+  [
+   "2026-11-04",
+   1515.24,
+   105.23,
+   320,
+   25,
+   5
+  ],
+  [
+   "2026-11-05",
+   1931.04,
+   93.66,
+   337,
+   29,
+   6
+  ],
+  [
+   "2026-11-06",
+   1626.25,
+   97.41,
+   447,
+   28,
+   8
+  ],
+  [
+   "2026-11-07",
+   1035.04,
+   75.73,
+   302,
+   18,
+   5
+  ],
+  [
+   "2026-11-08",
+   1105.35,
+   96.78,
+   165,
+   19,
+   3
+  ],
+  [
+   "2026-11-09",
+   1699.07,
+   128.09,
+   510,
+   29,
+   10
+  ],
+  [
+   "2026-11-10",
+   1397.91,
+   93.82,
+   255,
+   20,
+   5
+  ],
+  [
+   "2026-11-11",
+   1271.3,
+   118.73,
+   382,
+   18,
+   5
+  ],
+  [
+   "2026-11-12",
+   1196.89,
+   99.11,
+   247,
+   18,
+   4
+  ],
+  [
+   "2026-11-13",
+   1100.12,
+   110.24,
+   192,
+   17,
+   3
+  ],
+  [
+   "2026-11-14",
+   1286.61,
+   103.16,
+   165,
+   20,
+   3
+  ],
+  [
+   "2026-11-15",
+   1038.86,
+   132.59,
+   385,
+   15,
+   5
+  ]
+ ],
+ "searchTerms": {
+  "total": 143,
+  "winners": 1,
+  "harvest": 0,
+  "negative": 4,
+  "noPurchase": 4,
+  "rows": [
+   [
+    "heavenly bodies tarot",
+    "SB",
+    702,
+    13,
+    1,
+    8.69,
+    117
+   ],
+   [
+    "heavenly bodies tarot deck",
+    "SP",
+    16,
+    2,
+    1,
+    1.19,
+    55
+   ],
+   [
+    "heavenly bodies deck",
+    "SP",
+    6,
+    1,
+    1,
+    0.45,
+    55
+   ],
+   [
+    "heavenly bodies tarot",
+    "SP",
+    1748,
+    25,
+    0,
+    12.36,
+    0
+   ],
+   [
+    "heavenly bodies tarot deck",
+    "SB",
+    459,
+    5,
+    0,
+    3.32,
+    0
+   ],
+   [
+    "heavenly bodies",
+    "SP",
+    404,
+    4,
+    0,
+    3.1,
+    0
+   ],
+   [
+    "heavenly bodies book",
+    "SP",
+    47,
+    3,
+    0,
+    1.73,
+    0
+   ],
+   [
+    "heavenly bodies astrology deck",
+    "SP",
+    14,
+    2,
+    0,
+    2.4,
+    0
+   ]
+  ],
+  "category": [
+   [
+    "tarot cards",
+    "SP",
+    48124,
+    165,
+    5,
+    78.87,
+    275
+   ],
+   [
+    "tarot deck",
+    "SP",
+    34672,
+    99,
+    1,
+    90.07,
+    55
+   ],
+   [
+    "tarot decks",
+    "SP",
+    5701,
+    28,
+    1,
+    28.12,
+    55
+   ],
+   [
+    "astrology cards",
+    "SP",
+    36,
+    3,
+    1,
+    1.75,
+    45
+   ],
+   [
+    "lily ashwell astrology cards",
+    "SP",
+    6,
+    3,
+    1,
+    1.58,
+    45
+   ]
+  ]
+ },
+ "targets": {
+  "total": 59,
+  "winners": 6,
+  "needsAttention": 14,
+  "highAcos": 2,
+  "noSales": 4,
+  "lowCtr": 6,
+  "rows": [
+   [
+    "tarot cards",
+    "Exact",
+    "Category",
+    79.82,
+    275,
+    29.03,
+    167,
+    5
+   ],
+   [
+    "tarot decks",
+    "Exact",
+    "Category",
+    57.22,
+    55,
+    104.04,
+    40,
+    1
+   ],
+   [
+    "tarot deck",
+    "Exact",
+    "Category",
+    51.53,
+    55,
+    93.69,
+    60,
+    1
+   ],
+   [
+    "tarot decks",
+    "Phrase",
+    "Category",
+    46.21,
+    0,
+    null,
+    115,
+    0
+   ],
+   [
+    "tarot cards deck",
+    "Exact",
+    "Category",
+    40.06,
+    0,
+    null,
+    18,
+    0
+   ]
+  ]
+ },
+ "reviews": {
+  "available": true,
+  "periodReviews": 0,
+  "negative": 0,
+  "note": "No reviews dated in the last 90 days; current listing ratings shown",
+  "ratings": [
+   [
+    "B0HB125M7H",
+    5
+   ],
+   [
+    "B0HB19P39M",
+    4
+   ],
+   [
+    "B0HB6KJXPX",
+    3.5
+   ]
+  ]
+ },
+ "alerts": {
+  "total": 10,
+  "actionable": 5,
+  "critical": 2,
+  "warning": 3,
+  "byType": {
+   "Reimbursable units": 5,
+   "Negative feedback": 2,
+   "Days of supply": 1,
+   "Low inventory fee": 1,
+   "Dimensions": 1
+  }
+ }
+}
