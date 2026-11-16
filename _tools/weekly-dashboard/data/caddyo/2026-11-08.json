@@ -1,0 +1,204 @@
+{
+  "_source": "Sellerise MCP, account CaddyO, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-16.",
+  "week": {
+    "start": "2026-11-08",
+    "end": "2026-11-14"
+  },
+  "prevWeek": {
+    "start": "2026-11-01",
+    "end": "2026-11-07"
+  },
+  "current": {
+    "revenue": 1649.33,
+    "salesTaxes": 106.61,
+    "units": 56,
+    "ppcSpend": 1157.05,
+    "ppcSales": 1140.05,
+    "ppcClicks": 856,
+    "ppcImpressions": 291717,
+    "ppcOrders": 33
+  },
+  "prev": {
+    "revenue": 1988.6,
+    "salesTaxes": 147.09,
+    "units": 66,
+    "ppcSpend": 1881.25,
+    "ppcSales": 1328.85,
+    "ppcClicks": 1354,
+    "ppcImpressions": 508336,
+    "ppcOrders": 36
+  },
+  "daily": [
+    {
+      "date": "2026-11-08",
+      "revenue": 305.87,
+      "salesTaxes": 22.16
+    },
+    {
+      "date": "2026-11-09",
+      "revenue": 121.8,
+      "salesTaxes": 8.9
+    },
+    {
+      "date": "2026-11-10",
+      "revenue": 291.22,
+      "salesTaxes": 14.07
+    },
+    {
+      "date": "2026-11-11",
+      "revenue": 267.64,
+      "salesTaxes": 19.65
+    },
+    {
+      "date": "2026-11-12",
+      "revenue": 183.07,
+      "salesTaxes": 13.71
+    },
+    {
+      "date": "2026-11-13",
+      "revenue": 217.97,
+      "salesTaxes": 15.32
+    },
+    {
+      "date": "2026-11-14",
+      "revenue": 261.76,
+      "salesTaxes": 12.8
+    }
+  ],
+  "products": [
+    {
+      "asin": "B0DSGQV1T5",
+      "title": "CaddyO Wrapsulator Insulated Can Cooler for Regular 12 &16oz Cans - Black",
+      "cur": {
+        "revenue": 430.95,
+        "salesTaxes": 21.32,
+        "units": 15,
+        "sessions": 116
+      },
+      "prev": {
+        "revenue": 205.21,
+        "salesTaxes": 19.63,
+        "units": 7,
+        "sessions": 161
+      }
+    },
+    {
+      "asin": "B0G3T7LL5V",
+      "title": "CaddyO Wrapsulator Insulated Can Cooler for Regular 12oz & 16oz Cans - Blue",
+      "cur": {
+        "revenue": 287.08,
+        "salesTaxes": 19.29,
+        "units": 10,
+        "sessions": 248
+      },
+      "prev": {
+        "revenue": 550.8,
+        "salesTaxes": 36.94,
+        "units": 20,
+        "sessions": 310
+      }
+    },
+    {
+      "asin": "B0G3T5N7YB",
+      "title": "CaddyO Wrapsulator Insulated Can Cooler for Regular 12oz & 16oz Cans",
+      "cur": {
+        "revenue": 176.72,
+        "salesTaxes": 11.7,
+        "units": 6,
+        "sessions": 157
+      },
+      "prev": {
+        "revenue": 302.77,
+        "salesTaxes": 23.39,
+        "units": 11,
+        "sessions": 201
+      }
+    },
+    {
+      "asin": "B0G3TDWNYR",
+      "title": "CaddyO Wrapsulator Insulated Can Cooler for Regular 12oz & 16oz Cans",
+      "cur": {
+        "revenue": 171.09,
+        "salesTaxes": 13.32,
+        "units": 6,
+        "sessions": 49
+      },
+      "prev": {
+        "revenue": 79.64,
+        "salesTaxes": 5.81,
+        "units": 3,
+        "sessions": 58
+      }
+    },
+    {
+      "asin": "B0DSGRTT4G",
+      "title": "CaddyO Wrapsulator Insulated Can Cooler for Regular 12oz & 16oz Cans - Camo",
+      "cur": {
+        "revenue": 119.44,
+        "salesTaxes": 7.99,
+        "units": 4,
+        "sessions": 23
+      },
+      "prev": {
+        "revenue": 107.27,
+        "salesTaxes": 8.85,
+        "units": 4,
+        "sessions": 33
+      }
+    },
+    {
+      "asin": "B0H95FVH51",
+      "title": "CaddyO Wrapsulator Insulated Slim Can Cooler for 12oz Cans & Bottles, Slim",
+      "cur": {
+        "revenue": 116.99,
+        "salesTaxes": 9.87,
+        "units": 4,
+        "sessions": 40
+      },
+      "prev": {
+        "revenue": 137.11,
+        "salesTaxes": 9.73,
+        "units": 5,
+        "sessions": 61
+      }
+    },
+    {
+      "asin": "B0G3TD92RY",
+      "title": "CaddyO Wrapsulator Insulated Can Cooler for Regular 12oz & 16oz Cans - Red",
+      "cur": {
+        "revenue": 116.24,
+        "salesTaxes": 9.12,
+        "units": 4,
+        "sessions": 57
+      },
+      "prev": {
+        "revenue": 110.17,
+        "salesTaxes": 7.39,
+        "units": 4,
+        "sessions": 76
+      }
+    },
+    {
+      "asin": "B0DSGPTRFW",
+      "title": "CaddyO Wrapsulator Insulated Can Cooler for Regular 12oz & 16oz Cans - Grey",
+      "cur": {
+        "revenue": 93.26,
+        "salesTaxes": 6.41,
+        "units": 3,
+        "sessions": 35
+      },
+      "prev": {
+        "revenue": 26.33,
+        "salesTaxes": 1.72,
+        "units": 1,
+        "sessions": 68
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights —** CaddyO generated $1,542 in total sales for Week 46 on 56 units, versus $1,841 the prior week (-16.2% WoW). The Black Wrapsulator Can Cooler led the lineup at $409 (+120.7%) on 15 units with a 12.9% conversion rate, and the B0G3TDWNYR Wrapsulator grew to $157 (+113.7%). Sunday, Nov 8 was the peak day at $283.",
+    "**Metrics to Watch —** The Blue Wrapsulator eased to $267 (-47.9%) and the B0G3T5N7YB Wrapsulator to $165 (-40.9%), converting at 4.0% and 3.8% on 248 and 157 sessions. Organic sales came in at $402 (-21.5% WoW), so lifting conversion on these two high-traffic coolers is the priority.",
+    "**Ad Spend Efficiency —** We reduced ad spend to $1,157 from $1,881 and ROAS improved to 0.99x from 0.71x, with TACoS dropping to 75.0% from 102.16%. PPC revenue was $1,140 (-14.2%) at a 101.5% ACOS, with a 0.29% ad CTR and a 3.86% ad conversion rate, so efficiency is trending the right way with room to tighten further.",
+    "**Actions This Week —** We will keep trimming bids on the Blue and B0G3T5N7YB Wrapsulator campaigns and move budget to the Black and Camo Wrapsulators, which converted at 12.9% and 17.4%, to bring ACOS below 101.5%. We will also test fresh Sponsored Product and Sponsored Brand ad creative to raise ad CTR above 0.29% heading into the holiday season."
+  ]
+}
