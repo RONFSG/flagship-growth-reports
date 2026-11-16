@@ -1,0 +1,109 @@
+{
+ "_week": "2026-11-09 to 2026-11-15 (Week 46). Written from this week's numbers.",
+ "week_story": [
+  "Pop Cups 6-Packs dropped 46% to $8,952 and Pop Cup Kits + Popper fell 45% to $5,270 as most flavors and the kits ran out of stock.",
+  "Flavor-Wrapped grew 49% to $17,853: the Discovery Kit rose 46% to $9,536. The Gift Set 12-Pack held at $13,372 (-5%), but Sellerise now flags it out of stock."
+ ],
+ "refunds_title": "Refund rate up a point",
+ "refunds": [
+  "Refund money was $942 vs $742 last week.",
+  "Fewer orders made the rate jump; refunded units only rose by 5."
+ ],
+ "pacing_reco": "November is $109,455 through Nov 15, 10% behind the same days last year ($121,618) and pacing to about $218.9K; restocking Pop Cups, the Kits and the Gift Set before BF/CM is the biggest lever.",
+ "ads_context": [
+  "Ad spend fell 10.0% to $3,782 and ad sales fell 20.5% to $12,944, so ACoS rose from 25.8% to 29.2%.",
+  "TACoS held near 7.8% (7.6% last week); ads drove 27% of sales at a 3.4 ROAS."
+ ],
+ "ads_strategy": [
+  "Branded keywords: $1,876 spend (+3%) at 33.0% ACoS, 176 orders.",
+  "Category keywords: $916 (-23%) at 44.1% ACoS, 63 orders. Brand defense: $529 (+48%) at 19.7% ACoS, 80 orders.",
+  "Competitor targeting spent $77 for $39 in sales (2 orders)."
+ ],
+ "bid_moves": [
+  "Lower bids on SB “opopop popcorn” exact in the Salty Caramel ($340 for $409) and Kit ($289 for $230) campaigns.",
+  "Cut the SB “opopop” exact target ($35, no sales) and “flavored microwave popcorn” exact ($37, no sales).",
+  "Pause the 52 campaigns that spent $296 with no sales; keep SP “opopop” phrase ($106 → $1,319) funded."
+ ],
+ "coupons": [
+  "This week: 20 coupon redemptions (30 last week).",
+  "Subscribe & Save orders: 156 (169 last week)."
+ ],
+ "promotions": [
+  "This week: 273 promotion orders and $640 in promotional discounts (vs 404 and $1,827 last week).",
+  "Lighter discounting went with the drop in units."
+ ],
+ "events": [
+  "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+  "Deal and coupon set-up deadlines: to confirm with the account team.",
+  "Priority: Pop Cups, Kits and the Gift Set back in stock at FBA."
+ ],
+ "reviews_title": "Ratings steady, no new reviews",
+ "reviews_body": [
+  "Sellerise now tracks 6 review ASINs: no new reviews dated in the last 90 days.",
+  "Current ratings: Salty Caramel Flavor-Wrapped 4.4, Silicone Popper 4.3, Lightly Salted 4.2, Gift Set 4.0, Traditional 9-Pack 3.6."
+ ],
+ "reviews_reco": [
+  "Check review request settings for the Flavor-Wrapped line, the fastest-growing products.",
+  "Sellerise lists 113 critical alerts in the last 30 days, 101 of them Buy Box lost, plus 8 out-of-stock alerts; work those before BF/CM."
+ ],
+ "recommendations": [
+  [
+   "Inventory",
+   "Restock the Gift Set 12-Pack, the top seller at $13,372, now flagged out of stock.",
+   "Account team",
+   "This week"
+  ],
+  [
+   "Inventory",
+   "Replenish Pop Cups 6-Packs and both Pop Cup Kits; the lines fell 46% and 45%.",
+   "Account team",
+   "This week"
+  ],
+  [
+   "Inventory",
+   "Confirm Flavor-Wrapped and Discovery Kit FBA stock: the Oct 26 sheet shows 0 available.",
+   "Account team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Pause ads on products that are out of stock until they are back.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Lower bids on SB “opopop popcorn” exact (Salty Caramel and Kit campaigns).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Pause the 52 no-sale campaigns ($296); add the 12 converting searches as exact keywords.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Account health",
+   "Review the 101 Buy Box lost alerts.",
+   "Account team",
+   "Next week"
+  ]
+ ],
+ "position": [
+  "November is 10% behind last year to date and pacing to about $218.9K at the current daily rate.",
+  "This week fell to $48.3K as Pop Cups and Kits ran out; Flavor-Wrapped kept growing."
+ ],
+ "next_steps": [
+  "Restock Pop Cups, Kits and the Gift Set.",
+  "Confirm Flavor-Wrapped stock at FBA.",
+  "Pause ads on out-of-stock items.",
+  "Lock BF/CM deals around in-stock items."
+ ],
+ "data_ask": [
+  "Updated inventory sheet (latest is Oct 26).",
+  "Inbound ETAs for Pop Cups, Kits and Gift Set.",
+  "BF/CM deal and coupon plan.",
+  "Review request settings."
+ ]
+}

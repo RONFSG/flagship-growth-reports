@@ -1,0 +1,447 @@
+{
+ "_source": "Sellerise MCP, account Opopop, marketplace US, pulled 2026-11-16 (Monday-Sunday weeks; 4-week table from the saved weekly totals)",
+ "weeks": [
+  {
+   "label": "Oct 19 – 25",
+   "revenue": 44877.71,
+   "units": 1887,
+   "orders": 1734,
+   "impressions": 810256,
+   "clicks": 3978,
+   "refundUnits": 42,
+   "refundRate": 2.42,
+   "spend": 5073.52,
+   "adSales": 16629.82,
+   "acos": 30.51,
+   "tacos": 11.31
+  },
+  {
+   "label": "Oct 26 – Nov 1",
+   "revenue": 46558.19,
+   "units": 2067,
+   "orders": 1904,
+   "impressions": 803655,
+   "clicks": 3759,
+   "refundUnits": 44,
+   "refundRate": 2.31,
+   "spend": 5184.36,
+   "adSales": 14234.61,
+   "acos": 36.42,
+   "tacos": 11.14
+  },
+  {
+   "label": "Nov 2 – 8",
+   "revenue": 55332.95,
+   "units": 2269,
+   "orders": 2014,
+   "impressions": 582899,
+   "clicks": 3470,
+   "refundUnits": 49,
+   "refundRate": 2.43,
+   "spend": 4203.0,
+   "adSales": 16276.94,
+   "acos": 25.82,
+   "tacos": 7.6
+  },
+  {
+   "label": "Nov 9 – 15",
+   "revenue": 48316.36,
+   "units": 1706,
+   "orders": 1544,
+   "impressions": 368029,
+   "clicks": 2733,
+   "refundUnits": 54,
+   "refundRate": 3.5,
+   "spend": 3781.85,
+   "adSales": 12943.76,
+   "acos": 29.22,
+   "tacos": 7.83,
+   "net": 22847.54,
+   "refunds": 942.19,
+   "adOrders": 378,
+   "cpc": 1.38,
+   "cvr": 13.83
+  }
+ ],
+ "mtd": {
+  "through": "2026-11-15",
+  "days": 15,
+  "revenue": 109454.99,
+  "units": 4218,
+  "orders": 3782,
+  "spend": 8749.59,
+  "adSales": 33176.3,
+  "acos": 26.37,
+  "tacos": 7.99,
+  "refundRate": 2.91
+ },
+ "mtdLY": {
+  "revenue": 121618.28,
+  "units": 4916,
+  "orders": 4412,
+  "spend": 0
+ },
+ "daily": [
+  [
+   "2026-11-02",
+   8146.41,
+   652.56,
+   3977.6,
+   270,
+   88
+  ],
+  [
+   "2026-11-03",
+   7963.42,
+   635.55,
+   2241.16,
+   311,
+   82
+  ],
+  [
+   "2026-11-04",
+   7107.1,
+   641.64,
+   2165.44,
+   277,
+   67
+  ],
+  [
+   "2026-11-05",
+   6204.13,
+   626.11,
+   2083.61,
+   257,
+   77
+  ],
+  [
+   "2026-11-06",
+   8902.48,
+   521.24,
+   2257.41,
+   327,
+   75
+  ],
+  [
+   "2026-11-07",
+   8570.16,
+   599.9,
+   1465.39,
+   320,
+   50
+  ],
+  [
+   "2026-11-08",
+   8439.25,
+   526,
+   2086.33,
+   252,
+   53
+  ],
+  [
+   "2026-11-09",
+   6415.56,
+   475.39,
+   1933.72,
+   201,
+   54
+  ],
+  [
+   "2026-11-10",
+   5431.21,
+   456.97,
+   1840.2,
+   181,
+   52
+  ],
+  [
+   "2026-11-11",
+   6816.1,
+   408.2,
+   1910.41,
+   221,
+   55
+  ],
+  [
+   "2026-11-12",
+   6620.71,
+   531.83,
+   2239.8,
+   202,
+   65
+  ],
+  [
+   "2026-11-13",
+   7237.91,
+   569.68,
+   1582.21,
+   241,
+   48
+  ],
+  [
+   "2026-11-14",
+   7793.07,
+   631.08,
+   1764.09,
+   242,
+   53
+  ],
+  [
+   "2026-11-15",
+   8001.8,
+   708.7,
+   1673.33,
+   256,
+   51
+  ]
+ ],
+ "searchTerms": {
+  "total": 568,
+  "winners": 31,
+  "harvest": 12,
+  "negative": 3,
+  "noPurchase": 6,
+  "rows": [
+   [
+    "opopop popcorn",
+    "SB",
+    24918,
+    295,
+    44,
+    1099.96,
+    1493.87
+   ],
+   [
+    "opopop popcorn",
+    "SP",
+    3466,
+    134,
+    29,
+    108.22,
+    1071.17
+   ],
+   [
+    "opopop",
+    "SB",
+    1522,
+    122,
+    18,
+    164.08,
+    704.82
+   ],
+   [
+    "opopop",
+    "SP",
+    3004,
+    76,
+    12,
+    74.63,
+    363.68
+   ],
+   [
+    "opopop popcorn kit with bowl",
+    "SP",
+    1301,
+    52,
+    8,
+    51.87,
+    345.81
+   ],
+   [
+    "opopop popcorn kit",
+    "SP",
+    504,
+    17,
+    5,
+    24.36,
+    227.95
+   ],
+   [
+    "opopop popcorn kit with bowl",
+    "SB",
+    594,
+    41,
+    6,
+    51.65,
+    223.89
+   ],
+   [
+    "opopop microwave popcorn",
+    "SP",
+    640,
+    15,
+    6,
+    25.12,
+    199.89
+   ]
+  ],
+  "category": [
+   [
+    "opppop popcorn",
+    "SB",
+    37,
+    6,
+    5,
+    9.77,
+    192.95
+   ],
+   [
+    "popcorn kit",
+    "SB",
+    315,
+    7,
+    3,
+    10.26,
+    144.95
+   ],
+   [
+    "oppo pop popcorn",
+    "SB",
+    5,
+    2,
+    6,
+    0.43,
+    118.89
+   ],
+   [
+    "opooop popcorn",
+    "SB",
+    67,
+    10,
+    3,
+    16.16,
+    106.97
+   ],
+   [
+    "popcorn maker",
+    "SB",
+    1590,
+    15,
+    2,
+    17.71,
+    99.98
+   ]
+  ]
+ },
+ "targets": {
+  "total": 1741,
+  "winners": 69,
+  "needsAttention": 336,
+  "highAcos": 14,
+  "noSales": 3,
+  "lowCtr": 38,
+  "rows": [
+   [
+    "opopop popcorn (SB)",
+    "Exact",
+    "Brand",
+    339.53,
+    408.87,
+    83.04,
+    71,
+    11
+   ],
+   [
+    "opopop popcorn (SB)",
+    "Exact",
+    "Brand",
+    288.63,
+    229.94,
+    125.52,
+    81,
+    6
+   ],
+   [
+    "opopop popcorn (SB)",
+    "Phrase",
+    "Brand",
+    217.02,
+    366.91,
+    59.15,
+    91,
+    9
+   ],
+   [
+    "microwave popcorn (SB)",
+    "Phrase",
+    "Category",
+    73.4,
+    200.08,
+    36.69,
+    56,
+    7
+   ],
+   [
+    "microwave popcorn kit (SB)",
+    "Phrase",
+    "Category",
+    49.96,
+    123.97,
+    40.3,
+    68,
+    3
+   ]
+  ]
+ },
+ "reviews": {
+  "available": true,
+  "periodReviews": 0,
+  "note": "No new reviews dated in the last 90 days for the 6 review ASINs Sellerise tracks; current listing ratings shown",
+  "ratings": [
+   [
+    "B0B75YMMZJ",
+    4.3
+   ],
+   [
+    "B09W453CR8",
+    4.2
+   ],
+   [
+    "B0B6YZ6L56",
+    4.0
+   ],
+   [
+    "B0DMBNGWVL",
+    4.2
+   ],
+   [
+    "B0C7Y5DKRX",
+    3.6
+   ],
+   [
+    "B0HCQ4ZY5Y",
+    4.4
+   ]
+  ]
+ },
+ "alerts": {
+  "total": 450,
+  "actionable": 132,
+  "critical": 113,
+  "warning": 19,
+  "byType": {
+   "Listing images": 148,
+   "Buy Box lost": 101,
+   "Buy Box gained": 100,
+   "Inactive": 16,
+   "Listing price": 13,
+   "Reimbursable units": 12,
+   "Badge lost": 9,
+   "Badge gained": 9,
+   "Out of stock": 8,
+   "Category": 7,
+   "Dimensions": 6,
+   "Low stock": 4,
+   "Low inventory fee": 3,
+   "Negative feedback": 3,
+   "Hijacker": 2,
+   "Hijacker (liquidation)": 2,
+   "Days of supply": 2,
+   "Large order": 1,
+   "Stranded": 1,
+   "Rating drop": 1,
+   "Rating star drop": 1,
+   "Rating star gain": 1
+  }
+ }
+}
