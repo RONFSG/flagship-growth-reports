@@ -1,0 +1,409 @@
+{
+ "_source": "Sellerise MCP, account SuperMush, marketplace US, pulled 2026-11-16 (Monday-Sunday weeks; 4-week table from the saved weekly totals)",
+ "weeks": [
+  {
+   "label": "Oct 19 – 25",
+   "revenue": 9829.1,
+   "units": 410,
+   "orders": 388,
+   "impressions": 226157,
+   "clicks": 1320,
+   "refundUnits": 8,
+   "refundRate": 2.06,
+   "spend": 3507.06,
+   "adSales": 2349.06,
+   "acos": 149.3,
+   "tacos": 35.68
+  },
+  {
+   "label": "Oct 26 – Nov 1",
+   "revenue": 9313.31,
+   "units": 430,
+   "orders": 410,
+   "impressions": 204136,
+   "clicks": 1276,
+   "refundUnits": 9,
+   "refundRate": 2.2,
+   "spend": 3210.66,
+   "adSales": 2414.98,
+   "acos": 132.95,
+   "tacos": 34.47
+  },
+  {
+   "label": "Nov 2 – 8",
+   "revenue": 9426.45,
+   "units": 465,
+   "orders": 431,
+   "impressions": 254042,
+   "clicks": 1390,
+   "refundUnits": 6,
+   "refundRate": 1.39,
+   "spend": 2089.95,
+   "adSales": 2526.27,
+   "acos": 82.73,
+   "tacos": 22.17
+  },
+  {
+   "label": "Nov 9 – 15",
+   "revenue": 10713.3,
+   "units": 480,
+   "orders": 444,
+   "impressions": 241435,
+   "clicks": 1169,
+   "refundUnits": 5,
+   "refundRate": 1.13,
+   "spend": 2298.92,
+   "adSales": 1827.19,
+   "acos": 125.82,
+   "tacos": 21.46,
+   "net": 4581.24,
+   "refunds": 62.12,
+   "adOrders": 89,
+   "cpc": 1.97,
+   "cvr": 7.61
+  }
+ ],
+ "mtd": {
+  "through": "2026-11-15",
+  "days": 15,
+  "revenue": 21686.58,
+  "units": 1015,
+  "orders": 935,
+  "spend": 4727.38,
+  "adSales": 4770.78,
+  "acos": 99.09,
+  "tacos": 21.8,
+  "refundRate": 1.5
+ },
+ "mtdLY": {
+  "revenue": 17833.33,
+  "units": 583,
+  "orders": 530,
+  "spend": 0,
+  "adSales": 0,
+  "acos": 0,
+  "tacos": 0,
+  "refundRate": 1.13
+ },
+ "daily": [
+  [
+   "2026-11-02",
+   1134.84,
+   330.29,
+   392.3,
+   54,
+   20
+  ],
+  [
+   "2026-11-03",
+   1520.2,
+   284.16,
+   363.35,
+   64,
+   14
+  ],
+  [
+   "2026-11-04",
+   1243.08,
+   270.27,
+   268.61,
+   53,
+   13
+  ],
+  [
+   "2026-11-05",
+   1357.49,
+   277.12,
+   319.85,
+   58,
+   13
+  ],
+  [
+   "2026-11-06",
+   1327.25,
+   235.8,
+   308.86,
+   73,
+   11
+  ],
+  [
+   "2026-11-07",
+   1289.44,
+   322.38,
+   494.75,
+   58,
+   23
+  ],
+  [
+   "2026-11-08",
+   1554.15,
+   369.93,
+   378.55,
+   71,
+   17
+  ],
+  [
+   "2026-11-09",
+   1887.3,
+   403.72,
+   372.4,
+   74,
+   18
+  ],
+  [
+   "2026-11-10",
+   1622.36,
+   223.65,
+   390.34,
+   69,
+   15
+  ],
+  [
+   "2026-11-11",
+   1423.34,
+   265.34,
+   195.89,
+   61,
+   12
+  ],
+  [
+   "2026-11-12",
+   1525.29,
+   294.35,
+   349.32,
+   70,
+   18
+  ],
+  [
+   "2026-11-13",
+   833.44,
+   274.98,
+   116.45,
+   38,
+   5
+  ],
+  [
+   "2026-11-14",
+   1444.15,
+   465.6,
+   223.9,
+   56,
+   10
+  ],
+  [
+   "2026-11-15",
+   1977.42,
+   371.28,
+   178.89,
+   76,
+   11
+  ]
+ ],
+ "searchTerms": {
+  "total": 116,
+  "winners": 3,
+  "harvest": 0,
+  "negative": 1,
+  "noPurchase": 1,
+  "rows": [
+   [
+    "supermush sleep gummies",
+    "SP",
+    13,
+    5,
+    3,
+    29.83,
+    79.97
+   ],
+   [
+    "super mush daily passion gummies",
+    "SP",
+    174,
+    9,
+    4,
+    12.23,
+    57.96
+   ],
+   [
+    "super mush sleep gummies",
+    "SP",
+    112,
+    5,
+    1,
+    18.5,
+    29.99
+   ],
+   [
+    "super mush passion gummies",
+    "SP",
+    116,
+    3,
+    1,
+    4.54,
+    29.99
+   ],
+   [
+    "super mush daily sleep gummies",
+    "SP",
+    26,
+    3,
+    1,
+    22.05,
+    29.99
+   ],
+   [
+    "supermush",
+    "SP",
+    40,
+    2,
+    1,
+    7.02,
+    29.99
+   ],
+   [
+    "supermush daily passion gummies",
+    "SP",
+    4,
+    2,
+    1,
+    3.23,
+    8.99
+   ]
+  ],
+  "category": [
+   [
+    "sleep aid",
+    "SP",
+    8654,
+    34,
+    6,
+    104.7,
+    199.93
+   ],
+   [
+    "intimacy gummies",
+    "SP",
+    18494,
+    101,
+    7,
+    288.05,
+    158.03
+   ],
+   [
+    "mushroom gummies",
+    "SP",
+    7269,
+    36,
+    7,
+    135.31,
+    153.93
+   ],
+   [
+    "melatonin free sleep gummies",
+    "SP",
+    5207,
+    12,
+    5,
+    38.32,
+    113.95
+   ],
+   [
+    "melatonin extended release gummies",
+    "SB",
+    3,
+    1,
+    1,
+    18.85,
+    59.97
+   ]
+  ]
+ },
+ "targets": {
+  "total": 337,
+  "winners": 12,
+  "highAcos": 16,
+  "noSales": 1,
+  "lowCtr": 9,
+  "needsAttention": 28,
+  "rows": [
+   [
+    "intimacy gummies",
+    "Exact",
+    "Category",
+    290.52,
+    158.03,
+    183.84,
+    102,
+    7
+   ],
+   [
+    "mushroom gummies",
+    "Exact",
+    "Category",
+    168.17,
+    114.96,
+    146.29,
+    35,
+    4
+   ],
+   [
+    "sleep aid",
+    "Exact",
+    "Category",
+    110.03,
+    199.93,
+    55.03,
+    34,
+    6
+   ],
+   [
+    "creatine gummies",
+    "Exact",
+    "Category",
+    56.22,
+    24.99,
+    224.97,
+    4,
+    1
+   ],
+   [
+    "spicy gummies for couples",
+    "Exact",
+    "Category",
+    48.46,
+    29.99,
+    161.59,
+    25,
+    1
+   ]
+  ]
+ },
+ "reviews": {
+  "available": true,
+  "periodReviews": 0,
+  "note": "Sellerise: 0 reviews dated in the last 90 days; current ratings 3.6-4.1 on the main review groups, 2.9 on the Trio bundle (B0D9PK2CBV)"
+ },
+ "alerts": {
+  "total": 98,
+  "actionable": 24,
+  "critical": 22,
+  "warning": 2,
+  "byType": {
+   "Listing price": 21,
+   "Buy Box gained": 15,
+   "Buy Box lost": 14,
+   "Reimbursable units": 12,
+   "Hijacker": 7,
+   "Images": 6,
+   "Category": 6,
+   "Hijacker liquidation": 4,
+   "Inactive": 4,
+   "Rating drop": 2,
+   "Rating star gain": 2,
+   "Title": 2,
+   "Rating star drop": 1,
+   "Bullets": 1,
+   "Suppression": 1
+  }
+ }
+}
