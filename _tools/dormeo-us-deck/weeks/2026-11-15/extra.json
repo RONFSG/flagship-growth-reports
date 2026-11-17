@@ -1,0 +1,414 @@
+{
+ "_source": "Sellerise MCP, account Dormeo, marketplace US, pulled 2026-11-17 (Monday-Sunday weeks; 4-week table from the saved weekly totals)",
+ "weeks": [
+  {
+   "label": "Oct 19 – 25",
+   "revenue": 57736.45,
+   "units": 160,
+   "orders": 157,
+   "impressions": 629651,
+   "clicks": 3375,
+   "refundUnits": 41,
+   "refundRate": 26.11,
+   "spend": 6741.13,
+   "adSales": 28425.0,
+   "acos": 23.72,
+   "tacos": 11.68
+  },
+  {
+   "label": "Oct 26 – Nov 1",
+   "revenue": 49136.51,
+   "units": 145,
+   "orders": 145,
+   "impressions": 447126,
+   "clicks": 2780,
+   "refundUnits": 28,
+   "refundRate": 19.31,
+   "spend": 4353.86,
+   "adSales": 24031.2,
+   "acos": 18.12,
+   "tacos": 8.86
+  },
+  {
+   "label": "Nov 2 – 8",
+   "revenue": 65482.4,
+   "units": 182,
+   "orders": 176,
+   "impressions": 370183,
+   "clicks": 3047,
+   "refundUnits": 24,
+   "refundRate": 13.64,
+   "spend": 4364.2,
+   "adSales": 32473.35,
+   "acos": 13.44,
+   "tacos": 6.66
+  },
+  {
+   "label": "Nov 9 – 15",
+   "revenue": 69209.99,
+   "units": 195,
+   "orders": 189,
+   "impressions": 468419,
+   "clicks": 3764,
+   "refundUnits": 32,
+   "refundRate": 16.93,
+   "spend": 5897.31,
+   "adSales": 40415.87,
+   "acos": 14.59,
+   "tacos": 8.52,
+   "net": 38227.97,
+   "refunds": 7909.62,
+   "adOrders": 108,
+   "cpc": 1.57,
+   "cvr": 2.87
+  }
+ ],
+ "mtd": {
+  "through": "2026-11-15",
+  "days": 15,
+  "revenue": 140622.55,
+  "units": 395,
+  "orders": 383,
+  "spend": 10893.27,
+  "adSales": 78502.36,
+  "acos": 13.88,
+  "tacos": 7.75,
+  "refundRate": 14.62
+ },
+ "mtdLY": {
+  "through": "2025-11-15",
+  "days": 15,
+  "revenue": 182648.36,
+  "units": 507,
+  "orders": 488,
+  "spend": 0,
+  "adSales": 0,
+  "acos": 0,
+  "tacos": 0,
+  "refundRate": 9.22
+ },
+ "daily": [
+  [
+   "2026-11-02",
+   9428.64,
+   486.83,
+   4416.5,
+   25,
+   15
+  ],
+  [
+   "2026-11-03",
+   5654.08,
+   514.28,
+   2181.96,
+   16,
+   8
+  ],
+  [
+   "2026-11-04",
+   11157.03,
+   462.48,
+   4423.97,
+   28,
+   12
+  ],
+  [
+   "2026-11-05",
+   7731.83,
+   570.18,
+   4818.96,
+   21,
+   15
+  ],
+  [
+   "2026-11-06",
+   10651.35,
+   547.63,
+   4170.53,
+   29,
+   10
+  ],
+  [
+   "2026-11-07",
+   7990.02,
+   781.45,
+   4921.46,
+   23,
+   14
+  ],
+  [
+   "2026-11-08",
+   12869.45,
+   1001.35,
+   7539.97,
+   34,
+   19
+  ],
+  [
+   "2026-11-09",
+   10368.89,
+   693.24,
+   6697.96,
+   29,
+   17
+  ],
+  [
+   "2026-11-10",
+   8019.76,
+   601.58,
+   4410,
+   22,
+   12
+  ],
+  [
+   "2026-11-11",
+   8074.64,
+   638.25,
+   5853.95,
+   25,
+   18
+  ],
+  [
+   "2026-11-12",
+   5774.73,
+   923.11,
+   4371,
+   15,
+   11
+  ],
+  [
+   "2026-11-13",
+   8744.02,
+   855.59,
+   5415.99,
+   24,
+   14
+  ],
+  [
+   "2026-11-14",
+   16974.63,
+   1158.49,
+   8719,
+   45,
+   22
+  ],
+  [
+   "2026-11-15",
+   11253.32,
+   1027.05,
+   4947.97,
+   29,
+   14
+  ]
+ ],
+ "searchTerms": {
+  "total": 290,
+  "winners": 11,
+  "harvest": 2,
+  "negative": 9,
+  "noPurchase": 12,
+  "rows": [
+   [
+    "dormeo mattress topper queen",
+    "SP",
+    2658,
+    92,
+    5,
+    198.77,
+    2084
+   ],
+   [
+    "dormeo mattress topper full size",
+    "SP",
+    3584,
+    92,
+    5,
+    130.97,
+    1888
+   ],
+   [
+    "dormeo",
+    "SP",
+    6228,
+    83,
+    4,
+    109.5,
+    1706.99
+   ],
+   [
+    "dormeo mattress topper full",
+    "SP",
+    1035,
+    18,
+    3,
+    44.61,
+    1279
+   ],
+   [
+    "dormeo twin mattress topper",
+    "SP",
+    3612,
+    30,
+    3,
+    74.78,
+    1197
+   ],
+   [
+    "dormeo mattress pads or toppers",
+    "SP",
+    8439,
+    192,
+    3,
+    267.65,
+    1190
+   ],
+   [
+    "dormeo mattress topper",
+    "SP",
+    10355,
+    147,
+    5,
+    288.24,
+    995.99
+   ],
+   [
+    "dormeo mattress topper king",
+    "SP",
+    1413,
+    25,
+    2,
+    79.12,
+    990
+   ]
+  ],
+  "category": [
+   [
+    "mattress topper",
+    "SP",
+    96635,
+    329,
+    3,
+    859.91,
+    1115.99
+   ],
+   [
+    "twin xl mattress topper",
+    "SP",
+    1782,
+    9,
+    1,
+    29.79,
+    325
+   ],
+   [
+    "memory foam pillows",
+    "SP",
+    120,
+    6,
+    1,
+    4.35,
+    139.98
+   ],
+   [
+    "mattress toppers",
+    "SP",
+    2110,
+    31,
+    0,
+    69.75,
+    0
+   ]
+  ]
+ },
+ "targets": {
+  "total": 579,
+  "winners": 24,
+  "needsAttention": 53,
+  "highAcos": 0,
+  "noSales": 24,
+  "lowCtr": 17,
+  "rows": [
+   [
+    "mattress topper",
+    "Exact",
+    "Category",
+    373.68,
+    1115.99,
+    33.48,
+    133,
+    3
+   ],
+   [
+    "dormeo mattress pad",
+    "Phrase",
+    "Brand",
+    267.65,
+    1190,
+    22.49,
+    192,
+    3
+   ],
+   [
+    "dormeo mattress topper",
+    "Exact",
+    "Brand",
+    123.51,
+    1469.97,
+    8.4,
+    189,
+    4
+   ],
+   [
+    "domeo mattress topper",
+    "Phrase",
+    "Brand",
+    101.42,
+    0,
+    null,
+    87,
+    0
+   ],
+   [
+    "king toppers for mattresses",
+    "Exact",
+    "Category",
+    93.96,
+    0,
+    null,
+    13,
+    0
+   ]
+  ]
+ },
+ "reviews": {
+  "available": false
+ },
+ "alerts": {
+  "total": 324,
+  "actionable": 48,
+  "critical": 37,
+  "warning": 11,
+  "byType": {
+   "Listing images": 191,
+   "Inactive": 27,
+   "Buy Box lost": 26,
+   "Buy Box gained": 26,
+   "Listing price": 20,
+   "Out of stock": 6,
+   "Low inventory fee": 6,
+   "Reimbursable units": 6,
+   "Days of supply": 2,
+   "Stranded": 2,
+   "Dimensions": 2,
+   "Negative feedback": 2,
+   "Badge gained": 1,
+   "Badge lost": 1,
+   "Parent ASIN changed": 1,
+   "Bullets": 1,
+   "Rating star gained": 1,
+   "Rating star dropped": 1,
+   "Hijacker": 1,
+   "Hijacker (liquidation)": 1
+  }
+ }
+}
