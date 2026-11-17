@@ -1,5 +1,5 @@
 {
-  "_source": "Sellerise MCP, account Addasound, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-16.",
+  "_source": "Sellerise MCP, account Addasound, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: ASINs/titles/units/sessions from get_products salesProfitSummaryByAsin; productSales (plus revenue/salesTaxes) via per-ASIN get_account_metrics for week and prior week. Total Sales on the page = productSales (= Amazon Ordered Product Sales). Refreshed 2026-11-17.",
   "week": {
     "start": "2026-11-08",
     "end": "2026-11-14"
@@ -9,14 +9,15 @@
     "end": "2026-11-07"
   },
   "current": {
-    "revenue": 416.87,
+    "revenue": 300.34,
     "salesTaxes": 10.97,
-    "units": 40,
-    "ppcSpend": 305.78,
+    "units": 39,
+    "ppcSpend": 308.77,
     "ppcSales": 103.1,
-    "ppcClicks": 378,
-    "ppcImpressions": 60356,
-    "ppcOrders": 2
+    "ppcClicks": 379,
+    "ppcImpressions": 60223,
+    "ppcOrders": 2,
+    "productSales": 2867.33
   },
   "prev": {
     "revenue": 199.52,
@@ -25,44 +26,52 @@
     "ppcSpend": 323.37,
     "ppcSales": 194.35,
     "ppcClicks": 221,
-    "ppcImpressions": 52492,
-    "ppcOrders": 3
+    "ppcImpressions": 52487,
+    "ppcOrders": 3,
+    "productSales": 564
   },
   "daily": [
     {
       "date": "2026-11-08",
       "revenue": 0,
-      "salesTaxes": 0
+      "salesTaxes": 0,
+      "productSales": 0
     },
     {
       "date": "2026-11-09",
       "revenue": 0,
-      "salesTaxes": 0
+      "salesTaxes": 0,
+      "productSales": 0
     },
     {
       "date": "2026-11-10",
       "revenue": 0,
-      "salesTaxes": 0
+      "salesTaxes": 0,
+      "productSales": 0
     },
     {
       "date": "2026-11-11",
-      "revenue": 209.25,
-      "salesTaxes": 0
+      "revenue": 144.27,
+      "salesTaxes": 0,
+      "productSales": 2090.87
     },
     {
       "date": "2026-11-12",
       "revenue": 47.44,
-      "salesTaxes": 3.62
+      "salesTaxes": 3.62,
+      "productSales": 600.01
     },
     {
       "date": "2026-11-13",
-      "revenue": 105.02,
-      "salesTaxes": 3.74
+      "revenue": 53.47,
+      "salesTaxes": 3.74,
+      "productSales": 124.9
     },
     {
       "date": "2026-11-14",
       "revenue": 55.16,
-      "salesTaxes": 3.61
+      "salesTaxes": 3.61,
+      "productSales": 51.55
     }
   ],
   "products": [
@@ -70,32 +79,36 @@
       "asin": "B0BSV7V95M",
       "title": "ADDASOUND Epic 302 USB Headset with Noise Cancelling Mic and DSP, Stereo",
       "cur": {
-        "revenue": 154.15,
+        "revenue": 102.6,
         "salesTaxes": 7.23,
         "units": 3,
-        "sessions": 27
+        "sessions": 27,
+        "productSales": 103.1
       },
       "prev": {
         "revenue": 54.39,
         "salesTaxes": 2.84,
         "units": 1,
-        "sessions": 39
+        "sessions": 39,
+        "productSales": 51.55
       }
     },
     {
       "asin": "B0HCRD1RXJ",
       "title": "ADDASOUND Epic 501 USB and 3.5mm Headset, Noise Cancelling Mic, Mono",
       "cur": {
-        "revenue": 129.96,
+        "revenue": 64.98,
         "salesTaxes": 0,
         "units": 13,
-        "sessions": 66
+        "sessions": 66,
+        "productSales": 844.74
       },
       "prev": {
         "revenue": 0,
         "salesTaxes": 0,
         "units": 0,
-        "sessions": 10
+        "sessions": 10,
+        "productSales": 0
       }
     },
     {
@@ -105,13 +118,15 @@
         "revenue": 79.29,
         "salesTaxes": 0,
         "units": 13,
-        "sessions": 43
+        "sessions": 43,
+        "productSales": 1030.77
       },
       "prev": {
         "revenue": 0,
         "salesTaxes": 0,
         "units": 0,
-        "sessions": 5
+        "sessions": 5,
+        "productSales": 0
       }
     },
     {
@@ -121,13 +136,15 @@
         "revenue": 53.47,
         "salesTaxes": 3.74,
         "units": 1,
-        "sessions": 28
+        "sessions": 28,
+        "productSales": 59.92
       },
       "prev": {
         "revenue": 66.06,
         "salesTaxes": 6.14,
         "units": 1,
-        "sessions": 38
+        "sessions": 38,
+        "productSales": 59.92
       }
     },
     {
@@ -137,13 +154,15 @@
         "revenue": 0,
         "salesTaxes": 0,
         "units": 0,
-        "sessions": 5
+        "sessions": 5,
+        "productSales": 0
       },
       "prev": {
         "revenue": 0,
         "salesTaxes": 0,
         "units": 0,
-        "sessions": 9
+        "sessions": 9,
+        "productSales": 0
       }
     },
     {
@@ -153,13 +172,15 @@
         "revenue": 0,
         "salesTaxes": 0,
         "units": 0,
-        "sessions": 13
+        "sessions": 13,
+        "productSales": 0
       },
       "prev": {
         "revenue": 0,
         "salesTaxes": 0,
         "units": 0,
-        "sessions": 47
+        "sessions": 47,
+        "productSales": 0
       }
     },
     {
@@ -169,13 +190,15 @@
         "revenue": 0,
         "salesTaxes": 0,
         "units": 0,
-        "sessions": 1
+        "sessions": 1,
+        "productSales": 0
       },
       "prev": {
         "revenue": 0,
         "salesTaxes": 0,
         "units": 0,
-        "sessions": 5
+        "sessions": 5,
+        "productSales": 0
       }
     },
     {
@@ -185,20 +208,22 @@
         "revenue": 0,
         "salesTaxes": 0,
         "units": 0,
-        "sessions": 1
+        "sessions": 1,
+        "productSales": 0
       },
       "prev": {
         "revenue": 0,
         "salesTaxes": 0,
         "units": 0,
-        "sessions": 3
+        "sessions": 3,
+        "productSales": 0
       }
     }
   ],
   "insights": [
-    "**Weekly Highlights —** Addasound delivered $405 in total sales for Week 46, up 118.2% from $186 the prior week, on 40 units. The Epic 302 USB Headset grew to $146 (+185.0%) with an 11.1% conversion rate, and the Epic 501 ($129, 13 units) and Crystal SR2831 ($79, 13 units) both added meaningful volume. Wednesday, Nov 11 was the peak day at $209.",
-    "**Metrics to Watch —** Sales were concentrated in the second half of the week, with $0 recorded Sunday, Nov 8 through Tuesday, Nov 10. PPC revenue came in at $103 (-47.0%) and the Crystal 2732 QD Headset eased to $49 (-17.0%) on 28 sessions, so building consistent daily demand is the focus.",
-    "**Ad Spend Efficiency —** Ad spend of $305 (prior $323) returned $103 in PPC revenue, a 0.34x ROAS at a 296.6% ACOS. TACoS improved to 75.3% from 173.80% as total sales grew, and ad CTR was a healthy 0.63%, while the 0.53% ad conversion rate shows more clicks need to turn into orders.",
-    "**Actions This Week —** We will pause or lower bids on non-converting search terms and refocus spend on the Epic 302, Epic 501 and Crystal SR2831, which converted at 11.1%, 19.7% and 30.2%. Building on the 0.63% ad CTR, we will tighten targeting to lift ad conversion above 0.53% and bring ACOS down from 296.6% heading into the holiday season."
+    "**Weekly Highlights —** Addasound posted $2,867 in total sales for Week 46, up 408.4% from $564 the prior week, on 39 units, with organic sales reaching $2,764 (+647.8% WoW). Wednesday, Nov 11 was the standout day at $2,090. The Crystal SR2831 USB Headset led at $1,030 on 13 units with a 30.2% conversion rate, and the Epic 501 USB Headset added $844 on 13 units at a 19.7% conversion rate.",
+    "**Metrics to Watch —** Sales were concentrated mid-week: $0 was recorded Sunday, Nov 8 through Tuesday, Nov 10, and daily sales stepped down from $2,090 on Wednesday to $600 Thursday, $124 Friday and $51 Saturday. PPC revenue came in at $103 (-47.0%) on ad spend of $308 (prior $323). The good news is that the Crystal SR2831 and Epic 501 drew 43 and 66 sessions, and we are focused on turning that new traffic into steadier day-to-day demand.",
+    "**Ad Spend Efficiency —** TACoS dropped to 10.8% from 57.34% as total sales grew far faster than the $308 in ad spend. ROAS was 0.33x (prior 0.60x) at a 299.5% ACOS, with a solid 0.63% ad CTR but a 0.53% ad conversion rate, so ad clicks are not yet turning into enough orders and spend is being redirected toward the products that convert.",
+    "**Actions This Week —** We will shift ad budget toward the Crystal SR2831 (30.2% CVR), Epic 501 (19.7% CVR) and Epic 302 (11.1% CVR), and pause or lower bids on non-converting search terms to bring ACOS down from 299.5%. Building on the 0.63% ad CTR, we will tighten targeting to lift ad conversion above 0.53% heading into the holiday season."
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "_source": "Sellerise MCP, account SuperMush, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-16.",
+  "_source": "Sellerise MCP, account SuperMush, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: ASINs/titles/units/sessions from get_products salesProfitSummaryByAsin; productSales (plus revenue/salesTaxes) via per-ASIN get_account_metrics for week and prior week. Total Sales = productSales (= Amazon Ordered Product Sales). Refreshed 2026-11-17.",
   "week": {
     "start": "2026-11-08",
     "end": "2026-11-14"
@@ -9,60 +9,69 @@
     "end": "2026-11-07"
   },
   "current": {
-    "revenue": 10260.87,
-    "salesTaxes": 312.02,
-    "units": 472,
+    "revenue": 10117.9,
+    "salesTaxes": 318,
+    "units": 467,
     "ppcSpend": 2297.57,
-    "ppcSales": 2026.85,
+    "ppcSales": 2181.79,
     "ppcClicks": 1340,
-    "ppcImpressions": 290996,
-    "ppcOrders": 95
+    "ppcImpressions": 290223,
+    "ppcOrders": 99,
+    "productSales": 10283.31
   },
   "prev": {
-    "revenue": 9386.64,
-    "salesTaxes": 333.3,
-    "units": 459,
+    "revenue": 9300.68,
+    "salesTaxes": 337.82,
+    "units": 457,
     "ppcSpend": 2058.53,
     "ppcSales": 2565.04,
     "ppcClicks": 1203,
-    "ppcImpressions": 183742,
-    "ppcOrders": 110
+    "ppcImpressions": 183722,
+    "ppcOrders": 110,
+    "productSales": 9867.13
   },
   "daily": [
     {
       "date": "2026-11-08",
-      "revenue": 1554.15,
-      "salesTaxes": 54.16
+      "revenue": 1518.4,
+      "salesTaxes": 54.9,
+      "productSales": 1525.01
     },
     {
       "date": "2026-11-09",
       "revenue": 1887.3,
-      "salesTaxes": 66.02
+      "salesTaxes": 66.02,
+      "productSales": 1908.77
     },
     {
       "date": "2026-11-10",
-      "revenue": 1622.36,
-      "salesTaxes": 52.36
+      "revenue": 1562.38,
+      "salesTaxes": 52.36,
+      "productSales": 1564.23
     },
     {
       "date": "2026-11-11",
       "revenue": 1423.34,
-      "salesTaxes": 47.11
+      "salesTaxes": 47.11,
+      "productSales": 1463.86
     },
     {
       "date": "2026-11-12",
-      "revenue": 1495.3,
-      "salesTaxes": 39.07
+      "revenue": 1497.47,
+      "salesTaxes": 41.24,
+      "productSales": 1561.31
     },
     {
       "date": "2026-11-13",
       "revenue": 833.44,
-      "salesTaxes": 18.7
+      "salesTaxes": 18.7,
+      "productSales": 881.22
     },
     {
       "date": "2026-11-14",
-      "revenue": 1444.98,
-      "salesTaxes": 34.6
+      "revenue": 1395.57,
+      "salesTaxes": 37.67,
+      "productSales": 1378.91
     }
   ],
   "products": [
@@ -70,48 +79,54 @@
       "asin": "B0CLN1NQJ3",
       "title": "SuperMush Daily Sleep Gummies - Melatonin-Free Sleep Aid - 60 Count",
       "cur": {
-        "revenue": 3767.7,
+        "revenue": 3707.72,
         "salesTaxes": 115.96,
         "units": 129,
-        "sessions": 211
+        "sessions": 211,
+        "productSales": 3735.34
       },
       "prev": {
-        "revenue": 3278.75,
-        "salesTaxes": 119.82,
+        "revenue": 3256.43,
+        "salesTaxes": 121.5,
         "units": 112,
-        "sessions": 245
+        "sessions": 245,
+        "productSales": 3367.32
       }
     },
     {
       "asin": "B0CLN17M2D",
       "title": "SuperMush Daily Passion Gummies - Cordyceps, Reishi & Maca Root - 60 Count",
       "cur": {
-        "revenue": 2072.98,
-        "salesTaxes": 57.42,
+        "revenue": 2045.16,
+        "salesTaxes": 59.59,
         "units": 71,
-        "sessions": 431
+        "sessions": 431,
+        "productSales": 2045.91
       },
       "prev": {
-        "revenue": 1750.04,
-        "salesTaxes": 70.33,
+        "revenue": 1715.51,
+        "salesTaxes": 71.79,
         "units": 59,
-        "sessions": 452
+        "sessions": 452,
+        "productSales": 1761.04
       }
     },
     {
       "asin": "B0CLN3LQF6",
       "title": "SuperMush Daily Energy Gummies - Lion's Mane & Cordyceps - 60 Count",
       "cur": {
-        "revenue": 1169.09,
-        "salesTaxes": 27.07,
+        "revenue": 1130.84,
+        "salesTaxes": 27.81,
         "units": 36,
-        "sessions": 114
+        "sessions": 114,
+        "productSales": 1137.15
       },
       "prev": {
-        "revenue": 723.47,
+        "revenue": 716.97,
         "salesTaxes": 13.81,
         "units": 24,
-        "sessions": 90
+        "sessions": 90,
+        "productSales": 767.65
       }
     },
     {
@@ -121,29 +136,33 @@
         "revenue": 906.73,
         "salesTaxes": 35.73,
         "units": 97,
-        "sessions": 768
+        "sessions": 768,
+        "productSales": 863.04
       },
       "prev": {
         "revenue": 911.95,
         "salesTaxes": 32.43,
         "units": 98,
-        "sessions": 888
+        "sessions": 888,
+        "productSales": 881.02
       }
     },
     {
       "asin": "B0G6J12SZ8",
       "title": "SuperMush Daily Sleep Gummies - Melatonin-Free Sleep Aid - 28 Count",
       "cur": {
-        "revenue": 620.2,
-        "salesTaxes": 22.83,
+        "revenue": 601.31,
+        "salesTaxes": 23.93,
         "units": 31,
-        "sessions": 156
+        "sessions": 156,
+        "productSales": 599.7
       },
       "prev": {
         "revenue": 737.97,
         "salesTaxes": 27.34,
         "units": 37,
-        "sessions": 142
+        "sessions": 142,
+        "productSales": 739.63
       }
     },
     {
@@ -153,29 +172,33 @@
         "revenue": 514.24,
         "salesTaxes": 17.5,
         "units": 25,
-        "sessions": 178
+        "sessions": 178,
+        "productSales": 499.75
       },
       "prev": {
-        "revenue": 726.09,
+        "revenue": 706.1,
         "salesTaxes": 31.46,
         "units": 36,
-        "sessions": 293
+        "sessions": 293,
+        "productSales": 699.65
       }
     },
     {
       "asin": "B0F1B3ST2V",
       "title": "SuperMush Daily Creatine Gummies - Strength & Recovery - 60 Count",
       "cur": {
-        "revenue": 347.25,
-        "salesTaxes": 3.14,
+        "revenue": 349.22,
+        "salesTaxes": 5.11,
         "units": 14,
-        "sessions": 66
+        "sessions": 66,
+        "productSales": 349.11
       },
       "prev": {
         "revenue": 318.3,
         "salesTaxes": 4.92,
         "units": 12,
-        "sessions": 57
+        "sessions": 57,
+        "productSales": 321.63
       }
     },
     {
@@ -185,20 +208,22 @@
         "revenue": 280.92,
         "salesTaxes": 8.06,
         "units": 14,
-        "sessions": 59
+        "sessions": 59,
+        "productSales": 279.86
       },
       "prev": {
-        "revenue": 96.4,
-        "salesTaxes": 1.45,
+        "revenue": 93.78,
+        "salesTaxes": 2.83,
         "units": 5,
-        "sessions": 59
+        "sessions": 59,
+        "productSales": 99.95
       }
     }
   ],
   "insights": [
-    "**Weekly Highlights \u2014** SuperMush grew total sales +9.9% WoW to $9,948 for Week 46 on 472 units, powered by organic revenue climbing +22.1% to $7,922. The Daily Sleep Gummies 60 Count led at $3,651 (+15.6%) with an excellent 61.1% conversion rate, Daily Passion Gummies 60 Count rose to $2,015 (+20.0%), and Daily Energy Gummies 60 Count jumped to $1,142 (+60.9%). Monday, Nov 9 was the peak day at $1,821.",
-    "**Metrics to Watch \u2014** Advertising efficiency is the key area to tighten: ACOS reached 113.4% and ROAS moved to 0.88x (prior 1.25x), with PPC revenue at $2,026 (-21.0%). Friday, Nov 13 was the softest day at $814, and the Daily Sleep Gummies 28 Count eased to $597 (-15.9%).",
-    "**Ad Spend Efficiency \u2014** Ad spend of $2,297 (prior $2,058) generated $2,026 in PPC revenue, with TACoS at 23.1% (prior 22.74%). Ad CTR was 0.46% and ad conversion was 7.09%, so the opportunity is to shift spend toward the high-converting 60 Count gummies that are already winning organically.",
-    "**Actions This Week \u2014** We will cut bids on search terms that spend without converting and reallocate budget to the Daily Sleep, Passion and Energy 60 Count campaigns to bring ACOS well below 113.4%. We will also test new Sponsored Brand ad creative to lift ad CTR above 0.46% as we head into the holiday season."
+    "**Weekly Highlights —** Total sales grew +4.2% WoW to $10,283, powered by organic revenue rising +10.9% to $8,101. The Daily Energy Gummies 60 Count surged to $1,137 (+48.1%) with sessions up +26.7%, the Daily Passion Gummies 60 Count grew to $2,045 (+16.2%), and the Daily Sleep Gummies 60 Count led at $3,735 (+10.9%) with a 61.1% conversion rate. Monday, Nov 9 was the peak day at $1,908.",
+    "**Metrics to Watch —** PPC revenue eased to $2,181 (-14.9%) even as ad spend rose to $2,297 (prior $2,058), so paid traffic converted less efficiently this week; organic more than made up for it at $8,101 (+10.9%). The Daily Sleep Gummies 28 Count slipped to $599 (-18.9%) as its CVR fell to 19.9% (-23.7%), and Friday, Nov 13 was the softest day at $881. We are tightening ad targeting so spend goes to the terms that convert.",
+    "**Ad Spend Efficiency —** ROAS came in at 0.95x (prior 1.25x) and TACoS at 22.3% (prior 20.86%), with ACOS at 105.3%, a 0.46% ad CTR and a 7.39% ad conversion rate. We are correcting this by cutting bids on search terms that spend without converting and moving budget toward the Daily Sleep Gummies 60 Count and Daily Energy Gummies 60 Count, where shoppers are already buying.",
+    "**Actions This Week —** Pause or lower bids on non-converting search terms to bring ACOS down from 105.3% and ROAS back above 1.25x. Shift budget to the Daily Energy Gummies 60 Count to build on its +48.1% growth and to the Daily Sleep Gummies 60 Count to use its 61.1% conversion rate. Test new ad creative to lift the 0.46% ad CTR heading into the holiday season."
   ]
 }

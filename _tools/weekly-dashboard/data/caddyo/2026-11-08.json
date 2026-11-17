@@ -1,5 +1,5 @@
 {
-  "_source": "Sellerise MCP, account CaddyO, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-16.",
+  "_source": "Sellerise MCP, account CaddyO, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: ASINs/titles/units/sessions from get_products salesProfitSummaryByAsin; productSales (plus revenue/salesTaxes) via per-ASIN get_account_metrics for week and prior week. Total Sales on the page = productSales (= Amazon Ordered Product Sales). Refreshed 2026-11-17.",
   "week": {
     "start": "2026-11-08",
     "end": "2026-11-14"
@@ -9,14 +9,15 @@
     "end": "2026-11-07"
   },
   "current": {
-    "revenue": 1649.33,
-    "salesTaxes": 106.61,
+    "revenue": 1644.58,
+    "salesTaxes": 110.55,
     "units": 56,
     "ppcSpend": 1157.05,
     "ppcSales": 1140.05,
     "ppcClicks": 856,
-    "ppcImpressions": 291717,
-    "ppcOrders": 33
+    "ppcImpressions": 291584,
+    "ppcOrders": 33,
+    "productSales": 1653.2
   },
   "prev": {
     "revenue": 1988.6,
@@ -25,44 +26,52 @@
     "ppcSpend": 1881.25,
     "ppcSales": 1328.85,
     "ppcClicks": 1354,
-    "ppcImpressions": 508336,
-    "ppcOrders": 36
+    "ppcImpressions": 508328,
+    "ppcOrders": 36,
+    "productSales": 2073.6
   },
   "daily": [
     {
       "date": "2026-11-08",
       "revenue": 305.87,
-      "salesTaxes": 22.16
+      "salesTaxes": 22.16,
+      "productSales": 318.45
     },
     {
       "date": "2026-11-09",
       "revenue": 121.8,
-      "salesTaxes": 8.9
+      "salesTaxes": 8.9,
+      "productSales": 115.8
     },
     {
       "date": "2026-11-10",
       "revenue": 291.22,
-      "salesTaxes": 14.07
+      "salesTaxes": 14.07,
+      "productSales": 300.5
     },
     {
       "date": "2026-11-11",
       "revenue": 267.64,
-      "salesTaxes": 19.65
+      "salesTaxes": 19.65,
+      "productSales": 281.55
     },
     {
       "date": "2026-11-12",
       "revenue": 183.07,
-      "salesTaxes": 13.71
+      "salesTaxes": 13.71,
+      "productSales": 173.7
     },
     {
       "date": "2026-11-13",
       "revenue": 217.97,
-      "salesTaxes": 15.32
+      "salesTaxes": 15.32,
+      "productSales": 202.65
     },
     {
       "date": "2026-11-14",
-      "revenue": 261.76,
-      "salesTaxes": 12.8
+      "revenue": 257.01,
+      "salesTaxes": 16.74,
+      "productSales": 260.55
     }
   ],
   "products": [
@@ -70,16 +79,18 @@
       "asin": "B0DSGQV1T5",
       "title": "CaddyO Wrapsulator Insulated Can Cooler for Regular 12 &16oz Cans - Black",
       "cur": {
-        "revenue": 430.95,
-        "salesTaxes": 21.32,
+        "revenue": 426.2,
+        "salesTaxes": 25.26,
         "units": 15,
-        "sessions": 116
+        "sessions": 116,
+        "productSales": 434.25
       },
       "prev": {
         "revenue": 205.21,
         "salesTaxes": 19.63,
         "units": 7,
-        "sessions": 161
+        "sessions": 161,
+        "productSales": 202.65
       }
     },
     {
@@ -89,13 +100,15 @@
         "revenue": 287.08,
         "salesTaxes": 19.29,
         "units": 10,
-        "sessions": 248
+        "sessions": 248,
+        "productSales": 289.5
       },
       "prev": {
         "revenue": 550.8,
         "salesTaxes": 36.94,
         "units": 20,
-        "sessions": 310
+        "sessions": 310,
+        "productSales": 579
       }
     },
     {
@@ -105,13 +118,15 @@
         "revenue": 176.72,
         "salesTaxes": 11.7,
         "units": 6,
-        "sessions": 157
+        "sessions": 157,
+        "productSales": 173.7
       },
       "prev": {
         "revenue": 302.77,
         "salesTaxes": 23.39,
         "units": 11,
-        "sessions": 201
+        "sessions": 201,
+        "productSales": 318.45
       }
     },
     {
@@ -121,13 +136,15 @@
         "revenue": 171.09,
         "salesTaxes": 13.32,
         "units": 6,
-        "sessions": 49
+        "sessions": 49,
+        "productSales": 173.7
       },
       "prev": {
         "revenue": 79.64,
         "salesTaxes": 5.81,
         "units": 3,
-        "sessions": 58
+        "sessions": 58,
+        "productSales": 86.85
       }
     },
     {
@@ -137,13 +154,15 @@
         "revenue": 119.44,
         "salesTaxes": 7.99,
         "units": 4,
-        "sessions": 23
+        "sessions": 23,
+        "productSales": 115.8
       },
       "prev": {
         "revenue": 107.27,
         "salesTaxes": 8.85,
         "units": 4,
-        "sessions": 33
+        "sessions": 33,
+        "productSales": 115.8
       }
     },
     {
@@ -153,13 +172,15 @@
         "revenue": 116.99,
         "salesTaxes": 9.87,
         "units": 4,
-        "sessions": 40
+        "sessions": 40,
+        "productSales": 115.8
       },
       "prev": {
         "revenue": 137.11,
         "salesTaxes": 9.73,
         "units": 5,
-        "sessions": 61
+        "sessions": 61,
+        "productSales": 144.75
       }
     },
     {
@@ -169,13 +190,15 @@
         "revenue": 116.24,
         "salesTaxes": 9.12,
         "units": 4,
-        "sessions": 57
+        "sessions": 57,
+        "productSales": 115.8
       },
       "prev": {
         "revenue": 110.17,
         "salesTaxes": 7.39,
         "units": 4,
-        "sessions": 76
+        "sessions": 76,
+        "productSales": 115.8
       }
     },
     {
@@ -185,20 +208,22 @@
         "revenue": 93.26,
         "salesTaxes": 6.41,
         "units": 3,
-        "sessions": 35
+        "sessions": 35,
+        "productSales": 86.85
       },
       "prev": {
         "revenue": 26.33,
         "salesTaxes": 1.72,
         "units": 1,
-        "sessions": 68
+        "sessions": 68,
+        "productSales": 28.95
       }
     }
   ],
   "insights": [
-    "**Weekly Highlights —** CaddyO generated $1,542 in total sales for Week 46 on 56 units, versus $1,841 the prior week (-16.2% WoW). The Black Wrapsulator Can Cooler led the lineup at $409 (+120.7%) on 15 units with a 12.9% conversion rate, and the B0G3TDWNYR Wrapsulator grew to $157 (+113.7%). Sunday, Nov 8 was the peak day at $283.",
-    "**Metrics to Watch —** The Blue Wrapsulator eased to $267 (-47.9%) and the B0G3T5N7YB Wrapsulator to $165 (-40.9%), converting at 4.0% and 3.8% on 248 and 157 sessions. Organic sales came in at $402 (-21.5% WoW), so lifting conversion on these two high-traffic coolers is the priority.",
-    "**Ad Spend Efficiency —** We reduced ad spend to $1,157 from $1,881 and ROAS improved to 0.99x from 0.71x, with TACoS dropping to 75.0% from 102.16%. PPC revenue was $1,140 (-14.2%) at a 101.5% ACOS, with a 0.29% ad CTR and a 3.86% ad conversion rate, so efficiency is trending the right way with room to tighten further.",
-    "**Actions This Week —** We will keep trimming bids on the Blue and B0G3T5N7YB Wrapsulator campaigns and move budget to the Black and Camo Wrapsulators, which converted at 12.9% and 17.4%, to bring ACOS below 101.5%. We will also test fresh Sponsored Product and Sponsored Brand ad creative to raise ad CTR above 0.29% heading into the holiday season."
+    "**Weekly Highlights —** The Black Wrapsulator Can Cooler was the standout of Week 46, more than doubling to $434 (+114.3%) on 15 units at a 12.9% conversion rate, and the B0G3TDWNYR Wrapsulator doubled to $173 (+100.0%) at a 12.2% conversion rate. CaddyO delivered $1,653 in total sales on 56 units, with Sunday, Nov 8 the peak day at $318.",
+    "**Metrics to Watch —** Total sales eased to $1,653 from $2,073 (-20.3% WoW) as ad spend came down to $1,157 from $1,881 and PPC revenue moved to $1,140 (-14.2%), while organic sales came in at $513 (-31.1% WoW). Among top products, the Blue Wrapsulator ($289, -50.0%) and the B0G3T5N7YB Wrapsulator ($173, -45.5%) saw the largest declines, converting at 4.0% and 3.8% on 248 and 157 sessions. On the positive side, every ad dollar worked harder this week, and we are focused on lifting conversion on these two high-traffic coolers to restore volume.",
+    "**Ad Spend Efficiency —** ROAS improved to 0.99x from 0.71x and TACoS fell to 70.0% from 90.72%, as $1,157 in ad spend generated $1,140 in PPC revenue. ACOS sits at 101.5% with a 0.29% ad CTR and a 3.86% ad conversion rate, so efficiency is moving the right way and we are continuing to tighten spend toward profitable targets.",
+    "**Actions This Week —** We will shift budget toward the Black, B0G3TDWNYR and Camo Wrapsulators, which converted at 12.9%, 12.2% and 17.4%, and trim bids on low-converting search terms for the Blue and B0G3T5N7YB Wrapsulators to bring ACOS below 101.5%. We will also test new Sponsored Brand ad creative to lift ad CTR above 0.29% heading into the holiday season."
   ]
 }

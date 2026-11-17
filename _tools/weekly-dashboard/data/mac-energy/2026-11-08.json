@@ -1,5 +1,5 @@
 {
-  "_source": "Sellerise MCP, account MAC Energy, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-16.",
+  "_source": "Sellerise MCP, account MAC Energy, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Total Sales = productSales (= Amazon Ordered Product Sales). Products: ASINs, titles, units and sessions from get_products salesProfitSummaryByAsin; products' productSales (and revenue/salesTaxes) via per-ASIN get_account_metrics. Refreshed 2026-11-17.",
   "week": {
     "start": "2026-11-08",
     "end": "2026-11-14"
@@ -9,60 +9,69 @@
     "end": "2026-11-07"
   },
   "current": {
-    "revenue": 93627.44,
-    "salesTaxes": 3931.43,
-    "units": 3534,
-    "ppcSpend": 75332.67,
-    "ppcSales": 43374.1,
+    "productSales": 100734.14,
+    "revenue": 90576.61,
+    "salesTaxes": 3988.09,
+    "units": 3439,
+    "ppcSpend": 75329.65,
+    "ppcSales": 44078.85,
     "ppcClicks": 8611,
-    "ppcImpressions": 4691364,
-    "ppcOrders": 1457
+    "ppcImpressions": 4684285,
+    "ppcOrders": 1480
   },
   "prev": {
-    "revenue": 80800.34,
-    "salesTaxes": 3868.04,
-    "units": 3267,
-    "ppcSpend": 37447.75,
-    "ppcSales": 41698.92,
-    "ppcClicks": 7563,
-    "ppcImpressions": 3259340,
-    "ppcOrders": 1411
+    "productSales": 94929.99,
+    "revenue": 79714.33,
+    "salesTaxes": 3939.8,
+    "units": 3246,
+    "ppcSpend": 37413.2,
+    "ppcSales": 41788.89,
+    "ppcClicks": 7561,
+    "ppcImpressions": 3259285,
+    "ppcOrders": 1413
   },
   "daily": [
     {
       "date": "2026-11-08",
-      "revenue": 11972.51,
-      "salesTaxes": 537.78
+      "productSales": 12582.16,
+      "revenue": 11548.09,
+      "salesTaxes": 539.22
     },
     {
       "date": "2026-11-09",
-      "revenue": 11271.25,
+      "productSales": 12721.64,
+      "revenue": 11091.31,
       "salesTaxes": 467.19
     },
     {
       "date": "2026-11-10",
-      "revenue": 13127.71,
+      "productSales": 14376.46,
+      "revenue": 12887.79,
       "salesTaxes": 583.96
     },
     {
       "date": "2026-11-11",
-      "revenue": 12913.65,
+      "productSales": 14319.01,
+      "revenue": 12763.7,
       "salesTaxes": 580.54
     },
     {
       "date": "2026-11-12",
-      "revenue": 13766.1,
-      "salesTaxes": 565.06
+      "productSales": 15149.37,
+      "revenue": 13544.04,
+      "salesTaxes": 570.94
     },
     {
       "date": "2026-11-13",
-      "revenue": 15477.22,
-      "salesTaxes": 677.64
+      "productSales": 16302.3,
+      "revenue": 14896.87,
+      "salesTaxes": 688.11
     },
     {
       "date": "2026-11-14",
-      "revenue": 15099,
-      "salesTaxes": 519.26
+      "productSales": 15283.2,
+      "revenue": 13844.81,
+      "salesTaxes": 558.13
     }
   ],
   "products": [
@@ -70,14 +79,16 @@
       "asin": "B0H4SCZBHY",
       "title": "MAC Energy by Conor McGregor 4-in-1 Variety Pack Sugar Free Energy Drink",
       "cur": {
-        "revenue": 43532.13,
-        "salesTaxes": 1901.87,
+        "productSales": 48437.42,
+        "revenue": 42365.89,
+        "salesTaxes": 1936.22,
         "units": 1655,
         "sessions": 4402
       },
       "prev": {
-        "revenue": 36440.18,
-        "salesTaxes": 1694.56,
+        "productSales": 46035.03,
+        "revenue": 35984.54,
+        "salesTaxes": 1730.85,
         "units": 1543,
         "sessions": 5574
       }
@@ -86,14 +97,16 @@
       "asin": "B0H4XJ5G4X",
       "title": "MAC Energy by Conor McGregor Macberry Lychee Sugar Free Energy Drink",
       "cur": {
-        "revenue": 14894.03,
-        "salesTaxes": 575.79,
+        "productSales": 15706.45,
+        "revenue": 14530.47,
+        "salesTaxes": 586.62,
         "units": 556,
         "sessions": 2515
       },
       "prev": {
-        "revenue": 13940.26,
-        "salesTaxes": 702.54,
+        "productSales": 15729.55,
+        "revenue": 13809.44,
+        "salesTaxes": 714.19,
         "units": 548,
         "sessions": 3361
       }
@@ -102,14 +115,16 @@
       "asin": "B0H4WZBN85",
       "title": "MAC Energy by Conor McGregor Forbidden Green Apple Sugar Free Energy Drink",
       "cur": {
-        "revenue": 13409.88,
-        "salesTaxes": 574.87,
+        "productSales": 14221.05,
+        "revenue": 12873.4,
+        "salesTaxes": 581.22,
         "units": 513,
         "sessions": 2729
       },
       "prev": {
-        "revenue": 11283.69,
-        "salesTaxes": 563.13,
+        "productSales": 12265.7,
+        "revenue": 11060.26,
+        "salesTaxes": 567.63,
         "units": 437,
         "sessions": 2201
       }
@@ -118,14 +133,16 @@
       "asin": "B0H4XHB9NM",
       "title": "MAC Energy by Conor McGregor Orange Creamsicle Sugar Free Energy Drink",
       "cur": {
-        "revenue": 11494.08,
-        "salesTaxes": 449.82,
+        "productSales": 11775.46,
+        "revenue": 11019.06,
+        "salesTaxes": 454.65,
         "units": 419,
         "sessions": 1402
       },
       "prev": {
-        "revenue": 9310.89,
-        "salesTaxes": 452.57,
+        "productSales": 10461.91,
+        "revenue": 9222.29,
+        "salesTaxes": 464.46,
         "units": 362,
         "sessions": 1819
       }
@@ -134,14 +151,16 @@
       "asin": "B0H4X94TKY",
       "title": "MAC Energy by Conor McGregor Proper Punch Sugar Free Energy Drink",
       "cur": {
-        "revenue": 10297.32,
-        "salesTaxes": 429.08,
+        "productSales": 10593.76,
+        "revenue": 9787.79,
+        "salesTaxes": 429.38,
         "units": 391,
         "sessions": 1291
       },
       "prev": {
-        "revenue": 9825.32,
-        "salesTaxes": 455.24,
+        "productSales": 10437.8,
+        "revenue": 9637.8,
+        "salesTaxes": 462.67,
         "units": 377,
         "sessions": 1331
       }
@@ -150,14 +169,16 @@
       "asin": "B0HHT1W43Q",
       "title": "MAC Energy Macberry Lychee/Orange Creamsicle Sugar Free Energy Drink",
       "cur": {
-        "revenue": 0,
-        "salesTaxes": 0,
+        "productSales": 0.0,
+        "revenue": 0.0,
+        "salesTaxes": 0.0,
         "units": 0,
         "sessions": 27
       },
       "prev": {
-        "revenue": 0,
-        "salesTaxes": 0,
+        "productSales": 0.0,
+        "revenue": 0.0,
+        "salesTaxes": 0.0,
         "units": 0,
         "sessions": 21
       }
@@ -166,14 +187,16 @@
       "asin": "B0HHTDK426",
       "title": "MAC Energy Macberry Lychee/Proper Punch Sugar Free Energy Drink",
       "cur": {
-        "revenue": 0,
-        "salesTaxes": 0,
+        "productSales": 0.0,
+        "revenue": 0.0,
+        "salesTaxes": 0.0,
         "units": 0,
         "sessions": 75
       },
       "prev": {
-        "revenue": 0,
-        "salesTaxes": 0,
+        "productSales": 0.0,
+        "revenue": 0.0,
+        "salesTaxes": 0.0,
         "units": 0,
         "sessions": 56
       }
@@ -182,23 +205,25 @@
       "asin": "B0HHTNN2T4",
       "title": "MAC Energy Forbidden Green Apple/Proper Punch Sugar Free Energy Drink",
       "cur": {
-        "revenue": 0,
-        "salesTaxes": 0,
+        "productSales": 0.0,
+        "revenue": 0.0,
+        "salesTaxes": 0.0,
         "units": 0,
         "sessions": 39
       },
       "prev": {
-        "revenue": 0,
-        "salesTaxes": 0,
+        "productSales": 0.0,
+        "revenue": 0.0,
+        "salesTaxes": 0.0,
         "units": 0,
         "sessions": 33
       }
     }
   ],
   "insights": [
-    "**Weekly Highlights \u2014** MAC Energy delivered $89,696 in total sales for Week 46, up 16.6% from $76,932 the prior week, on 3534 units. Organic sales grew 31.5% to $46,321, led by the 4-in-1 Variety Pack at $41,630 (+19.8%) with conversion up to 37.6%. Orange Creamsicle ($11,044, +24.7%) and Forbidden Green Apple ($12,835, +19.7%) also posted strong gains, and Friday, Nov 13 was the peak day at $14,799.",
-    "**Metrics to Watch \u2014** Ad spend rose to $75,332 from $37,447 while PPC revenue grew 4.0% to $43,374, so ROAS fell to 0.58x from 1.11x and TACoS climbed to 84.0% from 48.68%. Sessions eased on the Variety Pack (4402, -21.0%) and Macberry Lychee (2515, -25.2%), so this week's priority is bringing spend back in line with returns while protecting organic momentum.",
-    "**Ad Spend Efficiency \u2014** Ad spend of $75,332 returned $43,374 in PPC revenue at a 0.58x ROAS and 173.7% ACOS. Ad conversion held healthy at 16.92% of clicks, but the 0.18% ad CTR shows we are paying for a lot of impressions that do not earn clicks, which is the main efficiency lever to pull.",
-    "**Actions This Week \u2014** We will scale back bids and budgets on the highest-ACOS campaigns to bring spend toward the prior week's $37,447 level, pause non-converting search terms, and redirect budget to the Variety Pack and Orange Creamsicle, which are converting at 37.6% and 29.9%. We will also test new Sponsored Brand and video ad creative to lift the 0.18% ad CTR heading into the holiday season."
+    "**Weekly Highlights —** MAC Energy delivered $100,734 in total sales for Week 46, up 6.1% from $94,929 the prior week, on 3439 units, with organic sales growing 6.6% to $56,655. Forbidden Green Apple led SKU growth at $14,221 (+15.9%) on units up 17.4%, Orange Creamsicle rose to $11,775 (+12.6%) with conversion up to 29.9%, and the 4-in-1 Variety Pack grew to $48,437 (+5.2%) with conversion at 37.6%. Friday, Nov 13 was the peak day at $16,302.",
+    "**Metrics to Watch —** Ad spend rose to $75,329 from $37,413 while PPC revenue grew 5.5% to $44,078, so ROAS fell to 0.59x from 1.12x and TACoS climbed to 74.8% from 39.41%. Sessions eased on the Variety Pack (4402, -21.0%), Macberry Lychee (2515, -25.2%) and Orange Creamsicle (1402, -22.9%), but conversion improved on all three (37.6%, 22.1% and 29.9%), keeping Macberry Lychee steady at $15,706 (-0.1%). This week's priority is bringing spend back in line with returns while protecting the 6.6% organic growth.",
+    "**Ad Spend Efficiency —** Ad spend of $75,329 returned $44,078 in PPC revenue at a 0.59x ROAS and 170.9% ACOS. Ad conversion held healthy at 17.19% of clicks, so the clicks we win are converting; the 0.18% ad CTR shows we are paying for many impressions that do not earn clicks, which is the main efficiency lever to pull. We are tightening bids and budgets to move spend back toward the prior week's $37,413 level, where ROAS was 1.12x.",
+    "**Actions This Week —** (1) Scale back bids and budgets on the highest-ACOS campaigns to bring weekly spend toward $37,413 and ROAS back toward 1.12x. (2) Pause non-converting search terms and redirect budget to the Variety Pack and Orange Creamsicle, which are converting at 37.6% and 29.9%. (3) Test new Sponsored Brand and video ad creative to lift the 0.18% ad CTR heading into the holiday season."
   ]
 }
