@@ -62,7 +62,11 @@ def week_label(start):
 
 
 def net_sales(x):
-    """Sales shown on the dashboard = Sellerise revenue minus sales tax (matches Amazon Ordered Product Sales)."""
+    """Sales shown on the dashboard = Sellerise productSales, which equals Amazon Ordered Product Sales exactly
+    (verified 2026-11-17 on Hapad US and Dormeo US). Older data files without productSales fall back to
+    revenue - salesTaxes, which runs low when a brand has heavy promotions."""
+    if 'productSales' in x:
+        return x['productSales']
     return x['revenue'] - x.get('salesTaxes', 0)
 
 

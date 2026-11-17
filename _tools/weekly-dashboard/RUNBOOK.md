@@ -11,12 +11,16 @@ Run after Saturday's data is in (Sunday PST or later). Prior week = the 7 days b
 All Sellerise calls use `accountSearch`, `marketplaces`, `targetCurrency` from brands.json.
 
 1. **Week totals** — `get_account_metrics` groupBy none, once for the week and once for the prior week. Keep
-   `revenue, salesTaxes, units` and `ppc.spend, ppc.sales, ppc.clicks, ppc.impressions, ppc.orders`.
-2. **Daily** — `get_account_metrics` groupBy none for each of the 7 days (groupBy day has no salesTaxes). Keep
-   `revenue, salesTaxes`. If any day is missing, stop: do not publish a partial week.
+   `productSales, revenue, salesTaxes, units` and `ppc.spend, ppc.sales, ppc.clicks, ppc.impressions, ppc.orders`.
+2. **Daily** — `get_account_metrics` groupBy none for each of the 7 days (groupBy day has no productSales). Keep
+   `productSales, revenue, salesTaxes`. If any day is missing, stop: do not publish a partial week.
 3. **Products** — `get_products` mode top, metric revenue, limit 8, activeOnly false, for the week. From
    `salesProfitSummaryByAsin` keep `asin, revenue, salesTaxes, units, sessions`. Then the same call for the prior
    week with `asins` = those ASINs. Title = Sellerise product name cut at the first `|`.
+   get_products has no productSales, so for each of those ASINs also call `get_account_metrics` groupBy none,
+   `asin=<ASIN>` (same accountSearch/marketplaces/targetCurrency) for the week and the prior week and store its
+   `productSales` (plus revenue/salesTaxes from that call) in the product's `cur`/`prev`. This also handles currency
+   conversion (e.g. CA → USD) since get_account_metrics converts to targetCurrency.
 4. Write `data/<slug>/<weekStart>.json` (copy `data/opopop/2026-10-25.json` for the shape), `insights: null`.
 5. `python3 _tools/weekly-dashboard/build.py <slug> <weekStart> --summary` and write the 4 insights from that output
    only (Weekly Highlights / Metrics to Watch / Ad Spend Efficiency / Actions This Week, `**Label —** text`).
@@ -41,7 +45,10 @@ All Sellerise calls use `accountSearch`, `marketplaces`, `targetCurrency` from b
 7. Commit only `<slug>-weekly/index.html` and `_tools/weekly-dashboard/`, push to main.
 
 ## Definitions (computed in build.py from the raw numbers, never taken pre-computed)
-- Total Sales = revenue − salesTaxes (matches Amazon Ordered Product Sales / the old sheet within ~0.2%)
+- Total Sales = Sellerise `productSales` = Amazon Ordered Product Sales, exactly (checked against Amazon for Hapad US
+  and Dormeo US, Nov 9–15 2026). Do NOT use revenue − salesTaxes: Sellerise revenue is net of promotions, so it runs
+  ~6% low on promo-heavy weeks (Dormeo). build.py only falls back to revenue − salesTaxes for old files without
+  productSales.
 - ROAS = ppcSales / ppcSpend · ACOS = ppcSpend / ppcSales · TACoS = ppcSpend / Total Sales
 - CTR = clicks / impressions · CVR (KPI) = ad orders / clicks · Organic = Total Sales − ppcSales
 - Product CVR = units / sessions
