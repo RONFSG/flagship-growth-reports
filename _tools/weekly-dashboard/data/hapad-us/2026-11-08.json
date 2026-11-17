@@ -1,5 +1,5 @@
 {
-  "_source": "Sellerise MCP, account Hapad, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-16.",
+  "_source": "Sellerise MCP, account Hapad, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: ASINs/titles/units/sessions from get_products salesProfitSummaryByAsin; productSales (plus revenue/salesTaxes) via per-ASIN get_account_metrics for week and prior week. Total Sales = productSales (= Amazon Ordered Product Sales). Refreshed 2026-11-17.",
   "week": {
     "start": "2026-11-08",
     "end": "2026-11-14"
@@ -9,60 +9,69 @@
     "end": "2026-11-07"
   },
   "current": {
-    "revenue": 18299.68,
-    "salesTaxes": 710.22,
+    "revenue": 18307.57,
+    "salesTaxes": 722.26,
     "units": 1209,
     "ppcSpend": 2462.58,
-    "ppcSales": 5705.38,
+    "ppcSales": 5772.35,
     "ppcClicks": 1470,
-    "ppcImpressions": 175402,
-    "ppcOrders": 306
+    "ppcImpressions": 175381,
+    "ppcOrders": 311,
+    "productSales": 17658.45
   },
   "prev": {
-    "revenue": 19213.99,
-    "salesTaxes": 811.76,
+    "revenue": 19224.02,
+    "salesTaxes": 811.8,
     "units": 1177,
     "ppcSpend": 3251.91,
-    "ppcSales": 7151.65,
+    "ppcSales": 7181.22,
     "ppcClicks": 2202,
-    "ppcImpressions": 317418,
-    "ppcOrders": 392
+    "ppcImpressions": 317416,
+    "ppcOrders": 393,
+    "productSales": 18436.66
   },
   "daily": [
     {
       "date": "2026-11-08",
       "revenue": 2536.13,
-      "salesTaxes": 89.74
+      "salesTaxes": 89.74,
+      "productSales": 2478.55
     },
     {
       "date": "2026-11-09",
       "revenue": 2516.99,
-      "salesTaxes": 106.26
+      "salesTaxes": 106.26,
+      "productSales": 2422.85
     },
     {
       "date": "2026-11-10",
       "revenue": 2511.16,
-      "salesTaxes": 93.18
+      "salesTaxes": 93.18,
+      "productSales": 2431.06
     },
     {
       "date": "2026-11-11",
       "revenue": 3287.3,
-      "salesTaxes": 132.17
+      "salesTaxes": 132.17,
+      "productSales": 3177.88
     },
     {
       "date": "2026-11-12",
       "revenue": 2571.54,
-      "salesTaxes": 113.14
+      "salesTaxes": 113.14,
+      "productSales": 2473.95
     },
     {
       "date": "2026-11-13",
-      "revenue": 2507.92,
-      "salesTaxes": 100.15
+      "revenue": 2509.7,
+      "salesTaxes": 106.13,
+      "productSales": 2391.56
     },
     {
       "date": "2026-11-14",
-      "revenue": 2368.64,
-      "salesTaxes": 75.58
+      "revenue": 2374.75,
+      "salesTaxes": 81.64,
+      "productSales": 2282.6
     }
   ],
   "products": [
@@ -70,48 +79,54 @@
       "asin": "B008DW1DS0",
       "title": "HAPAD Metatarsal Pad 5/16\" - Medium, 6 Pair Pack Wool Felt Ball of Foot Pad",
       "cur": {
-        "revenue": 4567.49,
-        "salesTaxes": 140.48,
+        "revenue": 4570.08,
+        "salesTaxes": 143.07,
         "units": 150,
-        "sessions": 544
+        "sessions": 544,
+        "productSales": 4435.5
       },
       "prev": {
         "revenue": 5288.16,
         "salesTaxes": 210.82,
         "units": 174,
-        "sessions": 616
+        "sessions": 616,
+        "productSales": 5086.04
       }
     },
     {
       "asin": "B008DW1EX4",
       "title": "HAPAD Metatarsal Pad 3/8\" - Large, 6 Pair Pack Wool Felt Ball of Foot Pad",
       "cur": {
-        "revenue": 2318.29,
-        "salesTaxes": 124.94,
+        "revenue": 2317.61,
+        "salesTaxes": 128.46,
         "units": 79,
-        "sessions": 424
+        "sessions": 424,
+        "productSales": 2211.21
       },
       "prev": {
         "revenue": 2145.78,
         "salesTaxes": 113.71,
         "units": 73,
-        "sessions": 418
+        "sessions": 418,
+        "productSales": 2043.27
       }
     },
     {
       "asin": "B0FVHR4T99",
       "title": "HAPAD Posting Heel Wedge - Reversible Medial/Lateral Insert Pair Shoe Pad",
       "cur": {
-        "revenue": 1114.04,
-        "salesTaxes": 38.12,
+        "revenue": 1114.91,
+        "salesTaxes": 38.99,
         "units": 108,
-        "sessions": 207
+        "sessions": 207,
+        "productSales": 1078.92
       },
       "prev": {
         "revenue": 820.28,
         "salesTaxes": 26.58,
         "units": 81,
-        "sessions": 220
+        "sessions": 220,
+        "productSales": 799.2
       }
     },
     {
@@ -121,13 +136,15 @@
         "revenue": 971.4,
         "salesTaxes": 29.07,
         "units": 97,
-        "sessions": 295
+        "sessions": 295,
+        "productSales": 948.58
       },
       "prev": {
         "revenue": 933.23,
         "salesTaxes": 39.52,
         "units": 89,
-        "sessions": 360
+        "sessions": 360,
+        "productSales": 869.13
       }
     },
     {
@@ -137,13 +154,15 @@
         "revenue": 903.46,
         "salesTaxes": 32.12,
         "units": 23,
-        "sessions": 201
+        "sessions": 201,
+        "productSales": 875.15
       },
       "prev": {
         "revenue": 1745.03,
         "salesTaxes": 89.46,
         "units": 44,
-        "sessions": 219
+        "sessions": 219,
+        "productSales": 1674.2
       }
     },
     {
@@ -153,13 +172,15 @@
         "revenue": 692.53,
         "salesTaxes": 24.43,
         "units": 87,
-        "sessions": 292
+        "sessions": 292,
+        "productSales": 661.2
       },
       "prev": {
         "revenue": 632.53,
         "salesTaxes": 24.18,
         "units": 80,
-        "sessions": 366
+        "sessions": 366,
+        "productSales": 608
       }
     },
     {
@@ -169,13 +190,15 @@
         "revenue": 576.15,
         "salesTaxes": 20.47,
         "units": 62,
-        "sessions": 208
+        "sessions": 208,
+        "productSales": 550.14
       },
       "prev": {
         "revenue": 763.02,
         "salesTaxes": 29.92,
         "units": 75,
-        "sessions": 209
+        "sessions": 209,
+        "productSales": 735.93
       }
     },
     {
@@ -185,20 +208,22 @@
         "revenue": 544.76,
         "salesTaxes": 19.79,
         "units": 53,
-        "sessions": 181
+        "sessions": 181,
+        "productSales": 529.47
       },
       "prev": {
         "revenue": 547.15,
         "salesTaxes": 32.14,
         "units": 51,
-        "sessions": 168
+        "sessions": 168,
+        "productSales": 509.49
       }
     }
   ],
   "insights": [
-    "**Weekly Highlights \u2014** Hapad US generated $17,589 in total sales for Week 46 on 1209 units, with organic revenue growing +5.6% WoW to $11,884. The Posting Heel Wedge was a standout at $1,075 (+35.6%) with a 52.2% conversion rate, and the Metatarsal Pad 3/8\" Large 6-Pair Pack grew to $2,193 (+7.9%). Wednesday, Nov 11 was the peak day at $3,155.",
-    "**Metrics to Watch \u2014** The -4.4% dip in total sales from $18,402 to $17,589 was primarily driven by a deliberate $789 pullback in ad spend, which reduced PPC revenue to $5,705 (-20.2%) \u2014 but organic revenue held strong at $11,884 (+5.6%), showing healthy underlying demand. The Medium 6-Pair Pack eased to $4,427 (-12.8%) and the Small 6-Pair Pack to $871 (-47.4%), both reflecting lower impression volume from the reduced spend rather than a demand shift. We are restoring targeted bids on both SKUs to bring them back to their recent run rate.",
-    "**Ad Spend Efficiency \u2014** Ad spend came down to $2,462 (prior $3,251) while ROAS improved to 2.32x from 2.20x and TACoS dropped to 14.0% from 17.67%. ACOS sits at 43.2%, with a healthy 0.84% ad CTR and 20.82% ad conversion rate, showing tighter spend is landing on higher-intent shoppers.",
-    "**Actions This Week \u2014** We will lift bids on the Medium 6-Pair Pack's best-converting search terms to recover its volume, and expand targeting for the Posting Heel Wedge to capitalize on its 52.2% conversion. We will also refine campaigns for the Small 6-Pair Pack and keep trimming low-converting terms to bring ACOS below 43.2% as we head into the holiday season."
+    "**Weekly Highlights —** Organic revenue grew +5.6% WoW to $11,886, the strongest signal of the week. The Posting Heel Wedge jumped to $1,078 (+35.0%) with a 52.2% conversion rate, the Metatarsal Pad 1-Pair rose to $948 (+9.1%) as CVR improved +33.0% to 32.9%, and the Large 6-Pair Pack grew to $2,211 (+8.2%). Wednesday, Nov 11 was the peak day at $3,177.",
+    "**Metrics to Watch —** The -4.2% dip in total sales (from $18,436 to $17,658) was primarily driven by lower ad spend of $2,462 (prior $3,251), which brought PPC revenue to $5,772 (-19.6%), while organic revenue grew to $11,886 (+5.6%). The Medium 6-Pair Pack eased to $4,435 (-12.8%) on sessions down -11.7%, and the Small 6-Pair Pack slipped to $875 (-47.7%) as its CVR fell to 11.4%. We are prioritizing both 6-Pair Packs to bring their volume back.",
+    "**Ad Spend Efficiency —** ROAS improved to 2.34x from 2.21x and TACoS dropped to 13.9% from 17.64%, so each ad dollar is working harder. ACOS sits at 42.7%, with a 0.84% ad CTR and a strong 21.16% ad conversion rate, showing the leaner spend is reaching high-intent shoppers.",
+    "**Actions This Week —** Raise bids on the Medium 6-Pair Pack's best-converting search terms to recover sessions and sales. Review search terms and ad creative for the Small 6-Pair Pack to lift its 11.4% conversion rate. Expand targeting for the Posting Heel Wedge to build on its 52.2% conversion, while trimming low-converting terms to bring ACOS below 42.7% heading into the holiday season."
   ]
 }

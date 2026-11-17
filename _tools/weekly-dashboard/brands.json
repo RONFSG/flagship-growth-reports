@@ -1,5 +1,5 @@
 {
-  "_about": "Weekly dashboard brands. slug = <slug>-weekly folder. account/marketplace = Sellerise accountSearch + marketplaces. currency = Sellerise targetCurrency (USD for all, GBP for UK, matching the existing pages); currencySymbol replaces $ on the page. weekStart: sunday = Sun-Sat week (scheduled Monday run), monday = Mon-Sun week (Dormeo, scheduled Tuesday run).",
+  "_about": "Weekly dashboard brands. slug = <slug>-weekly folder. account/marketplace = Sellerise accountSearch + marketplaces. currency = Sellerise targetCurrency (USD for most, GBP for UK, CAD for Dormeo Canada so it matches Amazon CA Business Reports); currencySymbol replaces $ on the page. weekStart: sunday = Sun-Sat week (scheduled Monday run), monday = Mon-Sun week (Dormeo, scheduled Tuesday run).",
   "opopop": {"brand": "Opopop", "account": "Opopop", "marketplace": "US", "currency": "USD", "currencySymbol": "$", "weekStart": "sunday"},
   "hapad-us": {"brand": "Hapad US", "account": "Hapad", "marketplace": "US", "currency": "USD", "currencySymbol": "$", "weekStart": "sunday"},
   "supermush": {"brand": "SuperMush", "account": "SuperMush", "marketplace": "US", "currency": "USD", "currencySymbol": "$", "weekStart": "sunday"},
@@ -16,5 +16,5 @@
   "aura-house": {"brand": "Aura House", "account": "Aura House", "marketplace": "US", "currency": "USD", "currencySymbol": "$", "weekStart": "sunday"},
   "be-you-tiful-athletics": {"brand": "Be-You-Tiful Athletics", "account": "BeYouTiful", "marketplace": "US", "currency": "USD", "currencySymbol": "$", "weekStart": "sunday"},
   "dormeo-us": {"brand": "Dormeo US", "account": "Dormeo", "marketplace": "US", "currency": "USD", "currencySymbol": "$", "weekStart": "monday"},
-  "dormeo-canada": {"brand": "Dormeo Canada", "account": "Dormeo", "marketplace": "CA", "currency": "USD", "currencySymbol": "$", "weekStart": "monday"}
+  "dormeo-canada": {"brand": "Dormeo Canada", "account": "Dormeo", "marketplace": "CA", "currency": "CAD", "currencySymbol": "$", "weekStart": "monday"}
 }

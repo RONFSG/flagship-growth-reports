@@ -1,5 +1,5 @@
 {
-  "_source": "Sellerise MCP, account BeYouTiful, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-16.",
+  "_source": "Sellerise MCP, account BeYouTiful, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: ASINs/titles/units/sessions from get_products salesProfitSummaryByAsin; productSales (plus revenue/salesTaxes) via per-ASIN get_account_metrics groupBy none. Total Sales = productSales (= Amazon Ordered Product Sales). Refreshed 2026-11-17.",
   "week": {
     "start": "2026-11-08",
     "end": "2026-11-14"
@@ -9,60 +9,69 @@
     "end": "2026-11-07"
   },
   "current": {
+    "productSales": 374,
     "revenue": 388.59,
     "salesTaxes": 27.89,
     "units": 13,
     "ppcSpend": 463.8,
     "ppcSales": 208,
     "ppcClicks": 283,
-    "ppcImpressions": 140420,
+    "ppcImpressions": 140166,
     "ppcOrders": 8
   },
   "prev": {
+    "productSales": 194,
     "revenue": 202.65,
     "salesTaxes": 14.35,
     "units": 7,
     "ppcSpend": 417.83,
     "ppcSales": 208,
     "ppcClicks": 266,
-    "ppcImpressions": 82452,
+    "ppcImpressions": 82444,
     "ppcOrders": 6
   },
   "daily": [
     {
       "date": "2026-11-08",
       "revenue": 116.47,
-      "salesTaxes": 8.17
+      "salesTaxes": 8.17,
+      "productSales": 114
     },
     {
       "date": "2026-11-09",
       "revenue": 69.13,
-      "salesTaxes": 5.03
+      "salesTaxes": 5.03,
+      "productSales": 66
     },
     {
       "date": "2026-11-10",
       "revenue": 29.86,
-      "salesTaxes": 1.86
+      "salesTaxes": 1.86,
+      "productSales": 28
     },
     {
       "date": "2026-11-11",
       "revenue": 158.04,
-      "salesTaxes": 11.74
+      "salesTaxes": 11.74,
+      "productSales": 152
     },
     {
       "date": "2026-11-12",
       "revenue": 0,
-      "salesTaxes": 0
+      "salesTaxes": 0,
+      "productSales": 0
     },
     {
       "date": "2026-11-13",
       "revenue": 15.09,
-      "salesTaxes": 1.09
+      "salesTaxes": 1.09,
+      "productSales": 14
     },
     {
       "date": "2026-11-14",
       "revenue": 0,
-      "salesTaxes": 0
+      "salesTaxes": 0,
+      "productSales": 0
     }
   ],
   "products": [
@@ -73,13 +82,15 @@
         "revenue": 235.61,
         "salesTaxes": 17.11,
         "units": 6,
-        "sessions": 76
+        "sessions": 76,
+        "productSales": 228
       },
       "prev": {
         "revenue": 119.24,
         "salesTaxes": 9.04,
         "units": 3,
-        "sessions": 81
+        "sessions": 81,
+        "productSales": 114
       }
     },
     {
@@ -89,13 +100,15 @@
         "revenue": 75.09,
         "salesTaxes": 5.09,
         "units": 5,
-        "sessions": 54
+        "sessions": 54,
+        "productSales": 70
       },
       "prev": {
         "revenue": 44.56,
         "salesTaxes": 2.56,
         "units": 3,
-        "sessions": 59
+        "sessions": 59,
+        "productSales": 42
       }
     },
     {
@@ -105,13 +118,15 @@
         "revenue": 38.99,
         "salesTaxes": 2.89,
         "units": 1,
-        "sessions": 81
+        "sessions": 81,
+        "productSales": 38
       },
       "prev": {
         "revenue": 0,
         "salesTaxes": 0,
         "units": 0,
-        "sessions": 48
+        "sessions": 48,
+        "productSales": 0
       }
     },
     {
@@ -121,13 +136,15 @@
         "revenue": 38.9,
         "salesTaxes": 2.8,
         "units": 1,
-        "sessions": 55
+        "sessions": 55,
+        "productSales": 38
       },
       "prev": {
         "revenue": 38.85,
         "salesTaxes": 2.75,
         "units": 1,
-        "sessions": 40
+        "sessions": 40,
+        "productSales": 38
       }
     },
     {
@@ -137,13 +154,15 @@
         "revenue": 0,
         "salesTaxes": 0,
         "units": 0,
-        "sessions": 44
+        "sessions": 44,
+        "productSales": 0
       },
       "prev": {
         "revenue": 0,
         "salesTaxes": 0,
         "units": 0,
-        "sessions": 55
+        "sessions": 55,
+        "productSales": 0
       }
     },
     {
@@ -153,13 +172,15 @@
         "revenue": 0,
         "salesTaxes": 0,
         "units": 0,
-        "sessions": 26
+        "sessions": 26,
+        "productSales": 0
       },
       "prev": {
         "revenue": 0,
         "salesTaxes": 0,
         "units": 0,
-        "sessions": 28
+        "sessions": 28,
+        "productSales": 0
       }
     },
     {
@@ -169,13 +190,15 @@
         "revenue": 0,
         "salesTaxes": 0,
         "units": 0,
-        "sessions": 26
+        "sessions": 26,
+        "productSales": 0
       },
       "prev": {
         "revenue": 0,
         "salesTaxes": 0,
         "units": 0,
-        "sessions": 17
+        "sessions": 17,
+        "productSales": 0
       }
     },
     {
@@ -185,20 +208,22 @@
         "revenue": 0,
         "salesTaxes": 0,
         "units": 0,
-        "sessions": 59
+        "sessions": 59,
+        "productSales": 0
       },
       "prev": {
         "revenue": 0,
         "salesTaxes": 0,
         "units": 0,
-        "sessions": 41
+        "sessions": 41,
+        "productSales": 0
       }
     }
   ],
   "insights": [
-    "**Weekly Highlights \u2014** Be-You-Tiful Athletics delivered $360 in total sales for Week 46, up 91.6% from $188 the prior week, on 13 units. The Dark Gray BE SECURE Hot Yoga Towel led at $218 (+98.3%) with units up 100.0% to 6, and the BE YOU Sling & Stretch Strap grew 66.7% to $70 at a 9.3% CVR. Wednesday, Nov 11 was the peak day at $146.",
-    "**Metrics to Watch \u2014** Organic sales reached $152 this week, a solid lift in non-ad demand. The Light Gray towel drew 81 sessions (+68.8%) at a 1.2% CVR and the Blue towel 55 sessions (+37.5%) at 1.8%, while the 6mm Black yoga mat had 44 sessions without a sale; Thu Nov 12 and Sat Nov 14 came in at $0.",
-    "**Ad Spend Efficiency \u2014** Ad spend of $463 (prior $417) generated $208 in PPC revenue for a 0.45x ROAS and 223.0% ACOS. TACoS improved to 128.6% from 221.90% as total sales grew, with a 0.20% ad CTR and 2.83% ad conversion. Lifting ad efficiency is our top priority this week.",
-    "**Actions This Week \u2014** We will lower bids on non-converting yoga mat targets and add negative keywords on search terms that spend without sales, reallocating budget to the Dark Gray towel and Sling & Stretch Strap, which converted at 7.9% and 9.3%. We will also test new Sponsored Products and Sponsored Brands ad creative to lift the 0.20% ad CTR heading into the holiday season."
+    "**Weekly Highlights —** Be-You-Tiful Athletics nearly doubled total sales to $374 in Week 46, up 92.8% from $194 the prior week, on 13 units. The BE SECURE Hot Yoga Towel in Dark Gray led with $228 (+100.0%), doubling units to 6 as conversion rose to 7.9%, and the BE YOU Sling & Stretch Strap added $70 (+66.7%) at a 9.3% conversion rate. Organic sales reached $166, and Wednesday, Nov 11 was the peak day at $152.",
+    "**Metrics to Watch —** PPC revenue held at $208 while ad spend rose to $463 from $417, so the extra spend did not add ad-attributed sales this week; the good news is that total sales grew 92.8% and organic sales reached $166. Sales landed mostly early in the week, with Thursday, Nov 12 and Saturday, Nov 14 at $0, and the BE YOU Yoga Mat in Black drew 44 sessions without a sale. We are concentrating ad budget on the towel and strap, which are converting, to keep orders coming in every day.",
+    "**Ad Spend Efficiency —** TACoS improved sharply to 124.0% from 215.38% as total sales grew much faster than ad spend. ROAS eased to 0.45x (prior 0.50x), with $463 of spend returning $208 in PPC revenue at a 223.0% ACOS, a 0.20% ad CTR and 2.83% ad conversion. We are cutting spend on non-converting targets and moving budget to the SKUs that are already selling.",
+    "**Actions This Week —** (1) Review ad spend on the BE YOU Yoga Mat in Black (44 sessions, no sale) and shift budget to the Dark Gray Hot Yoga Towel (7.9% conversion) and the Sling & Stretch Strap (9.3% conversion). (2) Run a search-term audit and add negatives on non-converting terms, targeting ROAS back above 0.50x and ACOS below 223.0%. (3) Test new Sponsored Products and Sponsored Brands ad creative to lift ad CTR above 0.20% heading into the holiday season."
   ]
 }

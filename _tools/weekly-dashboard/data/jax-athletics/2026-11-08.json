@@ -1,5 +1,5 @@
 {
-  "_source": "Sellerise MCP, account JAX Atheltics, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-16.",
+  "_source": "Sellerise MCP, account JAX Atheltics, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: ASINs/titles/units/sessions from get_products salesProfitSummaryByAsin; productSales (plus revenue/salesTaxes) via per-ASIN get_account_metrics for week and prior week. Total Sales on the page = productSales (= Amazon Ordered Product Sales). Refreshed 2026-11-17.",
   "week": {
     "start": "2026-11-08",
     "end": "2026-11-14"
@@ -12,57 +12,66 @@
     "revenue": 2399.34,
     "salesTaxes": 162.17,
     "units": 34,
-    "ppcSpend": 482.89,
-    "ppcSales": 1284.82,
-    "ppcClicks": 616,
-    "ppcImpressions": 212521,
-    "ppcOrders": 16
+    "ppcSpend": 481.91,
+    "ppcSales": 1359.81,
+    "ppcClicks": 615,
+    "ppcImpressions": 212361,
+    "ppcOrders": 17,
+    "productSales": 2259.67
   },
   "prev": {
     "revenue": 1819.32,
     "salesTaxes": 124.56,
     "units": 24,
-    "ppcSpend": 424.69,
+    "ppcSpend": 423.15,
     "ppcSales": 654.9,
-    "ppcClicks": 598,
-    "ppcImpressions": 171350,
-    "ppcOrders": 10
+    "ppcClicks": 597,
+    "ppcImpressions": 171297,
+    "ppcOrders": 10,
+    "productSales": 1694.76
   },
   "daily": [
     {
       "date": "2026-11-08",
       "revenue": 485.65,
-      "salesTaxes": 33.22
+      "salesTaxes": 33.22,
+      "productSales": 474.93
     },
     {
       "date": "2026-11-09",
       "revenue": 166.83,
-      "salesTaxes": 11.85
+      "salesTaxes": 11.85,
+      "productSales": 154.98
     },
     {
       "date": "2026-11-10",
       "revenue": 0,
-      "salesTaxes": 0
+      "salesTaxes": 0,
+      "productSales": 0
     },
     {
       "date": "2026-11-11",
       "revenue": 393.64,
-      "salesTaxes": 28.69
+      "salesTaxes": 28.69,
+      "productSales": 364.95
     },
     {
       "date": "2026-11-12",
       "revenue": 272.04,
-      "salesTaxes": 17.08
+      "salesTaxes": 17.08,
+      "productSales": 254.96
     },
     {
       "date": "2026-11-13",
       "revenue": 392.91,
-      "salesTaxes": 22.97
+      "salesTaxes": 22.97,
+      "productSales": 369.94
     },
     {
       "date": "2026-11-14",
       "revenue": 688.27,
-      "salesTaxes": 48.36
+      "salesTaxes": 48.36,
+      "productSales": 639.91
     }
   ],
   "products": [
@@ -73,13 +82,15 @@
         "revenue": 170.78,
         "salesTaxes": 10.8,
         "units": 2,
-        "sessions": 11
+        "sessions": 11,
+        "productSales": 159.98
       },
       "prev": {
         "revenue": 0,
         "salesTaxes": 0,
         "units": 0,
-        "sessions": 0
+        "sessions": 0,
+        "productSales": 0
       }
     },
     {
@@ -89,13 +100,15 @@
         "revenue": 162.05,
         "salesTaxes": 12.07,
         "units": 2,
-        "sessions": 38
+        "sessions": 38,
+        "productSales": 149.98
       },
       "prev": {
         "revenue": 0,
         "salesTaxes": 0,
         "units": 0,
-        "sessions": 45
+        "sessions": 45,
+        "productSales": 0
       }
     },
     {
@@ -105,13 +118,15 @@
         "revenue": 161.3,
         "salesTaxes": 11.32,
         "units": 2,
-        "sessions": 95
+        "sessions": 95,
+        "productSales": 149.98
       },
       "prev": {
         "revenue": 80.24,
         "salesTaxes": 5.25,
         "units": 1,
-        "sessions": 85
+        "sessions": 85,
+        "productSales": 74.99
       }
     },
     {
@@ -121,13 +136,15 @@
         "revenue": 159.35,
         "salesTaxes": 9.37,
         "units": 2,
-        "sessions": 25
+        "sessions": 25,
+        "productSales": 149.98
       },
       "prev": {
         "revenue": 0,
         "salesTaxes": 0,
         "units": 0,
-        "sessions": 0
+        "sessions": 0,
+        "productSales": 0
       }
     },
     {
@@ -137,13 +154,15 @@
         "revenue": 130.7,
         "salesTaxes": 10.72,
         "units": 2,
-        "sessions": 26
+        "sessions": 26,
+        "productSales": 119.98
       },
       "prev": {
         "revenue": 65.24,
         "salesTaxes": 5.25,
         "units": 1,
-        "sessions": 15
+        "sessions": 15,
+        "productSales": 59.99
       }
     },
     {
@@ -153,13 +172,15 @@
         "revenue": 86.59,
         "salesTaxes": 6.6,
         "units": 1,
-        "sessions": 5
+        "sessions": 5,
+        "productSales": 79.99
       },
       "prev": {
         "revenue": 0,
         "salesTaxes": 0,
         "units": 0,
-        "sessions": 0
+        "sessions": 0,
+        "productSales": 0
       }
     },
     {
@@ -169,13 +190,15 @@
         "revenue": 86.49,
         "salesTaxes": 6.5,
         "units": 1,
-        "sessions": 2
+        "sessions": 2,
+        "productSales": 79.99
       },
       "prev": {
         "revenue": 0,
         "salesTaxes": 0,
         "units": 0,
-        "sessions": 0
+        "sessions": 0,
+        "productSales": 0
       }
     },
     {
@@ -185,20 +208,22 @@
         "revenue": 84.79,
         "salesTaxes": 4.8,
         "units": 1,
-        "sessions": 26
+        "sessions": 26,
+        "productSales": 79.99
       },
       "prev": {
         "revenue": 0,
         "salesTaxes": 0,
         "units": 0,
-        "sessions": 0
+        "sessions": 0,
+        "productSales": 0
       }
     }
   ],
   "insights": [
-    "**Weekly Highlights —** JAX Athletics delivered $2,237 in total sales for Week 46, up 32.0% from $1,694 the prior week, on 34 units. PPC revenue nearly doubled to $1,284 (+96.2%), and Saturday, Nov 14 was the peak day at $639. The Graphite Grey Strap Cuff Batting Gloves reached $149 (+100.0%) and the Pink Pro Cuff Batting Gloves $119 (+100.0%).",
-    "**Metrics to Watch —** Organic sales eased to $952 (-8.4% WoW) and Tuesday, Nov 10 recorded $0 in sales, so daily volume was uneven. The Platinum White Strap Cuff Batting Gloves drew 38 sessions (-15.6%) at a 5.3% conversion rate; we are focused on building steadier day-to-day organic momentum.",
-    "**Ad Spend Efficiency —** Ad spend of $482 (prior $424) generated $1,284 in PPC revenue for a 2.66x ROAS, up from 1.54x, at a 37.6% ACOS. TACoS improved to 21.6% from 25.06%, with a 0.29% ad CTR and a 2.60% ad conversion rate.",
-    "**Actions This Week —** We will shift budget toward the strongest-converting gloves, including the Blue Raspberry Blast Small (18.2% CVR) and Baby Blue Strap Cuff (8.0% CVR), and trim bids on low-converting search terms to keep ACOS moving down from 37.6%. We will also test new Sponsored Product and Sponsored Brand ad creative to lift ad CTR above 0.29% heading into the holiday season."
+    "**Weekly Highlights —** JAX Athletics grew total sales to $2,259 in Week 46, up 33.3% from $1,694 the prior week, on 34 units. PPC revenue more than doubled to $1,359 (+107.6%), and Saturday, Nov 14 was the peak day at $639. The Graphite Grey Strap Cuff Batting Gloves reached $149 (+100.0%) and the Pink Pro Cuff Batting Gloves $119 (+100.0%).",
+    "**Metrics to Watch —** With PPC revenue up 107.6%, more of this week's sales came through ads, and organic sales eased to $899 (-13.5% WoW). Tuesday, Nov 10 recorded $0 in sales, and the Platinum White Strap Cuff Batting Gloves drew 38 sessions (-15.6%) at a 5.3% conversion rate. The good news is that ad efficiency improved sharply, and we are working to turn that ad-driven visibility into steadier organic sales day to day.",
+    "**Ad Spend Efficiency —** ROAS improved to 2.82x from 1.55x, as $481 in ad spend (prior $423) generated $1,359 in PPC revenue at a 35.4% ACOS. TACoS fell to 21.3% from 24.97%, with a 0.29% ad CTR and a 2.76% ad conversion rate.",
+    "**Actions This Week —** We will shift budget toward the strongest-converting gloves, including the Blue Raspberry Blast Small (18.2% CVR) and Baby Blue Strap Cuff (8.0% CVR), while trimming bids on low-converting search terms to bring ACOS below 35.4%. We will review the search terms behind the Graphite Grey Strap Cuff's 95 sessions (2.1% CVR) to focus spend on higher-intent traffic, and test new Sponsored Brand ad creative to lift ad CTR above 0.29% heading into the holiday season."
   ]
 }

@@ -1,0 +1,416 @@
+{
+ "_source": "Sellerise MCP, account Dormeo, marketplace CA, pulled 2026-11-17 (Monday-Sunday weeks; 4-week table from the saved weekly totals)",
+ "weeks": [
+  {
+   "label": "Oct 19 – 25",
+   "revenue": 57016.98,
+   "units": 112,
+   "orders": 109,
+   "impressions": 589224,
+   "clicks": 2548,
+   "refundUnits": 11,
+   "refundRate": 10.09,
+   "spend": 3588.58,
+   "adSales": 35038.66,
+   "acos": 10.24,
+   "tacos": 6.29
+  },
+  {
+   "label": "Oct 26 – Nov 1",
+   "revenue": 52310.52,
+   "units": 99,
+   "orders": 95,
+   "impressions": 678457,
+   "clicks": 3096,
+   "refundUnits": 16,
+   "refundRate": 16.84,
+   "spend": 4188.06,
+   "adSales": 35292.22,
+   "acos": 11.87,
+   "tacos": 8.01
+  },
+  {
+   "label": "Nov 2 – 8",
+   "revenue": 53653.11,
+   "units": 93,
+   "orders": 92,
+   "impressions": 636699,
+   "clicks": 3250,
+   "refundUnits": 11,
+   "refundRate": 11.96,
+   "spend": 3860.32,
+   "adSales": 37151.39,
+   "acos": 10.39,
+   "tacos": 7.19
+  },
+  {
+   "label": "Nov 9 – 15",
+   "revenue": 61258.82,
+   "units": 116,
+   "orders": 115,
+   "impressions": 729542,
+   "clicks": 3866,
+   "refundUnits": 13,
+   "refundRate": 11.3,
+   "spend": 5823.4,
+   "adSales": 40084.06,
+   "acos": 14.53,
+   "tacos": 9.51,
+   "net": 30928.62,
+   "refunds": 4978.07,
+   "adOrders": 79,
+   "cpc": 1.51,
+   "cvr": 2.04
+  }
+ ],
+ "mtd": {
+  "through": "2026-11-15",
+  "days": 15,
+  "revenue": 122085.89,
+  "units": 222,
+  "orders": 220,
+  "spend": 10376.16,
+  "adSales": 87162.45,
+  "acos": 11.9,
+  "tacos": 8.5,
+  "refundRate": 10.91
+ },
+ "mtdLY": {
+  "through": "2025-11-15",
+  "days": 15,
+  "revenue": 134547.32,
+  "units": 269,
+  "orders": 257,
+  "spend": 0,
+  "adSales": 0,
+  "acos": 0,
+  "tacos": 0,
+  "refundRate": 18.29
+ },
+ "daily": [
+  [
+   "2026-11-02",
+   8299.06,
+   519.06,
+   6151,
+   13,
+   11
+  ],
+  [
+   "2026-11-03",
+   6162.4,
+   614.53,
+   6709,
+   10,
+   10
+  ],
+  [
+   "2026-11-04",
+   6114.02,
+   437.36,
+   6212,
+   11,
+   11
+  ],
+  [
+   "2026-11-05",
+   10693.3,
+   451.93,
+   6532.1,
+   18,
+   12
+  ],
+  [
+   "2026-11-06",
+   6433.93,
+   549.42,
+   3384,
+   13,
+   7
+  ],
+  [
+   "2026-11-07",
+   9321.77,
+   621.69,
+   3324,
+   15,
+   6
+  ],
+  [
+   "2026-11-08",
+   6628.63,
+   666.33,
+   4839.29,
+   12,
+   10
+  ],
+  [
+   "2026-11-09",
+   10025.24,
+   513.76,
+   6084.09,
+   18,
+   12
+  ],
+  [
+   "2026-11-10",
+   11331.23,
+   554.89,
+   5845.99,
+   20,
+   11
+  ],
+  [
+   "2026-11-11",
+   5926.07,
+   624.08,
+   3785,
+   11,
+   7
+  ],
+  [
+   "2026-11-12",
+   6048.04,
+   745.57,
+   3995,
+   11,
+   7
+  ],
+  [
+   "2026-11-13",
+   9966.52,
+   979.56,
+   5723,
+   18,
+   11
+  ],
+  [
+   "2026-11-14",
+   9958.82,
+   1203.7,
+   8376.99,
+   21,
+   17
+  ],
+  [
+   "2026-11-15",
+   8002.9,
+   1201.84,
+   6273.99,
+   16,
+   14
+  ]
+ ],
+ "searchTerms": {
+  "total": 653,
+  "winners": 11,
+  "harvest": 3,
+  "negative": 24,
+  "noPurchase": 25,
+  "rows": [
+   [
+    "dormeo mattress topper",
+    "SB",
+    5056,
+    203,
+    14,
+    593.09,
+    7265
+   ],
+   [
+    "dormeo mattress topper",
+    "SP",
+    36706,
+    225,
+    5,
+    383.74,
+    2391
+   ],
+   [
+    "dormeo mattress topper king",
+    "SP",
+    321,
+    17,
+    3,
+    30.65,
+    1935
+   ],
+   [
+    "dormeo mattress topper queen",
+    "SP",
+    3823,
+    130,
+    3,
+    109.81,
+    1633
+   ],
+   [
+    "dormeo mattress topper queen",
+    "SB",
+    589,
+    34,
+    3,
+    93.45,
+    1506
+   ],
+   [
+    "dormeo",
+    "SB",
+    1117,
+    62,
+    3,
+    196.01,
+    1318.99
+   ],
+   [
+    "dormeo canada price",
+    "SB",
+    33,
+    8,
+    2,
+    11.29,
+    1079
+   ],
+   [
+    "dormeo topper",
+    "SB",
+    369,
+    24,
+    2,
+    59.97,
+    1050
+   ]
+  ],
+  "category": [
+   [
+    "mattress topper",
+    "SP",
+    25708,
+    336,
+    4,
+    348.87,
+    2158
+   ],
+   [
+    "amazon canada mattress topper",
+    "SP",
+    5,
+    2,
+    1,
+    3.3,
+    645
+   ],
+   [
+    "queen size mattress topper memory foam",
+    "SP",
+    3940,
+    14,
+    1,
+    50.63,
+    554
+   ],
+   [
+    "bed toppers queen size",
+    "SP",
+    463,
+    11,
+    1,
+    7.9,
+    554
+   ],
+   [
+    "best mattress topper canada",
+    "SP",
+    28,
+    3,
+    1,
+    5.05,
+    554
+   ]
+  ]
+ },
+ "targets": {
+  "total": 546,
+  "winners": 21,
+  "needsAttention": 122,
+  "highAcos": 2,
+  "noSales": 25,
+  "lowCtr": 47,
+  "rows": [
+   [
+    "mattress +topper",
+    "Phrase",
+    "Category",
+    609.84,
+    3357,
+    18.17,
+    303,
+    6
+   ],
+   [
+    "dormeo",
+    "Broad",
+    "Brand",
+    165.24,
+    399,
+    41.41,
+    169,
+    1
+   ],
+   [
+    "mattress +topper",
+    "Phrase",
+    "Category",
+    151.04,
+    1323,
+    11.42,
+    189,
+    3
+   ],
+   [
+    "mattress topper",
+    "Exact",
+    "Category",
+    97.58,
+    0,
+    null,
+    122,
+    0
+   ],
+   [
+    "dormeo",
+    "Phrase",
+    "Brand",
+    82.3,
+    126,
+    65.32,
+    45,
+    1
+   ]
+  ]
+ },
+ "reviews": {
+  "available": false
+ },
+ "alerts": {
+  "total": 55,
+  "actionable": 17,
+  "critical": 14,
+  "warning": 3,
+  "byType": {
+   "Buy Box gained": 11,
+   "Buy Box lost": 11,
+   "Inactive": 10,
+   "Title": 9,
+   "Listing images": 5,
+   "Dimensions": 2,
+   "Reimbursable units": 1,
+   "Parent ASIN changed": 1,
+   "Bullets": 1,
+   "Stranded": 1,
+   "Out of stock": 1,
+   "Hijacker (liquidation)": 1,
+   "Low stock": 1
+  }
+ }
+}

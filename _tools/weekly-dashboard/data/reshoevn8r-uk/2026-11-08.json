@@ -1,5 +1,5 @@
 {
-  "_source": "Sellerise MCP, account Reshoevn8r - UK, marketplace GB, targetCurrency GBP. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin (revenue, salesTaxes, units, sessions). Sales on the page = revenue - salesTaxes. Pulled 2026-11-16.",
+  "_source": "Sellerise MCP, account Reshoevn8r - UK, marketplace GB, targetCurrency GBP. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Total Sales = productSales (= Amazon Ordered Product Sales). Products: titles/units/sessions from get_products salesProfitSummaryByAsin; products' productSales (and revenue/salesTaxes) via per-ASIN get_account_metrics. Refreshed 2026-11-17.",
   "week": {
     "start": "2026-11-08",
     "end": "2026-11-14"
@@ -9,18 +9,20 @@
     "end": "2026-11-07"
   },
   "current": {
+    "productSales": 1643.82,
     "revenue": 1971.95,
-    "salesTaxes": 325.51,
+    "salesTaxes": 328.66,
     "units": 78,
     "ppcSpend": 853.05,
     "ppcSales": 1204.16,
     "ppcClicks": 541,
-    "ppcImpressions": 474273,
+    "ppcImpressions": 473750,
     "ppcOrders": 54
   },
   "prev": {
+    "productSales": 2096.6,
     "revenue": 2435.89,
-    "salesTaxes": 412.34,
+    "salesTaxes": 412.71,
     "units": 99,
     "ppcSpend": 933.55,
     "ppcSales": 1238.28,
@@ -31,36 +33,43 @@
   "daily": [
     {
       "date": "2026-11-08",
+      "productSales": 199.97,
       "revenue": 239.98,
       "salesTaxes": 40.01
     },
     {
       "date": "2026-11-09",
+      "productSales": 210.76,
       "revenue": 249.93,
       "salesTaxes": 41.66
     },
     {
       "date": "2026-11-10",
+      "productSales": 264.12,
       "revenue": 316.92,
       "salesTaxes": 52.81
     },
     {
       "date": "2026-11-11",
+      "productSales": 154.9,
       "revenue": 185.88,
       "salesTaxes": 30.98
     },
     {
       "date": "2026-11-12",
+      "productSales": 235.47,
       "revenue": 287.55,
       "salesTaxes": 47.92
     },
     {
       "date": "2026-11-13",
+      "productSales": 380.67,
       "revenue": 449.18,
-      "salesTaxes": 71.71
+      "salesTaxes": 74.86
     },
     {
       "date": "2026-11-14",
+      "productSales": 197.93,
       "revenue": 242.51,
       "salesTaxes": 40.42
     }
@@ -73,13 +82,15 @@
         "revenue": 483.4,
         "salesTaxes": 80.52,
         "units": 15,
-        "sessions": 207
+        "sessions": 207,
+        "productSales": 398.55
       },
       "prev": {
         "revenue": 774.08,
         "salesTaxes": 124.75,
         "units": 25,
-        "sessions": 300
+        "sessions": 300,
+        "productSales": 674.87
       }
     },
     {
@@ -89,13 +100,15 @@
         "revenue": 367.92,
         "salesTaxes": 61.36,
         "units": 8,
-        "sessions": 159
+        "sessions": 159,
+        "productSales": 306.56
       },
       "prev": {
         "revenue": 394.88,
-        "salesTaxes": 68.91,
+        "salesTaxes": 69.28,
         "units": 9,
-        "sessions": 152
+        "sessions": 152,
+        "productSales": 341.05
       }
     },
     {
@@ -105,13 +118,15 @@
         "revenue": 295.21,
         "salesTaxes": 49.16,
         "units": 15,
-        "sessions": 160
+        "sessions": 160,
+        "productSales": 248.55
       },
       "prev": {
         "revenue": 173.97,
         "salesTaxes": 29.94,
         "units": 9,
-        "sessions": 156
+        "sessions": 156,
+        "productSales": 149.13
       }
     },
     {
@@ -121,13 +136,15 @@
         "revenue": 284.68,
         "salesTaxes": 47.42,
         "units": 11,
-        "sessions": 47
+        "sessions": 47,
+        "productSales": 237.26
       },
       "prev": {
         "revenue": 303.57,
         "salesTaxes": 52.61,
         "units": 12,
-        "sessions": 56
+        "sessions": 56,
+        "productSales": 258.83
       }
     },
     {
@@ -135,15 +152,17 @@
       "title": "RESHOEVN8R Waterproof Shoe Spray - Rain & Stain Protector, 6.5oz",
       "cur": {
         "revenue": 129.33,
-        "salesTaxes": 18.43,
+        "salesTaxes": 21.58,
         "units": 7,
-        "sessions": 65
+        "sessions": 65,
+        "productSales": 110.11
       },
       "prev": {
         "revenue": 218.63,
         "salesTaxes": 37.86,
         "units": 12,
-        "sessions": 68
+        "sessions": 68,
+        "productSales": 187.19
       }
     },
     {
@@ -153,13 +172,15 @@
         "revenue": 113.28,
         "salesTaxes": 18.9,
         "units": 6,
-        "sessions": 112
+        "sessions": 112,
+        "productSales": 94.38
       },
       "prev": {
         "revenue": 127.46,
         "salesTaxes": 22.05,
         "units": 7,
-        "sessions": 98
+        "sessions": 98,
+        "productSales": 110.11
       }
     },
     {
@@ -169,13 +190,15 @@
         "revenue": 99.4,
         "salesTaxes": 16.56,
         "units": 5,
-        "sessions": 41
+        "sessions": 41,
+        "productSales": 82.84
       },
       "prev": {
         "revenue": 98.41,
         "salesTaxes": 16.55,
         "units": 5,
-        "sessions": 50
+        "sessions": 50,
+        "productSales": 82.85
       }
     },
     {
@@ -185,20 +208,22 @@
         "revenue": 94.4,
         "salesTaxes": 15.75,
         "units": 5,
-        "sessions": 64
+        "sessions": 64,
+        "productSales": 78.65
       },
       "prev": {
         "revenue": 146.33,
         "salesTaxes": 25.31,
         "units": 8,
-        "sessions": 69
+        "sessions": 69,
+        "productSales": 125.84
       }
     }
   ],
   "insights": [
-    "**Weekly Highlights \u2014** Reshoevn8r UK delivered $1,646 in total sales for Week 46 on 78 units, versus $2,023 the prior week (-18.6% WoW). The Refresh Kit was the standout at $246 (+70.8%) on 15 units, with its CVR up +62.5% to 9.4%, and the 16oz Cleaning Solution converted at a strong 23.4% (+9.2%). Friday, Nov 13 was the peak day at $377.",
-    "**Metrics to Watch \u2014** Organic sales eased to $442 (-43.7% WoW), driving most of the softer week. The Essential Kit came in at $402 (-38.0%) as sessions fell -31.0% to 207, and the Waterproof Shoe Spray slipped to $110 (-38.7%). The Shoe Cleaner Kit held steady at $306 (-6.0%) with sessions up +4.6% to 159, giving us a stable base to rebuild from.",
-    "**Ad Spend Efficiency \u2014** Ad spend came down to $853 from $933 while PPC revenue held at $1,204 (-2.8%), improving ROAS to 1.41x from 1.33x. ACOS is 70.8% and TACoS is 51.8% (prior 46.13%) as organic sales softened, with ad CVR at 9.98% on a 0.11% ad CTR.",
-    "**Actions This Week \u2014** We will restore traffic to the Essential Kit and Waterproof Shoe Spray with targeted Sponsored Products campaigns, and shift budget toward the Refresh Kit and 16oz Cleaning Solution where conversion is strongest. We will also trim high-ACOS search terms to keep improving on the 1.41x ROAS and test new ad creative to lift ad CTR above 0.11% heading into the holiday season."
+    "**Weekly Highlights \u2014** Reshoevn8r UK delivered $1,643 in total sales for Week 46 on 78 units. The Refresh Kit was the standout at $248 (+66.7%) on 15 units (+66.7%), with its CVR up +62.5% to 9.4%, and the 16oz Cleaning Solution converted at a strong 23.4% (+9.2%). Friday, Nov 13 was the peak day at $380.",
+    "**Metrics to Watch \u2014** The -21.6% WoW easing in total sales (prior week $2,096) was primarily driven by organic sales, which came in at $439 (-48.8% WoW), while PPC revenue held close to flat at $1,204 (-2.8%). The Essential Kit came in at $398 (-40.9%) as sessions fell -31.0% to 207, and the Waterproof Shoe Spray eased to $110 (-41.2%); the Shoe Cleaner Kit held at $306 (-10.1%) with sessions up +4.6% to 159. We are focused on rebuilding Essential Kit traffic to restore organic volume.",
+    "**Ad Spend Efficiency \u2014** ROAS improved to 1.41x from 1.33x as ad spend came in at $853 (prior $933) while PPC revenue held at $1,204. ACOS is 70.8% and TACoS rose to 51.9% (prior 44.53%) because organic sales were softer, so we are tightening bids on high-ACOS terms rather than adding spend; ad CVR is 9.98% on a 0.11% ad CTR.",
+    "**Actions This Week \u2014** We will restore traffic to the Essential Kit (207 sessions) and Waterproof Shoe Spray with targeted Sponsored Products campaigns, and shift budget toward the Refresh Kit (9.4% CVR) and 16oz Cleaning Solution (23.4% CVR). We will also trim high-ACOS search terms to bring ACOS down from 70.8% and test new ad creative to lift ad CTR above 0.11% heading into the holiday season."
   ]
 }
