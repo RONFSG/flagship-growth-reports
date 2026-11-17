@@ -1,0 +1,188 @@
+{
+  "_source": "Sellerise MCP, account Dormeo, marketplace US, targetCurrency USD. Mon-Sun week. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: get_products salesProfitSummaryByAsin. Sales on the page = revenue - salesTaxes. Pulled 2026-11-17.",
+  "week": {
+    "start": "2026-11-09",
+    "end": "2026-11-15"
+  },
+  "prevWeek": {
+    "start": "2026-11-02",
+    "end": "2026-11-08"
+  },
+  "current": {
+    "revenue": 69209.99,
+    "salesTaxes": 4426.86,
+    "units": 195,
+    "ppcSpend": 5897.31,
+    "ppcSales": 40415.87,
+    "ppcClicks": 3764,
+    "ppcImpressions": 468411,
+    "ppcOrders": 108
+  },
+  "prev": {
+    "revenue": 65555.85,
+    "salesTaxes": 4542.05,
+    "units": 182,
+    "ppcSpend": 4367.42,
+    "ppcSales": 34786.34,
+    "ppcClicks": 3050,
+    "ppcImpressions": 373559,
+    "ppcOrders": 100
+  },
+  "daily": [
+    {
+      "date": "2026-11-09",
+      "revenue": 10368.89,
+      "salesTaxes": 704.11
+    },
+    {
+      "date": "2026-11-10",
+      "revenue": 8019.76,
+      "salesTaxes": 574.64
+    },
+    {
+      "date": "2026-11-11",
+      "revenue": 8074.64,
+      "salesTaxes": 514.67
+    },
+    {
+      "date": "2026-11-12",
+      "revenue": 5774.73,
+      "salesTaxes": 380.45
+    },
+    {
+      "date": "2026-11-13",
+      "revenue": 8744.02,
+      "salesTaxes": 583.69
+    },
+    {
+      "date": "2026-11-14",
+      "revenue": 16974.63,
+      "salesTaxes": 1005.7
+    },
+    {
+      "date": "2026-11-15",
+      "revenue": 11253.32,
+      "salesTaxes": 663.6
+    }
+  ],
+  "products": [
+    {
+      "asin": "B07WFHMD2V",
+      "title": "Dormeo Premium Queen Breathable Mattress Topper - Octaspring",
+      "cur": {
+        "revenue": 25436.85,
+        "salesTaxes": 1576.65,
+        "units": 64,
+        "sessions": 1778
+      },
+      "prev": {
+        "revenue": 24847.64,
+        "salesTaxes": 1705.64,
+        "units": 58,
+        "sessions": 1790
+      }
+    },
+    {
+      "asin": "B07WGH7QNP",
+      "title": "Dormeo Premium King Breathable Mattress Topper - Octaspring",
+      "cur": {
+        "revenue": 15595.52,
+        "salesTaxes": 974.27,
+        "units": 32,
+        "sessions": 722
+      },
+      "prev": {
+        "revenue": 14041.85,
+        "salesTaxes": 948.77,
+        "units": 27,
+        "sessions": 810
+      }
+    },
+    {
+      "asin": "B07WGHV3DS",
+      "title": "Dormeo Premium Full Breathable Mattress Topper - Octaspring",
+      "cur": {
+        "revenue": 10830.33,
+        "salesTaxes": 705.16,
+        "units": 28,
+        "sessions": 675
+      },
+      "prev": {
+        "revenue": 11259.99,
+        "salesTaxes": 811.63,
+        "units": 28,
+        "sessions": 766
+      }
+    },
+    {
+      "asin": "B07WHHQBQX",
+      "title": "Dormeo Premium Twin XL Breathable Mattress Topper - Octaspring",
+      "cur": {
+        "revenue": 4907.26,
+        "salesTaxes": 341.01,
+        "units": 15,
+        "sessions": 184
+      },
+      "prev": {
+        "revenue": 5166.21,
+        "salesTaxes": 388.71,
+        "units": 15,
+        "sessions": 237
+      }
+    },
+    {
+      "asin": "B07WJMHJ2P",
+      "title": "Dormeo Premium Twin Breathable Mattress Topper - Octaspring",
+      "cur": {
+        "revenue": 3267.55,
+        "salesTaxes": 217.75,
+        "units": 11,
+        "sessions": 446
+      },
+      "prev": {
+        "revenue": 4149.61,
+        "salesTaxes": 262.61,
+        "units": 13,
+        "sessions": 343
+      }
+    },
+    {
+      "asin": "B0DK9XZGB1",
+      "title": "Dormeo The Essentials King Mattress Topper - Octacell 2-Inch",
+      "cur": {
+        "revenue": 2763.47,
+        "salesTaxes": 212.3,
+        "units": 8,
+        "sessions": 386
+      },
+      "prev": {
+        "revenue": 311.5,
+        "salesTaxes": 19.01,
+        "units": 1,
+        "sessions": 411
+      }
+    },
+    {
+      "asin": "B09JQYWB8R",
+      "title": "Dormeo RV Short King Cooling Mattress Topper - Octaspring",
+      "cur": {
+        "revenue": 2532.88,
+        "salesTaxes": 156.88,
+        "units": 5,
+        "sessions": 59
+      },
+      "prev": {
+        "revenue": 979.02,
+        "salesTaxes": 71.38,
+        "units": 2,
+        "sessions": 85
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights \u2014** Dormeo US grew Total Sales to $64,783 for Week 46, up 6.2% from $61,013 the prior week, on 195 units. The King Octaspring Topper led the lift at $14,621 (+11.7%) with units up 18.5% to 32 and conversion climbing to 4.4%, while the Queen Topper reached $23,860 (+3.1%) on 64 units (+10.3%). Saturday, Nov 14 was the peak day at $15,968.",
+    "**Metrics to Watch \u2014** Organic sales eased to $24,367 (-7.1%) mainly because more of the week's demand was captured through ads, with PPC revenue up 16.2% to $40,415. The Twin Topper slipped to $3,049 (-21.5%) as its conversion dipped to 2.5% even though sessions grew 30.0% to 446, while the Full and Twin XL held units steady at 28 and 15 with conversion improving to 4.1% and 8.2%. We are focusing ad traffic on the Twin's best-converting search terms to turn its added sessions into sales.",
+    "**Ad Spend Efficiency \u2014** Ad spend was stepped up to $5,897 (prior $4,367) to capture more demand into the weekend peak, and it delivered PPC revenue of $40,415 (+16.2%) at a healthy 14.6% ACOS. ROAS moved to 6.85x from 7.96x and TACoS to 9.1% from 7.16%, so we are trimming bids on lower-converting terms to bring TACoS back toward last week's level. Ad CTR was 0.80% with ad conversion at 2.87%.",
+    "**Actions This Week \u2014** We will shift budget toward the Queen and King Topper campaigns, where conversion is running at 3.6% and 4.4%, to build on their unit gains. On the Twin Topper we will narrow targeting to the search terms that convert, aiming to lift its conversion back above 2.5%. We will also test new Sponsored Brand ad creative to push ad CTR above 0.80% while holding ACOS near 14.6%."
+  ]
+}
