@@ -99,6 +99,7 @@ async function walmartFetch(brand, path, params = {}) {
 }
 
 // ─── Helper: Summarize Orders ─────────────────────────────────────────────────
+// Uses shipping_estimated_ship_date for daily attribution — matches Seller Center exactly
 function summarizeOrders(orders, statusFilter = ["Delivered"]) {
   const lines = orders.filter((o) =>
     o.orderLines?.orderLine?.some((l) =>
@@ -112,13 +113,21 @@ function summarizeOrders(orders, statusFilter = ["Delivered"]) {
   const bySku = {};
 
   for (const order of lines) {
-    const date = order.orderDate
+    // Use estimated ship date for daily breakdown — matches Walmart Seller Center
+    const shipDate = order.shippingInfo?.estimatedShipDate
+      ? new Date(Number(order.shippingInfo.estimatedShipDate)).toISOString().split("T")[0]
+      : order.orderDate
       ? new Date(Number(order.orderDate)).toISOString().split("T")[0]
       : "unknown";
 
     for (const line of order.orderLines?.orderLine || []) {
       const status = line.orderLineStatuses?.orderLineStatus?.[0]?.status;
       if (!statusFilter.includes(status)) continue;
+
+      // Per-line ship date (more accurate for multi-line orders)
+      const lineShipDate = line.fulfillment?.estimatedShipDate
+        ? new Date(Number(line.fulfillment.estimatedShipDate)).toISOString().split("T")[0]
+        : shipDate;
 
       const qty = Number(line.orderLineQuantity?.amount || 0);
       const price = Number(line.charges?.charge?.[0]?.chargeAmount?.amount || 0);
@@ -128,9 +137,10 @@ function summarizeOrders(orders, statusFilter = ["Delivered"]) {
       totalRevenue += price;
       totalUnits += qty;
 
-      byDay[date] = byDay[date] || { revenue: 0, units: 0 };
-      byDay[date].revenue += price;
-      byDay[date].units += qty;
+      byDay[lineShipDate] = byDay[lineShipDate] || { revenue: 0, units: 0, orders: new Set() };
+      byDay[lineShipDate].revenue += price;
+      byDay[lineShipDate].units += qty;
+      byDay[lineShipDate].orders.add(order.purchaseOrderId);
 
       bySku[sku] = bySku[sku] || { name, units: 0, revenue: 0 };
       bySku[sku].units += qty;
@@ -330,13 +340,14 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       const statusFilter = args.status ? [args.status] : ["Delivered"];
       const summary = summarizeOrders(orders, statusFilter);
 
-      // Format daily breakdown
+      // Format daily breakdown (grouped by shipping_estimated_ship_date — matches Seller Center)
       const dailySales = Object.entries(summary.byDay)
         .sort(([a], [b]) => a.localeCompare(b))
         .map(([date, v]) => ({
           date,
           revenue: Math.round(v.revenue * 100) / 100,
           units: v.units,
+          orders: v.orders instanceof Set ? v.orders.size : v.orders,
         }));
 
       // Format SKU breakdown
