@@ -8,12 +8,13 @@
  */
 
 import { Server } from "@modelcontextprotocol/sdk/server/index.js";
-import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { SSEServerTransport } from "@modelcontextprotocol/sdk/server/sse.js";
 import {
   CallToolRequestSchema,
   ListToolsRequestSchema,
 } from "@modelcontextprotocol/sdk/types.js";
 import fetch from "node-fetch";
+import http from "http";
 
 // ─── Brand Credentials Config ─────────────────────────────────────────────────
 // Add each brand's Walmart Marketplace API credentials here
@@ -393,7 +394,56 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
   }
 });
 
-// ─── Start Server ─────────────────────────────────────────────────────────────
-const transport = new StdioServerTransport();
-await server.connect(transport);
-console.error("FSG Walmart MCP server running");
+// ─── Start HTTP/SSE Server ────────────────────────────────────────────────────
+const PORT = process.env.PORT || 3000;
+const transports = {};
+
+const httpServer = http.createServer(async (req, res) => {
+  // CORS headers
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+
+  if (req.method === "OPTIONS") {
+    res.writeHead(200);
+    res.end();
+    return;
+  }
+
+  // Health check
+  if (req.url === "/health") {
+    res.writeHead(200, { "Content-Type": "application/json" });
+    res.end(JSON.stringify({ status: "ok", service: "fsg-walmart-mcp" }));
+    return;
+  }
+
+  // SSE endpoint
+  if (req.url === "/sse") {
+    const transport = new SSEServerTransport("/message", res);
+    transports[transport.sessionId] = transport;
+    res.on("close", () => delete transports[transport.sessionId]);
+    await server.connect(transport);
+    return;
+  }
+
+  // Message endpoint
+  if (req.url?.startsWith("/message")) {
+    const sessionId = new URL(req.url, `http://localhost`).searchParams.get("sessionId");
+    const transport = transports[sessionId];
+    if (!transport) {
+      res.writeHead(404);
+      res.end("Session not found");
+      return;
+    }
+    await transport.handlePostMessage(req, res);
+    return;
+  }
+
+  res.writeHead(404);
+  res.end("Not found");
+});
+
+httpServer.listen(PORT, () => {
+  console.log(`FSG Walmart MCP server running on port ${PORT}`);
+  console.log(`SSE endpoint: http://localhost:${PORT}/sse`);
+});
