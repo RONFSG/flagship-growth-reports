@@ -442,3 +442,12 @@ httpServer.listen(PORT, () => {
   console.log(`FSG Walmart MCP server running on port ${PORT}`);
   console.log(`MCP endpoint: http://localhost:${PORT}/mcp`);
 });
+
+// ─── Keep-alive ping (prevents Railway free tier from sleeping) ───────────────
+setInterval(() => {
+  const req = http.request({ hostname: "localhost", port: PORT, path: "/health", method: "GET" }, (res) => {
+    res.resume();
+  });
+  req.on("error", () => {});
+  req.end();
+}, 5 * 60 * 1000); // ping every 5 minutes
