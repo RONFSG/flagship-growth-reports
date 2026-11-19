@@ -417,6 +417,13 @@ const httpServer = http.createServer(async (req, res) => {
     return;
   }
 
+  // OAuth metadata — tells Claude.ai no auth is required
+  if (req.url === "/.well-known/oauth-authorization-server" || req.url === "/.well-known/openid-configuration") {
+    res.writeHead(404);
+    res.end("Not found");
+    return;
+  }
+
   // MCP endpoint
   if (req.url === "/mcp") {
     const transport = new StreamableHTTPServerTransport({
