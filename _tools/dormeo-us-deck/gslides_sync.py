@@ -146,23 +146,16 @@ def model_table(sh):
             st["s"] = tsize
             colcells.append((al, " ".join(r[0] for r in runs) or " ", st))
         cells.append(colcells)
-    # Slides text boxes keep a 0.1in inset on each side; column boxes get that back as extra width so short
-    # headers like "Orders" don't wrap. If any cell would still wrap, lines in a column box would no longer
-    # sit on their rows, so that table is drawn one box per cell instead (vertically centred in its row).
+    # Every cell is its own text box, vertically centred on its row band, so rows always line up with their
+    # shading (one box per column with line spacing drifted off the bands on long tables, e.g. slide 10).
+    # Slides text boxes keep a 0.1in inset on each side, so each box gets that back as extra width.
     pad = int(INSET_PT * 2 / SCALE * 12700)
-    fits = all(est_width(txt, tsize * SCALE) <= PT(int(t.columns[j].width) + pad) - INSET_PT * 2
-               for j in range(nc) for _, txt, _ in cells[j])
     x = x0
     for j, col in enumerate(t.columns):
         cw = int(col.width)
-        if fits:
-            data_al = cells[j][1][0] if nr > 1 else cells[j][0][0]
-            gx, gw = (x - pad, cw + pad) if data_al == "END" else ((x - pad // 2, cw + pad) if data_al == "CENTER" else (x, cw + pad))
-            out.append({"k": "text", "g": [gx, y0, gw, rh * nr], "va": "TOP",
-                        "p": [(al, [(txt, st)]) for al, txt, st in cells[j]], "rowh": rh, "fs": tsize})
-        else:
-            for i, (al, txt, st) in enumerate(cells[j]):
-                out.append({"k": "text", "g": [x, y0 + i * rh, cw, rh], "va": "MIDDLE", "p": [(al, [(txt, st)])]})
+        for i, (al, txt, st) in enumerate(cells[j]):
+            gx, gw = (x - pad, cw + pad) if al == "END" else ((x - pad // 2, cw + pad) if al == "CENTER" else (x, cw + pad))
+            out.append({"k": "text", "g": [gx, y0 + i * rh, gw, rh], "va": "MIDDLE", "p": [(al, [(txt, st)])]})
         x += cw
     return out
 
@@ -256,8 +249,13 @@ def shape_props(oid, e, va_needed):
 
 def build_slide(page, idx, m):
     reqs = [{"createSlide": {"objectId": page, "insertionIndex": idx, "slideLayoutReference": {"predefinedLayout": "BLANK"}}}]
-    if m["bg"] and m["bg"].upper() != "FFFFFF":
-        reqs.append({"updatePageProperties": {"objectId": page, "pageProperties": {"pageBackgroundFill": {"solidFill": {"color": {"rgbColor": rgb(m["bg"])}}}}, "fields": "pageBackgroundFill.solidFill.color"}})
+    bg = m["bg"] or "FFFFFF"
+    reqs.append({"updatePageProperties": {"objectId": page, "pageProperties": {"pageBackgroundFill": {"solidFill": {"color": {"rgbColor": rgb(bg)}}}}, "fields": "pageBackgroundFill.solidFill.color"}})
+    # A full-slide panel in the deck's own background colour, first and so at the back: it hides anything a theme
+    # imported into the Google Slides file puts on its layouts (another company's logo, colour bars), so every
+    # brand's file shows only the Flagship Growth design.
+    reqs.append({"createShape": {"objectId": f"{page}bg", "shapeType": "RECTANGLE", "elementProperties": el_props(page, [0, 0, 12192000, 6858000])}})
+    reqs += shape_props(f"{page}bg", {"k": "shape", "fill": bg, "line": None}, False)
     for i, e in enumerate(m["els"], 1):
         oid = f"{page}e{i}"
         if e["k"] == "img":
