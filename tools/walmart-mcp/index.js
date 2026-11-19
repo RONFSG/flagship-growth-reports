@@ -8,7 +8,7 @@
  */
 
 import { Server } from "@modelcontextprotocol/sdk/server/index.js";
-import { SSEServerTransport } from "@modelcontextprotocol/sdk/server/sse.js";
+import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
 import {
   CallToolRequestSchema,
   ListToolsRequestSchema,
@@ -394,14 +394,13 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
   }
 });
 
-// ─── Start HTTP/SSE Server ────────────────────────────────────────────────────
+// ─── Start Streamable HTTP Server ────────────────────────────────────────────
 const PORT = process.env.PORT || 3000;
-const transports = {};
 
 const httpServer = http.createServer(async (req, res) => {
   // CORS headers
   res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS, DELETE");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization, mcp-session-id");
   res.setHeader("Access-Control-Expose-Headers", "mcp-session-id");
 
@@ -418,28 +417,13 @@ const httpServer = http.createServer(async (req, res) => {
     return;
   }
 
-  // SSE endpoint
-  if (req.url === "/sse") {
-    res.setHeader("Content-Type", "text/event-stream");
-    res.setHeader("Cache-Control", "no-cache");
-    res.setHeader("Connection", "keep-alive");
-    const transport = new SSEServerTransport("/message", res);
-    transports[transport.sessionId] = transport;
-    res.on("close", () => delete transports[transport.sessionId]);
+  // MCP endpoint
+  if (req.url === "/mcp") {
+    const transport = new StreamableHTTPServerTransport({
+      sessionIdGenerator: undefined, // stateless
+    });
     await server.connect(transport);
-    return;
-  }
-
-  // Message endpoint
-  if (req.url?.startsWith("/message")) {
-    const sessionId = new URL(req.url, `http://localhost`).searchParams.get("sessionId");
-    const transport = transports[sessionId];
-    if (!transport) {
-      res.writeHead(404);
-      res.end("Session not found");
-      return;
-    }
-    await transport.handlePostMessage(req, res);
+    await transport.handleRequest(req, res);
     return;
   }
 
@@ -449,5 +433,5 @@ const httpServer = http.createServer(async (req, res) => {
 
 httpServer.listen(PORT, () => {
   console.log(`FSG Walmart MCP server running on port ${PORT}`);
-  console.log(`SSE endpoint: http://localhost:${PORT}/sse`);
+  console.log(`MCP endpoint: http://localhost:${PORT}/mcp`);
 });
