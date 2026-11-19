@@ -15,6 +15,7 @@
   "noggin-boss": {"brand": "Noggin Boss", "account": "NogginBoss", "marketplace": "US", "currency": "USD", "currencySymbol": "$", "weekStart": "sunday"},
   "aura-house": {"brand": "Aura House", "account": "Aura House", "marketplace": "US", "currency": "USD", "currencySymbol": "$", "weekStart": "sunday"},
   "be-you-tiful-athletics": {"brand": "Be-You-Tiful Athletics", "account": "BeYouTiful", "marketplace": "US", "currency": "USD", "currencySymbol": "$", "weekStart": "sunday"},
+  "tokenworks": {"brand": "TokenWorks", "account": "TokenWorks", "marketplace": "US", "currency": "USD", "currencySymbol": "$", "weekStart": "sunday"},
   "dormeo-us": {"brand": "Dormeo US", "account": "Dormeo", "marketplace": "US", "currency": "USD", "currencySymbol": "$", "weekStart": "monday"},
   "dormeo-canada": {"brand": "Dormeo Canada", "account": "Dormeo", "marketplace": "CA", "currency": "CAD", "currencySymbol": "$", "weekStart": "monday"}
 }
