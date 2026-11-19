@@ -402,7 +402,8 @@ const httpServer = http.createServer(async (req, res) => {
   // CORS headers
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization, mcp-session-id");
+  res.setHeader("Access-Control-Expose-Headers", "mcp-session-id");
 
   if (req.method === "OPTIONS") {
     res.writeHead(200);
@@ -419,6 +420,9 @@ const httpServer = http.createServer(async (req, res) => {
 
   // SSE endpoint
   if (req.url === "/sse") {
+    res.setHeader("Content-Type", "text/event-stream");
+    res.setHeader("Cache-Control", "no-cache");
+    res.setHeader("Connection", "keep-alive");
     const transport = new SSEServerTransport("/message", res);
     transports[transport.sessionId] = transport;
     res.on("close", () => delete transports[transport.sessionId]);
