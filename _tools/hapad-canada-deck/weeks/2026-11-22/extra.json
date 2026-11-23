@@ -1,0 +1,301 @@
+{
+ "_source": "Sellerise MCP, account Hapad, marketplace CA, pulled 2026-11-23 (Monday-Sunday weeks; 4-week table from the saved weekly totals)",
+ "weeks": [
+  {
+   "label": "Oct 26 – Nov 1",
+   "revenue": 76.18,
+   "units": 4,
+   "orders": 4,
+   "impressions": 28973,
+   "clicks": 106,
+   "refundUnits": 4,
+   "refundRate": 100.0,
+   "spend": 145.83,
+   "adSales": 66.98,
+   "acos": 217.72,
+   "tacos": 191.43
+  },
+  {
+   "label": "Nov 2 – 8",
+   "revenue": 0.0,
+   "units": 0,
+   "orders": 0,
+   "impressions": 24498,
+   "clicks": 92,
+   "refundUnits": 1,
+   "refundRate": 0.0,
+   "spend": 119.73,
+   "adSales": 0.0,
+   "acos": 0.0,
+   "tacos": 0.0
+  },
+  {
+   "label": "Nov 9 – 15",
+   "revenue": 93.58,
+   "units": 5,
+   "orders": 5,
+   "impressions": 28237,
+   "clicks": 103,
+   "refundUnits": 1,
+   "refundRate": 20.0,
+   "spend": 148.09,
+   "adSales": 64.94,
+   "acos": 228.04,
+   "tacos": 158.25
+  },
+  {
+   "label": "Nov 16 – 22",
+   "revenue": 112.02,
+   "units": 6,
+   "orders": 6,
+   "impressions": 15087,
+   "clicks": 63,
+   "refundUnits": 0,
+   "refundRate": 0.0,
+   "spend": 93.83,
+   "adSales": 79.96,
+   "acos": 117.35,
+   "tacos": 83.76,
+   "net": -37.03,
+   "refunds": 0.0,
+   "adOrders": 5,
+   "cpc": 1.49,
+   "cvr": 7.94
+  }
+ ],
+ "mtd": {
+  "through": "2026-11-22",
+  "days": 22,
+  "revenue": 222.87,
+  "units": 12,
+  "orders": 12,
+  "spend": 388.9,
+  "adSales": 159.92,
+  "acos": 243.18,
+  "tacos": 174.5,
+  "refundRate": 25
+ },
+ "mtdLY": {
+  "revenue": 0,
+  "units": 0,
+  "orders": 0,
+  "spend": 0,
+  "adSales": 0,
+  "acos": 0,
+  "tacos": 0,
+  "refundRate": 0
+ },
+ "daily": [
+  [
+   "2026-11-09",
+   22.41,
+   22.87,
+   0,
+   1,
+   0
+  ],
+  [
+   "2026-11-10",
+   0,
+   17.45,
+   0,
+   0,
+   0
+  ],
+  [
+   "2026-11-11",
+   28.3,
+   21.53,
+   25.96,
+   2,
+   2
+  ],
+  [
+   "2026-11-12",
+   0,
+   25.03,
+   0,
+   0,
+   0
+  ],
+  [
+   "2026-11-13",
+   0,
+   18.87,
+   0,
+   0,
+   0
+  ],
+  [
+   "2026-11-14",
+   42.87,
+   20.78,
+   38.98,
+   2,
+   2
+  ],
+  [
+   "2026-11-15",
+   0,
+   21.56,
+   0,
+   0,
+   0
+  ],
+  [
+   "2026-11-16",
+   0,
+   30.4,
+   0,
+   0,
+   0
+  ],
+  [
+   "2026-11-17",
+   61.7,
+   19.4,
+   34.51,
+   3,
+   2
+  ],
+  [
+   "2026-11-18",
+   36.69,
+   14.36,
+   32.47,
+   2,
+   2
+  ],
+  [
+   "2026-11-19",
+   0,
+   11.21,
+   0,
+   0,
+   0
+  ],
+  [
+   "2026-11-20",
+   0,
+   10.08,
+   0,
+   0,
+   0
+  ],
+  [
+   "2026-11-21",
+   13.63,
+   5.04,
+   12.98,
+   1,
+   1
+  ],
+  [
+   "2026-11-22",
+   0,
+   3.34,
+   0,
+   0,
+   0
+  ]
+ ],
+ "searchTerms": {
+  "total": 36,
+  "winners": 0,
+  "harvest": 0,
+  "negative": 0,
+  "noPurchase": 0,
+  "rows": [],
+  "category": [
+   [
+    "heel insoles for work boots",
+    "SP",
+    1,
+    1,
+    1,
+    2.1,
+    19.49
+   ],
+   [
+    "heel wedge inserts",
+    "SP",
+    39,
+    1,
+    1,
+    0.26,
+    15.02
+   ],
+   [
+    "heel lift insole",
+    "SP",
+    1,
+    1,
+    1,
+    1.76,
+    12.98
+   ],
+   [
+    "heel inserts",
+    "SP",
+    92,
+    2,
+    0,
+    4.42,
+    0
+   ],
+   [
+    "heel pads",
+    "SP",
+    51,
+    2,
+    0,
+    4.28,
+    0
+   ]
+  ]
+ },
+ "targets": {
+  "total": 62,
+  "winners": 2,
+  "needsAttention": 1,
+  "highAcos": 0,
+  "noSales": 0,
+  "lowCtr": 1,
+  "rows": [
+   [
+    "metatarsal bars for men",
+    "Broad",
+    "Category",
+    2.16,
+    0,
+    null,
+    1,
+    0
+   ]
+  ]
+ },
+ "reviews": {
+  "available": false
+ },
+ "alerts": {
+  "total": 47,
+  "actionable": 7,
+  "critical": 6,
+  "warning": 1,
+  "byType": {
+   "Listing images": 16,
+   "Title": 8,
+   "Title differentiation": 7,
+   "Inactive": 3,
+   "Buy Box gained": 2,
+   "Buy Box lost": 2,
+   "Hijacker": 2,
+   "Hijacker liquidation": 2,
+   "Reimbursable units": 1,
+   "Brand": 1,
+   "Dimensions": 1,
+   "Out of stock": 1,
+   "Stranded": 1
+  }
+ }
+}
