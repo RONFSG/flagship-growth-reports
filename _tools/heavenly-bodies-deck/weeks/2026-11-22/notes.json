@@ -1,0 +1,108 @@
+{
+ "_week": "2026-11-16 to 2026-11-22 (Week 47). Written from this week's numbers; rewrite every key each Monday.",
+ "week_story": [
+  "Revenue was $11,854, up 32% from $8,963, on 199 units (148 the week before) and 185 orders (136).",
+  "The Tarot deck led the rise: $9,879 on 170 units vs $7,162 on 122 (+38%). It is 83% of sales.",
+  "The Tarot + Astrology 2-pack rose 45% to $1,027 (12 units); Astrology held at $718 (15 units); the Tarot 3-pack slipped to $230 (2 units)."
+ ],
+ "refunds_title": "Refund rate eased",
+ "refunds": [
+  "Refunds were $455 on 10 units (5.4% refund rate), down from $602 and 7.4% the week before. One negative-feedback alert is still open."
+ ],
+ "pacing_reco": "November is at $32,695 through Nov 22 ($1,486 a day, about $44.6K for the month vs October's $63,750); BF/CM (Nov 27–30) deals on the Tarot deck are the lever to close the gap.",
+ "ads_context": [
+  "Sales grew while ads shrank: spend fell 36% to $505 and ad sales fell 43% to $1,416, so the growth came from organic sales.",
+  "ACoS rose to 35.6% from 32.2%, but TACoS dropped to 4.3% from 8.9%. Sellerise shows $0 ad spend on Wed Nov 18, a $1,848 sales day."
+ ],
+ "ads_strategy": [
+  "Branded keywords were the best spend: $40 for $447 and 8 orders (8.9% ACoS).",
+  "Category keywords: $197 for $512, 9 orders (38.5%). Auto: $162 for $275 (59.0%). Brand defense product targets: $104 for $182 (57.1%)."
+ ],
+ "bid_moves": [
+  "Keep “tarot cards” exact growing: $20 for $165 and 3 orders (12.3% ACoS); same for the branded Sponsored Brands ad ($14 for $155).",
+  "Lower bids in the Tarot auto campaign ($133 for $275, 48.2%) and the Tarot brand defense targets ($98 for $137, 71.4%).",
+  "The “tarot deck” search cost $48 for one $55 sale: trim its bids.",
+  "Pause or negate the 2-pack auto ($24) and 2-pack exact ($18) campaigns: no sales; 11 no-sale campaigns cost $87 in all."
+ ],
+ "coupons": [
+  "This week: no coupon redemptions.",
+  "Last week: no coupon redemptions."
+ ],
+ "promotions": [
+  "This week: 57 promotion orders, $185 in promotional discounts (vs 62 orders and $203 last week)."
+ ],
+ "events": [
+  "Black Friday / Cyber Monday: Nov 27 – Nov 30 (this week).",
+  "Holiday gifting: the Tarot and Astrology boxsets are natural gifts; deals and coupons should be live before Thursday.",
+  "4 listing price changes were logged on Nov 19 (Tarot deck, Tarot 3-pack, Astrology 3-pack): confirm BF/CM prices are set."
+ ],
+ "reviews_title": "No new reviews in 90 days",
+ "reviews_body": [
+  "Sellerise shows no reviews dated in the last 90 days for the 3 rated products.",
+  "Current listing ratings: Tarot deck 4.9, Astrology 4.0, Tarot + Astrology 2-pack 3.5. One negative seller-feedback alert is open."
+ ],
+ "reviews_reco": [
+  "Run a review request push on Tarot and Astrology orders from the BF/CM week.",
+  "Read the 2-pack's low reviews (3.5 stars) and answer the open negative-feedback alert."
+ ],
+ "recommendations": [
+  [
+   "Ads",
+   "Raise budget on branded keywords (8.9% ACoS, 8 orders) and “tarot cards” exact (12.3% ACoS) going into BF/CM.",
+   "Ads team",
+   "Before Nov 27"
+  ],
+  [
+   "Ads",
+   "Lower bids in the Tarot auto campaign (48.2% ACoS) and Tarot brand defense targets (71.4%).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Pause or negate the 2-pack auto and exact campaigns ($42 with no sales).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Check why Sellerise shows $0 ad spend on Nov 18 (budgets or campaigns off?).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Harvest “cosmic tarot deck” and “earth angel tarot deck” (1 order each) into exact keywords.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Promotions",
+   "Confirm BF/CM deals, coupons and the Nov 19 price changes on the Tarot and Astrology boxsets.",
+   "Account team",
+   "Before Nov 27"
+  ],
+  [
+   "Inventory",
+   "Clear the low-inventory-fee and days-of-supply alerts on the Astrology 3-pack (96 units, no sales).",
+   "Account team",
+   "By Nov 30"
+  ]
+ ],
+ "position": [
+  "November is $32,695 through Nov 22 ($1,486 a day), pacing near $44.6K vs October's $63,750.",
+  "This week grew 32% on organic sales; TACoS fell to 4.3%."
+ ],
+ "next_steps": [
+  "Push budget to branded and “tarot cards”.",
+  "Cut auto and defense bids.",
+  "Lock BF/CM deals and prices.",
+  "Check the Nov 18 ad gap."
+ ],
+ "data_ask": [
+  "BF/CM deal and coupon plan.",
+  "Inventory sheet date (latest page has none).",
+  "Product costs (COGS) in Sellerise for true profit.",
+  "Search Query Performance for the Tarot deck (none yet for the Nov 15 week)."
+ ]
+}
