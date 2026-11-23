@@ -1,0 +1,112 @@
+{
+ "_week": "2026-11-16 to 2026-11-22 (Week 47). Written from this week's numbers.",
+ "week_story": [
+  "Orders rose 208% to 732. The lift began Thu Nov 19 ($3,484) and held through Sunday at $2,000+ a day. Every product grew: Variety 12 Pack $5,221 (+204%), Hazy IPA $2,094 (+283%), West Coast IPA $1,384 (+185%), Cherry Blossom $1,170 (+155%)."
+ ],
+ "refunds_title": "Refunds down to $93",
+ "refunds": [
+  "Refund money was $92.77 vs $118.02 last week, even with nearly 4x the units sold."
+ ],
+ "pacing_reco": "At $1,016 a day, November projects to $30,471, ahead of October's $24,197. Keep the Nov 19 lift going into BF/CM with stock and coupons in place.",
+ "ads_context": [
+  "ACoS fell to 46.5% from 69.4%; TACoS fell to 9.6% from 26.5%.",
+  "Spend eased 4.3% to $1,202 while ad sales rose 43% to $2,588, so each ad dollar returned $2.15 vs $1.44. Ads drove about 1 in 5 units."
+ ],
+ "ads_strategy": [
+  "Category keywords: $1,033 for $2,126 (48.6% ACoS), 140 orders. Branded: $77 for $245 (31.5%).",
+  "Remarketing fell to $25.27 (from $139.10) but still returned only $8.99."
+ ],
+ "bid_moves": [
+  "Lower bids on SB “non alcoholic beers” exact ($151.57 for $215.43) and SP “na beer” exact ($131.42 for $143.48).",
+  "Pause West Coast IPA “non alcoholic beer” exact: $70.19 for $40.44, and the item is out of stock."
+ ],
+ "coupons": [
+  "This week: 77 coupon orders.",
+  "November to date (Nov 1–22): 191 coupon orders.",
+  "Coupons ran on about 1 in 10 orders this week."
+ ],
+ "promotions": [
+  "This week: 105 promotion orders and $552.45 in promotional discounts (vs $293.42 last week).",
+  "Subscribe & Save orders: 92 this week."
+ ],
+ "events": [
+  "Black Friday / Cyber Monday: Nov 27 – Nov 30 (starts this Friday).",
+  "West Coast IPA and the 19.2oz Tallboy show 0 available on the sheet.",
+  "The inventory sheet still has no as-of date; stock shown may be out of date."
+ ],
+ "reviews_title": "Little review data in Sellerise",
+ "reviews_body": [
+  "Sellerise has a review signal for one product only: Hazy IPA, rated 4.3, with no new or negative reviews in the last 90 days.",
+  "The other five products return no review records, so ratings per product can't be shown yet."
+ ],
+ "reviews_reco": [
+  "Turn on review tracking for every RationAle ASIN in Sellerise (or pull Amazon's Customer Reviews report).",
+  "With 3x the orders this week, watch for new reviews on the Variety 12 Pack and Hazy IPA, the two biggest gainers."
+ ],
+ "recommendations": [
+  [
+   "Inventory",
+   "Restock West Coast IPA now: 0 available, 0 inbound, $1,384 sold this week before it ran out.",
+   "Inventory team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Pause West Coast IPA ads while it is out of stock (“non alcoholic beer” exact: $70.19 for $40.44).",
+   "Ads team",
+   "Today"
+  ],
+  [
+   "Ads",
+   "Lower bids on SP “na beer” exact (91.6% ACoS) and SB video “non alcoholic beers” exact (70.4%).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Raise budget on winners: “non alcoholic beer” exact ($38.64 for $209.76) and Hazy IPA exact ($24.80 for $149.96).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Harvest the 5 search terms Sellerise flags as exact-keyword candidates, e.g. “blue moon non alcoholic beer”, “clausthaler non alcoholic beer”.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Cut no-sale spend ($53.33 across 16 campaigns) and remarketing ($25.27 for $8.99).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Account",
+   "Find what started on Nov 19 (deal, placement or outside traffic) so it can be repeated.",
+   "Account team",
+   "By Nov 25"
+  ],
+  [
+   "Marketing",
+   "Lock BF/CM coupons and deals for Nov 27–30 and confirm stock covers the higher pace.",
+   "Account team",
+   "By Nov 25"
+  ]
+ ],
+ "position": [
+  "November is at $22,346 through Nov 22, vs $3,313 for the same days last year.",
+  "Sales tripled and ads got cheaper: ACoS 46.5%, TACoS 9.6%."
+ ],
+ "next_steps": [
+  "Restock West Coast IPA; pause its ads.",
+  "Trim high-ACoS bids; fund the winners.",
+  "Explain and repeat the Nov 19 lift.",
+  "Lock BF/CM coupons and deals."
+ ],
+ "data_ask": [
+  "Inventory sheet with an as-of date.",
+  "West Coast IPA and Tallboy restock dates.",
+  "BF/CM deal and coupon plan.",
+  "Search Query Performance (empty in Sellerise this week)."
+ ]
+}

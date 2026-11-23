@@ -1,23 +1,23 @@
 {
- "asOf": "11/02/2026",
- "week": 45,
+ "asOf": "",
+ "week": 0,
  "groups": {
   "g1": {
-   "total": 5010.0,
-   "avail": 1861.0,
-   "inbound": 2326.0,
-   "wkAvg": 288.0,
-   "l30": 1233.0,
+   "total": 7232.0,
+   "avail": 2203.0,
+   "inbound": 9.0,
+   "wkAvg": 260.0,
+   "l30": 1113.6,
    "n": 8,
    "asins": [
     "B0GYV1MSTY",
     "B0F9HRTK2M",
-    "B0F9HRTK2M",
     "B0DQX8JHSF",
-    "B0B7NWRNXF",
+    "B0F9HRTK2M",
     "B0FTBSQP28",
-    "B0B7P1FXTZ",
-    "B0B7NX8KDR"
+    "B0B7NX8KDR",
+    "B0B7NWRNXF",
+    "B0B7P1FXTZ"
    ]
   },
   "pr": {
@@ -34,100 +34,106 @@
   {
    "asin": "B0GYV1MSTY",
    "sku": "RB-MC-19oz-FBA",
-   "name": "19.2oz Mexican Lager 12 Pack",
-   "status": "Active",
-   "total": 5.0,
+   "name": "RationAle Non-Alcoholic Mexican Lager Craft Beer-12 Pack 19.2oz Tallboy Can",
+   "status": "Inactive",
+   "total": 3.0,
    "avail": 0.0,
-   "inbound": 0.0,
-   "wkAvg": 12.0,
-   "l30": 52.0,
+   "inbound": 3.0,
+   "wkAvg": 10.0,
+   "l30": 41.28,
    "wkLeft": 0.0
   },
   {
    "asin": "B0F9HRTK2M",
    "sku": "RB-VP-JBP4Flavor-12oz-12pk-CA",
-   "name": "Variety 12 Pack - Beer, Japanese, Mexican, Kolsch and West Coast IPA",
+   "name": "Rationale Non-Alcoholic Variety Pack - 4 Styles - 12 Pack 12oz Cans",
    "status": "Active",
-   "total": 4.0,
-   "avail": 4.0,
+   "total": 8.0,
+   "avail": 8.0,
    "inbound": 0.0,
-   "wkAvg": 0.0,
-   "l30": 2.0,
-   "wkLeft": 9.0
-  },
-  {
-   "asin": "B0F9HRTK2M",
-   "sku": "RB-VP-JBP4Flavor-12oz-12pk-FBA",
-   "name": "Variety 12 Pack - Beer, Japanese, Mexican, Kolsch and West Coast IPA",
-   "status": "Active",
-   "total": 1213.0,
-   "avail": 891.0,
-   "inbound": 315.0,
-   "wkAvg": 77.0,
-   "l30": 328.0,
-   "wkLeft": 16.0
+   "wkAvg": 1.0,
+   "l30": 3.84,
+   "wkLeft": 8.0
   },
   {
    "asin": "B0DQX8JHSF",
    "sku": "RB-KLC-12oz-6pk-FBA",
-   "name": "Kolsch Style 6 Pack",
+   "name": "RationAle Non-Alcoholic Kolsch Style Craft Beer - 6 Pack 12oz Cans",
    "status": "Active",
-   "total": 510.0,
-   "avail": 253.0,
-   "inbound": 200.0,
-   "wkAvg": 31.0,
-   "l30": 132.0,
-   "wkLeft": 17.0
+   "total": 327.0,
+   "avail": 108.0,
+   "inbound": 6.0,
+   "wkAvg": 27.0,
+   "l30": 115.2,
+   "wkLeft": 12.0
   },
   {
-   "asin": "B0B7NWRNXF",
-   "sku": "RB-HIPA-12oz-6pk-FBA",
-   "name": "Hazy IPA 6 Pack",
+   "asin": "B0F9HRTK2M",
+   "sku": "RB-VP-JBP4Flavor-12oz-12pk-FBA",
+   "name": "Rationale Non-Alcoholic Variety Pack - 4 Styles - 12 Pack 12oz Cans",
    "status": "Active",
-   "total": 1117.0,
-   "avail": 111.0,
-   "inbound": 800.0,
-   "wkAvg": 64.0,
-   "l30": 276.0,
-   "wkLeft": 17.0
+   "total": 1076.0,
+   "avail": 772.0,
+   "inbound": 0.0,
+   "wkAvg": 71.0,
+   "l30": 305.28,
+   "wkLeft": 15.0
   },
   {
    "asin": "B0FTBSQP28",
    "sku": "RB-JCP-12oz-6pk-FBA",
-   "name": "Cherry Blossom Japanese Style 6 Pack",
+   "name": "Rationale Non-Alcoholic Cherry Blossom Japanese Style - 6 Pack 12oz Cans",
    "status": "Active",
-   "total": 572.0,
-   "avail": 70.0,
-   "inbound": 200.0,
-   "wkAvg": 32.0,
-   "l30": 136.0,
-   "wkLeft": 18.0
-  },
-  {
-   "asin": "B0B7P1FXTZ",
-   "sku": "RB-MC-12oz-6pk-FBA",
-   "name": "Mexican Cerveza 6 Pack",
-   "status": "Active",
-   "total": 1164.0,
-   "avail": 468.0,
-   "inbound": 604.0,
-   "wkAvg": 56.0,
-   "l30": 239.0,
-   "wkLeft": 21.0
+   "total": 511.0,
+   "avail": 140.0,
+   "inbound": 0.0,
+   "wkAvg": 25.0,
+   "l30": 105.6,
+   "wkLeft": 20.0
   },
   {
    "asin": "B0B7NX8KDR",
    "sku": "RB-WCIPA-12oz-6pk-FBA",
-   "name": "West Coast IPA 6 Pack",
+   "name": "RationAle Non-Alcoholic West Coast IPA Craft Beer - 6 Pack 12oz Cans",
    "status": "Active",
-   "total": 425.0,
-   "avail": 64.0,
-   "inbound": 207.0,
-   "wkAvg": 16.0,
-   "l30": 68.0,
+   "total": 922.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 34.0,
+   "l30": 146.88,
    "wkLeft": 27.0
+  },
+  {
+   "asin": "B0B7NWRNXF",
+   "sku": "RB-HIPA-12oz-6pk-FBA",
+   "name": "RationAle Non-Alcoholic Hazy IPA Craft Beer - 6 Pack 12oz Cans",
+   "status": "Active",
+   "total": 2171.0,
+   "avail": 636.0,
+   "inbound": 0.0,
+   "wkAvg": 46.0,
+   "l30": 196.8,
+   "wkLeft": 47.0
+  },
+  {
+   "asin": "B0B7P1FXTZ",
+   "sku": "RB-MC-12oz-6pk-FBA",
+   "name": "RationAle Non-Alcoholic Mexican Cerveza Craft Beer - 6 Pack 12oz Cans",
+   "status": "Active",
+   "total": 2214.0,
+   "avail": 539.0,
+   "inbound": 0.0,
+   "wkAvg": 46.0,
+   "l30": 198.72,
+   "wkLeft": 48.0
   }
  ],
- "po": [],
+ "po": [
+  [
+   "RationAle Non-Alcoholic Mexican Lager Craft Beer-12 Pack 19.2oz Tallboy Can ASIN: B0GYV1MSTY \u00b7 SKU: RB-MC-19oz-FBA",
+   "\u2014",
+   "100"
+  ]
+ ],
  "unmapped": []
 }
