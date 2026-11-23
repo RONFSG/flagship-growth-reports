@@ -1,0 +1,229 @@
+{
+  "_source": "Sellerise MCP, account CaddyO, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: ASINs/titles/units/sessions from get_products salesProfitSummaryByAsin; productSales (plus revenue/salesTaxes) via per-ASIN get_account_metrics for week and prior week. Total Sales = productSales (= Amazon Ordered Product Sales). Pulled 2026-11-23.",
+  "week": {
+    "start": "2026-11-15",
+    "end": "2026-11-21"
+  },
+  "prevWeek": {
+    "start": "2026-11-08",
+    "end": "2026-11-14"
+  },
+  "current": {
+    "revenue": 2089.59,
+    "productSales": 2000.45,
+    "salesTaxes": 140.33,
+    "units": 68,
+    "ppcSpend": 592.84,
+    "ppcSales": 1039.95,
+    "ppcClicks": 474,
+    "ppcImpressions": 123464,
+    "ppcOrders": 30
+  },
+  "prev": {
+    "revenue": 1639.33,
+    "productSales": 1653.2,
+    "salesTaxes": 113.99,
+    "units": 56,
+    "ppcSpend": 1157.05,
+    "ppcSales": 1336.8,
+    "ppcClicks": 856,
+    "ppcImpressions": 291528,
+    "ppcOrders": 36
+  },
+  "daily": [
+    {
+      "date": "2026-11-15",
+      "revenue": 281.07,
+      "salesTaxes": 16.48,
+      "productSales": 257.6
+    },
+    {
+      "date": "2026-11-16",
+      "revenue": 260.24,
+      "salesTaxes": 16.42,
+      "productSales": 277.7
+    },
+    {
+      "date": "2026-11-17",
+      "revenue": 392.39,
+      "salesTaxes": 23.64,
+      "productSales": 381.45
+    },
+    {
+      "date": "2026-11-18",
+      "revenue": 273.62,
+      "salesTaxes": 22.62,
+      "productSales": 262.6
+    },
+    {
+      "date": "2026-11-19",
+      "revenue": 396.92,
+      "salesTaxes": 27.31,
+      "productSales": 369.61
+    },
+    {
+      "date": "2026-11-20",
+      "revenue": 418.1,
+      "salesTaxes": 31.74,
+      "productSales": 386.36
+    },
+    {
+      "date": "2026-11-21",
+      "revenue": 67.25,
+      "salesTaxes": 2.12,
+      "productSales": 65.13
+    }
+  ],
+  "products": [
+    {
+      "asin": "B0G3T7LL5V",
+      "title": "CaddyO Wrapsulator Insulated Can Cooler for Regular 12oz & 16oz Cans - Blue",
+      "cur": {
+        "revenue": 449.05,
+        "salesTaxes": 29.56,
+        "units": 17,
+        "sessions": 227,
+        "productSales": 419.75
+      },
+      "prev": {
+        "revenue": 287.08,
+        "salesTaxes": 19.29,
+        "units": 10,
+        "sessions": 248,
+        "productSales": 289.5
+      }
+    },
+    {
+      "asin": "B0DSGQV1T5",
+      "title": "CaddyO Wrapsulator Insulated Can Cooler for Regular 12 &16oz Cans - Black",
+      "cur": {
+        "revenue": 420.34,
+        "salesTaxes": 29.55,
+        "units": 16,
+        "sessions": 115,
+        "productSales": 398.04
+      },
+      "prev": {
+        "revenue": 420.95,
+        "salesTaxes": 28.7,
+        "units": 15,
+        "sessions": 116,
+        "productSales": 434.25
+      }
+    },
+    {
+      "asin": "B0FWGYCLWB",
+      "title": "CaddyO Elegant Leather Insulated Wine Tote Chiller, This Wine Chiller Tote will actual take a warm bottle and chill it \u2026",
+      "cur": {
+        "revenue": 277.45,
+        "salesTaxes": 19.67,
+        "units": 5,
+        "sessions": 54,
+        "productSales": 284.76
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 43,
+        "productSales": 0
+      }
+    },
+    {
+      "asin": "B0GS3N2NM3",
+      "title": "CaddyO Wrapsulator Insulated Can Cooler Sleeve for 12 & 16 oz Cans, Regular",
+      "cur": {
+        "revenue": 223.27,
+        "salesTaxes": 14.46,
+        "units": 4,
+        "sessions": 20,
+        "productSales": 208.81
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 30,
+        "productSales": 0
+      }
+    },
+    {
+      "asin": "B0G3T5N7YB",
+      "title": "CaddyO Wrapsulator Insulated Can Cooler for Regular 12oz & 16oz Cans",
+      "cur": {
+        "revenue": 176.96,
+        "salesTaxes": 13.41,
+        "units": 7,
+        "sessions": 103,
+        "productSales": 166.45
+      },
+      "prev": {
+        "revenue": 176.72,
+        "salesTaxes": 11.7,
+        "units": 6,
+        "sessions": 157,
+        "productSales": 173.7
+      }
+    },
+    {
+      "asin": "B0DSGRTT4G",
+      "title": "CaddyO Wrapsulator Insulated Can Cooler for Regular 12oz & 16oz Cans - Camo",
+      "cur": {
+        "revenue": 109.65,
+        "salesTaxes": 8.33,
+        "units": 4,
+        "sessions": 30,
+        "productSales": 101.32
+      },
+      "prev": {
+        "revenue": 119.44,
+        "salesTaxes": 7.99,
+        "units": 4,
+        "sessions": 23,
+        "productSales": 115.8
+      }
+    },
+    {
+      "asin": "B0H91128PR",
+      "title": "CaddyO Wrapsulator Insulated Slim Can Cooler for 12oz Cans & Bottles, Slim",
+      "cur": {
+        "revenue": 81.47,
+        "salesTaxes": 3.31,
+        "units": 3,
+        "sessions": 45,
+        "productSales": 79.61
+      },
+      "prev": {
+        "revenue": 26.51,
+        "salesTaxes": 1.91,
+        "units": 1,
+        "sessions": 42,
+        "productSales": 28.95
+      }
+    },
+    {
+      "asin": "B0DQM48GQ7",
+      "title": "CaddyO Wrapsulator Insulated Slim Can Cooler for 12oz Cans & Bottles, Slim",
+      "cur": {
+        "revenue": 81.12,
+        "salesTaxes": 4.41,
+        "units": 3,
+        "sessions": 34,
+        "productSales": 79.61
+      },
+      "prev": {
+        "revenue": 31.34,
+        "salesTaxes": 2.39,
+        "units": 1,
+        "sessions": 27,
+        "productSales": 28.95
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights \u2014** Total sales grew to $2,000 (+21.0% WoW) on 68 units, with organic revenue more than tripling to $960 (+203.6% WoW). The Blue Wrapsulator Can Cooler led at $419 (+45.0%) on 17 units (+70.0%) as conversion jumped to 7.5% (+85.7%). The Wine Tote Chiller added $284 and the Wrapsulator Can Cooler Sleeve added $208, and Friday, Nov 20 was the peak day at $386.",
+    "**Metrics to Watch \u2014** PPC revenue eased to $1,039 (-22.2%), driven by ad spend being cut to $592 (prior $1,157), a deliberate efficiency move that organic growth more than made up for. The Black Wrapsulator eased to $398 (-8.3%) even as units rose +6.7% to 16 and conversion improved to 13.9%. The standard Wrapsulator held at $166 (-4.2%) on sessions down -34.4%, with conversion up +77.8% to 6.8%. We are focused on rebuilding traffic across the Wrapsulator range.",
+    "**Ad Spend Efficiency \u2014** TACoS fell sharply to 29.6% from 69.99% and ROAS improved to 1.75x from 1.16x, so each ad dollar is working much harder. ACOS came in at 57.0% with a 0.38% ad CTR and a 6.33% ad conversion rate. Spend is being directed to the SKUs converting best to keep ROAS climbing above 1.75x.",
+    "**Actions This Week \u2014** Shift budget toward the Black Wrapsulator to capitalize on its 13.9% conversion. Relaunch targeted campaigns on the standard Wrapsulator's best terms to recover its -34.4% session dip. Keep pruning low-converting search terms to bring ACOS below 57.0%."
+  ]
+}

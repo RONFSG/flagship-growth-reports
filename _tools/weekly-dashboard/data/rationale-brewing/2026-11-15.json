@@ -1,0 +1,193 @@
+{
+  "_source": "Sellerise MCP, account Rationale Brewing, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: ASINs/titles/units/sessions from get_products salesProfitSummaryByAsin; productSales (plus revenue/salesTaxes) via per-ASIN get_account_metrics for week and prior week. Total Sales = productSales (= Amazon Ordered Product Sales). Pulled 2026-11-23.",
+  "week": {
+    "start": "2026-11-15",
+    "end": "2026-11-21"
+  },
+  "prevWeek": {
+    "start": "2026-11-08",
+    "end": "2026-11-14"
+  },
+  "current": {
+    "revenue": 11048.67,
+    "salesTaxes": 573.92,
+    "units": 919,
+    "ppcSpend": 1185.03,
+    "ppcSales": 2436.64,
+    "ppcClicks": 433,
+    "ppcImpressions": 75292,
+    "ppcOrders": 155,
+    "productSales": 10891.88
+  },
+  "prev": {
+    "revenue": 4860.31,
+    "salesTaxes": 274.61,
+    "units": 288,
+    "ppcSpend": 1299.34,
+    "ppcSales": 1896.1,
+    "ppcClicks": 483,
+    "ppcImpressions": 126859,
+    "ppcOrders": 102,
+    "productSales": 4851.87
+  },
+  "daily": [
+    {
+      "date": "2026-11-15",
+      "revenue": 678.96,
+      "salesTaxes": 33.24,
+      "productSales": 663.32
+    },
+    {
+      "date": "2026-11-16",
+      "revenue": 673.89,
+      "salesTaxes": 38.75,
+      "productSales": 682.05
+    },
+    {
+      "date": "2026-11-17",
+      "revenue": 991.17,
+      "salesTaxes": 57.1,
+      "productSales": 1050.42
+    },
+    {
+      "date": "2026-11-18",
+      "revenue": 809.72,
+      "salesTaxes": 53.21,
+      "productSales": 892.86
+    },
+    {
+      "date": "2026-11-19",
+      "revenue": 3483.76,
+      "salesTaxes": 171,
+      "productSales": 3349.92
+    },
+    {
+      "date": "2026-11-20",
+      "revenue": 2046.67,
+      "salesTaxes": 112.28,
+      "productSales": 1962.17
+    },
+    {
+      "date": "2026-11-21",
+      "revenue": 2364.5,
+      "salesTaxes": 108.34,
+      "productSales": 2291.14
+    }
+  ],
+  "products": [
+    {
+      "asin": "B0F9HRTK2M",
+      "title": "Rationale Non-Alcoholic Variety Pack - 4 Styles - 12 Pack 12oz Cans",
+      "cur": {
+        "revenue": 4460.83,
+        "salesTaxes": 238.49,
+        "units": 225,
+        "sessions": 410,
+        "productSales": 4376.75
+      },
+      "prev": {
+        "revenue": 1976.95,
+        "salesTaxes": 114.19,
+        "units": 68,
+        "sessions": 313,
+        "productSales": 1971.32
+      }
+    },
+    {
+      "asin": "B0B7P1FXTZ",
+      "title": "RationAle Non-Alcoholic Mexican Cerveza Craft Beer - 6 Pack 12oz Cans",
+      "cur": {
+        "revenue": 1847.73,
+        "salesTaxes": 102.96,
+        "units": 180,
+        "sessions": 290,
+        "productSales": 1809.12
+      },
+      "prev": {
+        "revenue": 1069.46,
+        "salesTaxes": 59.35,
+        "units": 87,
+        "sessions": 236,
+        "productSales": 1110.12
+      }
+    },
+    {
+      "asin": "B0B7NWRNXF",
+      "title": "RationAle Non-Alcoholic Hazy IPA Craft Beer - 6 Pack 12oz Cans",
+      "cur": {
+        "revenue": 1625.94,
+        "salesTaxes": 76.75,
+        "units": 196,
+        "sessions": 229,
+        "productSales": 1633.74
+      },
+      "prev": {
+        "revenue": 558.47,
+        "salesTaxes": 32.01,
+        "units": 45,
+        "sessions": 220,
+        "productSales": 547.98
+      }
+    },
+    {
+      "asin": "B0B7NX8KDR",
+      "title": "RationAle Non-Alcoholic West Coast IPA Craft Beer - 6 Pack 12oz Cans",
+      "cur": {
+        "revenue": 1243.09,
+        "salesTaxes": 47.83,
+        "units": 144,
+        "sessions": 169,
+        "productSales": 1259
+      },
+      "prev": {
+        "revenue": 461.37,
+        "salesTaxes": 22.24,
+        "units": 36,
+        "sessions": 116,
+        "productSales": 445.97
+      }
+    },
+    {
+      "asin": "B0FTBSQP28",
+      "title": "Rationale Non-Alcoholic Cherry Blossom Japanese Style - 6 Pack 12oz Cans",
+      "cur": {
+        "revenue": 1119.14,
+        "salesTaxes": 71.07,
+        "units": 104,
+        "sessions": 193,
+        "productSales": 1078.97
+      },
+      "prev": {
+        "revenue": 383.22,
+        "salesTaxes": 24.96,
+        "units": 25,
+        "sessions": 132,
+        "productSales": 373.25
+      }
+    },
+    {
+      "asin": "B0DQX8JHSF",
+      "title": "RationAle Non-Alcoholic Kolsch Style Craft Beer - 6 Pack 12oz Cans",
+      "cur": {
+        "revenue": 751.94,
+        "salesTaxes": 36.82,
+        "units": 70,
+        "sessions": 116,
+        "productSales": 734.3
+      },
+      "prev": {
+        "revenue": 410.84,
+        "salesTaxes": 21.86,
+        "units": 27,
+        "sessions": 85,
+        "productSales": 403.23
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights —** A breakout week: total sales more than doubled to $10,891 (+124.5% WoW from $4,851) on 919 units, led by organic revenue surging +186.1% to $8,455. The Variety Pack 12 Pack climbed to $4,376 (+122.0%) on 225 units (+230.9%), while the Hazy IPA 6 Pack ($1,633, +198.1%), West Coast IPA 6 Pack ($1,259, +182.3%) and Cherry Blossom Japanese Style 6 Pack ($1,078, +189.1%) all nearly tripled. Thursday, Nov 19 was the peak day at $3,349.",
+    "**Metrics to Watch —** With every top SKU growing, the main thing to watch is keeping paid efficiency moving in the right direction: ACOS sits at 48.6% and ad CTR at 0.58%, so there is room to get more out of each ad dollar. Conversion is exceptionally strong, with the Hazy IPA 6 Pack at 85.6% and the West Coast IPA 6 Pack at 85.2%, which means traffic is the main lever for more volume. We are focused on driving more sessions to these high-converting SKUs to build on this momentum.",
+    "**Ad Spend Efficiency —** ROAS jumped to 2.06x from 1.46x and TACoS dropped sharply to 10.9% from 26.78%, as ad spend eased to $1,185 (prior $1,299) while PPC revenue grew to $2,436 (+28.5%). Ads converted at a strong 35.80% with a 0.58% ad CTR and ACOS of 48.6%. Spend is now working much harder, and we will keep reinvesting into the best-converting campaigns.",
+    "**Actions This Week —** Increase bids and budget on the Hazy IPA 6 Pack and West Coast IPA 6 Pack, whose 85.6% and 85.2% conversion rates make them the most efficient places to add traffic. Scale campaigns for the Variety Pack 12 Pack to grow its 410 sessions while conversion holds at 54.9%. Test new ad creative to lift the 0.58% ad CTR and trim search terms running above the 48.6% ACOS to push ROAS beyond 2.06x."
+  ]
+}

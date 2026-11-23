@@ -1,0 +1,229 @@
+{
+  "_source": "Sellerise MCP, account JAX Atheltics, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: ASINs/titles/units/sessions from get_products salesProfitSummaryByAsin; productSales (plus revenue/salesTaxes) via per-ASIN get_account_metrics for week and prior week. Total Sales = productSales (= Amazon Ordered Product Sales). Pulled 2026-11-23.",
+  "week": {
+    "start": "2026-11-15",
+    "end": "2026-11-21"
+  },
+  "prevWeek": {
+    "start": "2026-11-08",
+    "end": "2026-11-14"
+  },
+  "current": {
+    "revenue": 2957.11,
+    "productSales": 2776.24,
+    "salesTaxes": 196.62,
+    "units": 51,
+    "ppcSpend": 882,
+    "ppcSales": 1504.22,
+    "ppcClicks": 899,
+    "ppcImpressions": 158058,
+    "ppcOrders": 27
+  },
+  "prev": {
+    "revenue": 2399.34,
+    "productSales": 2259.67,
+    "salesTaxes": 162.17,
+    "units": 34,
+    "ppcSpend": 478.88,
+    "ppcSales": 1467.29,
+    "ppcClicks": 610,
+    "ppcImpressions": 212139,
+    "ppcOrders": 19
+  },
+  "daily": [
+    {
+      "date": "2026-11-15",
+      "revenue": 336.77,
+      "salesTaxes": 21.82,
+      "productSales": 314.95
+    },
+    {
+      "date": "2026-11-16",
+      "revenue": 228.23,
+      "salesTaxes": 18.26,
+      "productSales": 209.97
+    },
+    {
+      "date": "2026-11-17",
+      "revenue": 363.09,
+      "salesTaxes": 23.14,
+      "productSales": 339.95
+    },
+    {
+      "date": "2026-11-18",
+      "revenue": 87.17,
+      "salesTaxes": 2.19,
+      "productSales": 84.98
+    },
+    {
+      "date": "2026-11-19",
+      "revenue": 841.6,
+      "salesTaxes": 57.01,
+      "productSales": 784.59
+    },
+    {
+      "date": "2026-11-20",
+      "revenue": 576.25,
+      "salesTaxes": 37.61,
+      "productSales": 554.39
+    },
+    {
+      "date": "2026-11-21",
+      "revenue": 524,
+      "salesTaxes": 36.59,
+      "productSales": 487.41
+    }
+  ],
+  "products": [
+    {
+      "asin": "B0BZGS5HVT",
+      "title": "JAX Platinum White Strap Cuff Batting Gloves, Leather, Baseball/Softball",
+      "cur": {
+        "revenue": 251.71,
+        "salesTaxes": 19.25,
+        "units": 4,
+        "sessions": 66,
+        "productSales": 232.46
+      },
+      "prev": {
+        "revenue": 162.05,
+        "salesTaxes": 12.07,
+        "units": 2,
+        "sessions": 47,
+        "productSales": 149.98
+      }
+    },
+    {
+      "asin": "B0FGJ99JN2",
+      "title": "JAX Pink Strap Cuff Batting Gloves, Leather, Baseball/Softball",
+      "cur": {
+        "revenue": 134.45,
+        "salesTaxes": 6.97,
+        "units": 2,
+        "sessions": 26,
+        "productSales": 127.48
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 12,
+        "productSales": 0
+      }
+    },
+    {
+      "asin": "B0HKXSLKH2",
+      "title": "JAX On-Deck Orange Strap Cuff Batting Gloves, Leather, Baseball/Softball",
+      "cur": {
+        "revenue": 126.58,
+        "salesTaxes": 6.6,
+        "units": 2,
+        "sessions": 3,
+        "productSales": 119.98
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0,
+        "productSales": 0
+      }
+    },
+    {
+      "asin": "B0HKY58RTP",
+      "title": "JAX Rally Wave Strap Cuff Batting Gloves, Leather, Baseball/Softball",
+      "cur": {
+        "revenue": 119.4,
+        "salesTaxes": 6.92,
+        "units": 2,
+        "sessions": 9,
+        "productSales": 112.48
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0,
+        "productSales": 0
+      }
+    },
+    {
+      "asin": "B0GRPNTQGD",
+      "title": "Jax Pro Cuff Batting Gloves - Walk Off Watermelon - YM - Left Handed Swing",
+      "cur": {
+        "revenue": 117.82,
+        "salesTaxes": 7.84,
+        "units": 2,
+        "sessions": 16,
+        "productSales": 109.98
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0,
+        "productSales": 0
+      }
+    },
+    {
+      "asin": "B0FGJ8LVR9",
+      "title": "JAX Pink Strap Cuff Batting Gloves, Leather, Baseball/Softball",
+      "cur": {
+        "revenue": 111.26,
+        "salesTaxes": 6.28,
+        "units": 2,
+        "sessions": 14,
+        "productSales": 104.98
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 10,
+        "productSales": 0
+      }
+    },
+    {
+      "asin": "B0BZGQX3Q5",
+      "title": "JAX Platinum White Strap Cuff Batting Gloves, Leather, Baseball/Softball",
+      "cur": {
+        "revenue": 97.03,
+        "salesTaxes": 7.8,
+        "units": 2,
+        "sessions": 29,
+        "productSales": 104.98
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 1,
+        "sessions": 18,
+        "productSales": 0
+      }
+    },
+    {
+      "asin": "B0HKTQP1D8",
+      "title": "JAX Pro Cuff Leather Batting Gloves, Baseball/Softball, Big League Berry",
+      "cur": {
+        "revenue": 96.11,
+        "salesTaxes": 6.13,
+        "units": 2,
+        "sessions": 42,
+        "productSales": 89.98
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0,
+        "productSales": 0
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights \u2014** Total sales grew to $2,776 (+22.9% WoW) on 51 units, with organic revenue up to $1,272 (+60.5% WoW). The Platinum White Strap Cuff Batting Gloves led at $232 (+55.0%) on 4 units (+100.0%), with conversion rising to 6.1% (+42.4%). The Pink, On-Deck Orange and Rally Wave Strap Cuff gloves all added sales, and Thursday, Nov 19 was the peak day at $784.",
+    "**Metrics to Watch \u2014** Ad spend was stepped up to $882 (prior $478) to push visibility, while PPC revenue held at $1,504 (+2.5%), so the extra investment has not yet turned into proportional ad sales. The upside is clear in organic, which grew +60.5% to $1,272 as the added visibility lifted overall demand. Wednesday, Nov 18 was the softest day at $84. We are refining keyword targeting this week to bring ad returns back in line.",
+    "**Ad Spend Efficiency \u2014** ROAS came in at 1.71x (prior 3.06x) and TACoS at 31.8% (prior 21.19%), with ACOS at 58.6%, a 0.57% ad CTR and a 3.00% ad conversion rate. Spend was raised to build reach for the batting glove range, and the organic lift shows it is working; we are now trimming non-converting terms and resetting bids to move ROAS back toward 3.06x.",
+    "**Actions This Week \u2014** Lower bids on search terms that drew clicks without orders to bring ACOS down from 58.6%. Reallocate that budget to the Platinum White Strap Cuff (6.1% conversion) and Pink Strap Cuff (7.7% conversion) gloves. Test new ad creative to lift the 0.57% ad CTR."
+  ]
+}

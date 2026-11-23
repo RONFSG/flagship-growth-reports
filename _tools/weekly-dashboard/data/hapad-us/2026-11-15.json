@@ -1,0 +1,229 @@
+{
+  "_source": "Sellerise MCP, account Hapad, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: ASINs/titles/units/sessions from get_products salesProfitSummaryByAsin; productSales (plus revenue/salesTaxes) via per-ASIN get_account_metrics for week and prior week. Total Sales = productSales (= Amazon Ordered Product Sales). Pulled 2026-11-23.",
+  "week": {
+    "start": "2026-11-15",
+    "end": "2026-11-21"
+  },
+  "prevWeek": {
+    "start": "2026-11-08",
+    "end": "2026-11-14"
+  },
+  "current": {
+    "revenue": 18585.52,
+    "salesTaxes": 810.75,
+    "units": 1302,
+    "ppcSpend": 1978.32,
+    "ppcSales": 3938.31,
+    "ppcClicks": 1151,
+    "ppcImpressions": 159976,
+    "ppcOrders": 236,
+    "productSales": 18172.35
+  },
+  "prev": {
+    "revenue": 18312.95,
+    "salesTaxes": 729.14,
+    "units": 1209,
+    "ppcSpend": 2461.35,
+    "ppcSales": 6047.42,
+    "ppcClicks": 1469,
+    "ppcImpressions": 175357,
+    "ppcOrders": 327,
+    "productSales": 17658.45
+  },
+  "daily": [
+    {
+      "date": "2026-11-15",
+      "revenue": 2279.45,
+      "salesTaxes": 111.84,
+      "productSales": 2171.9
+    },
+    {
+      "date": "2026-11-16",
+      "revenue": 2727.18,
+      "salesTaxes": 131.63,
+      "productSales": 2644.58
+    },
+    {
+      "date": "2026-11-17",
+      "revenue": 2298.73,
+      "salesTaxes": 96.15,
+      "productSales": 2307.76
+    },
+    {
+      "date": "2026-11-18",
+      "revenue": 2673.65,
+      "salesTaxes": 113.16,
+      "productSales": 2706.16
+    },
+    {
+      "date": "2026-11-19",
+      "revenue": 2949.79,
+      "salesTaxes": 144.2,
+      "productSales": 2839.75
+    },
+    {
+      "date": "2026-11-20",
+      "revenue": 3149.05,
+      "salesTaxes": 126.03,
+      "productSales": 3065.55
+    },
+    {
+      "date": "2026-11-21",
+      "revenue": 2507.67,
+      "salesTaxes": 87.74,
+      "productSales": 2436.65
+    }
+  ],
+  "products": [
+    {
+      "asin": "B008DW1DS0",
+      "title": "HAPAD Metatarsal Pad 5/16\" - Medium, 6 Pair Pack Wool Felt Ball of Foot Pad",
+      "cur": {
+        "revenue": 4635.83,
+        "salesTaxes": 187.22,
+        "units": 168,
+        "sessions": 565,
+        "productSales": 4529.71
+      },
+      "prev": {
+        "revenue": 4575.41,
+        "salesTaxes": 148.4,
+        "units": 150,
+        "sessions": 544,
+        "productSales": 4435.5
+      }
+    },
+    {
+      "asin": "B008DW1EX4",
+      "title": "HAPAD Metatarsal Pad 3/8\" - Large, 6 Pair Pack Wool Felt Ball of Foot Pad",
+      "cur": {
+        "revenue": 2554.23,
+        "salesTaxes": 133.7,
+        "units": 91,
+        "sessions": 424,
+        "productSales": 2473.73
+      },
+      "prev": {
+        "revenue": 2317.61,
+        "salesTaxes": 128.46,
+        "units": 79,
+        "sessions": 424,
+        "productSales": 2211.21
+      }
+    },
+    {
+      "asin": "B008DW1DJE",
+      "title": "HAPAD Metatarsal Pad 1/4\" - Small, 6 Pair Pack Wool Felt Ball of Foot Pad",
+      "cur": {
+        "revenue": 1340.56,
+        "salesTaxes": 72.89,
+        "units": 39,
+        "sessions": 204,
+        "productSales": 1285.05
+      },
+      "prev": {
+        "revenue": 903.46,
+        "salesTaxes": 32.12,
+        "units": 23,
+        "sessions": 201,
+        "productSales": 875.15
+      }
+    },
+    {
+      "asin": "B00F4JIIPG",
+      "title": "HAPAD Metatarsal Pad 5/16\" - Medium, Wool Felt Ball of Foot Pad - 1 Pair",
+      "cur": {
+        "revenue": 911.26,
+        "salesTaxes": 44.42,
+        "units": 94,
+        "sessions": 338,
+        "productSales": 860.87
+      },
+      "prev": {
+        "revenue": 971.4,
+        "salesTaxes": 29.07,
+        "units": 97,
+        "sessions": 295,
+        "productSales": 948.58
+      }
+    },
+    {
+      "asin": "B00LERXYBU",
+      "title": "HAPAD Scaphoid Pad - Medium, Wool Felt Medial Arch Insert Pair Shoe Insert",
+      "cur": {
+        "revenue": 709.58,
+        "salesTaxes": 27.39,
+        "units": 82,
+        "sessions": 191,
+        "productSales": 719.28
+      },
+      "prev": {
+        "revenue": 576.15,
+        "salesTaxes": 20.47,
+        "units": 62,
+        "sessions": 208,
+        "productSales": 550.14
+      }
+    },
+    {
+      "asin": "B0FVHR4T99",
+      "title": "HAPAD Posting Heel Wedge - Reversible Medial/Lateral Insert Pair Shoe Pad",
+      "cur": {
+        "revenue": 705.29,
+        "salesTaxes": 27.04,
+        "units": 75,
+        "sessions": 178,
+        "productSales": 691.25
+      },
+      "prev": {
+        "revenue": 1114.91,
+        "salesTaxes": 38.99,
+        "units": 108,
+        "sessions": 207,
+        "productSales": 1078.92
+      }
+    },
+    {
+      "asin": "B00LG4MCBE",
+      "title": "HAPAD Mortons Neuroma Pads - Teardrop Wool Felt Ball-of-Foot Pad Insert",
+      "cur": {
+        "revenue": 587.91,
+        "salesTaxes": 22.15,
+        "units": 79,
+        "sessions": 261,
+        "productSales": 600.4
+      },
+      "prev": {
+        "revenue": 692.53,
+        "salesTaxes": 24.43,
+        "units": 87,
+        "sessions": 292,
+        "productSales": 661.2
+      }
+    },
+    {
+      "asin": "B07HN67269",
+      "title": "HAPAD Dancer Pad 5/16\" - Women, Cut-Out Adhesive Pad Wool Felt Shoe Insert",
+      "cur": {
+        "revenue": 559.35,
+        "salesTaxes": 27.33,
+        "units": 70,
+        "sessions": 157,
+        "productSales": 586.6
+      },
+      "prev": {
+        "revenue": 429.32,
+        "salesTaxes": 18.36,
+        "units": 48,
+        "sessions": 174,
+        "productSales": 402.24
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights —** Organic revenue jumped +22.6% WoW to $14,234, lifting total sales to $18,172 (+2.9%) on 1302 units. The Metatarsal Pad 1/4\" Small 6-Pack was the standout at $1,285 (+46.8%) as conversion rose to 19.1% (+67.1%), and the Scaphoid Pad grew to $719 (+30.7%) with a 42.9% conversion rate. Friday, Nov 20 was the peak day at $3,065.",
+    "**Metrics to Watch —** PPC revenue eased to $3,938 (-34.9%), primarily driven by a deliberate pullback in ad spend to $1,978 (prior $2,461) — an efficiency-driven move that organic growth more than covered. The Metatarsal Pad 5/16\" Medium 1 Pair dipped to $860 (-9.2%) as conversion softened to 27.8% (-15.4%), even though sessions grew +14.6% to 338, so shoppers are still finding it. We are focused on turning that extra traffic back into orders on the 1 Pair.",
+    "**Ad Spend Efficiency —** TACoS improved to 10.9% from 13.94%, so advertising now takes a smaller share of total sales while organic carries more of the load. ROAS came in at 1.99x (prior 2.46x) with ACOS at 50.2%, a 0.72% ad CTR and a strong 20.50% ad conversion rate. We are trimming low-converting search terms and refreshing ad creative to raise CTR and bring ROAS back toward 2.46x.",
+    "**Actions This Week —** Shift ad budget toward the Metatarsal Pad 1/4\" Small 6-Pack and the Scaphoid Pad, whose conversion rates of 19.1% and 42.9% make them the most efficient places to add spend. Cut search terms on campaigns running above the 50.2% ACOS to lift ROAS back toward 2.46x. Test new ad creative on the Metatarsal Pad 5/16\" Medium 1 Pair to convert its 338 sessions more efficiently."
+  ]
+}

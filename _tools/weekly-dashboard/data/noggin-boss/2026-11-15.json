@@ -1,0 +1,229 @@
+{
+  "_source": "Sellerise MCP, account NogginBoss, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: ASINs/titles/units/sessions from get_products salesProfitSummaryByAsin; productSales (plus revenue/salesTaxes) via per-ASIN get_account_metrics for week and prior week. Total Sales = productSales (= Amazon Ordered Product Sales). Pulled 2026-11-23.",
+  "week": {
+    "start": "2026-11-15",
+    "end": "2026-11-21"
+  },
+  "prevWeek": {
+    "start": "2026-11-08",
+    "end": "2026-11-14"
+  },
+  "current": {
+    "revenue": 937.75,
+    "salesTaxes": 41.93,
+    "units": 21,
+    "ppcSpend": 375.06,
+    "ppcSales": 787.35,
+    "ppcClicks": 286,
+    "ppcImpressions": 28168,
+    "ppcOrders": 12,
+    "productSales": 1147.29
+  },
+  "prev": {
+    "revenue": 438.96,
+    "salesTaxes": 26.04,
+    "units": 5,
+    "ppcSpend": 210.45,
+    "ppcSales": 454.94,
+    "ppcClicks": 213,
+    "ppcImpressions": 57998,
+    "ppcOrders": 5,
+    "productSales": 379.95
+  },
+  "daily": [
+    {
+      "date": "2026-11-15",
+      "revenue": 0,
+      "salesTaxes": 0,
+      "productSales": 0
+    },
+    {
+      "date": "2026-11-16",
+      "revenue": 0,
+      "salesTaxes": 0,
+      "productSales": 0
+    },
+    {
+      "date": "2026-11-17",
+      "revenue": 0,
+      "salesTaxes": 0,
+      "productSales": 0
+    },
+    {
+      "date": "2026-11-18",
+      "revenue": 154.48,
+      "salesTaxes": 4.5,
+      "productSales": 149.98
+    },
+    {
+      "date": "2026-11-19",
+      "revenue": 56.82,
+      "salesTaxes": 4.33,
+      "productSales": 52.49
+    },
+    {
+      "date": "2026-11-20",
+      "revenue": 339.05,
+      "salesTaxes": 13.12,
+      "productSales": 314.94
+    },
+    {
+      "date": "2026-11-21",
+      "revenue": 387.4,
+      "salesTaxes": 19.98,
+      "productSales": 629.88
+    }
+  ],
+  "products": [
+    {
+      "asin": "B0HNMC1VNZ",
+      "title": "Noggin Boss Plain Red Crazy Party Hat, Big Novelty Cap for Adults",
+      "cur": {
+        "revenue": 187.71,
+        "salesTaxes": 7.74,
+        "units": 3,
+        "sessions": 19,
+        "productSales": 179.97
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0,
+        "productSales": 0
+      }
+    },
+    {
+      "asin": "B0HNMBTY31",
+      "title": "Noggin Boss Plain Red Crazy Party Hat, Big Novelty Cap for Adults",
+      "cur": {
+        "revenue": 84.78,
+        "salesTaxes": 6.04,
+        "units": 2,
+        "sessions": 11,
+        "productSales": 104.98
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 8,
+        "productSales": 0
+      }
+    },
+    {
+      "asin": "B0HNLTLWHS",
+      "title": "Noggin Boss Blank Oversized Hat, Powder Blue, Funny Giant Cap for Game Day",
+      "cur": {
+        "revenue": 84.38,
+        "salesTaxes": 5.65,
+        "units": 2,
+        "sessions": 14,
+        "productSales": 104.98
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0,
+        "productSales": 0
+      }
+    },
+    {
+      "asin": "B0HNL9TMNT",
+      "title": "Noggin Boss Oversized Blank Hat, Royal, Giant Baseball Cap for Men",
+      "cur": {
+        "revenue": 83.33,
+        "salesTaxes": 4.6,
+        "units": 2,
+        "sessions": 17,
+        "productSales": 104.98
+      },
+      "prev": {
+        "revenue": 79.77,
+        "salesTaxes": 4.78,
+        "units": 1,
+        "sessions": 13,
+        "productSales": 74.99
+      }
+    },
+    {
+      "asin": "B0HNM6MGZG",
+      "title": "Noggin Boss Blank Oversized Hat, Pink, Funny Giant Cap for Game Day",
+      "cur": {
+        "revenue": 83.06,
+        "salesTaxes": 4.33,
+        "units": 2,
+        "sessions": 15,
+        "productSales": 104.98
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0,
+        "productSales": 0
+      }
+    },
+    {
+      "asin": "B0FSPQMVVY",
+      "title": "Noggin Boss Blank Fitted Baseball Cap - Black, Structured for Teams",
+      "cur": {
+        "revenue": 80.45,
+        "salesTaxes": 1.71,
+        "units": 2,
+        "sessions": 88,
+        "productSales": 104.98
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 69,
+        "productSales": 0
+      }
+    },
+    {
+      "asin": "B0GX9LBJTT",
+      "title": "White L/XL Cotton Baseball Cap by Noggin Boss",
+      "cur": {
+        "revenue": 79.49,
+        "salesTaxes": 4.5,
+        "units": 1,
+        "sessions": 6,
+        "productSales": 74.99
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0,
+        "productSales": 0
+      }
+    },
+    {
+      "asin": "B0HNL7FHCM",
+      "title": "Noggin Boss Plain Navy Crazy Party Hat, Big Novelty Cap for Adults",
+      "cur": {
+        "revenue": 78.73,
+        "salesTaxes": 0,
+        "units": 3,
+        "sessions": 15,
+        "productSales": 157.47
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0,
+        "productSales": 0
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights —** Total sales jumped to $1,147 (+202.0% WoW) from $379 on 21 units, with Saturday, Nov 21 the peak day at $629 as momentum built through the back half of the week. PPC revenue grew to $787 (+73.1%), and the Plain Red Crazy Party Hat (B0HNMC1VNZ) led the catalog at $179 with a 15.8% conversion rate. The Royal Oversized Blank Hat rose to $104 (+40.0%) on 2 units (+100.0%) as its CVR improved to 11.8% (+52.9%).",
+    "**Metrics to Watch —** Sales were concentrated late in the week: Sun Nov 15 through Tue Nov 17 recorded $0 before daily sales built to $149, $52, $314 and $629, so the brand exits the week at a run-rate well above its weekly average. ROAS eased slightly to 2.10x (prior 2.16x) as ad spend was deliberately scaled to $375 (prior $210), an investment that brought in $787 in PPC revenue, while organic sales contributed $359. We are focused on carrying Saturday's momentum into the start of the coming week so every day contributes.",
+    "**Ad Spend Efficiency —** TACoS improved sharply to 32.7% from 55.39%, so advertising now takes a much smaller share of total sales. ROAS came in at 2.10x with ACOS at 47.6%, a 1.02% ad CTR and a 4.20% ad conversion rate. Budget is being directed toward the best-converting hats to push ACOS below 47.6% as spend continues to build volume.",
+    "**Actions This Week —** Increase bids and budget on the Plain Red Crazy Party Hat (15.8% CVR) and the Plain Navy Crazy Party Hat (20.0% CVR), the two highest-revenue SKUs at $179 and $157. Trim low-converting search terms to lift ad conversion above 4.20% and bring ACOS below 47.6%. Strengthen early-week bids on the top hats so Sunday through Tuesday, which recorded $0, start contributing sales."
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "_source": "Sellerise MCP, account TokenWorks, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: ASINs/titles/units/sessions from get_products salesProfitSummaryByAsin; productSales (plus revenue/salesTaxes) via per-ASIN get_account_metrics for week and prior week. Total Sales = productSales (= Amazon Ordered Product Sales). Pulled 2026-11-23.",
+  "week": {
+    "start": "2026-11-15",
+    "end": "2026-11-21"
+  },
+  "prevWeek": {
+    "start": "2026-11-08",
+    "end": "2026-11-14"
+  },
+  "current": {
+    "revenue": 20476.03,
+    "salesTaxes": 1505.9,
+    "units": 24,
+    "ppcSpend": 734.93,
+    "ppcSales": 9333.5,
+    "ppcClicks": 462,
+    "ppcImpressions": 136767,
+    "ppcOrders": 10,
+    "productSales": 18926.17
+  },
+  "prev": {
+    "revenue": 21954.01,
+    "salesTaxes": 1238.25,
+    "units": 36,
+    "ppcSpend": 706.29,
+    "ppcSales": 2685,
+    "ppcClicks": 398,
+    "ppcImpressions": 94778,
+    "ppcOrders": 3,
+    "productSales": 20693.78
+  },
+  "daily": [
+    {
+      "date": "2026-11-15",
+      "revenue": 70.2,
+      "salesTaxes": 5.2,
+      "productSales": 65
+    },
+    {
+      "date": "2026-11-16",
+      "revenue": 3042.55,
+      "salesTaxes": 226.88,
+      "productSales": 2815.67
+    },
+    {
+      "date": "2026-11-17",
+      "revenue": 2214.92,
+      "salesTaxes": 213.93,
+      "productSales": 1990
+    },
+    {
+      "date": "2026-11-18",
+      "revenue": 2178.1,
+      "salesTaxes": 161.86,
+      "productSales": 2005.25
+    },
+    {
+      "date": "2026-11-19",
+      "revenue": 2105.04,
+      "salesTaxes": 153.8,
+      "productSales": 1940.25
+    },
+    {
+      "date": "2026-11-20",
+      "revenue": 2982.14,
+      "salesTaxes": 185.15,
+      "productSales": 2786
+    },
+    {
+      "date": "2026-11-21",
+      "revenue": 7883.08,
+      "salesTaxes": 559.08,
+      "productSales": 7324
+    }
+  ],
+  "products": [
+    {
+      "asin": "B01N21V0IA",
+      "title": "IDVisor Smart V2 ID Scanner - Drivers License and Passport Age Verification & Customer Management + Charger Cradle, Han…",
+      "cur": {
+        "revenue": 15347.93,
+        "salesTaxes": 1110.8,
+        "units": 16,
+        "sessions": 0,
+        "productSales": 14193.17
+      },
+      "prev": {
+        "revenue": 9259.04,
+        "salesTaxes": 438.28,
+        "units": 9,
+        "sessions": 0,
+        "productSales": 8798.78
+      }
+    },
+    {
+      "asin": "B078SFGLDL",
+      "title": "IDVisor Smart Plus ID Scanner - Drivers License and Passport Age Verification & Customer Management - Extra Large 5\" LC…",
+      "cur": {
+        "revenue": 3019.93,
+        "salesTaxes": 233.93,
+        "units": 3,
+        "sessions": 0,
+        "productSales": 2786
+      },
+      "prev": {
+        "revenue": 9528.21,
+        "salesTaxes": 633.21,
+        "units": 9,
+        "sessions": 0,
+        "productSales": 8895
+      }
+    },
+    {
+      "asin": "B0HP28RG49",
+      "title": "IDVisor Smart V3 Drivers License and Passport Age Verification ID Scanner",
+      "cur": {
+        "revenue": 1901.14,
+        "salesTaxes": 149.14,
+        "units": 2,
+        "sessions": 0,
+        "productSales": 1752
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0,
+        "productSales": 0
+      }
+    },
+    {
+      "asin": "B0B1QVDHYL",
+      "title": "IDVisor Smart V2 ID Scanner Charging Cradle",
+      "cur": {
+        "revenue": 142.03,
+        "salesTaxes": 12.03,
+        "units": 2,
+        "sessions": 0,
+        "productSales": 130
+      },
+      "prev": {
+        "revenue": 559.73,
+        "salesTaxes": 39.73,
+        "units": 8,
+        "sessions": 0,
+        "productSales": 520
+      }
+    },
+    {
+      "asin": "B0B1PBQ1CT",
+      "title": "TokenWorks IDVisor Smart V2 ID Scanner Battery",
+      "cur": {
+        "revenue": 65,
+        "salesTaxes": 0,
+        "units": 1,
+        "sessions": 0,
+        "productSales": 65
+      },
+      "prev": {
+        "revenue": 206.49,
+        "salesTaxes": 11.49,
+        "units": 3,
+        "sessions": 0,
+        "productSales": 195
+      }
+    },
+    {
+      "asin": "B01N1373F6",
+      "title": "AgeVisor Mini Countertop ID Scanner – Fast & Reliable Age Verification, Compact Design, for Bars, Retail, Nightclubs, a…",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 0,
+        "productSales": 0
+      },
+      "prev": {
+        "revenue": 2118.48,
+        "salesTaxes": 93.48,
+        "units": 3,
+        "sessions": 0,
+        "productSales": 2025
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights —** The IDVisor Smart V2 ID Scanner led the week at $14,193 (+61.3%) on 16 units (+77.8%). PPC revenue surged to $9,333 (+247.6%) as ROAS jumped to 12.70x from 3.80x, and Saturday, Nov 21 was the peak day at $7,324. The IDVisor Smart V3 ID Scanner added $1,752 on 2 units.",
+    "**Metrics to Watch —** The -8.5% easing in total sales (from $20,693 to $18,926) was primarily driven by the IDVisor Smart Plus ID Scanner, which eased to $2,786 (-68.7%) on 3 units, alongside lower accessory volume from the Charging Cradle at $130 (-75.0%). Organic revenue came in at $9,592 (-46.7%) as more V2 buyers arrived through ads, while paid revenue more than tripled. We are focused on rebuilding Smart Plus volume to restore total sales growth.",
+    "**Ad Spend Efficiency —** ROAS improved to 12.70x from 3.80x and ACOS is a lean 7.9%, so every ad dollar is working far harder. Ad spend held steady at $734 (prior $706), keeping TACoS low at 3.9% (prior 3.41%), with a 0.34% ad CTR and a 2.16% ad conversion rate. With efficiency this strong, there is room to expand spend while holding ACOS near 7.9%.",
+    "**Actions This Week —** Extend the campaign approach driving the account's 12.70x ROAS to the IDVisor Smart Plus ID Scanner to rebuild it from 3 units. Build dedicated campaigns for the IDVisor Smart V3 ID Scanner to grow on its $1,752 week. Run an ad creative test on the IDVisor Smart V2 to lift ad CTR above 0.34% while keeping ACOS at or below 7.9%."
+  ]
+}

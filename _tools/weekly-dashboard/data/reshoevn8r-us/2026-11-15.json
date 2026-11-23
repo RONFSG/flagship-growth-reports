@@ -1,0 +1,229 @@
+{
+  "_source": "Sellerise MCP, account Reshoevn8r, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: ASINs/titles/units/sessions from get_products salesProfitSummaryByAsin; productSales (plus revenue/salesTaxes) via per-ASIN get_account_metrics for week and prior week. Total Sales = productSales (= Amazon Ordered Product Sales). Pulled 2026-11-23.",
+  "week": {
+    "start": "2026-11-15",
+    "end": "2026-11-21"
+  },
+  "prevWeek": {
+    "start": "2026-11-08",
+    "end": "2026-11-14"
+  },
+  "current": {
+    "revenue": 49585.32,
+    "productSales": 46341.36,
+    "salesTaxes": 3305.52,
+    "units": 1728,
+    "ppcSpend": 7267.98,
+    "ppcSales": 20297.15,
+    "ppcClicks": 3927,
+    "ppcImpressions": 1140686,
+    "ppcOrders": 708
+  },
+  "prev": {
+    "revenue": 44045.65,
+    "productSales": 41229,
+    "salesTaxes": 3016.36,
+    "units": 1417,
+    "ppcSpend": 5111.91,
+    "ppcSales": 16298.04,
+    "ppcClicks": 3150,
+    "ppcImpressions": 1025687,
+    "ppcOrders": 532
+  },
+  "daily": [
+    {
+      "date": "2026-11-15",
+      "revenue": 7365.75,
+      "salesTaxes": 528.25,
+      "productSales": 6856.38
+    },
+    {
+      "date": "2026-11-16",
+      "revenue": 5825.15,
+      "salesTaxes": 397.13,
+      "productSales": 5426.13
+    },
+    {
+      "date": "2026-11-17",
+      "revenue": 5234.31,
+      "salesTaxes": 338.5,
+      "productSales": 4909.91
+    },
+    {
+      "date": "2026-11-18",
+      "revenue": 5171.66,
+      "salesTaxes": 353.4,
+      "productSales": 4835.56
+    },
+    {
+      "date": "2026-11-19",
+      "revenue": 9073.93,
+      "salesTaxes": 622.59,
+      "productSales": 8451.02
+    },
+    {
+      "date": "2026-11-20",
+      "revenue": 8248.42,
+      "salesTaxes": 524.1,
+      "productSales": 7736.19
+    },
+    {
+      "date": "2026-11-21",
+      "revenue": 8666.1,
+      "salesTaxes": 541.55,
+      "productSales": 8126.17
+    }
+  ],
+  "products": [
+    {
+      "asin": "B08TFDN7F3",
+      "title": "RESHOEVN8R Waterproof Shoe Spray - Rain & Stain Protector, 6.5oz",
+      "cur": {
+        "revenue": 12582.7,
+        "salesTaxes": 842.05,
+        "units": 581,
+        "sessions": 1950,
+        "productSales": 11770.84
+      },
+      "prev": {
+        "revenue": 11664.16,
+        "salesTaxes": 782.35,
+        "units": 483,
+        "sessions": 1753,
+        "productSales": 10967.61
+      }
+    },
+    {
+      "asin": "B08RS7P59K",
+      "title": "RESHOEVN8R Signature Kit - Flagship Shoe Cleaner Set, All Materials",
+      "cur": {
+        "revenue": 11212.12,
+        "salesTaxes": 746.84,
+        "units": 222,
+        "sessions": 1603,
+        "productSales": 10467.76
+      },
+      "prev": {
+        "revenue": 5910.08,
+        "salesTaxes": 411.1,
+        "units": 101,
+        "sessions": 1023,
+        "productSales": 5512.69
+      }
+    },
+    {
+      "asin": "B08CSXXX5M",
+      "title": "RESHOEVN8R Essential Kit - Shoe Cleaner Set for Sneakers & Leather",
+      "cur": {
+        "revenue": 10277.34,
+        "salesTaxes": 710.76,
+        "units": 256,
+        "sessions": 1491,
+        "productSales": 9568.5
+      },
+      "prev": {
+        "revenue": 13069.6,
+        "salesTaxes": 907.08,
+        "units": 314,
+        "sessions": 1644,
+        "productSales": 12169.44
+      }
+    },
+    {
+      "asin": "B08DNG8XQZ",
+      "title": "RESHOEVN8R All-Natural Shoe Cleaning Solution, 8oz - Sneaker Care",
+      "cur": {
+        "revenue": 3495.95,
+        "salesTaxes": 230.19,
+        "units": 158,
+        "sessions": 806,
+        "productSales": 3266.09
+      },
+      "prev": {
+        "revenue": 2918.04,
+        "salesTaxes": 209.54,
+        "units": 120,
+        "sessions": 502,
+        "productSales": 2720.05
+      }
+    },
+    {
+      "asin": "B0CTGGJ98X",
+      "title": "RESHOEVN8R Refresh Kit - Routine Shoe Cleaner Set, All Materials",
+      "cur": {
+        "revenue": 3125.21,
+        "salesTaxes": 205.42,
+        "units": 141,
+        "sessions": 659,
+        "productSales": 2922.54
+      },
+      "prev": {
+        "revenue": 2842.03,
+        "salesTaxes": 191.31,
+        "units": 111,
+        "sessions": 543,
+        "productSales": 2650.68
+      }
+    },
+    {
+      "asin": "B0FCKD54WY",
+      "title": "RESHOEVN8R All-Natural Sneaker Cleaning Solution, 16oz Bottle",
+      "cur": {
+        "revenue": 2969.26,
+        "salesTaxes": 179.06,
+        "units": 102,
+        "sessions": 328,
+        "productSales": 2817.96
+      },
+      "prev": {
+        "revenue": 2784.87,
+        "salesTaxes": 180.92,
+        "units": 83,
+        "sessions": 263,
+        "productSales": 2646.04
+      }
+    },
+    {
+      "asin": "B0BFG5NH7B",
+      "title": "RESHOEVN8R Leather Conditioner Mink Oil Spray, 6oz - Boots & Shoes",
+      "cur": {
+        "revenue": 1313.69,
+        "salesTaxes": 88.82,
+        "units": 60,
+        "sessions": 250,
+        "productSales": 1233.11
+      },
+      "prev": {
+        "revenue": 923.87,
+        "salesTaxes": 59.02,
+        "units": 39,
+        "sessions": 237,
+        "productSales": 880.87
+      }
+    },
+    {
+      "asin": "B08H5XPWQD",
+      "title": "RESHOEVN8R Dry Suede Kit - Nubuck & Suede Cleaner Set",
+      "cur": {
+        "revenue": 1161.78,
+        "salesTaxes": 75.72,
+        "units": 49,
+        "sessions": 245,
+        "productSales": 1079.29
+      },
+      "prev": {
+        "revenue": 1093.94,
+        "salesTaxes": 79.13,
+        "units": 42,
+        "sessions": 236,
+        "productSales": 1026.75
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights \u2014** Reshoevn8r US grew total sales to $46,341, up +12.4% WoW from $41,229, on 1728 units. The Signature Kit was the standout at $10,467 (+89.9%) with units up +119.8% and CVR up +40.3% to 13.8%, while the Waterproof Shoe Spray led the catalog at $11,770 (+7.3%) on 581 units and a 29.8% CVR. Thursday, Nov 19 was the peak day at $8,451, and the week closed strong with $7,736 on Friday and $8,126 on Saturday.",
+    "**Metrics to Watch \u2014** The Essential Kit eased to $9,568 (-21.4%), driven mainly by sessions dipping -9.3% to 1491 alongside a CVR of 17.2% (-10.1%). The good news is that the rest of the line more than offset it: organic sales grew +4.5% to $26,044 and PPC revenue rose +24.5% to $20,297. We are directing more traffic back to the Essential Kit to return it to growth next week.",
+    "**Ad Spend Efficiency \u2014** Ad spend increased to $7,267 (prior $5,111) to capture demand, and it delivered $20,297 in PPC revenue (+24.5%) with a strong 18.03% ad conversion rate and a 0.34% ad CTR. ROAS came in at 2.79x (prior 3.19x) with ACOS at 35.8%, and TACoS moved to 15.7% (prior 12.40%) as we invested ahead of growth; we are now tightening bids on lower-converting terms to bring ROAS back toward 3.19x.",
+    "**Actions This Week \u2014** (1) Scale budget behind the Signature Kit, which grew +89.9% with a 13.8% CVR, to keep its momentum. (2) Add targeted Sponsored Products coverage for the Essential Kit to rebuild sessions above 1491 and lift CVR back above 17.2%. (3) Trim high-ACOS search terms to hold ACOS at or below 35.8% while protecting the 18.03% ad conversion rate."
+  ]
+}

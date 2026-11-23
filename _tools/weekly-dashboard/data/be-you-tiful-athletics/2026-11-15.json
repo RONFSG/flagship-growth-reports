@@ -1,0 +1,229 @@
+{
+  "_source": "Sellerise MCP, account BeYouTiful, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: ASINs/titles/units/sessions from get_products salesProfitSummaryByAsin; productSales (plus revenue/salesTaxes) via per-ASIN get_account_metrics for week and prior week. Total Sales = productSales (= Amazon Ordered Product Sales). Pulled 2026-11-23.",
+  "week": {
+    "start": "2026-11-15",
+    "end": "2026-11-21"
+  },
+  "prevWeek": {
+    "start": "2026-11-08",
+    "end": "2026-11-14"
+  },
+  "current": {
+    "revenue": 442.24,
+    "salesTaxes": 29.3,
+    "units": 14,
+    "ppcSpend": 528.72,
+    "ppcSales": 283.4,
+    "ppcClicks": 343,
+    "ppcImpressions": 162456,
+    "ppcOrders": 12,
+    "productSales": 410.4
+  },
+  "prev": {
+    "revenue": 388.59,
+    "salesTaxes": 27.89,
+    "units": 13,
+    "ppcSpend": 463.8,
+    "ppcSales": 208,
+    "ppcClicks": 283,
+    "ppcImpressions": 140134,
+    "ppcOrders": 8,
+    "productSales": 374
+  },
+  "daily": [
+    {
+      "date": "2026-11-15",
+      "revenue": 131.69,
+      "salesTaxes": 7.7,
+      "productSales": 117
+    },
+    {
+      "date": "2026-11-16",
+      "revenue": 69.46,
+      "salesTaxes": 3.46,
+      "productSales": 66
+    },
+    {
+      "date": "2026-11-17",
+      "revenue": 56.2,
+      "salesTaxes": 4.2,
+      "productSales": 52
+    },
+    {
+      "date": "2026-11-18",
+      "revenue": 106.05,
+      "salesTaxes": 7.5,
+      "productSales": 103
+    },
+    {
+      "date": "2026-11-19",
+      "revenue": 48.91,
+      "salesTaxes": 4.51,
+      "productSales": 44.4
+    },
+    {
+      "date": "2026-11-20",
+      "revenue": 14.77,
+      "salesTaxes": 0.77,
+      "productSales": 14
+    },
+    {
+      "date": "2026-11-21",
+      "revenue": 15.16,
+      "salesTaxes": 1.16,
+      "productSales": 14
+    }
+  ],
+  "products": [
+    {
+      "asin": "B0HDR6CKDS",
+      "title": "BEYOUTIFUL ATHLETICS, BE YOU Sling & Stretch Strap, Adjustable Mat Carrier",
+      "cur": {
+        "revenue": 139.53,
+        "salesTaxes": 6.54,
+        "units": 9,
+        "sessions": 52,
+        "productSales": 126
+      },
+      "prev": {
+        "revenue": 75.09,
+        "salesTaxes": 5.09,
+        "units": 5,
+        "sessions": 54,
+        "productSales": 70
+      }
+    },
+    {
+      "asin": "B0G8NBHVG2",
+      "title": "BEYOUTIFUL ATHLETICS, BE YOU Yoga Mat, 6mm Premium Cushion, Purple",
+      "cur": {
+        "revenue": 94.9,
+        "salesTaxes": 5.9,
+        "units": 1,
+        "sessions": 33,
+        "productSales": 89
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 26,
+        "productSales": 0
+      }
+    },
+    {
+      "asin": "B0G8R8HK3L",
+      "title": "BEYOUTIFUL ATHLETICS, BE YOU Yoga Mat, 6mm Premium Cushion, Non-Slip, Blue",
+      "cur": {
+        "revenue": 92.05,
+        "salesTaxes": 7.5,
+        "units": 1,
+        "sessions": 26,
+        "productSales": 89
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 26,
+        "productSales": 0
+      }
+    },
+    {
+      "asin": "B0G8NK61XB",
+      "title": "BEYOUTIFUL ATHLETICS, BE SECURE Hot Yoga Towel, Moisture Grip, Dark Gray",
+      "cur": {
+        "revenue": 82.02,
+        "salesTaxes": 6.02,
+        "units": 2,
+        "sessions": 65,
+        "productSales": 76
+      },
+      "prev": {
+        "revenue": 235.61,
+        "salesTaxes": 17.11,
+        "units": 6,
+        "sessions": 76,
+        "productSales": 228
+      }
+    },
+    {
+      "asin": "B0G8S8MMG1",
+      "title": "BEYOUTIFUL ATHLETICS, BE SECURE Hot Yoga Towel, Moisture Grip, Light Gray",
+      "cur": {
+        "revenue": 33.74,
+        "salesTaxes": 3.34,
+        "units": 1,
+        "sessions": 80,
+        "productSales": 30.4
+      },
+      "prev": {
+        "revenue": 38.99,
+        "salesTaxes": 2.89,
+        "units": 1,
+        "sessions": 81,
+        "productSales": 38
+      }
+    },
+    {
+      "asin": "B0G8QHM24R",
+      "title": "BEYOUTIFUL ATHLETICS, BE YOU Yoga Mat, 6mm Premium Cushion, Non-Slip, Black",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 57,
+        "productSales": 0
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 44,
+        "productSales": 0
+      }
+    },
+    {
+      "asin": "B0G8NKV4QX",
+      "title": "BEYOUTIFUL ATHLETICS, CHAKRA Print Yoga Mat, 6mm Premium, Non-Slip, Black",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 38,
+        "productSales": 0
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 59,
+        "productSales": 0
+      }
+    },
+    {
+      "asin": "B0G8MDNNNY",
+      "title": "BEYOUTIFUL ATHLETICS, BE SECURE Hot Yoga Towel, Moisture Grip, Blue",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 56,
+        "productSales": 0
+      },
+      "prev": {
+        "revenue": 38.9,
+        "salesTaxes": 2.8,
+        "units": 1,
+        "sessions": 55,
+        "productSales": 38
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights —** Total sales grew to $410 (+9.7% WoW) from $374 on 14 units. The BE YOU Sling & Stretch Strap led the week at $126 (+80.0%) on 9 units (+80.0%), with conversion climbing to 17.3% (+86.9%). The Purple and Blue BE YOU Yoga Mats each added $89, PPC revenue rose to $283 (+36.2%), and Sunday, Nov 15 was the peak day at $117.",
+    "**Metrics to Watch —** The BE SECURE Hot Yoga Towel in Dark Gray eased to $76 (-66.7%), driven primarily by fewer sessions (65, -14.5%) and a 3.1% conversion rate. Organic revenue came in at $127 (-23.5%) as a larger share of sales arrived through ads, and daily sales tapered to $14 on both Fri Nov 20 and Sat Nov 21. The overall week still grew +9.7%, and we are focused on bringing traffic back to the towel line and lifting late-week volume.",
+    "**Ad Spend Efficiency —** ROAS improved to 0.54x from 0.45x, with PPC revenue up +36.2% to $283 on ad spend of $528 (prior $463). TACoS sits at 128.8% (prior 124.01%) and ACOS at 186.6%, with a 0.21% ad CTR and a 3.50% ad conversion rate. Spend was set to build discovery across the mat and towel range; we are now concentrating budget on the converting Sling & Stretch Strap and cutting non-converting terms to bring ACOS down.",
+    "**Actions This Week —** Shift budget toward the BE YOU Sling & Stretch Strap, which converted at 17.3% on 9 units, to scale its +80.0% growth. Pause or lower bids on search terms with clicks and no orders to bring ACOS down from 186.6% and lift ad conversion above 3.50%. Launch an ad creative test on the Dark Gray Hot Yoga Towel to lift ad CTR above 0.21% and rebuild its 65 sessions."
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "_source": "Sellerise MCP, account Addasound, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: ASINs/titles/units/sessions from get_products salesProfitSummaryByAsin; productSales (plus revenue/salesTaxes) via per-ASIN get_account_metrics for week and prior week. Total Sales = productSales (= Amazon Ordered Product Sales). Pulled 2026-11-23.",
+  "week": {
+    "start": "2026-11-15",
+    "end": "2026-11-21"
+  },
+  "prevWeek": {
+    "start": "2026-11-08",
+    "end": "2026-11-14"
+  },
+  "current": {
+    "revenue": 543.47,
+    "productSales": 683.11,
+    "salesTaxes": 28.99,
+    "units": 10,
+    "ppcSpend": 385.3,
+    "ppcSales": 356.45,
+    "ppcClicks": 689,
+    "ppcImpressions": 151413,
+    "ppcOrders": 5
+  },
+  "prev": {
+    "revenue": 156.07,
+    "productSales": 2867.33,
+    "salesTaxes": 10.97,
+    "units": 39,
+    "ppcSpend": 308.77,
+    "ppcSales": 103.1,
+    "ppcClicks": 379,
+    "ppcImpressions": 60188,
+    "ppcOrders": 2
+  },
+  "daily": [
+    {
+      "date": "2026-11-15",
+      "revenue": 51.55,
+      "salesTaxes": 0,
+      "productSales": 51.55
+    },
+    {
+      "date": "2026-11-16",
+      "revenue": 149.86,
+      "salesTaxes": 10.67,
+      "productSales": 148.09
+    },
+    {
+      "date": "2026-11-17",
+      "revenue": 93.34,
+      "salesTaxes": 5.7,
+      "productSales": 103.1
+    },
+    {
+      "date": "2026-11-18",
+      "revenue": 0,
+      "salesTaxes": 0,
+      "productSales": 64.98
+    },
+    {
+      "date": "2026-11-19",
+      "revenue": 79.29,
+      "salesTaxes": 0,
+      "productSales": 79.29
+    },
+    {
+      "date": "2026-11-20",
+      "revenue": 169.43,
+      "salesTaxes": 12.62,
+      "productSales": 236.1
+    },
+    {
+      "date": "2026-11-21",
+      "revenue": 0,
+      "salesTaxes": 0,
+      "productSales": 0
+    }
+  ],
+  "products": [
+    {
+      "asin": "B0BSV7V95M",
+      "title": "ADDASOUND Epic 302 USB Headset with Noise Cancelling Mic and DSP, Stereo",
+      "cur": {
+        "revenue": 144.89,
+        "salesTaxes": 5.7,
+        "units": 3,
+        "sessions": 34,
+        "productSales": 154.65
+      },
+      "prev": {
+        "revenue": 102.6,
+        "salesTaxes": 7.23,
+        "units": 2,
+        "sessions": 27,
+        "productSales": 103.1
+      }
+    },
+    {
+      "asin": "B07WSH15FW",
+      "title": "ADDASOUND Crystal 2832 QD Call Center Headset, Dual-Ear, Noise Cancelling",
+      "cur": {
+        "revenue": 99.85,
+        "salesTaxes": 7.4,
+        "units": 1,
+        "sessions": 8,
+        "productSales": 92.45
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 4,
+        "productSales": 0
+      }
+    },
+    {
+      "asin": "B0BSV6XGGT",
+      "title": "ADDASOUND Epic 512 USB Headset with Dual Noise Cancelling Mics, Stereo",
+      "cur": {
+        "revenue": 90.32,
+        "salesTaxes": 7.44,
+        "units": 1,
+        "sessions": 19,
+        "productSales": 82.88
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 10,
+        "sessions": 26,
+        "productSales": 828.8
+      }
+    },
+    {
+      "asin": "B0HCRLF41N",
+      "title": "ADDASOUND Crystal SR2831 USB Headset with Noise Cancelling Mic, Mono",
+      "cur": {
+        "revenue": 79.29,
+        "salesTaxes": 0,
+        "units": 2,
+        "sessions": 17,
+        "productSales": 158.58
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 13,
+        "sessions": 43,
+        "productSales": 1030.77
+      }
+    },
+    {
+      "asin": "B0HCRG1ZQJ",
+      "title": "ADDASOUND Epic 511 USB Headset with Dual Noise Cancelling Mics, Mono",
+      "cur": {
+        "revenue": 79.11,
+        "salesTaxes": 5.18,
+        "units": 1,
+        "sessions": 13,
+        "productSales": 73.93
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 15,
+        "productSales": 0
+      }
+    },
+    {
+      "asin": "B0HCRH3V8J",
+      "title": "ADDASOUND Crystal SR2731 USB Headset with Noise Cancelling Mic, Mono",
+      "cur": {
+        "revenue": 50.01,
+        "salesTaxes": 3.27,
+        "units": 1,
+        "sessions": 14,
+        "productSales": 55.64
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 13,
+        "productSales": 0
+      }
+    },
+    {
+      "asin": "B0HCFB99PS",
+      "title": "ADDASOUND Crystal 2871 Premium QD Call Center Headset, Single-Ear",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 1,
+        "productSales": 0
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 5,
+        "productSales": 0
+      }
+    },
+    {
+      "asin": "B07WRF6ZMM",
+      "title": "ADDASOUND Crystal 2731 QD Call Center Headset, Single-Ear, Noise Cancelling",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 5,
+        "productSales": 0
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 1,
+        "productSales": 0
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights \u2014** PPC revenue jumped to $356 (+245.7%) and ROAS improved to 0.93x from 0.33x. The Epic 302 USB Headset grew to $154 (+50.0%) on 3 units (+50.0%), with sessions up +25.9% and conversion at 8.8%. The Crystal 2832 QD Headset and Epic 511 USB Headset both added sales, and Friday, Nov 20 was the peak day at $236.",
+    "**Metrics to Watch \u2014** Total sales eased to $683 from $2,867 (-76.2%), driven almost entirely by the Crystal SR2831 ($158, -84.6%) and Epic 512 ($82, -90.0%) normalizing after an exceptionally strong prior week, which brought organic revenue to $326 (-88.2%). The paid side moved in the right direction, and the Crystal SR2831 is still converting at 11.8%. We are focused on rebuilding traffic to the Crystal SR2831 and Epic 512 to restore volume.",
+    "**Ad Spend Efficiency \u2014** ROAS improved to 0.93x from 0.33x on ad spend of $385 (prior $308), with ACOS at 108.1%, a 0.46% ad CTR and a 0.73% ad conversion rate. TACoS rose to 56.4% (prior 10.77%) because the total sales base was smaller this week. We are tightening targeting to push ROAS above 1.0x.",
+    "**Actions This Week \u2014** Shift budget toward the Epic 302 (8.8% conversion) and Crystal 2832 (12.5% conversion) to scale the SKUs already converting. Launch targeted campaigns on the Crystal SR2831 to recover its -60.5% session drop. Cut search terms with clicks but no orders to bring ACOS below 108.1%, and test new ad creative to lift the 0.46% ad CTR."
+  ]
+}

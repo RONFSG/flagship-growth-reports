@@ -1,0 +1,175 @@
+{
+  "_source": "Sellerise MCP, account Heavenly Bodies Studio, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: ASINs/titles/units/sessions from get_products salesProfitSummaryByAsin; productSales (plus revenue/salesTaxes) via per-ASIN get_account_metrics for week and prior week. Total Sales = productSales (= Amazon Ordered Product Sales). Pulled 2026-11-23.",
+  "week": {
+    "start": "2026-11-15",
+    "end": "2026-11-21"
+  },
+  "prevWeek": {
+    "start": "2026-11-08",
+    "end": "2026-11-14"
+  },
+  "current": {
+    "revenue": 11497.04,
+    "productSales": 10768.1,
+    "salesTaxes": 727.09,
+    "units": 192,
+    "ppcSpend": 577.23,
+    "ppcSales": 1755,
+    "ppcClicks": 841,
+    "ppcImpressions": 230605,
+    "ppcOrders": 28
+  },
+  "prev": {
+    "revenue": 9009.32,
+    "productSales": 8430,
+    "salesTaxes": 617.85,
+    "units": 149,
+    "ppcSpend": 748,
+    "ppcSales": 1971,
+    "ppcClicks": 1160,
+    "ppcImpressions": 310470,
+    "ppcOrders": 34
+  },
+  "daily": [
+    {
+      "date": "2026-11-15",
+      "revenue": 1059.25,
+      "salesTaxes": 52.25,
+      "productSales": 1007
+    },
+    {
+      "date": "2026-11-16",
+      "revenue": 1651.74,
+      "salesTaxes": 101.51,
+      "productSales": 1545
+    },
+    {
+      "date": "2026-11-17",
+      "revenue": 1285.34,
+      "salesTaxes": 91.04,
+      "productSales": 1217
+    },
+    {
+      "date": "2026-11-18",
+      "revenue": 1848.13,
+      "salesTaxes": 119.14,
+      "productSales": 1722
+    },
+    {
+      "date": "2026-11-19",
+      "revenue": 1965.91,
+      "salesTaxes": 129.81,
+      "productSales": 1836.1
+    },
+    {
+      "date": "2026-11-20",
+      "revenue": 2353.45,
+      "salesTaxes": 165.11,
+      "productSales": 2179
+    },
+    {
+      "date": "2026-11-21",
+      "revenue": 1333.22,
+      "salesTaxes": 68.23,
+      "productSales": 1262
+    }
+  ],
+  "products": [
+    {
+      "asin": "B0HB125M7H",
+      "title": "Heavenly Bodies Tarot: Deck and Hardback Guidebook (Deluxe Boxset) [Hardcover] Lily Ashwell and Blu",
+      "cur": {
+        "revenue": 9433.89,
+        "salesTaxes": 604.67,
+        "units": 162,
+        "sessions": 2024,
+        "productSales": 8816.5
+      },
+      "prev": {
+        "revenue": 7344.35,
+        "salesTaxes": 503.38,
+        "units": 125,
+        "sessions": 1986,
+        "productSales": 6875
+      }
+    },
+    {
+      "asin": "B0HB6KJXPX",
+      "title": "Heavenly Bodies Tarot & Astrology: Deck and Hardback Guidebook (Deluxe Boxset) - 2 pack [Hardcover] Lily Ashwell and Blu",
+      "cur": {
+        "revenue": 1115.93,
+        "salesTaxes": 54.14,
+        "units": 13,
+        "sessions": 180,
+        "productSales": 1066
+      },
+      "prev": {
+        "revenue": 617.75,
+        "salesTaxes": 43.75,
+        "units": 7,
+        "sessions": 76,
+        "productSales": 574
+      }
+    },
+    {
+      "asin": "B0HB19P39M",
+      "title": "Heavenly Bodies Astrology: Deck and Hardback Guidebook (Deluxe Boxset) [Hardcover] Lily Ashwell",
+      "cur": {
+        "revenue": 717.14,
+        "salesTaxes": 48.8,
+        "units": 15,
+        "sessions": 402,
+        "productSales": 675
+      },
+      "prev": {
+        "revenue": 674.61,
+        "salesTaxes": 49.11,
+        "units": 14,
+        "sessions": 461,
+        "productSales": 630
+      }
+    },
+    {
+      "asin": "B0HB783R1K",
+      "title": "Heavenly Bodies Tarot: Deck and Hardback Guidebook (Deluxe Boxset) - 3 pack [Hardcover] Lily Ashwell and Blu",
+      "cur": {
+        "revenue": 230.08,
+        "salesTaxes": 19.48,
+        "units": 2,
+        "sessions": 29,
+        "productSales": 210.6
+      },
+      "prev": {
+        "revenue": 372.61,
+        "salesTaxes": 21.61,
+        "units": 3,
+        "sessions": 36,
+        "productSales": 351
+      }
+    },
+    {
+      "asin": "B0HB73ZMDP",
+      "title": "Heavenly Bodies Astrology: Deck and Hardback Guidebook (Deluxe Boxset) - 3 pack [Hardcover] Lily Ashwell",
+      "cur": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 25,
+        "productSales": 0
+      },
+      "prev": {
+        "revenue": 0,
+        "salesTaxes": 0,
+        "units": 0,
+        "sessions": 37,
+        "productSales": 0
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights \u2014** Total sales rose to $10,768 (+27.7% WoW) on 192 units, powered by organic revenue of $9,013 (+39.5% WoW). The Tarot Deluxe Boxset led at $8,816 (+28.2%) on 162 units (+29.6%) as its conversion climbed to 8.0% (+27.2%), and the Tarot & Astrology 2-pack grew to $1,066 (+85.7%) on sessions up +136.8%. Friday, Nov 20 was the peak day at $2,179.",
+    "**Metrics to Watch \u2014** PPC revenue eased to $1,755 (-11.0%) as ad spend was pulled back to $577 (prior $748), a deliberate efficiency move while organic sales carried the growth. The Tarot 3-pack eased to $210 (-40.0%) on sessions down -19.4%, and Astrology Boxset sessions dipped -12.8%, yet its conversion improved to 3.7% (+22.9%) and lifted sales to $675 (+7.1%). We are focused on rebuilding traffic to the Astrology Boxset and the 3-pack bundles to add volume.",
+    "**Ad Spend Efficiency \u2014** ROAS improved to 3.04x from 2.64x and TACoS fell to 5.4% from 8.87%, so advertising is now a much smaller share of total sales. ACOS came in at 32.9% with a 0.36% ad CTR and a 3.33% ad conversion rate. Spend is being concentrated on the terms that drive the Tarot Boxset's conversion gains to keep ROAS above 3.04x.",
+    "**Actions This Week \u2014** Shift budget toward the Tarot Deluxe Boxset's top-converting search terms to build on its 8.0% conversion while holding ACOS at or below 32.9%. Add dedicated campaigns for the Tarot & Astrology 2-pack to capture its +136.8% session growth. Test new ad creative on the Astrology Boxset to lift the 0.36% ad CTR and win back sessions."
+  ]
+}
