@@ -1,0 +1,27 @@
+{
+"_week": "2026-11-16 to 2026-11-22 (Week 47). Written from this week's numbers.",
+"week_story": ["Revenue rose 54% to $3,477 (vs $2,250) on 62 units, double last week's 31.", "Thursday ($842) and Sunday ($856) were the best days; Wednesday was the low at $87.", "Platinum White Strap Cuff (YL) led at $356 (6 units) vs $162 last week."],
+"refunds_title": "Refunds eased this week",
+"refunds": ["$276 refunded on 5 units, an 8.2% refund rate vs 19.4% ($339, 6 units) last week.", "November to date the refund rate is 15.3%, so keep reading return reasons."],
+"pacing_reco": "November is $8,032 through the 22nd, about half of last year's $15,750 for the same days; BF/CM week has to carry the gap.",
+"ads_context": ["Ad spend almost doubled to $993 (vs $513) but ad sales only rose to $1,454 (vs $1,374).", "ACoS went from 37.4% to 68.3%; TACoS from 22.8% to 28.6%.", "Sales without an ad click more than doubled to about $2,023, so organic demand is picking up."],
+"ads_strategy": ["Branded keywords: $209 spent for $424 in sales (49.4% ACoS), 8 orders.", "Category keywords: $525 spent for $426 in sales (123% ACoS), 8 orders; spend there was up 152%.", "Competitor targeting spent $58 with no sales."],
+"bid_moves": ["Keep “jax batting gloves” exact funded: $169 across SP and SB brought $660 in sales.", "Lower the “batting gloves” exact bid: $84 for 1 order.", "Pause or negate “baseball batting gloves” SB phrase ($79) and “bruce bolt batting gloves” ($61): clicks, no sales.", "Misspelling target “jaxs batting gloves” spent $54 on 40 clicks with no sales."],
+"coupons": ["This week: no coupon redemptions.", "Last week: no coupon redemptions."],
+"promotions": ["This week: 3 promotion orders, $31.50 in promotional discounts (none last week).", "November to date: 5 promotion orders, $54 in discounts."],
+"events": ["Black Friday Nov 27 through Cyber Monday Nov 30.", "Deal and coupon set-up: confirm with the account team.", "Shift budget to branded and proven terms for the event days."],
+"reviews_title": "No review data in Sellerise",
+"reviews_body": ["Sellerise returned no review records, rating trend or negative reviews for JAX Athletics over the last 90 days.", "That means the review tracker isn't pulling for this account, not that there were no reviews."],
+"reviews_reco": ["Turn on review tracking in Sellerise or pull Amazon's Customer Reviews report.", "Read the newest 1–3 star reviews on the top Strap Cuff sizes given the 15.3% November refund rate."],
+"recommendations": [
+["Ads", "Cut category spend with no sales: 20 campaign groups spent $406 this week with no sales.", "Ads team", "This week"],
+["Ads", "Lower bids on “batting gloves” exact and pause “bruce bolt batting gloves” and SB “baseball batting gloves” phrase.", "Ads team", "This week"],
+["Ads", "Move budget to “jax batting gloves” exact (SP + SB, $660 sales on $169).", "Ads team", "Before Nov 27"],
+["Promotions", "Set the BF/CM coupon or deal on the top Strap Cuff sizes.", "Account team", "Before Nov 27"],
+["Listings", "Review the 1,066 actionable Sellerise alerts, starting with 34 suppressions and 24 inactive listings.", "Catalog team", "This week"],
+["Inventory", "Share an FBA inventory sheet so slide 12 can show stock cover.", "Client", "This week"],
+["Reviews", "Turn on review tracking in Sellerise.", "Account team", "Next week"]],
+"position": ["November is $8,032 to date and pacing to about $10,953, vs $9,607 in October.", "Last year's November to the 22nd was $15,750 with no ad spend."],
+"next_steps": ["Trim no-sale category spend.", "Fund branded exact for BF/CM.", "Set BF/CM coupons.", "Clear suppressed listings."],
+"data_ask": ["FBA inventory sheet for slide 12.", "BF/CM deal and coupon plan.", "Review tracking in Sellerise.", "SQP data for B0BZGS9QHR (none this week)."]
+}
