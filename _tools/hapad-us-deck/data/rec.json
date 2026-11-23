@@ -1,9 +1,9 @@
 {
- "asOf": "Nov 2, 2026",
+ "asOf": "Nov 16, 2026",
  "ytd": 8631.61,
  "units": 1091,
  "shipments": 32,
- "receiving": 2,
+ "receiving": 3,
  "closed": 29,
  "missing": 451,
  "receiveRate": 99.4,
@@ -259,7 +259,7 @@
    "value": 0.0
   },
   {
-   "id": "21050153111",
+   "id": "21056258911",
    "date": "Jul 10, 2026",
    "type": "Warehouse Damage",
    "note": "Amazon processed reimbursements for 13 transaction IDs and regraded 2 items to defective disposition.",
@@ -268,7 +268,16 @@
    "value": 0.0
   },
   {
-   "id": "21180159931",
+   "id": "21180297551",
+   "date": "Jul 15, 2026",
+   "type": "Warehouse Damage",
+   "note": "Amazon completed the investigation and confirmed that the misplaced unit from the warehouse damage event was located and added back to inventory.",
+   "status": "Reconciled",
+   "units": 1,
+   "value": 0.0
+  },
+  {
+   "id": "21300003971",
    "date": "Jul 23, 2026",
    "type": "Warehouse Damage",
    "note": "Amazon located the lost unit and added it back to the seller inventory.",
@@ -277,7 +286,7 @@
    "value": 0.0
   },
   {
-   "id": "21303178871",
+   "id": "21522715571",
    "date": "Aug 7, 2026",
    "type": "Warehouse Damage",
    "note": "Amazon removed a virtual overage of 20 units and added 3 units received on another shipment to inventory.",
@@ -286,7 +295,7 @@
    "value": 0.0
   },
   {
-   "id": "21522801331",
+   "id": "21609270431",
    "date": "Aug 13, 2026",
    "type": "Warehouse Damage",
    "note": "Amazon located the lost unit and added it back to the seller inventory under transaction ID 20075977949483.",
