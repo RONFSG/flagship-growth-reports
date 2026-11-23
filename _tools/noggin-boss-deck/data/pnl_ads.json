@@ -281,7 +281,7 @@
   [
    "11/12",
    27.67,
-   74.99,
+   149.98,
    null,
    null,
    1,
@@ -313,13 +313,97 @@
    null,
    0,
    0.0
+  ],
+  [
+   "11/16",
+   32.14,
+   0.0,
+   null,
+   null,
+   0,
+   0.0
+  ],
+  [
+   "11/17",
+   26.78,
+   0.0,
+   null,
+   null,
+   0,
+   0.0
+  ],
+  [
+   "11/18",
+   23.95,
+   0.0,
+   null,
+   null,
+   0,
+   154.48
+  ],
+  [
+   "11/19",
+   33.53,
+   0.0,
+   null,
+   null,
+   0,
+   56.82
+  ],
+  [
+   "11/20",
+   121.79,
+   104.98,
+   null,
+   null,
+   2,
+   339.05
+  ],
+  [
+   "11/21",
+   109.28,
+   682.37,
+   null,
+   null,
+   10,
+   387.4
+  ],
+  [
+   "11/22",
+   114.38,
+   0.0,
+   null,
+   null,
+   0,
+   113.11
   ]
  ],
  "CAMP_META": {
-  "week": "Nov 8–14, 2026",
-  "prior": "Nov 1–7",
-  "weekStart": "2026-11-08",
+  "week": "Nov 15–21, 2026",
+  "prior": "Nov 8–14",
+  "weekStart": "2026-11-15",
   "cur": {
+   "revenue": 937.75,
+   "orders": 19,
+   "units": 21,
+   "net": 440.53,
+   "margin": 46.98,
+   "refunds": 0.0,
+   "refundRate": 0.0,
+   "promos": 262.46,
+   "coupons": 0,
+   "promo": 8,
+   "sns": 0,
+   "spend": 375.06,
+   "adSales": 787.35,
+   "acos": 47.64,
+   "tacos": 40.0,
+   "clicks": 286,
+   "impr": 28168,
+   "adOrders": 12,
+   "cpc": 1.31
+  },
+  "prev": {
    "revenue": 438.96,
    "orders": 5,
    "units": 5,
@@ -339,27 +423,6 @@
    "impr": 58039,
    "adOrders": 5,
    "cpc": 0.99
-  },
-  "prev": {
-   "revenue": 247.15,
-   "orders": 3,
-   "units": 3,
-   "net": 154.44,
-   "margin": 62.49,
-   "refunds": 0.0,
-   "refundRate": 0.0,
-   "promos": 0.0,
-   "coupons": 0,
-   "promo": 0,
-   "sns": 0,
-   "spend": 15.8,
-   "adSales": 0.0,
-   "acos": 0.0,
-   "tacos": 6.39,
-   "clicks": 17,
-   "impr": 922,
-   "adOrders": 0,
-   "cpc": 0.93
   }
  },
  "notes": "Sellerise NogginBoss US, USD",

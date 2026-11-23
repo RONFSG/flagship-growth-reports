@@ -1,0 +1,405 @@
+{
+ "_source": "Sellerise MCP, account NogginBoss, marketplace US, pulled 2026-11-23 (Monday-Sunday weeks; 4-week table from the saved weekly totals)",
+ "weeks": [
+  {
+   "label": "Oct 26 – Nov 1",
+   "revenue": 545.52,
+   "units": 7,
+   "orders": 5,
+   "impressions": 0,
+   "clicks": 0,
+   "refundUnits": 0,
+   "refundRate": 0.0,
+   "spend": 0.0,
+   "adSales": 0.0,
+   "acos": 0.0,
+   "tacos": 0.0
+  },
+  {
+   "label": "Nov 2 – 8",
+   "revenue": 434.96,
+   "units": 5,
+   "orders": 5,
+   "impressions": 2603,
+   "clicks": 46,
+   "refundUnits": 0,
+   "refundRate": 0.0,
+   "spend": 45.08,
+   "adSales": 229.97,
+   "acos": 19.6,
+   "tacos": 10.36
+  },
+  {
+   "label": "Nov 9 – 15",
+   "revenue": 170.91,
+   "units": 2,
+   "orders": 2,
+   "impressions": 60015,
+   "clicks": 217,
+   "refundUnits": 0,
+   "refundRate": 0.0,
+   "spend": 208.76,
+   "adSales": 224.97,
+   "acos": 92.79,
+   "tacos": 122.15
+  },
+  {
+   "label": "Nov 16 – 22",
+   "revenue": 1050.86,
+   "units": 23,
+   "orders": 21,
+   "impressions": 32775,
+   "clicks": 319,
+   "refundUnits": 0,
+   "refundRate": 0.0,
+   "spend": 461.85,
+   "adSales": 787.35,
+   "acos": 58.66,
+   "tacos": 43.95,
+   "net": 451.38,
+   "refunds": 0.0,
+   "adOrders": 12,
+   "cpc": 1.45,
+   "cvr": 3.76
+  }
+ ],
+ "mtd": {
+  "through": "2026-11-22",
+  "days": 22,
+  "revenue": 1736.97,
+  "units": 31,
+  "orders": 29,
+  "spend": 715.69,
+  "adSales": 1242.29,
+  "acos": 57.61,
+  "tacos": 41.2,
+  "refundRate": 0
+ },
+ "mtdLY": {
+  "revenue": 0,
+  "units": 0,
+  "orders": 0,
+  "spend": 0,
+  "adSales": 0,
+  "acos": 0,
+  "tacos": 0,
+  "refundRate": 0
+ },
+ "daily": [
+  [
+   "2026-11-09",
+   0,
+   44.02,
+   0,
+   0,
+   0
+  ],
+  [
+   "2026-11-10",
+   0,
+   27.14,
+   0,
+   0,
+   0
+  ],
+  [
+   "2026-11-11",
+   0,
+   29.94,
+   0,
+   0,
+   0
+  ],
+  [
+   "2026-11-12",
+   79.77,
+   27.67,
+   74.99,
+   1,
+   1
+  ],
+  [
+   "2026-11-13",
+   0,
+   27.39,
+   0,
+   0,
+   0
+  ],
+  [
+   "2026-11-14",
+   91.14,
+   25.01,
+   74.99,
+   1,
+   1
+  ],
+  [
+   "2026-11-15",
+   0,
+   27.59,
+   0,
+   0,
+   0
+  ],
+  [
+   "2026-11-16",
+   0,
+   32.14,
+   0,
+   0,
+   0
+  ],
+  [
+   "2026-11-17",
+   0,
+   26.78,
+   0,
+   0,
+   0
+  ],
+  [
+   "2026-11-18",
+   154.48,
+   23.95,
+   0,
+   2,
+   0
+  ],
+  [
+   "2026-11-19",
+   56.82,
+   33.53,
+   0,
+   1,
+   0
+  ],
+  [
+   "2026-11-20",
+   339.05,
+   121.79,
+   104.98,
+   6,
+   2
+  ],
+  [
+   "2026-11-21",
+   387.4,
+   109.28,
+   682.37,
+   10,
+   10
+  ],
+  [
+   "2026-11-22",
+   113.11,
+   114.38,
+   0,
+   2,
+   0
+  ]
+ ],
+ "searchTerms": {
+  "total": 94,
+  "winners": 1,
+  "harvest": 1,
+  "negative": 5,
+  "noPurchase": 7,
+  "rows": [
+   [
+    "noggin boss blank caps",
+    "SB",
+    3,
+    1,
+    7,
+    1.15,
+    367.43
+   ],
+   [
+    "noggin boss giant hat",
+    "SB",
+    9555,
+    34,
+    1,
+    44.93,
+    52.49
+   ],
+   [
+    "noggin boss giant hat",
+    "SP",
+    284,
+    17,
+    0,
+    16.94,
+    0
+   ],
+   [
+    "noggin boss",
+    "SB",
+    1913,
+    16,
+    0,
+    15.04,
+    0
+   ],
+   [
+    "noggin boss giant hat nfl",
+    "SP",
+    30,
+    7,
+    0,
+    10.35,
+    0
+   ],
+   [
+    "noggin boss",
+    "SP",
+    77,
+    5,
+    0,
+    9.27,
+    0
+   ],
+   [
+    "noggin boss giant hat 49ers",
+    "SP",
+    26,
+    3,
+    0,
+    4.05,
+    0
+   ]
+  ],
+  "category": [
+   [
+    "oversized hats",
+    "SP",
+    91,
+    10,
+    1,
+    16.31,
+    157.47
+   ],
+   [
+    "oversized hat",
+    "SP",
+    221,
+    17,
+    1,
+    21.02,
+    52.49
+   ],
+   [
+    "giant foam cowboy hat",
+    "SP",
+    19,
+    1,
+    1,
+    0.92,
+    52.49
+   ],
+   [
+    "giant 49ers hat",
+    "SP",
+    1,
+    1,
+    1,
+    0.58,
+    52.49
+   ],
+   [
+    "huge oversized baseball hat",
+    "SP",
+    1,
+    1,
+    1,
+    1.63,
+    52.49
+   ]
+  ]
+ },
+ "targets": {
+  "total": 142,
+  "winners": 4,
+  "needsAttention": 12,
+  "highAcos": 2,
+  "noSales": 5,
+  "lowCtr": 2,
+  "rows": [
+   [
+    "oversized hat",
+    "Exact",
+    "Category",
+    38.98,
+    52.49,
+    74.26,
+    28,
+    1
+   ],
+   [
+    "funny hat",
+    "Phrase",
+    "Category",
+    36.29,
+    0,
+    null,
+    24,
+    0
+   ],
+   [
+    "noggin boss giant hat (SB)",
+    "Phrase",
+    "Brand",
+    26.76,
+    52.49,
+    50.98,
+    25,
+    1
+   ],
+   [
+    "big head hat",
+    "Broad",
+    "Category",
+    25.53,
+    0,
+    null,
+    17,
+    0
+   ],
+   [
+    "giant hats",
+    "Phrase",
+    "Category",
+    14.58,
+    0,
+    null,
+    12,
+    0
+   ]
+  ]
+ },
+ "reviews": {
+  "available": false
+ },
+ "alerts": {
+  "total": 294,
+  "actionable": 8,
+  "critical": 3,
+  "warning": 5,
+  "byType": {
+   "Category": 78,
+   "Brand": 49,
+   "Buy Box gained": 40,
+   "Listing price": 37,
+   "Title": 20,
+   "Bullets": 19,
+   "Description": 18,
+   "Listing images": 12,
+   "Inactive": 11,
+   "Child ASINs changed": 3,
+   "Buy Box lost": 3,
+   "Parent ASIN changed": 2,
+   "Title differentiation": 2
+  }
+ }
+}

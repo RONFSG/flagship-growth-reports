@@ -29,7 +29,12 @@
   "B0HNM5HTZQ": "Oversized Hat – Camo L/XL",
   "B0HNMRXFNG": "Oversized Hat – Pink S/M",
   "B0HNMBTY31": "Party Hat – Red S/M",
-  "B0HNLWFHXQ": "Oversized Hat – Yellow L/XL"
+  "B0HNLWFHXQ": "Oversized Hat – Yellow L/XL",
+  "B0HNMC1VNZ": "Party Hat – Red L/XL",
+  "B0HNLTLWHS": "Oversized Hat – Powder Blue L/XL",
+  "B0HNM6MGZG": "Oversized Hat – Pink L/XL",
+  "B0GX9LBJTT": "Cotton Cap – White L/XL",
+  "B0HNL7FHCM": "Party Hat – Navy S/M"
  },
  "_about": "Brand settings for the shared weekly deck (see _tools/BRAND_DECK_RUNBOOK.md). invPage/recPage empty = no sheet page published yet. brandTerms = words that make a search 'branded'. sqpAsin is filled by deck.py init. names = short product names by ASIN."
 }
