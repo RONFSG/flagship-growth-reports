@@ -1,0 +1,450 @@
+{
+ "_source": "Sellerise MCP, account Opopop, marketplace US, pulled 2026-11-23 (Monday-Sunday weeks; 4-week table from the saved weekly totals)",
+ "weeks": [
+  {
+   "label": "Oct 26 – Nov 1",
+   "revenue": 45202.28,
+   "units": 1985,
+   "orders": 1825,
+   "impressions": 800681,
+   "clicks": 3743,
+   "refundUnits": 44,
+   "refundRate": 2.41,
+   "spend": 5167.69,
+   "adSales": 16331.0,
+   "acos": 31.64,
+   "tacos": 11.43
+  },
+  {
+   "label": "Nov 2 – 8",
+   "revenue": 53837.49,
+   "units": 2197,
+   "orders": 1947,
+   "impressions": 581991,
+   "clicks": 3474,
+   "refundUnits": 49,
+   "refundRate": 2.52,
+   "spend": 4222.41,
+   "adSales": 17899.07,
+   "acos": 23.59,
+   "tacos": 7.84
+  },
+  {
+   "label": "Nov 9 – 15",
+   "revenue": 46508.64,
+   "units": 1624,
+   "orders": 1476,
+   "impressions": 367846,
+   "clicks": 2732,
+   "refundUnits": 54,
+   "refundRate": 3.66,
+   "spend": 3770.06,
+   "adSales": 14233.9,
+   "acos": 26.49,
+   "tacos": 8.11
+  },
+  {
+   "label": "Nov 16 – 22",
+   "revenue": 65301.01,
+   "units": 2634,
+   "orders": 2344,
+   "impressions": 521823,
+   "clicks": 5106,
+   "refundUnits": 42,
+   "refundRate": 1.79,
+   "spend": 7606.57,
+   "adSales": 28708.94,
+   "acos": 26.5,
+   "tacos": 11.65,
+   "net": 32073.0,
+   "refunds": 802.45,
+   "adOrders": 926,
+   "cpc": 1.49,
+   "cvr": 18.14
+  }
+ ],
+ "mtd": {
+  "through": "2026-11-22",
+  "days": 22,
+  "revenue": 172571.69,
+  "units": 6754,
+  "orders": 6042,
+  "spend": 16339.1,
+  "adSales": 63491.35,
+  "acos": 25.73,
+  "tacos": 9.47,
+  "refundRate": 2.52
+ },
+ "mtdLY": {
+  "revenue": 209634.74,
+  "units": 8324,
+  "orders": 7492,
+  "spend": 0,
+  "adSales": 0,
+  "acos": 0,
+  "tacos": 0,
+  "refundRate": 1.51
+ },
+ "daily": [
+  [
+   "2026-11-09",
+   6415.56,
+   475.39,
+   1933.72,
+   201,
+   54
+  ],
+  [
+   "2026-11-10",
+   5431.21,
+   456.97,
+   1840.2,
+   181,
+   52
+  ],
+  [
+   "2026-11-11",
+   6816.1,
+   408.2,
+   1910.41,
+   221,
+   55
+  ],
+  [
+   "2026-11-12",
+   6620.71,
+   531.83,
+   2239.8,
+   202,
+   65
+  ],
+  [
+   "2026-11-13",
+   7237.91,
+   569.68,
+   1582.21,
+   241,
+   48
+  ],
+  [
+   "2026-11-14",
+   7793.07,
+   631.08,
+   1764.09,
+   242,
+   53
+  ],
+  [
+   "2026-11-15",
+   8001.8,
+   708.7,
+   1673.33,
+   256,
+   51
+  ],
+  [
+   "2026-11-16",
+   5979.26,
+   463.76,
+   1735.81,
+   186,
+   51
+  ],
+  [
+   "2026-11-17",
+   6846.78,
+   495.06,
+   2783.6,
+   240,
+   77
+  ],
+  [
+   "2026-11-18",
+   6735.94,
+   539.85,
+   1329.57,
+   248,
+   42
+  ],
+  [
+   "2026-11-19",
+   10924.31,
+   1604.78,
+   5860.94,
+   362,
+   170
+  ],
+  [
+   "2026-11-20",
+   10111,
+   1423.14,
+   5210.87,
+   385,
+   184
+  ],
+  [
+   "2026-11-21",
+   11855.46,
+   1504.06,
+   6234.15,
+   469,
+   230
+  ],
+  [
+   "2026-11-22",
+   12848.26,
+   1575.92,
+   5554,
+   454,
+   172
+  ]
+ ],
+ "searchTerms": {
+  "total": 648,
+  "winners": 39,
+  "harvest": 14,
+  "negative": 3,
+  "noPurchase": 4,
+  "rows": [
+   [
+    "opopop popcorn",
+    "SB",
+    12334,
+    531,
+    130,
+    1602.57,
+    4334.31
+   ],
+   [
+    "opopop popcorn",
+    "SP",
+    8536,
+    434,
+    95,
+    491.91,
+    2356.19
+   ],
+   [
+    "opopop",
+    "SB",
+    1946,
+    168,
+    41,
+    139.64,
+    2328.52
+   ],
+   [
+    "opopop",
+    "SP",
+    7750,
+    184,
+    45,
+    223.46,
+    1025.91
+   ],
+   [
+    "opopop popcorn kit with bowl",
+    "SB",
+    1494,
+    104,
+    18,
+    167.23,
+    635.58
+   ],
+   [
+    "opopop microwave popcorn",
+    "SB",
+    1128,
+    31,
+    14,
+    38.02,
+    377.54
+   ],
+   [
+    "opopop popcorn kit with bowl",
+    "SP",
+    1420,
+    54,
+    16,
+    43.51,
+    353.94
+   ],
+   [
+    "opopop popcorn refill",
+    "SP",
+    145,
+    10,
+    5,
+    7.16,
+    83.46
+   ]
+  ],
+  "category": [
+   [
+    "popcorn",
+    "SP",
+    6952,
+    42,
+    10,
+    37.48,
+    310.82
+   ],
+   [
+    "microwave popcorn popper",
+    "SP",
+    12969,
+    72,
+    11,
+    89.51,
+    271.07
+   ],
+   [
+    "silicone popcorn popper microwave",
+    "SP",
+    2703,
+    28,
+    10,
+    29.66,
+    266.3
+   ],
+   [
+    "oppo pop popcorn and bowl",
+    "SB",
+    3,
+    3,
+    3,
+    0.69,
+    138.97
+   ],
+   [
+    "silicone popcorn popper",
+    "SB",
+    439,
+    18,
+    3,
+    17.07,
+    134.33
+   ]
+  ]
+ },
+ "targets": {
+  "total": 1410,
+  "winners": 84,
+  "needsAttention": 66,
+  "highAcos": 28,
+  "noSales": 8,
+  "lowCtr": 24,
+  "rows": [
+   [
+    "opopop popcorn",
+    "Exact",
+    "Brand",
+    339.98,
+    747.33,
+    45.49,
+    191,
+    22
+   ],
+   [
+    "opopop popcorn (SB)",
+    "Exact",
+    "Brand",
+    276.62,
+    555.04,
+    49.84,
+    78,
+    16
+   ],
+   [
+    "opopop popcorn (SB)",
+    "Phrase",
+    "Brand",
+    250.52,
+    557.77,
+    44.91,
+    99,
+    18
+   ],
+   [
+    "microwave popcorn popper",
+    "Broad",
+    "Category",
+    181.7,
+    417.39,
+    43.53,
+    187,
+    19
+   ],
+   [
+    "opopop popcorn (SB)",
+    "Phrase",
+    "Brand",
+    196.18,
+    476.22,
+    41.2,
+    72,
+    18
+   ]
+  ]
+ },
+ "reviews": {
+  "available": true,
+  "periodReviews": 0,
+  "note": "No new reviews dated in the last 90 days for the 6 review ASINs Sellerise tracks; current listing ratings shown",
+  "ratings": [
+   [
+    "B09W453CR8",
+    4.2
+   ],
+   [
+    "B0B75YMMZJ",
+    4.3
+   ],
+   [
+    "B0B6YZ6L56",
+    3.9
+   ],
+   [
+    "B0DMBNGWVL",
+    4.2
+   ],
+   [
+    "B0C7Y5DKRX",
+    3.5
+   ],
+   [
+    "B0HCQ4ZY5Y",
+    4.5
+   ]
+  ]
+ },
+ "alerts": {
+  "total": 608,
+  "actionable": 177,
+  "critical": 152,
+  "warning": 25,
+  "byType": {
+   "Listing images": 217,
+   "Buy Box lost": 141,
+   "Buy Box gained": 141,
+   "Inactive": 15,
+   "Reimbursable units": 13,
+   "Category": 13,
+   "Listing price": 12,
+   "Out of stock": 10,
+   "Rating drop": 6,
+   "Rating star drop": 6,
+   "Dimensions": 6,
+   "Badge lost": 5,
+   "Badge gained": 4,
+   "Low stock": 3,
+   "Negative feedback": 3,
+   "Low inventory fee": 3,
+   "Rating star gain": 3,
+   "Hijacker": 2,
+   "Hijacker (liquidation)": 2,
+   "Large order": 2,
+   "Days of supply": 1
+  }
+ }
+}

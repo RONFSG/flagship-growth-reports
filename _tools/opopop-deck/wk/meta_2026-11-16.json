@@ -1,0 +1,22 @@
+{
+ "revenue": 65301.01,
+ "orders": 2344,
+ "units": 2634,
+ "net": 32073.0,
+ "margin": 49.12,
+ "refunds": 802.45,
+ "refundRate": 1.79,
+ "promos": 462.32,
+ "coupons": 20,
+ "promo": 244,
+ "sns": 125,
+ "spend": 7606.57,
+ "adSales": 28708.94,
+ "acos": 26.5,
+ "tacos": 11.65,
+ "clicks": 5106,
+ "impr": 521823,
+ "adOrders": 926,
+ "cpc": 1.49,
+ "refundUnits": 42
+}
