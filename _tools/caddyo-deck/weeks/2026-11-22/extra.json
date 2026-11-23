@@ -1,0 +1,352 @@
+{
+ "_source": "Sellerise MCP, account CaddyO, marketplace US, pulled 2026-11-23 (Monday-Sunday weeks; 4-week table from the saved weekly totals)",
+ "weeks": [
+  {
+   "label": "Oct 26 – Nov 1",
+   "revenue": 1546.35,
+   "units": 55,
+   "orders": 51,
+   "impressions": 208267,
+   "clicks": 747,
+   "refundUnits": 3,
+   "refundRate": 5.88,
+   "spend": 796.82,
+   "adSales": 1294.8,
+   "acos": 61.54,
+   "tacos": 51.53
+  },
+  {
+   "label": "Nov 2 – 8",
+   "revenue": 2076.29,
+   "units": 69,
+   "orders": 63,
+   "impressions": 582320,
+   "clicks": 1548,
+   "refundUnits": 2,
+   "refundRate": 3.17,
+   "spend": 2195.27,
+   "adSales": 1560.45,
+   "acos": 140.68,
+   "tacos": 105.73
+  },
+  {
+   "label": "Nov 9 – 15",
+   "revenue": 1614.53,
+   "units": 53,
+   "orders": 50,
+   "impressions": 196323,
+   "clicks": 599,
+   "refundUnits": 7,
+   "refundRate": 14.0,
+   "spend": 774.25,
+   "adSales": 1131.2,
+   "acos": 68.45,
+   "tacos": 47.96
+  },
+  {
+   "label": "Nov 16 – 22",
+   "revenue": 2283.09,
+   "units": 80,
+   "orders": 69,
+   "impressions": 121217,
+   "clicks": 490,
+   "refundUnits": 3,
+   "refundRate": 4.35,
+   "spend": 620.77,
+   "adSales": 1123.76,
+   "acos": 55.24,
+   "tacos": 27.19,
+   "net": 125.42,
+   "refunds": 68.8,
+   "adOrders": 34,
+   "cpc": 1.27,
+   "cvr": 6.94
+  }
+ ],
+ "mtd": {
+  "through": "2026-11-22",
+  "days": 22,
+  "revenue": 6192.09,
+  "units": 210,
+  "orders": 188,
+  "spend": 3748.53,
+  "adSales": 3960.16,
+  "acos": 94.66,
+  "tacos": 60.54,
+  "refundRate": 6.38
+ },
+ "mtdLY": {
+  "revenue": 1068.53,
+  "units": 41,
+  "orders": 27,
+  "spend": 0,
+  "adSales": 0,
+  "acos": 0,
+  "tacos": 0,
+  "refundRate": 3.7
+ },
+ "daily": [
+  [
+   "2026-11-09",
+   121.8,
+   271.69,
+   57.9,
+   4,
+   2
+  ],
+  [
+   "2026-11-10",
+   285.97,
+   108.66,
+   271.55,
+   9,
+   9
+  ],
+  [
+   "2026-11-11",
+   267.64,
+   95.66,
+   202.65,
+   8,
+   6
+  ],
+  [
+   "2026-11-12",
+   183.07,
+   70.75,
+   115.8,
+   6,
+   3
+  ],
+  [
+   "2026-11-13",
+   217.97,
+   63.35,
+   86.85,
+   7,
+   3
+  ],
+  [
+   "2026-11-14",
+   257.01,
+   74.68,
+   225.7,
+   8,
+   4
+  ],
+  [
+   "2026-11-15",
+   281.07,
+   89.46,
+   170.75,
+   8,
+   5
+  ],
+  [
+   "2026-11-16",
+   260.24,
+   85.46,
+   219.8,
+   4,
+   2
+  ],
+  [
+   "2026-11-17",
+   392.39,
+   86.18,
+   126.8,
+   9,
+   4
+  ],
+  [
+   "2026-11-18",
+   273.62,
+   69.69,
+   173.7,
+   8,
+   6
+  ],
+  [
+   "2026-11-19",
+   396.92,
+   81.43,
+   195.39,
+   13,
+   7
+  ],
+  [
+   "2026-11-20",
+   418.1,
+   78.1,
+   110.09,
+   15,
+   4
+  ],
+  [
+   "2026-11-21",
+   67.25,
+   102.52,
+   43.42,
+   3,
+   2
+  ],
+  [
+   "2026-11-22",
+   474.57,
+   117.39,
+   254.56,
+   17,
+   9
+  ]
+ ],
+ "searchTerms": {
+  "total": 152,
+  "winners": 3,
+  "harvest": 2,
+  "negative": 1,
+  "noPurchase": 1,
+  "rows": [
+   [
+    "icube wrapsulator",
+    "SP",
+    33,
+    2,
+    0,
+    4.09,
+    0
+   ]
+  ],
+  "category": [
+   [
+    "wine bag tote",
+    "SP",
+    9,
+    1,
+    1,
+    1.39,
+    179.85
+   ],
+   [
+    "the fridge freezable drink cooler",
+    "SB",
+    36,
+    6,
+    2,
+    7.38,
+    57.9
+   ],
+   [
+    "freezer koozie",
+    "SB",
+    4,
+    1,
+    2,
+    1.15,
+    57.9
+   ],
+   [
+    "beer can freezer sleeve",
+    "SB",
+    1,
+    1,
+    2,
+    1.14,
+    43.42
+   ],
+   [
+    "2-bottle wine carrier",
+    "SB",
+    1,
+    1,
+    1,
+    1.93,
+    37.46
+   ]
+  ]
+ },
+ "targets": {
+  "total": 70,
+  "winners": 5,
+  "needsAttention": 9,
+  "highAcos": 4,
+  "noSales": 2,
+  "lowCtr": 5,
+  "rows": [
+   [
+    "can coolers",
+    "Phrase",
+    "Category",
+    65.42,
+    43.42,
+    150.67,
+    37,
+    2
+   ],
+   [
+    "can cooler (SB)",
+    "Phrase",
+    "Category",
+    45.79,
+    28.95,
+    158.17,
+    33,
+    1
+   ],
+   [
+    "can cooler",
+    "Phrase",
+    "Category",
+    21.98,
+    0,
+    null,
+    17,
+    0
+   ],
+   [
+    "freezer koozies for cans (SB)",
+    "Phrase",
+    "Category",
+    16.24,
+    0,
+    null,
+    6,
+    0
+   ],
+   [
+    "hydrojug can cooler",
+    "Broad",
+    "Category",
+    14.01,
+    21.71,
+    64.53,
+    13,
+    1
+   ]
+  ]
+ },
+ "reviews": {
+  "available": true,
+  "currentAvgRating": 3.5,
+  "periodReviews": 0,
+  "negative": 0,
+  "note": "listing rating signals 4.1 (Wrapsulator sleeve family), 3.5 (Wrapsulator regular family) and 5.0 (leather wine tote); no reviews dated in the last 90 days"
+ },
+ "alerts": {
+  "total": 91,
+  "actionable": 1,
+  "critical": 0,
+  "warning": 1,
+  "byType": {
+   "Bullets": 26,
+   "Brand": 19,
+   "Title": 16,
+   "Listing images": 13,
+   "Listing price": 7,
+   "Title differentiation": 3,
+   "Reimbursable units": 3,
+   "Buy Box gained": 2,
+   "Low stock": 1,
+   "Rating star gain": 1
+  }
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "_week": "2026-11-16 to 2026-11-22 (Week 47). Written fresh from this week's numbers.",
+ "week_story": [
+  "Sales rose 41.4% to $2,283 on 80 units (53 the week before) and 69 orders.",
+  "Wine & travel totes jumped to $432 from $80; Blue Regular rose 63% to $461 and Slim 73% to $299."
+ ],
+ "refunds_title": "Refunds fell",
+ "refunds": [
+  "Refunds were $69 (3 units, 4.35% rate) vs $155 (7 units, 14.0%) last week.",
+  "Net payout turned positive: $125 vs −$354."
+ ],
+ "pacing_reco": "November is at $6,192 through Nov 22, a pace of about $8,444 vs October's $8,061 and $1,711 last November. Keep spend near this week's $621 into BF/CM to finish above October.",
+ "ads_context": [
+  "Ad spend fell 19.8% to $621 from $774; ad sales held at $1,124 ($1,131).",
+  "ACoS improved from 68.5% to 55.2% and TACoS from 48.0% to 27.2%."
+ ],
+ "ads_strategy": [
+  "Display (SD) spend fell to $1 from $151 after the remarketing pause.",
+  "Category keywords: $264 for $527 (50.0% ACoS). Auto: $275 for $472 (58.1%). Branded: $56 for $81."
+ ],
+ "bid_moves": [
+  "Lower “can coolers” phrase ($65 for $43) and SB “can cooler” phrase ($46 for $29).",
+  "Negate “can cooler” phrase in the bottles campaign: $22, 0 sales.",
+  "Raise the leather tote auto ($25 for $125) and Blue SBV exact ($25 for $123)."
+ ],
+ "coupons": [
+  "This week: 12 coupon orders (6 last week)."
+ ],
+ "promotions": [
+  "This week: 6 promotion orders and $71 in discounts (vs 24 and $143 last week)."
+ ],
+ "events": [
+  "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+  "Sunday Nov 22 was the best day: $475 on 17 orders.",
+  "Saturday Nov 21 sold $67 on $103 of ad spend."
+ ],
+ "reviews_title": "Few review signals",
+ "reviews_body": [
+  "Sellerise shows listing ratings of 4.1 (sleeve family), 3.5 (Regular family) and 5.0 (leather wine tote).",
+  "No reviews dated in the last 90 days."
+ ],
+ "reviews_reco": [
+  "Ask for reviews on the wine totes while sales are up.",
+  "Set up review tracking for every CaddyO ASIN."
+ ],
+ "recommendations": [
+  ["Ads", "Cut bids on “can coolers” phrase (150.7% ACoS) and SB “can cooler” phrase (158.2%).", "Ads team", "Today"],
+  ["Ads", "Negate “can cooler” in the bottles phrase campaign: $22 spend, 0 sales.", "Ads team", "This week"],
+  ["Ads", "Raise budget on the leather tote auto (20.1% ACoS) and Blue SBV exact (20.5%).", "Ads team", "Before Nov 27"],
+  ["Ads", "Add “freezer koozie” and “beer can freezer sleeve” as exact keywords (2 orders each, ~$1 spend).", "Ads team", "This week"],
+  ["Ads", "Pause the Nylon tote branded broad terms: $15 spend, 0 sales.", "Ads team", "This week"],
+  ["Marketing", "Confirm BF/CM coupons and deals on coolers and wine totes (Nov 27–30).", "Account team", "By Nov 25"],
+  ["Inventory", "Confirm tote and bundle stock before BF/CM; the sheet date is not readable.", "Account team", "By Nov 25"]
+ ],
+ "position": [
+  "Sales rose 41.4% to $2,283 while ad spend fell 19.8% to $621.",
+  "Net payout is $125 (from −$354); TACoS is 27.2%."
+ ],
+ "next_steps": [
+  "Trim the high-ACoS phrase terms.",
+  "Push budget to tote and Blue winners.",
+  "Lock BF/CM deals.",
+  "Check tote stock."
+ ],
+ "data_ask": [
+  "Inventory sheet with a readable date.",
+  "Inbound plan for wine totes.",
+  "COGS per item in Sellerise.",
+  "Review tracking for all ASINs."
+ ]
+}
