@@ -1,5 +1,5 @@
 {
-  "_source": "Sellerise MCP, account Reshoevn8r - UK, marketplace GB, targetCurrency GBP. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: ASINs/titles/units/sessions from get_products salesProfitSummaryByAsin; productSales (plus revenue/salesTaxes) via per-ASIN get_account_metrics for week and prior week. Total Sales = productSales (= Amazon Ordered Product Sales). Pulled 2026-11-23.",
+  "_source": "Sellerise MCP, account Reshoevn8r - UK, marketplace GB, targetCurrency GBP (native). Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics groupBy day. Total Sales = productSales (= Amazon Ordered Product Sales). Pulled 2026-11-24.",
   "week": {
     "start": "2026-11-15",
     "end": "2026-11-21"
@@ -9,9 +9,9 @@
     "end": "2026-11-14"
   },
   "current": {
-    "revenue": 2886.02,
-    "productSales": 2422.78,
-    "salesTaxes": 458.9,
+    "revenue": 2882.24,
+    "productSales": 2399.38,
+    "salesTaxes": 478.97,
     "units": 122,
     "ppcSpend": 941.58,
     "ppcSales": 1576.29,
@@ -33,45 +33,31 @@
   "daily": [
     {
       "date": "2026-11-15",
-      "revenue": 318.74,
-      "salesTaxes": 53.44,
-      "productSales": 259.81
+      "productSales": 318.74
     },
     {
       "date": "2026-11-16",
-      "revenue": 228.34,
-      "salesTaxes": 38.05,
-      "productSales": 190.29
+      "productSales": 228.34
     },
     {
       "date": "2026-11-17",
-      "revenue": 385.57,
-      "salesTaxes": 64.24,
-      "productSales": 315.08
+      "productSales": 385.57
     },
     {
       "date": "2026-11-18",
-      "revenue": 543.81,
-      "salesTaxes": 87.5,
-      "productSales": 454.51
+      "productSales": 540.03
     },
     {
       "date": "2026-11-19",
-      "revenue": 467.96,
-      "salesTaxes": 78,
-      "productSales": 389.96
+      "productSales": 467.96
     },
     {
       "date": "2026-11-20",
-      "revenue": 442.74,
-      "salesTaxes": 70.69,
-      "productSales": 376.65
+      "productSales": 442.74
     },
     {
       "date": "2026-11-21",
-      "revenue": 498.86,
-      "salesTaxes": 66.98,
-      "productSales": 436.48
+      "productSales": 498.86
     }
   ],
   "products": [
