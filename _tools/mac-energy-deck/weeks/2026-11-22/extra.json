@@ -1,0 +1,401 @@
+{
+ "_source": "Sellerise MCP, account MAC Energy, marketplace US, pulled 2026-11-23 (Monday-Sunday weeks; 4-week table from the saved weekly totals)",
+ "weeks": [
+  {
+   "label": "Oct 26 – Nov 1",
+   "revenue": 83000.26,
+   "units": 3389,
+   "orders": 3216,
+   "impressions": 4025063,
+   "clicks": 8114,
+   "refundUnits": 59,
+   "refundRate": 1.83,
+   "spend": 56879.53,
+   "adSales": 47599.37,
+   "acos": 119.5,
+   "tacos": 68.53
+  },
+  {
+   "label": "Nov 2 – 8",
+   "revenue": 74303.02,
+   "units": 3045,
+   "orders": 2869,
+   "impressions": 3188931,
+   "clicks": 7262,
+   "refundUnits": 83,
+   "refundRate": 2.89,
+   "spend": 34229.48,
+   "adSales": 39755.51,
+   "acos": 86.1,
+   "tacos": 46.07
+  },
+  {
+   "label": "Nov 9 – 15",
+   "revenue": 83936.22,
+   "units": 3381,
+   "orders": 3176,
+   "impressions": 5315015,
+   "clicks": 9358,
+   "refundUnits": 76,
+   "refundRate": 2.39,
+   "spend": 85022.37,
+   "adSales": 49976.82,
+   "acos": 170.12,
+   "tacos": 101.29
+  },
+  {
+   "label": "Nov 16 – 22",
+   "revenue": 254390.92,
+   "units": 15171,
+   "orders": 13542,
+   "impressions": 10090348,
+   "clicks": 22450,
+   "refundUnits": 98,
+   "refundRate": 0.72,
+   "spend": 181660.69,
+   "adSales": 115621.8,
+   "acos": 157.12,
+   "tacos": 71.41,
+   "net": -144380.4,
+   "refunds": 1703.99,
+   "adOrders": 5110,
+   "cpc": 8.09,
+   "cvr": 22.76
+  }
+ ],
+ "mtd": {
+  "through": "2026-11-22",
+  "days": 22,
+  "revenue": 425691.39,
+  "units": 22152,
+  "orders": 20120,
+  "spend": 309348.29,
+  "adSales": 213253.4,
+  "acos": 145.06,
+  "tacos": 72.67,
+  "refundRate": 1.32
+ },
+ "mtdLY": {
+  "revenue": 0,
+  "units": 0,
+  "orders": 0,
+  "spend": 0
+ },
+ "daily": [
+  [
+   "2026-11-09",
+   11271.25,
+   5873.86,
+   5662,
+   423,
+   196
+  ],
+  [
+   "2026-11-10",
+   13127.71,
+   11914.72,
+   6830.11,
+   479,
+   233
+  ],
+  [
+   "2026-11-11",
+   12913.65,
+   8060.39,
+   5866.73,
+   469,
+   197
+  ],
+  [
+   "2026-11-12",
+   13766.1,
+   14482.49,
+   6840.66,
+   492,
+   222
+  ],
+  [
+   "2026-11-13",
+   15477.22,
+   17287.93,
+   6135.31,
+   523,
+   202
+  ],
+  [
+   "2026-11-14",
+   15099,
+   12392.1,
+   6425.27,
+   504,
+   213
+  ],
+  [
+   "2026-11-15",
+   18755.57,
+   14740.59,
+   7680.35,
+   619,
+   242
+  ],
+  [
+   "2026-11-16",
+   16442.25,
+   12790.91,
+   7971.1,
+   645,
+   272
+  ],
+  [
+   "2026-11-17",
+   13985.27,
+   11203.66,
+   8705.18,
+   616,
+   303
+  ],
+  [
+   "2026-11-18",
+   11645.33,
+   7243.05,
+   4673.78,
+   443,
+   168
+  ],
+  [
+   "2026-11-19",
+   64288.38,
+   37259.28,
+   28039.75,
+   3728,
+   1198
+  ],
+  [
+   "2026-11-20",
+   58321.13,
+   43835.63,
+   24782.21,
+   3606,
+   1173
+  ],
+  [
+   "2026-11-21",
+   44686.25,
+   32593.57,
+   19570.68,
+   2259,
+   937
+  ],
+  [
+   "2026-11-22",
+   45022.31,
+   36734.59,
+   21879.1,
+   2245,
+   1059
+  ]
+ ],
+ "searchTerms": {
+  "total": 870,
+  "winners": 36,
+  "harvest": 29,
+  "negative": 2,
+  "noPurchase": 2,
+  "rows": [
+   [
+    "mac energy drink",
+    "SP",
+    13743,
+    781,
+    440,
+    5112.49,
+    10247.43
+   ],
+   [
+    "mac energy",
+    "SP",
+    3983,
+    292,
+    142,
+    1193.89,
+    4567.57
+   ],
+   [
+    "mac energy drink",
+    "SB",
+    4501,
+    83,
+    36,
+    59.91,
+    893.58
+   ],
+   [
+    "conor mcgregor energy drink",
+    "SP",
+    700,
+    70,
+    25,
+    354.32,
+    581.41
+   ],
+   [
+    "mcgregor energy drink",
+    "SP",
+    1946,
+    26,
+    12,
+    132.92,
+    239.88
+   ],
+   [
+    "conor mcgregor energy drink",
+    "SB",
+    252,
+    26,
+    9,
+    173.25,
+    212.89
+   ],
+   [
+    "mac energy",
+    "SB",
+    1755,
+    36,
+    8,
+    25.2,
+    200.9
+   ]
+  ],
+  "category": [
+   [
+    "energy drink",
+    "SP",
+    808454,
+    2617,
+    960,
+    44139.55,
+    21772.37
+   ],
+   [
+    "energy drinks",
+    "SP",
+    636676,
+    1315,
+    376,
+    18871.22,
+    8527.73
+   ],
+   [
+    "sugar free energy drinks",
+    "SP",
+    187518,
+    680,
+    136,
+    5284.1,
+    2929.5
+   ],
+   [
+    "c4 energy drink",
+    "SP",
+    90732,
+    175,
+    57,
+    2162.48,
+    1223.4
+   ],
+   [
+    "energy drink",
+    "SB",
+    15632,
+    164,
+    59,
+    1696.32,
+    1178.71
+   ]
+  ]
+ },
+ "targets": {
+  "total": 604,
+  "winners": 22,
+  "needsAttention": 179,
+  "highAcos": 89,
+  "noSales": 5,
+  "lowCtr": 101,
+  "rows": [
+   [
+    "energy drink",
+    "Exact",
+    "Category",
+    23112.37,
+    8575.93,
+    269.5,
+    999,
+    380
+   ],
+   [
+    "energy drink",
+    "Exact",
+    "Category",
+    10164.62,
+    4917.56,
+    206.7,
+    485,
+    212
+   ],
+   [
+    "energy drinks",
+    "Exact",
+    "Category",
+    8660.02,
+    3673.12,
+    235.77,
+    559,
+    159
+   ],
+   [
+    "energy drinks",
+    "Exact",
+    "Category",
+    7396.98,
+    4503.7,
+    164.24,
+    514,
+    206
+   ],
+   [
+    "energy drinks",
+    "Phrase",
+    "Category",
+    6788.2,
+    3850.01,
+    176.32,
+    769,
+    183
+   ]
+  ]
+ },
+ "reviews": {
+  "available": true,
+  "currentAvgRating": 4.4,
+  "periodReviews": 0,
+  "negative": 0,
+  "note": "Rating shared across the flavors through the Variety Pack listing; no new reviews dated in the last 90 days"
+ },
+ "alerts": {
+  "total": 45,
+  "actionable": 12,
+  "critical": 4,
+  "warning": 8,
+  "byType": {
+   "Reimbursable units": 16,
+   "Large order": 7,
+   "Badge lost": 6,
+   "Badge gained": 5,
+   "Listing price": 5,
+   "Dimensions": 2,
+   "Low inventory fee": 2,
+   "Low stock": 1,
+   "Listing images": 1
+  }
+ }
+}

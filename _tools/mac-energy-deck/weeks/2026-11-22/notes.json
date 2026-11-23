@@ -1,0 +1,106 @@
+{
+ "_week": "2026-11-16 to 2026-11-22 (Week 47), MAC Energy US. Written from this week's numbers.",
+ "week_story": [
+  "Sales tripled to $254,391 (+203%) from $83,936. Thu–Sun brought $212,318 of it, with $64,288 on Thursday alone.",
+  "Every flavor grew: Proper Punch +457% to $48,503, Green Apple +359%, Orange Creamsicle +348%, Macberry Lychee +120%, Variety Pack +95% to $79,039."
+ ],
+ "refunds_title": "Refunds are low",
+ "refunds": [
+  "Refunds were $1,704 (0.7% refund rate) on 13,542 orders, against $1,406 the week before. No action needed."
+ ],
+ "pacing_reco": "November is $425,691 through Nov 22; at $19,350 a day it lands near $580,488, above October's $483,507. Ad spend is $309,348 month to date.",
+ "ads_context": [
+  "Ad spend rose 114% to $181,661 and ad sales rose 131% to $115,622.",
+  "ACoS fell from 170.1% to 157.1% and TACoS from 101.3% to 71.4%, but each $1 of ads still returns only $0.64."
+ ],
+ "ads_strategy": [
+  "Category keywords took $87,035 for $41,256 (211% ACoS), up from $34,928. Competitor targeting: $51,479 for $29,863 (172%).",
+  "Branded keywords returned $19,981 on $9,185 (46% ACoS). Auto was cut to $601 (was $2,611)."
+ ],
+ "bid_moves": [
+  "Cut the Macberry Lychee “energy drink” exact campaign: $28,431 spent for $10,258 (277% ACoS).",
+  "Trim the Green Apple category exact campaign: $24,030 for $11,333 (212% ACoS)."
+ ],
+ "coupons": [
+  "This week: 3,916 coupon orders (584 last week).",
+  "November so far: 5,274 coupon orders through Nov 22."
+ ],
+ "promotions": [
+  "This week: 5,405 promotion orders and $63,616 in promotional discounts (vs 2,086 and $19,334 last week).",
+  "Payout fell to -$144,380 from -$49,724 as ad spend and discounts grew."
+ ],
+ "events": [
+  "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+  "Variety Pack: 9,327 available and 3,900 inbound on the stock sheet; it sold 4,156 units this week.",
+  "Deal and coupon set-up for BF/CM: to confirm with the account team."
+ ],
+ "reviews_title": "Rating at 4.4 stars",
+ "reviews_body": [
+  "Sellerise shows a 4.4-star rating, shared across the flavors through the Variety Pack listing (4.5 last week).",
+  "No new reviews are dated in the last 90 days, so there is no trend to read yet."
+ ],
+ "reviews_reco": [
+  "Check review request settings: 13,542 orders this week and no new reviews logged in 90 days.",
+  "Confirm review tracking covers each flavor ASIN, not only the shared listing."
+ ],
+ "recommendations": [
+  [
+   "Ads",
+   "Cut bids on the Macberry Lychee “energy drink” exact campaign: $28,431 for $10,258.",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Lower bids on the “energy drink” search term: $44,140 spent for $21,772 (203% ACoS).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Move budget to brand searches: “mac energy drink” ran $5,112 for $10,247 (50% ACoS).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Ads",
+   "Set a BF/CM spend cap: November ad spend is already $309,348 on $425,691 sales.",
+   "Ads team",
+   "Before Nov 27"
+  ],
+  [
+   "Ads",
+   "Pause the 23 no-sale campaign lines ($471 this week).",
+   "Ads team",
+   "This week"
+  ],
+  [
+   "Inventory",
+   "Confirm Variety Pack stock for BF/CM: 9,327 available vs 4,156 sold this week.",
+   "Inventory team",
+   "This week"
+  ],
+  [
+   "Marketing",
+   "Check margin on promotions: $63,616 in discounts this week.",
+   "Account team",
+   "Before Nov 27"
+  ]
+ ],
+ "position": [
+  "Highest week in the 8-week trend: $254,391, three times the prior week.",
+  "TACoS improved to 71.4%, but payout is -$144,380 before product costs."
+ ],
+ "next_steps": [
+  "Cap BF/CM ad spend.",
+  "Cut category exact bids.",
+  "Shift budget to brand searches.",
+  "Confirm Variety Pack stock."
+ ],
+ "data_ask": [
+  "Product costs (COGS) and the BF/CM deal plan.",
+  "Search query report: no data in Sellerise for this week.",
+  "Campaign table covers $172,382 of $181,661 ad spend.",
+  "Sellerise restated Nov 9–15 sales to $83,936 (last deck: $100,411)."
+ ]
+}

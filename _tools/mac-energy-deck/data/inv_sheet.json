@@ -1,140 +1,235 @@
 {
- "asOf": "11/02/2026",
- "week": 45,
+ "asOf": "",
+ "week": 0,
  "groups": {
   "g1": {
-   "total": 12086.0,
-   "avail": 926.0,
-   "inbound": 8352.0,
-   "wkAvg": 2005.0,
-   "l30": 8592.0,
-   "n": 1,
+   "total": 10031.0,
+   "avail": 9327.0,
+   "inbound": 3900.0,
+   "wkAvg": 1539.0,
+   "l30": 6595.2,
+   "n": 2,
    "asins": [
+    "B0H4SCZBHY",
     "B0H4SCZBHY"
    ]
   },
   "g2": {
-   "total": 9492.0,
-   "avail": 9264.0,
+   "total": 8858.0,
+   "avail": 27827.0,
    "inbound": 0.0,
-   "wkAvg": 675.0,
-   "l30": 2893.0,
-   "n": 1,
+   "wkAvg": 543.0,
+   "l30": 2327.04,
+   "n": 2,
    "asins": [
+    "B0H4XJ5G4X",
     "B0H4XJ5G4X"
    ]
   },
   "g3": {
-   "total": 15349.0,
-   "avail": 7402.0,
-   "inbound": 4018.0,
-   "wkAvg": 682.0,
-   "l30": 2922.0,
-   "n": 1,
+   "total": 14508.0,
+   "avail": 10352.0,
+   "inbound": 0.0,
+   "wkAvg": 477.0,
+   "l30": 2044.8,
+   "n": 2,
    "asins": [
+    "B0H4WZBN85",
     "B0H4WZBN85"
    ]
   },
   "g4": {
-   "total": 17209.0,
-   "avail": 9162.0,
-   "inbound": 7800.0,
-   "wkAvg": 512.0,
-   "l30": 2194.0,
-   "n": 1,
+   "total": 17303.0,
+   "avail": 12697.0,
+   "inbound": 0.0,
+   "wkAvg": 379.0,
+   "l30": 1623.36,
+   "n": 2,
    "asins": [
+    "B0H4XHB9NM",
     "B0H4XHB9NM"
    ]
   },
   "g5": {
-   "total": 18032.0,
-   "avail": 11867.0,
-   "inbound": 0.0,
-   "wkAvg": 505.0,
-   "l30": 2163.0,
-   "n": 1,
+   "total": 16663.0,
+   "avail": 15821.0,
+   "inbound": 40.0,
+   "wkAvg": 365.0,
+   "l30": 1564.8,
+   "n": 2,
    "asins": [
+    "B0H4X94TKY",
     "B0H4X94TKY"
    ]
   },
   "pr": {
-   "total": 0,
-   "avail": 0,
-   "inbound": 0,
-   "wkAvg": 0,
-   "l30": 0,
-   "n": 0,
-   "asins": []
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "n": 2,
+   "asins": [
+    "B0H4XLQ1LP",
+    "B0HMLFS65Y"
+   ]
   }
  },
  "skus": [
   {
    "asin": "B0H4SCZBHY",
    "sku": "55000-FBA",
-   "name": "MAC Energy - Variety Pack 12ct Tray",
+   "name": "MAC Energy by Conor McGregor 4-in-1 Variety Pack Sugar Free Energy Drink",
    "status": "Active",
-   "total": 12086.0,
-   "avail": 926.0,
-   "inbound": 8352.0,
-   "wkAvg": 2005.0,
-   "l30": 8592.0,
-   "wkLeft": 6.0
+   "total": 10031.0,
+   "avail": 2129.0,
+   "inbound": 3900.0,
+   "wkAvg": 1539.0,
+   "l30": 6595.2,
+   "wkLeft": 7.0
   },
   {
    "asin": "B0H4XJ5G4X",
    "sku": "52000-FBA",
-   "name": "MAC Energy - Macberry Lychee 12ct Tray",
+   "name": "MAC Energy by Conor McGregor Macberry Lychee Sugar Free Energy Drink",
    "status": "Active",
-   "total": 9492.0,
-   "avail": 9264.0,
+   "total": 8858.0,
+   "avail": 8467.0,
    "inbound": 0.0,
-   "wkAvg": 675.0,
-   "l30": 2893.0,
-   "wkLeft": 14.0
+   "wkAvg": 543.0,
+   "l30": 2327.04,
+   "wkLeft": 16.0
   },
   {
    "asin": "B0H4WZBN85",
    "sku": "55000-FBA-New",
-   "name": "MAC Energy - Forbidden Green Apple 12ct Tray",
+   "name": "MAC Energy by Conor McGregor Forbidden Green Apple Sugar Free Energy Drink",
    "status": "Active",
-   "total": 15349.0,
-   "avail": 7402.0,
-   "inbound": 4018.0,
-   "wkAvg": 682.0,
-   "l30": 2922.0,
-   "wkLeft": 23.0
+   "total": 14508.0,
+   "avail": 10252.0,
+   "inbound": 0.0,
+   "wkAvg": 477.0,
+   "l30": 2044.8,
+   "wkLeft": 30.0
   },
   {
    "asin": "B0H4XHB9NM",
    "sku": "53000-FBA",
-   "name": "MAC Energy - Orange Creamsicle 12ct Tray",
+   "name": "MAC Energy by Conor McGregor Orange Creamsicle Sugar Free Energy Drink",
    "status": "Active",
-   "total": 17209.0,
-   "avail": 9162.0,
-   "inbound": 7800.0,
-   "wkAvg": 512.0,
-   "l30": 2194.0,
-   "wkLeft": 34.0
+   "total": 17303.0,
+   "avail": 12626.0,
+   "inbound": 0.0,
+   "wkAvg": 379.0,
+   "l30": 1623.36,
+   "wkLeft": 46.0
   },
   {
    "asin": "B0H4X94TKY",
    "sku": "54000-FBA",
-   "name": "MAC Energy - Proper Punch 12ct Tray",
+   "name": "MAC Energy by Conor McGregor Proper Punch Sugar Free Energy Drink",
    "status": "Active",
-   "total": 18032.0,
-   "avail": 11867.0,
+   "total": 16663.0,
+   "avail": 15194.0,
+   "inbound": 40.0,
+   "wkAvg": 365.0,
+   "l30": 1564.8,
+   "wkLeft": 46.0
+  },
+  {
+   "asin": "B0H4WZBN85",
+   "sku": "51000",
+   "name": "MAC Energy by Conor McGregor Forbidden Green Apple Sugar Free Energy Drink",
+   "status": "Inactive",
+   "total": 0.0,
+   "avail": 100.0,
    "inbound": 0.0,
-   "wkAvg": 505.0,
-   "l30": 2163.0,
-   "wkLeft": 36.0
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0H4XJ5G4X",
+   "sku": "52000",
+   "name": "MAC Energy by Conor McGregor Macberry Lychee Sugar Free Energy Drink",
+   "status": "Inactive",
+   "total": 0.0,
+   "avail": 19360.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0H4XHB9NM",
+   "sku": "53000",
+   "name": "MAC Energy by Conor McGregor Orange Creamsicle Sugar Free Energy Drink",
+   "status": "Inactive",
+   "total": 0.0,
+   "avail": 71.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0H4X94TKY",
+   "sku": "54000",
+   "name": "MAC Energy by Conor McGregor Proper Punch Sugar Free Energy Drink",
+   "status": "Inactive",
+   "total": 0.0,
+   "avail": 627.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0H4SCZBHY",
+   "sku": "55000",
+   "name": "MAC Energy by Conor McGregor 4-in-1 Variety Pack Sugar Free Energy Drink",
+   "status": "Inactive",
+   "total": 0.0,
+   "avail": 7198.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0H4XLQ1LP",
+   "sku": "55600-FBM",
+   "name": "MAC Energy - Presidential Cola 12ct Tray",
+   "status": "Inactive",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
+  },
+  {
+   "asin": "B0HMLFS65Y",
+   "sku": "MAC-Energy-Parent",
+   "name": "MAC Energy Drink",
+   "status": "Inactive",
+   "total": 0.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 0.0,
+   "l30": 0.0,
+   "wkLeft": 0.0
   }
  ],
  "po": [
   [
-   "MAC Energy - Variety Pack 12ct Tray ASIN: B0H4SCZBHY \u00b7 SKU: 55000-FBA",
-   "\u2014",
-   "7,800"
+   "MAC Energy by Conor McGregor 4-in-1 Variety Pack Sugar Free Energy Drink ASIN: B0H4SCZBHY \u00b7 SKU: 55000-FBA",
+   "Inbound 3900 Units delayed in Amazon receiving.",
+   "9,200"
   ]
  ],
- "unmapped": []
+ "unmapped": [
+  "B0H4XLQ1LP",
+  "B0HMLFS65Y"
+ ]
 }
