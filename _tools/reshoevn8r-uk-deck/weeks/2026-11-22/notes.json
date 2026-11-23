@@ -1,0 +1,73 @@
+{
+  "_week": "2026-11-16 to 2026-11-22 (Week 47). Written from this week's numbers; rewrite every key each Monday.",
+  "week_story": [
+    "Sales rose 40.0% to £2,872 on 122 units (83 last week). The Shoe Cleaner Kit more than doubled to £697 from £276, the Essential Kit grew to £725 from £547 and the 16oz solution to £472 from £314.",
+    "The Refresh Kit fell 29% to £225. Ad spend was flat at £897 while ad sales rose 30% to £1,553, so ACoS dropped to 57.7% and TACoS to 31.2%."
+  ],
+  "refunds_title": "Refunds back to normal levels",
+  "refunds": [
+    "Refunds were £68 on 3 units (2.6% refund rate), up from £0 last week."
+  ],
+  "pacing_reco": "November is £7,598 through Nov 22 (£345 a day), on pace for about £10.4K vs £11.3K in October and 5% behind the same days last year (£8,005). Black Friday week is the chance to close the gap.",
+  "ads_context": [
+    "Ad sales were £1,553 on £897 of spend; TACoS fell from 43.5% to 31.2%.",
+    "Friday cost £178 for £177 in ad sales and Sunday £139 for £122: the two weakest ad days."
+  ],
+  "ads_strategy": [
+    "Branded keywords: £21 for £281 in sales, 13 orders (7.6% ACoS).",
+    "Category keywords: £545 for £712 (76.5% ACoS). Competitor targets: £99 with no sales. 41 campaigns spent £248 with no sales."
+  ],
+  "bid_moves": [
+    "Lower the Refresh Kit broad category campaign: £108 for £33 and 2 orders.",
+    "Trim “shoe cleaning kit” (exact): £89 for £90, 4 orders (99% ACoS).",
+    "Pause the Crep Protect competitor targets and “shoe cleaner sneakers” (broad): no orders."
+  ],
+  "coupons": [
+    "This week: 0 coupon orders.",
+    "Last week: 0 coupon orders.",
+    "No coupon has run for two weeks; sales grew without one."
+  ],
+  "promotions": [
+    "This week: 16 promotion orders, £29 in promotional discounts (vs 21 orders and £43 last week).",
+    "Fewer promotion orders while total orders rose 41%."
+  ],
+  "events": [
+    "Black Friday: Fri Nov 27. Cyber Monday: Mon Nov 30.",
+    "Deal and coupon set-up deadlines: to confirm with the account team.",
+    "Priority: a coupon on the Essential and Shoe Cleaner Kits for Black Friday week."
+  ],
+  "reviews_title": "No review data in Sellerise",
+  "reviews_body": [
+    "Sellerise returned no review records, rating trend or negative reviews for the Reshoevn8r UK products over the last 90 days.",
+    "That means the review tracker isn't pulling for this account, not that there were no reviews."
+  ],
+  "reviews_reco": [
+    "Turn on review tracking for the UK account in Sellerise (or pull Amazon's Customer Reviews report).",
+    "Sellerise shows 7 critical and 9 warning alerts in the last 30 days, incl. Buy Box, dimensions and suppression alerts: check them."
+  ],
+  "recommendations": [
+    ["Ads", "Cut bids in the Refresh Kit broad category campaign: £108 spent for £33 in sales.", "Ads team", "Today"],
+    ["Ads", "Pause the Crep Protect competitor targets and “shoe cleaner sneakers” broad: spend with no orders.", "Ads team", "Today"],
+    ["Ads", "Review the 41 no-sale campaigns (£248) and trim Friday and Sunday bids.", "Ads team", "This week"],
+    ["Ads", "Add budget to branded terms (7.6% ACoS) and the Shoe Cleaner Kit brand-defence campaign (£30 for £151).", "Ads team", "This week"],
+    ["Promotions", "Set up a Black Friday / Cyber Monday coupon or deal on the Essential and Shoe Cleaner Kits.", "Account team", "Today"],
+    ["Inventory", "Waterproof Spray (17 available, 2.1 weeks) and Shoe Trees (14, 2.0 weeks): confirm the 144 and 72 inbound units check in before Black Friday.", "Account team", "This week"],
+    ["Account health", "Clear the Buy Box, dimensions and suppression alerts; turn on review tracking.", "Account team", "This week"]
+  ],
+  "position": [
+    "November is £7,598 through Nov 22, 5% behind the same days last year (£8,005, when no ads ran).",
+    "Sales rose 40.0% to £2,872 on flat ad spend; ACoS fell to 57.7%."
+  ],
+  "next_steps": [
+    "Launch a Black Friday coupon or deal.",
+    "Cut the Refresh Kit broad and no-sale spend.",
+    "Check in Waterproof Spray and Shoe Trees.",
+    "Clear the Buy Box, dimensions and suppression alerts."
+  ],
+  "data_ask": [
+    "Black Friday / Cyber Monday deal and coupon plan.",
+    "Waterproof Spray and Shoe Trees inbound ETAs.",
+    "Review tracking turned on in Sellerise.",
+    "Reason for the Refresh Kit drop (price or stock)."
+  ]
+}
