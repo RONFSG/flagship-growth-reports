@@ -1,0 +1,427 @@
+{
+ "_source": "Sellerise MCP, account Reshoevn8r, marketplace US, pulled 2026-11-23 (Monday-Sunday weeks; 4-week table from the saved weekly totals)",
+ "weeks": [
+  {
+   "label": "Oct 26 – Nov 1",
+   "revenue": 45773.19,
+   "units": 1489,
+   "orders": 1454,
+   "impressions": 1095731,
+   "clicks": 3415,
+   "refundUnits": 23,
+   "refundRate": 1.58,
+   "spend": 6735.68,
+   "adSales": 19881.68,
+   "acos": 33.88,
+   "tacos": 14.72
+  },
+  {
+   "label": "Nov 2 – 8",
+   "revenue": 47297.38,
+   "units": 1508,
+   "orders": 1483,
+   "impressions": 1070765,
+   "clicks": 3229,
+   "refundUnits": 34,
+   "refundRate": 2.29,
+   "spend": 5335.75,
+   "adSales": 18742.76,
+   "acos": 28.47,
+   "tacos": 11.28
+  },
+  {
+   "label": "Nov 9 – 15",
+   "revenue": 43770.01,
+   "units": 1405,
+   "orders": 1369,
+   "impressions": 996708,
+   "clicks": 3097,
+   "refundUnits": 35,
+   "refundRate": 2.56,
+   "spend": 5030.45,
+   "adSales": 16412.82,
+   "acos": 30.65,
+   "tacos": 11.49
+  },
+  {
+   "label": "Nov 16 – 22",
+   "revenue": 51997.93,
+   "units": 1869,
+   "orders": 1791,
+   "impressions": 1163700,
+   "clicks": 4084,
+   "refundUnits": 31,
+   "refundRate": 1.73,
+   "spend": 7445.22,
+   "adSales": 20048.32,
+   "acos": 37.14,
+   "tacos": 14.32,
+   "net": 12830.25,
+   "refunds": 842.35,
+   "adOrders": 711,
+   "cpc": 1.82,
+   "cvr": 17.41
+  }
+ ],
+ "mtd": {
+  "through": "2026-11-22",
+  "days": 22,
+  "revenue": 150877.46,
+  "units": 5046,
+  "orders": 4900,
+  "spend": 18899.53,
+  "adSales": 58219.53,
+  "acos": 32.46,
+  "tacos": 12.53,
+  "refundRate": 2.1
+ },
+ "mtdLY": {
+  "revenue": 184024.16,
+  "units": 6398,
+  "orders": 6118,
+  "spend": 0,
+  "adSales": 0,
+  "acos": 0,
+  "tacos": 0,
+  "refundRate": 1.63
+ },
+ "daily": [
+  [
+   "2026-11-09",
+   6180.93,
+   791.65,
+   2080.84,
+   193,
+   67
+  ],
+  [
+   "2026-11-10",
+   5568.11,
+   701.56,
+   1881.12,
+   169,
+   61
+  ],
+  [
+   "2026-11-11",
+   6051.73,
+   725.35,
+   2793.67,
+   191,
+   94
+  ],
+  [
+   "2026-11-12",
+   6402.96,
+   691.18,
+   2020.07,
+   202,
+   67
+  ],
+  [
+   "2026-11-13",
+   5887.9,
+   737.77,
+   1641.83,
+   188,
+   57
+  ],
+  [
+   "2026-11-14",
+   6863.41,
+   681.95,
+   2094.11,
+   213,
+   63
+  ],
+  [
+   "2026-11-15",
+   7332.44,
+   713.85,
+   2433.64,
+   241,
+   78
+  ],
+  [
+   "2026-11-16",
+   5825.15,
+   651.74,
+   2039.04,
+   180,
+   66
+  ],
+  [
+   "2026-11-17",
+   5234.31,
+   622.82,
+   1886.59,
+   167,
+   63
+  ],
+  [
+   "2026-11-18",
+   5171.66,
+   674.5,
+   1816.9,
+   158,
+   62
+  ],
+  [
+   "2026-11-19",
+   9073.93,
+   1932.62,
+   4593.83,
+   333,
+   172
+  ],
+  [
+   "2026-11-20",
+   8248.42,
+   1799.62,
+   3938.9,
+   289,
+   142
+  ],
+  [
+   "2026-11-21",
+   8660.13,
+   874.63,
+   2917.45,
+   307,
+   104
+  ],
+  [
+   "2026-11-22",
+   9800.36,
+   889.29,
+   2855.61,
+   357,
+   102
+  ]
+ ],
+ "searchTerms": {
+  "total": 779,
+  "winners": 46,
+  "harvest": 24,
+  "negative": 5,
+  "noPurchase": 6,
+  "rows": [
+   [
+    "reshoev8r",
+    "SB",
+    64672,
+    152,
+    36,
+    208.45,
+    1136.47
+   ],
+   [
+    "reshoev8r",
+    "SP",
+    7838,
+    81,
+    32,
+    100.01,
+    837.02
+   ],
+   [
+    "reshoevn8r shoe cleaner kit",
+    "SP",
+    8334,
+    75,
+    20,
+    102.84,
+    550.04
+   ],
+   [
+    "reshoevn8r",
+    "SP",
+    8230,
+    61,
+    12,
+    86.85,
+    360.97
+   ],
+   [
+    "reshoevn8r shoe cleaner kit",
+    "SB",
+    668,
+    37,
+    8,
+    25.15,
+    342.54
+   ],
+   [
+    "reshoevn8r essential shoe cleaning kit",
+    "SP",
+    793,
+    25,
+    7,
+    37.83,
+    256.59
+   ],
+   [
+    "reshoevn8r essential shoe cleaning kit",
+    "SB",
+    244,
+    20,
+    6,
+    29.36,
+    221.14
+   ],
+   [
+    "reshoevn8r shoe cleaning kit",
+    "SP",
+    2263,
+    17,
+    5,
+    27.66,
+    173.01
+   ]
+  ],
+  "category": [
+   [
+    "shoe cleaning kit",
+    "SB",
+    6766,
+    95,
+    16,
+    258.68,
+    505.13
+   ],
+   [
+    "shoe cleaner",
+    "SB",
+    19483,
+    95,
+    18,
+    255.34,
+    497.38
+   ],
+   [
+    "shoe cleaner kit",
+    "SB",
+    1739,
+    37,
+    9,
+    97.71,
+    340.48
+   ],
+   [
+    "shoe cleaner",
+    "SP",
+    9760,
+    49,
+    11,
+    86.71,
+    254.82
+   ],
+   [
+    "sneaker cleaner kit",
+    "SP",
+    5702,
+    29,
+    8,
+    64.22,
+    254.06
+   ]
+  ]
+ },
+ "targets": {
+  "total": 755,
+  "winners": 67,
+  "needsAttention": 96,
+  "highAcos": 33,
+  "noSales": 6,
+  "lowCtr": 53,
+  "rows": [
+   [
+    "shoe cleaning (SB)",
+    "Phrase",
+    "Category",
+    883.26,
+    1189.03,
+    74.28,
+    290,
+    38
+   ],
+   [
+    "sneaker cleaning kit (SB)",
+    "Exact",
+    "Category",
+    374.66,
+    512.26,
+    73.14,
+    111,
+    14
+   ],
+   [
+    "shoe protector spray (SP)",
+    "Phrase",
+    "Category",
+    260.14,
+    232.45,
+    111.91,
+    103,
+    12
+   ],
+   [
+    "reshoev8r (SB)",
+    "Phrase",
+    "Brand",
+    206.36,
+    1120.47,
+    18.42,
+    147,
+    36
+   ],
+   [
+    "shoe cleaner (SP)",
+    "Broad",
+    "Category",
+    184.23,
+    652.38,
+    28.24,
+    98,
+    28
+   ]
+  ]
+ },
+ "reviews": {
+  "available": false,
+  "note": "Sellerise shows 0 reviews dated in the last 90 days for the top 10 products it returned; current listing ratings on those products are 4.5 to 4.7 stars",
+  "currentRatings": {
+   "B08CSXXX5M": 4.7,
+   "B08TFDN7F3": 4.5,
+   "B08RS7P59K": 4.6,
+   "B0FCKD54WY": 4.7,
+   "B0CTGGJ98X": 4.6,
+   "B08H5XPWQD": 4.5,
+   "B0BFG5NH7B": 4.7,
+   "B08HSH7VHV": 4.7,
+   "B08B5HQXJ5": 4.6,
+   "B0DJ4BSQ3D": 4.5
+  }
+ },
+ "alerts": {
+  "total": 136,
+  "actionable": 13,
+  "critical": 9,
+  "warning": 4,
+  "byType": {
+   "Badge gained": 57,
+   "Badge lost": 26,
+   "Listing price": 14,
+   "Listing images": 12,
+   "New reimbursable units": 7,
+   "Buy Box lost": 4,
+   "Low stock": 4,
+   "Buy Box gained": 3,
+   "Dimensions": 3,
+   "Inactive": 3,
+   "Bullets": 1,
+   "Stranded": 1,
+   "Low inventory fee": 1
+  }
+ }
+}
