@@ -1,5 +1,5 @@
 {
-  "_source": "Sellerise MCP, account Reshoevn8r, marketplace CA, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: ASINs/titles/units/sessions from get_products salesProfitSummaryByAsin; productSales (plus revenue/salesTaxes) via per-ASIN get_account_metrics for week and prior week. Total Sales = productSales (= Amazon Ordered Product Sales). Pulled 2026-11-23.",
+  "_source": "Sellerise MCP, account Reshoevn8r, marketplace CA, targetCurrency CAD (native). Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: ASINs/titles/units/sessions from get_products salesProfitSummaryByAsin; productSales via per-ASIN get_account_metrics for week and prior week. Total Sales = productSales (= Amazon Ordered Product Sales). Pulled 2026-11-24.",
   "week": {
     "start": "2026-11-15",
     "end": "2026-11-21"
@@ -9,23 +9,23 @@
     "end": "2026-11-14"
   },
   "current": {
-    "revenue": 3517.65,
-    "productSales": 3165.5,
-    "salesTaxes": 358.88,
+    "revenue": 5031.91,
+    "productSales": 4525.56,
+    "salesTaxes": 515.97,
     "units": 124,
-    "ppcSpend": 506.84,
-    "ppcSales": 1265.95,
+    "ppcSpend": 724.64,
+    "ppcSales": 1809.83,
     "ppcClicks": 491,
     "ppcImpressions": 205435,
     "ppcOrders": 46
   },
   "prev": {
-    "revenue": 2716.84,
-    "productSales": 2407.05,
-    "salesTaxes": 304.51,
+    "revenue": 3852.73,
+    "productSales": 3413.39,
+    "salesTaxes": 431.77,
     "units": 84,
-    "ppcSpend": 587.13,
-    "ppcSales": 1483.34,
+    "ppcSpend": 831.81,
+    "ppcSales": 2102.89,
     "ppcClicks": 488,
     "ppcImpressions": 166774,
     "ppcOrders": 48
@@ -33,45 +33,31 @@
   "daily": [
     {
       "date": "2026-11-15",
-      "revenue": 453.04,
-      "salesTaxes": 45.59,
-      "productSales": 407.45
+      "productSales": 645.94
     },
     {
       "date": "2026-11-16",
-      "revenue": 207.42,
-      "salesTaxes": 20.03,
-      "productSales": 185.72
+      "productSales": 296.31
     },
     {
       "date": "2026-11-17",
-      "revenue": 236.25,
-      "salesTaxes": 27.46,
-      "productSales": 208.79
+      "productSales": 337.62
     },
     {
       "date": "2026-11-18",
-      "revenue": 262.18,
-      "salesTaxes": 23.57,
-      "productSales": 242.27
+      "productSales": 375.06
     },
     {
       "date": "2026-11-19",
-      "revenue": 827.7,
-      "salesTaxes": 91.49,
-      "productSales": 737.57
+      "productSales": 1183.65
     },
     {
       "date": "2026-11-20",
-      "revenue": 761.49,
-      "salesTaxes": 71.89,
-      "productSales": 692.98
+      "productSales": 1089.43
     },
     {
       "date": "2026-11-21",
-      "revenue": 769.57,
-      "salesTaxes": 78.85,
-      "productSales": 690.72
+      "productSales": 1103.9
     }
   ],
   "products": [
