@@ -1,277 +1,326 @@
 {
- "asOf": "11/09/2026",
- "week": 46,
+ "asOf": "",
+ "week": 0,
  "groups": {
   "g1": {
-   "total": 0,
-   "avail": 0,
-   "inbound": 0,
-   "wkAvg": 0,
-   "l30": 0,
-   "n": 0,
-   "asins": []
+   "total": 684.0,
+   "avail": 682.0,
+   "inbound": 0.0,
+   "wkAvg": 40.0,
+   "l30": 176.0,
+   "n": 6,
+   "asins": [
+    "B0CTGGJ98X",
+    "B08CSXXX5M",
+    "B0BWL4NB9H",
+    "B0BWL4NB9H",
+    "B08RS7P59K",
+    "B08B5HQXJ5"
+   ]
   },
   "g2": {
-   "total": 0,
-   "avail": 0,
-   "inbound": 0,
-   "wkAvg": 0,
-   "l30": 0,
-   "n": 0,
-   "asins": []
+   "total": 245.0,
+   "avail": 243.0,
+   "inbound": 0.0,
+   "wkAvg": 15.0,
+   "l30": 64.0,
+   "n": 2,
+   "asins": [
+    "B0FCKD54WY",
+    "B08DNG8XQZ"
+   ]
   },
   "g3": {
-   "total": 0,
-   "avail": 0,
-   "inbound": 0,
-   "wkAvg": 0,
-   "l30": 0,
-   "n": 0,
-   "asins": []
+   "total": 98.0,
+   "avail": 71.0,
+   "inbound": 0.0,
+   "wkAvg": 8.0,
+   "l30": 34.0,
+   "n": 1,
+   "asins": [
+    "B08TFDN7F3"
+   ]
   },
   "g4": {
-   "total": 0,
-   "avail": 0,
-   "inbound": 0,
-   "wkAvg": 0,
-   "l30": 0,
-   "n": 0,
-   "asins": []
+   "total": 76.0,
+   "avail": 74.0,
+   "inbound": 0.0,
+   "wkAvg": 3.0,
+   "l30": 14.0,
+   "n": 2,
+   "asins": [
+    "B08H5XPWQD",
+    "B08H5XPWQD"
+   ]
   },
   "g5": {
-   "total": 0,
-   "avail": 0,
-   "inbound": 0,
-   "wkAvg": 0,
-   "l30": 0,
-   "n": 0,
-   "asins": []
+   "total": 11.0,
+   "avail": 11.0,
+   "inbound": 0.0,
+   "wkAvg": 13.0,
+   "l30": 55.0,
+   "n": 1,
+   "asins": [
+    "B0CKDN5WVQ"
+   ]
   },
   "g6": {
-   "total": 0,
-   "avail": 0,
-   "inbound": 0,
-   "wkAvg": 0,
-   "l30": 0,
-   "n": 0,
-   "asins": []
+   "total": 13.0,
+   "avail": 13.0,
+   "inbound": 0.0,
+   "wkAvg": 2.0,
+   "l30": 10.0,
+   "n": 1,
+   "asins": [
+    "B08CJX3SDX"
+   ]
   },
   "g7": {
-   "total": 0,
-   "avail": 0,
-   "inbound": 0,
-   "wkAvg": 0,
-   "l30": 0,
-   "n": 0,
-   "asins": []
+   "total": 24.0,
+   "avail": 0.0,
+   "inbound": 0.0,
+   "wkAvg": 1.0,
+   "l30": 3.0,
+   "n": 1,
+   "asins": [
+    "B09CX6ZJY1"
+   ]
   },
   "pr": {
-   "total": 913.0,
-   "avail": 888.0,
+   "total": 72.0,
+   "avail": 72.0,
    "inbound": 0.0,
-   "wkAvg": 22.0,
-   "l30": 267.84000000000003,
-   "n": 13,
+   "wkAvg": 4.0,
+   "l30": 18.0,
+   "n": 3,
    "asins": [
-    "RE8",
-    "RE8",
-    "RE8",
-    "RE8",
-    "RE8",
-    "RE8",
-    "RE8",
-    "RE8",
-    "RE8",
-    "RE8",
-    "RE8",
-    "RE8",
-    "RE8"
+    "B0FS38VB88",
+    "B0B99NMRWK",
+    "B0BFG5NH7B"
    ]
   }
  },
  "skus": [
   {
-   "asin": "RE8",
-   "sku": "RESHOEVN8R Sneaker Odor Eliminator Spray - Shoe Deodorizer, 4oz",
-   "name": "B0CKDN5WVQ",
+   "asin": "B0CKDN5WVQ",
+   "sku": "RE8-DEO",
+   "name": "RESHOEVN8R Sneaker Odor Eliminator Spray - Shoe Deodorizer, 4oz",
    "status": "Active",
-   "total": 16.0,
-   "avail": 16.0,
+   "total": 11.0,
+   "avail": 11.0,
    "inbound": 0.0,
-   "wkAvg": 2.0,
-   "l30": 47.04,
-   "wkLeft": 2.0
+   "wkAvg": 13.0,
+   "l30": 55.0,
+   "wkLeft": 1.0
   },
   {
-   "asin": "RE8",
-   "sku": "RESHOEVN8R Refresh Kit - Routine Shoe Cleaner Set, All Materials",
-   "name": "B0CTGGJ98X",
+   "asin": "B0CTGGJ98X",
+   "sku": "RE8-8BRUSH-CA",
+   "name": "RESHOEVN8R Refresh Kit - Routine Shoe Cleaner Set, All Materials",
    "status": "Active",
-   "total": 46.0,
-   "avail": 46.0,
+   "total": 34.0,
+   "avail": 33.0,
+   "inbound": 0.0,
+   "wkAvg": 8.0,
+   "l30": 36.0,
+   "wkLeft": 4.0
+  },
+  {
+   "asin": "B08CJX3SDX",
+   "sku": "RE8-TREE-FBA",
+   "name": "RESHOEVN8R Adjustable Shoe Trees for Men - Sneaker Shaper, 7-12",
+   "status": "Active",
+   "total": 13.0,
+   "avail": 13.0,
    "inbound": 0.0,
    "wkAvg": 2.0,
-   "l30": 29.76,
+   "l30": 10.0,
    "wkLeft": 7.0
   },
   {
-   "asin": "RE8",
-   "sku": "RESHOEVN8R Adjustable Shoe Trees for Men - Sneaker Shaper, 7-12",
-   "name": "B08CJX3SDX",
+   "asin": "B08TFDN7F3",
+   "sku": "RE8-REPEL-CA",
+   "name": "RESHOEVN8R Waterproof Shoe Spray - Rain & Stain Protector, 6.5oz",
    "status": "Active",
-   "total": 21.0,
-   "avail": 21.0,
+   "total": 98.0,
+   "avail": 71.0,
    "inbound": 0.0,
-   "wkAvg": 2.0,
-   "l30": 9.6,
-   "wkLeft": 10.0
+   "wkAvg": 8.0,
+   "l30": 34.0,
+   "wkLeft": 12.0
   },
   {
-   "asin": "RE8",
-   "sku": "RESHOEVN8R Waterproof Shoe Spray - Rain & Stain Protector, 6.5oz",
-   "name": "B08TFDN7F3",
+   "asin": "B0FCKD54WY",
+   "sku": "RE8-16OZ-BOT-CA",
+   "name": "RESHOEVN8R All-Natural Sneaker Cleaning Solution, 16oz Bottle",
    "status": "Active",
-   "total": 107.0,
-   "avail": 83.0,
+   "total": 72.0,
+   "avail": 71.0,
    "inbound": 0.0,
-   "wkAvg": 2.0,
-   "l30": 40.32,
-   "wkLeft": 13.0
+   "wkAvg": 5.0,
+   "l30": 20.0,
+   "wkLeft": 14.0
   },
   {
-   "asin": "RE8",
-   "sku": "RESHOEVN8R Shoe Cleaner Kit - Sneaker Cleaner for Nubuck & Suede",
-   "name": "B08H5XPWQD",
+   "asin": "B0FS38VB88",
+   "sku": "RE8-LDRY-SHEETS-CA",
+   "name": "RESHOEVN8R Laundry Sheets - Eco-Friendly Shoe Wash Detergent",
    "status": "Active",
-   "total": 42.0,
-   "avail": 41.0,
+   "total": 14.0,
+   "avail": 14.0,
    "inbound": 0.0,
-   "wkAvg": 2.0,
-   "l30": 12.48,
+   "wkAvg": 1.0,
+   "l30": 6.0,
+   "wkLeft": 14.0
+  },
+  {
+   "asin": "B08CSXXX5M",
+   "sku": "RE8-ESSNTL-CA",
+   "name": "RESHOEVN8R Essential Kit - Shoe Cleaner Set for Sneakers & Leather",
+   "status": "Active",
+   "total": 274.0,
+   "avail": 274.0,
+   "inbound": 0.0,
+   "wkAvg": 17.0,
+   "l30": 74.0,
    "wkLeft": 16.0
   },
   {
-   "asin": "RE8",
-   "sku": "RESHOEVN8R All-Natural Sneaker Cleaning Solution, 16oz Bottle",
-   "name": "B0FCKD54WY",
+   "asin": "B08DNG8XQZ",
+   "sku": "RE8-8OZ-BOT-FBA",
+   "name": "RESHOEVN8R All-Natural Shoe Cleaning Solution, 8oz - Sneaker Care",
    "status": "Active",
-   "total": 76.0,
-   "avail": 76.0,
+   "total": 173.0,
+   "avail": 172.0,
    "inbound": 0.0,
-   "wkAvg": 2.0,
-   "l30": 22.08,
-   "wkLeft": 16.0
+   "wkAvg": 10.0,
+   "l30": 44.0,
+   "wkLeft": 17.0
   },
   {
-   "asin": "RE8",
-   "sku": "RESHOEVN8R Laundry Sheets - Eco-Friendly Shoe Wash Detergent",
-   "name": "B0FS38VB88",
+   "asin": "B0B99NMRWK",
+   "sku": "RE8-TOWEL",
+   "name": "RESHOEVN8R Lint-Free Microfiber Cloth, 11.5\"x11.5\" - Shoe Cleaning",
    "status": "Active",
    "total": 17.0,
    "avail": 17.0,
    "inbound": 0.0,
    "wkAvg": 1.0,
-   "l30": 4.8,
+   "l30": 5.0,
    "wkLeft": 17.0
   },
   {
-   "asin": "RE8",
-   "sku": "RESHOEVN8R Starter Kit - Compact Shoe Cleaner Set, All Materials",
-   "name": "B0BWL4NB9H",
+   "asin": "B0BWL4NB9H",
+   "sku": "RE8-STARTER-FBA.1",
+   "name": "RESHOEVN8R Starter Kit - Compact Shoe Cleaner Set, All Materials",
    "status": "Active",
-   "total": 59.0,
-   "avail": 59.0,
+   "total": 57.0,
+   "avail": 57.0,
+   "inbound": 0.0,
+   "wkAvg": 3.0,
+   "l30": 12.0,
+   "wkLeft": 19.0
+  },
+  {
+   "asin": "B0BWL4NB9H",
+   "sku": "RE8-STARTER-CA",
+   "name": "RESHOEVN8R Starter Kit - Compact Shoe Cleaner Set, All Materials",
+   "status": "Active",
+   "total": 57.0,
+   "avail": 57.0,
+   "inbound": 0.0,
+   "wkAvg": 3.0,
+   "l30": 12.0,
+   "wkLeft": 19.0
+  },
+  {
+   "asin": "B08H5XPWQD",
+   "sku": "RE8-DRY-KIT-CA",
+   "name": "RESHOEVN8R Shoe Cleaner Kit - Sneaker Cleaner for Nubuck & Suede",
+   "status": "Active",
+   "total": 38.0,
+   "avail": 37.0,
    "inbound": 0.0,
    "wkAvg": 2.0,
-   "l30": 13.44,
+   "l30": 8.0,
+   "wkLeft": 19.0
+  },
+  {
+   "asin": "B0BFG5NH7B",
+   "sku": "RE8-MINK-OIL-CA",
+   "name": "RESHOEVN8R Leather Conditioner Mink Oil Spray, 6oz - Boots & Shoes",
+   "status": "Active",
+   "total": 41.0,
+   "avail": 41.0,
+   "inbound": 0.0,
+   "wkAvg": 2.0,
+   "l30": 7.0,
    "wkLeft": 21.0
   },
   {
-   "asin": "RE8",
-   "sku": "RESHOEVN8R All-Natural Shoe Cleaning Solution, 8oz - Sneaker Care",
-   "name": "B08DNG8XQZ",
+   "asin": "B09CX6ZJY1",
+   "sku": "RE8-LDRY-BAG-FBA-UPC",
+   "name": "RESHOEVN8R Mesh Laundry Bag - Dual Lace Lock for Sneaker Washing",
    "status": "Active",
-   "total": 184.0,
-   "avail": 184.0,
-   "inbound": 0.0,
-   "wkAvg": 2.0,
-   "l30": 40.32,
-   "wkLeft": 22.0
-  },
-  {
-   "asin": "RE8",
-   "sku": "RESHOEVN8R Lint-Free Microfiber Cloth, 11.5\"x11.5\" - Shoe Cleaning",
-   "name": "B0B99NMRWK",
-   "status": "Active",
-   "total": 18.0,
-   "avail": 18.0,
+   "total": 24.0,
+   "avail": 0.0,
    "inbound": 0.0,
    "wkAvg": 1.0,
-   "l30": 3.84,
-   "wkLeft": 22.0
+   "l30": 3.0,
+   "wkLeft": 24.0
   },
   {
-   "asin": "RE8",
-   "sku": "RESHOEVN8R Signature Kit - Flagship Shoe Cleaner Set, All Materials",
-   "name": "B08RS7P59K",
+   "asin": "B08RS7P59K",
+   "sku": "RE8-SIG-KIT-CA",
+   "name": "RESHOEVN8R Signature Kit - Flagship Shoe Cleaner Set, All Materials",
    "status": "Active",
-   "total": 229.0,
-   "avail": 229.0,
+   "total": 212.0,
+   "avail": 212.0,
    "inbound": 0.0,
-   "wkAvg": 2.0,
-   "l30": 32.64,
-   "wkLeft": 33.0
+   "wkAvg": 8.0,
+   "l30": 36.0,
+   "wkLeft": 27.0
   },
   {
-   "asin": "RE8",
-   "sku": "RESHOEVN8R Original Kit - Versatile Shoe Cleaner Set, All Materials",
-   "name": "B08B5HQXJ5",
+   "asin": "B08H5XPWQD",
+   "sku": "RE8-DRY-KIT-FBA",
+   "name": "RESHOEVN8R Shoe Cleaner Kit - Sneaker Cleaner for Nubuck & Suede",
    "status": "Active",
-   "total": 54.0,
-   "avail": 54.0,
+   "total": 38.0,
+   "avail": 37.0,
    "inbound": 0.0,
    "wkAvg": 1.0,
-   "l30": 6.72,
+   "l30": 6.0,
    "wkLeft": 38.0
   },
   {
-   "asin": "RE8",
-   "sku": "RESHOEVN8R Leather Conditioner Mink Oil Spray, 6oz - Boots & Shoes",
-   "name": "B0BFG5NH7B",
+   "asin": "B08B5HQXJ5",
+   "sku": "RE8-RT-FRESH-FBA",
+   "name": "RESHOEVN8R Original Kit - Versatile Shoe Cleaner Set, All Materials",
    "status": "Active",
-   "total": 44.0,
-   "avail": 44.0,
+   "total": 50.0,
+   "avail": 49.0,
    "inbound": 0.0,
    "wkAvg": 1.0,
-   "l30": 4.8,
-   "wkLeft": 43.0
+   "l30": 6.0,
+   "wkLeft": 50.0
   }
  ],
  "po": [
   [
-   "B0CKDN5WVQ ASIN: RE8-DEO \u00b7 SKU: RESHOEVN8R Sneaker Odor Eliminator Spray - Shoe Deodorizer, 4oz",
+   "RESHOEVN8R Sneaker Odor Eliminator Spray - Shoe Deodorizer, 4oz ASIN: B0CKDN5WVQ \u00b7 SKU: RE8-DEO",
    "\u2014",
-   "124"
+   "144"
   ],
   [
-   "B0CTGGJ98X ASIN: RE8-8BRUSH-CA \u00b7 SKU: RESHOEVN8R Refresh Kit - Routine Shoe Cleaner Set, All Materials",
+   "RESHOEVN8R Refresh Kit - Routine Shoe Cleaner Set, All Materials ASIN: B0CTGGJ98X \u00b7 SKU: RE8-8BRUSH-CA",
    "\u2014",
-   "48"
+   "72"
   ]
  ],
  "unmapped": [
-  "RE8",
-  "RE8",
-  "RE8",
-  "RE8",
-  "RE8",
-  "RE8",
-  "RE8",
-  "RE8",
-  "RE8",
-  "RE8",
-  "RE8",
-  "RE8",
-  "RE8"
+  "B0FS38VB88",
+  "B0B99NMRWK",
+  "B0BFG5NH7B"
  ]
 }
