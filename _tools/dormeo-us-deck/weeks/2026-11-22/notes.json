@@ -1,0 +1,72 @@
+{
+ "_week": "2026-11-16 to 2026-11-22 (Week 47). Written from that week's numbers.",
+ "week_story": [
+  "Revenue rose 54% to $106.6K on 318 units (195 the week before). Queen led with $41.0K (+61%, 117 units) and King added $26.5K (+70%, 62 units).",
+  "Twin & XL nearly doubled to $15.8K. Saturday Nov 21 was the best day at $22.2K; Full slipped 8% to $10.0K."
+ ],
+ "refunds_title": "Refunds fell",
+ "refunds": [
+  "Refunds were $5,423 (8.2% refund rate), down from $7,910 (16.9%) last week. Full was $2,118 of it (7 units) and King $1,605 (4 units); check Full's return reasons."
+ ],
+ "pacing_reco": "November is at $247.3K through Nov 22, 7% behind the same days last year ($265.8K), up from 23% behind a week ago. BF/CM (Nov 27–30) can close the rest.",
+ "ads_context": [
+  "Ad spend rose 15% to $6,767 while ad sales rose 35% to $54,620.",
+  "ACoS fell to 12.4% (from 14.6%) and TACoS to 6.3% (from 8.5%)."
+ ],
+ "ads_strategy": [
+  "Branded keywords returned $29,219 on $2,634 (9.0% ACoS, 86 orders); brand defense added $15,681 at 12.2% ACoS.",
+  "Audience display spent $1,130 for $2,201 (6 orders, 51% ACoS); Streaming TV spent $258 with no sales."
+ ],
+ "bid_moves": [
+  "Lower bids on “mattress topper” (exact): $783 spent for $2,201 in sales (6 orders, 35.6% ACoS).",
+  "Cut bids on “colchon dormeo” (exact): $156 spent for one $260 order (59.8% ACoS).",
+  "Pause or negate the video ad on “dormeo topper” (phrase): $51 spent, 33 clicks, 0 orders."
+ ],
+ "coupons": [
+  "This week: 57 coupon orders (105 last week).",
+  "November to date: 175 coupon orders and 36 promotion orders."
+ ],
+ "promotions": [
+  "This week: 6 promotion orders and $2,567 in promotional discounts (vs $4,583 last week).",
+  "November to date: $7,986 in promotional discounts."
+ ],
+ "events": [
+  "Black Friday / Cyber Monday: Nov 27 – Nov 30.",
+  "Shoppers are already searching for deals: “king size mattress topper black friday sale dormeo” drove an order this week.",
+  "Priority: Queen, King and Full stock at FBA before BF/CM; Full has under 1 week available."
+ ],
+ "reviews_title": "No new reviews in Sellerise",
+ "reviews_body": [
+  "Sellerise shows 0 reviews dated in the last 90 days for the Dormeo US products, so there is no rating trend to show.",
+  "Current listing ratings: Premium topper 4.2, Essentials topper 4.4, SnowTek topper 3.5, Dark King pillow 3.8."
+ ],
+ "reviews_reco": [
+  "Turn on review tracking for Dormeo US in Sellerise (or pull Amazon's Customer Reviews report) so the deck can show new reviews per line.",
+  "SnowTek (3.5) and the Dark King pillow (3.8) have the lowest ratings; read their newest 1–3 star reviews before pushing them in BF/CM."
+ ],
+ "recommendations": [
+  ["Inventory", "Get the 451 Queen, 201 King and 70 Full toppers shown inbound checked in at FBA; Full has 12 available (under 1 week).", "Account team", "Before Nov 27"],
+  ["Inventory", "King has 1.4 weeks and SnowTek & Essentials 2.3 weeks available at the sheet's pace; this week sold 62 King units.", "Account team", "This week"],
+  ["Ads", "Lower bids on “mattress topper” exact ($783, 35.6% ACoS) and “colchon dormeo” ($156, 59.8% ACoS).", "Ads team", "This week"],
+  ["Ads", "Pause Streaming TV ($258, 0 sales) and the “dormeo topper” video target ($51, 0 orders).", "Ads team", "This week"],
+  ["Ads", "Raise budgets on branded keywords (9.0% ACoS) and brand defense (12.2% ACoS) for BF/CM.", "Ads team", "Nov 26"],
+  ["Marketing", "Confirm BF/CM coupons and deals on Queen, King and Twin toppers; coupons drove 175 orders this month.", "Account team", "By Nov 25"],
+  ["Account health", "Check Full's return reasons ($2,118 of $5,423 refunds) and turn on review tracking.", "Account team", "Next week"]
+ ],
+ "position": [
+  "This week grew 54% to $106.6K on 318 units, with ad spend up 15% and ACoS down to 12.4%.",
+  "November is at $247.3K through Nov 22, 7% behind last year's $265.8K; BF/CM stock and deals decide the month."
+ ],
+ "next_steps": [
+  "Get Queen, King and Full checked in at FBA.",
+  "Trim the high-ACoS and no-sale ad spend.",
+  "Lock BF/CM coupons and deals.",
+  "Find the cause of Full refunds."
+ ],
+ "data_ask": [
+  "BF/CM deal and coupon plan.",
+  "Review tracking turned on in Sellerise.",
+  "Category / brand impression share (Brand Analytics).",
+  "Inventory sheet date on the weekly page (it shows only the week number)."
+ ]
+}

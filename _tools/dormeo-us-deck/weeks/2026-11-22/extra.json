@@ -1,0 +1,435 @@
+{
+ "_source": "Sellerise MCP, account Dormeo, marketplace US, pulled 2026-11-24 (Monday-Sunday weeks; 4-week table from the saved weekly totals)",
+ "weeks": [
+  {
+   "label": "Oct 26 – Nov 1",
+   "revenue": 49136.51,
+   "units": 145,
+   "orders": 145,
+   "impressions": 447126,
+   "clicks": 2780,
+   "refundUnits": 28,
+   "refundRate": 19.31,
+   "spend": 4353.86,
+   "adSales": 24031.2,
+   "acos": 18.12,
+   "tacos": 8.86
+  },
+  {
+   "label": "Nov 2 – 8",
+   "revenue": 65482.4,
+   "units": 182,
+   "orders": 176,
+   "impressions": 370183,
+   "clicks": 3047,
+   "refundUnits": 24,
+   "refundRate": 13.64,
+   "spend": 4364.2,
+   "adSales": 32473.35,
+   "acos": 13.44,
+   "tacos": 6.66
+  },
+  {
+   "label": "Nov 9 – 15",
+   "revenue": 69209.99,
+   "units": 195,
+   "orders": 189,
+   "impressions": 468419,
+   "clicks": 3764,
+   "refundUnits": 32,
+   "refundRate": 16.93,
+   "spend": 5897.31,
+   "adSales": 40415.87,
+   "acos": 14.59,
+   "tacos": 8.52
+  },
+  {
+   "label": "Nov 16 – 22",
+   "revenue": 106600.06,
+   "units": 318,
+   "orders": 304,
+   "impressions": 518480,
+   "clicks": 3871,
+   "refundUnits": 25,
+   "refundRate": 8.22,
+   "spend": 6767.23,
+   "adSales": 54619.77,
+   "acos": 12.39,
+   "tacos": 6.35,
+   "net": 69860.92,
+   "refunds": 5422.52,
+   "adOrders": 159,
+   "cpc": 1.75,
+   "cvr": 4.11
+  }
+ ],
+ "mtd": {
+  "through": "2026-11-22",
+  "days": 22,
+  "revenue": 247336.76,
+  "units": 713,
+  "orders": 687,
+  "spend": 17638.8,
+  "adSales": 136239.33,
+  "acos": 12.95,
+  "tacos": 7.13,
+  "refundRate": 11.79
+ },
+ "mtdLY": {
+  "through": "2025-11-22",
+  "days": 22,
+  "revenue": 265841.74,
+  "units": 730,
+  "orders": 705,
+  "spend": 0,
+  "adSales": 0,
+  "acos": 0,
+  "tacos": 0,
+  "refundRate": 10.5
+ },
+ "daily": [
+  [
+   "2026-11-09",
+   10368.89,
+   693.24,
+   6697.96,
+   29,
+   17
+  ],
+  [
+   "2026-11-10",
+   8019.76,
+   601.58,
+   4410,
+   22,
+   12
+  ],
+  [
+   "2026-11-11",
+   8074.64,
+   638.25,
+   5853.95,
+   25,
+   18
+  ],
+  [
+   "2026-11-12",
+   5774.73,
+   923.11,
+   4371,
+   15,
+   11
+  ],
+  [
+   "2026-11-13",
+   8744.02,
+   855.59,
+   5415.99,
+   24,
+   14
+  ],
+  [
+   "2026-11-14",
+   16974.63,
+   1158.49,
+   8719,
+   45,
+   22
+  ],
+  [
+   "2026-11-15",
+   11253.32,
+   1027.05,
+   4947.97,
+   29,
+   14
+  ],
+  [
+   "2026-11-16",
+   11222.39,
+   633.51,
+   5845.99,
+   30,
+   17
+  ],
+  [
+   "2026-11-17",
+   8912.69,
+   550.7,
+   6070.16,
+   24,
+   16
+  ],
+  [
+   "2026-11-18",
+   11072.8,
+   643.18,
+   7247.78,
+   31,
+   20
+  ],
+  [
+   "2026-11-19",
+   18336.2,
+   1308.88,
+   7334.69,
+   54,
+   23
+  ],
+  [
+   "2026-11-20",
+   16704.65,
+   988.82,
+   10248.38,
+   46,
+   30
+  ],
+  [
+   "2026-11-21",
+   22239.19,
+   1154.49,
+   10929.58,
+   63,
+   32
+  ],
+  [
+   "2026-11-22",
+   18112.14,
+   1487.65,
+   6943.19,
+   56,
+   21
+  ]
+ ],
+ "searchTerms": {
+  "total": 281,
+  "winners": 8,
+  "harvest": 2,
+  "negative": 6,
+  "noPurchase": 8,
+  "rows": [
+   [
+    "dormeo mattress topper",
+    "SP",
+    8806,
+    351,
+    30,
+    1009.23,
+    10444.79
+   ],
+   [
+    "dormeo mattress topper queen",
+    "SP",
+    2352,
+    104,
+    10,
+    167.34,
+    3344.2
+   ],
+   [
+    "dormeo",
+    "SP",
+    11278,
+    146,
+    7,
+    207.64,
+    2937.6
+   ],
+   [
+    "dormeo mattress topper",
+    "SB",
+    4648,
+    129,
+    6,
+    260.86,
+    2346.2
+   ],
+   [
+    "dormeo mattress topper king",
+    "SP",
+    1427,
+    45,
+    6,
+    146.43,
+    2287
+   ],
+   [
+    "dormeo topper full size",
+    "SP",
+    2916,
+    70,
+    3,
+    49.01,
+    975.2
+   ],
+   [
+    "dormeo mattress cover",
+    "SP",
+    103,
+    6,
+    3,
+    8.02,
+    683.98
+   ],
+   [
+    "dormeo mattress topper twin size 75\"×38\" cover",
+    "SP",
+    1,
+    1,
+    2,
+    1.1,
+    538.2
+   ]
+  ],
+  "category": [
+   [
+    "mattress topper",
+    "SP",
+    80831,
+    237,
+    5,
+    688.07,
+    1805.2
+   ],
+   [
+    "cooling mattress topper",
+    "SP",
+    90,
+    2,
+    1,
+    0.84,
+    399
+   ],
+   [
+    "mattress toppers",
+    "SP",
+    4713,
+    48,
+    1,
+    95.22,
+    396
+   ],
+   [
+    "firm king mattress topper",
+    "SP",
+    19,
+    1,
+    1,
+    3.19,
+    396
+   ],
+   [
+    "mattress topper king",
+    "SB",
+    7,
+    1,
+    1,
+    1.11,
+    396
+   ]
+  ]
+ },
+ "targets": {
+  "total": 577,
+  "winners": 30,
+  "needsAttention": 45,
+  "highAcos": 4,
+  "noSales": 8,
+  "lowCtr": 11,
+  "rows": [
+   [
+    "mattress topper",
+    "Exact",
+    "Category",
+    782.5,
+    2201.2,
+    35.55,
+    277,
+    6
+   ],
+   [
+    "colchon dormeo",
+    "Exact",
+    "Brand",
+    155.53,
+    259.99,
+    59.82,
+    26,
+    1
+   ],
+   [
+    "Similar-product audience (30-day views)",
+    "SD",
+    "Category",
+    76.99,
+    0,
+    null,
+    222,
+    0
+   ],
+   [
+    "dormeo mattress topper",
+    "Exact",
+    "Brand",
+    79.37,
+    1049,
+    7.57,
+    91,
+    2
+   ],
+   [
+    "dormeo",
+    "Phrase",
+    "Brand",
+    65.25,
+    99,
+    65.91,
+    65,
+    1
+   ]
+  ]
+ },
+ "reviews": {
+  "available": false,
+  "periodReviews": 0,
+  "note": "Sellerise shows 0 reviews dated in the last 90 days for all 8 review ASINs; current listing ratings below",
+  "ratings": {
+   "Premium topper (Queen/Twin listing)": 4.2,
+   "The Essentials King topper": 4.4,
+   "SnowTek topper": 3.5,
+   "Dark King pillow": 3.8,
+   "True Evolution pillow": 4.0,
+   "Mattress protector (Twin)": 4.2,
+   "Mattress protector (Twin XL, older)": 3.8,
+   "SnowTek sheets": 4.6
+  }
+ },
+ "alerts": {
+  "total": 332,
+  "actionable": 61,
+  "critical": 41,
+  "warning": 20,
+  "byType": {
+   "Listing images": 160,
+   "Inactive": 35,
+   "Listing price": 34,
+   "Buy Box lost": 30,
+   "Buy Box gained": 30,
+   "Out of stock": 13,
+   "Low inventory fee": 6,
+   "Reimbursable units": 6,
+   "Days of supply": 4,
+   "Stranded": 2,
+   "Dimensions": 2,
+   "Negative feedback": 2,
+   "Hijacker": 1,
+   "Hijacker (liquidation)": 1,
+   "Rating star dropped": 1,
+   "Rating star gained": 1,
+   "Parent ASIN changed": 1,
+   "Badge lost": 1,
+   "Badge gained": 1,
+   "Bullets": 1
+  }
+ }
+}
