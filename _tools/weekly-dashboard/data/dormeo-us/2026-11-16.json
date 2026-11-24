@@ -1,0 +1,193 @@
+{
+  "_source": "Sellerise MCP, account Dormeo, marketplace US, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: ASINs/titles/units/sessions from get_products salesProfitSummaryByAsin; productSales (plus revenue/salesTaxes) via per-ASIN get_account_metrics groupBy none (USD). Total Sales = productSales (= Amazon Ordered Product Sales). Pulled 2026-11-24.",
+  "week": {
+    "start": "2026-11-16",
+    "end": "2026-11-22"
+  },
+  "prevWeek": {
+    "start": "2026-11-09",
+    "end": "2026-11-15"
+  },
+  "current": {
+    "productSales": 103106.21,
+    "revenue": 106600.06,
+    "salesTaxes": 6005.44,
+    "units": 318,
+    "ppcSpend": 6767.23,
+    "ppcSales": 54619.77,
+    "ppcClicks": 3871,
+    "ppcImpressions": 518469,
+    "ppcOrders": 159
+  },
+  "prev": {
+    "productSales": 69311.76,
+    "revenue": 69247.71,
+    "salesTaxes": 4504.48,
+    "units": 195,
+    "ppcSpend": 5885.87,
+    "ppcSales": 43533.07,
+    "ppcClicks": 3756,
+    "ppcImpressions": 469930,
+    "ppcOrders": 116
+  },
+  "daily": [
+    {
+      "date": "2026-11-16",
+      "revenue": 11222.39,
+      "salesTaxes": 704.47,
+      "productSales": 11331.98
+    },
+    {
+      "date": "2026-11-17",
+      "revenue": 8912.69,
+      "salesTaxes": 605.13,
+      "productSales": 8879.99
+    },
+    {
+      "date": "2026-11-18",
+      "revenue": 11072.8,
+      "salesTaxes": 624.76,
+      "productSales": 11264.72
+    },
+    {
+      "date": "2026-11-19",
+      "revenue": 18336.2,
+      "salesTaxes": 1246.08,
+      "productSales": 17362.66
+    },
+    {
+      "date": "2026-11-20",
+      "revenue": 16704.65,
+      "salesTaxes": 1137.34,
+      "productSales": 15603.19
+    },
+    {
+      "date": "2026-11-21",
+      "revenue": 22239.19,
+      "salesTaxes": 1119.05,
+      "productSales": 21120.14
+    },
+    {
+      "date": "2026-11-22",
+      "revenue": 18112.14,
+      "salesTaxes": 568.61,
+      "productSales": 17543.53
+    }
+  ],
+  "products": [
+    {
+      "asin": "B07WFHMD2V",
+      "title": "Dormeo Premium Queen Breathable Mattress Topper - Octaspring",
+      "cur": {
+        "revenue": 40950.38,
+        "salesTaxes": 2290.68,
+        "units": 117,
+        "sessions": 2157,
+        "productSales": 39417.8
+      },
+      "prev": {
+        "revenue": 25427.02,
+        "salesTaxes": 1606.72,
+        "units": 64,
+        "sessions": 2226,
+        "productSales": 25536
+      }
+    },
+    {
+      "asin": "B07WGH7QNP",
+      "title": "Dormeo Premium King Breathable Mattress Topper - Octaspring",
+      "cur": {
+        "revenue": 26455.27,
+        "salesTaxes": 1338.97,
+        "units": 62,
+        "sessions": 892,
+        "productSales": 25938
+      },
+      "prev": {
+        "revenue": 15595.52,
+        "salesTaxes": 974.27,
+        "units": 32,
+        "sessions": 889,
+        "productSales": 15834
+      }
+    },
+    {
+      "asin": "B07WGHV3DS",
+      "title": "Dormeo Premium Full Breathable Mattress Topper - Octaspring",
+      "cur": {
+        "revenue": 9986.94,
+        "salesTaxes": 696.54,
+        "units": 25,
+        "sessions": 416,
+        "productSales": 9721.6
+      },
+      "prev": {
+        "revenue": 10830.33,
+        "salesTaxes": 705.16,
+        "units": 28,
+        "sessions": 789,
+        "productSales": 10953.99
+      }
+    },
+    {
+      "asin": "B07WHHQBQX",
+      "title": "Dormeo Premium Twin XL Breathable Mattress Topper - Octaspring",
+      "cur": {
+        "revenue": 8403.14,
+        "salesTaxes": 504.02,
+        "units": 29,
+        "sessions": 305,
+        "productSales": 8125
+      },
+      "prev": {
+        "revenue": 4907.26,
+        "salesTaxes": 341.01,
+        "units": 15,
+        "sessions": 239,
+        "productSales": 4875
+      }
+    },
+    {
+      "asin": "B07WJMHJ2P",
+      "title": "Dormeo Premium Twin Breathable Mattress Topper - Octaspring",
+      "cur": {
+        "revenue": 7354.68,
+        "salesTaxes": 392.12,
+        "units": 28,
+        "sessions": 512,
+        "productSales": 7205.9
+      },
+      "prev": {
+        "revenue": 3310.76,
+        "salesTaxes": 260.96,
+        "units": 11,
+        "sessions": 511,
+        "productSales": 3289
+      }
+    },
+    {
+      "asin": "B07WGHBD5W",
+      "title": "Dormeo Premium California King Breathable Mattress Topper - Octaspring",
+      "cur": {
+        "revenue": 5965.14,
+        "salesTaxes": 371.64,
+        "units": 14,
+        "sessions": 171,
+        "productSales": 5643
+      },
+      "prev": {
+        "revenue": 923.3,
+        "salesTaxes": 32.3,
+        "units": 2,
+        "sessions": 83,
+        "productSales": 990
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights —** Dormeo US grew total sales to $103,106 in Week 47, up 48.8% from $69,311 the prior week, on 318 units. Organic sales led the way at $48,486 (+88.1% WoW). The Queen Topper anchored the week at $39,417 (+54.4%) on 117 units with a 5.4% conversion rate, the King Topper climbed to $25,938 (+63.8%) with a 7.0% conversion rate, and the Twin Topper more than doubled to $7,205 (+119.1%). Saturday, Nov 21 was the peak day at $21,120.",
+    "**Metrics to Watch —** The Full Topper eased to $9,721 (-11.3%) on 25 units, driven primarily by a 47.3% drop in sessions to 416. The silver lining is that shoppers who did land converted better: Full conversion rose to 6.0% (+69.3%). Queen sessions also eased 3.1% to 2,157, but its conversion gain more than offset that. We are rebuilding Full Topper traffic so its stronger conversion turns into volume again.",
+    "**Ad Spend Efficiency —** Ads became more efficient as they scaled. ROAS improved to 8.07x from 7.40x and TACoS fell to 6.6% from 8.49%. Ad spend of $6,767 (prior $5,885) drove PPC revenue of $54,619 (+25.5%) at a 12.4% ACOS, with a 0.75% ad CTR and 4.11% ad conversion.",
+    "**Actions This Week —** (1) Raise ad visibility on the Full Topper to win back sessions from 416 toward last week's level, leaning on its 6.0% conversion rate. (2) Shift incremental budget to the King (7.0% CVR) and Twin XL (9.5% CVR) while holding ACOS near 12.4%. (3) Test new Sponsored Brands ad creative to lift ad CTR above 0.75%."
+  ]
+}
