@@ -1,5 +1,5 @@
 {
-  "_source": "Sellerise MCP, account Dormeo, marketplace CA, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: ASINs/titles/units/sessions from get_products salesProfitSummaryByAsin; productSales (plus revenue/salesTaxes) via per-ASIN get_account_metrics groupBy none (USD). Total Sales = productSales (= Amazon Ordered Product Sales). Pulled 2026-11-24.",
+  "_source": "Sellerise MCP, account Dormeo, marketplace CA, targetCurrency CAD (native). Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics groupBy day. Total Sales = productSales. Pulled 2026-11-25.",
   "week": {
     "start": "2026-11-16",
     "end": "2026-11-22"
@@ -9,69 +9,55 @@
     "end": "2026-11-15"
   },
   "current": {
-    "productSales": 71464.95,
-    "revenue": 78742.35,
-    "salesTaxes": 8120.63,
+    "revenue": 112752.93,
+    "productSales": 102212.8,
+    "salesTaxes": 11744.97,
     "units": 254,
-    "ppcSpend": 5319.65,
-    "ppcSales": 51678.17,
+    "ppcSpend": 7607.91,
+    "ppcSales": 74054.48,
     "ppcClicks": 4646,
-    "ppcImpressions": 1048997,
-    "ppcOrders": 178
+    "ppcImpressions": 1048949,
+    "ppcOrders": 179
   },
   "prev": {
-    "productSales": 41099.07,
-    "revenue": 42798.36,
-    "salesTaxes": 4926.11,
+    "revenue": 60800.38,
+    "productSales": 58388.02,
+    "salesTaxes": 6998.46,
     "units": 115,
-    "ppcSpend": 4073.35,
-    "ppcSales": 32005.27,
+    "ppcSpend": 5795.85,
+    "ppcSales": 45499.25,
     "ppcClicks": 3854,
-    "ppcImpressions": 728582,
+    "ppcImpressions": 728579,
     "ppcOrders": 88
   },
   "daily": [
     {
       "date": "2026-11-16",
-      "revenue": 7875.4,
-      "salesTaxes": 874.36,
-      "productSales": 7456.6
+      "productSales": 11250.37
     },
     {
       "date": "2026-11-17",
-      "revenue": 3842.22,
-      "salesTaxes": 413.61,
-      "productSales": 3779.39
+      "productSales": 5490.78
     },
     {
       "date": "2026-11-18",
-      "revenue": 3671.07,
-      "salesTaxes": 372.14,
-      "productSales": 3484.04
+      "productSales": 5251.56
     },
     {
       "date": "2026-11-19",
-      "revenue": 13059.28,
-      "salesTaxes": 1444.83,
-      "productSales": 11562.99
+      "productSales": 18675.3
     },
     {
       "date": "2026-11-20",
-      "revenue": 15684.71,
-      "salesTaxes": 1710.22,
-      "productSales": 13935.57
+      "productSales": 22439.56
     },
     {
       "date": "2026-11-21",
-      "revenue": 15338.18,
-      "salesTaxes": 1612.93,
-      "productSales": 13667.41
+      "productSales": 21943.79
     },
     {
       "date": "2026-11-22",
-      "revenue": 19271.49,
-      "salesTaxes": 1692.54,
-      "productSales": 17578.95
+      "productSales": 27701.57
     }
   ],
   "products": [
@@ -221,9 +207,9 @@
     }
   ],
   "insights": [
-    "**Weekly Highlights —** Dormeo Canada grew total sales to $71,464 (USD) in Week 47, up 73.9% from $41,099 the prior week, on 254 units. Organic sales rose to $19,786 (+117.6% WoW). The King Topper more than doubled to $14,841 (+133.6%) on 39 units (+178.6%), the Queen Topper led at $29,808 (+44.2%) on 92 units with a 7.3% conversion rate, and the Twin XL jumped to $6,606 (+194.7%). Sunday, Nov 22 was the peak day at $17,578.",
-    "**Metrics to Watch —** Sales were softer midweek, at $3,779 on Tue Nov 17 and $3,484 on Wed Nov 18, before building from $11,562 on Thursday to $17,578 on Sunday. Twin XL sessions eased 14.2% to 549, but its conversion rose to 5.1%, so sales still grew. Conversion on the Full (3.3%) and Twin (2.6%) trails the Queen's 7.3%, and ad CTR is 0.44%. We are reviewing budget pacing to carry the late-week momentum through the whole week.",
-    "**Ad Spend Efficiency —** Efficiency improved as spend grew. ROAS rose to 9.71x from 7.86x and TACoS fell to 7.4% from 9.91%. Ad spend of $5,319 (prior $4,073) drove PPC revenue of $51,678 (+61.5%) at a 10.3% ACOS and 3.83% ad conversion.",
-    "**Actions This Week —** (1) Review daily budget caps and pacing so ads stay fully live Tuesday–Wednesday, aiming to lift midweek days toward Monday's $7,456. (2) Scale spend on the Queen (7.3% CVR) and King (39 units, +178.6%) while holding ACOS near 10.3%. (3) Test new Sponsored Brands ad creative to push ad CTR above 0.44%."
+    "**Weekly Highlights \u2014** Dormeo Canada grew total sales to $71,464 (USD) in Week 47, up 73.9% from $41,099 the prior week, on 254 units. Organic sales rose to $19,786 (+117.6% WoW). The King Topper more than doubled to $14,841 (+133.6%) on 39 units (+178.6%), the Queen Topper led at $29,808 (+44.2%) on 92 units with a 7.3% conversion rate, and the Twin XL jumped to $6,606 (+194.7%). Sunday, Nov 22 was the peak day at $17,578.",
+    "**Metrics to Watch \u2014** Sales were softer midweek, at $3,779 on Tue Nov 17 and $3,484 on Wed Nov 18, before building from $11,562 on Thursday to $17,578 on Sunday. Twin XL sessions eased 14.2% to 549, but its conversion rose to 5.1%, so sales still grew. Conversion on the Full (3.3%) and Twin (2.6%) trails the Queen's 7.3%, and ad CTR is 0.44%. We are reviewing budget pacing to carry the late-week momentum through the whole week.",
+    "**Ad Spend Efficiency \u2014** Efficiency improved as spend grew. ROAS rose to 9.71x from 7.86x and TACoS fell to 7.4% from 9.91%. Ad spend of $5,319 (prior $4,073) drove PPC revenue of $51,678 (+61.5%) at a 10.3% ACOS and 3.83% ad conversion.",
+    "**Actions This Week \u2014** (1) Review daily budget caps and pacing so ads stay fully live Tuesday\u2013Wednesday, aiming to lift midweek days toward Monday's $7,456. (2) Scale spend on the Queen (7.3% CVR) and King (39 units, +178.6%) while holding ACOS near 10.3%. (3) Test new Sponsored Brands ad creative to push ad CTR above 0.44%."
   ]
 }
