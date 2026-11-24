@@ -1,0 +1,229 @@
+{
+  "_source": "Sellerise MCP, account Dormeo, marketplace CA, targetCurrency USD. Totals: get_account_metrics groupBy none per week. Daily: get_account_metrics per single day. Products: ASINs/titles/units/sessions from get_products salesProfitSummaryByAsin; productSales (plus revenue/salesTaxes) via per-ASIN get_account_metrics groupBy none (USD). Total Sales = productSales (= Amazon Ordered Product Sales). Pulled 2026-11-24.",
+  "week": {
+    "start": "2026-11-16",
+    "end": "2026-11-22"
+  },
+  "prevWeek": {
+    "start": "2026-11-09",
+    "end": "2026-11-15"
+  },
+  "current": {
+    "productSales": 71464.95,
+    "revenue": 78742.35,
+    "salesTaxes": 8120.63,
+    "units": 254,
+    "ppcSpend": 5319.65,
+    "ppcSales": 51678.17,
+    "ppcClicks": 4646,
+    "ppcImpressions": 1048997,
+    "ppcOrders": 178
+  },
+  "prev": {
+    "productSales": 41099.07,
+    "revenue": 42798.36,
+    "salesTaxes": 4926.11,
+    "units": 115,
+    "ppcSpend": 4073.35,
+    "ppcSales": 32005.27,
+    "ppcClicks": 3854,
+    "ppcImpressions": 728582,
+    "ppcOrders": 88
+  },
+  "daily": [
+    {
+      "date": "2026-11-16",
+      "revenue": 7875.4,
+      "salesTaxes": 874.36,
+      "productSales": 7456.6
+    },
+    {
+      "date": "2026-11-17",
+      "revenue": 3842.22,
+      "salesTaxes": 413.61,
+      "productSales": 3779.39
+    },
+    {
+      "date": "2026-11-18",
+      "revenue": 3671.07,
+      "salesTaxes": 372.14,
+      "productSales": 3484.04
+    },
+    {
+      "date": "2026-11-19",
+      "revenue": 13059.28,
+      "salesTaxes": 1444.83,
+      "productSales": 11562.99
+    },
+    {
+      "date": "2026-11-20",
+      "revenue": 15684.71,
+      "salesTaxes": 1710.22,
+      "productSales": 13935.57
+    },
+    {
+      "date": "2026-11-21",
+      "revenue": 15338.18,
+      "salesTaxes": 1612.93,
+      "productSales": 13667.41
+    },
+    {
+      "date": "2026-11-22",
+      "revenue": 19271.49,
+      "salesTaxes": 1692.54,
+      "productSales": 17578.95
+    }
+  ],
+  "products": [
+    {
+      "asin": "B07WFHMD2V",
+      "title": "Dormeo Premium Queen Breathable Mattress Topper - Octaspring",
+      "cur": {
+        "revenue": 32951.63,
+        "salesTaxes": 3463.72,
+        "units": 92,
+        "sessions": 1257,
+        "productSales": 29808.47
+      },
+      "prev": {
+        "revenue": 21587.55,
+        "salesTaxes": 2487.4,
+        "units": 53,
+        "sessions": 1118,
+        "productSales": 20665.29
+      }
+    },
+    {
+      "asin": "B07WGH7QNP",
+      "title": "Dormeo Premium King Breathable Mattress Topper - Octaspring",
+      "cur": {
+        "revenue": 16064.08,
+        "salesTaxes": 1499.56,
+        "units": 39,
+        "sessions": 863,
+        "productSales": 14841.55
+      },
+      "prev": {
+        "revenue": 6554.95,
+        "salesTaxes": 790.82,
+        "units": 14,
+        "sessions": 780,
+        "productSales": 6353.77
+      }
+    },
+    {
+      "asin": "B07WGHV3DS",
+      "title": "Dormeo Premium Full Breathable Mattress Topper - Octaspring",
+      "cur": {
+        "revenue": 8920.22,
+        "salesTaxes": 882.04,
+        "units": 27,
+        "sessions": 827,
+        "productSales": 8148.34
+      },
+      "prev": {
+        "revenue": 7637.77,
+        "salesTaxes": 841.21,
+        "units": 20,
+        "sessions": 758,
+        "productSales": 7398.13
+      }
+    },
+    {
+      "asin": "B07WHHQBQX",
+      "title": "Dormeo Premium Twin XL Breathable Mattress Topper - Octaspring",
+      "cur": {
+        "revenue": 7362.88,
+        "salesTaxes": 828.47,
+        "units": 28,
+        "sessions": 549,
+        "productSales": 6606.64
+      },
+      "prev": {
+        "revenue": 2347.75,
+        "salesTaxes": 251.34,
+        "units": 8,
+        "sessions": 640,
+        "productSales": 2241.61
+      }
+    },
+    {
+      "asin": "B07WJMHJ2P",
+      "title": "Dormeo Premium Twin Breathable Mattress Topper - Octaspring",
+      "cur": {
+        "revenue": 3496.21,
+        "salesTaxes": 397.58,
+        "units": 13,
+        "sessions": 498,
+        "productSales": 3103.37
+      },
+      "prev": {
+        "revenue": 1113.96,
+        "salesTaxes": 118.98,
+        "units": 4,
+        "sessions": 487,
+        "productSales": 1105.53
+      }
+    },
+    {
+      "asin": "B08W4SLL9P",
+      "title": "Dormeo RV Short Queen Cooling Mattress Topper - Octaspring",
+      "cur": {
+        "revenue": 3029.83,
+        "salesTaxes": 375.97,
+        "units": 8,
+        "sessions": 141,
+        "productSales": 2712.35
+      },
+      "prev": {
+        "revenue": 808.27,
+        "salesTaxes": 105.28,
+        "units": 2,
+        "sessions": 154,
+        "productSales": 781.1
+      }
+    },
+    {
+      "asin": "B09KDRCK2C",
+      "title": "Dormeo Premium Split King Breathable Mattress Topper - Octaspring",
+      "cur": {
+        "revenue": 1590.47,
+        "salesTaxes": 147.78,
+        "units": 4,
+        "sessions": 82,
+        "productSales": 1442.68
+      },
+      "prev": {
+        "revenue": 937.32,
+        "salesTaxes": 115.03,
+        "units": 2,
+        "sessions": 97,
+        "productSales": 913.65
+      }
+    },
+    {
+      "asin": "B08YS5PH8M",
+      "title": "Dormeo True Evolution 4in Ultra-Slim Bed Pillow - Airflow",
+      "cur": {
+        "revenue": 946.84,
+        "salesTaxes": 94.04,
+        "units": 15,
+        "sessions": 129,
+        "productSales": 852.79
+      },
+      "prev": {
+        "revenue": 479.85,
+        "salesTaxes": 57.65,
+        "units": 6,
+        "sessions": 117,
+        "productSales": 422.19
+      }
+    }
+  ],
+  "insights": [
+    "**Weekly Highlights —** Dormeo Canada grew total sales to $71,464 (USD) in Week 47, up 73.9% from $41,099 the prior week, on 254 units. Organic sales rose to $19,786 (+117.6% WoW). The King Topper more than doubled to $14,841 (+133.6%) on 39 units (+178.6%), the Queen Topper led at $29,808 (+44.2%) on 92 units with a 7.3% conversion rate, and the Twin XL jumped to $6,606 (+194.7%). Sunday, Nov 22 was the peak day at $17,578.",
+    "**Metrics to Watch —** Sales were softer midweek, at $3,779 on Tue Nov 17 and $3,484 on Wed Nov 18, before building from $11,562 on Thursday to $17,578 on Sunday. Twin XL sessions eased 14.2% to 549, but its conversion rose to 5.1%, so sales still grew. Conversion on the Full (3.3%) and Twin (2.6%) trails the Queen's 7.3%, and ad CTR is 0.44%. We are reviewing budget pacing to carry the late-week momentum through the whole week.",
+    "**Ad Spend Efficiency —** Efficiency improved as spend grew. ROAS rose to 9.71x from 7.86x and TACoS fell to 7.4% from 9.91%. Ad spend of $5,319 (prior $4,073) drove PPC revenue of $51,678 (+61.5%) at a 10.3% ACOS and 3.83% ad conversion.",
+    "**Actions This Week —** (1) Review daily budget caps and pacing so ads stay fully live Tuesday–Wednesday, aiming to lift midweek days toward Monday's $7,456. (2) Scale spend on the Queen (7.3% CVR) and King (39 units, +178.6%) while holding ACOS near 10.3%. (3) Test new Sponsored Brands ad creative to push ad CTR above 0.44%."
+  ]
+}
